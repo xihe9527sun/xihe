@@ -33,12 +33,26 @@
 
 ## 📋 待办（2026-07-06起）
 
-### P0 · 本周（Fable-5差距补全）
-- [ ] **🦁 Fable-5 差异补全：工具生态** — 注册6个新Block(web_search/code_exec/file_search/git_ops/file_edit/memory_retrieve) ✅ 已注册
-- [ ] **🛡️ Fable-5 差异补全：安全对齐** — 6条行为边界规则 ✅ 已写入cortex/safety-rules.json
-- [ ] **👁️ Fable-5 差异补全：视觉感知** — 建立视觉管道架构设计（vision pipeline）
-- [ ] **🔄 Fable-5 差异补全：自主运行** — evolution_engine从"空闲时精读"扩展到"空闲时完整认知循环"
-- [ ] **📐 Agent数据模型标准化** — Phase 1已完成(cortex/schemas/)，Phase 2推送到现有模块
+### Lα · 自动运行层（活着）— 加固
+- [x] **代谢Actor 0.5s心跳** — 已完成
+- [x] **XiheWatchman 5min巡检** — 已完成（含熔断+弹窗修复）
+- [x] **健康自反回路** — health_reflex.py 已完成
+- [ ] **new-signals.json 信号通道** — 精读结果即时注入代谢路由
+
+### Lβ · 自动学习层（长着）— 新建
+- [x] **evolution_engine 空闲精读** — v2已完成
+- [x] **feedback_cortex 反哺管道** — 已建成
+- [ ] **🔄 赫布权重替代复杂度评分** — 动态心跳的依据
+- [ ] **🔄 精读溯源反馈** — 高价值精读的领域获得优先选材
+
+### Lγ · 自动对齐层（安全着）— 新建
+- [x] **safety-rules.json 宪法原则** — 6条已写入
+- [ ] **⚡ mode参数 internal/external** — 代谢路由入口双模式
+- [ ] **⚡ 安全自检嵌入watchman** — 每5分钟自动跑测试用例
+
+### 近期
+- [ ] **视觉管道架构设计** — vision pipeline
+- [ ] **Agent数据模型 Phase 2** — 推送标准化到现有模块
 
 ### P1 · 近期待办
 - [ ] **多策略混合召回** — 超图遍历 + 向量检索 + 规则匹配，三路并行
