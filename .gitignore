@@ -1,0 +1,14 @@
+logs/
+node_modules/
+__pycache__/
+*.pyc
+.env
+bridge/logs/
+bridge/events/
+cortex/
+treasure/
+private/
+softs/
+skills/
+repos/
+.history/
