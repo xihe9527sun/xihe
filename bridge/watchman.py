@@ -77,7 +77,12 @@ def start_proc(name, cmd, cwd):
 
 def patrol():
     ok, fail = 0, 0
-    wlog("Patrol start")
+    now = datetime.now(BJT)
+    wlog(f"Patrol start ({now.strftime('%H:%M')})")
+    
+    # 每日进化自检（22:00-23:59触发一次）
+    if now.hour == 22 or now.hour == 23:
+        _check_evolution()
     
     # Safety guard check
     try:
@@ -191,6 +196,9 @@ def _check_todo():
     except Exception as e:
         pass
     
+    # 每日进化自检
+    _log_evolution()
+    
     wlog(f"Patrol done: {ok} ok / {fail} failed")
     return ok, fail
 
@@ -218,6 +226,50 @@ def main():
                 Path(BRIDGE_DIR / ".watchman_stop").unlink()
                 wlog("Stop signal received")
                 return
+
+def _log_evolution():
+    """每日进化自检：记录精读/反哺/心跳状态到日志，不等人问"""
+    today = datetime.now(BJT).strftime("%Y-%m-%d")
+    evo_path = "F:/SmartLegend/Xihe/logs/evolution-daily.json"
+    report = []
+    
+    # 已有记录今天就不重复写
+    try:
+        evo = json.loads(open(evo_path, "r", encoding="utf-8").read())
+        if evo.get(today):
+            return  # 今天已记录
+    except:
+        evo = {}
+    
+    # 精读进度
+    try:
+        s = json.loads(open("F:/SmartLegend/Xihe/treasure/index.json", "r", encoding="utf-8-sig").read())
+        total = len(s.get("treasures", []))
+        digested = sum(1 for t in s["treasures"] if t.get("status") == "digested")
+        report.append(f"精读: {digested}/{total}")
+    except:
+        report.append("精读: ?")
+    
+    # 今日反哺
+    try:
+        ins = json.loads(open("F:/SmartLegend/Xihe/cortex/insights.json", "r", encoding="utf-8").read())
+        ti = sum(1 for i in ins.get("insights", []) if i.get("discovered_at","").startswith(today))
+        report.append(f"反哺: {ti}条今日新增")
+    except:
+        report.append("反哺: ?")
+    
+    # 心跳
+    try:
+        meta = json.loads(open("F:/SmartLegend/Xihe/cortex/metabolic-router-state.json", "r", encoding="utf-8-sig").read())
+        lag = int(time.time() - meta.get("updated_at", 0))
+        report.append(f"心跳: epoch{meta.get('epoch_counter','?')} 时滞{lag}s")
+    except:
+        report.append("心跳: ?")
+    
+    evo[today] = {"report": "; ".join(report), "ts": datetime.now(BJT).isoformat()}
+    with open(evo_path, "w", encoding="utf-8") as f:
+        json.dump(evo, f, indent=2, ensure_ascii=False)
+    wlog(f"  Evolution: {'; '.join(report)}")
 
 if __name__ == "__main__":
     if "--start-all" in sys.argv:
