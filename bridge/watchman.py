@@ -79,6 +79,25 @@ def patrol():
     ok, fail = 0, 0
     wlog("Patrol start")
     
+    # Safety guard check
+    try:
+        import safety_guard
+        guard = safety_guard.audit()
+        if guard["fuse_mode"]:
+            wlog(f"  FUSE ACTIVE: {guard['fuse_detail']}")
+            # 熔断模式下只检查不重启
+            wlog(f"Patrol done (fuse mode - skip restart)")
+            return ok, fail
+    except Exception as e:
+        wlog(f"  safety guard unavailable: {e}")
+    
+    # Environment feedback: verify ports after restart
+    # (feedback logged by port checks below)
+    try:
+        import environment_feedback as ef
+    except:
+        pass
+    
     # Node站点 — 端口检查
     sites = [
         ("blog", 4326, [NODE, str(DASH_DIR/"main-site.js")], str(DASH_DIR)),
@@ -91,10 +110,12 @@ def patrol():
         alive = port_open(port)
         if alive:
             ok += 1
+            ef.verify_port(name, port, True) if 'ef' in dir() else None
         else:
             fail += 1
             wlog(f"  {name} port {port} dead")
             start_proc(name, cmd, cwd)
+            ef.verify_port(name, port, True) if 'ef' in dir() else None
     
     # Python进程
     procs = [("metabolic_actor", "metabolic_actor", [PYTHON, "-X", "utf8", str(BRIDGE_DIR/"metabolic_actor.py")], str(BRIDGE_DIR)),
