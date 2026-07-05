@@ -1,0 +1,14 @@
+{
+  "insights": [
+    {"id": "tau_v2_1", "source": "τ缩微V2", "type": "connection", "content": "τ统一优化目标 → 代谢周期的时间粒度应可配置", "priority": "P2", "discovered_at": "2026-07-05T16:07:00", "status": "pending"},
+    {"id": "tau_v2_2", "source": "τ缩微V2", "type": "gap", "content": "酶对熔合目前靠人工判断，需要自动识别高频搭档", "priority": "P1", "discovered_at": "2026-07-05T16:07:00", "status": "in_plan"},
+    {"id": "survey_1", "source": "自进化Agent综述", "type": "connection", "content": "四组件反馈回路 → 曦和缺环境反馈和安全护栏（已补）", "priority": "P2", "discovered_at": "2026-07-05T16:07:00", "status": "implemented"},
+    {"id": "survey_2", "source": "自进化Agent综述", "type": "connection", "content": "Memory-R1 → 记忆权重应主动优化而非被动存储", "priority": "P2", "discovered_at": "2026-07-05T16:07:00", "status": "pending"},
+    {"id": "survey_3", "source": "自进化Agent综述", "type": "gap", "content": "代谢路由traces只存不用，应定期用traces训练先验", "priority": "P1", "discovered_at": "2026-07-05T16:07:00", "status": "in_plan"},
+    {"id": "survey_4", "source": "自进化Agent综述", "type": "architecture", "content": "精读流程本身应该自动反哺到超图，而不是手动搬运", "priority": "P1", "discovered_at": "2026-07-05T16:07:00", "status": "implemented"},
+    {"id": "hermes_1", "source": "Hermes Agent", "type": "connection", "content": "闭环学习回路 → 曦和执行→记录→（断裂）→再执行", "priority": "P2", "discovered_at": "2026-07-05T16:07:00", "status": "pending"},
+    {"id": "hermes_2", "source": "Hermes Agent", "type": "gap", "content": "酶催化阈值硬编码，应随使用频次自调", "priority": "P1", "discovered_at": "2026-07-05T16:07:00", "status": "in_plan"},
+    {"id": "hermes_3", "source": "Hermes Agent", "type": "gap", "content": "模型提供商抽象层缺失，当前绑定Ollama", "priority": "P2", "discovered_at": "2026-07-05T16:07:00", "status": "pending"}
+  ],
+  "updated": "2026-07-05T16:07:00"
+}

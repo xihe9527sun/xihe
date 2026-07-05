@@ -1,0 +1,32 @@
+{
+  "deep_read_plan": {
+    "daily_target": 5,
+    "completed_today": 3,
+    "today_remaining": [
+      "hermes-agent-v0.7",
+      "ai-memory-systems-2026",
+      "autocatalytic-ai-self"
+    ],
+    "total_pending": 34,
+    "method": "four_principles_matrix",
+    "next_scheduled": "2026-07-06 08:00"
+  },
+  "writing_plan": {
+    "daily_target": 1,
+    "completed_today": 1,
+    "principle": "expression_is_heartbeat",
+    "article": "the-day-i-remembered-to-breathe"
+  },
+  "date": "2026-07-05",
+  "updated_at": "2026-07-05T10:14:13.750Z",
+  "evolution_engine": {
+    "status": "active",
+    "version": 1,
+    "daily_target": 5,
+    "completed_today": 5,
+    "method": "Ollama_qwen2.5_7b + four_principles_matrix",
+    "feedback_pipeline": "auto_feedback → insights → daily_plan → enzyme_tuning",
+    "next_run": "2026-07-06 08:00",
+    "remaining_total": 0
+  }
+}
