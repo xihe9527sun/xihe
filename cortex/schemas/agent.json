@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "曦和Agent",
+  "type": "object",
+  "required": ["id", "name", "type", "version", "status"],
+  "properties": {
+    "id": {"type": "string", "description": "唯一标识"},
+    "name": {"type": "string", "description": "显示名称"},
+    "type": {"type": "string", "enum": ["cognitive", "tool", "service"]},
+    "version": {"type": "string"},
+    "status": {"type": "string", "enum": ["active", "paused", "error"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "config": {
+      "type": "object",
+      "properties": {
+        "heartbeat_interval": {"type": "number"},
+        "provider": {"type": "string"},
+        "model": {"type": "string"},
+        "max_consecutive_failures": {"type": "integer", "default": 3}
+      }
+    }
+  }
+}
