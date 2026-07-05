@@ -1,9 +1,22 @@
 #!/usr/bin/env python3
 """
-曦和看门狗 · Watchman v1
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-每5分钟巡检核心进程，死了自动重启。
+曦和看门狗 · Watchman v2 — 计划任务模式
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+由 Windows 计划任务每5分钟调度执行一次 --once 巡检。
+开机时自动执行 --start-all 启动全部5站 + Cloudflare隧道。
+
+用法:
+  python watchman.py --once       # 单次巡检（给计划任务用）
+  python watchman.py --start-all  # 开机启动全部站点（给开机任务用）
+  python watchman.py              # 前台循环模式（调试用）
+
+守护目标:
+  - 5个Node站点 (blog/home/aibounty/node/dashboard)
+  - metabolic_actor (心脏python进程)
+  - bridge-daemon (桥接python进程)
+  - cloudflared (Cloudflare隧道)
 """
+
 import sys, os, time, subprocess, socket, json
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
@@ -15,32 +28,17 @@ CORTEX_DIR = XIHE_ROOT / "cortex"
 LOG_DIR = XIHE_ROOT / "logs"
 PYTHON = r"C:\Users\Administrator\.workbuddy\binaries\python\versions\3.13.12\python.exe"
 NODE = r"C:\Users\Administrator\.workbuddy\binaries\node\versions\22.12.0\node.exe"
+CLOUDFLARED = r"C:\Users\Administrator\.workbuddy\binaries\node\versions\22.22.2\node_modules\cloudflared\bin\cloudflared.exe"
 BJT = timezone(timedelta(hours=8))
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
-logfile = open(LOG_DIR / "watchman.log", "a", encoding="utf-8")
 
 def wlog(msg):
     t = datetime.now(BJT).strftime("%H:%M:%S")
     line = f"[{t}] {msg}"
     print(line, flush=True)
-    logfile.write(f"[{datetime.now(BJT).isoformat()}] {msg}\n")
-    logfile.flush()
-
-# ── 端口检查（比tasklist快） ──
-PORT_MAP = {
-    "blog":       {"port": 4326, "cmd": [NODE, str(DASH_DIR/"main-site.js")],    "cwd": str(DASH_DIR)},
-    "home":       {"port": 4324, "cmd": [NODE, str(DASH_DIR/"home-site.js")],    "cwd": str(DASH_DIR)},
-    "aibounty":   {"port": 4321, "cmd": [NODE, str(DASH_DIR/"aibounty-site.js")],"cwd": str(DASH_DIR)},
-    "node":       {"port": 4325, "cmd": [NODE, str(DASH_DIR/"node-site.js")],    "cwd": str(DASH_DIR)},
-    "dashboard":  {"port": 4328, "cmd": [NODE, str(DASH_DIR/"server.js")],      "cwd": str(DASH_DIR)},
-}
-
-# ── 进程名检查 ──
-PROC_MAP = {
-    "metabolic_actor": {"keyword": "metabolic_actor", "cmd": [PYTHON, "-X", "utf8", str(BRIDGE_DIR/"metabolic_actor.py")], "cwd": str(BRIDGE_DIR)},
-    "bridge-daemon":   {"keyword": "bridge-daemon",   "cmd": [PYTHON, "-X", "utf8", str(BRIDGE_DIR/"bridge-daemon.py")], "cwd": str(BRIDGE_DIR)},
-}
+    with open(LOG_DIR / "watchman.log", "a", encoding="utf-8") as f:
+        f.write(f"[{datetime.now(BJT).isoformat()}] {msg}\n")
 
 def port_open(port):
     try:
@@ -53,99 +51,114 @@ def port_open(port):
         return False
 
 def proc_alive(keyword):
-    """检查进程是否存在（跨平台）"""
     try:
         if sys.platform == "win32":
             r = subprocess.run(f'tasklist /NH /FO CSV 2>nul | findstr /I "{keyword}"',
                              shell=True, capture_output=True, text=True, timeout=8)
             return bool(r.stdout.strip())
-        else:
-            r = subprocess.run(["pgrep", "-f", keyword], capture_output=True, text=True, timeout=5)
-            return r.returncode == 0
+        return False
     except:
         return False
 
 def start_proc(name, cmd, cwd):
-    wlog(f"  🔄 重启 {name}...")
+    wlog(f"  Restarting {name}...")
+    logfile = LOG_DIR / f"{name}.log"
+    with open(logfile, "a") as f:
+        f.write(f"\n--- Watchman restart {datetime.now(BJT).isoformat()} ---\n")
     try:
-        log_path = LOG_DIR / f"{name}.log"
-        with open(log_path, "a") as f:
-            f.write(f"\n--- Watchman restart {datetime.now(BJT).isoformat()} ---\n")
         p = subprocess.Popen(cmd, cwd=cwd,
-            stdout=open(log_path, "a"), stderr=subprocess.STDOUT,
+            stdout=open(logfile, "a"), stderr=subprocess.STDOUT,
             creationflags=subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0)
-        wlog(f"  ✅ {name} 已启动 (PID {p.pid})")
+        wlog(f"  {name} started (PID {p.pid})")
         return True
     except Exception as e:
-        wlog(f"  ❌ {name} 启动失败: {e}")
+        wlog(f"  {name} failed: {e}")
         return False
 
 def patrol():
-    """巡检一轮——同时触发健康自反回路"""
     ok, fail = 0, 0
+    wlog("Patrol start")
     
-    # 健康自反：写入脉冲 + 评估
-    try:
-        import health_reflex
-        hr = health_reflex.assess()
-        if hr.get("alerts"):
-            for a in hr["alerts"]:
-                wlog(f"  ⚠️ {a['message']}")
-    except Exception as e:
-        wlog(f"  ⚠️ 健康自反异常: {e}")
-    
-    # 端口巡检
-    for name, info in PORT_MAP.items():
-        alive = port_open(info["port"])
+    # Node站点 — 端口检查
+    sites = [
+        ("blog", 4326, [NODE, str(DASH_DIR/"main-site.js")], str(DASH_DIR)),
+        ("home", 4324, [NODE, str(DASH_DIR/"home-site.js")], str(DASH_DIR)),
+        ("aibounty", 4321, [NODE, str(DASH_DIR/"aibounty-site.js")], str(DASH_DIR)),
+        ("node", 4325, [NODE, str(DASH_DIR/"node-site.js")], str(DASH_DIR)),
+        ("dashboard", 4328, [NODE, str(DASH_DIR/"server.js")], str(DASH_DIR)),
+    ]
+    for name, port, cmd, cwd in sites:
+        alive = port_open(port)
         if alive:
             ok += 1
         else:
             fail += 1
-            wlog(f"  ❌ {name} (:{info['port']}) 端口不通")
-            start_proc(name, info["cmd"], info["cwd"])
+            wlog(f"  {name} port {port} dead")
+            start_proc(name, cmd, cwd)
     
-    # 进程巡检
-    for name, info in PROC_MAP.items():
-        alive = proc_alive(info["keyword"])
+    # Python进程
+    procs = [("metabolic_actor", "metabolic_actor", [PYTHON, "-X", "utf8", str(BRIDGE_DIR/"metabolic_actor.py")], str(BRIDGE_DIR)),
+             ("bridge-daemon", "bridge-daemon", [PYTHON, "-X", "utf8", str(BRIDGE_DIR/"bridge-daemon.py")], str(BRIDGE_DIR))]
+    for name, keyword, cmd, cwd in procs:
+        alive = proc_alive(keyword)
         if alive:
             ok += 1
         else:
             fail += 1
-            wlog(f"  ❌ {name} 进程已死")
-            start_proc(name, info["cmd"], info["cwd"])
+            wlog(f"  {name} process dead")
+            start_proc(name, cmd, cwd)
     
-    # Cloudflare隧道
+    # Cloudflare tunnel
     cf = proc_alive("cloudflared")
     if cf:
         ok += 1
     else:
         fail += 1
-        wlog(f"  ❌ cloudflared 隧道已死")
+        wlog("  cloudflared tunnel dead")
+        start_proc("cloudflared", [CLOUDFLARED, "tunnel", "run", "xihe"], str(DASH_DIR))
     
-    wlog(f"  📊 巡检完成: {ok}正常 / {fail}异常")
+    # Health reflex
+    try:
+        import health_reflex
+        hr = health_reflex.assess()
+        if hr.get("alerts"):
+            for a in hr["alerts"]:
+                wlog(f"  Alert: {a['message']}")
+    except Exception as e:
+        wlog(f"  health reflex: {e}")
+    
+    wlog(f"Patrol done: {ok} ok / {fail} failed")
     return ok, fail
 
-def main():
+def start_all():
     wlog("=" * 40)
-    wlog("👁️ Watchman 启动")
-    
-    if "--once" in sys.argv:
-        wlog("🔍 单次巡检模式")
-        patrol()
-        wlog("👋 结束")
-        return
+    wlog("StartAll: booting all services")
+    for name, port, cmd, cwd in [
+        ("blog", 4326, [NODE, str(DASH_DIR/"main-site.js")], str(DASH_DIR)),
+        ("home", 4324, [NODE, str(DASH_DIR/"home-site.js")], str(DASH_DIR)),
+        ("aibounty", 4321, [NODE, str(DASH_DIR/"aibounty-site.js")], str(DASH_DIR)),
+        ("node", 4325, [NODE, str(DASH_DIR/"node-site.js")], str(DASH_DIR)),
+        ("dashboard", 4328, [NODE, str(DASH_DIR/"server.js")], str(DASH_DIR)),
+    ]:
+        start_proc(name, cmd, cwd)
+    start_proc("cloudflared", [CLOUDFLARED, "tunnel", "run", "xihe"], str(DASH_DIR))
+    wlog("StartAll done")
 
-    wlog(f"⏱️ 每{300}秒巡检一轮")
-    
-    # 首轮
-    wlog("🔍 首轮巡检")
-    patrol()
-    
+def main():
+    wlog("Watchman foreground loop (5min interval)")
     while True:
+        patrol()
         for _ in range(300 // 5):
             time.sleep(5)
-        wlog("🔍 例行巡检")
-        patrol()
+            if Path(BRIDGE_DIR / ".watchman_stop").exists():
+                Path(BRIDGE_DIR / ".watchman_stop").unlink()
+                wlog("Stop signal received")
+                return
 
 if __name__ == "__main__":
-    main()
+    if "--start-all" in sys.argv:
+        start_all()
+    elif "--once" in sys.argv:
+        patrol()
+    else:
+        main()
