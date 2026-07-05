@@ -179,6 +179,18 @@ def _check_todo():
     except:
         pass
     
+    # 模式验证
+    try:
+        from mode_switch import get, check as mode_check
+        m = get()
+        if m.get("mode") == "external":
+            # 在external模式下，验证所有写操作是否被阻止
+            blocked = all(not mode_check(op)[0] for op in ["write_file","modify_code","run_command"])
+            if not blocked:
+                wlog(f"  Mode warning: external mode should block write operations")
+    except Exception as e:
+        pass
+    
     wlog(f"Patrol done: {ok} ok / {fail} failed")
     return ok, fail
 
