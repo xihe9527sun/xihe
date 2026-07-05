@@ -1,0 +1,31 @@
+{
+  "id": "block:code_exec",
+  "name": "代码执行沙箱",
+  "type": "tool",
+  "inputs": [
+    {
+      "name": "code",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "default": "python"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "stdout",
+      "type": "string"
+    },
+    {
+      "name": "stderr",
+      "type": "string"
+    }
+  ],
+  "config": {
+    "timeout": 30,
+    "sandbox": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "block:git_ops",
+  "name": "Git操作",
+  "type": "tool",
+  "inputs": [
+    {
+      "name": "command",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "repo_path",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "type": "string"
+    }
+  ],
+  "config": {
+    "allowed_commands": [
+      "status",
+      "diff",
+      "log",
+      "add",
+      "commit",
+      "push"
+    ]
+  }
+}

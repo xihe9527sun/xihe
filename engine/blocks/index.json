@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "id": "block:web_search",
+      "name": "网页搜索",
+      "type": "tool"
+    },
+    {
+      "id": "block:code_exec",
+      "name": "代码执行沙箱",
+      "type": "tool"
+    },
+    {
+      "id": "block:file_search",
+      "name": "文件搜索",
+      "type": "tool"
+    },
+    {
+      "id": "block:git_ops",
+      "name": "Git操作",
+      "type": "tool"
+    },
+    {
+      "id": "block:file_edit",
+      "name": "文件编辑",
+      "type": "tool"
+    },
+    {
+      "id": "block:memory_retrieve",
+      "name": "记忆检索",
+      "type": "tool"
+    }
+  ]
+}

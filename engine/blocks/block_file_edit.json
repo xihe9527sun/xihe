@@ -1,0 +1,30 @@
+{
+  "id": "block:file_edit",
+  "name": "文件编辑",
+  "type": "tool",
+  "inputs": [
+    {
+      "name": "filepath",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "content",
+      "type": "string"
+    },
+    {
+      "name": "operation",
+      "type": "string",
+      "default": "write"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "success",
+      "type": "boolean"
+    }
+  ],
+  "config": {
+    "max_file_size": 1048576
+  }
+}

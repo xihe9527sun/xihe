@@ -1,0 +1,25 @@
+{
+  "id": "block:file_search",
+  "name": "文件搜索",
+  "type": "tool",
+  "inputs": [
+    {
+      "name": "pattern",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "root_dir",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "matches",
+      "type": "json"
+    }
+  ],
+  "config": {
+    "max_results": 20
+  }
+}

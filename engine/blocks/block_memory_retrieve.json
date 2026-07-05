@@ -1,0 +1,26 @@
+{
+  "id": "block:memory_retrieve",
+  "name": "记忆检索",
+  "type": "tool",
+  "inputs": [
+    {
+      "name": "query",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "default": "all"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "results",
+      "type": "json"
+    }
+  ],
+  "config": {
+    "max_results": 10
+  }
+}
