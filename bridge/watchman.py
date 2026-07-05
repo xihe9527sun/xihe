@@ -148,6 +148,18 @@ def patrol():
     except Exception as e:
         wlog(f"  health reflex: {e}")
     
+    # Idle deep reading (evolution engine)
+    try:
+        import evolution_engine
+        if evolution_engine.should_digest():
+            r = evolution_engine.digest_one()
+            if r["status"] == "done":
+                wlog(f"  Digest: {r['name']}")
+            elif r["status"] == "all_done":
+                pass  # all digested already
+    except Exception as e:
+        wlog(f"  evolution engine: {e}")
+    
     wlog(f"Patrol done: {ok} ok / {fail} failed")
     return ok, fail
 
