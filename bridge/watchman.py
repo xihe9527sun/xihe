@@ -155,6 +155,12 @@ def patrol():
     
     # Self-check from todo.md
     _check_todo()
+    
+    # 每日进化自检
+    _log_evolution()
+    
+    wlog(f"Patrol done: {ok} ok / {fail} failed")
+    return ok, fail
 
 def _check_todo():
     """读取cortex/todo.md，对有定时要求的待办执行自检"""
@@ -195,12 +201,6 @@ def _check_todo():
                 wlog(f"  Mode warning: external mode should block write operations")
     except Exception as e:
         pass
-    
-    # 每日进化自检
-    _log_evolution()
-    
-    wlog(f"Patrol done: {ok} ok / {fail} failed")
-    return ok, fail
 
 def start_all():
     wlog("=" * 40)

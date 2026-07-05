@@ -1,0 +1,11 @@
+{
+  "version": "v2_hebbian_dynamics",
+  "source": "HeLa-Mem (arXiv 2604.16839)",
+  "formula": "w(t+1) = (1-λ) * w(t) + η * I(共激活)",
+  "eta": 0.02,
+  "lambda": 0.005,
+  "tau_days": 60,
+  "created": "2026-07-06T07:15:00",
+  "edges": {},
+  "coactivation_count": 0
+}

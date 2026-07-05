@@ -12,6 +12,7 @@
 位置: F:/SmartLegend/Xihe/bridge/metabolic_actor.py
 """
 
+import os
 import json
 import time
 import sys
