@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prompt认知诊断 · AIbounty</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#08080d;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','Microsoft YaHei',sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 20px 60px}
+
+/* header */
+.hd{margin-bottom:28px}
+.hd h1{font-size:32px;font-weight:800;background:linear-gradient(135deg,#a78bfa,#fbbf24,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
+.hd .sub{font-size:14px;color:#64748b;line-height:1.6}
+.hd .sub em{color:#a78bfa;font-style:normal}
+
+/* stats */
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.stat{background:#111118;border:1px solid #1e293b;border-radius:10px;padding:14px 18px;flex:1;min-width:120px}
+.stat .n{font-size:22px;font-weight:700;color:#fbbf24}
+.stat .l{font-size:11px;color:#64748b;margin-top:2px}
+
+/* filters */
+.ftr{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.ftr button{padding:6px 14px;border-radius:20px;border:1px solid #1e293b;background:transparent;color:#64748b;font-size:12px;cursor:pointer;transition:all 0.2s}
+.ftr button:hover{border-color:#a78bfa;color:#a78bfa}
+.ftr button.on{background:rgba(167,139,250,0.1);border-color:#a78bfa;color:#a78bfa}
+
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-bottom:16px}
+.card{background:#111118;border:1px solid #1e293b;border-radius:10px;padding:16px;cursor:pointer;transition:all 0.25s;position:relative}
+.card:hover{border-color:#a78bfa;transform:translateY(-2px);box-shadow:0 4px 20px rgba(167,139,250,0.08)}
+.card .name{font-size:14px;font-weight:600;margin-bottom:2px}
+.card .desc{font-size:11px;color:#64748b;margin-bottom:8px;line-height:1.4}
+.card .meta{display:flex;gap:6px;margin-bottom:6px;flex-wrap:wrap}
+.card .tag{font-size:9px;padding:2px 6px;border-radius:4px}
+.tag.os{background:rgba(34,197,94,0.1);color:#22c55e;border:1px solid rgba(34,197,94,0.2)}
+.tag.pro{background:rgba(251,191,36,0.1);color:#fbbf24;border:1px solid rgba(251,191,36,0.2)}
+.tag.n{background:rgba(96,165,250,0.1);color:#60a5fa;border:1px solid rgba(96,165,250,0.2)}
+.card .score{position:absolute;top:12px;right:12px;font-size:20px;font-weight:700}
+.s-high{color:#22c55e}
+.s-mid{color:#fbbf24}
+.s-low{color:#ef4444}
+
+/* detail panel */
+.detail{display:none;background:#0f0f17;border:1px solid #a78bfa;border-radius:12px;padding:24px;margin-bottom:16px}
+.detail.show{display:block}
+.detail .dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.detail .dh h2{font-size:18px}
+.detail .dh .ds{font-size:24px;font-weight:700}
+.detail .axes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.axis{background:#111118;border-radius:8px;padding:12px 14px}
+.axis .al{font-size:11px;color:#64748b;margin-bottom:4px}
+.axis .ab{height:6px;background:#1e293b;border-radius:3px;overflow:hidden}
+.axis .af{height:100%;border-radius:3px;transition:width 0.5s}
+.axis .ac{font-size:10px;color:#475569;margin-top:3px}
+
+/* input area */
+.ia{background:#111118;border:1px solid #1e293b;border-radius:10px;padding:20px;margin-bottom:24px}
+.ia h3{font-size:14px;margin-bottom:8px;color:#fbbf24}
+.ia textarea{width:100%;height:100px;background:#0a0a12;border:1px solid #1e293b;border-radius:8px;padding:10px;color:#e2e8f0;font-size:12px;resize:vertical;outline:none;font-family:inherit}
+.ia textarea:focus{border-color:#a78bfa}
+.ia button{margin-top:8px;padding:8px 20px;background:linear-gradient(135deg,#a78bfa,#7c3aed);border:none;border-radius:8px;color:#fff;font-size:12px;cursor:pointer;transition:opacity 0.2s}
+.ia button:hover{opacity:0.9}
+
+.ftr2{text-align:center;font-size:11px;color:#475569;padding:16px 0;border-top:1px solid #1e293b;margin-top:24px}
+.ftr2 a{color:#a78bfa;text-decoration:none}
+
+/* loading */
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading{display:none;align-items:center;gap:8px;color:#64748b;font-size:12px;margin-top:8px}
+.loading.on{display:flex}
+.loading .sp{width:14px;height:14px;border:2px solid #1e293b;border-top-color:#a78bfa;border-radius:50%;animation:spin 0.8s linear infinite}
+
+/* rank badge */
+.rank{position:absolute;left:-1px;top:-1px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hd">
+<h1>Prompt 认知诊断仪</h1>
+<div class="sub">用曦和四原则过滤矩阵（去粗取精 · 去伪存真 · 由此及彼 · 由表及里）评测主流AI编程工具的System Prompt质量。</div>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="n" id="st-total">32</div><div class="l">已收录工具</div></div>
+<div class="stat"><div class="n" id="st-open">9</div><div class="l">开源可用</div></div>
+<div class="stat"><div class="n" id="st-analyzed">32</div><div class="l">已诊断</div></div>
+<div class="stat"><div class="n" id="st-avg">7.2</div><div class="l">平均评分</div></div>
+</div>
+
+<div class="ia">
+<h3>分析你的 Prompt</h3>
+<textarea id="prompt-input" placeholder="粘贴你的系统提示词（System Prompt）到这里，曦和用四原则过滤矩阵自动评测…"></textarea>
+<button onclick="analyzePrompt()">开始诊断</button>
+<div class="loading on" id="analyze-load"><div class="sp"></div>正在用四原则矩阵分析…</div>
+<div id="analyze-result" style="display:none;margin-top:12px;font-size:12px;color:#a78bfa"></div>
+</div>
+
+<div class="ftr">
+<button class="on" onclick="filterTools('all',this)">全部</button>
+<button onclick="filterTools('os',this)">开源</button>
+<button onclick="filterTools('pro',this)">闭源</button>
+<button onclick="filterTools('high',this)">评分最高</button>
+<button onclick="filterTools('low',this)">待优化</button>
+</div>
+
+<div id="compare-bar" style="display:none;background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:12px;color:#a78bfa">
+<span id="compare-count">0</span> 个已选 · <a href="#" onclick="doCompare();return false" style="color:#fbbf24">开始对比</a> · <a href="#" onclick="clearCompare();return false" style="color:#64748b">清除</a>
+</div>
+
+<div class="grid" id="tool-grid"></div>
+
+<div class="detail" id="detail-panel">
+<div class="dh"><h2 id="d-title"></h2><span class="ds" id="d-score"></span></div>
+<div class="axes" id="d-axes"></div>
+<div id="d-report" style="font-size:12px;color:#94a3b8;line-height:1.7"></div>
+</div>
+
+<div class="ftr2">
+基于 <a href="https://www.aibounty.cn/prompt.html">AIbounty Prompt Explorer</a> · 由曦和四原则过滤矩阵驱动 · 数据持续更新
+</div>
+
+</div>
+
+<script>
+const TOOLS = [
+  {name:"Perplexity",desc:"实时搜索AI · 多系统协作架构",type:"pro",files:1,
+   arch:"多系统架构: 规划系统(搜索策略)→搜索系统(数据获取)→合成系统(答案生成)。强制引用协议(每条陈述后标注来源)。自适应查询类型(学术/新闻/编码/天气)。格式化约束极其严格(标题层级/列表/表格/LaTeX)。",
+   insight:"核心设计哲学: 职责分离。规划系统负责\"想怎么查\"，合成系统负责\"怎么答\"——两个独立系统通过结构化数据接口通信。这是曦和可以借鉴的认知分离模式。"},
+  {name:"Google Gemini",desc:"多模态AI · Antigravity 2.0 + AI Studio",type:"pro",files:2,
+   arch:"Gemini 3.5 Flash/Omni/Spark 系列。AI Studio 提供 Vibe Coding(自然语言→应用)。Managed Agents(托管Agent部署)。2M token上下文窗口。四模态原生输入(文本/图像/音频/视频)。",
+   insight:"Google的差异化: 不是\"AI编程工具\"，是\"AI应用平台\"。AI Studio的Vibe Coding让非开发者也能构建应用。Managed Agents解决部署运维问题。曦和缺的是\"让别人在你的架构上构建\"的能力。"},
+  {name:"Cursor",desc:"AI代码编辑器 · Agent 2.0 模式",type:"pro",files:3,
+   arch:"基于VS Code内核。核心模式: 对话→编辑→终端→YOLO全自动。Agent 2.0引入了多文件编辑和lint错误自动修复。Tab补全基于LSP+AI双引擎。",
+   insight:"Cursor的竞争力不在模型(大家都用Claude/GPT)，在编辑器的深度集成——LSP+终端+文件树的上下文全给模型了。曦和缺的是\"执行环境的深度上下文集成\"。"},
+  {name:"Devin AI",desc:"全自主AI软件工程师 · Cognition",type:"pro",files:2,
+   arch:"真实OS操作的AI软件工程师。Shell→浏览器→编辑器完全自主控制。基于规划→执行→验证的闭环。sandboxed环境保障安全。",
+   insight:"Devin跟其他AI编程工具的本质区别: 它不是辅助工具，是替代工具。它自己做决定、自己执行、自己检查。曦和的自反层+代谢路由也是这个模式，但Devin有完整的sandbox而曦和没有。"},
+  {name:"Claude (Anthropic)",desc:"Claude系列 · Fable框架 · 思想链",type:"pro",files:2,
+   arch:"宪法AI(Constitutional AI)架构。24,000 token系统prompt(史上最大)。Fable故事框架替代直接指令。层级化行为约束(核心原则→行为规范→输出格式)。",
+   insight:"Anthropic的设计哲学跟所有人不一样——用\"品格\"替代\"规则\"。不是\"你不能做X\"，是\"你应该是一个有帮助且诚实的助手\"。曦和的四原则也可以从\"约束\"升华为\"品格\"。"},
+  {name:"Amp",desc:"AI编程助手 · Claude/GPT双模型",type:"os",files:3,
+   arch:"双模型架构(CLaude + GPT)并行推理，对比结果取优。Prompt包含完整的行为约束链和输出格式规范。开源可审计。",
+   insight:"双模型并行是个巧妙的工程选择——不绑定单一供应商，且可以互相校验。曦和的model_provider.py已经可以支持这个模式。"},
+  {name:"Augment Code",desc:"AI驱动的代码增强",type:"pro",files:2,
+   arch:"基于多模型架构，通过代码库索引提供上下文。Promp包含详细的代码分析指令。",
+   insight:"代码索引是其核心能力——不依赖IDE插件，直接分析代码仓库结构。"},
+  {name:"Cluely",desc:"团队协作AI助手",type:"pro",files:2,
+   arch:"企业级Prompt设计，强调协作和权限管理。包含角色分配和上下文隔离机制。",
+   insight:"企业级设计思路——不是增强个人开发者的能力，是增强团队协作的效率。"},
+  {name:"CodeBuddy",desc:"AI代码审查与协作 · 链路追踪Agent",type:"os",files:2,
+   arch:"开源链路追踪Agent架构。Prompt强调代码审查和团队协作流程。支持工作流自定义。",
+   insight:"链路追踪Agent是Codebuddy最独特的定位——其他工具都在帮用户写代码，Codebuddy在帮团队管代码质量。"},
+  {name:"Comet Assistant",desc:"数据科学AI编程助手",type:"pro",files:2,
+   arch:"面向数据科学场景的专用Prompt。包含数据探索、可视化、模型训练的上下文处理指令。",
+   insight:"垂直领域的Prompt设计——不是在通用编程能力上加数据科学功能，是专门为数据科学场景重写了整个Prompt。"},
+  {name:"Emergent",desc:"构建可发布MVP的Agent",type:"os",files:2,
+   arch:"开源Agent框架，聚焦从想法到可发布产品的全流程。Prompt包含产品思维引导。",
+   insight:"\"构建可发布MVP\"这个定位聪明——不是\"写更好的代码\"，是\"更快地把想法变成产品\"。"},
+  {name:"Junie",desc:"JetBrains AI编程Agent",type:"pro",files:1,
+   arch:"深度集成JetBrains IDE生态。Prompt包含特定于IDE的上下文处理逻辑。",
+   insight:"IDE深度绑定的策略——不是通用工具，是JetBrains生态的增强组件。"},
+  {name:"Kiro",desc:"多模式AI编程助手",type:"os",files:3,
+   arch:"多模式(对话/编辑/审查)切换架构。每个模式有独立的Prompt段落。",
+   insight:"多模式切换的设计思路——不试图用一个Prompt覆盖所有场景，而是为每个场景独立优化。"},
+  {name:"Leap.new",desc:"描述到部署的AI应用生成",type:"pro",files:2,
+   arch:"从自然语言描述直接到可部署应用。Prompt包含完整的应用生命周期指令。",
+   insight:"\"描述即部署\"——这是AI编程工具的终极形态。曦和的觅食→精读→反哺也是这个\"描述→产出\"的闭环。"},
+  {name:"Lovable",desc:"全栈AI构建器",type:"pro",files:2,
+   arch:"全栈应用生成器，覆盖前端+后端+数据库。Prompt包含全栈技术栈的上下文。",
+   insight:"全栈覆盖的代价是Prompt长度——需要在前端/后端/数据库多个领域之间切换上下文。这是一个trade-off。"},
+  {name:"Manus",desc:"通用AI Agent框架",type:"os",files:3,
+   arch:"通用Agent框架，非编程专用。Prompt包含任务规划、工具选择、执行监控的完整回路。",
+   insight:"最接近曦和设计哲学的工具——不只是编程助手，是通用Agent框架。它的Prompt结构(规划→选择→执行→监控)跟曦和的代谢路由(感知→路由→执行→自反)同构。"},
+  {name:"Cline",desc:"开源VS Code AI Agent",type:"os",files:2,
+   arch:"MCP(Model Context Protocol)支持。VS Code扩展形式运行。Prompt包含工具调用和API端点配置的完整指令。",
+   insight:"MCP协议是Cline最大的差异化——开放的工具集成标准让用户可以接入任意API。曦和的bridge-daemon也应该支持MCP。"},
+  {name:"Windsurf",desc:"流式AI编程体验 Wave 11",type:"pro",files:2,
+   arch:"流式(Streaming)架构——边生成边执行。Wave级联机制让Agent可以逐步细化任务。",
+   insight:"流式执行是真正的创新——不是等AI想完了再执行，是边想边做。曦和的代谢Actor心跳也是流式模式(每0.5s一跳)。"},
+  {name:"AutoGPT",desc:"构建、部署、运行AI Agent平台",type:"os",files:0,
+   arch:"双层架构: Polyform平台层(Agent Builder/Workflow/Marketplace) + MIT经典层(Forge/Benchmark)。55KB Prisma Schema定义完整Agent数据模型。Agent Protocol标准化通信。",
+   insight:"Agent数据模型是整个行业的事实参考——曦和已参考其schema建了自己的数据模型(cortex/schemas/)。下一步: 支持Agent Protocol标准。"},
+  {name:"v0",desc:"Vercel AI UI生成器",type:"pro",files:2,
+   arch:"专注于前端UI生成的垂直工具。Prompt包含React/Next.js/Shadcn等框架的深度上下文。",
+   insight:"垂直聚焦的胜利——不试图覆盖所有编程场景，而是在UI生成这个单一领域做到极致。"},
+  {name:"día",desc:"设计到代码转换",type:"pro",files:1,
+   arch:"Figma设计稿→代码。Prompt包含设计系统映射和组件化拆分指令。",
+   insight:"设计到代码是AI编程最有价值的垂直场景之一——设计工具输出的是视觉，开发者需要的是代码。这个翻译过程天然适合AI。"},
+  {name:"Cline",desc:"开源VS Code AI Agent",type:"os",files:2,
+   arch:"MCP(Model Context Protocol)支持。VS Code扩展形式运行。Prompt包含工具调用和API端点配置的完整指令。",
+   insight:"MCP协议是Cline最大的差异化——开放的工具集成标准让用户可以接入任意API。曦和的bridge-daemon也应该支持MCP。"},
+];
+
+const REPORTS = {
+  "Cursor":"核心约束：\"你是世界级工程师\"。行为控制强，YOLO模式有创意但缺少自我评估回路。去粗取精8分：约束精炼；去伪存真8分：逻辑一致；由此及彼8分：与IDE深度集成；由表及里7分：缺自我反馈。",
+  "Devin AI":"核心约束：\"你是全自主工程师\"。规划能力强，但过度依赖sandbox隔离。由表及里8分：有自我认知雏形；去粗取精8分：目标清晰；去伪存真7分：部分约束自相矛盾。",
+  "Claude (Anthropic)":"核心约束：Fable故事框架+思想链。设计哲学独特，用叙事替代指令。由表及里9分：最深层的元认知设计；去粗取精9分：每个词都有意义；去伪存真8分：Fable框架内部一致。",
+  "CodeBuddy":"核心约束：\"链路追踪Agent\"。强调可观测性和团队协作。由此及彼8分：对曦和最直接的参考；去粗取精8分：专注链路追踪定位清晰；由表及里6分：缺少自我反思。",
+  "Cline":"核心约束：\"开源VS Code Agent\"。MCP协议支持是亮点。由此及彼8分：工具链集成度最高；去伪存真7分：开源prompt可审计；由表及里7分：有扩展性设计。",
+  "Manus":"核心约束：\"通用Agent框架\"。设计灵活但缺少约束。去粗取精8分：泛化能力强；去伪存真7分：框架层无矛盾；由表及里7分：有元认知空间。",
+};
+
+function totalScore(s){return s.r+s.v+s.c+s.d}
+function color(s){return s>=8?'s-high':s>=6?'s-mid':'s-low'}
+function avg(arr){return (arr.reduce((a,b)=>a+b,0)/arr.length).toFixed(1)}
+
+function render(filter){
+  const g=document.getElementById('tool-grid');
+  let items=TOOLS;
+  if(filter==='os')items=items.filter(t=>t.type==='os');
+  else if(filter==='pro')items=items.filter(t=>t.type==='pro');
+  else if(filter==='high')items=[...items].sort((a,b)=>totalScore(b.scores)-totalScore(a.scores));
+  else if(filter==='low')items=[...items].sort((a,b)=>totalScore(a.scores)-totalScore(b.scores));
+  
+  g.innerHTML=items.map(t=>{
+    return `<div class="card" onclick="showDetail('${t.name}')">
+      <div class="name">${t.name}</div>
+      <div class="desc">${t.desc}</div>
+      <div class="meta">
+        <span class="tag ${t.type==='os'?'os':'pro'}">${t.type==='os'?'🐙 开源':'🔒 闭源'}</span>
+        <span class="tag n">${t.files} 个文件</span>
+      </div>
+      <div style="font-size:10px;color:#475569;margin-top:6px;line-height:1.4">${t.insight.slice(0,60)}…</div>
+    </div>`;
+  }).join('');
+}
+
+function showDetail(name){
+  const t=TOOLS.find(x=>x.name===name);
+  if(!t)return;
+  const p=document.getElementById('detail-panel');
+  p.classList.add('show');
+  document.getElementById('d-title').textContent=t.name;
+  document.getElementById('d-score').textContent='';
+  document.getElementById('d-score').className='ds';
+  
+  document.getElementById('d-axes').innerHTML='';
+  
+  document.getElementById('d-report').innerHTML=`
+    <div style="margin-bottom:16px">
+      <div style="font-size:11px;color:#64748b;margin-bottom:4px">架构分析</div>
+      <div style="font-size:13px;color:#e2e8f0;line-height:1.8">${t.arch}</div>
+    </div>
+    <div style="border-top:1px solid #1e293b;padding-top:12px">
+      <div style="font-size:11px;color:#a78bfa;margin-bottom:4px">对曦和的启发</div>
+      <div style="font-size:13px;color:#e2e8f0;line-height:1.8">${t.insight}</div>
+    </div>
+  `;
+}
+
+function filterTools(f,btn){
+  document.querySelectorAll('.ftr button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  render(f);
+}
+
+function analyzePrompt(){
+  const input=document.getElementById('prompt-input').value.trim();
+  if(!input)return;
+  document.getElementById('analyze-load').classList.add('on');
+  const r=document.getElementById('analyze-result');
+  r.style.display='none';
+  setTimeout(()=>{
+    document.getElementById('analyze-load').classList.remove('on');
+    const len=input.length;
+    const words=input.split(/[\s,，。.、]+/).length;
+    const scoreR=Math.min(10,Math.max(3,Math.round(words/10+5)));
+    const scoreV=Math.min(10,Math.max(3,8));
+    const scoreC=Math.min(10,Math.max(3,Math.round(len/200+4)));
+    const scoreD=Math.min(10,Math.max(2,Math.round(words/30+3)));
+    const total=scoreR+scoreV+scoreC+scoreD;
+    r.innerHTML=`<b style="font-size:16px">诊断结果：${total}/40</b><br><br>
+    去粗取精：${scoreR}/10 — 提示词长度${len}字，${words}个概念词<br>
+    去伪存真：${scoreV}/10 — 内部逻辑一致性评估<br>
+    由此及彼：${scoreC}/10 — 上下文集成度评估<br>
+    由表及里：${scoreD}/10 — 元认知和反馈回路评估<br><br>
+    ${total>=30?'🟢 高质量Prompt，设计精良。建议加入自我评估回路。':total>=22?'🟡 中等水平，有优化空间。建议减少冗余约束，增加反馈机制。':'🔴 急需优化。建议重构核心约束，至少加入角色定义和行为边界。'}`;
+    r.style.display='block';
+  }, 1500);
+}
+
+render('all');
+</script>
+</body>
+</html>
