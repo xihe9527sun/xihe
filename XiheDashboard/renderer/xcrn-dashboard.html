@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XCRN · 曦和认知架构 · 仪表盘</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0b1120; color:#e2e8f0; font-family:'Inter','Segoe UI',system-ui; padding:24px; }
+  .container { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:800; background:linear-gradient(135deg,#818cf8,#22d3ee); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:4px; }
+  .sub { color:#475569; font-size:11px; margin-bottom:20px; display:flex; justify-content:space-between; }
+  .grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .card { background:#1e293b; border-radius:10px; padding:12px; border:1px solid #334155; }
+  .card .label { font-size:9px; color:#64748b; text-transform:uppercase; letter-spacing:1px; }
+  .card .value { font-size:22px; font-weight:700; margin:4px 0; }
+  .card .subval { font-size:10px; color:#475569; }
+  .bar { height:4px; background:#0f172a; border-radius:2px; margin-top:6px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:2px; transition:width 1s; }
+  .section { background:#1e293b; border-radius:10px; padding:14px; margin-bottom:10px; border:1px solid #334155; }
+  .sec-title { font-size:11px; font-weight:600; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .row { display:flex; justify-content:space-between; font-size:11px; padding:4px 0; color:#94a3b8; }
+  .row .val { color:#e2e8f0; }
+  .live { color:#22c55e; font-size:9px; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%{opacity:1} 50%{opacity:0.4} 100%{opacity:1} }
+  .footer { text-align:center; font-size:9px; color:#334155; padding:12px 0; }
+  .tag { display:inline-block; padding:1px 6px; border-radius:3px; font-size:9px; font-weight:600; }
+  .tag-l7 { background:#818cf820; color:#818cf8; }
+  .tag-l6 { background:#22d3ee20; color:#22d3ee; }
+  .tag-l5 { background:#a78bfa20; color:#a78bfa; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🧬 XCRN · 曦和认知架构 · 实时版</h1>
+  <div class="sub">
+    <span id="liveIndicator" class="live">● 实时</span>
+    <span id="updateTime" style="color:#475569;">加载中...</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="label">❤️ 心跳</div>
+      <div class="value" id="heartbeatTotal">--</div>
+      <div class="subval" id="heartbeatAge">等待数据...</div>
+    </div>
+    <div class="card">
+      <div class="label">💰 宝藏</div>
+      <div class="value" id="treasureTotal">--</div>
+      <div class="subval" id="treasureLayers">...</div>
+    </div>
+    <div class="card">
+      <div class="label">🧬 酶</div>
+      <div class="value" id="enzymeTotal">--</div>
+      <div class="subval" id="enzymeFused">4 对熔合</div>
+    </div>
+    <div class="card">
+      <div class="label">🔗 约束</div>
+      <div class="value" id="constraintTotal">--</div>
+      <div class="subval" id="constraintFeast">...</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">L7 · 涌现层 · 核心体征</div>
+    <div class="row"><span>健康评分 💚</span><span class="val" id="healthScore">--</span></div>
+    <div class="row"><span>系统状态</span><span class="val" id="systemStatus">--</span></div>
+    <div class="row"><span>活跃路径</span><span class="val" id="activePaths">--</span></div>
+    <div class="row"><span>记忆层级数</span><span class="val" id="memoryLayers">--</span></div>
+    <div class="bar"><div class="bar-fill" id="healthBar" style="width:0%;background:linear-gradient(90deg,#22c55e,#22d3ee);"></div></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">⏱️ τ 剖面 · 系统瓶颈</div>
+    <div class="row"><span>瓶颈层</span><span class="val" id="tauBottleneck">--</span></div>
+    <div class="row"><span>瓶颈延迟</span><span class="val" id="tauMs">--</span></div>
+    <div class="bar"><div class="bar-fill" id="tauBar" style="width:0%;background:linear-gradient(90deg,#f59e0b,#ef4444);"></div></div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">📋 入库流水线</div>
+    <div class="row"><span>累计入库</span><span class="val" id="intakeTotal">--</span></div>
+    <div class="row"><span>累计淘汰</span><span class="val" id="intakeRejected">--</span></div>
+    <div class="row"><span>缓冲池</span><span class="val" id="intakeBuffer">--</span></div>
+  </div>
+
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+    <span class="tag tag-l7">L7 涌现层 16</span>
+    <span class="tag tag-l6">L6 架构层 9</span>
+    <span class="tag tag-l5">L5 反思层 3</span>
+  </div>
+
+  <div class="grid" id="layerGrid">
+    <!-- filled by JS -->
+  </div>
+
+  <div class="footer">
+    🧬 XCRN · 曦和认知架构 · <span id="footerTime">加载中</span><br>
+    <span style="color:#1e293b;">🌐 <a href="https://www.aibounty.cn" target="_blank" style="color:#334155;text-decoration:none;">www.aibounty.cn</a> · <a href="http://localhost:4328/" style="color:#334155;text-decoration:none;">仪表盘</a> · <a href="http://localhost:4328/workflows/" style="color:#334155;text-decoration:none;">工作流</a></span>
+  </div>
+</div>
+
+<script>
+const API = window.location.protocol+'//'+window.location.hostname+':4328/api/xcrn';
+
+async function fetchData() {
+  try {
+    const r = await fetch(API);
+    const d = await r.json();
+    updateUI(d);
+  } catch(e) {
+    document.getElementById('liveIndicator').textContent = '⚠️ 离线';
+    document.getElementById('liveIndicator').style.color = '#ef4444';
+  }
+}
+
+function updateUI(d) {
+  const hb = d.heartbeat;
+  const tr = d.treasures;
+  const en = d.enzymes;
+  const co = d.constraints;
+  const sys = d.system;
+  const tau = d.tau;
+  const intake = d.intake;
+
+  // Grid
+  document.getElementById('heartbeatTotal').textContent = hb.total.toLocaleString();
+  document.getElementById('heartbeatAge').textContent = hb.age_seconds < 30 ? '刚刚更新' : `${hb.age_seconds}秒前`;
+  document.getElementById('treasureTotal').textContent = tr.total;
+  document.getElementById('treasureLayers').textContent = `${Object.keys(tr.layers).length}层`;
+  document.getElementById('enzymeTotal').textContent = en.total || en.registry;
+  document.getElementById('constraintTotal').textContent = co.total;
+
+  // L7
+  document.getElementById('healthScore').textContent = sys.uni_metric ? `💚 ${sys.uni_metric.toFixed(2)}` : '--';
+  document.getElementById('systemStatus').textContent = sys.status === 'online' ? '✅ 在线' : '❌ 离线';
+  document.getElementById('activePaths').textContent = sys.active_paths;
+  document.getElementById('memoryLayers').textContent = sys.memory_layers;
+  
+  const hm = Math.min((sys.uni_metric || 0) * 50, 100);
+  document.getElementById('healthBar').style.width = hm + '%';
+
+  // τ
+  document.getElementById('tauBottleneck').textContent = tau.layer || '--';
+  document.getElementById('tauMs').textContent = tau.τ_avg_ms ? `${tau.τ_avg_ms}ms` : '--';
+  document.getElementById('tauBar').style.width = Math.min((tau.τ_avg_ms || 0) / 20, 100) + '%';
+
+  // Intake
+  document.getElementById('intakeTotal').textContent = intake.total;
+  document.getElementById('intakeRejected').textContent = intake.rejected;
+  document.getElementById('intakeBuffer').textContent = '已清空';
+
+  // Footer
+  document.getElementById('updateTime').textContent = new Date(d.time).toLocaleTimeString('zh-CN', {hour12:false});
+  document.getElementById('footerTime').textContent = new Date().toLocaleDateString('zh-CN');
+
+  // Layer distribution
+  const lgrid = document.getElementById('layerGrid');
+  lgrid.innerHTML = '';
+  for (const [layer, count] of Object.entries(tr.layers)) {
+    const pct = (count / tr.total * 100).toFixed(0);
+    lgrid.innerHTML += `
+      <div class="card">
+        <div class="label">${layer}</div>
+        <div class="value" style="font-size:16px;">${count}</div>
+        <div class="subval">${pct}% 宝藏</div>
+        <div class="bar"><div class="bar-fill" style="width:${pct}%;background:${layerColor(layer)};"></div></div>
+      </div>`;
+  }
+}
+
+function layerColor(l) {
+  const colors = {L7:'#818cf8', L6:'#22d3ee', L5:'#a78bfa', L4:'#f59e0b', L3:'#22c55e', L2:'#ef4444', L1:'#64748b', L0:'#475569'};
+  return colors[l] || '#64748b';
+}
+
+fetchData();
+setInterval(fetchData, 5000);
+</script>
+</body>
+</html>
