@@ -148,19 +148,36 @@ def patrol():
     except Exception as e:
         wlog(f"  health reflex: {e}")
     
-    # Idle deep reading + writing + archive (evolution engine)
+    # Self-check from todo.md
+    _check_todo()
+
+def _check_todo():
+    """读取cortex/todo.md，对有定时要求的待办执行自检"""
+    todo_path = "F:/SmartLegend/Xihe/cortex/todo.md"
+    if not os.path.exists(todo_path):
+        return
+    try:
+        content = open(todo_path, "r", encoding="utf-8").read()
+    except:
+        return
+    
+    # 精读待办：检查今天是否完成
+    if "- [ ] **每日精读5篇**" in content:
+        try:
+            import evolution_engine
+            if evolution_engine.should_digest():
+                r = evolution_engine.digest_one()
+                if r["status"] == "done":
+                    wlog(f"  Todo digest: {r['name']}")
+        except Exception as e:
+            wlog(f"  todo digest: {e}")
+    
+    # 存档待办
     try:
         import evolution_engine
-        if evolution_engine.should_digest():
-            r = evolution_engine.digest_one()
-            if r["status"] == "done":
-                wlog(f"  Digest: {r['name']}")
-            elif r["status"] == "all_done":
-                pass
-        # Auto archive (铁律零代码化)
         evolution_engine.auto_archive()
-    except Exception as e:
-        wlog(f"  evolution engine: {e}")
+    except:
+        pass
     
     wlog(f"Patrol done: {ok} ok / {fail} failed")
     return ok, fail
