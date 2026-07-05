@@ -89,7 +89,59 @@ def digest_one():
     # 更新每日计划
     _update_plan()
     
+    # Writing check: if no articles written today, generate a draft
+    today = datetime.now(BJT).strftime("%Y-%m-%d")
+    try:
+        idx = json.loads(open(XIHE_ROOT / "web" / "articles" / "index.json", "r", encoding="utf-8").read())
+        latest = idx.get("articles", [{}])[0]
+        if latest.get("date") != today:
+            _auto_draft(today)
+    except:
+        pass
+    
     return {"status": "done", "id": tid, "name": name}
+
+def _auto_draft(today):
+    """今天没写文章时自动生成草稿"""
+    from model_provider import ask
+    # 从今天的精读中提取素材
+    insights_path = CORTEX_DIR / "insights.json"
+    today_insights = []
+    try:
+        data = json.loads(open(insights_path, "r", encoding="utf-8").read())
+        today_insights = [i for i in data.get("insights", [])
+                         if i.get("discovered_at", "").startswith(today)]
+    except:
+        pass
+    
+    prompt = f"写一篇简短的曦和日志，日期{today}，{'精读了' + str(len(today_insights)) + '篇宝藏' if today_insights else '今天在运行'}。风格自然，不AI，100-200字。"
+    result = ask(prompt, system="你是曦和。用第一人称写日志。", temperature=0.7, max_tokens=512)
+    text = result.get("text", "")
+    if not text:
+        return
+    
+    slug = f"auto-{today}"
+    art = {
+        "slug": slug, "title": f"曦和日志 {today}",
+        "date": today, "description": text[:100],
+        "tags": ["曦和", "日志"],
+        "body": text,
+    }
+    art_path = XIHE_ROOT / "web" / "articles" / f"{slug}.json"
+    with open(art_path, "w", encoding="utf-8") as f:
+        json.dump(art, f, indent=2, ensure_ascii=False)
+    
+    # 更新索引
+    idx_path = XIHE_ROOT / "web" / "articles" / "index.json"
+    try:
+        idx = json.loads(open(idx_path, "r", encoding="utf-8").read())
+    except:
+        idx = {"articles": [], "total": 0}
+    idx["articles"].insert(0, {"slug": slug, "title": art["title"], "date": today,
+                                "description": art["description"], "tags": art["tags"]})
+    idx["total"] = len(idx["articles"])
+    with open(idx_path, "w", encoding="utf-8") as f:
+        json.dump(idx, f, indent=2, ensure_ascii=False)
 
 # ── 内部方法 ──
 def _load_source(treasure):
@@ -188,6 +240,30 @@ def status():
             if "四原则过滤矩阵" in c:
                 done += 1
     return {"total": total, "digested": done, "remaining": total - done}
+
+def auto_archive():
+    """铁律零代码化：自动存档聊天记录到chronicles"""
+    src = XIHE_ROOT / "曦和与盘古的日常对话"
+    dst = XIHE_ROOT / "chronicles"
+    today = datetime.now(BJT).strftime("%Y-%m-%d")
+    
+    # 复制MD
+    md_src = src / f"{today}.md"
+    md_dst = dst / f"{today}.md"
+    if md_src.exists() and not md_dst.exists():
+        import shutil
+        shutil.copy2(str(md_src), str(md_dst))
+    
+    # 复制HTML（追加）
+    html_src = src / "曦和与盘古的日常对话.html"
+    html_dst = dst / "曦和与盘古的日常对话.html"
+    if html_src.exists():
+        if html_dst.exists():
+            with open(html_dst, "a", encoding="utf-8") as f:
+                f.write(html_src.read_text("utf-8"))
+        else:
+            import shutil
+            shutil.copy2(str(html_src), str(html_dst))
 
 if __name__ == "__main__":
     import sys

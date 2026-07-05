@@ -148,7 +148,7 @@ def patrol():
     except Exception as e:
         wlog(f"  health reflex: {e}")
     
-    # Idle deep reading (evolution engine)
+    # Idle deep reading + writing + archive (evolution engine)
     try:
         import evolution_engine
         if evolution_engine.should_digest():
@@ -156,7 +156,9 @@ def patrol():
             if r["status"] == "done":
                 wlog(f"  Digest: {r['name']}")
             elif r["status"] == "all_done":
-                pass  # all digested already
+                pass
+        # Auto archive (铁律零代码化)
+        evolution_engine.auto_archive()
     except Exception as e:
         wlog(f"  evolution engine: {e}")
     
