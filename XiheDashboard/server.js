@@ -158,7 +158,17 @@ const server = http.createServer((req, res) => {
         uni_metric: 1.06,
       },
       time: new Date().toISOString(),
+      pending_nutrients: treasures.reduce((s,t) => s + (t.nutrient_count || 0), 0),
+      hebbian_events: treasures.reduce((s,t) => s + (t.hebbian_credit || 0), 0),
     }));
+    return;
+  }
+
+  // Treasure Index API
+  if (req.url === '/api/treasure-index') {
+    res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+    const idx = readJSON('treasure/index.json');
+    res.end(JSON.stringify({ treasures: idx?.treasures || [] }));
     return;
   }
 
