@@ -24,6 +24,14 @@ CORTEX_DIR = XIHE_ROOT / "cortex"
 LOG_DIR = XIHE_ROOT / "logs"
 BJT = timezone(timedelta(hours=8))
 
+# 元认知引用
+_META_AVAILABLE = False
+try:
+    from metacognitive import judge, self_report
+    _META_AVAILABLE = True
+except:
+    pass
+
 # ── 熔断阈值 ──
 FUSE_CONFIG = {
     "max_consecutive_failures": 3,    # 连续3次 → 触发熔断
@@ -164,6 +172,21 @@ def audit():
         "consecutive_failures": state.get("consecutive_failures", 0),
         "rate_limit": rate[1],
         "actions_last_minute": len(state.get("action_counts", [])),
+    }
+
+def meta_audit():
+    """审计元认知的拒绝历史"""
+    refusals = []
+    log_p = LOG_DIR / "meta-refusals.jsonl"
+    if log_p.exists():
+        with open(log_p) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    refusals.append(json.loads(line))
+    return {
+        "total_refusals": len(refusals),
+        "recent": refusals[-5:] if refusals else [],
     }
 
 if __name__ == "__main__":

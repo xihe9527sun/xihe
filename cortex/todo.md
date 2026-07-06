@@ -42,6 +42,7 @@
 ### Lβ · 自动学习层（长着）— 新建
 - [x] **evolution_engine 空闲精读** — v2已完成
 - [x] **feedback_cortex 反哺管道** — 已建成
+- [x] **17架构框架吸收** — arch-knowledge.json + arch_diagnose.py 自诊酶 ✅
 - [ ] **🔄 赫布权重替代复杂度评分** — 动态心跳的依据
 - [ ] **🔄 精读溯源反馈** — 高价值精读的领域获得优先选材
 
@@ -51,6 +52,7 @@
 - [ ] **⚡ 安全自检嵌入watchman** — 每5分钟自动跑测试用例
 
 ### 近期
+- [x] **Metacognitive元认知层** — capability-registry.json + metacognitive.py + 集成watchman ✅
 - [ ] **视觉管道架构设计** — vision pipeline
 - [ ] **Agent数据模型 Phase 2** — 推送标准化到现有模块
 

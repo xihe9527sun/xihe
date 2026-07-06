@@ -160,6 +160,9 @@ def patrol():
     # Cloudflare Tunnel自愈
     _ensure_tunnel()
     
+    # 架构自诊（每30分钟一次，避免过频）
+    _arch_check()
+    
     # 每日进化自检
     _log_evolution()
     
@@ -205,6 +208,9 @@ def _check_todo():
                 wlog(f"  Mode warning: external mode should block write operations")
     except Exception as e:
         pass
+    
+    # 元认知自检（每30分钟）
+    _meta_check()
 
 def _ensure_tunnel():
     """检查Cloudflare Tunnel是否在运行，挂了就重启"""
@@ -220,6 +226,39 @@ def _ensure_tunnel():
                    str(XIHE_ROOT/"cloudflared"/"config.yml"), "run"], str(XIHE_ROOT/"cloudflared"))
     except Exception as e:
         wlog(f"  tunnel check: {e}")
+
+# 架构自诊计数器
+_arch_check_counter = 0
+
+def _arch_check():
+    """架构自诊（每6次巡检=30分钟一次）"""
+    global _arch_check_counter
+    _arch_check_counter += 1
+    if _arch_check_counter % 6 != 0:
+        return
+    try:
+        import arch_diagnose
+        d = arch_diagnose.self_diagnose()
+        # 只记录关键变化：架构阶段变化 或 缺失数变化
+        wlog(f"  Arch: {d['stage']} | 已{d['maturity_score']} | 缺失{len(d['missing_archs'])}个 | 下一步:{d['next_evolution']['priority_name']}")
+    except Exception as e:
+        wlog(f"  arch check: {e}")
+
+# 元认知自检计数器
+_meta_check_counter = 0
+
+def _meta_check():
+    """元认知健康自检（每6次巡检=30分钟一次）"""
+    global _meta_check_counter
+    _meta_check_counter += 1
+    if _meta_check_counter % 6 != 0:
+        return
+    try:
+        import metacognitive
+        sr = metacognitive.self_report()
+        wlog(f"  Meta: {sr['total_capabilities']}项能力 | 平均置信{sr['avg_confidence']} | 高{sr['high_confidence']}/中{sr['medium_confidence']}/低{sr['low_confidence']}")
+    except Exception as e:
+        wlog(f"  meta check: {e}")
 
 def start_all():
     wlog("=" * 40)

@@ -96,12 +96,12 @@
 
   <div class="footer">
     🧬 XCRN · 曦和认知架构 · <span id="footerTime">加载中</span><br>
-    <span style="color:#1e293b;">🌐 <a href="https://www.aibounty.cn" target="_blank" style="color:#334155;text-decoration:none;">www.aibounty.cn</a> · <a id="dashLink" href="http://localhost:4328/" style="color:#334155;text-decoration:none;">仪表盘</a> · <a id="wfLink" href="http://localhost:4328/workflows/" style="color:#334155;text-decoration:none;">工作流</a></span>
+    <span style="color:#1e293b;">🌐 <a href="https://www.aibounty.cn" target="_blank" style="color:#334155;text-decoration:none;">www.aibounty.cn</a> · <a href="http://localhost:4328/" style="color:#334155;text-decoration:none;">仪表盘</a> · <a href="http://localhost:4328/workflows/" style="color:#334155;text-decoration:none;">工作流</a></span>
   </div>
 </div>
 
 <script>
-const API_HOST = `${window.location.hostname}:4328`;
+const API_HOST = window.location.hostname === 'localhost' ? 'localhost:4328' : window.location.hostname + ':4328';
 const API = `http://${API_HOST}/api/xcrn`;
 
 async function fetchData() {
@@ -177,15 +177,6 @@ function layerColor(l) {
 
 fetchData();
 setInterval(fetchData, 5000);
-
-// Fix footer links for dynamic hostname
-setTimeout(()=>{
-  const h=`http://${window.location.hostname}:4328/`;
-  const wl=document.getElementById('dashLink');
-  const wf=document.getElementById('wfLink');
-  if(wl) wl.href=h;
-  if(wf) wf.href=h+'workflows/';
-},100);
 </script>
 </body>
 </html>
