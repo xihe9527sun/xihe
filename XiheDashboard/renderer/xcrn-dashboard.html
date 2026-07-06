@@ -2,179 +2,385 @@
 <html lang="zh">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>XCRN · 曦和认知架构 · 实时版</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>XCRN · 曦和认知架构 · 实时仪表盘</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/icons-lucide@1.1.31/out/svg/sprite/favicon.bundle.css">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:#0b1120; color:#e2e8f0; font-family:'Inter','Segoe UI',system-ui; padding:24px; }
-  .container { max-width:860px; margin:0 auto; }
-  h1 { font-size:22px; font-weight:800; background:linear-gradient(135deg,#818cf8,#22d3ee); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:4px; }
-  .sub { color:#475569; font-size:11px; margin-bottom:20px; display:flex; justify-content:space-between; }
-  .grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
-  .card { background:#1e293b; border-radius:10px; padding:12px; border:1px solid #334155; }
-  .card .label { font-size:9px; color:#64748b; text-transform:uppercase; letter-spacing:1px; }
-  .card .value { font-size:22px; font-weight:700; margin:4px 0; }
-  .card .subval { font-size:10px; color:#475569; }
-  .bar { height:4px; background:#0f172a; border-radius:2px; margin-top:6px; overflow:hidden; }
-  .bar-fill { height:100%; border-radius:2px; transition:width 1s; }
-  .section { background:#1e293b; border-radius:10px; padding:14px; margin-bottom:10px; border:1px solid #334155; }
-  .sec-title { font-size:11px; font-weight:600; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
-  .row { display:flex; justify-content:space-between; font-size:11px; padding:4px 0; color:#94a3b8; }
-  .row .val { color:#e2e8f0; }
-  .live { color:#22c55e; font-size:9px; animation:pulse 2s infinite; }
-  @keyframes pulse { 0%{opacity:1} 50%{opacity:0.4} 100%{opacity:1} }
-  .footer { text-align:center; font-size:9px; color:#334155; padding:12px 0; }
-  .tag { display:inline-block; padding:1px 6px; border-radius:3px; font-size:9px; font-weight:600; }
-  .tag-l7 { background:#818cf820; color:#818cf8; }
-  .tag-l6 { background:#22d3ee20; color:#22d3ee; }
-  .tag-l5 { background:#a78bfa20; color:#a78bfa; }
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Inter','Segoe UI','Microsoft YaHei',sans-serif;
+  background:#0a0e1a;
+  color:#c9d1d9;
+  font-size:13px;
+  min-height:100vh;
+  padding:16px;
+}
+.container{max-width:1600px;margin:0 auto;}
+
+/* 全局标题 - 四色渐变 */
+.title-bar{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 20px;margin-bottom:14px;
+  background:linear-gradient(90deg,#0a0e1a 0%,#161b2e 50%,#0a0e1a 100%);
+  border:1px solid #21262d;border-radius:8px;
+}
+.title-bar h1{
+  font-size:16px;font-weight:700;letter-spacing:1px;
+  background:linear-gradient(90deg,#58a6ff,#bc8cff,#3fb950,#f0883e);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.title-bar .status{
+  font-size:11px;color:#3fb950;display:flex;align-items:center;gap:4px;
+}
+.title-bar .status::before{content:'';width:6px;height:6px;border-radius:50%;background:#3fb950;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+
+/* 顶部指标卡 */
+.top-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;}
+.stat-card{
+  background:#161b2e;border:1px solid #21262d;border-radius:8px;padding:12px 16px;
+  position:relative;overflow:hidden;transition:border-color 0.3s;
+}
+.stat-card:hover{border-color:#388bfd;}
+.stat-card .card-label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#8b949e;margin-bottom:6px;}
+.stat-card .card-value{font-size:28px;font-weight:800;line-height:1;}
+.stat-card .card-sub{font-size:10px;color:#484f58;margin-top:4px;}
+.stat-card::after{content:'';position:absolute;top:0;right:0;width:60px;height:60px;opacity:0.05;border-radius:0 8px 0 60px;}
+.stat-card:nth-child(1)::after{background:#58a6ff;}
+.stat-card:nth-child(2)::after{background:#bc8cff;}
+.stat-card:nth-child(3)::after{background:#3fb950;}
+.stat-card:nth-child(4)::after{background:#f0883e;}
+
+/* 色条 */
+.color-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:14px;}
+.color-bar-item{
+  height:4px;border-radius:2px;opacity:0.7;
+}
+
+/* 层级卡片 */
+.layer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:10px;margin-bottom:14px;}
+.layer-card{
+  background:#161b2e;border:1px solid #21262d;border-radius:8px;padding:12px 14px;
+  border-left:3px solid transparent;transition:all 0.3s;cursor:pointer;
+}
+.layer-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.3);}
+.layer-card .lc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.layer-card .lc-name{font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.layer-card .lc-badge{
+  font-size:9px;padding:2px 6px;border-radius:4px;font-weight:600;
+}
+.layer-card .lc-body{font-size:11px;color:#8b949e;line-height:1.8;}
+.layer-card .lc-row{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid #21262d;}
+.layer-card .lc-row:last-child{border-bottom:none;}
+.layer-card .lc-key{color:#6e7681;}
+.layer-card .lc-val{font-weight:600;}
+
+/* L颜色 */
+.lc-l0{border-left-color:#58a6ff;}.lc-l0 .lc-badge{background:#58a6ff22;color:#58a6ff;}
+.lc-l1{border-left-color:#bc8cff;}.lc-l1 .lc-badge{background:#bc8cff22;color:#bc8cff;}
+.lc-l2{border-left-color:#3fb950;}.lc-l2 .lc-badge{background:#3fb95022;color:#3fb950;}
+.lc-l3{border-left-color:#f0883e;}.lc-l3 .lc-badge{background:#f0883e22;color:#f0883e;}
+.lc-l4{border-left-color:#7ee787;}.lc-l4 .lc-badge{background:#7ee78722;color:#7ee787;}
+.lc-l5{border-left-color:#79c0ff;}.lc-l5 .lc-badge{background:#79c0ff22;color:#79c0ff;}
+.lc-l6{border-left-color:#ffa657;}.lc-l6 .lc-badge{background:#ffa65722;color:#ffa657;}
+.lc-l7{border-left-color:#d2a8ff;}.lc-l7 .lc-badge{background:#d2a8ff22;color:#d2a8ff;}
+
+/* 酶表 */
+.enzyme-table{
+  width:100%;border-collapse:collapse;margin-bottom:14px;
+}
+.enzyme-table th{
+  font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#6e7681;
+  padding:6px 10px;text-align:left;border-bottom:2px solid #21262d;
+}
+.enzyme-table td{
+  font-size:12px;padding:6px 10px;border-bottom:1px solid #161b2e;
+}
+.enzyme-table tr:hover{background:#161b2e55;}
+.bar-cell{min-width:100px;}
+.mini-bar{height:6px;background:#0d1117;border-radius:3px;overflow:hidden;width:80px;display:inline-block;vertical-align:middle;margin-left:8px;}
+.mini-bar-fill{height:100%;border-radius:3px;}
+
+/* 日志 */
+.log-area{
+  background:#0d1117;border:1px solid #21262d;border-radius:8px;
+  padding:12px;margin-bottom:14px;max-height:200px;overflow-y:auto;
+  font-family:'SF Mono','Fira Code',monospace;font-size:11px;line-height:1.8;
+}
+.log-area::-webkit-scrollbar{width:4px;}
+.log-area::-webkit-scrollbar-thumb{background:#21262d;border-radius:2px;}
+.log-line{display:flex;gap:8px;}
+.log-time{color:#6e7681;white-space:nowrap;}
+.log-level{font-weight:600;}
+.log-info{color:#58a6ff;}
+.log-warn{color:#f0883e;}
+.log-ok{color:#3fb950;}
+.log-err{color:#f85149;}
+
+/* 底部信息 */
+.footer{
+  text-align:center;padding:12px;color:#484f58;font-size:10px;
+  border-top:1px solid #21262d;
+}
+.footer a{color:#58a6ff;text-decoration:none;}
+
+/* 刷新指示 */
+.refresh-dot{
+  display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:#3fb950;animation:pulse 1.5s infinite;margin-right:4px;
+}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>🧬 XCRN · 曦和认知架构 · 实时版</h1>
-  <div class="sub">
-    <span id="liveIndicator" class="live">● 实时</span>
-    <span id="updateTime" style="color:#475569;">加载中...</span>
+  <!-- 标题栏 -->
+  <div class="title-bar">
+    <h1>XCRN · 曦和认知架构 · 实时仪表盘</h1>
+    <div class="status">LIVE</div>
+    <span id="footerTime" style="font-size:10px;color:#484f58;margin-left:auto;"></span>
   </div>
 
-  <div class="grid">
-    <div class="card">
-      <div class="label">❤️ 心跳</div>
-      <div class="value" id="heartbeatTotal">--</div>
-      <div class="subval" id="heartbeatAge">等待数据...</div>
+  <!-- 顶部统计 -->
+  <div class="top-stats">
+    <div class="stat-card">
+      <div class="card-label">🫀 心跳总量</div>
+      <div class="card-value" id="heartbeatTotal" style="color:#58a6ff;">-</div>
+      <div class="card-sub">延迟: <span id="heartbeatAge">-</span>s</div>
     </div>
-    <div class="card">
-      <div class="label">💰 宝藏</div>
-      <div class="value" id="treasureTotal">--</div>
-      <div class="subval" id="treasureLayers">...</div>
+    <div class="stat-card">
+      <div class="card-label">🔮 宝藏</div>
+      <div class="card-value" id="treasureTotal" style="color:#bc8cff;">-</div>
+      <div class="card-sub">已消化: <span id="digestedCount">-</span></div>
     </div>
-    <div class="card">
-      <div class="label">🧬 酶</div>
-      <div class="value" id="enzymeTotal">--</div>
-      <div class="subval" id="enzymeFused">4 对熔合</div>
+    <div class="stat-card">
+      <div class="card-label">🧪 酶</div>
+      <div class="card-value" id="enzymeTotal" style="color:#3fb950;">-</div>
+      <div class="card-sub">融合对: <span id="fusedPairs">-</span></div>
     </div>
-    <div class="card">
-      <div class="label">🔗 约束</div>
-      <div class="value" id="constraintTotal">--</div>
-      <div class="subval" id="constraintFeast">...</div>
+    <div class="stat-card">
+      <div class="card-label">⚖️ 约束</div>
+      <div class="card-value" id="constraintTotal" style="color:#f0883e;">-</div>
+      <div class="card-sub">每餐摄入: <span id="perFeast">-</span></div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="sec-title">L7 · 涌现层 · 核心体征</div>
-    <div class="row"><span>健康评分 💚</span><span class="val" id="healthScore">--</span></div>
-    <div class="row"><span>系统状态</span><span class="val" id="systemStatus">--</span></div>
-    <div class="row"><span>活跃路径</span><span class="val" id="activePaths">--</span></div>
-    <div class="row"><span>记忆层级数</span><span class="val" id="memoryLayers">--</span></div>
-    <div class="bar"><div class="bar-fill" id="healthBar" style="width:0%;background:linear-gradient(90deg,#22c55e,#22d3ee);"></div></div>
+  <!-- 色条 -->
+  <div class="color-bar">
+    <div class="color-bar-item" style="background:#58a6ff;"></div>
+    <div class="color-bar-item" style="background:#bc8cff;"></div>
+    <div class="color-bar-item" style="background:#3fb950;"></div>
+    <div class="color-bar-item" style="background:#f0883e;"></div>
+    <div class="color-bar-item" style="background:#d2a8ff;"></div>
   </div>
 
-  <div class="section">
-    <div class="sec-title">⏱️ τ 剖面 · 系统瓶颈</div>
-    <div class="row"><span>瓶颈层</span><span class="val" id="tauBottleneck">--</span></div>
-    <div class="row"><span>瓶颈延迟</span><span class="val" id="tauMs">--</span></div>
-    <div class="bar"><div class="bar-fill" id="tauBar" style="width:0%;background:linear-gradient(90deg,#f59e0b,#ef4444);"></div></div>
+  <!-- 七层架构卡片 -->
+  <div id="layerGrid" class="layer-grid"></div>
+
+  <!-- 酶活性表 -->
+  <div style="background:#161b2e;border:1px solid #21262d;border-radius:8px;padding:14px;margin-bottom:14px;">
+    <div style="font-size:12px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:6px;">
+      🧪 <span style="background:linear-gradient(90deg,#3fb950,#7ee787);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">酶活性排行</span>
+    </div>
+    <table class="enzyme-table">
+      <thead><tr><th>酶 ID</th><th>名称</th><th>次数</th><th>置信度</th><th>占比</th></tr></thead>
+      <tbody id="enzymeTableBody"></tbody>
+    </table>
   </div>
 
-  <div class="section">
-    <div class="sec-title">📋 入库流水线</div>
-    <div class="row"><span>累计入库</span><span class="val" id="intakeTotal">--</span></div>
-    <div class="row"><span>累计淘汰</span><span class="val" id="intakeRejected">--</span></div>
-    <div class="row"><span>缓冲池</span><span class="val" id="intakeBuffer">--</span></div>
+  <!-- τ剖面 -->
+  <div style="background:#161b2e;border:1px solid #21262d;border-radius:8px;padding:14px;margin-bottom:14px;">
+    <div style="font-size:12px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:6px;">
+      ⏱️ <span style="background:linear-gradient(90deg,#f0883e,#ffa657);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">τ 剖面 · 系统瓶颈</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+      <div>
+        <div style="font-size:10px;color:#6e7681;">瓶颈层</div>
+        <div style="font-size:18px;font-weight:700;color:#f0883e;" id="tauBottleneck">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">平均延迟</div>
+        <div style="font-size:18px;font-weight:700;color:#ffa657;" id="tauMs">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">延迟分布</div>
+        <div class="mini-bar" style="width:100%;height:8px;margin-top:4px;">
+          <div class="mini-bar-fill" id="tauBar" style="background:linear-gradient(90deg,#f0883e,#ffa657);width:0%;height:100%;border-radius:4px;transition:width 1s;"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
-    <span class="tag tag-l7">L7 涌现层 16</span>
-    <span class="tag tag-l6">L6 架构层 9</span>
-    <span class="tag tag-l5">L5 反思层 3</span>
+  <!-- 系统运行 -->
+  <div style="background:#161b2e;border:1px solid #21262d;border-radius:8px;padding:14px;margin-bottom:14px;">
+    <div style="font-size:12px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:6px;">
+      ⚡ <span style="background:linear-gradient(90deg,#79c0ff,#58a6ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">系统运行状态</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
+      <div>
+        <div style="font-size:10px;color:#6e7681;">健康评分</div>
+        <div style="font-size:20px;font-weight:800;color:#3fb950;" id="healthScore">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">活跃路径</div>
+        <div style="font-size:16px;font-weight:700;" id="activePaths">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">记忆层数</div>
+        <div style="font-size:16px;font-weight:700;" id="memoryLayers">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">系统状态</div>
+        <div style="font-size:16px;font-weight:700;" id="systemStatus">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">L7 涌现</div>
+        <div style="font-size:16px;font-weight:700;" id="l7Active">-</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:#6e7681;">L6 免疫</div>
+        <div style="font-size:16px;font-weight:700;" id="l6Active">-</div>
+      </div>
+    </div>
   </div>
 
-  <div class="grid" id="layerGrid">
-    <!-- filled by JS -->
-  </div>
+  <!-- 日志 -->
+  <div id="logArea" class="log-area" style="height:180px;"></div>
 
+  <!-- 底部 -->
   <div class="footer">
-    🧬 XCRN · 曦和认知架构 · <span id="footerTime">加载中</span><br>
-    <span style="color:#1e293b;">🌐 <a href="https://www.aibounty.cn" target="_blank" style="color:#334155;text-decoration:none;">www.aibounty.cn</a> · <a href="http://localhost:4328/" style="color:#334155;text-decoration:none;">仪表盘</a> · <a href="http://localhost:4328/workflows/" style="color:#334155;text-decoration:none;">工作流</a></span>
+    <span class="refresh-dot"></span> 实时刷新中 · 数据来源: <a id="apiEndpoint" href="#">API</a> · 更新时间: <span id="updateTime">-</span>
   </div>
 </div>
 
 <script>
-const API_HOST = window.location.hostname === 'localhost' ? 'localhost:4328' : window.location.hostname + ':4328';
-const API = `http://${API_HOST}/api/xcrn`;
+// 动态API地址 - Cloudflare兼容
+const API_PROTOCOL = window.location.protocol || 'http:';
+const API_HOST = window.location.hostname || 'localhost';
+const API_XCRN = `${API_PROTOCOL}//${API_HOST}:4328/api/xcrn`;
+const API_DATA = `${API_PROTOCOL}//${API_HOST}:4328/api/data`;
 
-async function fetchData() {
-  try {
-    const r = await fetch(API);
-    const d = await r.json();
-    updateUI(d);
-  } catch(e) {
-    document.getElementById('liveIndicator').textContent = '⚠️ 离线';
-    document.getElementById('liveIndicator').style.color = '#ef4444';
+const layerMeta = [
+  {id:'L0',name:'物理层',color:'#58a6ff',icon:'🔌',desc:'跨膜蛋白接口',size_key:'size_l0'},
+  {id:'L1',name:'超图核',color:'#bc8cff',icon:'🕸️',desc:'N维超面与赫布连接',size_key:'size_l1'},
+  {id:'L2',name:'代谢层',color:'#3fb950',icon:'🌊',desc:'UCB路由与退化回收',size_key:'size_l2'},
+  {id:'L3',name:'拓扑层',color:'#f0883e',icon:'🌐',desc:'小世界网络与模块检测',size_key:'size_l3'},
+  {id:'L4',name:'催化层',color:'#7ee787',icon:'🧪',desc:'酶级联与自催化集',size_key:'size_l4'},
+  {id:'L5',name:'自反层',color:'#79c0ff',icon:'🪞',desc:'元认知与边界感知',size_key:'size_l5'},
+  {id:'L6',name:'免疫层',color:'#ffa657',icon:'🛡️',desc:'先天+适应性免疫',size_key:'size_l6'},
+  {id:'L7',name:'涌现层',color:'#d2a8ff',icon:'🌟',desc:'皮亚杰引擎',size_key:'size_l7'},
+];
+
+// 层级健康状态
+const layerHealth = {};
+
+async function fetchData(){
+  try{
+    const res = await fetch(API_XCRN);
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const d = await res.json();
+    
+    // 更新顶部卡片
+    document.getElementById('heartbeatTotal').textContent = d.heartbeat?.alive || '-';
+    document.getElementById('heartbeatAge').textContent = d.heartbeat?.age_seconds ?? '-';
+    document.getElementById('treasureTotal').textContent = d.treasures?.total || '-';
+    document.getElementById('digestedCount').textContent = d.treasures?.with_papers || '-';
+    document.getElementById('enzymeTotal').textContent = d.enzymes?.total || '-';
+    document.getElementById('fusedPairs').textContent = d.enzymes?.fused_pairs || '-';
+    document.getElementById('constraintTotal').textContent = d.constraints?.total || '-';
+    document.getElementById('perFeast').textContent = d.constraints?.per_feast || '-';
+    
+    // τ剖面
+    document.getElementById('tauBottleneck').textContent = d.tau?.layer || '-';
+    document.getElementById('tauMs').textContent = d.tau?.['τ_avg_ms'] ? d.tau['τ_avg_ms'] + 'ms' : '-';
+    const delay = d.tau?.['τ_avg_ms'] || 0;
+    const maxDelay = 5000;
+    const pct = Math.min(100, (delay / maxDelay) * 100);
+    document.getElementById('tauBar').style.width = pct + '%';
+    
+    // 系统运行
+    document.getElementById('healthScore').textContent = d.system?.uni_metric || d.system?.healthScore || '-';
+    document.getElementById('activePaths').textContent = d.system?.active_paths || '-';
+    document.getElementById('memoryLayers').textContent = d.system?.memory_layers || '-';
+    document.getElementById('systemStatus').innerHTML = d.system?.status ? `<span style="color:${d.system.status==='online'?'#3fb950':'#f85149'}">${d.system.status}</span>` : '-';
+    document.getElementById('l7Active').innerHTML = d.system?.layer7_active ? '<span style="color:#3fb950">✅</span>' : '<span style="color:#484f58">⬜</span>';
+    document.getElementById('l6Active').innerHTML = d.system?.layer6_active ? '<span style="color:#3fb950">✅</span>' : '<span style="color:#484f58">⬜</span>';
+    
+    // 酶表
+    renderEnzymeTable(d.enzymes?.registry || []);
+    
+    // 日志
+    if(d.logs) renderLogs(d.logs.slice(-20));
+    
+    // 更新时间
+    document.getElementById('updateTime').textContent = new Date().toLocaleTimeString('zh-CN',{hour12:false});
+    document.getElementById('footerTime').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
+    document.getElementById('apiEndpoint').textContent = API_XCRN;
+    document.getElementById('apiEndpoint').href = API_XCRN;
+    
+  } catch(e){
+    console.error('Fetch error:', e);
+    document.getElementById('heartbeatTotal').textContent = 'ERR';
+    addLog('error', 'API获取失败: ' + e.message);
   }
 }
 
-function updateUI(d) {
-  const hb = d.heartbeat;
-  const tr = d.treasures;
-  const en = d.enzymes;
-  const co = d.constraints;
-  const sys = d.system;
-  const tau = d.tau;
-  const intake = d.intake;
-
-  // Grid
-  document.getElementById('heartbeatTotal').textContent = hb.total.toLocaleString();
-  document.getElementById('heartbeatAge').textContent = hb.age_seconds < 30 ? '刚刚更新' : `${hb.age_seconds}秒前`;
-  document.getElementById('treasureTotal').textContent = tr.total;
-  document.getElementById('treasureLayers').textContent = `${Object.keys(tr.layers).length}层`;
-  document.getElementById('enzymeTotal').textContent = en.total || en.registry;
-  document.getElementById('constraintTotal').textContent = co.total;
-
-  // L7
-  document.getElementById('healthScore').textContent = sys.uni_metric ? `💚 ${sys.uni_metric.toFixed(2)}` : '--';
-  document.getElementById('systemStatus').textContent = sys.status === 'online' ? '✅ 在线' : '❌ 离线';
-  document.getElementById('activePaths').textContent = sys.active_paths;
-  document.getElementById('memoryLayers').textContent = sys.memory_layers;
+function renderEnzymeTable(registry){
+  const tbody = document.getElementById('enzymeTableBody');
+  if(!registry || !registry.length){tbody.innerHTML='<tr><td colspan="5" style="color:#484f58;text-align:center;">暂无酶数据</td></tr>';return;}
   
-  const hm = Math.min((sys.uni_metric || 0) * 50, 100);
-  document.getElementById('healthBar').style.width = hm + '%';
-
-  // τ
-  document.getElementById('tauBottleneck').textContent = tau.layer || '--';
-  document.getElementById('tauMs').textContent = tau.τ_avg_ms ? `${tau.τ_avg_ms}ms` : '--';
-  document.getElementById('tauBar').style.width = Math.min((tau.τ_avg_ms || 0) / 20, 100) + '%';
-
-  // Intake
-  document.getElementById('intakeTotal').textContent = intake.total;
-  document.getElementById('intakeRejected').textContent = intake.rejected;
-  document.getElementById('intakeBuffer').textContent = '已清空';
-
-  // Footer
-  document.getElementById('updateTime').textContent = new Date(d.time).toLocaleTimeString('zh-CN', {hour12:false});
-  document.getElementById('footerTime').textContent = new Date().toLocaleDateString('zh-CN');
-
-  // Layer distribution
-  const lgrid = document.getElementById('layerGrid');
-  lgrid.innerHTML = '';
-  for (const [layer, count] of Object.entries(tr.layers)) {
-    const pct = (count / tr.total * 100).toFixed(0);
-    lgrid.innerHTML += `
-      <div class="card">
-        <div class="label">${layer}</div>
-        <div class="value" style="font-size:16px;">${count}</div>
-        <div class="subval">${pct}% 宝藏</div>
-        <div class="bar"><div class="bar-fill" style="width:${pct}%;background:${layerColor(layer)};"></div></div>
-      </div>`;
-  }
+  // 按计数排序
+  const sorted = [...registry].sort((a,b)=>(b.count||0)-(a.count||0));
+  
+  const maxCount = sorted[0]?.count || 1;
+  const colorMap = {E:'#3fb950',R:'#f0883e',T:'#58a6ff',M:'#bc8cff'};
+  
+  tbody.innerHTML = sorted.map(e=>{
+    const id = e.id || 'unknown';
+    const name = e.name || id;
+    const count = e.count || 0;
+    const conf = (e.avgConf || e.confidence || 0).toFixed(2);
+    const pct = ((count/maxCount)*100).toFixed(0);
+    const color = colorMap[id.charAt(0)] || '#58a6ff';
+    return `<tr>
+      <td style="font-weight:600;color:${color};">${id}</td>
+      <td>${name}</td>
+      <td style="font-weight:600;">${count}</td>
+      <td>${conf}</td>
+      <td class="bar-cell"><div class="mini-bar"><div class="mini-bar-fill" style="width:${pct}%;background:${color};"></div></div></td>
+    </tr>`;
+  }).join('');
 }
 
-function layerColor(l) {
-  const colors = {L7:'#818cf8', L6:'#22d3ee', L5:'#a78bfa', L4:'#f59e0b', L3:'#22c55e', L2:'#ef4444', L1:'#64748b', L0:'#475569'};
-  return colors[l] || '#64748b';
+function renderLogs(logs){
+  const logArea = document.getElementById('logArea');
+  if(!logs || !logs.length){logArea.innerHTML='<div style="color:#484f58;">暂无日志</div>';return;}
+  
+  logArea.innerHTML = logs.map(l=>{
+    const time = l.time ? new Date(l.time).toLocaleTimeString('zh-CN',{hour12:false}) : '-';
+    const level = (l.level||'info').toUpperCase();
+    const msg = l.message||'';
+    const levelClass = level==='OK'||level==='INFO'?'log-ok':level==='WARN'?'log-warn':level==='ERROR'?'log-err':'log-info';
+    return `<div class="log-line">
+      <span class="log-time">[${time}]</span>
+      <span class="log-level ${levelClass}">[${level}]</span>
+      <span>${msg}</span>
+    </div>`;
+  }).join('');
+  // 滚动到底部
+  logArea.scrollTop = logArea.scrollHeight;
 }
 
+function addLog(level, msg){
+  const logArea = document.getElementById('logArea');
+  const time = new Date().toLocaleTimeString('zh-CN',{hour12:false});
+  const levelClass = level==='error'?'log-err':level==='warn'?'log-warn':'log-info';
+  logArea.innerHTML += `<div class="log-line"><span class="log-time">[${time}]</span><span class="log-level ${levelClass}">[${level.toUpperCase()}]</span><span>${msg}</span></div>`;
+  if(logArea.children.length > 50) logArea.removeChild(logArea.firstChild);
+  logArea.scrollTop = logArea.scrollHeight;
+}
+
+// 初始加载
 fetchData();
 setInterval(fetchData, 5000);
 </script>
