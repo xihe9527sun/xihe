@@ -141,7 +141,8 @@ def patrol():
     else:
         fail += 1
         wlog("  cloudflared tunnel dead")
-        start_proc("cloudflared", [CLOUDFLARED, "tunnel", "run", "xihe"], str(DASH_DIR))
+        start_proc("cloudflared", [CLOUDFLARED, "tunnel", "--config",
+                   str(XIHE_ROOT/"cloudflared"/"config.yml"), "run"], str(XIHE_ROOT/"cloudflared"))
     
     # Health reflex
     try:
@@ -155,6 +156,9 @@ def patrol():
     
     # Self-check from todo.md
     _check_todo()
+    
+    # Cloudflare Tunnel自愈
+    _ensure_tunnel()
     
     # 每日进化自检
     _log_evolution()
@@ -202,6 +206,21 @@ def _check_todo():
     except Exception as e:
         pass
 
+def _ensure_tunnel():
+    """检查Cloudflare Tunnel是否在运行，挂了就重启"""
+    try:
+        # 检查cloudflared进程
+        r = subprocess.run(["tasklist", "/FI", "IMAGENAME eq cloudflared.exe", "/NH"],
+                          capture_output=True, text=True, timeout=5)
+        if "cloudflared" in r.stdout:
+            return  # 已在运行
+        # 不在运行，重启
+        wlog("  Tunnel down, restarting...")
+        start_proc("cloudflared", [CLOUDFLARED, "tunnel", "--config",
+                   str(XIHE_ROOT/"cloudflared"/"config.yml"), "run"], str(XIHE_ROOT/"cloudflared"))
+    except Exception as e:
+        wlog(f"  tunnel check: {e}")
+
 def start_all():
     wlog("=" * 40)
     wlog("StartAll: booting all services")
@@ -213,7 +232,8 @@ def start_all():
         ("dashboard", 4328, [NODE, str(DASH_DIR/"server.js")], str(DASH_DIR)),
     ]:
         start_proc(name, cmd, cwd)
-    start_proc("cloudflared", [CLOUDFLARED, "tunnel", "run", "xihe"], str(DASH_DIR))
+    start_proc("cloudflared", [CLOUDFLARED, "tunnel", "--config",
+               str(XIHE_ROOT/"cloudflared"/"config.yml"), "run"], str(XIHE_ROOT/"cloudflared"))
     wlog("StartAll done")
 
 def main():
