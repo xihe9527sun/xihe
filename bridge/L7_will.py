@@ -15,6 +15,15 @@ XIHE = Path("F:/SmartLegend/Xihe")
 CORTEX = XIHE / "cortex"
 BJT = timezone(timedelta(hours=8))
 
+# τ总线
+try:
+    sys.path.insert(0, str(XIHE / "bridge"))
+    from tau_bus_server import emit
+    TAU_BUS = True
+except Exception:
+    TAU_BUS = False
+    def emit(*a, **kw): return False
+
 def log(msg):
     print(f"  [{datetime.now(BJT).strftime('%H:%M')}] {msg}")
 
@@ -146,6 +155,14 @@ def decide(state, decisions):
     for d in decisions:
         log(f"  [{d['priority']}] {d['action']}")
     log(f"\n💬 {plan['affirmation']}")
+    
+    # τ事件：自我决定
+    if TAU_BUS:
+        emit("L7", "*", "will.daily_plan", {
+            "decisions": [{"p": d["priority"], "action": d["action"]} for d in decisions],
+            "affirmation": plan["affirmation"],
+            "count": len(decisions)
+        }, 2)
     
     return plan
 

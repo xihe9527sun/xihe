@@ -164,6 +164,16 @@ class MetabolicActor:
             total_req += 1
             hits_applied += 1
 
+        # 🆕 τ事件：路径选择
+        if hot_taken and self.epoch % 100 == 0:  # 每100跳发一次
+            try:
+                from tau_bus_server import emit
+                emit("L2", "L3", "route.path_selected", {
+                    "paths": hot_taken[:5], "epoch": self.epoch,
+                    "total_paths": len(traces), "hits": hits_applied
+                }, 2)
+            except: pass
+
         # 🆕 记录命中轨迹(供预测误差信用系统使用)
         for eid, t in sorted_traces[:TOP_HITS_PER_BEAT]:
             if self.credit_system:

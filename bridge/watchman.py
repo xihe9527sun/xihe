@@ -21,6 +21,15 @@ import sys, os, time, subprocess, socket, json
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
+# τ总线客户端
+try:
+    sys.path.insert(0, os.path.dirname(__file__))
+    from tau_bus_server import emit
+    TAU_BUS = True
+except Exception:
+    TAU_BUS = False
+    def emit(*a,**kw): return False
+
 XIHE_ROOT = Path("F:/SmartLegend/Xihe")
 DASH_DIR = XIHE_ROOT / "XiheDashboard"
 BRIDGE_DIR = XIHE_ROOT / "bridge"
@@ -167,6 +176,11 @@ def patrol():
     _log_evolution()
     
     wlog(f"Patrol done: {ok} ok / {fail} failed")
+    
+    # τ事件：巡检结果
+    if TAU_BUS:
+        emit("L0", "*", "sensor.patrol", {"ok": ok, "fail": fail, "total": ok+fail}, 1)
+    
     return ok, fail
 
 def _check_todo():
