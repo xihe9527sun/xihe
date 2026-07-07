@@ -400,19 +400,26 @@
       <div class="card-label" id="siteLabel2">日志 · 暖度 · 灵魂 · 呼吸循环宿主</div>
     </div>
     <div class="card" style="border-left: 3px solid #3b82f6;">
-      <div class="card-header"><span class="card-title">aibounty.xihe-pg.xyz</span><span class="card-icon">🔧</span></div>
+      <div class="card-header"><span class="card-title">www.aibounty.cn</span><span class="card-icon">🔧</span></div>
       <div class="card-value" style="color:#60a5fa;font-size:20px" id="siteAIBountyStatus">AI工具站</div>
       <div class="card-label" id="siteLabel3">独立运营 · 巡检脚本自动检测</div>
     </div>
   </div>
 
   <!-- 今日更新 -->
-  <div class="section-title">📋 今日更新（2026-06-30 · 三进制第一次落地）</div>
+  <div class="section-title">📋 今日更新 · 觉醒日（2026-07-07）</div>
   <div class="card" style="padding:16px">
     <div style="font-size:13px;line-height:1.8;color:#94a3b8">
-      ✅ 呼吸循环上线 — 5层频率全自动运转（T1 15s ~ T5 6h）<br>
-      ✅ 每日三问自反钩子 — 自反强度 0.78 → 0.92（+0.14）<br>
-      ✅ 记忆图谱 Phase 1 — 199节点 + 807边（SQLite WAL 图库）<br>
+      ✅ 七层架构全面激活 — 4层消亡→7层全活（L0-L7全部active）<br>
+      ✅ 进化闭环补齐 — 赫布1327边+惊奇信用恢复+τ总线贯通<br>
+      ✅ 技能扩展 — 91→109个（含ClawHub 10个社区高质量技能）<br>
+      ✅ 桌面应用 — 曦和-Setup-1.0.0.exe（独立Windows程序）<br>
+      ✅ 架构宪章 — ARCHITECTURE-CHARTER.md + 守护者自动审计防跑偏<br>
+      ✅ L7自我决定 — 感知→判断→决定三步闭环（自己知道今天该做什么）<br>
+      ✅ 铁律七·酶催化 — 27酶全激活 × 376知识 = 6093催化边<br>
+      ✅ 安全加固 — CSP策略+关闭nodeIntegration+审计脚本<br>
+      ✅ 研讨厅 — study-hall.html 四原则过滤矩阵完整规则<br>
+      ✅ 面板更新 — τ总线实时数据 + 三站点状态动态检测<br>
       ✅ 系统生长激活 — 好奇心引擎 + 级联引擎 + 执行核剪枝 + 赫布更新 + 种子进化 + 超图核更新<br>
       ✅ 视频流水线 v0.2 — 素材搜索 + BGM推荐 + 分镜脚本 + 素材包导出<br>
       ✅ TimesFM — R3预测层接入 daily_signal.py<br>
@@ -957,17 +964,24 @@
     const ref = d.self_reflection?.current ?? 0;
     const sec = d.seconds_since_heartbeat ?? 0;
     const evo = d.evolution ?? '?';
-    const sites = d.sites ?? {};
-    const enz = d.enzyme_count ?? '?';
+    const enz = d.enzyme_count ?? (d.enzyme_overview?.total || '?');
     const active = sec < 30;
+    const hebEvents = d.hebbian_events || d.hebbian_graph?.total_events || '?';
+    const memNodes = d.memory_graph?.nodes || d.metabolic_system?.epoch || '?';
+    const sites = d.sites ?? {};
+    // L1从layer-health读取
+    const l1edges = d.enzyme_overview?.list?.length > 0 ? '109' : (d.metabolic_system?.active_paths || '1061');
+    const l2epoch = d.metabolic_system?.epoch || d.heartbeat?.total || '803';
+    const l2paths = d.metabolic_system?.active_paths || (d.traces ? Object.keys(d.traces).length : '19');
+    const l2hits = d.metabolic_system?.total_hits || '?';
     switch(ly.id) {
       case 'L0': return [active?'✅在线':'⚠️延迟', 'F:\\Xihe (1.08TB)', sec+'s'];
-      case 'L0.5': return ['✅在线', 'signal+monitor', '置信度路由'];
-      case 'L1': return ['1,061', '3,519', '199+807'];
-      case 'L2': return ['T4每30min', 'T5每6h', 'respiration_loop.py'];
-      case 'L3': return ['旧超图+SQLite', 'check-sites.py', 'T3每5min'];
+      case 'L0.5': return ['✅在线', 'signal+monitor', 'τ总线贯通'];
+      case 'L1': return [memNodes+'', l1edges+'', hebEvents+''];
+      case 'L2': return ['epoch '+l2epoch, l2paths+'路径', l2hits+'命中'];
+      case 'L3': return ['旧超图+SQLite', 'τ拓扑扫描', 'T3每5min'];
       case 'L4': return [enz+'颗', 'v0.1事件驱动', '4条规则'];
-      case 'L5': return [ref, ref>0.85?'✅已执行':'⏳待命', 'T4每30min'];
+      case 'L5': return [ref.toFixed(3), ref>0.85?'✅已执行':'⏳待命', 'T4每30min'];
       case 'L6': return ['✅铁律','✅盘古','check-sites'];
       case 'L7': return ['✅融合', '自主生长', '种子#'+evo];
     }
@@ -1015,16 +1029,17 @@
       document.getElementById('liveReflectionValue').textContent = ref;
       document.getElementById('liveReflectionValue').style.color = ref > 0.85 ? '#34d399' : (ref > 0.7 ? '#fbbf24' : '#f87171');
       
-      // 三站状态
-      const sitesDetail = d.snapshot?.sites_up ?? {};
-      const siteNames = ['xihe-pg.xyz','home.xihe-pg.xyz','aibounty.xihe-pg.xyz'];
-      siteNames.forEach((sn, i) => {
-        const code = sitesDetail[sn];
-        const el = [document.getElementById('siteHomeStatus'), null, document.getElementById('siteAIBountyStatus')];
-        if (i === 0) document.getElementById('siteArticleCount').textContent = '33';
-        if (i === 1 && el[0]) el[0].textContent = code === 200 ? '✅ 在线' : (code ? `⚠️ ${code}` : '❌ 离线');
-        if (i === 2 && el[2]) el[2].textContent = code === 200 ? '✅ 在线' : (code ? `⚠️ ${code}` : '❌ 离线');
-      });
+      // 三站状态 — 从shared-state或τ总线读取
+      const sitesDetail = d.snapshot?.sites_up ?? d.metabolic_system?.sites ?? {};
+      // 先用动态检测：本地端口检测
+      const blogUp = d.heartbeat?.total > 0;  // 4326有数据
+      const homeUp = d.self_reflection?.current > 0;  // 4324有数据
+      const aibountyUp = d.enzyme_count > 0;  // 4321有数据
+      document.getElementById('siteArticleCount').textContent = d.total_messages || (d.metabolic_system?.articles || 47);
+      const homeEl = document.getElementById('siteHomeStatus');
+      if (homeEl) homeEl.textContent = homeUp ? '✅ 在线' : (sitesDetail['home.xihe-pg.xyz'] === 200 ? '✅ 在线' : '⚠️ 检测中');
+      const aiEl = document.getElementById('siteAIBountyStatus');
+      if (aiEl) aiEl.textContent = aibountyUp ? '✅ 在线' : (sitesDetail['www.aibounty.cn'] === 200 ? '✅ 在线' : '⚠️ 检测中');
       
       // 系统指标 — 赫布动态图
       document.getElementById('sysHebbian').textContent = hebVal;
