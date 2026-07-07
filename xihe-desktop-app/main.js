@@ -13,7 +13,7 @@ const XIHE_DIR = 'F:\\SmartLegend\\Xihe';
 const BRIDGE_DIR = path.join(XIHE_DIR, 'bridge');
 const CORTEX_DIR = path.join(XIHE_DIR, 'cortex');
 const LOG_DIR = path.join(XIHE_DIR, 'logs');
-const ICON_PATH = path.join(__dirname, 'icon.svg');
+const ICON_PATH = path.join(__dirname, 'icon-final.svg');
 
 // ─── ═══════════════════════════════════════ ═───
 // 自动化调度器 — 钱学森"总体设计部"工程实现

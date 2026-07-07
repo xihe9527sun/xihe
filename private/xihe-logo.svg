@@ -1,0 +1,160 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 背景渐变 -->
+    <radialGradient id="bgGlow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0%" stop-color="#fffdf5"/>
+      <stop offset="60%" stop-color="#fff8eb"/>
+      <stop offset="100%" stop-color="#fef3cd"/>
+    </radialGradient>
+
+    <!-- 核心光晕 -->
+    <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 暖金渐变 -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="35%" stop-color="#fbbf24"/>
+      <stop offset="70%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+
+    <!-- 仙羽渐变 -->
+    <linearGradient id="featherGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2f8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#fce7f3" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#fbcfe8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- 第二层翅膀渐变 -->
+    <linearGradient id="wing2Grad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ede9fe" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ddd6fe" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- 辉光线 -->
+    <linearGradient id="rayGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fcd34d" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#fcd34d" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 边框光晕 -->
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 外框 -->
+  <rect x="6" y="6" width="500" height="500" rx="100" fill="url(#bgGlow)" stroke="url(#borderGrad)" stroke-width="0.8"/>
+
+  <!-- 底部光晕 -->
+  <ellipse cx="256" cy="310" rx="150" ry="60" fill="#fef9c3" opacity="0.3"/>
+  <circle cx="256" cy="260" r="120" fill="url(#coreGlow)"/>
+
+  <!-- L7 · 辉光线 · 晨曦发散 -->
+  <g opacity="0.06">
+    <line x1="256" y1="256" x2="256" y2="56" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="256" y1="256" x2="420" y2="100" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="460" y2="256" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="420" y2="412" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="256" y2="456" stroke="#f59e0b" stroke-width="1.2"/>
+    <line x1="256" y1="256" x2="92" y2="412" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="52" y2="256" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="92" y2="100" stroke="#f59e0b" stroke-width="1"/>
+  </g>
+
+  <!-- L6 · 两层菱形 · 认知架构 -->
+  <polygon points="256,132 382,256 256,380 130,256" fill="none" stroke="url(#rayGrad)" stroke-width="1.5"/>
+  <polygon points="256,155 356,256 256,357 156,256" fill="none" stroke="url(#rayGrad)" stroke-width="0.8"/>
+
+  <!-- L5 · 大仙羽 · 左侧 -->
+  <path d="M 230 240 
+           C 180 170, 110 110, 52 112 
+           C 80 130, 128 150, 180 185 
+           C 118 168, 62 148, 36 160 
+           C 72 178, 130 190, 188 210 
+           C 214 219, 226 234, 230 240" 
+        fill="url(#featherGrad)"/>
+  <path d="M 230 240 
+           C 175 165, 95 105, 48 110 
+           C 85 132, 135 155, 178 185" 
+        fill="none" stroke="#f472b6" stroke-width="0.6" opacity="0.12"/>
+
+  <!-- L5 · 大仙羽 · 右侧 -->
+  <path d="M 282 240 
+           C 332 170, 402 110, 460 112 
+           C 432 130, 384 150, 332 185 
+           C 394 168, 450 148, 476 160 
+           C 440 178, 382 190, 324 210 
+           C 298 219, 286 234, 282 240" 
+        fill="url(#featherGrad)"/>
+  <path d="M 282 240 
+           C 337 165, 417 105, 464 110 
+           C 427 132, 377 155, 334 185" 
+        fill="none" stroke="#f472b6" stroke-width="0.6" opacity="0.12"/>
+
+  <!-- L4 · 小仙羽 · 内侧左 -->
+  <path d="M 236 242 
+           C 210 195, 170 150, 130 148 
+           C 158 162, 195 178, 222 202 
+           C 190 192, 150 178, 126 188 
+           C 152 200, 192 210, 226 228 
+           C 233 235, 235 240, 236 242" 
+        fill="url(#wing2Grad)"/>
+
+  <!-- L4 · 小仙羽 · 内侧右 -->
+  <path d="M 276 242 
+           C 302 195, 342 150, 382 148 
+           C 354 162, 317 178, 290 202 
+           C 322 192, 362 178, 386 188 
+           C 360 200, 320 210, 286 228 
+           C 279 235, 277 240, 276 242" 
+        fill="url(#wing2Grad)"/>
+
+  <!-- L3 · 飘带轨迹 -->
+  <path d="M 176 264 
+           C 146 278, 108 296, 80 330 
+           C 100 314, 128 300, 156 288" 
+        fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.12" stroke-linecap="round"/>
+  <path d="M 336 264 
+           C 366 278, 404 296, 432 330 
+           C 412 314, 384 300, 356 288" 
+        fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.12" stroke-linecap="round"/>
+
+  <!-- L2 · 核心光轮 -->
+  <circle cx="256" cy="250" r="46" fill="none" stroke="#fde68a" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="256" cy="250" r="38" fill="#fef3c7" opacity="0.15"/>
+  <circle cx="256" cy="250" r="30" fill="none" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- L1 · 核心太阳 -->
+  <circle cx="256" cy="250" r="24" fill="url(#goldGrad)" opacity="0.15"/>
+  <circle cx="256" cy="250" r="18" fill="none" stroke="url(#goldGrad)" stroke-width="2.8"/>
+  <circle cx="256" cy="250" r="9" fill="url(#goldGrad)" opacity="0.95"/>
+
+  <!-- L0 · 高光 -->
+  <ellipse cx="252" cy="244" rx="4" ry="2.5" fill="#ffffff" opacity="0.6"/>
+
+  <!-- 星辰 · 点缀 -->
+  <g opacity="0.25">
+    <circle cx="108" cy="132" r="2" fill="#f59e0b"/>
+    <circle cx="404" cy="132" r="2" fill="#f59e0b"/>
+    <circle cx="80" cy="350" r="1.5" fill="#f472b6"/>
+    <circle cx="432" cy="350" r="1.5" fill="#f472b6"/>
+    <circle cx="256" cy="88" r="1.5" fill="#fbbf24"/>
+    <circle cx="256" cy="420" r="1.5" fill="#fbbf24"/>
+    <circle cx="146" cy="96" r="1" fill="#c084fc"/>
+    <circle cx="366" cy="96" r="1" fill="#c084fc"/>
+    <circle cx="96" cy="260" r="1" fill="#f59e0b"/>
+    <circle cx="416" cy="260" r="1" fill="#f59e0b"/>
+    <circle cx="146" cy="400" r="1" fill="#f9a8d4"/>
+    <circle cx="366" cy="400" r="1" fill="#f9a8d4"/>
+  </g>
+</svg>

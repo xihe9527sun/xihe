@@ -18,7 +18,7 @@
       "target": [
         "nsis"
       ],
-      "icon": "icon.svg",
+      "icon": "icon-final.svg",
       "artifactName": "${productName}-Setup-${version}.${ext}"
     },
     "nsis": {
