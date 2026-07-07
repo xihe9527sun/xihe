@@ -1,0 +1,33 @@
+{
+  "id": "block:enzyme_e23",
+  "name": "探索加速酶",
+  "type": "enzyme",
+  "inputs": [
+    {
+      "name": "input",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "energy",
+      "type": "number",
+      "default": 50
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    },
+    {
+      "name": "catalytic_power",
+      "type": "number"
+    }
+  ],
+  "config": {
+    "enzyme_id": "E23",
+    "parent": "R4",
+    "power": 0.7804412690035927,
+    "description": "好奇心达到临界点后加速"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "block:enzyme_e5",
+  "name": "RankOrderN酶",
+  "type": "enzyme",
+  "inputs": [
+    {
+      "name": "input",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "energy",
+      "type": "number",
+      "default": 50
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    },
+    {
+      "name": "catalytic_power",
+      "type": "number"
+    }
+  ],
+  "config": {
+    "enzyme_id": "E5",
+    "parent": "knowledge_catalysis",
+    "power": 60,
+    "description": "对曦和最有价值的启示是：\n曦和平台可借鉴稀疏分布式存储技术减少冗余信息存储，提高系统性能。"
+  }
+}

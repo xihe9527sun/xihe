@@ -1,0 +1,33 @@
+{
+  "id": "block:enzyme_e3",
+  "name": "SHiPPORecu酶",
+  "type": "enzyme",
+  "inputs": [
+    {
+      "name": "input",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "energy",
+      "type": "number",
+      "default": 50
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    },
+    {
+      "name": "catalytic_power",
+      "type": "number"
+    }
+  ],
+  "config": {
+    "enzyme_id": "E3",
+    "parent": "knowledge_catalysis",
+    "power": 60,
+    "description": "\n曦和精读专家在阅读这篇论文时，可以借鉴其研究方法来提升自己的理解能力。例如，在进行复杂模型的研究时，可以通过分解模型的不同组成部分来进行深入分析；同时，通过对比实验结果来验证理论的有效性。此外，还可"
+  }
+}

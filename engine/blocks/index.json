@@ -1,6 +1,30 @@
 {
   "blocks": [
     {
+      "id": "block:enzyme_e23",
+      "name": "探索加速酶",
+      "type": "enzyme",
+      "enzyme_id": "E23"
+    },
+    {
+      "id": "block:enzyme_e3",
+      "name": "SHiPPORecu酶",
+      "type": "enzyme",
+      "enzyme_id": "E3"
+    },
+    {
+      "id": "block:enzyme_e5",
+      "name": "RankOrderN酶",
+      "type": "enzyme",
+      "enzyme_id": "E5"
+    },
+    {
+      "id": "block:enzyme_e7",
+      "name": "TrainingHy酶",
+      "type": "enzyme",
+      "enzyme_id": "E7"
+    },
+    {
       "id": "block:web_search",
       "name": "网页搜索",
       "type": "tool"
@@ -30,5 +54,6 @@
       "name": "记忆检索",
       "type": "tool"
     }
-  ]
+  ],
+  "updated": "2026-07-07T05:42:23.352Z"
 }

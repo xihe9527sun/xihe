@@ -1,0 +1,33 @@
+{
+  "id": "block:enzyme_e7",
+  "name": "TrainingHy酶",
+  "type": "enzyme",
+  "inputs": [
+    {
+      "name": "input",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "energy",
+      "type": "number",
+      "default": 50
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    },
+    {
+      "name": "catalytic_power",
+      "type": "number"
+    }
+  ],
+  "config": {
+    "enzyme_id": "E7",
+    "parent": "knowledge_catalysis",
+    "power": 60,
+    "description": "\n曦和精读专家在阅读此类文章时可以借鉴上述四个原则来提高自己的阅读效率和理解深度。首先，“去伪存真”可以帮助读者快速识别出文章中的核心论点，避免被无关紧要的信息所干扰；其次，“由表及里”则鼓励读者从表"
+  }
+}
