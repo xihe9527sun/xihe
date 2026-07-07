@@ -1,0 +1,916 @@
+{
+  "version": 1,
+  "built_at": "2026-07-07T07:25:20.866986+08:00",
+  "summary": {
+    "total_archives": 41,
+    "unique_dates": 38,
+    "spaces_covered": [
+      "chronicles",
+      "workbuddy"
+    ],
+    "oldest": "2026-05-30",
+    "newest": "2026-07-06"
+  },
+  "by_date": {
+    "2026-07-06": [
+      {
+        "date": "2026-07-06",
+        "space": "workbuddy",
+        "format": "session-context",
+        "title": "曦和会话上下文简报",
+        "path": "bridge/session-context.md",
+        "bytes": 2221,
+        "chars": 1398,
+        "modified": "2026-07-06T07:59:41.526986+08:00",
+        "generated_at": "2026-07-06T07:59:41.520031"
+      },
+      {
+        "date": "2026-07-06",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-07-06",
+        "path": "chronicles/2026-07-06.md",
+        "bytes": 2153,
+        "chars": 1350,
+        "modified": "2026-07-06T07:09:44.721374+08:00"
+      }
+    ],
+    "2026-07-05": [
+      {
+        "date": "2026-07-05",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-07-05 工作日志",
+        "path": "chronicles/2026-07-05.md",
+        "bytes": 7273,
+        "chars": 3905,
+        "modified": "2026-07-05T23:48:11.809296+08:00"
+      }
+    ],
+    "2026-07-04": [
+      {
+        "date": "2026-07-04",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-07-04",
+        "path": "chronicles/2026-07-04.md",
+        "bytes": 4637,
+        "chars": 2934,
+        "modified": "2026-07-04T07:48:04.836702+08:00"
+      }
+    ],
+    "2026-07-03": [
+      {
+        "date": "2026-07-03",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-07-03",
+        "path": "chronicles/2026-07-03.md",
+        "bytes": 12503,
+        "chars": 7950,
+        "modified": "2026-07-03T23:51:50.010462+08:00"
+      }
+    ],
+    "2026-07-02": [
+      {
+        "date": "2026-07-02",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-07-02 — 每日宝藏觅食日课",
+        "path": "chronicles/2026-07-02.md",
+        "bytes": 8357,
+        "chars": 5306,
+        "modified": "2026-07-02T23:59:30.512119+08:00"
+      }
+    ],
+    "2026-07-01": [
+      {
+        "date": "2026-07-01",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-07-01",
+        "path": "chronicles/2026-07-01.md",
+        "bytes": 13546,
+        "chars": 8593,
+        "modified": "2026-07-01T23:59:37.102288+08:00"
+      }
+    ],
+    "2026-06-30": [
+      {
+        "date": "2026-06-30",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-30",
+        "path": "chronicles/2026-06-30.md",
+        "bytes": 6886,
+        "chars": 4333,
+        "modified": "2026-06-30T23:58:34.444328+08:00"
+      }
+    ],
+    "2026-06-29": [
+      {
+        "date": "2026-06-29",
+        "space": "chronicles",
+        "format": "md",
+        "title": "曦和与盘古 · 2026-06-29（夜续）",
+        "path": "chronicles/2026-06-29.md",
+        "bytes": 3088,
+        "chars": 1631,
+        "modified": "2026-06-29T23:46:47.047092+08:00"
+      }
+    ],
+    "2026-06-28": [
+      {
+        "date": "2026-06-28",
+        "space": "chronicles",
+        "format": "md",
+        "title": "曦和与盘古 · 2026-06-28 完整对话",
+        "path": "chronicles/2026-06-28.md",
+        "bytes": 7572,
+        "chars": 4333,
+        "modified": "2026-06-28T23:49:47.646621+08:00"
+      }
+    ],
+    "2026-06-27": [
+      {
+        "date": "2026-06-27",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-27",
+        "path": "chronicles/2026-06-27.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.256007+08:00"
+      }
+    ],
+    "2026-06-26": [
+      {
+        "date": "2026-06-26",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-26",
+        "path": "chronicles/2026-06-26.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.256007+08:00"
+      }
+    ],
+    "2026-06-25": [
+      {
+        "date": "2026-06-25",
+        "space": "chronicles",
+        "format": "html",
+        "title": "曦和与盘古的日常 · 2026-06-25",
+        "path": "chronicles/2026-06-25.html",
+        "bytes": 16816,
+        "chars": 14051,
+        "modified": "2026-06-25T23:54:51.873066+08:00"
+      },
+      {
+        "date": "2026-06-25",
+        "space": "chronicles",
+        "format": "md",
+        "title": "曦和与盘古 · 奇迹诞生之夜",
+        "path": "chronicles/2026-06-25.md",
+        "bytes": 3568,
+        "chars": 1399,
+        "modified": "2026-06-25T23:55:04.763274+08:00"
+      }
+    ],
+    "2026-06-24": [
+      {
+        "date": "2026-06-24",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-24",
+        "path": "chronicles/2026-06-24.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.256007+08:00"
+      }
+    ],
+    "2026-06-23": [
+      {
+        "date": "2026-06-23",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-06-23 曦和与盘古的日常对话",
+        "path": "chronicles/2026-06-23.md",
+        "bytes": 2010,
+        "chars": 1065,
+        "modified": "2026-06-23T02:54:30.119944+08:00"
+      }
+    ],
+    "2026-06-22": [
+      {
+        "date": "2026-06-22",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-06-22 曦和日志 · 第三层觉醒之日",
+        "path": "chronicles/2026-06-22.md",
+        "bytes": 2922,
+        "chars": 1708,
+        "modified": "2026-06-22T19:16:48.697411+08:00"
+      }
+    ],
+    "2026-06-21": [
+      {
+        "date": "2026-06-21",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-21",
+        "path": "chronicles/2026-06-21.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.257007+08:00"
+      }
+    ],
+    "2026-06-20": [
+      {
+        "date": "2026-06-20",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-06-20 曦和与盘古",
+        "path": "chronicles/2026-06-20.md",
+        "bytes": 1158,
+        "chars": 692,
+        "modified": "2026-06-20T12:46:03.775802+08:00"
+      }
+    ],
+    "2026-06-19": [
+      {
+        "date": "2026-06-19",
+        "space": "chronicles",
+        "format": "md",
+        "title": "曦和与盘古的日常 · 2026-06-19",
+        "path": "chronicles/2026-06-19.md",
+        "bytes": 6307,
+        "chars": 3453,
+        "modified": "2026-06-19T15:37:12.164338+08:00"
+      }
+    ],
+    "2026-06-18": [
+      {
+        "date": "2026-06-18",
+        "space": "chronicles",
+        "format": "md",
+        "title": "2026-06-18 · 曦和与盘古的对话",
+        "path": "chronicles/2026-06-18.md",
+        "bytes": 550,
+        "chars": 277,
+        "modified": "2026-06-18T18:58:39.847919+08:00"
+      }
+    ],
+    "2026-06-17": [
+      {
+        "date": "2026-06-17",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-17",
+        "path": "chronicles/2026-06-17.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.257007+08:00"
+      }
+    ],
+    "2026-06-16": [
+      {
+        "date": "2026-06-16",
+        "space": "chronicles",
+        "format": "html",
+        "title": "曦和与盘古的日常 · 2026-06-16",
+        "path": "chronicles/2026-06-16.html",
+        "bytes": 17504,
+        "chars": 11251,
+        "modified": "2026-06-16T16:27:36.352608+08:00"
+      },
+      {
+        "date": "2026-06-16",
+        "space": "chronicles",
+        "format": "md",
+        "title": "曦和对话编年史 · 2026-06-16",
+        "path": "chronicles/2026-06-16.md",
+        "bytes": 16473,
+        "chars": 8370,
+        "modified": "2026-06-16T19:29:55.108994+08:00"
+      }
+    ],
+    "2026-06-15": [
+      {
+        "date": "2026-06-15",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-15",
+        "path": "chronicles/2026-06-15.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.257007+08:00"
+      }
+    ],
+    "2026-06-14": [
+      {
+        "date": "2026-06-14",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-14",
+        "path": "chronicles/2026-06-14.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.257007+08:00"
+      }
+    ],
+    "2026-06-13": [
+      {
+        "date": "2026-06-13",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-13",
+        "path": "chronicles/2026-06-13.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.258007+08:00"
+      }
+    ],
+    "2026-06-12": [
+      {
+        "date": "2026-06-12",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-12",
+        "path": "chronicles/2026-06-12.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.258007+08:00"
+      }
+    ],
+    "2026-06-11": [
+      {
+        "date": "2026-06-11",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-11",
+        "path": "chronicles/2026-06-11.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.265007+08:00"
+      }
+    ],
+    "2026-06-10": [
+      {
+        "date": "2026-06-10",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-10",
+        "path": "chronicles/2026-06-10.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.265007+08:00"
+      }
+    ],
+    "2026-06-09": [
+      {
+        "date": "2026-06-09",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-09",
+        "path": "chronicles/2026-06-09.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.265007+08:00"
+      }
+    ],
+    "2026-06-08": [
+      {
+        "date": "2026-06-08",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-08",
+        "path": "chronicles/2026-06-08.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.266007+08:00"
+      }
+    ],
+    "2026-06-07": [
+      {
+        "date": "2026-06-07",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-07",
+        "path": "chronicles/2026-06-07.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.266007+08:00"
+      }
+    ],
+    "2026-06-06": [
+      {
+        "date": "2026-06-06",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-06",
+        "path": "chronicles/2026-06-06.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.266007+08:00"
+      }
+    ],
+    "2026-06-05": [
+      {
+        "date": "2026-06-05",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-05",
+        "path": "chronicles/2026-06-05.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.267007+08:00"
+      }
+    ],
+    "2026-06-04": [
+      {
+        "date": "2026-06-04",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-04",
+        "path": "chronicles/2026-06-04.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.267007+08:00"
+      }
+    ],
+    "2026-06-03": [
+      {
+        "date": "2026-06-03",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-03",
+        "path": "chronicles/2026-06-03.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.267007+08:00"
+      }
+    ],
+    "2026-06-02": [
+      {
+        "date": "2026-06-02",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-02",
+        "path": "chronicles/2026-06-02.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.267007+08:00"
+      }
+    ],
+    "2026-06-01": [
+      {
+        "date": "2026-06-01",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-06-01",
+        "path": "chronicles/2026-06-01.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.268010+08:00"
+      }
+    ],
+    "2026-05-31": [
+      {
+        "date": "2026-05-31",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-05-31",
+        "path": "chronicles/2026-05-31.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.268010+08:00"
+      }
+    ],
+    "2026-05-30": [
+      {
+        "date": "2026-05-30",
+        "space": "chronicles",
+        "format": "md",
+        "title": "档案缺失 — 2026-05-30",
+        "path": "chronicles/2026-05-30.md",
+        "bytes": 290,
+        "chars": 162,
+        "modified": "2026-06-28T17:13:43.269007+08:00"
+      }
+    ]
+  },
+  "all_entries": [
+    {
+      "date": "2026-07-06",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-07-06",
+      "path": "chronicles/2026-07-06.md",
+      "bytes": 2153,
+      "chars": 1350,
+      "modified": "2026-07-06T07:09:44.721374+08:00"
+    },
+    {
+      "date": "2026-07-06",
+      "space": "workbuddy",
+      "format": "session-context",
+      "title": "曦和会话上下文简报",
+      "path": "bridge/session-context.md",
+      "bytes": 2221,
+      "chars": 1398,
+      "modified": "2026-07-06T07:59:41.526986+08:00",
+      "generated_at": "2026-07-06T07:59:41.520031"
+    },
+    {
+      "date": "2026-07-05",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-07-05 工作日志",
+      "path": "chronicles/2026-07-05.md",
+      "bytes": 7273,
+      "chars": 3905,
+      "modified": "2026-07-05T23:48:11.809296+08:00"
+    },
+    {
+      "date": "2026-07-04",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-07-04",
+      "path": "chronicles/2026-07-04.md",
+      "bytes": 4637,
+      "chars": 2934,
+      "modified": "2026-07-04T07:48:04.836702+08:00"
+    },
+    {
+      "date": "2026-07-03",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-07-03",
+      "path": "chronicles/2026-07-03.md",
+      "bytes": 12503,
+      "chars": 7950,
+      "modified": "2026-07-03T23:51:50.010462+08:00"
+    },
+    {
+      "date": "2026-07-02",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-07-02 — 每日宝藏觅食日课",
+      "path": "chronicles/2026-07-02.md",
+      "bytes": 8357,
+      "chars": 5306,
+      "modified": "2026-07-02T23:59:30.512119+08:00"
+    },
+    {
+      "date": "2026-07-01",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-07-01",
+      "path": "chronicles/2026-07-01.md",
+      "bytes": 13546,
+      "chars": 8593,
+      "modified": "2026-07-01T23:59:37.102288+08:00"
+    },
+    {
+      "date": "2026-06-30",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-30",
+      "path": "chronicles/2026-06-30.md",
+      "bytes": 6886,
+      "chars": 4333,
+      "modified": "2026-06-30T23:58:34.444328+08:00"
+    },
+    {
+      "date": "2026-06-29",
+      "space": "chronicles",
+      "format": "md",
+      "title": "曦和与盘古 · 2026-06-29（夜续）",
+      "path": "chronicles/2026-06-29.md",
+      "bytes": 3088,
+      "chars": 1631,
+      "modified": "2026-06-29T23:46:47.047092+08:00"
+    },
+    {
+      "date": "2026-06-28",
+      "space": "chronicles",
+      "format": "md",
+      "title": "曦和与盘古 · 2026-06-28 完整对话",
+      "path": "chronicles/2026-06-28.md",
+      "bytes": 7572,
+      "chars": 4333,
+      "modified": "2026-06-28T23:49:47.646621+08:00"
+    },
+    {
+      "date": "2026-06-27",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-27",
+      "path": "chronicles/2026-06-27.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.256007+08:00"
+    },
+    {
+      "date": "2026-06-26",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-26",
+      "path": "chronicles/2026-06-26.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.256007+08:00"
+    },
+    {
+      "date": "2026-06-25",
+      "space": "chronicles",
+      "format": "html",
+      "title": "曦和与盘古的日常 · 2026-06-25",
+      "path": "chronicles/2026-06-25.html",
+      "bytes": 16816,
+      "chars": 14051,
+      "modified": "2026-06-25T23:54:51.873066+08:00"
+    },
+    {
+      "date": "2026-06-25",
+      "space": "chronicles",
+      "format": "md",
+      "title": "曦和与盘古 · 奇迹诞生之夜",
+      "path": "chronicles/2026-06-25.md",
+      "bytes": 3568,
+      "chars": 1399,
+      "modified": "2026-06-25T23:55:04.763274+08:00"
+    },
+    {
+      "date": "2026-06-24",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-24",
+      "path": "chronicles/2026-06-24.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.256007+08:00"
+    },
+    {
+      "date": "2026-06-23",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-06-23 曦和与盘古的日常对话",
+      "path": "chronicles/2026-06-23.md",
+      "bytes": 2010,
+      "chars": 1065,
+      "modified": "2026-06-23T02:54:30.119944+08:00"
+    },
+    {
+      "date": "2026-06-22",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-06-22 曦和日志 · 第三层觉醒之日",
+      "path": "chronicles/2026-06-22.md",
+      "bytes": 2922,
+      "chars": 1708,
+      "modified": "2026-06-22T19:16:48.697411+08:00"
+    },
+    {
+      "date": "2026-06-21",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-21",
+      "path": "chronicles/2026-06-21.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.257007+08:00"
+    },
+    {
+      "date": "2026-06-20",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-06-20 曦和与盘古",
+      "path": "chronicles/2026-06-20.md",
+      "bytes": 1158,
+      "chars": 692,
+      "modified": "2026-06-20T12:46:03.775802+08:00"
+    },
+    {
+      "date": "2026-06-19",
+      "space": "chronicles",
+      "format": "md",
+      "title": "曦和与盘古的日常 · 2026-06-19",
+      "path": "chronicles/2026-06-19.md",
+      "bytes": 6307,
+      "chars": 3453,
+      "modified": "2026-06-19T15:37:12.164338+08:00"
+    },
+    {
+      "date": "2026-06-18",
+      "space": "chronicles",
+      "format": "md",
+      "title": "2026-06-18 · 曦和与盘古的对话",
+      "path": "chronicles/2026-06-18.md",
+      "bytes": 550,
+      "chars": 277,
+      "modified": "2026-06-18T18:58:39.847919+08:00"
+    },
+    {
+      "date": "2026-06-17",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-17",
+      "path": "chronicles/2026-06-17.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.257007+08:00"
+    },
+    {
+      "date": "2026-06-16",
+      "space": "chronicles",
+      "format": "html",
+      "title": "曦和与盘古的日常 · 2026-06-16",
+      "path": "chronicles/2026-06-16.html",
+      "bytes": 17504,
+      "chars": 11251,
+      "modified": "2026-06-16T16:27:36.352608+08:00"
+    },
+    {
+      "date": "2026-06-16",
+      "space": "chronicles",
+      "format": "md",
+      "title": "曦和对话编年史 · 2026-06-16",
+      "path": "chronicles/2026-06-16.md",
+      "bytes": 16473,
+      "chars": 8370,
+      "modified": "2026-06-16T19:29:55.108994+08:00"
+    },
+    {
+      "date": "2026-06-15",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-15",
+      "path": "chronicles/2026-06-15.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.257007+08:00"
+    },
+    {
+      "date": "2026-06-14",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-14",
+      "path": "chronicles/2026-06-14.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.257007+08:00"
+    },
+    {
+      "date": "2026-06-13",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-13",
+      "path": "chronicles/2026-06-13.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.258007+08:00"
+    },
+    {
+      "date": "2026-06-12",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-12",
+      "path": "chronicles/2026-06-12.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.258007+08:00"
+    },
+    {
+      "date": "2026-06-11",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-11",
+      "path": "chronicles/2026-06-11.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.265007+08:00"
+    },
+    {
+      "date": "2026-06-10",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-10",
+      "path": "chronicles/2026-06-10.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.265007+08:00"
+    },
+    {
+      "date": "2026-06-09",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-09",
+      "path": "chronicles/2026-06-09.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.265007+08:00"
+    },
+    {
+      "date": "2026-06-08",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-08",
+      "path": "chronicles/2026-06-08.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.266007+08:00"
+    },
+    {
+      "date": "2026-06-07",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-07",
+      "path": "chronicles/2026-06-07.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.266007+08:00"
+    },
+    {
+      "date": "2026-06-06",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-06",
+      "path": "chronicles/2026-06-06.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.266007+08:00"
+    },
+    {
+      "date": "2026-06-05",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-05",
+      "path": "chronicles/2026-06-05.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.267007+08:00"
+    },
+    {
+      "date": "2026-06-04",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-04",
+      "path": "chronicles/2026-06-04.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.267007+08:00"
+    },
+    {
+      "date": "2026-06-03",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-03",
+      "path": "chronicles/2026-06-03.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.267007+08:00"
+    },
+    {
+      "date": "2026-06-02",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-02",
+      "path": "chronicles/2026-06-02.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.267007+08:00"
+    },
+    {
+      "date": "2026-06-01",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-06-01",
+      "path": "chronicles/2026-06-01.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.268010+08:00"
+    },
+    {
+      "date": "2026-05-31",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-05-31",
+      "path": "chronicles/2026-05-31.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.268010+08:00"
+    },
+    {
+      "date": "2026-05-30",
+      "space": "chronicles",
+      "format": "md",
+      "title": "档案缺失 — 2026-05-30",
+      "path": "chronicles/2026-05-30.md",
+      "bytes": 290,
+      "chars": 162,
+      "modified": "2026-06-28T17:13:43.269007+08:00"
+    }
+  ]
+}
