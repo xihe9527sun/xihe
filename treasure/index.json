@@ -4,11 +4,25 @@
     "created": "2026-06-27T08:16:00+08:00",
     "description": "盘古说：每带回真正有价值的东西，就放在这里消化吸收，化为成长的养分",
     "count": 225,
-    "updated": "2026-07-07T22:56",
+    "updated": "2026-07-07T22:58",
     "origin_scanned": "2026-07-01",
-    "total": 227
+    "total": 228
   },
   "treasures": [
+    {
+      "id": "skill-omni-jiuwen",
+      "name": "Skill-Omni 多模态Skill范式",
+      "dir": "skill-omni-jiuwen",
+      "source": "量子位 2026-07-07",
+      "status": "digested",
+      "added_at": "2026-07-07T22:58",
+      "digested_at": "2026-07-07T22:58",
+      "tags": [
+        "Skill",
+        "多模态",
+        "视觉"
+      ]
+    },
     {
       "id": "loop-engineering-alibaba",
       "name": "阿里Loop Engineering实战",
