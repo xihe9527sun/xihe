@@ -1,0 +1,11 @@
+{
+  "version": "v2",
+  "activated_at": "2026-07-07T22:35:52.616866+08:00",
+  "edges": {},
+  "nodes": {},
+  "hebbian_stats": {
+    "total_edges": 0,
+    "total_nodes": 0,
+    "avg_weight": 0
+  }
+}

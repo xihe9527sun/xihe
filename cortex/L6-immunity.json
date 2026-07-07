@@ -1,0 +1,8 @@
+{
+  "version": "v2",
+  "activated_at": "2026-07-07T22:36",
+  "guards": {
+    "safety_guard.py": true,
+    "mode_switch.py": true
+  }
+}

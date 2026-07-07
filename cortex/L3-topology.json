@@ -1,0 +1,13 @@
+{
+  "version": "v2",
+  "activated_at": "2026-07-07T22:36",
+  "modules": {
+    "node": 15,
+    "survivor": 4,
+    "state-commit": 1
+  },
+  "stats": {
+    "total_paths": 19,
+    "clusters": 3
+  }
+}
