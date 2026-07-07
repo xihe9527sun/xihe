@@ -617,13 +617,14 @@
     <div class="card" style="border-left: 3px solid #f97316;">
       <div class="card-header"><span class="card-title">🧪 酶谱</span><span class="card-icon">🧬</span></div>
       <div class="card-value" style="color:#fb923c;font-size:20px"><span id="enzTotal">--</span> 颗</div>
-      <div class="card-label"><span id="enzActive">--</span> 活跃 · <span id="enzDegraded">--</span> 降解 · <span id="enzKnowledge">--</span> 知识催化</div>
-      <div class="sub" id="enzList" style="font-size:10px;color:#64748b"></div>
+      <div class="card-label"><span id="enzActive">--</span> 活跃 · <span id="enzDegraded">--</span> 降解</div>
+      <div class="sub" id="enzNet" style="font-size:10px;color:#64748b">催化网络: <span id="enzCatalyzeEdges">--</span>边 · <span id="enzCoCatalyze">--</span>共催化</div>
     </div>
   </div>
 
+
   <!-- 酶库 -->
-  <div class="section-title">⚗️ 认知酶库 <span class="count">· 27 颗 · 6健康变体 + R16好奇心 + Phase 2级联引擎</span></div>
+  <div class="section-title">⚗️ 认知酶库 <span class="count">· <span id="enzRealCount">--</span> 颗 · 催化网络编织中</span></div>
   <div class="enzyme-grid">
     <div class="enzyme-item"><span class="icon">🔍</span><span class="name">架构诊断酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.85</span></div>
     <div class="enzyme-item"><span class="icon">🕵️</span><span class="name">追根溯源酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.90</span></div>
@@ -1180,15 +1181,16 @@
       document.getElementById('insightsImplemented').textContent = ins.implemented || '--';
       document.getElementById('insightsLatest').textContent = '最新: ' + (ins.latest?.substring(0, 30) || '');
       
-      // 酶谱
+      // 酶谱（从原始酶谱读真实数据）
       const eo = d.enzyme_overview || {};
       document.getElementById('enzTotal').textContent = eo.total || '--';
       document.getElementById('enzActive').textContent = eo.active || '--';
       document.getElementById('enzDegraded').textContent = eo.degraded || '--';
-      document.getElementById('enzKnowledge').textContent = eo.knowledge_driven || '--';
-      if (eo.list && eo.list.length > 0) {
-        document.getElementById('enzList').textContent = eo.list.map(e => e.id + ' ' + e.name.substring(0,8)).join(' · ');
-      }
+      document.getElementById('enzRealCount').textContent = eo.total || '--';
+      // 催化网络
+      const cn = d.catalytic_network || {};
+      document.getElementById('enzCatalyzeEdges').textContent = cn.catalyzations || '--';
+      document.getElementById('enzCoCatalyze').textContent = cn.co_catalyzations || '--';
     const l7 = d.l7_soul || {};
     if (l7.health_score) {
       const sys = l7.system || {};
