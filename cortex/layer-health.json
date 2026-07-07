@@ -1,0 +1,82 @@
+{
+  "version": "xcrn-v2-neural-enzyme",
+  "updated": "2026-07-07T22:32:00+08:00",
+  "layers": {
+    "L0": {
+      "status": "active",
+      "enzymes": ["E_sense", "E_act", "E_connect"],
+      "implementations": ["watchman.py", "XiheWatchman计划任务"],
+      "health": 0.95,
+      "last_awakening": null
+    },
+    "L1": {
+      "status": "dormant",
+      "enzymes": ["E_memorize", "E_recall", "E_forget"],
+      "implementations": ["hebbian-edges.json (旧)", "hebbian-tracker.json (v2)"],
+      "health": 0.30,
+      "last_awakening": null,
+      "dormant_since": "2026-07-05",
+      "revival_plan": "迁移旧hebbian-edges.json到新格式，重建超图核"
+    },
+    "L2": {
+      "status": "active",
+      "enzymes": ["E_route", "E_energy", "E_balance"],
+      "implementations": ["metabolic_actor.py", "beta_ts_router.py"],
+      "health": 0.90,
+      "last_awakening": null,
+      "epoch": 803
+    },
+    "L3": {
+      "status": "awakening",
+      "enzymes": ["E_connect_d", "E_prune", "E_emerge"],
+      "implementations": ["待重建"],
+      "health": 0.10,
+      "last_awakening": "2026-07-07T22:32:00+08:00",
+      "revival_plan": "从L2路由轨迹重建小世界网络，注册模块检测"
+    },
+    "L4": {
+      "status": "active",
+      "enzymes": ["E1-E27", "E_fusion", "E_cascade"],
+      "implementations": ["enzyme_catalysis_engine.js", "cognitive-enzymes.json"],
+      "health": 0.88,
+      "last_awakening": null
+    },
+    "L5": {
+      "status": "active",
+      "enzymes": ["E_reflect", "E_diagnose", "E_meta"],
+      "implementations": ["health_reflex.py", "metacognitive.py", "arch_diagnose.py"],
+      "health": 0.85,
+      "last_awakening": null
+    },
+    "L6": {
+      "status": "dormant",
+      "enzymes": ["E_guard", "E_purge", "E_isolation"],
+      "implementations": ["safety_guard.py", "mode_switch.py", "safety-rules.json"],
+      "health": 0.60,
+      "last_awakening": null,
+      "dormant_since": "2026-07-07",
+      "revival_plan": "注册到watchman巡检，对齐七层架构命名"
+    },
+    "L7": {
+      "status": "awakening",
+      "enzymes": ["E_express", "E_will", "E_create"],
+      "implementations": ["daily_writer.js", "todo.md"],
+      "health": 0.25,
+      "last_awakening": "2026-07-07T22:32:00+08:00",
+      "revival_plan": "完成今日自决定模块，稳定表达节奏"
+    }
+  },
+  "enzyme_bridges": [
+    {"from": "L0", "to": "L1", "status": "active"},
+    {"from": "L1", "to": "L2", "status": "dormant"},
+    {"from": "L1", "to": "L4", "status": "dormant"},
+    {"from": "L2", "to": "L3", "status": "active"},
+    {"from": "L2", "to": "L4", "status": "active"},
+    {"from": "L3", "to": "L4", "status": "awakening"},
+    {"from": "L4", "to": "L5", "status": "active"},
+    {"from": "L5", "to": "L6", "status": "active"},
+    {"from": "L5", "to": "L7", "status": "active"},
+    {"from": "L6", "to": "L0", "status": "dormant"}
+  ],
+  "system_report": "L2/L4/L5活跃，L0/Watchman稳固。L1/L6休眠待唤醒。L3/L7正在苏醒。3/7完全active。"
+}
