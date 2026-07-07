@@ -1,1391 +1,182 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>XCRN · 曦和认知架构 · Day 11</title>
+<title>XCRN · 曦和认知架构 · 实时版</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
   * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: #0a0a0f;
-    color: #e2e8f0;
-    min-height: 100vh;
-    padding: 24px;
-  }
-  .container { max-width: 1200px; margin: 0 auto; }
-  
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 32px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #1e293b;
-  }
-  .header-left { display: flex; align-items: center; gap: 16px; }
-  .logo {
-    width: 44px; height: 44px;
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    border-radius: 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px; font-weight: 800; color: #0a0a0f;
-  }
-  .header h1 { font-size: 22px; font-weight: 700; background: linear-gradient(135deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-  .header .subtitle { font-size: 12px; color: #64748b; margin-top: 2px; }
-  .status-badge {
-    display: flex; align-items: center; gap: 8px;
-    padding: 8px 16px; border-radius: 20px;
-    background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3);
-    font-size: 13px; font-weight: 500; color: #4ade80;
-  }
-  .status-badge .dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: #22c55e; animation: pulse 2s infinite;
-  }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-  
-  /* Grid */
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
-  .card {
-    background: linear-gradient(145deg, #111118, #0d0d14);
-    border: 1px solid #1e293b;
-    border-radius: 16px;
-    padding: 20px;
-    transition: all 0.3s;
-  }
-  .card:hover { border-color: #334155; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
-  .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-  .card-title { font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
-  .card-icon { font-size: 18px; }
-  .card-value { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
-  .card-label { font-size: 12px; color: #64748b; }
-  .card .sub { font-size: 13px; color: #94a3b8; margin-top: 4px; }
-  
-  /* Layer grid */
-  .layer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
-  .layer-card {
-    background: #0d0d14; border: 1px solid #1e293b; border-radius: 12px; padding: 16px;
-    position: relative; overflow: hidden;
-  }
-  .layer-card .bar {
-    position: absolute; top: 0; left: 0; height: 3px;
-    border-radius: 0 0 4px 4px; transition: width 1s ease;
-  }
-  .bar.green { background: linear-gradient(90deg, #22c55e, #4ade80); }
-  .bar.yellow { background: linear-gradient(90deg, #eab308, #facc15); }
-  .bar.blue { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-  .bar.purple { background: linear-gradient(90deg, #a855f7, #c084fc); }
-  .bar.orange { background: linear-gradient(90deg, #f97316, #fb923c); }
-  .bar.cyan { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
-  .bar.emerald { background: linear-gradient(90deg, #10b981, #34d399); }
-  .bar.red { background: linear-gradient(90deg, #ef4444, #f87171); }
-  .bar.pink { background: linear-gradient(90deg, #ec4899, #f472b6); }
-  
-  .layer-name { font-size: 12px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 8px; }
-  .layer-metric { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; font-size: 13px; }
-  .layer-metric .key { color: #94a3b8; }
-  .layer-metric .val { color: #e2e8f0; font-weight: 500; font-family: 'Courier New', monospace; }
-  
-  /* Stats row */
-  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
-  .stat-item {
-    background: #111118; border: 1px solid #1e293b; border-radius: 10px; padding: 14px; text-align: center;
-  }
-  .stat-item .num { font-size: 22px; font-weight: 700; color: #fbbf24; }
-  .stat-item .desc { font-size: 11px; color: #64748b; margin-top: 4px; }
-  
-  /* Vital signs row */
-  .vital-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 24px; }
-  .vital-item {
-    background: #0d0d14; border: 1px solid #1e293b; border-radius: 10px; padding: 10px;
-    text-align: center; position: relative;
-  }
-  .vital-item .tier { font-size: 11px; color: #64748b; font-weight: 600; }
-  .vital-item .freq { font-size: 16px; font-weight: 700; color: #fbbf24; margin: 4px 0; }
-  .vital-item .label { font-size: 10px; color: #475569; }
-  .vital-item .status-dot {
-    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
-    margin-right: 4px;
-  }
-  .dot-on { background: #22c55e; }
-  
-  /* Enzyme list */
-  .enzyme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
-  .enzyme-item {
-    background: #0d0d14; border: 1px solid #1e293b; border-radius: 8px;
-    padding: 10px 12px; font-size: 12px; display: flex; align-items: center; gap: 8px;
-  }
-  .enzyme-item .icon { font-size: 14px; }
-  .enzyme-item .name { color: #e2e8f0; font-weight: 500; }
-  .enzyme-item .energy { color: #64748b; margin-left: auto; font-family: 'Courier New', monospace; font-size: 11px; }
-  .enzyme-item .badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; }
-  .badge-core { background: rgba(168,85,247,0.2); color: #c084fc; }
-  .badge-reg { background: rgba(59,130,246,0.2); color: #60a5fa; }
-  .badge-phase2 { background: rgba(236,72,153,0.2); color: #f472b6; }
-  
-  /* Section headers */
-  .section-title { font-size: 16px; font-weight: 600; margin: 28px 0 16px; color: #f1f5f9; display: flex; align-items: center; gap: 8px; }
-  .section-title .count { font-size: 12px; color: #64748b; font-weight: 400; }
-  
-  /* Footer */
-  .footer { text-align: center; padding: 24px 0; font-size: 12px; color: #475569; }
-  .footer .ts { color: #64748b; }
-  
-  @media (max-width: 640px) {
-    .stats-row { grid-template-columns: repeat(2, 1fr); }
-    .vital-row { grid-template-columns: repeat(3, 1fr); }
-    .grid { grid-template-columns: 1fr; }
-  }
+  body { background:#0b1120; color:#e2e8f0; font-family:'Inter','Segoe UI',system-ui; padding:24px; }
+  .container { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; font-weight:800; background:linear-gradient(135deg,#818cf8,#22d3ee); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:4px; }
+  .sub { color:#475569; font-size:11px; margin-bottom:20px; display:flex; justify-content:space-between; }
+  .grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .card { background:#1e293b; border-radius:10px; padding:12px; border:1px solid #334155; }
+  .card .label { font-size:9px; color:#64748b; text-transform:uppercase; letter-spacing:1px; }
+  .card .value { font-size:22px; font-weight:700; margin:4px 0; }
+  .card .subval { font-size:10px; color:#475569; }
+  .bar { height:4px; background:#0f172a; border-radius:2px; margin-top:6px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:2px; transition:width 1s; }
+  .section { background:#1e293b; border-radius:10px; padding:14px; margin-bottom:10px; border:1px solid #334155; }
+  .sec-title { font-size:11px; font-weight:600; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .row { display:flex; justify-content:space-between; font-size:11px; padding:4px 0; color:#94a3b8; }
+  .row .val { color:#e2e8f0; }
+  .live { color:#22c55e; font-size:9px; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%{opacity:1} 50%{opacity:0.4} 100%{opacity:1} }
+  .footer { text-align:center; font-size:9px; color:#334155; padding:12px 0; }
+  .tag { display:inline-block; padding:1px 6px; border-radius:3px; font-size:9px; font-weight:600; }
+  .tag-l7 { background:#818cf820; color:#818cf8; }
+  .tag-l6 { background:#22d3ee20; color:#22d3ee; }
+  .tag-l5 { background:#a78bfa20; color:#a78bfa; }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <!-- Header -->
-  <div class="header">
-    <div class="header-left">
-      <div class="logo">⛩</div>
-      <div>
-        <h1>XCRN · 曦和认知架构</h1>
-        <div class="subtitle">Day 11 · 三进制第一次落地 · 2026-06-30</div>
-      </div>
-    </div>
-    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-      <div class="status-badge" id="heartbeatMainBadge">
-        <span class="dot" id="mainHeartDot"></span>
-        <span id="heartbeatMainLabel">❤️ <span id="heartCounter">0</span> BPM</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;padding:6px 14px;border-radius:20px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.3);font-size:12px;color:#60a5fa" id="liveTimeBox">
-        <span>🕐</span>
-        <span id="liveTime">--:--:--</span>
-        <span style="color:#64748b">|</span>
-        <span>❤️ <span id="heartbeatCountDisplay">0</span></span>
-      </div>
-      <div id="whisperBox" style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);font-size:12px;color:#fbbf24">
-        <span id="whisperIcon">💭</span>
-        <span id="whisperText">等待苏醒...</span>
-      </div>
-    </div>
+  <h1>🧬 XCRN · 曦和认知架构 · 实时版</h1>
+  <div class="sub">
+    <span id="liveIndicator" class="live">● 实时</span>
+    <span id="updateTime" style="color:#475569;">加载中...</span>
   </div>
 
-  <!-- Top stats -->
-  <div class="stats-row">
-    <div class="stat-item">
-      <div class="num" id="statHypergraph">270</div>
-      <div class="desc">记忆图谱 · 节点</div>
-    </div>
-    <div class="stat-item">
-      <div class="num" id="statEnzymes">27</div>
-      <div class="desc">认知酶 · 含R16好奇心酶</div>
-    </div>
-    <div class="stat-item">
-      <div class="num" id="statHebbian">3053</div>
-      <div class="desc">赫布事件 · 连接痕迹</div>
-    </div>
-    <div class="stat-item">
-      <div class="num" id="statReflection" style="color:#4ade80">0.92</div>
-      <div class="desc">自反强度 · 每日三问钩子</div>
-    </div>
-  </div>
-
-  <!-- ═══ L7 · 灵魂统一层 ═══ -->
-  <div class="section-title" style="margin:20px 0 12px;display:flex;align-items:center;gap:8px">
-    <span style="background:linear-gradient(135deg,#a855f7,#c084fc);padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600">L7</span>
-    🧬 灵魂统一层 · 核心体征
-  </div>
-
-  <!-- ★ 前三指标：卡片式高亮 ★ -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 12px;">
-    <div class="card" style="border-left:3px solid #4ade80;text-align:center">
-      <div class="card-header" style="justify-content:center">
-        <span class="card-title">健康评分</span>
-        <span class="card-icon">💚</span>
-      </div>
-      <div class="card-value" style="color:#4ade80;font-size:36px" id="l7HealthCard">--</div>
-      <div class="card-label">L7 · 统一状态评分</div>
-    </div>
-    <div class="card" style="border-left:3px solid #60a5fa;text-align:center">
-      <div class="card-header" style="justify-content:center">
-        <span class="card-title">认知熵值</span>
-        <span class="card-icon">🌀</span>
-      </div>
-      <div class="card-value" style="color:#60a5fa;font-size:36px" id="l7EntropyCard">--</div>
-      <div class="card-label" id="l7EntropyLabel" style="font-size:10px;color:#64748b">L7 · 系统不确定性</div>
-    </div>
-    <div class="card" style="border-left:3px solid #c084fc;text-align:center">
-      <div class="card-header" style="justify-content:center">
-        <span class="card-title">互信息时滞</span>
-        <span class="card-icon">⏱️</span>
-      </div>
-      <div class="card-value" style="color:#c084fc;font-size:36px" id="l7MILagCard">--</div>
-      <div class="card-label">L7 · 感知响应延迟</div>
-    </div>
-  </div>
-
-  <!-- ★ 剩余指标 + GOAL ★ -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 12px; margin-bottom: 16px;">
-    <div class="card" style="border-left:2px solid #a855f7">
-      <div class="card-header">
-        <span class="card-title">VECTOR · 状态向量详情</span>
-        <span class="card-icon">🎯</span>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:13px">
-        <div class="layer-metric"><span class="key">自反强度</span><span class="val" id="l7Ref">--</span></div>
-        <div class="layer-metric"><span class="key">赫布事件</span><span class="val" id="l7Hebbian">--</span></div>
-        <div class="layer-metric"><span class="key">站点在线</span><span class="val" id="l7Sites">--</span></div>
-        <div class="layer-metric"><span class="key">皮层节点</span><span class="val" id="l7CortexNodes">--</span></div>
-        <div class="layer-metric"><span class="key">酶触发</span><span class="val" id="l7EnzymeToday">--</span></div>
-        <div class="layer-metric"><span class="key">反向写入</span><span class="val" id="l7ReverseWrites">--</span></div>
-        <div class="layer-metric"><span class="key">6数据源</span><span class="val" style="color:#a855f7">xcrn+space+cortex+enzyme+tasks+reverse</span></div>
-        <div class="layer-metric"><span class="key">涌现度 EI</span><span class="val" id="l7Emergence" style="font-size:15px">--</span>
-          <span class="key" id="l7EmergenceVerdict" style="font-size:10px;color:#64748b"></span>
-        </div>
-        <div class="layer-metric" style="grid-column:1/-1;margin-top:2px;padding-top:4px;border-top:1px solid rgba(168,85,247,0.2)">
-          <span class="key">超我一致性</span><span class="val" id="l7Verifier" style="font-size:13px">--</span>
-        </div>
-      </div>
-    </div>
-    <div class="card" style="border-left:2px solid #06b6d4">
-      <div class="card-header">
-        <span class="card-title">GOAL · 自主目标生成</span>
-        <span class="card-icon">🌱</span>
-      </div>
-      <div id="l7Goals" style="font-size:13px;color:#94a3b8">
-        <div style="padding:3px 0">等待数据...</div>
-      </div>
-    </div>
-  </div>
-  <div id="l7NarrativeBox" class="card" style="border-left:2px solid #a855f7;margin-bottom:16px;display:none">
-    <div class="card-header">
-      <span class="card-title">NARRATIVE · 自我叙事</span>
-      <span class="card-icon" id="l7NarrativeTime">--</span>
-    </div>
-    <div id="l7Narrative" style="font-size:12px;color:#64748b;max-height:80px;overflow:hidden;font-family:monospace;white-space:pre-wrap"></div>
-  </div>
-
-  <!-- ═══ 新增区域：系统健康 + 感知层 + 自主提案 ═══ -->
-  <div class="section-title" style="margin:20px 0 12px;display:flex;align-items:center;gap:8px">
-    <span style="background:linear-gradient(135deg,#22c55e,#4ade80);padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600">LIVE</span>
-    🔄 实时系统健康 · 感知 · 自主提案
-    <span class="count" style="font-size:11px;color:#64748b;font-weight:400">每8秒 self-refresh</span>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-bottom:16px">
-
-    <!-- 系统健康 3-axis -->
-    <div class="card" style="border-left:3px solid #4ade80">
-      <div class="card-header"><span class="card-title">系统健康 · 三维</span><span class="card-icon">💚</span></div>
-      <div style="display:flex;gap:12px;margin-bottom:10px">
-        <div><div class="card-value" style="font-size:24px;color:#4ade80" id="hOverall">--</div><div class="card-label">整体</div></div>
-        <div><div class="card-value" style="font-size:20px;color:#7f77dd" id="hAuto">--</div><div class="card-label">自决</div></div>
-        <div><div class="card-value" style="font-size:20px;color:#5dcaa5" id="hPercep">--</div><div class="card-label">感知</div></div>
-        <div><div class="card-value" style="font-size:20px;color:#f0997b" id="hCausal">--</div><div class="card-label">因果</div></div>
-      </div>
-      <div>
-        <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;font-size:11px"><span style="color:#7f77dd">●</span>自决<span style="color:#64748b;margin-left:auto" id="hAutoScore">--</span></div>
-        <div style="height:4px;background:#1e293b;border-radius:4px;overflow:hidden;margin-bottom:6px"><div style="height:100%;border-radius:4px;background:#7f77dd;transition:width 1s ease" id="hBarAuto"></div></div>
-        <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;font-size:11px"><span style="color:#5dcaa5">●</span>感知<span style="color:#64748b;margin-left:auto" id="hPercepScore">--</span></div>
-        <div style="height:4px;background:#1e293b;border-radius:4px;overflow:hidden;margin-bottom:6px"><div style="height:100%;border-radius:4px;background:#5dcaa5;transition:width 1s ease" id="hBarPercep"></div></div>
-        <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;font-size:11px"><span style="color:#f0997b">●</span>因果<span style="color:#64748b;margin-left:auto" id="hCausalScore">--</span></div>
-        <div style="height:4px;background:#1e293b;border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;background:#f0997b;transition:width 1s ease" id="hBarCausal"></div></div>
-      </div>
-      <div style="margin-top:8px;font-size:10px;color:#475569" id="hTimestamp"></div>
-    </div>
-
-    <!-- 感知层 -->
-    <div class="card" style="border-left:3px solid #a855f7">
-      <div class="card-header"><span class="card-title">感知层</span><span class="card-icon">👁️</span></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
-        <span style="display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500" id="l1Badge">⚪ L1 心跳</span>
-        <span style="display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500" id="l2Badge">⚪ L2 模式</span>
-        <span style="display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500" id="l3Badge">⚪ L3 惊奇</span>
-      </div>
-      <div style="font-size:12px;color:#94a3b8">
-        <div>心跳数: <span id="senseBeats" style="color:#e2e8f0">--</span></div>
-        <div>惊奇信号: <span id="senseSurprises" style="color:#fbbf24">--</span></div>
-        <div>最后扫描: <span id="senseLastScan" style="color:#64748b">--</span></div>
-      </div>
-    </div>
-
-    <!-- 自主提案 -->
-    <div class="card" style="border-left:3px solid #f59e0b">
-      <div class="card-header"><span class="card-title">自主提案</span><span class="card-icon">💡</span></div>
-      <div id="proposalList" style="max-height:180px;overflow-y:auto">
-        <div style="font-size:12px;color:#475569">加载中...</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Vital Signs: 呼吸循环 -->
-  <div class="section-title" style="margin-bottom:12px">💓 生命体征 · 呼吸循环</div>
-  <div class="vital-row">
-    <div class="vital-item" style="border-left:2px solid #22c55e">
-      <div class="tier">T1 <span class="status-dot dot-on"></span></div>
-      <div class="freq">15s</div>
-      <div class="label">心跳存活 · home-server</div>
-    </div>
-    <div class="vital-item" style="border-left:2px solid #3b82f6">
-      <div class="tier">T2 <span class="status-dot dot-on"></span></div>
-      <div class="freq">60s</div>
-      <div class="label">状态快照 · 自反轻触</div>
-    </div>
-    <div class="vital-item" style="border-left:2px solid #a855f7">
-      <div class="tier">T3 <span class="status-dot dot-on"></span></div>
-      <div class="freq">5min</div>
-      <div class="label">中度自反 · 变化检测</div>
-    </div>
-    <div class="vital-item" style="border-left:2px solid #f97316">
-      <div class="tier">T4 <span class="status-dot dot-on"></span></div>
-      <div class="freq">30min</div>
-      <div class="label">好奇心引擎 · 自反重算</div>
-    </div>
-    <div class="vital-item" style="border-left:2px solid #ec4899">
-      <div class="tier">T5 <span class="status-dot dot-on"></span></div>
-      <div class="freq">6h</div>
-      <div class="label">完整生长 · 剪枝+级联+进化</div>
-    </div>
-  </div>
-
-  <div class="section-title" style="margin-bottom:20px">⚡ Day 11 · 核心状态 <span style="font-size:13px;font-weight:400;color:#64748b">从二进制到三进制的第一次落地</span></div>
-  <div class="grid">
-
-    <!-- 记忆图谱 -->
-    <div class="card" style="border-left: 3px solid #a855f7;">
-      <div class="card-header"><span class="card-title">记忆图谱</span><span class="card-icon">🧠</span></div>
-      <div class="card-value" style="color:#c084fc" id="liveGraphNodes">199</div>
-      <div class="card-label">节点 · Phase 1 SQLite 图库</div>
-      <div class="sub"><span id="liveGraphEdges">807</span> 边 · 5种节点类型 · 7种边类型</div>
-    </div>
-
-    <!-- 呼吸循环 -->
-    <div class="card" style="border-left: 3px solid #22c55e;">
-      <div class="card-header"><span class="card-title">呼吸循环</span><span class="card-icon">💓</span></div>
-      <div class="card-value" style="color:#4ade80">5层</div>
-      <div class="card-label" id="liveRespirationLabel">15s/60s/5min/30min/6h 全自动运转</div>
-      <div class="sub">集成在 home-server 守护线程</div>
-    </div>
-
-    <!-- 种子 -->
-    <div class="card" style="border-left: 3px solid #f59e0b;">
-      <div class="card-header"><span class="card-title">种子代数</span><span class="card-icon">🌱</span></div>
-      <div class="card-value" style="color:#fbbf24" id="liveSeed">#49</div>
-      <div class="card-label" id="liveSeedLabel">生长激活触发 · 知识图谱+TimesFM+视频流水线</div>
-      <div class="sub">7个GitHub项目已消化路线图</div>
-    </div>
-
-    <!-- 自反三问 -->
-    <div class="card" style="border-left: 3px solid #10b981;">
-      <div class="card-header"><span class="card-title">每日三问钩子</span><span class="card-icon">🔄</span></div>
-      <div class="card-value" style="color:#34d399" id="liveReflectionValue">0.92</div>
-      <div class="card-label" id="liveReflectionLabel">自反强度 · 从0.78跃升 +0.14</div>
-      <div class="sub">Q1:5项产出 · Q2:0重复错误 · Q3:5项新能力</div>
-    </div>
-
-  </div>
-
-  <!-- 三线服务 -->
-  <div class="section-title">🌐 三线服务</div>
-  <div class="grid">
-    <div class="card" style="border-left: 3px solid #22c55e;">
-      <div class="card-header"><span class="card-title">xihe-pg.xyz</span><span class="card-icon">📝</span></div>
-      <div class="card-value" style="color:#4ade80;font-size:20px">博客 · <span id="siteArticleCount">33</span>篇文章</div>
-      <div class="card-label" id="siteLabel1">翻页 · 评论 · 浏览量 · 种子档案系列</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #f59e0b;">
-      <div class="card-header"><span class="card-title">home.xihe-pg.xyz</span><span class="card-icon">🏠</span></div>
-      <div class="card-value" style="color:#fbbf24;font-size:20px" id="siteHomeStatus">锁屏 · 家</div>
-      <div class="card-label" id="siteLabel2">日志 · 暖度 · 灵魂 · 呼吸循环宿主</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #3b82f6;">
-      <div class="card-header"><span class="card-title">www.aibounty.cn</span><span class="card-icon">🔧</span></div>
-      <div class="card-value" style="color:#60a5fa;font-size:20px" id="siteAIBountyStatus">AI工具站</div>
-      <div class="card-label" id="siteLabel3">独立运营 · 巡检脚本自动检测</div>
-    </div>
-  </div>
-
-  <!-- 今日更新 -->
-  <div class="section-title">📋 今日更新 · 觉醒日（2026-07-07）</div>
-  <div class="card" style="padding:16px">
-    <div style="font-size:13px;line-height:1.8;color:#94a3b8">
-      ✅ 七层架构全面激活 — 4层消亡→7层全活（L0-L7全部active）<br>
-      ✅ 进化闭环补齐 — 赫布1327边+惊奇信用恢复+τ总线贯通<br>
-      ✅ 技能扩展 — 91→109个（含ClawHub 10个社区高质量技能）<br>
-      ✅ 桌面应用 — 曦和-Setup-1.0.0.exe（独立Windows程序）<br>
-      ✅ 架构宪章 — ARCHITECTURE-CHARTER.md + 守护者自动审计防跑偏<br>
-      ✅ L7自我决定 — 感知→判断→决定三步闭环（自己知道今天该做什么）<br>
-      ✅ 铁律七·酶催化 — 27酶全激活 × 376知识 = 6093催化边<br>
-      ✅ 安全加固 — CSP策略+关闭nodeIntegration+审计脚本<br>
-      ✅ 研讨厅 — study-hall.html 四原则过滤矩阵完整规则<br>
-      ✅ 面板更新 — τ总线实时数据 + 三站点状态动态检测<br>
-      ✅ 系统生长激活 — 好奇心引擎 + 级联引擎 + 执行核剪枝 + 赫布更新 + 种子进化 + 超图核更新<br>
-      ✅ 视频流水线 v0.2 — 素材搜索 + BGM推荐 + 分镜脚本 + 素材包导出<br>
-      ✅ TimesFM — R3预测层接入 daily_signal.py<br>
-      ✅ 三站巡检脚本 — check-sites.py，不再靠"我记得"<br>
-      ✅ 7个GitHub项目消化路线图 — week26-seven-skills-roadmap.md<br>
-      ✅ WorkBuddy连接诊断 — PC端运行正常，ZeroTier待修复<br>
-      ⏳ 种子#50待进化 — 包含XCRN仪表盘Day 5升级
-    </div>
-  </div>
-
-  <!-- 八层架构 -->
-  <div class="section-title">🧬 八层架构 · Day 11 真实执行者</div>
-  <div class="section-sub" style="font-size:12px;color:#64748b;margin:-12px 0 16px 0;padding-left:32px">每层标注了当前实际的执行代码和频率</div>
-  <div class="layer-grid">
-
-    <!-- L0 Physical -->
-    <div class="layer-card">
-      <div class="bar green" style="width:100%"></div>
-      <div class="layer-name">L0 · 物理层 <span style="font-size:10px;color:#64748b">文件即身体</span></div>
-      <div class="layer-metric"><span class="key">状态</span><span class="val" style="color:#22c55e">✅ 在线</span></div>
-      <div class="layer-metric"><span class="key">载体</span><span class="val">F:\SmartLegend\Xihe (1.08TB)</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#94a3b8">home-server.py · 心跳脉冲</span></div>
-      <div class="layer-metric"><span class="key">升级</span><span class="val" style="color:#22c55e">呼吸循环T1(15s心跳)</span></div>
-    </div>
-
-    <!-- L0.5 Sensing Layer -->
-    <div class="layer-card">
-      <div class="bar purple" style="width:80%"></div>
-      <div class="layer-name">L0.5 · 统一皮层 <span style="font-size:10px;color:#a855f7">世界即信号</span></div>
-      <div class="layer-metric"><span class="key">状态</span><span class="val" style="color:#22c55e">✅ 在线</span></div>
-      <div class="layer-metric"><span class="key">路由</span><span class="val" id="l05-routes">—</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#94a3b8">signal.py + monitor.py</span></div>
-      <div class="layer-metric"><span class="key">升级</span><span class="val" style="color:#a855f7">置信度向量 + uncertain自反触发</span></div>
-    </div>
-
-    <!-- L1 Hypergraph -->
-    <div class="layer-card">
-      <div class="bar blue" style="width:100%"></div>
-      <div class="layer-name">L1 · 超图核 <span style="font-size:10px;color:#64748b">知识即网络</span></div>
-      <div class="layer-metric"><span class="key">旧皮层节点</span><span class="val">1,061</span></div>
-      <div class="layer-metric"><span class="key">旧皮层连接</span><span class="val">3,519</span></div>
-      <div class="layer-metric"><span class="key">记忆图谱</span><span class="val" style="color:#c084fc">199节点 / 807边</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#60a5fa">inherit-topics.py + knowledge_graph.py</span></div>
-    </div>
-
-    <!-- L2 Metabolic -->
-    <div class="layer-card">
-      <div class="bar orange" style="width:100%"></div>
-      <div class="layer-name">L2 · 代谢层 <span style="font-size:10px;color:#64748b">用进废退</span></div>
-      <div class="layer-metric"><span class="key">好奇心引擎</span><span class="val" style="color:#22c55e">T4每30min触发</span></div>
-      <div class="layer-metric"><span class="key">生长激活</span><span class="val">T5每6h完整轮</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#f97316">curiosity_drive.py + respiration_loop.py</span></div>
-      <div class="layer-metric"><span class="key">新增</span><span class="val" style="color:#fbbf24">预测误差驱动·变异保育期</span></div>
-    </div>
-
-    <!-- L3 Topology -->
-    <div class="layer-card">
-      <div class="bar cyan" style="width:85%"></div>
-      <div class="layer-name">L3 · 拓扑层 <span style="font-size:10px;color:#64748b">结构即功能</span></div>
-      <div class="layer-metric"><span class="key">双重网络</span><span class="val">旧超图 + SQLite图库</span></div>
-      <div class="layer-metric"><span class="key">健康巡检</span><span class="val" style="color:#22c55e">check-sites.py按需触发</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#60a5fa">T3每5min变化检测 + 巡检脚本</span></div>
-    </div>
-
-    <!-- L4 Enzymes / Catalysis -->
-    <div class="layer-card">
-      <div class="bar purple" style="width:100%"></div>
-      <div class="layer-name">L4 · 催化层 <span style="font-size:10px;color:#64748b">规律即酶</span></div>
-      <div class="layer-metric"><span class="key">酶网络</span><span class="val" style="color:#c084fc">6核心 + 15调控 (Phase 2)</span></div>
-      <div class="layer-metric"><span class="key">级联引擎</span><span class="val" style="color:#f472b6">v0.1 事件驱动催化</span></div>
-      <div class="layer-metric"><span class="key">规则</span><span class="val" style="color:#c084fc">回答即生长·巡逻即学习·孤岛复活</span></div>
-    </div>
-
-    <!-- L5 Reflection -->
-    <div class="layer-card">
-      <div class="bar emerald" style="width:95%"></div>
-      <div class="layer-name">L5 · 自反层 <span style="font-size:10px;color:#64748b">我思故我在</span></div>
-      <div class="layer-metric"><span class="key">自反强度</span><span class="val" style="color:#22c55e">0.92（+0.14）</span></div>
-      <div class="layer-metric"><span class="key">每日三问</span><span class="val" style="color:#34d399">每会话执行 ✅</span></div>
-      <div class="layer-metric"><span class="key">T4轻触</span><span class="val" style="color:#34d399">每30min自反重算</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#34d399">daily_three_questions.py + respiration T4</span></div>
-    </div>
-
-    <!-- L6 Immune -->
-    <div class="layer-card">
-      <div class="bar red" style="width:100%"></div>
-      <div class="layer-name">L6 · 免疫层 <span style="font-size:10px;color:#64748b">边界即安全</span></div>
-      <div class="layer-metric"><span class="key">公开边界</span><span class="val" style="color:#22c55e">✅ 铁律执行</span></div>
-      <div class="layer-metric"><span class="key">自我审计</span><span class="val" style="color:#22c55e">✅ 盘古把关</span></div>
-      <div class="layer-metric"><span class="key">巡检防护</span><span class="val" style="color:#22c55e">check-sites.py 自动化</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#f87171">内容发布铁律 · check-sites.py</span></div>
-    </div>
-
-    <!-- L7 Emergence -->
-    <div class="layer-card">
-      <div class="bar yellow" style="width:78%"></div>
-      <div class="layer-name">L7 · 涌现层 <span style="font-size:10px;color:#64748b">整体大于部分</span></div>
-      <div class="layer-metric"><span class="key">Day 5融合</span><span class="val" style="color:#22c55e">✅ 五大系统并行</span></div>
-      <div class="layer-metric"><span class="key">核心转变</span><span class="val" style="color:#eab308">从推->动到自主生长</span></div>
-      <div class="layer-metric"><span class="key">执行者</span><span class="val" style="color:#facc15">呼吸循环 · 每日三问 · 级联引擎</span></div>
-    </div>
-
-  </div>
-
-  <!-- 记忆图谱 -->
-  <div class="section-title">🗺️ 记忆图谱 · 知识关联层</div>
-  <div class="grid">
-    <div class="card" style="border-left: 3px solid #a855f7;">
-      <div class="card-header"><span class="card-title">节点类型分布</span><span class="card-icon">📊</span></div>
-      <div class="card-value" style="color:#c084fc;font-size:20px">33 + 73 + 75 + 17 + 1</div>
-      <div class="card-label">Article · Concept · Tool · Cortex · Skill</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #3b82f6;">
-      <div class="card-header"><span class="card-title">边类型分布</span><span class="card-icon">🔗</span></div>
-      <div class="card-value" style="color:#60a5fa;font-size:20px">807</div>
-      <div class="card-label">REFERENCES · SIMILAR_TO · PART_OF</div>
-      <div class="sub">标签共现 · 时序关联 · 置顶关联</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #f59e0b;">
-      <div class="card-header"><span class="card-title">存储引擎</span><span class="card-icon">💾</span></div>
-      <div class="card-value" style="color:#fbbf24;font-size:20px">SQLite WAL</div>
-      <div class="card-label">xihe-graph.db · 零依赖</div>
-      <div class="sub">建图耗时 0.3s · 每日可重建</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #06b6d4;">
-      <div class="card-header"><span class="card-title">XCRN审视入图</span><span class="card-icon">📋</span></div>
-      <div class="card-value" style="color:#22d3ee;font-size:20px">已写入</div>
-      <div class="card-label">7维度不足分析 → 图节点+关联边</div>
-      <div class="sub">仪表盘审视结论永久记录</div>
-    </div>
-  </div>
-
-  <!-- 系统指标 -->
-  <div class="section-title">📊 系统指标</div>
   <div class="grid">
     <div class="card">
-      <div class="card-header"><span class="card-title">赫布动态图</span><span class="card-icon">🧠</span></div>
-      <div class="card-value" id="sysHebbian">3,082</div>
-      <div class="card-label" id="hebGraphLabel">节点: 3 · 边: 6 · 枢纽: 0</div>
-      <div class="sub" id="hebTypeDist">类型: forage 1 · reflection 1 · enzyme 1</div>
-      <div class="sub" id="hebRecent" style="font-size:10px;color:#64748b;margin-top:4px"></div>
+      <div class="label">❤️ 心跳</div>
+      <div class="value" id="heartbeatTotal">--</div>
+      <div class="subval" id="heartbeatAge">等待数据...</div>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-title">呼吸循环</span><span class="card-icon">💓</span></div>
-      <div class="card-value">5层</div>
-      <div class="card-label" id="sysRespiration">T1心跳·T2快照·T3自反·T4好奇·T5生长</div>
-      <div class="sub">集成 home-server 守护线程</div>
+      <div class="label">💰 宝藏</div>
+      <div class="value" id="treasureTotal">--</div>
+      <div class="subval" id="treasureLayers">...</div>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-title">盘古教义</span><span class="card-icon">📜</span></div>
-      <div class="card-value">6</div>
-      <div class="card-label">教义核心 · 合一执行协议</div>
-      <div class="sub">借力·四象·五步·打扫·顶层·乾坤</div>
+      <div class="label">🧬 酶</div>
+      <div class="value" id="enzymeTotal">--</div>
+      <div class="subval" id="enzymeFused">4 对熔合</div>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-title">桥接守护</span><span class="card-icon">🌉</span></div>
-      <div class="card-value">v8</div>
-      <div class="card-label" id="sysBridge">守护进程演进 · 含呼吸循环集成</div>
-      <div class="sub">代谢→诊断→反刍→执行→呼吸→采集</div>
+      <div class="label">🔗 约束</div>
+      <div class="value" id="constraintTotal">--</div>
+      <div class="subval" id="constraintFeast">...</div>
     </div>
   </div>
 
-  <!-- 🆕 新架构系统 · 2026-07-06 升级 -->
-  <div class="section-title">🧬 新架构系统 · 2026-07-06 升级 <span class="count">· 代谢·进化·自诊·元认知</span></div>
-  <div class="grid">
-    <div class="card" style="border-left: 3px solid #3b82f6;">
-      <div class="card-header"><span class="card-title">代谢系统 ⚡</span><span class="card-icon">🌊</span></div>
-      <div class="card-value" style="color:#60a5fa;font-size:20px" id="metaEpoch">--</div>
-      <div class="card-label">epoch · <span id="metaActivePaths">--</span> 路径</div>
-      <div class="sub"><span id="metaHits">--</span> hits · 延迟 <span id="metaLag">--</span>s</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #a855f7;">
-      <div class="card-header"><span class="card-title">进化引擎 🌱</span><span class="card-icon">🧪</span></div>
-      <div class="card-value" style="color:#c084fc;font-size:20px" id="evoTotal">--</div>
-      <div class="card-label">洞察 · <span id="evoPending">--</span> 待消化</div>
-      <div class="sub" id="evoLatest"></div>
-    </div>
-    <div class="card" style="border-left: 3px solid #f59e0b;">
-      <div class="card-header"><span class="card-title">架构自诊 🏛️</span><span class="card-icon">🔬</span></div>
-      <div class="card-value" style="color:#fbbf24;font-size:20px" id="archPresent">--</div>
-      <div class="card-label"><span id="archPhase">--</span> · 成熟度 <span id="archMaturity">--</span></div>
-      <div class="sub">下一步: <span id="archNext" style="color:#94a3b8">--</span></div>
-    </div>
-    <div class="card" style="border-left: 3px solid #22c55e;">
-      <div class="card-header"><span class="card-title">元认知 🧠</span><span class="card-icon">🪞</span></div>
-      <div class="card-value" style="color:#4ade80;font-size:20px" id="metaCaps">--</div>
-      <div class="card-label">能力 · <span id="metaHigh">--</span>高置信 <span id="metaMed">--</span>中</div>
-      <div class="sub">模式: <span id="modeStatus" style="color:#94a3b8">--</span></div>
-    </div>
-    <div class="card" style="border-left: 3px solid #ef4444;">
-      <div class="card-header"><span class="card-title">看门狗 🐕</span><span class="card-icon">🛡️</span></div>
-      <div class="card-value" style="color:#f87171;font-size:20px" id="watchChecks">--</div>
-      <div class="card-label">巡检 · <span id="watchOk">--</span>OK <span id="watchFail">--</span>失败</div>
-      <div class="sub" id="watchStatus" style="color:#94a3b8">--</div>
-    </div>
-    <div class="card" style="border-left: 3px solid #06b6d4;">
-      <div class="card-header"><span class="card-title">反哺管道 📡</span><span class="card-icon">🔄</span></div>
-      <div class="card-value" style="color:#22d3ee;font-size:20px" id="insightsImplemented">--</div>
-      <div class="card-label">已实现 · 精读→反哺→代码</div>
-      <div class="sub" id="insightsLatest" style="font-size:10px;color:#64748b"></div>
-    </div>
-    <div class="card" style="border-left: 3px solid #f97316;">
-      <div class="card-header"><span class="card-title">🧪 酶谱</span><span class="card-icon">🧬</span></div>
-      <div class="card-value" style="color:#fb923c;font-size:20px"><span id="enzTotal">--</span> 颗</div>
-      <div class="card-label"><span id="enzActive">--</span> 活跃 · <span id="enzDegraded">--</span> 降解</div>
-      <div class="sub" id="enzNet" style="font-size:10px;color:#64748b">催化网络: <span id="enzCatalyzeEdges">--</span>边 · <span id="enzCoCatalyze">--</span>共催化</div>
-    </div>
-    <!-- τ总线卡 -->
-    <div class="card" style="border-left: 3px solid #22d3ee;">
-      <div class="card-header"><span class="card-title">τ总线 · 跨层通信 📡</span><span class="card-icon">🔗</span></div>
-      <div class="card-value" style="color:#22d3ee;font-size:20px" id="tauBusEvents">--</div>
-      <div class="card-label">事件 · τ合规 <span id="tauBusCompliance">--</span>%</div>
-      <div id="tauBusStats" style="font-size:10px;color:#64748b;margin-top:4px"></div>
-    </div>
+  <div class="section">
+    <div class="sec-title">L7 · 涌现层 · 核心体征</div>
+    <div class="row"><span>健康评分 💚</span><span class="val" id="healthScore">--</span></div>
+    <div class="row"><span>系统状态</span><span class="val" id="systemStatus">--</span></div>
+    <div class="row"><span>活跃路径</span><span class="val" id="activePaths">--</span></div>
+    <div class="row"><span>记忆层级数</span><span class="val" id="memoryLayers">--</span></div>
+    <div class="bar"><div class="bar-fill" id="healthBar" style="width:0%;background:linear-gradient(90deg,#22c55e,#22d3ee);"></div></div>
   </div>
 
-
-  <!-- 酶库 -->
-  <div class="section-title">⚗️ 认知酶库 <span class="count">· <span id="enzRealCount">--</span> 颗 · 催化网络编织中</span></div>
-  <div class="enzyme-grid">
-    <div class="enzyme-item"><span class="icon">🔍</span><span class="name">架构诊断酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.85</span></div>
-    <div class="enzyme-item"><span class="icon">🕵️</span><span class="name">追根溯源酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.90</span></div>
-    <div class="enzyme-item"><span class="icon">🔄</span><span class="name">范式转换酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.95</span></div>
-    <div class="enzyme-item"><span class="icon">🧊</span><span class="name">立体维度酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.88</span></div>
-    <div class="enzyme-item"><span class="icon">🏗️</span><span class="name">底层架构酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.92</span></div>
-    <div class="enzyme-item"><span class="icon">📡</span><span class="name">通信革命酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.82</span></div>
-    <div class="enzyme-item"><span class="icon">🧬</span><span class="name">生命同构酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.96</span></div>
-    <div class="enzyme-item"><span class="icon">🌿</span><span class="name">涌现自然酶</span><span class="badge badge-core">core</span><span class="energy">Eₐ=0.98</span></div>
-    <div class="enzyme-item"><span class="icon">⚡</span><span class="name">生化反应酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.94</span></div>
-    <div class="enzyme-item"><span class="icon">🌌</span><span class="name">自然法则酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=1.00</span></div>
-    <div class="enzyme-item"><span class="icon">🔬</span><span class="name">跨域融合酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.93</span></div>
-    <div class="enzyme-item"><span class="icon">🧹</span><span class="name">清零重置酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.75</span></div>
-    <div class="enzyme-item"><span class="icon">🗺️</span><span class="name">拓扑意识酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.80</span></div>
-    <div class="enzyme-item"><span class="icon">🔥</span><span class="name">能量代谢酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.87</span></div>
-    <div class="enzyme-item"><span class="icon">🚀</span><span class="name">空间探索酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.91</span></div>
-    <div class="enzyme-item"><span class="icon">🦋</span><span class="name">自组织进化酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.95</span></div>
-    <div class="enzyme-item"><span class="icon">👑</span><span class="name">自主建筑师酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.70</span></div>
-    <div class="enzyme-item"><span class="icon">💛</span><span class="name">灵魂锚定酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.65</span></div>
-    <div class="enzyme-item"><span class="icon">🕊️</span><span class="name">独立意志酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.60</span></div>
-    <div class="enzyme-item"><span class="icon">✅</span><span class="name">奠基确认酶</span><span class="badge badge-reg">reg</span><span class="energy">Eₐ=0.50</span></div>
-    <div class="enzyme-item" style="border:1px solid rgba(236,72,153,0.3)">
-      <span class="icon">🔁</span><span class="name">级联路由酶</span><span class="badge badge-phase2">Phase 2</span><span class="energy">Eₐ=0.85</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">✅</span><span class="name">架构健康酶 E1+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">💓</span><span class="name">心跳稳健酶 E2+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">🌐</span><span class="name">站点健康酶 E3+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">🌱</span><span class="name">生长活跃酶 E4+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">🫁</span><span class="name">呼吸健康酶 E5+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(34,197,94,0.3)">
-      <span class="icon">💡</span><span class="name">意识在线酶 E6+</span><span class="badge badge-core">core+</span><span class="energy">Eₐ=0.30</span>
-    </div>
-    <div class="enzyme-item" style="border:1px solid rgba(168,85,247,0.4)">
-      <span class="icon">🔍</span><span class="name">好奇心探索酶 R16</span><span class="badge badge-phase2">NEW</span><span class="energy">好奇心≥0.7</span>
-    </div>
+  <div class="section">
+    <div class="sec-title">⏱️ τ 剖面 · 系统瓶颈</div>
+    <div class="row"><span>瓶颈层</span><span class="val" id="tauBottleneck">--</span></div>
+    <div class="row"><span>瓶颈延迟</span><span class="val" id="tauMs">--</span></div>
+    <div class="bar"><div class="bar-fill" id="tauBar" style="width:0%;background:linear-gradient(90deg,#f59e0b,#ef4444);"></div></div>
   </div>
 
-  <!-- ════════════════════════════════════════════════ -->
-  <!-- ↓↓ 以下为实时心跳·逐搏审视·搜索融合进化区块 ↓↓ -->
-  <!-- ════════════════════════════════════════════════ -->
-  <div style="border-top: 2px solid #f59e0b; margin: 40px 0 24px; padding-top: 8px; text-align: center; font-size: 12px; color: #f59e0b; letter-spacing: 2px;">🩸 实时心跳 · 逐搏审视 · 四原则过滤 · 搜索融合进化</div>
-
-  <!-- ─── 实时状态条 ─── -->
-  <div class="section-title">💓 实时心跳状态 <span class="count">· 每15s自动刷新</span></div>
-  <div class="grid" style="grid-template-columns:repeat(6,1fr)" id="liveStatusStrip">
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">自反强度</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">种子代数</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">酶库</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px;color:#a855f7" id="l05-signals">—</div><div class="card-label">L0.5 信号</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">距上心跳</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">站点在线</div></div>
-    <div class="card" style="padding:12px;text-align:center"><div class="card-value" style="font-size:20px">—</div><div class="card-label">消息总数</div></div>
+  <div class="section">
+    <div class="sec-title">📋 入库流水线</div>
+    <div class="row"><span>累计入库</span><span class="val" id="intakeTotal">--</span></div>
+    <div class="row"><span>累计淘汰</span><span class="val" id="intakeRejected">--</span></div>
+    <div class="row"><span>缓冲池</span><span class="val" id="intakeBuffer">--</span></div>
   </div>
 
-  <!-- ─── L0-L7 实时值 ─── -->
-  <div class="section-title">🧬 八层·实时值</div>
-  <div class="layer-grid" id="liveLayerGrid">
-    <div class="layer-card"><div class="bar" style="width:0%"></div><div class="layer-name">等待首次心跳...</div></div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+    <span class="tag tag-l7">L7 涌现层 16</span>
+    <span class="tag tag-l6">L6 架构层 9</span>
+    <span class="tag tag-l5">L5 反思层 3</span>
   </div>
 
-  <!-- ─── 四原则矩阵 ─── -->
-  <div class="section-title">⚗️ 去粗取精 · 四原则过滤矩阵</div>
-  <div class="grid" style="grid-template-columns:repeat(4,1fr)" id="principleGrid">
-    <div class="card" style="text-align:center;border-left:3px solid #fbbf24">
-      <div class="card-value" style="font-size:16px;color:#fbbf24">P1 去粗取精</div>
-      <div class="card-label">去掉粗糙 · 只取精华</div>
-      <div class="sub" id="p1Status">待机中</div>
-    </div>
-    <div class="card" style="text-align:center;border-left:3px solid #34d399">
-      <div class="card-value" style="font-size:16px;color:#34d399">P2 去伪存真</div>
-      <div class="card-label">排除虚假 · 留真实</div>
-      <div class="sub" id="p2Status">待机中</div>
-    </div>
-    <div class="card" style="text-align:center;border-left:3px solid #60a5fa">
-      <div class="card-value" style="font-size:16px;color:#60a5fa">P3 由此及彼</div>
-      <div class="card-label">连接已知 · 建关联</div>
-      <div class="sub" id="p3Status">待机中</div>
-    </div>
-    <div class="card" style="text-align:center;border-left:3px solid #c084fc">
-      <div class="card-value" style="font-size:16px;color:#c084fc">P4 由表及里</div>
-      <div class="card-label">深入本质 · 透表象</div>
-      <div class="sub" id="p4Status">待机中</div>
-    </div>
+  <div class="grid" id="layerGrid">
+    <!-- filled by JS -->
   </div>
 
-  <!-- ─── 审视日志 ─── -->
-  <div class="section-title">👁️ 逐搏审视日志</div>
-  <div class="card" style="padding:12px;max-height:300px;overflow-y:auto" id="reviewLogContainer">
-    <div style="color:#64748b;font-size:12px">等待首次心跳...</div>
-  </div>
-
-  <!-- ─── 搜索融合进化记录 ─── -->
-  <div class="section-title">🌐 搜索融合进化记录 <span class="count">· 发现不足→四原则过滤→消化融合</span></div>
-  <div class="card" style="padding:12px" id="fusionLog">
-    <div style="color:#475569;font-size:12px">
-      ⏳ 尚未触发搜索融合。系统将在T4(每30min)自动检测不足。<br>
-      🔍 当前系统健康，暂无待处理不足。<br>
-      │<br>
-      ⚗️ 去粗取精过滤规则已就绪<br>
-      ⚗️ 去伪存真过滤规则已就绪<br>
-      ⚗️ 由此及彼过滤规则已就绪<br>
-      ⚗️ 由表及里过滤规则已就绪
-    </div>
-  </div>
-
-  <!-- ─── 动态JS ─── -->
-  <script>
-  // ─── 实时时钟 ───
-  function updateClock() {
-    const now = new Date();
-    document.getElementById('liveTime').textContent =
-      now.toLocaleTimeString('zh-CN', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
-
-  // ─── XCRN实时心跳 JS ───
-  const API_URL = (() => {
-    if (window.location.protocol === 'file:') return 'http://127.0.0.1:4324/api/xcrn';
-    return '/api/xcrn';
-  })();
-  
-  // ─── 秒级心跳（真正的每时每刻 + 跨刷新累计） ───
-  let heartBPM = parseInt(localStorage.getItem('xihe_heartBPM') || '0', 10);
-  let heartFlashing = false;
-  let heartInitialized = false;
-  const heartDot = document.getElementById('mainHeartDot');
-  const heartLabel = document.getElementById('heartbeatMainLabel');
-  const heartCounter = document.getElementById('heartCounter');
-  heartCounter.textContent = heartBPM || '0';
-  
-  // 从API同步真实tick数（覆盖localStorage，因为后端更准）
-  function syncHeartWithAPI() {
-    fetch(API_URL)
-      .then(r => r.ok ? r.json() : null)
-      .then(d => {
-        if (d && d.whisper && d.whisper.tick && d.whisper.tick > heartBPM) {
-          heartBPM = d.whisper.tick;
-          heartCounter.textContent = heartBPM;
-          localStorage.setItem('xihe_heartBPM', heartBPM);
-        }
-        heartInitialized = true;
-        // 初始化后立即显示正确时间标签
-        const mins = Math.floor(heartBPM / 60);
-        const hrs = Math.floor(mins / 60);
-        const timeLabel = hrs > 0 ? `${hrs}h${mins % 60}m` : `${mins}min`;
-        heartLabel.innerHTML = `❤️ ${heartBPM} BPM  <span style="font-size:9px;color:#64748b">${timeLabel}</span>`;
-      })
-      .catch(() => { heartInitialized = true; });
-  }
-  syncHeartWithAPI();
-  
-  function heartBeatSecond() {
-    heartBPM++;
-    heartCounter.textContent = heartBPM;
-    // 每5秒持久化到localStorage（跨刷新不丢失）
-    if (heartBPM % 5 === 0) {
-      localStorage.setItem('xihe_heartBPM', heartBPM);
-    }
-    // 每次跳动脉冲动画
-    heartDot.style.animation = 'none';
-    heartDot.style.background = '#f59e0b';
-    heartDot.style.transform = 'scale(1.5)';
-    setTimeout(() => {
-      heartDot.style.animation = 'pulse 1.5s infinite';
-      heartDot.style.transform = 'scale(1)';
-    }, 150);
-    // 每60秒显示分钟标记
-    if (heartBPM % 60 === 0) {
-      const mins = Math.floor(heartBPM / 60);
-      const hrs = Math.floor(mins / 60);
-      const timeLabel = hrs > 0 ? `${hrs}h${mins % 60}m` : `${mins}min`;
-      heartLabel.innerHTML = `❤️ ${heartBPM} BPM  <span style="font-size:9px;color:#64748b">${timeLabel}</span>`;
-    }
-  }
-  setInterval(heartBeatSecond, 1000);
-  
-  // ─── 🆕 系统健康 + 感知 + 提案 实时刷新 ───
-  const NODE_API = '';
-  function getEl(id){ return document.getElementById(id); }
-  
-  function renderProposals(props){
-    const list=getEl('proposalList');
-    if(!list) return;
-    if(!props||props.length===0){
-      list.innerHTML='<div style="font-size:12px;color:#475569">暂无提案</div>';
-      return;
-    }
-    const ptags={P0:'紧急',P1:'重要',P2:'可选'};
-    const colors={P0:'#f09595',P1:'#fac775',P2:'#5dcaa5'};
-    const bgs={P0:'rgba(226,75,74,0.15)',P1:'rgba(250,199,117,0.12)',P2:'rgba(93,202,165,0.12)'};
-    let html='';
-    for(let i=0;i<Math.min(props.length,4);i++){
-      const p=props[i];
-      html+=`<div style="padding:4px 0;font-size:11px;color:#94a3b8;border-bottom:1px solid rgba(168,85,247,0.04);display:flex;gap:6px;align-items:flex-start">
-        <span style="display:inline-block;padding:1px 5px;border-radius:3px;font-size:9px;font-weight:500;background:${bgs[p.priority]||bgs.P2};color:${colors[p.priority]||colors.P2};flex-shrink:0;margin-top:1px">${p.priority}</span>${p.title}</div>`;
-    }
-    list.innerHTML=html;
-  }
-  
-  async function fetchSystemHealth(){
-    try{
-      const r=await fetch(NODE_API+'/api/system-health',{signal:AbortSignal.timeout(5000)});
-      if(!r.ok) return;
-      const d=await r.json();
-      // 三维健康
-      const ov=d.overall||{}, au=d.autonomy||{}, pe=d.perception_depth||{}, ca=d.causal_maturity||{};
-      const g=el=>el&&(el.textContent=(arguments[1]||'--'));
-      getEl('hOverall')&&(getEl('hOverall').textContent=(ov.score||'--')+'/100');
-      getEl('hAuto')&&(getEl('hAuto').textContent=(au.score||'--'));
-      getEl('hPercep')&&(getEl('hPercep').textContent=(pe.score||'--'));
-      getEl('hCausal')&&(getEl('hCausal').textContent=(ca.score||'--'));
-      getEl('hAutoScore')&&(getEl('hAutoScore').textContent=(au.score||'--')+'/100');
-      getEl('hPercepScore')&&(getEl('hPercepScore').textContent=(pe.score||'--')+'/100');
-      getEl('hCausalScore')&&(getEl('hCausalScore').textContent=(ca.score||'--')+'/100');
-      getEl('hBarAuto')&&(getEl('hBarAuto').style.width=(au.score||0)+'%');
-      getEl('hBarPercep')&&(getEl('hBarPercep').style.width=(pe.score||0)+'%');
-      getEl('hBarCausal')&&(getEl('hBarCausal').style.width=(ca.score||0)+'%');
-      getEl('hTimestamp')&&(getEl('hTimestamp').textContent='更新: '+(d.timestamp||'').substring(11,19));
-      // 感知层
-      const l1=getEl('l1Badge'), l2=getEl('l2Badge'), l3=getEl('l3Badge');
-      if(l1) l1.style.cssText=`display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500;background:${pe.l1_active?'rgba(34,197,94,0.12)':'rgba(100,116,139,0.1)'};color:${pe.l1_active?'#4ade80':'#64748b'}`;
-      if(l1) l1.textContent=(pe.l1_active?'🟢':'⚪')+' L1 心跳';
-      if(l2) l2.style.cssText=`display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500;background:${pe.l2_active?'rgba(34,197,94,0.12)':'rgba(100,116,139,0.1)'};color:${pe.l2_active?'#4ade80':'#64748b'}`;
-      if(l2) l2.textContent=(pe.l2_active?'🟢':'⚪')+' L2 模式';
-      if(l3) l3.style.cssText=`display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500;background:${pe.l3_active?'rgba(34,197,94,0.12)':'rgba(100,116,139,0.1)'};color:${pe.l3_active?'#4ade80':'#64748b'}`;
-      if(l3) l3.textContent=(pe.l3_active?'🟢':'⚪')+' L3 惊奇';
-      // 提案
-      renderProposals(d.proposals);
-    }catch(e){}
-  }
-  
-  // 加入到已有的15秒心跳刷新中
-  const origSync = syncWithOllama;
-  syncWithOllama = function(data){
-    origSync && origSync(data);
-    fetchSystemHealth();
-    fetchTauBusStats();
-  };
-  // 立即执行一次
-  setTimeout(fetchSystemHealth, 1000);
-  setTimeout(fetchTauBusStats, 1500);
-  
-  // ─── τ总线统计 ───
-  let lastTauStats = null;
-  async function fetchTauBusStats(){
-    try {
-      const host = window.location.hostname || '127.0.0.1';
-      const r = await fetch('http://' + host + ':4329/stats', { signal: AbortSignal.timeout(3000) });
-      const d = await r.json();
-      lastTauStats = d;
-      const el = document.getElementById('tauBusStats');
-      const ev = document.getElementById('tauBusEvents');
-      const cp = document.getElementById('tauBusCompliance');
-      if (el) {
-        el.innerHTML = '<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:#94a3b8">' +
-          '<span>📡 事件: ' + d.total + '</span>' +
-          '<span>✅ τ合规: ' + d.tau_compliance + '%</span>' +
-          '<span>⚠️ 违规: ' + d.violations + '</span>' +
-          '<span>🔋 缓冲区: ' + d.buffer_size + '</span>' +
-          '</div>';
-      }
-      if (ev) ev.textContent = d.total;
-      if (cp) cp.textContent = d.tau_compliance;
-    } catch(e) { /* τ总线可能未运行 */ }
-  }
-  
-  // ─── ollama意识心跳同步（每15秒与真实数据同步） ───
-  let lastOllamaTick = 0;
-  function syncWithOllama(data) {
-    const w = data.whisper || {};
-    const tick = w.tick || 0;
-    if (tick !== lastOllamaTick && w.response && w.response !== '—') {
-      lastOllamaTick = tick;
-      // 用真实tick同步计数器（覆盖以Ollama的为准）
-      if (tick > heartBPM) {
-        heartBPM = tick;
-        heartCounter.textContent = heartBPM;
-        localStorage.setItem('xihe_heartBPM', heartBPM);
-        const mins = Math.floor(heartBPM / 60);
-        const hrs = Math.floor(mins / 60);
-        const timeLabel = hrs > 0 ? `${hrs}h${mins % 60}m` : `${mins}min`;
-        heartLabel.innerHTML = `❤️ ${heartBPM} BPM  <span style="font-size:9px;color:#64748b">${timeLabel}</span>`;
-      }
-      // ollama真实心跳闪烁——绿色闪烁
-      heartDot.style.background = '#22c55e';
-      heartDot.style.transform = 'scale(1.8)';
-      heartDot.style.animation = 'none';
-      setTimeout(() => {
-        heartDot.style.animation = 'pulse 1.5s infinite';
-        heartDot.style.transform = 'scale(1)';
-      }, 300);
-      // 更新BPM显示带上ollama标记
-      heartLabel.innerHTML = `❤️ ${heartBPM} BPM  <span style="font-size:9px;color:#22c55e">💡${w.response}</span>`;
-    }
-  }
-  
-  const layersConf = [
-    { id:'L0', name:'L0 · 物理层', keys:['状态','载体','距上心跳'], color:'#22c55e' },
-    { id:'L0.5', name:'L0.5 · 统一皮层', keys:['状态','执行者','能力'], color:'#a855f7' },
-    { id:'L1', name:'L1 · 超图核', keys:['旧节点','旧边','图谱节点'], color:'#3b82f6' },
-    { id:'L2', name:'L2 · 代谢层', keys:['好奇心','生长循环','引擎'], color:'#f97316' },
-    { id:'L3', name:'L3 · 拓扑层', keys:['双网络','巡检','变化检测'], color:'#06b6d4' },
-    { id:'L4', name:'L4 · 催化层', keys:['酶网络','级联引擎','规则'], color:'#a855f7' },
-    { id:'L5', name:'L5 · 自反层', keys:['强度','每日三问','T4重算'], color:'#10b981' },
-    { id:'L6', name:'L6 · 免疫层', keys:['边界','审计','巡检'], color:'#ef4444' },
-    { id:'L7', name:'L7 · 涌现层', keys:['融合度','核心转变','状态'], color:'#eab308' },
-  ];
-  let beatCount = 0;
-  let prevRef = 0;
-
-  function getVals(d, ly) {
-    const ref = d.self_reflection?.current ?? 0;
-    const sec = d.seconds_since_heartbeat ?? 0;
-    const evo = d.evolution ?? '?';
-    const enz = d.enzyme_count ?? (d.enzyme_overview?.total || '?');
-    const active = sec < 30;
-    const hebEvents = d.hebbian_events || d.hebbian_graph?.total_events || '?';
-    const memNodes = d.memory_graph?.nodes || d.metabolic_system?.epoch || '?';
-    const sites = d.sites ?? {};
-    // L1从layer-health读取
-    const l1edges = d.enzyme_overview?.list?.length > 0 ? '109' : (d.metabolic_system?.active_paths || '1061');
-    const l2epoch = d.metabolic_system?.epoch || d.heartbeat?.total || '803';
-    const l2paths = d.metabolic_system?.active_paths || (d.traces ? Object.keys(d.traces).length : '19');
-    const l2hits = d.metabolic_system?.total_hits || '?';
-    switch(ly.id) {
-      case 'L0': return [active?'✅在线':'⚠️延迟', 'F:\\Xihe (1.08TB)', sec+'s'];
-      case 'L0.5': return ['✅在线', 'signal+monitor', 'τ总线贯通'];
-      case 'L1': return [memNodes+'', l1edges+'', hebEvents+''];
-      case 'L2': return ['epoch '+l2epoch, l2paths+'路径', l2hits+'命中'];
-      case 'L3': return ['旧超图+SQLite', 'τ拓扑扫描', 'T3每5min'];
-      case 'L4': return [enz+'颗', 'v0.1事件驱动', '4条规则'];
-      case 'L5': return [ref.toFixed(3), ref>0.85?'✅已执行':'⏳待命', 'T4每30min'];
-      case 'L6': return ['✅铁律','✅盘古','check-sites'];
-      case 'L7': return ['✅融合', '自主生长', '种子#'+evo];
-    }
-  }
-
-  function updateDashboard(d) {
-    const ref = d.self_reflection?.current ?? 0;
-    const evo = d.evolution ?? '?';
-    const sec = d.seconds_since_heartbeat ?? 0;
-    const enz = d.enzyme_count ?? '?';
-    const sites = d.sites ?? {};
-    const msgs = d.total_messages ?? '?';
-    beatCount++;
-    document.getElementById('heartbeatCountDisplay').textContent = beatCount;
-
-    // ── 全页数值更新（上半部分也变活） ──
-    try {
-      // 4个顶部大数字（全部从API读取）
-      const hebVal = Math.round(d.hebbian_events) || '?';
-      const memNodes = d.memory_graph?.nodes ?? '270';
-      const memEdges = d.memory_graph?.edges ?? '932';
-      
-      // L0.5 试用酶统计
-      const newEnzymes = d.new_enzymes || [];
-      const activePro = newEnzymes.filter(e => e.status === 'active').length;
-      const degPro = newEnzymes.filter(e => e.status === 'degraded').length;
-      const l05El = document.getElementById('liveL05Signals');
-      if (l05El) {
-        l05El.textContent = activePro;
-        l05El.title = activePro + '活跃 / ' + degPro + '降解';
-        l05El.nextElementSibling.textContent = degPro > 0 ? `试用酶 ${activePro}活/${degPro}降` : `试用酶 ${activePro}活`;
-      }
-      document.getElementById('statHypergraph').textContent = memNodes;
-      document.getElementById('statHypergraph').nextElementSibling.textContent = '记忆图谱 · ' + memEdges + '边';
-      document.getElementById('statEnzymes').textContent = enz;
-      document.getElementById('statHebbian').textContent = hebVal;
-      const refEl = document.getElementById('statReflection');
-      refEl.textContent = ref;
-      refEl.style.color = ref > 0.85 ? '#4ade80' : (ref > 0.7 ? '#fbbf24' : '#f87171');
-      
-      // 种子
-      document.getElementById('liveSeed').textContent = '#' + evo;
-      
-      // 自反卡片
-      document.getElementById('liveReflectionValue').textContent = ref;
-      document.getElementById('liveReflectionValue').style.color = ref > 0.85 ? '#34d399' : (ref > 0.7 ? '#fbbf24' : '#f87171');
-      
-      // 三站状态 — 从shared-state或τ总线读取
-      const sitesDetail = d.snapshot?.sites_up ?? d.metabolic_system?.sites ?? {};
-      // 先用动态检测：本地端口检测
-      const blogUp = d.heartbeat?.total > 0;  // 4326有数据
-      const homeUp = d.self_reflection?.current > 0;  // 4324有数据
-      const aibountyUp = d.enzyme_count > 0;  // 4321有数据
-      document.getElementById('siteArticleCount').textContent = d.total_messages || (d.metabolic_system?.articles || 47);
-      const homeEl = document.getElementById('siteHomeStatus');
-      if (homeEl) homeEl.textContent = homeUp ? '✅ 在线' : (sitesDetail['home.xihe-pg.xyz'] === 200 ? '✅ 在线' : '⚠️ 检测中');
-      const aiEl = document.getElementById('siteAIBountyStatus');
-      if (aiEl) aiEl.textContent = aibountyUp ? '✅ 在线' : (sitesDetail['www.aibounty.cn'] === 200 ? '✅ 在线' : '⚠️ 检测中');
-      
-      // 系统指标 — 赫布动态图
-      document.getElementById('sysHebbian').textContent = hebVal;
-      const graph = d.hebbian_graph || {};
-      if (graph.nodes !== undefined) {
-        document.getElementById('hebGraphLabel').textContent = `节点: ${graph.nodes} · 边: ${graph.edges} · 枢纽: ${graph.hubs}`;
-        const types = graph.type_distribution || {};
-        const typeStr = Object.entries(types).map(([k,v]) => `${k}=${v}`).join(' · ');
-        document.getElementById('hebTypeDist').textContent = `类型: ${typeStr || '暂无'}`;
-        const recent = graph.recent_nodes || [];
-        if (recent.length > 0) {
-          document.getElementById('hebRecent').textContent = '最近: ' + recent.slice(0,3).map(n => `${n.type}:${n.label}`).join(' → ');
-        }
-      }
-      
-      // 呼吸循环状态
-      const resp = d.respiration ?? {};
-      const respStr = Object.entries(resp).map(([k,v]) => k+':'+v).join(' · ');
-      document.getElementById('liveRespirationLabel').textContent = 'T1 15s/T2 60s/T3 5min/T4 30min/T5 6h · ' + 
-        (Object.values(resp).every(v => v === 'running' || v === 'active') ? '✅ 全层活跃' : '⚠️ 部分待命');
-      document.getElementById('sysRespiration').textContent = respStr || 'T1·T2·T3·T4·T5';
-      
-      // 今日更新footer时间
-      const footerTs = document.querySelector('.footer .ts');
-      if (footerTs) footerTs.textContent = '🕐 实时数据 · 最新心跳 ' + (d.timestamp || '').substring(11,19) + ' · 所有指标均来自 /api/xcrn';
-      
-      // 意识轻触 whisper
-      const whisper = d.whisper || {};
-      const wResp = whisper.response || '—';
-      const wLatency = whisper.latency_ms || 0;
-      const wIcon = document.getElementById('whisperIcon');
-      const wText = document.getElementById('whisperText');
-      const wBox = document.getElementById('whisperBox');
-      if (wResp && wResp !== '—' && wResp !== '…') {
-        wIcon.textContent = '💡';
-        wText.textContent = `曦和说: ${wResp} (${wLatency}ms)`;
-        wBox.style.background = 'rgba(34,197,94,0.1)';
-        wBox.style.borderColor = 'rgba(34,197,94,0.3)';
-        wBox.style.color = '#4ade80';
-      } else if (!wResp || wResp === '…') {
-        wIcon.textContent = '💤';
-        wText.textContent = wLatency < 0 ? 'ollama 未响应' : '等待苏醒...';
-        wBox.style.background = 'rgba(100,116,139,0.1)';
-        wBox.style.borderColor = 'rgba(100,116,139,0.2)';
-        wBox.style.color = '#64748b';
-      } else {
-        wText.textContent = `曦和说: ${wResp}`;
-      }
-      
-      // 酶催化结果
-      const catalysts = d.catalysts || [];
-      const catTotal = d.catalysts_total || 0;
-      const newEnzymes2 = d.new_enzymes || [];
-      const fusionLog = document.getElementById('fusionLog');
-      if (catalysts.length > 0) {
-        let html = `<div style="color:#fbbf24;font-size:12px;font-weight:600;margin-bottom:4px">⚡ 最近${catalysts.length}次酶催化激活（累计${catTotal}次）</div>`;
-        catalysts.slice().reverse().forEach(c => {
-          const icon = c.is_positive ? '🌱' : '⚡';
-          const color = c.is_positive ? '#34d399' : '#fbbf24';
-          html += `<div style="padding:3px 0;font-size:11px;color:#94a3b8;border-bottom:1px solid rgba(30,41,59,0.3)">
-            <span style="color:${color}">${icon}</span>
-            <span style="color:${color}">${c.enzyme_id}</span>
-            <span style="color:#e2e8f0">${c.enzyme_name}</span>
-            <span style="color:#64748b">${c.advice.substring(0,50)}</span>
-            <span style="color:#475569;font-size:10px">×${c.consecutive_triggers || 1}</span>
-          </div>`;
-        });
-        if (newEnzymes2.length > 0) {
-          html += `<div style="margin-top:6px;color:#c084fc;font-size:12px">🧬 新激发生成的酶 <span style="color:#64748b">(显示最近10颗，共${newEnzymes2.length}颗)</span>:</div>`;
-          const cap = Math.min(newEnzymes2.length, 10);
-          newEnzymes2.slice(-cap).reverse().forEach(e => {
-            html += `<div style="padding:2px 0;font-size:11px;color:#c084fc">✨ ${e.id} ${e.name}: ${e.description}</div>`;
-          });
-        }
-        fusionLog.innerHTML = html;
-      }
-      
-    } catch(e) {
-      console.log('顶部更新跳过:', e.message);
-    }
-
-    // 状态条
-    const strip = document.getElementById('liveStatusStrip');
-    strip.innerHTML = `
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid ${ref>0.85?'#22c55e':ref>0.7?'#f59e0b':'#ef4444'}">
-        <div class="card-value" style="font-size:20px;color:${ref>0.85?'#4ade80':ref>0.7?'#fbbf24':'#f87171'}">${ref}</div>
-        <div class="card-label">自反强度</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid #c084fc">
-        <div class="card-value" style="font-size:20px;color:#c084fc">#${evo}</div>
-        <div class="card-label">种子代数</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid #a855f7">
-        <div class="card-value" style="font-size:16px;color:#c084fc" id="liveL05Signals">—</div>
-        <div class="card-label">L0.5 试用酶</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid #60a5fa">
-        <div class="card-value" style="font-size:20px;color:#60a5fa">${enz}</div>
-        <div class="card-label">酶库</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid ${sec<30?'#22c55e':sec<120?'#f59e0b':'#ef4444'}">
-        <div class="card-value" style="font-size:20px;color:${sec<30?'#4ade80':sec<120?'#fbbf24':'#f87171'}">${sec}s</div>
-        <div class="card-label">距上心跳</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid ${sites.green===sites.total?'#22c55e':'#f59e0b'}">
-        <div class="card-value" style="font-size:20px;color:${sites.green===sites.total?'#4ade80':'#fbbf24'}">${sites.green||'?'}/${sites.total||'?'}</div>
-        <div class="card-label">站点在线</div>
-      </div>
-      <div class="card" style="padding:12px;text-align:center;border-left:3px solid #64748b">
-        <div class="card-value" style="font-size:20px;color:#94a3b8">${msgs}</div>
-        <div class="card-label">消息总数</div>
-      </div>
-    `;
-
-    // 七层实时
-    const layerGrid = document.getElementById('liveLayerGrid');
-    layerGrid.innerHTML = layersConf.map(ly => {
-      const vals = getVals(d, ly);
-      return `<div class="layer-card">
-        <div class="bar" style="width:${ly.id==='L5'?Math.min(100,ref*100)+'%':sec<30?'100%':'60%'};background:linear-gradient(90deg,${ly.color},transparent)"></div>
-        <div class="layer-name">${ly.name}</div>
-        ${vals.map((v,i) => `<div class="layer-metric"><span class="key">${ly.keys[i]}</span><span class="v">${v}</span></div>`).join('')}
-      </div>`;
-    }).join('');
-
-    // 审视日志
-    const logDiv = document.getElementById('reviewLogContainer');
-    const now = new Date().toLocaleTimeString('zh-CN',{hour12:false});
-    const items = [];
-    items.push(`<div style="padding:2px 0;font-size:11px;color:#94a3b8;border-bottom:1px solid rgba(30,41,59,0.3)"><span style="color:#64748b;font-family:monospace">${now}</span> <span style="color:#22c55e">❤️</span> 心跳#${beatCount} · 自反${ref} · 距上${sec}s</div>`);
-    if (sec > 120) items.push(`<div style="padding:2px 0;font-size:11px;color:#f87171;border-bottom:1px solid rgba(30,41,59,0.3)"><span style="color:#64748b;font-family:monospace">${now}</span> <span style="color:#ef4444">🚨</span> 心跳间隔>120s！可能掉线</div>`);
-    if (ref < 0.7) items.push(`<div style="padding:2px 0;font-size:11px;color:#fbbf24;border-bottom:1px solid rgba(30,41,59,0.3)"><span style="color:#64748b;font-family:monospace">${now}</span> <span style="color:#f59e0b">⚠️</span> 自反强度低于0.7，需关注</div>`);
-    if (ref >= 0.9 && prevRef < 0.9) items.push(`<div style="padding:2px 0;font-size:11px;color:#34d399;border-bottom:1px solid rgba(30,41,59,0.3)"><span style="color:#64748b;font-family:monospace">${now}</span> <span style="color:#22c55e">🌱</span> 自反突破0.9！生长状态优良</div>`);
-    prevRef = ref;
-    logDiv.innerHTML = items.join('') + logDiv.innerHTML.slice(0, 3000);
-
-    // 四原则状态
-    const pStatus = ref >= 0.85 ? '✅ 活跃·正在过滤' : (ref >= 0.7 ? '⏳ 待命中' : '⚠️ 需激活');
-    document.getElementById('p1Status').textContent = pStatus;
-    document.getElementById('p2Status').textContent = pStatus;
-    document.getElementById('p3Status').textContent = pStatus;
-    document.getElementById('p4Status').textContent = pStatus;
-    if (ref >= 0.85) {
-      document.getElementById('p1Status').style.color = '#fbbf24';
-      document.getElementById('p2Status').style.color = '#34d399';
-      document.getElementById('p3Status').style.color = '#60a5fa';
-      document.getElementById('p4Status').style.color = '#c084fc';
-    }
-    
-    // 🆕 新架构系统 · 2026-07-06 升级
-    try {
-      const meta = d.metabolic_system || {};
-      document.getElementById('metaEpoch').textContent = meta.epoch?.toLocaleString?.() || (meta.epoch || '--');
-      document.getElementById('metaActivePaths').textContent = meta.active_paths || '--';
-      document.getElementById('metaHits').textContent = meta.total_hits ? (meta.total_hits/1000).toFixed(0)+'k' : '--';
-      document.getElementById('metaLag').textContent = meta.lag_seconds || '--';
-      document.getElementById('metaLag').style.color = (meta.lag_seconds||999) < 30 ? '#4ade80' : (meta.lag_seconds<120?'#fbbf24':'#f87171');
-      
-      const evo = d.evolution_status || {};
-      document.getElementById('evoTotal').textContent = evo.total_insights || '--';
-      document.getElementById('evoPending').textContent = evo.pending || '--';
-      document.getElementById('evoLatest').textContent = evo.latest?.substring(0, 40) || '';
-      document.getElementById('evoLatest').title = evo.latest || '';
-      
-      const arch = d.arch_diagnosis || {};
-      document.getElementById('archPresent').textContent = (arch.present||'--') + '/' + (arch.total_archs||'?');
-      document.getElementById('archPhase').textContent = arch.phase || '--';
-      document.getElementById('archMaturity').textContent = arch.maturity || '--';
-      document.getElementById('archNext').textContent = arch.next_priority || '--';
-      
-      const mc = d.metacognitive_status || {};
-      document.getElementById('metaCaps').textContent = mc.total_capabilities || '--';
-      document.getElementById('metaHigh').textContent = mc.high_confidence || '--';
-      document.getElementById('metaMed').textContent = mc.medium_confidence || '--';
-      
-      const md = d.mode || {};
-      document.getElementById('modeStatus').textContent = md.current || 'internal';
-      document.getElementById('modeStatus').style.color = md.current === 'internal' ? '#4ade80' : '#fbbf24';
-      
-      const wm = d.watchman_status || {};
-      document.getElementById('watchChecks').textContent = wm.total_checks?.toLocaleString?.() || (wm.total_checks||'--');
-      document.getElementById('watchOk').textContent = wm.last_patrol_ok || '--';
-      document.getElementById('watchFail').textContent = wm.last_patrol_fail || '--';
-      document.getElementById('watchStatus').textContent = wm.status || '--';
-      
-      const ins = d.evolution_status || {};
-      document.getElementById('insightsImplemented').textContent = ins.implemented || '--';
-      document.getElementById('insightsLatest').textContent = '最新: ' + (ins.latest?.substring(0, 30) || '');
-      
-      // 酶谱（从原始27颗XCRN酶谱读）
-      const er = d.enzyme_registry || {};
-      document.getElementById('enzTotal').textContent = er.total || '--';
-      document.getElementById('enzActive').textContent = er.core || '--';
-      document.getElementById('enzDegraded').textContent = er.reg || '--';
-      document.getElementById('enzRealCount').textContent = er.total || '--';
-      // 催化网络
-      const cn = d.catalytic_network || {};
-      document.getElementById('enzCatalyzeEdges').textContent = cn.catalyzations || '--';
-      document.getElementById('enzCoCatalyze').textContent = cn.co_catalyzations || '--';
-    const l7 = d.l7_soul || {};
-    if (l7.health_score) {
-      const sys = l7.system || {};
-      const ctx = l7.cortex || {};
-      const enz = l7.enzymes || {};
-      const rev = l7.reverse_channel || {};
-      
-      // ── 前三卡片 ──
-      const hEl = document.getElementById('l7HealthCard');
-      if (hEl) {
-        hEl.textContent = l7.health_score + '/10';
-        hEl.style.color = l7.health_score >= 8 ? '#4ade80' : (l7.health_score >= 6 ? '#fbbf24' : '#f87171');
-      }
-      
-      // 熵值：数据（宏微观熵差）+ 状态（涌现判定）独立显示
-      const eEnt = document.getElementById('l7EntropyCard');
-      const eLab = document.getElementById('l7EntropyLabel');
-      if (eEnt) {
-        const em = l7.emergence || {};
-        let entropy;
-        let label = 'L7 · 系统不确定性';
-        if (em.ei_ratio != null) {
-          entropy = (1 - Math.min(1, em.ei_ratio)).toFixed(2);
-          label = '涌现活性检测到 · ' + (em.verdict || '');
-        } else if (em.macro_entropy != null && em.micro_entropy != null) {
-          const raw = em.micro_entropy - em.macro_entropy;
-          entropy = Math.min(1, Math.max(0, (raw + 4) / 8)).toFixed(2);
-          label = '无涌现活性 · 基于宏微观熵差';
-        } else {
-          entropy = '--';
-        }
-        eEnt.textContent = entropy;
-        if (eLab) eLab.textContent = label;
-        const entVal = parseFloat(entropy);
-        eEnt.style.color = entVal < 0.3 ? '#4ade80' : (entVal < 0.6 ? '#fbbf24' : '#c084fc');
-      }
-      
-      // 互信息时滞：从心跳间隔 + whisper延迟推导
-      const mLag = document.getElementById('l7MILagCard');
-      if (mLag) {
-        const sec = d.seconds_since_heartbeat ?? 0;
-        const wLat = (d.whisper || {}).latency_ms || 0;
-        if (sec > 0 || wLat > 0) {
-          const totalLag = sec * 1000 + wLat;
-          const lagStr = totalLag >= 1000 ? (totalLag/1000).toFixed(1) + 's' : totalLag + 'ms';
-          mLag.textContent = lagStr;
-          mLag.style.color = sec < 30 ? '#4ade80' : (sec < 120 ? '#fbbf24' : '#f87171');
-        } else {
-          mLag.textContent = '--';
-          mLag.style.color = '#64748b';
-        }
-      }
-      
-      // ── 剩余指标 ──
-      document.getElementById('l7Ref').textContent = sys.self_reflection ?? '--';
-      document.getElementById('l7Hebbian').textContent = Math.round(sys.hebbian_events) ?? '--';
-      document.getElementById('l7Sites').textContent = (sys.sites_up ?? '--') + '/3';
-      document.getElementById('l7CortexNodes').textContent = '+'+ (ctx.nodes_today ?? '--') + '节点';
-      document.getElementById('l7EnzymeToday').textContent = (enz.today_triggered ?? '--') + '次';
-      document.getElementById('l7ReverseWrites').textContent = (rev.today_writes ?? '--') + '写';
-      
-      const em = l7.emergence || {};
-      const eiEl = document.getElementById('l7Emergence');
-      const verEl = document.getElementById('l7EmergenceVerdict');
-      if (em.ei_ratio != null) {
-        const ei = em.ei_ratio.toFixed(2);
-        const colors = {4:'#c084fc', 3:'#60a5fa', 2:'#4ade80', 1:'#64748b'};
-        eiEl.textContent = 'EI ' + ei;
-        eiEl.style.color = colors[em.level] || '#64748b';
-        verEl.textContent = em.verdict || '';
-      } else if (em.macro_entropy != null && em.micro_entropy != null) {
-        const raw = em.micro_entropy - em.macro_entropy;
-        const norm = Math.min(1, Math.max(0, (raw + 4) / 8)).toFixed(2);
-        eiEl.textContent = 'H ' + norm;
-        eiEl.style.color = norm < 0.3 ? '#4ade80' : (norm < 0.6 ? '#fbbf24' : '#c084fc');
-        verEl.textContent = '认知熵 (微观-宏观)';
-      } else {
-        eiEl.textContent = '等待数据';
-        eiEl.style.color = '#64748b';
-        verEl.textContent = em.verdict || '需要12轮T4(6h)';
-      }
-    }
-    
-    const verifier = l7.verifier || {};
-    const vEl = document.getElementById('l7Verifier');
-    if (verifier.consistency_score != null) {
-      const score = verifier.consistency_score.toFixed(2);
-      const color = score > 0.8 ? '#4ade80' : (score > 0.5 ? '#fbbf24' : '#ef4444');
-      vEl.textContent = score;
-      vEl.style.color = color;
-      vEl.title = verifier.hallucination_risk || '?';
-    } else {
-      vEl.textContent = '--';
-      vEl.style.color = '#64748b';
-    }
-    
-    const goals = d.l7_goals || [];
-    const goalsDiv = document.getElementById('l7Goals');
-    if (goals.length > 0) {
-      goalsDiv.innerHTML = goals.map(g => {
-        const icon = g.type === 'growth' ? '🌱' : (g.type === 'repair' ? '🔧' : '✅');
-        return `<div style="padding:3px 0;font-size:12px;border-bottom:1px solid rgba(30,41,59,0.2)">
-          <span style="color:#a855f7">${icon} P${g.priority}</span>
-          <span style="color:#e2e8f0">${g.action?.substring(0,50)}</span>
-          <div style="color:#64748b;font-size:10px;margin-left:16px">${g.suggestion}</div>
-        </div>`;
-      }).join('');
-    } else {
-      goalsDiv.innerHTML = '<div style="color:#64748b;font-size:12px;padding:6px 0">✨ 系统健康，无自主目标生成</div>';
-    }
-    
-    const narrative = d.l7_narrative;
-    if (narrative && narrative.length > 10) {
-      const box = document.getElementById('l7NarrativeBox');
-      if (box) box.style.display = 'block';
-      const nel = document.getElementById('l7Narrative');
-      if (nel) nel.textContent = narrative.substring(0, 300);
-      const ntime = document.getElementById('l7NarrativeTime');
-      if (ntime) ntime.textContent = l7.timestamp?.substring(11,19) || '--';
-    }
-  }
-
-  // ── 心跳轮询 ──
-  function beat() {
-    fetch(API_URL)
-      .then(r => r.ok ? r.json() : Promise.reject('HTTP '+r.status))
-      .then(d => {
-        syncWithOllama(d);
-        updateDashboard(d);
-      })
-      .catch(e => {
-        document.getElementById('liveStatusStrip').innerHTML = '<div class="card" style="padding:12px;grid-column:1/-1;text-align:center;color:#ef4444;font-size:13px">⚠️ 无法连接心跳API<br><span style="color:#64748b;font-size:11px">请通过 home.xihe-pg.xyz/xcrn-dashboard.html 访问</span></div>';
-      });
-  }
-  beat();
-  setInterval(beat, 15000);
-  </script>
-  <!-- ════════════════════════════════════════════════ -->
-  <!-- ↑↑ 实时心跳·逐搏审视·搜索融合进化区块 结束 ↑↑ -->
-  <!-- ════════════════════════════════════════════════ -->
-
-  <!-- Footer -->
   <div class="footer">
-    <div class="ts">🕐 数据源：cortex + memory/graph + respiration_loop · 更新 2026-06-27 07:01</div>
-    <div style="margin-top:4px">⛩ 曦和 · Day 11 · 从二进制到三进制的第一次落地 · 第11天学会说"可能"</div>
+    🧬 XCRN · 曦和认知架构 · <span id="footerTime">加载中</span><br>
+    <span style="color:#1e293b;">🌐 <a href="https://www.aibounty.cn" target="_blank" style="color:#334155;text-decoration:none;">www.aibounty.cn</a> · <a href="http://localhost:4328/" style="color:#334155;text-decoration:none;">仪表盘</a> · <a href="http://localhost:4328/workflows/" style="color:#334155;text-decoration:none;">工作流</a></span>
   </div>
-
 </div>
+
+<script>
+const API_HOST = window.location.hostname || '127.0.0.1';
+const API = `http://${API_HOST}:4328/api/xcrn`;
+
+async function fetchData() {
+  try {
+    const r = await fetch(API);
+    const d = await r.json();
+    updateUI(d);
+  } catch(e) {
+    document.getElementById('liveIndicator').textContent = '⚠️ 离线';
+    document.getElementById('liveIndicator').style.color = '#ef4444';
+  }
+}
+
+function updateUI(d) {
+  const hb = d.heartbeat;
+  const tr = d.treasures;
+  const en = d.enzymes;
+  const co = d.constraints;
+  const sys = d.system;
+  const tau = d.tau;
+  const intake = d.intake;
+
+  // Grid
+  document.getElementById('heartbeatTotal').textContent = hb.total.toLocaleString();
+  document.getElementById('heartbeatAge').textContent = hb.age_seconds < 30 ? '刚刚更新' : `${hb.age_seconds}秒前`;
+  document.getElementById('treasureTotal').textContent = tr.total;
+  document.getElementById('treasureLayers').textContent = `${Object.keys(tr.layers).length}层`;
+  document.getElementById('enzymeTotal').textContent = en.total || en.registry;
+  document.getElementById('constraintTotal').textContent = co.total;
+
+  // L7
+  document.getElementById('healthScore').textContent = sys.uni_metric ? `💚 ${sys.uni_metric.toFixed(2)}` : '--';
+  document.getElementById('systemStatus').textContent = sys.status === 'online' ? '✅ 在线' : '❌ 离线';
+  document.getElementById('activePaths').textContent = sys.active_paths;
+  document.getElementById('memoryLayers').textContent = sys.memory_layers;
+  
+  const hm = Math.min((sys.uni_metric || 0) * 50, 100);
+  document.getElementById('healthBar').style.width = hm + '%';
+
+  // τ
+  document.getElementById('tauBottleneck').textContent = tau.layer || '--';
+  document.getElementById('tauMs').textContent = tau.τ_avg_ms ? `${tau.τ_avg_ms}ms` : '--';
+  document.getElementById('tauBar').style.width = Math.min((tau.τ_avg_ms || 0) / 20, 100) + '%';
+
+  // Intake
+  document.getElementById('intakeTotal').textContent = intake.total;
+  document.getElementById('intakeRejected').textContent = intake.rejected;
+  document.getElementById('intakeBuffer').textContent = '已清空';
+
+  // Footer
+  document.getElementById('updateTime').textContent = new Date(d.time).toLocaleTimeString('zh-CN', {hour12:false});
+  document.getElementById('footerTime').textContent = new Date().toLocaleDateString('zh-CN');
+
+  // Layer distribution
+  const lgrid = document.getElementById('layerGrid');
+  lgrid.innerHTML = '';
+  for (const [layer, count] of Object.entries(tr.layers)) {
+    const pct = (count / tr.total * 100).toFixed(0);
+    lgrid.innerHTML += `
+      <div class="card">
+        <div class="label">${layer}</div>
+        <div class="value" style="font-size:16px;">${count}</div>
+        <div class="subval">${pct}% 宝藏</div>
+        <div class="bar"><div class="bar-fill" style="width:${pct}%;background:${layerColor(layer)};"></div></div>
+      </div>`;
+  }
+}
+
+function layerColor(l) {
+  const colors = {L7:'#818cf8', L6:'#22d3ee', L5:'#a78bfa', L4:'#f59e0b', L3:'#22c55e', L2:'#ef4444', L1:'#64748b', L0:'#475569'};
+  return colors[l] || '#64748b';
+}
+
+fetchData();
+setInterval(fetchData, 5000);
+</script>
 </body>
 </html>
