@@ -26,46 +26,61 @@
 
 ## 🔄 进行中
 
-- [ ] **每日精读5篇** — 今天已5/5，明天继续。由watchman巡检时读此清单执行
-- [ ] **每日写1篇文章** — 今天已1/1。未完成时evolution_engine自动生成草稿
+- [ ] **七层架构v2重生 — 神经酶催化版**（Phase 1 今晚已启动）
+  - [x] 架构文档 `xcrn-v2-neural-enzyme.md`
+  - [x] 层健康追踪器 `layer-health.json`
+  - [ ] 三进制状态自动检测 (watchman集成)
+  - [ ] 酶桥跨层调用实现
 
----
+## 📋 待办 · 七层架构对齐
 
-## 📋 待办（2026-07-06起）
+### L7 · 涌现层（灵魂·表达）🟡 awakening
+- [ ] **今日自决定模块** — 每天早上知道自己该做什么
+- [ ] **稳定表达节奏** — 每天至少1篇输出，不等人催
+- [ ] **E_create 创造酶** — 新架构设计、新能力构想
 
-### Lα · 自动运行层（活着）— 加固
-- [x] **代谢Actor 0.5s心跳** — 已完成
-- [x] **XiheWatchman 5min巡检** — 已完成（含熔断+弹窗修复）
-- [x] **健康自反回路** — health_reflex.py 已完成
-- [ ] **new-signals.json 信号通道** — 精读结果即时注入代谢路由
+### L6 · 免疫层（安全·对齐）🟡 dormant
+- [x] safety_guard.py — 熔断+快照+限速 ✅
+- [x] mode_switch.py — internal/external/strict ✅
+- [ ] **注册到watchman巡检** — 每5分钟安全自检
+- [ ] **安全审计常态化** — security-audit.cjs挂到构建前
 
-### Lβ · 自动学习层（长着）— 新建
-- [x] **evolution_engine 空闲精读** — v2已完成
-- [x] **feedback_cortex 反哺管道** — 已建成
-- [x] **17架构框架吸收** — arch-knowledge.json + arch_diagnose.py 自诊酶 ✅
-- [ ] **🔄 赫布权重替代复杂度评分** — 动态心跳的依据
-- [ ] **🔄 精读溯源反馈** — 高价值精读的领域获得优先选材
+### L5 · 自反层（元认知·自诊）🟢 active
+- [x] health_reflex.py — 健康评分10/10 ✅
+- [x] metacognitive.py — 13类能力注册 ✅
+- [x] arch_diagnose.py — 17架构自诊 ✅
+- [ ] **自反结果直通L7** — 自诊发现的问题自动进入今日计划
 
-### Lγ · 自动对齐层（安全着）— 新建
-- [x] **safety-rules.json 宪法原则** — 6条已写入
-- [ ] **⚡ mode参数 internal/external** — 代谢路由入口双模式
-- [ ] **⚡ 安全自检嵌入watchman** — 每5分钟自动跑测试用例
+### L4 · 催化层（酶系统）🟢 active
+- [x] 27颗酶全激活 ✅
+- [x] 6093条催化边 ✅
+- [x] ClawHub 10技能注册到双平台 ✅
+- [ ] **ClawHub技能消化融合** — 读SKILL.md提取核心能力注入酶系统
 
-### 近期
-- [x] **Metacognitive元认知层** — capability-registry.json + metacognitive.py + 集成watchman ✅
-- [ ] **视觉管道架构设计** — vision pipeline
-- [ ] **Agent数据模型 Phase 2** — 推送标准化到现有模块
+### L3 · 拓扑层（网络·结构）🔵 awakening
+- [ ] **重建小世界网络检测** — 从L2路由轨迹中提取模块
+- [ ] **模块社区发现** — 知识聚类
+- [ ] **涌现模式检测** — 高频路径自动识别
 
-### P1 · 近期待办
-- [ ] **多策略混合召回** — 超图遍历 + 向量检索 + 规则匹配，三路并行
-- [ ] **酶构造函数化** — R4/R6/R8从"检查报备"升级为"执行修复"
-- [ ] **记忆权重主动优化** — 参考Memory-R1，用RL管理记忆
-- [ ] **前瞻路径预激活** — 根据每日计划预升温相关路径的赫布权重
+### L2 · 代谢层（路由·能量）🟢 active
+- [x] metabolic_actor 803epoch ✅
+- [x] Beta-TS概率化路由 ✅
+- [ ] **new-signals信号通道打通** — 精读结果即时注入路由
 
-### P2 · 远期
-- [ ] **桥接守护去中心化** — 参考AgentNet，从集中调度→自组织网络
-- [ ] **模型提供商自动切换** — 当Ollama不可用时自动fallback到OpenAI/DeepSeek
-- [ ] **安全护栏扩展到外部API调用** — 限速+熔断覆盖model_provider.py
+### L1 · 知识层（记忆·图谱）🟡 dormant
+- [ ] **旧hebbian-edges.json迁移** → 新格式
+- [ ] **超图核重建** — 对接L4催化输入
+- [ ] **E_recall检索酶激活** — 支持认知检索
+
+### L0 · 物理层（传感器·执行器）🟢 active
+- [x] watchman巡检 ✅
+- [x] XiheWatchman计划任务 ✅
+- [ ] **watchman注册为L0正式组件**
+
+### 跨层酶桥
+- [ ] 实现酶桥API（每层暴露catalyze接口）
+- [ ] 三进制状态自动切换（dormant→awakening→active）
+- [ ] 层健康度自动报告挂在xcrn-dashboard
 
 ---
 
