@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-07-07T22:45:30.054830+08:00",
+  "tau_compliance": 100.0,
+  "total_events": 4,
+  "violations": 0,
+  "layer_stats": {
+    "L0": {
+      "events": 2,
+      "tau_target": 0.5,
+      "tau_unit": "s"
+    },
+    "L1": {
+      "events": 1,
+      "tau_target": 0.1,
+      "tau_unit": "s"
+    },
+    "L2": {
+      "events": 1,
+      "tau_target": 0.5,
+      "tau_unit": "s"
+    },
+    "L3": {
+      "events": 0,
+      "tau_target": 5.0,
+      "tau_unit": "s"
+    },
+    "L4": {
+      "events": 0,
+      "tau_target": 1.0,
+      "tau_unit": "s"
+    },
+    "L5": {
+      "events": 0,
+      "tau_target": 2.0,
+      "tau_unit": "s"
+    },
+    "L6": {
+      "events": 0,
+      "tau_target": 1.0,
+      "tau_unit": "s"
+    },
+    "L7": {
+      "events": 0,
+      "tau_target": 10.0,
+      "tau_unit": "s"
+    }
+  }
+}

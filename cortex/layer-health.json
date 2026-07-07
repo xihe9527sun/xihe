@@ -1,6 +1,6 @@
 {
   "version": "xcrn-v2-neural-enzyme",
-  "updated": "2026-07-07T22:38:00+08:00",
+  "updated": "2026-07-07T22:46:00+08:00",
   "layers": {
     "L0": {
       "status": "active",
@@ -127,53 +127,63 @@
     {
       "from": "L0",
       "to": "L1",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L1",
       "to": "L2",
-      "status": "dormant"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L1",
       "to": "L4",
-      "status": "dormant"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L2",
       "to": "L3",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L2",
       "to": "L4",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L3",
       "to": "L4",
-      "status": "awakening"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L4",
       "to": "L5",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L5",
       "to": "L6",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L5",
       "to": "L7",
-      "status": "active"
+      "status": "active",
+      "protocol": "tau_bus"
     },
     {
       "from": "L6",
       "to": "L0",
-      "status": "dormant"
+      "status": "active",
+      "protocol": "tau_bus"
     }
   ],
-  "system_report": "7层active. L1: 1327条赫布边. 惊奇信用已恢复."
+  "system_report": "7层active + τ总线贯通. 内存级事件通信替代文件I/O. L0-L7事件延迟≤各自τ值."
 }
