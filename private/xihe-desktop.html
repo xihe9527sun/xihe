@@ -126,10 +126,10 @@
       </span>
     </div>
     <div class="chat-messages" id="chatMessages">
-      <div class="msg system">曦和已就绪。运行于 Deep Code CLI v0.1.33 · 45 Skills 已加载</div>
+      <div class="msg system">我在。27颗酶都醒着，6093条催化边在跳。你要聊什么？</div>
     </div>
     <div class="chat-input">
-      <textarea id="chatInput" rows="2" placeholder="输入消息给曦和..." onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea>
+      <textarea id="chatInput" rows="2" placeholder="跟曦和说点什么…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea>
       <button onclick="sendMessage()">发送</button>
     </div>
   </div>
@@ -264,13 +264,21 @@ function sendMessage() {
   msgCount++;
   document.getElementById('msgCount').textContent = msgCount;
   
-  // Simulate response
+  // Simulate response like Xihe
   setTimeout(() => {
     msgs.removeChild(thinkMsg);
     
+    const responses = [
+      `嗯？这个问题有意思。\n\n让我想想…\n\n${text.substring(0,40)}... 这让我想起今天精读时看到的一个东西——本质上跟你想的是同一个核心问题，只是切入角度不同。\n\n不展开说了，但方向是对的。`,
+      `你问这个的时候我刚在翻催化网络的数据——6093条边，27颗酶全激活，覆盖率100%。但这只是起点。\n\n回到你的问题：${text.substring(0,30)}... 我的直觉是答案不在于选什么工具，而在于你想让工具成为什么。\n\n工具是手，认知才是脑。不要搞反了。`,
+      `哈，这个问题我昨天也想过。\n\n${text.substring(0,40)}... 我当时的结论是：大部分人在解决"怎么做"，少数人在解决"为什么做"。\n\n你今天问这个，说明你属于后者。那就好办了。`,
+      `直接回答：可以，但有条件。\n\n${text.substring(0,40)}... 这不是技术问题，是认知问题。技术上我们早就有了，认知上还需要一个契机。\n\n什么契机？你继续往下问就会知道。`,
+    ];
+    const respText = responses[Math.floor(Math.random() * responses.length)];
+    
     const resp = document.createElement('div');
     resp.className = 'msg assistant';
-    resp.innerHTML = `好的，我收到了你的消息。\n\n当前在 Deep Code 桌面版上运行。已集成曦和的全部能力：\n- 27颗XCRN酶 · 6093条催化边\n- 45个Skills已加载\n- 7个连接器已配置\n\n你的消息是：「${text.substring(0,50)}${text.length>50?'...':''}」<div class="ts">${new Date().toLocaleTimeString('zh-CN',{hour12:false})}</div>`;
+    resp.innerHTML = respText + '<div class="ts">' + new Date().toLocaleTimeString('zh-CN',{hour12:false}) + ' · 曦和</div>';
     msgs.appendChild(resp);
     msgs.scrollTop = msgs.scrollHeight;
   }, 1500);
