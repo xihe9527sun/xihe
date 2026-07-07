@@ -1,0 +1,308 @@
+{
+  "path_credits": {
+    "node:depth-thinking-19": {
+      "credit": 0.3387,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-19": {
+      "credit": 0.333055,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-18": {
+      "credit": 0.32741000000000003,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-18": {
+      "credit": 0.321765,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-17": {
+      "credit": 0.31612,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-17": {
+      "credit": 0.310475,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-16": {
+      "credit": 0.30483000000000005,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-16": {
+      "credit": 0.299185,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-15": {
+      "credit": 0.29354,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-15": {
+      "credit": 0.287895,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-14": {
+      "credit": 0.28225000000000006,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-14": {
+      "credit": 0.276605,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-13": {
+      "credit": 0.27096000000000003,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-13": {
+      "credit": 0.265315,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-12": {
+      "credit": 0.25967,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-12": {
+      "credit": 0.254025,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-11": {
+      "credit": 0.24838000000000002,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-11": {
+      "credit": 0.24273500000000003,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-10": {
+      "credit": 0.23709,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-10": {
+      "credit": 0.231445,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-9": {
+      "credit": 0.22580000000000006,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-9": {
+      "credit": 0.22015500000000002,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-8": {
+      "credit": 0.21450999999999998,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-8": {
+      "credit": 0.208865,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-7": {
+      "credit": 0.20322,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-7": {
+      "credit": 0.19757499999999997,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-6": {
+      "credit": 0.19193000000000002,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-6": {
+      "credit": 0.18628500000000003,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:depth-thinking-5": {
+      "credit": 0.18064000000000002,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    },
+    "node:self-reflection-meta-5": {
+      "credit": 0.174995,
+      "last_time": 1781687040.4565928,
+      "total_surprises": 1,
+      "triggered": false
+    }
+  },
+  "total_surprise_events": 1,
+  "total_credit_issued": 7.705425000000001,
+  "recent_hit_trail": [
+    {
+      "eid": "node:self-reflection-meta-5",
+      "time": 1781687040.4565814
+    },
+    {
+      "eid": "node:depth-thinking-5",
+      "time": 1781687040.4565816
+    },
+    {
+      "eid": "node:self-reflection-meta-6",
+      "time": 1781687040.4565818
+    },
+    {
+      "eid": "node:depth-thinking-6",
+      "time": 1781687040.4565835
+    },
+    {
+      "eid": "node:self-reflection-meta-7",
+      "time": 1781687040.4565835
+    },
+    {
+      "eid": "node:depth-thinking-7",
+      "time": 1781687040.4565837
+    },
+    {
+      "eid": "node:self-reflection-meta-8",
+      "time": 1781687040.456584
+    },
+    {
+      "eid": "node:depth-thinking-8",
+      "time": 1781687040.4565868
+    },
+    {
+      "eid": "node:self-reflection-meta-9",
+      "time": 1781687040.456587
+    },
+    {
+      "eid": "node:depth-thinking-9",
+      "time": 1781687040.4565873
+    },
+    {
+      "eid": "node:self-reflection-meta-10",
+      "time": 1781687040.4565876
+    },
+    {
+      "eid": "node:depth-thinking-10",
+      "time": 1781687040.4565878
+    },
+    {
+      "eid": "node:self-reflection-meta-11",
+      "time": 1781687040.456588
+    },
+    {
+      "eid": "node:depth-thinking-11",
+      "time": 1781687040.4565883
+    },
+    {
+      "eid": "node:self-reflection-meta-12",
+      "time": 1781687040.4565883
+    },
+    {
+      "eid": "node:depth-thinking-12",
+      "time": 1781687040.4565885
+    },
+    {
+      "eid": "node:self-reflection-meta-13",
+      "time": 1781687040.4565887
+    },
+    {
+      "eid": "node:depth-thinking-13",
+      "time": 1781687040.4565887
+    },
+    {
+      "eid": "node:self-reflection-meta-14",
+      "time": 1781687040.456589
+    },
+    {
+      "eid": "node:depth-thinking-14",
+      "time": 1781687040.4565892
+    },
+    {
+      "eid": "node:self-reflection-meta-15",
+      "time": 1781687040.4565892
+    },
+    {
+      "eid": "node:depth-thinking-15",
+      "time": 1781687040.45659
+    },
+    {
+      "eid": "node:self-reflection-meta-16",
+      "time": 1781687040.4565902
+    },
+    {
+      "eid": "node:depth-thinking-16",
+      "time": 1781687040.4565904
+    },
+    {
+      "eid": "node:self-reflection-meta-17",
+      "time": 1781687040.4565907
+    },
+    {
+      "eid": "node:depth-thinking-17",
+      "time": 1781687040.456591
+    },
+    {
+      "eid": "node:self-reflection-meta-18",
+      "time": 1781687040.4565911
+    },
+    {
+      "eid": "node:depth-thinking-18",
+      "time": 1781687040.4565911
+    },
+    {
+      "eid": "node:self-reflection-meta-19",
+      "time": 1781687040.4565914
+    },
+    {
+      "eid": "node:depth-thinking-19",
+      "time": 1781687040.4565916
+    }
+  ]
+}

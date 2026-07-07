@@ -24,10 +24,10 @@
         "E_forget"
       ],
       "implementations": [
-        "hebbian-edges.json (旧)",
-        "hebbian-tracker.json (v2)"
+        "L1-knowledge.json (1327边)",
+        "hebbian-tracker.json"
       ],
-      "health": 0.75,
+      "health": 0.85,
       "last_awakening": null,
       "dormant_since": "2026-07-05",
       "revival_plan": "迁移旧hebbian-edges.json到新格式，重建超图核"
@@ -175,5 +175,5 @@
       "status": "dormant"
     }
   ],
-  "system_report": "7层全部active ✅ 曦和已有自我决定能力"
+  "system_report": "7层active. L1: 1327条赫布边. 惊奇信用已恢复."
 }

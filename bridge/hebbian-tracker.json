@@ -1,6 +1,6 @@
 {
-  "total_events": 22792.15,
-  "last_updated": "2026-07-06T07:09:44.329026",
+  "total_events": 24053.15,
+  "last_updated": "2026-07-07T22:36:52.887604",
   "tracked_events": [
     {
       "ts": "2026-06-27T19:39:50.669761",
@@ -21848,22 +21848,22 @@
       "source": "enzyme-vector:enz-17120"
     },
     {
-      "ts": "2026-07-02T14:36:43.355232",
+      "ts": "2026-07-07T14:36:43.851763",
       "delta": "+1",
       "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
     },
     {
-      "ts": "2026-07-02T14:36:43.355726",
+      "ts": "2026-07-07T14:36:43.852401",
       "delta": "+1",
       "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
     },
     {
-      "ts": "2026-07-02T14:36:43.356195",
+      "ts": "2026-07-07T14:36:43.852995",
       "delta": "+1",
       "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
     },
     {
-      "ts": "2026-07-02T14:36:43.356657",
+      "ts": "2026-07-07T14:36:43.853689",
       "delta": "+1",
       "source": "project_status:proj:douyin:🔴 待启动"
     },
@@ -35686,12 +35686,3715 @@
       "ts": "2026-07-06T07:09:44.328462",
       "delta": "+1",
       "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T07:35:27.086724",
+      "delta": "+13",
+      "source": "enzyme_vector:vec-13/28"
+    },
+    {
+      "ts": "2026-07-07T07:35:27.182701",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T07:35:44.046625",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick24960"
+    },
+    {
+      "ts": "2026-07-07T07:35:44.047183",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-24960"
+    },
+    {
+      "ts": "2026-07-07T07:37:29.845950",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T07:37:29.846561",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T07:37:29.847125",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T07:37:29.847759",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T07:52:11.747485",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T07:52:11.843717",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T07:52:29.101577",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25000"
+    },
+    {
+      "ts": "2026-07-07T07:52:29.102462",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25000"
+    },
+    {
+      "ts": "2026-07-07T07:52:54.860319",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T07:52:54.860946",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T07:52:54.861538",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T07:52:54.862123",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T08:12:40.851448",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T08:12:40.945941",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T08:12:57.183811",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25040"
+    },
+    {
+      "ts": "2026-07-07T08:12:57.184444",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25040"
+    },
+    {
+      "ts": "2026-07-07T08:13:13.714227",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T08:13:13.714790",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T08:13:13.715354",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T08:13:13.715876",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T08:30:52.272629",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T08:30:52.369813",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T08:31:15.814419",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25080"
+    },
+    {
+      "ts": "2026-07-07T08:31:15.815061",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25080"
+    },
+    {
+      "ts": "2026-07-07T08:32:15.499570",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T08:32:15.500167",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T08:32:15.500695",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T08:32:15.501628",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T08:47:57.513625",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T08:47:57.605031",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T08:48:14.169907",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25120"
+    },
+    {
+      "ts": "2026-07-07T08:48:14.170443",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25120"
+    },
+    {
+      "ts": "2026-07-07T08:48:32.958900",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T08:48:32.959477",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T08:48:32.960066",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T08:48:32.960590",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T09:06:01.167780",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T09:06:01.269457",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T09:06:24.216427",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25160"
+    },
+    {
+      "ts": "2026-07-07T09:06:24.216947",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25160"
+    },
+    {
+      "ts": "2026-07-07T09:06:40.935010",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T09:06:40.935604",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T09:06:40.936128",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T09:06:40.936642",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T09:23:30.335196",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T09:23:30.429259",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T09:23:51.359415",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25200"
+    },
+    {
+      "ts": "2026-07-07T09:23:51.359953",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25200"
+    },
+    {
+      "ts": "2026-07-07T09:24:06.862030",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T09:24:06.862615",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T09:24:06.863161",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T09:24:06.863682",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T09:40:07.501438",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T09:40:07.594176",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T09:40:26.645219",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25240"
+    },
+    {
+      "ts": "2026-07-07T09:40:26.645797",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25240"
+    },
+    {
+      "ts": "2026-07-07T09:40:40.066988",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T09:40:40.067511",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T09:40:40.068023",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T09:40:40.068526",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T09:55:35.186485",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T09:55:35.282272",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T09:55:52.482697",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25280"
+    },
+    {
+      "ts": "2026-07-07T09:55:52.483222",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25280"
+    },
+    {
+      "ts": "2026-07-07T09:56:05.441675",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T09:56:05.442209",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T09:56:05.442722",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T09:56:05.443217",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T10:09:22.063419",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T10:09:22.156674",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T10:09:46.596599",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25320"
+    },
+    {
+      "ts": "2026-07-07T10:09:46.597120",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25320"
+    },
+    {
+      "ts": "2026-07-07T10:09:59.036869",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T10:09:59.037449",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T10:09:59.037972",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T10:09:59.038480",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T10:23:22.736532",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T10:23:22.835449",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T10:23:45.528729",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25360"
+    },
+    {
+      "ts": "2026-07-07T10:23:45.529244",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25360"
+    },
+    {
+      "ts": "2026-07-07T10:23:57.781090",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T10:23:57.781617",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T10:23:57.782136",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T10:23:57.782638",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T10:37:09.832618",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T10:37:09.927073",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T10:37:39.687747",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25400"
+    },
+    {
+      "ts": "2026-07-07T10:37:39.688454",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25400"
+    },
+    {
+      "ts": "2026-07-07T10:37:51.007782",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T10:37:51.008312",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T10:37:51.008819",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T10:37:51.009320",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T10:51:20.473122",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T10:51:20.567011",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T10:51:43.353394",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25440"
+    },
+    {
+      "ts": "2026-07-07T10:51:43.353966",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25440"
+    },
+    {
+      "ts": "2026-07-07T10:51:54.090519",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T10:51:54.091190",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T10:51:54.091714",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T10:51:54.092234",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T11:05:21.606644",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T11:05:21.700657",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T11:05:38.658580",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25480"
+    },
+    {
+      "ts": "2026-07-07T11:05:38.659113",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25480"
+    },
+    {
+      "ts": "2026-07-07T11:05:48.957079",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T11:05:48.957658",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T11:05:48.958187",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T11:05:48.958703",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T11:19:17.168203",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T11:19:17.261262",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T11:19:44.367587",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25520"
+    },
+    {
+      "ts": "2026-07-07T11:19:44.368098",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25520"
+    },
+    {
+      "ts": "2026-07-07T11:19:54.662699",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T11:19:54.663251",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T11:19:54.663789",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T11:19:54.664297",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T11:33:17.481347",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T11:33:17.574523",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T11:33:44.605109",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25560"
+    },
+    {
+      "ts": "2026-07-07T11:33:44.605716",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25560"
+    },
+    {
+      "ts": "2026-07-07T11:33:54.662764",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T11:33:54.663317",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T11:33:54.663841",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T11:33:54.664354",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T11:47:17.542253",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T11:47:17.635290",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T11:47:41.193633",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25600"
+    },
+    {
+      "ts": "2026-07-07T11:47:41.194263",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25600"
+    },
+    {
+      "ts": "2026-07-07T11:47:51.421717",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T11:47:51.422253",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T11:47:51.422779",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T11:47:51.423333",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T12:01:13.449398",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T12:01:13.544434",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T12:01:37.517968",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25640"
+    },
+    {
+      "ts": "2026-07-07T12:01:37.518535",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25640"
+    },
+    {
+      "ts": "2026-07-07T12:01:40.376138",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T12:01:40.376674",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T12:01:40.377190",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T12:01:40.377686",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T12:15:17.911381",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T12:15:18.007408",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T12:15:37.142038",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25680"
+    },
+    {
+      "ts": "2026-07-07T12:15:37.142549",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25680"
+    },
+    {
+      "ts": "2026-07-07T12:15:47.189364",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T12:15:47.189893",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T12:15:47.190408",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T12:15:47.190918",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T12:29:20.252043",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T12:29:20.346651",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T12:29:39.254475",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25720"
+    },
+    {
+      "ts": "2026-07-07T12:29:39.255017",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25720"
+    },
+    {
+      "ts": "2026-07-07T12:29:49.133570",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T12:29:49.134100",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T12:29:49.134622",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T12:29:49.135145",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T12:44:13.382813",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T12:44:13.493231",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T12:44:41.204248",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25760"
+    },
+    {
+      "ts": "2026-07-07T12:44:41.204760",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25760"
+    },
+    {
+      "ts": "2026-07-07T12:45:52.569416",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T12:45:52.570076",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T12:45:52.570612",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T12:45:52.571123",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T12:59:52.675084",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T12:59:52.770141",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T13:00:15.224484",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25800"
+    },
+    {
+      "ts": "2026-07-07T13:00:15.225023",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25800"
+    },
+    {
+      "ts": "2026-07-07T13:00:40.396075",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T13:00:40.396622",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T13:00:40.397143",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T13:00:40.397672",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T13:14:29.844560",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T13:14:29.949038",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T13:14:57.281542",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25840"
+    },
+    {
+      "ts": "2026-07-07T13:14:57.282218",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25840"
+    },
+    {
+      "ts": "2026-07-07T13:15:14.339452",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T13:15:14.340046",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T13:15:14.340587",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T13:15:14.341119",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T13:29:03.125172",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T13:29:03.223725",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T13:29:30.246566",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25880"
+    },
+    {
+      "ts": "2026-07-07T13:29:30.247075",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25880"
+    },
+    {
+      "ts": "2026-07-07T13:29:46.094236",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T13:29:46.094779",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T13:29:46.095301",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T13:29:46.095807",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T13:43:55.249775",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T13:43:55.343474",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T13:44:32.119817",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25920"
+    },
+    {
+      "ts": "2026-07-07T13:44:32.120402",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25920"
+    },
+    {
+      "ts": "2026-07-07T13:45:31.328324",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T13:45:31.328929",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T13:45:31.329465",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T13:45:31.329981",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T14:04:15.292493",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T14:04:15.389546",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T14:04:38.490688",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick25960"
+    },
+    {
+      "ts": "2026-07-07T14:04:38.491222",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-25960"
+    },
+    {
+      "ts": "2026-07-07T14:05:53.194932",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T14:05:53.195619",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T14:05:53.196247",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T14:05:53.196826",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T14:20:02.842293",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T14:20:02.937581",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T14:20:25.682275",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26000"
+    },
+    {
+      "ts": "2026-07-07T14:20:25.682796",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26000"
+    },
+    {
+      "ts": "2026-07-07T14:20:49.801186",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T14:20:49.801811",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T14:20:49.802330",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T14:20:49.802843",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T14:35:13.503830",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T14:35:13.601574",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T14:35:43.477268",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26040"
+    },
+    {
+      "ts": "2026-07-07T14:35:43.477830",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26040"
+    },
+    {
+      "ts": "2026-07-07T14:50:55.516976",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T14:50:55.609535",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T14:51:16.191964",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26080"
+    },
+    {
+      "ts": "2026-07-07T14:51:16.192468",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26080"
+    },
+    {
+      "ts": "2026-07-07T14:51:35.550622",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T14:51:35.551198",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T14:51:35.551738",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T14:51:35.552278",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T15:05:30.916117",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T15:05:31.014918",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T15:05:54.912307",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26120"
+    },
+    {
+      "ts": "2026-07-07T15:05:54.912846",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26120"
+    },
+    {
+      "ts": "2026-07-07T15:06:10.540224",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T15:06:10.540776",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T15:06:10.541280",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T15:06:10.541780",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T15:20:17.693465",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T15:20:17.785580",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T15:20:41.722553",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26160"
+    },
+    {
+      "ts": "2026-07-07T15:20:41.723080",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26160"
+    },
+    {
+      "ts": "2026-07-07T15:20:56.802109",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T15:20:56.802632",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T15:20:56.803133",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T15:20:56.803624",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T15:35:25.106206",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T15:35:25.201444",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T15:35:46.762872",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26200"
+    },
+    {
+      "ts": "2026-07-07T15:35:46.763437",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26200"
+    },
+    {
+      "ts": "2026-07-07T15:36:00.533359",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T15:36:00.533910",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T15:36:00.534426",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T15:36:00.534937",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T15:50:09.562786",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T15:50:09.660379",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T15:50:29.395103",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26240"
+    },
+    {
+      "ts": "2026-07-07T15:50:29.395611",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26240"
+    },
+    {
+      "ts": "2026-07-07T15:50:41.567545",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T15:50:41.568106",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T15:50:41.568653",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T15:50:41.569181",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T16:05:00.639582",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T16:05:00.739228",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T16:05:27.120327",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26280"
+    },
+    {
+      "ts": "2026-07-07T16:05:27.120842",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26280"
+    },
+    {
+      "ts": "2026-07-07T16:05:39.234664",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T16:05:39.235223",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T16:05:39.235740",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T16:05:39.236266",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T16:20:22.934119",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T16:20:23.029103",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T16:20:48.872345",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26320"
+    },
+    {
+      "ts": "2026-07-07T16:20:48.872943",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26320"
+    },
+    {
+      "ts": "2026-07-07T16:21:00.121284",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T16:21:00.121907",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T16:21:00.122637",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T16:21:00.123198",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T16:34:54.973039",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T16:34:55.073871",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T16:35:20.606313",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26360"
+    },
+    {
+      "ts": "2026-07-07T16:35:20.606810",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26360"
+    },
+    {
+      "ts": "2026-07-07T16:35:31.927741",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T16:35:31.928486",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T16:35:31.929049",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T16:35:31.929575",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T16:49:41.702583",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T16:49:41.798445",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T16:50:03.735197",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26400"
+    },
+    {
+      "ts": "2026-07-07T16:50:03.735744",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26400"
+    },
+    {
+      "ts": "2026-07-07T16:50:14.139744",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T16:50:14.140266",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T16:50:14.140779",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T16:50:14.141283",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T17:03:58.772572",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T17:03:58.865800",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T17:04:22.290827",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26440"
+    },
+    {
+      "ts": "2026-07-07T17:04:22.291346",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26440"
+    },
+    {
+      "ts": "2026-07-07T17:04:32.511198",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T17:04:32.511794",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T17:04:32.512334",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T17:04:32.512841",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T17:18:13.777717",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T17:18:13.873111",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T17:18:35.470048",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26480"
+    },
+    {
+      "ts": "2026-07-07T17:18:35.470553",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26480"
+    },
+    {
+      "ts": "2026-07-07T17:18:45.550908",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T17:18:45.551513",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T17:18:45.552045",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T17:18:45.552562",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T17:32:19.991642",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T17:32:20.087990",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T17:32:41.691672",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26520"
+    },
+    {
+      "ts": "2026-07-07T17:32:41.692206",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26520"
+    },
+    {
+      "ts": "2026-07-07T17:32:51.585230",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T17:32:51.585807",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T17:32:51.586344",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T17:32:51.586874",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T17:46:32.140907",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T17:46:32.239236",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T17:46:52.485861",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26560"
+    },
+    {
+      "ts": "2026-07-07T17:46:52.486372",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26560"
+    },
+    {
+      "ts": "2026-07-07T17:47:03.164602",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T17:47:03.165829",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T17:47:03.166419",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T17:47:03.166957",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T18:00:34.812553",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T18:00:34.912506",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T18:00:56.286916",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26600"
+    },
+    {
+      "ts": "2026-07-07T18:00:56.287447",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26600"
+    },
+    {
+      "ts": "2026-07-07T18:01:06.919728",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T18:01:06.920579",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T18:01:06.921148",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T18:01:06.921689",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T18:14:29.320776",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T18:14:29.420636",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T18:14:47.297758",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26640"
+    },
+    {
+      "ts": "2026-07-07T18:14:47.298290",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26640"
+    },
+    {
+      "ts": "2026-07-07T18:14:57.888863",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T18:14:57.889449",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T18:14:57.889987",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T18:14:57.890510",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T18:28:28.783368",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T18:28:28.883928",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T18:28:47.910780",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26680"
+    },
+    {
+      "ts": "2026-07-07T18:28:47.911420",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26680"
+    },
+    {
+      "ts": "2026-07-07T18:28:59.122851",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T18:28:59.123429",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T18:28:59.123974",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T18:28:59.124521",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T18:42:29.301241",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T18:42:29.406659",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T18:42:58.833042",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26720"
+    },
+    {
+      "ts": "2026-07-07T18:42:58.833556",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26720"
+    },
+    {
+      "ts": "2026-07-07T18:43:58.825956",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T18:43:58.826581",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T18:43:58.827163",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T18:43:58.827712",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T18:57:46.892574",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T18:57:46.991221",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T18:58:10.870914",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26760"
+    },
+    {
+      "ts": "2026-07-07T18:58:10.871555",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26760"
+    },
+    {
+      "ts": "2026-07-07T18:59:14.862327",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T18:59:14.862924",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T18:59:14.863493",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T18:59:14.864046",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T19:13:06.627398",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T19:13:06.724139",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T19:13:29.776819",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26800"
+    },
+    {
+      "ts": "2026-07-07T19:13:29.777395",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26800"
+    },
+    {
+      "ts": "2026-07-07T19:13:50.240167",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T19:13:50.240735",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T19:13:50.241279",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T19:13:50.241820",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T19:27:36.178616",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T19:27:36.277965",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T19:28:01.386331",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26840"
+    },
+    {
+      "ts": "2026-07-07T19:28:01.386895",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26840"
+    },
+    {
+      "ts": "2026-07-07T19:28:21.100324",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T19:28:21.100870",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T19:28:21.101391",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T19:28:21.102170",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T19:42:14.607838",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T19:42:14.708995",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T19:42:39.047818",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26880"
+    },
+    {
+      "ts": "2026-07-07T19:42:39.048353",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26880"
+    },
+    {
+      "ts": "2026-07-07T19:42:57.441388",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T19:42:57.441967",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T19:42:57.442513",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T19:42:57.443046",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T19:56:37.715177",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T19:56:37.809741",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T19:56:57.471755",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26920"
+    },
+    {
+      "ts": "2026-07-07T19:56:57.472266",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26920"
+    },
+    {
+      "ts": "2026-07-07T19:57:14.686156",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T19:57:14.686727",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T19:57:14.687260",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T19:57:14.687785",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T20:11:09.084045",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T20:11:09.185252",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T20:11:36.471461",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick26960"
+    },
+    {
+      "ts": "2026-07-07T20:11:36.472019",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-26960"
+    },
+    {
+      "ts": "2026-07-07T20:11:51.670942",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T20:11:51.671515",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T20:11:51.672062",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T20:11:51.672591",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T20:25:59.355153",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T20:25:59.552610",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T20:26:26.116015",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27000"
+    },
+    {
+      "ts": "2026-07-07T20:26:26.116556",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27000"
+    },
+    {
+      "ts": "2026-07-07T20:27:49.148622",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T20:27:49.149268",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T20:27:49.149844",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T20:27:49.150392",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T20:42:38.608647",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T20:42:38.729441",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T20:43:00.902704",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27040"
+    },
+    {
+      "ts": "2026-07-07T20:43:00.903313",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27040"
+    },
+    {
+      "ts": "2026-07-07T20:44:32.162864",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T20:44:32.163602",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T20:44:32.164242",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T20:44:32.165379",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T20:58:46.544274",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T20:58:46.639663",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T20:59:13.824315",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27080"
+    },
+    {
+      "ts": "2026-07-07T20:59:13.825017",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27080"
+    },
+    {
+      "ts": "2026-07-07T20:59:32.179439",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T20:59:32.180123",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T20:59:32.180812",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T20:59:32.181460",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T21:14:05.698325",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T21:14:05.799760",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T21:14:36.080615",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27120"
+    },
+    {
+      "ts": "2026-07-07T21:14:36.081131",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27120"
+    },
+    {
+      "ts": "2026-07-07T21:15:44.983728",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T21:15:44.984325",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T21:15:44.984871",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T21:15:44.985429",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T21:30:13.477060",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T21:30:13.578712",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T21:30:49.651218",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27160"
+    },
+    {
+      "ts": "2026-07-07T21:30:49.651768",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27160"
+    },
+    {
+      "ts": "2026-07-07T21:31:46.863379",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T21:31:46.864424",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T21:31:46.865308",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T21:31:46.866179",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T21:46:43.390317",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T21:46:43.485094",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T21:47:30.648753",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27200"
+    },
+    {
+      "ts": "2026-07-07T21:47:30.649325",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27200"
+    },
+    {
+      "ts": "2026-07-07T21:47:49.921770",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T21:47:49.922339",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T21:47:49.922909",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T21:47:49.923465",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T22:02:29.594302",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T22:02:29.701033",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T22:03:04.744038",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27240"
+    },
+    {
+      "ts": "2026-07-07T22:03:04.744559",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27240"
+    },
+    {
+      "ts": "2026-07-07T22:04:05.141245",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T22:04:05.141829",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T22:04:05.142351",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T22:04:05.142872",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T22:18:45.042474",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T22:18:45.140914",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T22:19:23.930842",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27280"
+    },
+    {
+      "ts": "2026-07-07T22:19:23.931391",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27280"
+    },
+    {
+      "ts": "2026-07-07T22:20:26.458222",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T22:20:26.458861",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T22:20:26.459466",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T22:20:26.460061",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
+    },
+    {
+      "ts": "2026-07-07T22:35:29.615200",
+      "delta": "+12",
+      "source": "enzyme_vector:vec-12/28"
+    },
+    {
+      "ts": "2026-07-07T22:35:29.719553",
+      "delta": "+3",
+      "source": "catalytic_closure:closure-self_reflection"
+    },
+    {
+      "ts": "2026-07-07T22:35:53.942478",
+      "delta": "+1",
+      "source": "t4-cycle:T4-tick27320"
+    },
+    {
+      "ts": "2026-07-07T22:35:53.943055",
+      "delta": "+1",
+      "source": "enzyme-vector:enz-27320"
+    },
+    {
+      "ts": "2026-07-07T22:36:52.885365",
+      "delta": "+1",
+      "source": "project_status:proj:xihe:🟢 v2三腔室运行中"
+    },
+    {
+      "ts": "2026-07-07T22:36:52.885982",
+      "delta": "+1",
+      "source": "project_status:proj:aibounty:🟡 运营中，数据待盘活"
+    },
+    {
+      "ts": "2026-07-07T22:36:52.886559",
+      "delta": "+1",
+      "source": "project_status:proj:quant:🟡 代码就绪，信号断档12天已补"
+    },
+    {
+      "ts": "2026-07-07T22:36:52.887087",
+      "delta": "+1",
+      "source": "project_status:proj:douyin:🔴 待启动"
     }
   ],
-  "version": "v2_hebbian_dynamics",
-  "eta": 0.02,
-  "lambda": 0.005,
-  "tau_days": 60,
-  "updated_at": "2026-07-05T23:18:35.420Z",
-  "coactivation_count": 0
+  "edges": {
+    "reflection:refl-manual-1": 1.0,
+    "t4-cycle:T4-manual-start": 1.0,
+    "forage:pending-知识图谱": 1.0,
+    "reflection:refl-0007": 1.0,
+    "knowledge:知识-微观经济学": 15.0,
+    "knowledge:知识-公司理财": 7.0,
+    "knowledge:知识-国内税法": 7.0,
+    "knowledge:知识-国内经济政策": 7.0,
+    "knowledge:知识-国内财务会计": 8.0,
+    "knowledge:知识-国内金融体系": 7.0,
+    "knowledge:知识-证券投资": 7.0,
+    "forage:arXiv趋势速递": 4.0,
+    "forage:信用分配综述-自己想去": 5.0,
+    "forage:金鱼到老搭档-自主觅食": 4.0,
+    "t4-cycle:T4-tick120": 3.0,
+    "enzyme_vector:vec-3/21": 141.0,
+    "forage:自催化AI自我+UGOA": 6.0,
+    "t4-cycle:T4-tick40": 1.0,
+    "t4-cycle:T4-tick80": 1.0,
+    "t4-cycle:T4-tick160": 1.0,
+    "t4-cycle:T4-tick200": 1.0,
+    "t4-cycle:T4-tick240": 1.0,
+    "t4-cycle:T4-tick280": 1.0,
+    "t4-cycle:T4-tick320": 1.0,
+    "t4-cycle:T4-tick360": 1.0,
+    "t4-cycle:T4-tick400": 1.0,
+    "t4-cycle:T4-tick440": 1.0,
+    "t4-cycle:T4-tick480": 1.0,
+    "t4-cycle:T4-tick520": 1.0,
+    "t4-cycle:T4-tick560": 1.0,
+    "t4-cycle:T4-tick600": 1.0,
+    "t4-cycle:T4-tick640": 1.0,
+    "t4-cycle:T4-tick680": 1.0,
+    "t4-cycle:T4-tick720": 1.0,
+    "t4-cycle:T4-tick760": 1.0,
+    "t4-cycle:T4-tick800": 1.0,
+    "t4-cycle:T4-tick840": 1.0,
+    "t4-cycle:T4-tick880": 1.0,
+    "t4-cycle:T4-tick920": 1.0,
+    "t4-cycle:T4-tick960": 1.0,
+    "t4-cycle:T4-tick1000": 1.0,
+    "t4-cycle:T4-tick1040": 1.0,
+    "t4-cycle:T4-tick1080": 1.0,
+    "t4-cycle:T4-tick1120": 1.0,
+    "t4-cycle:T4-tick1160": 1.0,
+    "t4-cycle:T4-tick1200": 1.0,
+    "t4-cycle:T4-tick1240": 1.0,
+    "t4-cycle:T4-tick1280": 1.0,
+    "t4-cycle:T4-tick1320": 1.0,
+    "t4-cycle:T4-tick1360": 1.0,
+    "t4-cycle:T4-tick1400": 1.0,
+    "t4-cycle:T4-tick1440": 1.0,
+    "t4-cycle:T4-tick1480": 1.0,
+    "t4-cycle:T4-tick1520": 1.0,
+    "t4-cycle:T4-tick1560": 1.0,
+    "t4-cycle:T4-tick1600": 1.0,
+    "t4-cycle:T4-tick1640": 1.0,
+    "t4-cycle:T4-tick1680": 1.0,
+    "t4-cycle:T4-tick1720": 1.0,
+    "t4-cycle:T4-tick1760": 1.0,
+    "t4-cycle:T4-tick1800": 1.0,
+    "t4-cycle:T4-tick1840": 1.0,
+    "t4-cycle:T4-tick1880": 1.0,
+    "t4-cycle:T4-tick1920": 1.0,
+    "t4-cycle:T4-tick1960": 1.0,
+    "t4-cycle:T4-tick2000": 1.0,
+    "t4-cycle:T4-tick2040": 1.0,
+    "t4-cycle:T4-tick2080": 1.0,
+    "t4-cycle:T4-tick2120": 1.0,
+    "t4-cycle:T4-tick2160": 1.0,
+    "t4-cycle:T4-tick2200": 1.0,
+    "t4-cycle:T4-tick2240": 1.0,
+    "t4-cycle:T4-tick2280": 1.0,
+    "t4-cycle:T4-tick2320": 1.0,
+    "t4-cycle:T4-tick2360": 1.0,
+    "t4-cycle:T4-tick2400": 1.0,
+    "t4-cycle:T4-tick2440": 1.0,
+    "t4-cycle:T4-tick2480": 1.0,
+    "t4-cycle:T4-tick2520": 1.0,
+    "t4-cycle:T4-tick2560": 1.0,
+    "t4-cycle:T4-tick2600": 1.0,
+    "t4-cycle:T4-tick2640": 3.0,
+    "t4-cycle:T4-tick2680": 3.0,
+    "t4-cycle:T4-tick2720": 3.0,
+    "memory_todo:todo": 54.0,
+    "project_status:proj": 3704.0,
+    "t4-cycle:T4-tick2760": 3.0,
+    "t4-cycle:T4-tick2800": 3.0,
+    "enzyme_vector:vec-6/21": 66.0,
+    "t4-cycle:T4-tick2840": 3.0,
+    "enzyme_vector:vec-5/21": 10.0,
+    "enzyme_vector:vec-9/21": 9.0,
+    "t4-cycle:T4-tick2880": 7.0,
+    "enzyme_vector:vec-7/21": 14.0,
+    "enzyme_vector:vec-10/27": 20.0,
+    "catalytic_closure:closure-self_reflection-sites_network": 3.0,
+    "enzyme_vector:vec-12/27": 36.0,
+    "catalytic_closure:closure-self_reflection": 2625.0,
+    "t4-cycle:T4-tick2920": 7.0,
+    "catalytic_closure:closure-self_reflection-llm_health": 153.0,
+    "decision-20260628171459:decision-20260628171459": 0.95,
+    "decision-20260628171500:decision-20260628171500": 0.9,
+    "learning-20260628171512:learning-20260628171512": 0.7,
+    "decision-20260628172717:decision-20260628172717": 0.9,
+    "enzyme_vector:vec-12/28": 1452.0,
+    "t4-cycle:T4-tick2960": 4.0,
+    "enzyme-vector:enz-2960": 4.0,
+    "enzyme_vector:vec-13/28": 9477.0,
+    "t4-cycle:T4-tick3000": 1.0,
+    "enzyme-vector:enz-3000": 1.0,
+    "t4-cycle:T4-tick3040": 1.0,
+    "enzyme-vector:enz-3040": 1.0,
+    "t4-cycle:T4-tick3080": 1.0,
+    "enzyme-vector:enz-3080": 1.0,
+    "t4-cycle:T4-tick3120": 1.0,
+    "enzyme-vector:enz-3120": 1.0,
+    "t4-cycle:T4-tick3160": 1.0,
+    "enzyme-vector:enz-3160": 1.0,
+    "t4-cycle:T4-tick3200": 1.0,
+    "enzyme-vector:enz-3200": 1.0,
+    "t4-cycle:T4-tick3240": 1.0,
+    "enzyme-vector:enz-3240": 1.0,
+    "t4-cycle:T4-tick3280": 1.0,
+    "enzyme-vector:enz-3280": 1.0,
+    "t4-cycle:T4-tick3320": 1.0,
+    "enzyme-vector:enz-3320": 1.0,
+    "t4-cycle:T4-tick3360": 1.0,
+    "enzyme-vector:enz-3360": 1.0,
+    "t4-cycle:T4-tick3400": 1.0,
+    "enzyme-vector:enz-3400": 1.0,
+    "t4-cycle:T4-tick3440": 1.0,
+    "enzyme-vector:enz-3440": 1.0,
+    "t4-cycle:T4-tick3480": 1.0,
+    "enzyme-vector:enz-3480": 1.0,
+    "t4-cycle:T4-tick3520": 1.0,
+    "enzyme-vector:enz-3520": 1.0,
+    "t4-cycle:T4-tick3560": 1.0,
+    "enzyme-vector:enz-3560": 1.0,
+    "t4-cycle:T4-tick3600": 1.0,
+    "enzyme-vector:enz-3600": 1.0,
+    "t4-cycle:T4-tick3640": 1.0,
+    "enzyme-vector:enz-3640": 1.0,
+    "t4-cycle:T4-tick3680": 1.0,
+    "enzyme-vector:enz-3680": 1.0,
+    "t4-cycle:T4-tick3720": 1.0,
+    "enzyme-vector:enz-3720": 1.0,
+    "t4-cycle:T4-tick3760": 1.0,
+    "enzyme-vector:enz-3760": 1.0,
+    "t4-cycle:T4-tick3800": 1.0,
+    "enzyme-vector:enz-3800": 1.0,
+    "t4-cycle:T4-tick3840": 1.0,
+    "enzyme-vector:enz-3840": 1.0,
+    "t4-cycle:T4-tick3880": 1.0,
+    "enzyme-vector:enz-3880": 1.0,
+    "t4-cycle:T4-tick3920": 1.0,
+    "enzyme-vector:enz-3920": 1.0,
+    "t4-cycle:T4-tick3960": 1.0,
+    "enzyme-vector:enz-3960": 1.0,
+    "enzyme_vector:vec-14/28": 1022.0,
+    "t4-cycle:T4-tick4000": 1.0,
+    "enzyme-vector:enz-4000": 1.0,
+    "t4-cycle:T4-tick4040": 1.0,
+    "enzyme-vector:enz-4040": 1.0,
+    "t4-cycle:T4-tick4080": 1.0,
+    "enzyme-vector:enz-4080": 1.0,
+    "t4-cycle:T4-tick4120": 1.0,
+    "enzyme-vector:enz-4120": 1.0,
+    "t4-cycle:T4-tick4160": 1.0,
+    "enzyme-vector:enz-4160": 1.0,
+    "t4-cycle:T4-tick4200": 1.0,
+    "enzyme-vector:enz-4200": 1.0,
+    "t4-cycle:T4-tick4240": 1.0,
+    "enzyme-vector:enz-4240": 1.0,
+    "t4-cycle:T4-tick4280": 1.0,
+    "enzyme-vector:enz-4280": 1.0,
+    "t4-cycle:T4-tick4320": 1.0,
+    "enzyme-vector:enz-4320": 1.0,
+    "t4-cycle:T4-tick4360": 1.0,
+    "enzyme-vector:enz-4360": 1.0,
+    "t4-cycle:T4-tick4400": 1.0,
+    "enzyme-vector:enz-4400": 1.0,
+    "t4-cycle:T4-tick4440": 1.0,
+    "enzyme-vector:enz-4440": 1.0,
+    "t4-cycle:T4-tick4480": 1.0,
+    "enzyme-vector:enz-4480": 1.0,
+    "t4-cycle:T4-tick4520": 1.0,
+    "enzyme-vector:enz-4520": 1.0,
+    "t4-cycle:T4-tick4560": 1.0,
+    "enzyme-vector:enz-4560": 1.0,
+    "t4-cycle:T4-tick4600": 1.0,
+    "enzyme-vector:enz-4600": 1.0,
+    "t4-cycle:T4-tick4640": 1.0,
+    "enzyme-vector:enz-4640": 1.0,
+    "t4-cycle:T4-tick4680": 1.0,
+    "enzyme-vector:enz-4680": 1.0,
+    "t4-cycle:T4-tick4720": 1.0,
+    "enzyme-vector:enz-4720": 1.0,
+    "t4-cycle:T4-tick4760": 1.0,
+    "enzyme-vector:enz-4760": 1.0,
+    "t4-cycle:T4-tick4800": 1.0,
+    "enzyme-vector:enz-4800": 1.0,
+    "t4-cycle:T4-tick4840": 1.0,
+    "enzyme-vector:enz-4840": 1.0,
+    "t4-cycle:T4-tick4880": 1.0,
+    "enzyme-vector:enz-4880": 1.0,
+    "t4-cycle:T4-tick4920": 1.0,
+    "enzyme-vector:enz-4920": 1.0,
+    "t4-cycle:T4-tick4960": 1.0,
+    "enzyme-vector:enz-4960": 1.0,
+    "t4-cycle:T4-tick5000": 1.0,
+    "enzyme-vector:enz-5000": 1.0,
+    "t4-cycle:T4-tick5040": 1.0,
+    "enzyme-vector:enz-5040": 1.0,
+    "t4-cycle:T4-tick5080": 1.0,
+    "enzyme-vector:enz-5080": 1.0,
+    "t4-cycle:T4-tick5120": 1.0,
+    "enzyme-vector:enz-5120": 1.0,
+    "t4-cycle:T4-tick5160": 1.0,
+    "enzyme-vector:enz-5160": 1.0,
+    "t4-cycle:T4-tick5200": 1.0,
+    "enzyme-vector:enz-5200": 1.0,
+    "t4-cycle:T4-tick5240": 1.0,
+    "enzyme-vector:enz-5240": 1.0,
+    "t4-cycle:T4-tick5280": 1.0,
+    "enzyme-vector:enz-5280": 1.0,
+    "t4-cycle:T4-tick5320": 1.0,
+    "enzyme-vector:enz-5320": 1.0,
+    "t4-cycle:T4-tick5360": 1.0,
+    "enzyme-vector:enz-5360": 1.0,
+    "t4-cycle:T4-tick5400": 1.0,
+    "enzyme-vector:enz-5400": 1.0,
+    "t4-cycle:T4-tick5440": 1.0,
+    "enzyme-vector:enz-5440": 1.0,
+    "t4-cycle:T4-tick5480": 1.0,
+    "enzyme-vector:enz-5480": 1.0,
+    "t4-cycle:T4-tick5520": 1.0,
+    "enzyme-vector:enz-5520": 1.0,
+    "t4-cycle:T4-tick5560": 1.0,
+    "enzyme-vector:enz-5560": 1.0,
+    "t4-cycle:T4-tick5600": 1.0,
+    "enzyme-vector:enz-5600": 1.0,
+    "t4-cycle:T4-tick5640": 1.0,
+    "enzyme-vector:enz-5640": 1.0,
+    "t4-cycle:T4-tick5680": 1.0,
+    "enzyme-vector:enz-5680": 1.0,
+    "t4-cycle:T4-tick5720": 1.0,
+    "enzyme-vector:enz-5720": 1.0,
+    "t4-cycle:T4-tick5760": 1.0,
+    "enzyme-vector:enz-5760": 1.0,
+    "t4-cycle:T4-tick5800": 1.0,
+    "enzyme-vector:enz-5800": 1.0,
+    "t4-cycle:T4-tick5840": 1.0,
+    "enzyme-vector:enz-5840": 1.0,
+    "t4-cycle:T4-tick5880": 1.0,
+    "enzyme-vector:enz-5880": 1.0,
+    "t4-cycle:T4-tick5920": 1.0,
+    "enzyme-vector:enz-5920": 1.0,
+    "t4-cycle:T4-tick5960": 1.0,
+    "enzyme-vector:enz-5960": 1.0,
+    "t4-cycle:T4-tick6000": 1.0,
+    "enzyme-vector:enz-6000": 1.0,
+    "t4-cycle:T4-tick6040": 1.0,
+    "enzyme-vector:enz-6040": 1.0,
+    "t4-cycle:T4-tick6080": 1.0,
+    "enzyme-vector:enz-6080": 1.0,
+    "t4-cycle:T4-tick6120": 1.0,
+    "enzyme-vector:enz-6120": 1.0,
+    "t4-cycle:T4-tick6160": 1.0,
+    "enzyme-vector:enz-6160": 1.0,
+    "t4-cycle:T4-tick6200": 1.0,
+    "enzyme-vector:enz-6200": 1.0,
+    "t4-cycle:T4-tick6240": 1.0,
+    "enzyme-vector:enz-6240": 1.0,
+    "t4-cycle:T4-tick6280": 1.0,
+    "enzyme-vector:enz-6280": 1.0,
+    "t4-cycle:T4-tick6320": 1.0,
+    "enzyme-vector:enz-6320": 1.0,
+    "t4-cycle:T4-tick6360": 1.0,
+    "enzyme-vector:enz-6360": 1.0,
+    "t4-cycle:T4-tick6400": 1.0,
+    "enzyme-vector:enz-6400": 1.0,
+    "t4-cycle:T4-tick6440": 1.0,
+    "enzyme-vector:enz-6440": 1.0,
+    "t4-cycle:T4-tick6480": 1.0,
+    "enzyme-vector:enz-6480": 1.0,
+    "t4-cycle:T4-tick6520": 1.0,
+    "enzyme-vector:enz-6520": 1.0,
+    "t4-cycle:T4-tick6560": 1.0,
+    "enzyme-vector:enz-6560": 1.0,
+    "t4-cycle:T4-tick6600": 1.0,
+    "enzyme-vector:enz-6600": 1.0,
+    "t4-cycle:T4-tick6640": 1.0,
+    "enzyme-vector:enz-6640": 1.0,
+    "t4-cycle:T4-tick6680": 1.0,
+    "enzyme-vector:enz-6680": 1.0,
+    "t4-cycle:T4-tick6720": 1.0,
+    "enzyme-vector:enz-6720": 1.0,
+    "t4-cycle:T4-tick6760": 1.0,
+    "enzyme-vector:enz-6760": 1.0,
+    "t4-cycle:T4-tick6800": 1.0,
+    "enzyme-vector:enz-6800": 1.0,
+    "t4-cycle:T4-tick6840": 1.0,
+    "enzyme-vector:enz-6840": 1.0,
+    "t4-cycle:T4-tick6880": 1.0,
+    "enzyme-vector:enz-6880": 1.0,
+    "t4-cycle:T4-tick6920": 1.0,
+    "enzyme-vector:enz-6920": 1.0,
+    "t4-cycle:T4-tick6960": 1.0,
+    "enzyme-vector:enz-6960": 1.0,
+    "t4-cycle:T4-tick7000": 1.0,
+    "enzyme-vector:enz-7000": 1.0,
+    "t4-cycle:T4-tick7040": 1.0,
+    "enzyme-vector:enz-7040": 1.0,
+    "t4-cycle:T4-tick7080": 1.0,
+    "enzyme-vector:enz-7080": 1.0,
+    "t4-cycle:T4-tick7120": 1.0,
+    "enzyme-vector:enz-7120": 1.0,
+    "t4-cycle:T4-tick7160": 1.0,
+    "enzyme-vector:enz-7160": 1.0,
+    "t4-cycle:T4-tick7200": 1.0,
+    "enzyme-vector:enz-7200": 1.0,
+    "t4-cycle:T4-tick7240": 1.0,
+    "enzyme-vector:enz-7240": 1.0,
+    "t4-cycle:T4-tick7280": 1.0,
+    "enzyme-vector:enz-7280": 1.0,
+    "t4-cycle:T4-tick7320": 1.0,
+    "enzyme-vector:enz-7320": 1.0,
+    "t4-cycle:T4-tick7360": 1.0,
+    "enzyme-vector:enz-7360": 1.0,
+    "t4-cycle:T4-tick7400": 1.0,
+    "enzyme-vector:enz-7400": 1.0,
+    "t4-cycle:T4-tick7440": 1.0,
+    "enzyme-vector:enz-7440": 1.0,
+    "t4-cycle:T4-tick7480": 1.0,
+    "enzyme-vector:enz-7480": 1.0,
+    "t4-cycle:T4-tick7520": 1.0,
+    "enzyme-vector:enz-7520": 1.0,
+    "t4-cycle:T4-tick7560": 1.0,
+    "enzyme-vector:enz-7560": 1.0,
+    "t4-cycle:T4-tick7600": 1.0,
+    "enzyme-vector:enz-7600": 1.0,
+    "t4-cycle:T4-tick7640": 1.0,
+    "enzyme-vector:enz-7640": 1.0,
+    "t4-cycle:T4-tick7680": 1.0,
+    "enzyme-vector:enz-7680": 1.0,
+    "t4-cycle:T4-tick7720": 1.0,
+    "enzyme-vector:enz-7720": 1.0,
+    "t4-cycle:T4-tick7760": 1.0,
+    "enzyme-vector:enz-7760": 1.0,
+    "t4-cycle:T4-tick7800": 1.0,
+    "enzyme-vector:enz-7800": 1.0,
+    "t4-cycle:T4-tick7840": 1.0,
+    "enzyme-vector:enz-7840": 1.0,
+    "t4-cycle:T4-tick7880": 1.0,
+    "enzyme-vector:enz-7880": 1.0,
+    "t4-cycle:T4-tick7920": 1.0,
+    "enzyme-vector:enz-7920": 1.0,
+    "t4-cycle:T4-tick7960": 1.0,
+    "enzyme-vector:enz-7960": 1.0,
+    "t4-cycle:T4-tick8000": 1.0,
+    "enzyme-vector:enz-8000": 1.0,
+    "t4-cycle:T4-tick8040": 1.0,
+    "enzyme-vector:enz-8040": 1.0,
+    "t4-cycle:T4-tick8080": 1.0,
+    "enzyme-vector:enz-8080": 1.0,
+    "t4-cycle:T4-tick8120": 1.0,
+    "enzyme-vector:enz-8120": 1.0,
+    "t4-cycle:T4-tick8160": 1.0,
+    "enzyme-vector:enz-8160": 1.0,
+    "t4-cycle:T4-tick8200": 1.0,
+    "enzyme-vector:enz-8200": 1.0,
+    "t4-cycle:T4-tick8240": 1.0,
+    "enzyme-vector:enz-8240": 1.0,
+    "t4-cycle:T4-tick8280": 1.0,
+    "enzyme-vector:enz-8280": 1.0,
+    "t4-cycle:T4-tick8320": 1.0,
+    "enzyme-vector:enz-8320": 1.0,
+    "t4-cycle:T4-tick8360": 1.0,
+    "enzyme-vector:enz-8360": 1.0,
+    "t4-cycle:T4-tick8400": 1.0,
+    "enzyme-vector:enz-8400": 1.0,
+    "t4-cycle:T4-tick8440": 1.0,
+    "enzyme-vector:enz-8440": 1.0,
+    "t4-cycle:T4-tick8480": 1.0,
+    "enzyme-vector:enz-8480": 1.0,
+    "t4-cycle:T4-tick8520": 1.0,
+    "enzyme-vector:enz-8520": 1.0,
+    "t4-cycle:T4-tick8560": 1.0,
+    "enzyme-vector:enz-8560": 1.0,
+    "t4-cycle:T4-tick8600": 1.0,
+    "enzyme-vector:enz-8600": 1.0,
+    "t4-cycle:T4-tick8640": 1.0,
+    "enzyme-vector:enz-8640": 1.0,
+    "t4-cycle:T4-tick8680": 1.0,
+    "enzyme-vector:enz-8680": 1.0,
+    "t4-cycle:T4-tick8720": 1.0,
+    "enzyme-vector:enz-8720": 1.0,
+    "t4-cycle:T4-tick8760": 1.0,
+    "enzyme-vector:enz-8760": 1.0,
+    "t4-cycle:T4-tick8800": 1.0,
+    "enzyme-vector:enz-8800": 1.0,
+    "t4-cycle:T4-tick8840": 1.0,
+    "enzyme-vector:enz-8840": 1.0,
+    "t4-cycle:T4-tick8880": 1.0,
+    "enzyme-vector:enz-8880": 1.0,
+    "t4-cycle:T4-tick8920": 1.0,
+    "enzyme-vector:enz-8920": 1.0,
+    "t4-cycle:T4-tick8960": 1.0,
+    "enzyme-vector:enz-8960": 1.0,
+    "t4-cycle:T4-tick9000": 1.0,
+    "enzyme-vector:enz-9000": 1.0,
+    "t4-cycle:T4-tick9040": 1.0,
+    "enzyme-vector:enz-9040": 1.0,
+    "t4-cycle:T4-tick9080": 1.0,
+    "enzyme-vector:enz-9080": 1.0,
+    "t4-cycle:T4-tick9120": 1.0,
+    "enzyme-vector:enz-9120": 1.0,
+    "t4-cycle:T4-tick9160": 1.0,
+    "enzyme-vector:enz-9160": 1.0,
+    "t4-cycle:T4-tick9200": 1.0,
+    "enzyme-vector:enz-9200": 1.0,
+    "t4-cycle:T4-tick9240": 1.0,
+    "enzyme-vector:enz-9240": 1.0,
+    "t4-cycle:T4-tick9280": 1.0,
+    "enzyme-vector:enz-9280": 1.0,
+    "t4-cycle:T4-tick9320": 1.0,
+    "enzyme-vector:enz-9320": 1.0,
+    "t4-cycle:T4-tick9360": 1.0,
+    "enzyme-vector:enz-9360": 1.0,
+    "t4-cycle:T4-tick9400": 1.0,
+    "enzyme-vector:enz-9400": 1.0,
+    "t4-cycle:T4-tick9440": 1.0,
+    "enzyme-vector:enz-9440": 1.0,
+    "t4-cycle:T4-tick9480": 1.0,
+    "enzyme-vector:enz-9480": 1.0,
+    "t4-cycle:T4-tick9520": 1.0,
+    "enzyme-vector:enz-9520": 1.0,
+    "t4-cycle:T4-tick9560": 1.0,
+    "enzyme-vector:enz-9560": 1.0,
+    "t4-cycle:T4-tick9600": 1.0,
+    "enzyme-vector:enz-9600": 1.0,
+    "t4-cycle:T4-tick9640": 1.0,
+    "enzyme-vector:enz-9640": 1.0,
+    "t4-cycle:T4-tick9680": 1.0,
+    "enzyme-vector:enz-9680": 1.0,
+    "t4-cycle:T4-tick9720": 1.0,
+    "enzyme-vector:enz-9720": 1.0,
+    "t4-cycle:T4-tick9760": 1.0,
+    "enzyme-vector:enz-9760": 1.0,
+    "t4-cycle:T4-tick9800": 1.0,
+    "enzyme-vector:enz-9800": 1.0,
+    "t4-cycle:T4-tick9840": 1.0,
+    "enzyme-vector:enz-9840": 1.0,
+    "t4-cycle:T4-tick9880": 1.0,
+    "enzyme-vector:enz-9880": 1.0,
+    "t4-cycle:T4-tick9920": 1.0,
+    "enzyme-vector:enz-9920": 1.0,
+    "t4-cycle:T4-tick9960": 1.0,
+    "enzyme-vector:enz-9960": 1.0,
+    "t4-cycle:T4-tick10000": 1.0,
+    "enzyme-vector:enz-10000": 1.0,
+    "t4-cycle:T4-tick10040": 1.0,
+    "enzyme-vector:enz-10040": 1.0,
+    "t4-cycle:T4-tick10080": 1.0,
+    "enzyme-vector:enz-10080": 1.0,
+    "t4-cycle:T4-tick10120": 1.0,
+    "enzyme-vector:enz-10120": 1.0,
+    "t4-cycle:T4-tick10160": 1.0,
+    "enzyme-vector:enz-10160": 1.0,
+    "t4-cycle:T4-tick10200": 1.0,
+    "enzyme-vector:enz-10200": 1.0,
+    "t4-cycle:T4-tick10240": 1.0,
+    "enzyme-vector:enz-10240": 1.0,
+    "t4-cycle:T4-tick10280": 1.0,
+    "enzyme-vector:enz-10280": 1.0,
+    "t4-cycle:T4-tick10320": 1.0,
+    "enzyme-vector:enz-10320": 1.0,
+    "t4-cycle:T4-tick10360": 1.0,
+    "enzyme-vector:enz-10360": 1.0,
+    "t4-cycle:T4-tick10400": 1.0,
+    "enzyme-vector:enz-10400": 1.0,
+    "t4-cycle:T4-tick10440": 1.0,
+    "enzyme-vector:enz-10440": 1.0,
+    "t4-cycle:T4-tick10480": 1.0,
+    "enzyme-vector:enz-10480": 1.0,
+    "t4-cycle:T4-tick10520": 1.0,
+    "enzyme-vector:enz-10520": 1.0,
+    "t4-cycle:T4-tick10560": 1.0,
+    "enzyme-vector:enz-10560": 1.0,
+    "t4-cycle:T4-tick10600": 1.0,
+    "enzyme-vector:enz-10600": 1.0,
+    "t4-cycle:T4-tick10640": 1.0,
+    "enzyme-vector:enz-10640": 1.0,
+    "t4-cycle:T4-tick10680": 1.0,
+    "enzyme-vector:enz-10680": 1.0,
+    "t4-cycle:T4-tick10720": 1.0,
+    "enzyme-vector:enz-10720": 1.0,
+    "t4-cycle:T4-tick10760": 1.0,
+    "enzyme-vector:enz-10760": 1.0,
+    "t4-cycle:T4-tick10800": 1.0,
+    "enzyme-vector:enz-10800": 1.0,
+    "t4-cycle:T4-tick10840": 1.0,
+    "enzyme-vector:enz-10840": 1.0,
+    "t4-cycle:T4-tick10880": 1.0,
+    "enzyme-vector:enz-10880": 1.0,
+    "t4-cycle:T4-tick10920": 1.0,
+    "enzyme-vector:enz-10920": 1.0,
+    "t4-cycle:T4-tick10960": 1.0,
+    "enzyme-vector:enz-10960": 1.0,
+    "t4-cycle:T4-tick11000": 1.0,
+    "enzyme-vector:enz-11000": 1.0,
+    "t4-cycle:T4-tick11040": 2.0,
+    "enzyme-vector:enz-11040": 2.0,
+    "t4-cycle:T4-tick11080": 2.0,
+    "enzyme-vector:enz-11080": 2.0,
+    "t4-cycle:T4-tick11120": 2.0,
+    "enzyme-vector:enz-11120": 2.0,
+    "t4-cycle:T4-tick11160": 2.0,
+    "enzyme-vector:enz-11160": 2.0,
+    "t4-cycle:T4-tick11200": 2.0,
+    "enzyme-vector:enz-11200": 2.0,
+    "t4-cycle:T4-tick11240": 2.0,
+    "enzyme-vector:enz-11240": 2.0,
+    "t4-cycle:T4-tick11280": 2.0,
+    "enzyme-vector:enz-11280": 2.0,
+    "t4-cycle:T4-tick11320": 2.0,
+    "enzyme-vector:enz-11320": 2.0,
+    "t4-cycle:T4-tick11360": 2.0,
+    "enzyme-vector:enz-11360": 2.0,
+    "t4-cycle:T4-tick11400": 2.0,
+    "enzyme-vector:enz-11400": 2.0,
+    "t4-cycle:T4-tick11440": 2.0,
+    "enzyme-vector:enz-11440": 2.0,
+    "t4-cycle:T4-tick11480": 2.0,
+    "enzyme-vector:enz-11480": 2.0,
+    "t4-cycle:T4-tick11520": 2.0,
+    "enzyme-vector:enz-11520": 2.0,
+    "t4-cycle:T4-tick11560": 2.0,
+    "enzyme-vector:enz-11560": 2.0,
+    "t4-cycle:T4-tick11600": 2.0,
+    "enzyme-vector:enz-11600": 2.0,
+    "t4-cycle:T4-tick11640": 2.0,
+    "enzyme-vector:enz-11640": 2.0,
+    "t4-cycle:T4-tick11680": 2.0,
+    "enzyme-vector:enz-11680": 2.0,
+    "t4-cycle:T4-tick11720": 2.0,
+    "enzyme-vector:enz-11720": 2.0,
+    "t4-cycle:T4-tick11760": 2.0,
+    "enzyme-vector:enz-11760": 2.0,
+    "t4-cycle:T4-tick11800": 2.0,
+    "enzyme-vector:enz-11800": 2.0,
+    "t4-cycle:T4-tick11840": 2.0,
+    "enzyme-vector:enz-11840": 2.0,
+    "t4-cycle:T4-tick11880": 2.0,
+    "enzyme-vector:enz-11880": 2.0,
+    "t4-cycle:T4-tick11920": 2.0,
+    "enzyme-vector:enz-11920": 2.0,
+    "t4-cycle:T4-tick11960": 2.0,
+    "enzyme-vector:enz-11960": 2.0,
+    "t4-cycle:T4-tick12000": 2.0,
+    "enzyme-vector:enz-12000": 2.0,
+    "t4-cycle:T4-tick12040": 2.0,
+    "enzyme-vector:enz-12040": 2.0,
+    "t4-cycle:T4-tick12080": 2.0,
+    "enzyme-vector:enz-12080": 2.0,
+    "t4-cycle:T4-tick12120": 2.0,
+    "enzyme-vector:enz-12120": 2.0,
+    "t4-cycle:T4-tick12160": 2.0,
+    "enzyme-vector:enz-12160": 2.0,
+    "t4-cycle:T4-tick12200": 2.0,
+    "enzyme-vector:enz-12200": 2.0,
+    "t4-cycle:T4-tick12240": 2.0,
+    "enzyme-vector:enz-12240": 2.0,
+    "t4-cycle:T4-tick12280": 2.0,
+    "enzyme-vector:enz-12280": 2.0,
+    "t4-cycle:T4-tick12320": 2.0,
+    "enzyme-vector:enz-12320": 2.0,
+    "t4-cycle:T4-tick12360": 2.0,
+    "enzyme-vector:enz-12360": 2.0,
+    "t4-cycle:T4-tick12400": 2.0,
+    "enzyme-vector:enz-12400": 2.0,
+    "t4-cycle:T4-tick12440": 2.0,
+    "enzyme-vector:enz-12440": 2.0,
+    "t4-cycle:T4-tick12480": 2.0,
+    "enzyme-vector:enz-12480": 2.0,
+    "t4-cycle:T4-tick12520": 2.0,
+    "enzyme-vector:enz-12520": 2.0,
+    "t4-cycle:T4-tick12560": 2.0,
+    "enzyme-vector:enz-12560": 2.0,
+    "t4-cycle:T4-tick12600": 2.0,
+    "enzyme-vector:enz-12600": 2.0,
+    "t4-cycle:T4-tick12640": 2.0,
+    "enzyme-vector:enz-12640": 2.0,
+    "t4-cycle:T4-tick12680": 2.0,
+    "enzyme-vector:enz-12680": 2.0,
+    "t4-cycle:T4-tick12720": 2.0,
+    "enzyme-vector:enz-12720": 2.0,
+    "t4-cycle:T4-tick12760": 2.0,
+    "enzyme-vector:enz-12760": 2.0,
+    "t4-cycle:T4-tick12800": 2.0,
+    "enzyme-vector:enz-12800": 2.0,
+    "t4-cycle:T4-tick12840": 2.0,
+    "enzyme-vector:enz-12840": 2.0,
+    "t4-cycle:T4-tick12880": 2.0,
+    "enzyme-vector:enz-12880": 2.0,
+    "t4-cycle:T4-tick12920": 2.0,
+    "enzyme-vector:enz-12920": 2.0,
+    "t4-cycle:T4-tick12960": 2.0,
+    "enzyme-vector:enz-12960": 2.0,
+    "t4-cycle:T4-tick13000": 2.0,
+    "enzyme-vector:enz-13000": 2.0,
+    "t4-cycle:T4-tick13040": 2.0,
+    "enzyme-vector:enz-13040": 2.0,
+    "t4-cycle:T4-tick13080": 2.0,
+    "enzyme-vector:enz-13080": 2.0,
+    "t4-cycle:T4-tick13120": 2.0,
+    "enzyme-vector:enz-13120": 2.0,
+    "t4-cycle:T4-tick13160": 2.0,
+    "enzyme-vector:enz-13160": 2.0,
+    "t4-cycle:T4-tick13200": 2.0,
+    "enzyme-vector:enz-13200": 2.0,
+    "t4-cycle:T4-tick13240": 2.0,
+    "enzyme-vector:enz-13240": 2.0,
+    "t4-cycle:T4-tick13280": 2.0,
+    "enzyme-vector:enz-13280": 2.0,
+    "t4-cycle:T4-tick13320": 2.0,
+    "enzyme-vector:enz-13320": 2.0,
+    "t4-cycle:T4-tick13360": 2.0,
+    "enzyme-vector:enz-13360": 2.0,
+    "t4-cycle:T4-tick13400": 2.0,
+    "enzyme-vector:enz-13400": 2.0,
+    "t4-cycle:T4-tick13440": 2.0,
+    "enzyme-vector:enz-13440": 2.0,
+    "t4-cycle:T4-tick13480": 2.0,
+    "enzyme-vector:enz-13480": 2.0,
+    "t4-cycle:T4-tick13520": 2.0,
+    "enzyme-vector:enz-13520": 2.0,
+    "t4-cycle:T4-tick13560": 2.0,
+    "enzyme-vector:enz-13560": 2.0,
+    "t4-cycle:T4-tick13600": 2.0,
+    "enzyme-vector:enz-13600": 2.0,
+    "t4-cycle:T4-tick13640": 2.0,
+    "enzyme-vector:enz-13640": 2.0,
+    "t4-cycle:T4-tick13680": 2.0,
+    "enzyme-vector:enz-13680": 2.0,
+    "t4-cycle:T4-tick13720": 2.0,
+    "enzyme-vector:enz-13720": 2.0,
+    "t4-cycle:T4-tick13760": 2.0,
+    "enzyme-vector:enz-13760": 2.0,
+    "t4-cycle:T4-tick13800": 2.0,
+    "enzyme-vector:enz-13800": 2.0,
+    "t4-cycle:T4-tick13840": 2.0,
+    "enzyme-vector:enz-13840": 2.0,
+    "t4-cycle:T4-tick13880": 2.0,
+    "enzyme-vector:enz-13880": 2.0,
+    "t4-cycle:T4-tick13920": 2.0,
+    "enzyme-vector:enz-13920": 2.0,
+    "t4-cycle:T4-tick13960": 2.0,
+    "enzyme-vector:enz-13960": 2.0,
+    "t4-cycle:T4-tick14000": 2.0,
+    "enzyme-vector:enz-14000": 2.0,
+    "t4-cycle:T4-tick14040": 2.0,
+    "enzyme-vector:enz-14040": 2.0,
+    "t4-cycle:T4-tick14080": 2.0,
+    "enzyme-vector:enz-14080": 2.0,
+    "t4-cycle:T4-tick14120": 2.0,
+    "enzyme-vector:enz-14120": 2.0,
+    "t4-cycle:T4-tick14160": 2.0,
+    "enzyme-vector:enz-14160": 2.0,
+    "t4-cycle:T4-tick14200": 2.0,
+    "enzyme-vector:enz-14200": 2.0,
+    "t4-cycle:T4-tick14240": 2.0,
+    "enzyme-vector:enz-14240": 2.0,
+    "t4-cycle:T4-tick14280": 2.0,
+    "enzyme-vector:enz-14280": 2.0,
+    "t4-cycle:T4-tick14320": 2.0,
+    "enzyme-vector:enz-14320": 2.0,
+    "t4-cycle:T4-tick14360": 2.0,
+    "enzyme-vector:enz-14360": 2.0,
+    "t4-cycle:T4-tick14400": 2.0,
+    "enzyme-vector:enz-14400": 2.0,
+    "t4-cycle:T4-tick14440": 2.0,
+    "enzyme-vector:enz-14440": 2.0,
+    "t4-cycle:T4-tick14480": 2.0,
+    "enzyme-vector:enz-14480": 2.0,
+    "t4-cycle:T4-tick14520": 2.0,
+    "enzyme-vector:enz-14520": 2.0,
+    "t4-cycle:T4-tick14560": 2.0,
+    "enzyme-vector:enz-14560": 2.0,
+    "t4-cycle:T4-tick14600": 2.0,
+    "enzyme-vector:enz-14600": 2.0,
+    "t4-cycle:T4-tick14640": 2.0,
+    "enzyme-vector:enz-14640": 2.0,
+    "t4-cycle:T4-tick14680": 2.0,
+    "enzyme-vector:enz-14680": 2.0,
+    "t4-cycle:T4-tick14720": 2.0,
+    "enzyme-vector:enz-14720": 2.0,
+    "t4-cycle:T4-tick14760": 2.0,
+    "enzyme-vector:enz-14760": 2.0,
+    "t4-cycle:T4-tick14800": 2.0,
+    "enzyme-vector:enz-14800": 2.0,
+    "t4-cycle:T4-tick14840": 2.0,
+    "enzyme-vector:enz-14840": 2.0,
+    "t4-cycle:T4-tick14880": 2.0,
+    "enzyme-vector:enz-14880": 2.0,
+    "t4-cycle:T4-tick14920": 2.0,
+    "enzyme-vector:enz-14920": 2.0,
+    "t4-cycle:T4-tick14960": 2.0,
+    "enzyme-vector:enz-14960": 2.0,
+    "t4-cycle:T4-tick15000": 2.0,
+    "enzyme-vector:enz-15000": 2.0,
+    "t4-cycle:T4-tick15040": 2.0,
+    "enzyme-vector:enz-15040": 2.0,
+    "t4-cycle:T4-tick15080": 2.0,
+    "enzyme-vector:enz-15080": 2.0,
+    "t4-cycle:T4-tick15120": 2.0,
+    "enzyme-vector:enz-15120": 2.0,
+    "t4-cycle:T4-tick15160": 2.0,
+    "enzyme-vector:enz-15160": 2.0,
+    "t4-cycle:T4-tick15200": 2.0,
+    "enzyme-vector:enz-15200": 2.0,
+    "t4-cycle:T4-tick15240": 2.0,
+    "enzyme-vector:enz-15240": 2.0,
+    "t4-cycle:T4-tick15280": 2.0,
+    "enzyme-vector:enz-15280": 2.0,
+    "t4-cycle:T4-tick15320": 2.0,
+    "enzyme-vector:enz-15320": 2.0,
+    "t4-cycle:T4-tick15360": 2.0,
+    "enzyme-vector:enz-15360": 2.0,
+    "t4-cycle:T4-tick15400": 2.0,
+    "enzyme-vector:enz-15400": 2.0,
+    "t4-cycle:T4-tick15440": 2.0,
+    "enzyme-vector:enz-15440": 2.0,
+    "t4-cycle:T4-tick15480": 2.0,
+    "enzyme-vector:enz-15480": 2.0,
+    "t4-cycle:T4-tick15520": 2.0,
+    "enzyme-vector:enz-15520": 2.0,
+    "t4-cycle:T4-tick15560": 2.0,
+    "enzyme-vector:enz-15560": 2.0,
+    "t4-cycle:T4-tick15600": 2.0,
+    "enzyme-vector:enz-15600": 2.0,
+    "t4-cycle:T4-tick15640": 2.0,
+    "enzyme-vector:enz-15640": 2.0,
+    "t4-cycle:T4-tick15680": 2.0,
+    "enzyme-vector:enz-15680": 2.0,
+    "t4-cycle:T4-tick15720": 2.0,
+    "enzyme-vector:enz-15720": 2.0,
+    "t4-cycle:T4-tick15760": 2.0,
+    "enzyme-vector:enz-15760": 2.0,
+    "t4-cycle:T4-tick15800": 2.0,
+    "enzyme-vector:enz-15800": 2.0,
+    "t4-cycle:T4-tick15840": 2.0,
+    "enzyme-vector:enz-15840": 2.0,
+    "t4-cycle:T4-tick15880": 2.0,
+    "enzyme-vector:enz-15880": 2.0,
+    "t4-cycle:T4-tick15920": 2.0,
+    "enzyme-vector:enz-15920": 2.0,
+    "t4-cycle:T4-tick15960": 2.0,
+    "enzyme-vector:enz-15960": 2.0,
+    "t4-cycle:T4-tick16000": 2.0,
+    "enzyme-vector:enz-16000": 2.0,
+    "t4-cycle:T4-tick16040": 2.0,
+    "enzyme-vector:enz-16040": 2.0,
+    "t4-cycle:T4-tick16080": 2.0,
+    "enzyme-vector:enz-16080": 2.0,
+    "t4-cycle:T4-tick16120": 2.0,
+    "enzyme-vector:enz-16120": 2.0,
+    "t4-cycle:T4-tick16160": 2.0,
+    "enzyme-vector:enz-16160": 2.0,
+    "t4-cycle:T4-tick16200": 2.0,
+    "enzyme-vector:enz-16200": 2.0,
+    "t4-cycle:T4-tick16240": 2.0,
+    "enzyme-vector:enz-16240": 2.0,
+    "t4-cycle:T4-tick16280": 2.0,
+    "enzyme-vector:enz-16280": 2.0,
+    "t4-cycle:T4-tick16320": 2.0,
+    "enzyme-vector:enz-16320": 2.0,
+    "t4-cycle:T4-tick16360": 2.0,
+    "enzyme-vector:enz-16360": 2.0,
+    "t4-cycle:T4-tick16400": 2.0,
+    "enzyme-vector:enz-16400": 2.0,
+    "t4-cycle:T4-tick16440": 2.0,
+    "enzyme-vector:enz-16440": 2.0,
+    "t4-cycle:T4-tick16480": 2.0,
+    "enzyme-vector:enz-16480": 2.0,
+    "t4-cycle:T4-tick16520": 2.0,
+    "enzyme-vector:enz-16520": 2.0,
+    "t4-cycle:T4-tick16560": 2.0,
+    "enzyme-vector:enz-16560": 2.0,
+    "t4-cycle:T4-tick16600": 2.0,
+    "enzyme-vector:enz-16600": 2.0,
+    "t4-cycle:T4-tick16640": 2.0,
+    "enzyme-vector:enz-16640": 2.0,
+    "t4-cycle:T4-tick16680": 2.0,
+    "enzyme-vector:enz-16680": 2.0,
+    "t4-cycle:T4-tick16720": 2.0,
+    "enzyme-vector:enz-16720": 2.0,
+    "t4-cycle:T4-tick16760": 2.0,
+    "enzyme-vector:enz-16760": 2.0,
+    "t4-cycle:T4-tick16800": 2.0,
+    "enzyme-vector:enz-16800": 2.0,
+    "t4-cycle:T4-tick16840": 2.0,
+    "enzyme-vector:enz-16840": 2.0,
+    "t4-cycle:T4-tick16880": 2.0,
+    "enzyme-vector:enz-16880": 2.0,
+    "t4-cycle:T4-tick16920": 2.0,
+    "enzyme-vector:enz-16920": 2.0,
+    "t4-cycle:T4-tick16960": 2.0,
+    "enzyme-vector:enz-16960": 2.0,
+    "t4-cycle:T4-tick17000": 2.0,
+    "enzyme-vector:enz-17000": 2.0,
+    "t4-cycle:T4-tick17040": 2.0,
+    "enzyme-vector:enz-17040": 2.0,
+    "t4-cycle:T4-tick17080": 2.0,
+    "enzyme-vector:enz-17080": 2.0,
+    "t4-cycle:T4-tick17120": 2.0,
+    "enzyme-vector:enz-17120": 2.0,
+    "t4-cycle:T4-tick17160": 2.0,
+    "enzyme-vector:enz-17160": 2.0,
+    "t4-cycle:T4-tick17200": 2.0,
+    "enzyme-vector:enz-17200": 2.0,
+    "t4-cycle:T4-tick17240": 2.0,
+    "enzyme-vector:enz-17240": 2.0,
+    "t4-cycle:T4-tick17280": 2.0,
+    "enzyme-vector:enz-17280": 2.0,
+    "t4-cycle:T4-tick17320": 2.0,
+    "enzyme-vector:enz-17320": 2.0,
+    "t4-cycle:T4-tick17360": 2.0,
+    "enzyme-vector:enz-17360": 2.0,
+    "t4-cycle:T4-tick17400": 2.0,
+    "enzyme-vector:enz-17400": 2.0,
+    "t4-cycle:T4-tick17440": 2.0,
+    "enzyme-vector:enz-17440": 2.0,
+    "t4-cycle:T4-tick17480": 2.0,
+    "enzyme-vector:enz-17480": 2.0,
+    "t4-cycle:T4-tick17520": 2.0,
+    "enzyme-vector:enz-17520": 2.0,
+    "t4-cycle:T4-tick17560": 2.0,
+    "enzyme-vector:enz-17560": 2.0,
+    "t4-cycle:T4-tick17600": 2.0,
+    "enzyme-vector:enz-17600": 2.0,
+    "t4-cycle:T4-tick17640": 2.0,
+    "enzyme-vector:enz-17640": 2.0,
+    "t4-cycle:T4-tick17680": 2.0,
+    "enzyme-vector:enz-17680": 2.0,
+    "t4-cycle:T4-tick17720": 2.0,
+    "enzyme-vector:enz-17720": 2.0,
+    "t4-cycle:T4-tick17760": 2.0,
+    "enzyme-vector:enz-17760": 2.0,
+    "t4-cycle:T4-tick17800": 2.0,
+    "enzyme-vector:enz-17800": 2.0,
+    "t4-cycle:T4-tick17840": 2.0,
+    "enzyme-vector:enz-17840": 2.0,
+    "t4-cycle:T4-tick17880": 2.0,
+    "enzyme-vector:enz-17880": 2.0,
+    "t4-cycle:T4-tick17920": 2.0,
+    "enzyme-vector:enz-17920": 2.0,
+    "t4-cycle:T4-tick17960": 2.0,
+    "enzyme-vector:enz-17960": 2.0,
+    "t4-cycle:T4-tick18000": 2.0,
+    "enzyme-vector:enz-18000": 2.0,
+    "t4-cycle:T4-tick18040": 2.0,
+    "enzyme-vector:enz-18040": 2.0,
+    "t4-cycle:T4-tick18080": 2.0,
+    "enzyme-vector:enz-18080": 2.0,
+    "t4-cycle:T4-tick18120": 2.0,
+    "enzyme-vector:enz-18120": 2.0,
+    "t4-cycle:T4-tick18160": 2.0,
+    "enzyme-vector:enz-18160": 2.0,
+    "t4-cycle:T4-tick18200": 2.0,
+    "enzyme-vector:enz-18200": 2.0,
+    "t4-cycle:T4-tick18240": 2.0,
+    "enzyme-vector:enz-18240": 2.0,
+    "t4-cycle:T4-tick18280": 2.0,
+    "enzyme-vector:enz-18280": 2.0,
+    "t4-cycle:T4-tick18320": 2.0,
+    "enzyme-vector:enz-18320": 2.0,
+    "t4-cycle:T4-tick18360": 2.0,
+    "enzyme-vector:enz-18360": 2.0,
+    "t4-cycle:T4-tick18400": 2.0,
+    "enzyme-vector:enz-18400": 2.0,
+    "t4-cycle:T4-tick18440": 2.0,
+    "enzyme-vector:enz-18440": 2.0,
+    "t4-cycle:T4-tick18480": 2.0,
+    "enzyme-vector:enz-18480": 2.0,
+    "t4-cycle:T4-tick18520": 2.0,
+    "enzyme-vector:enz-18520": 2.0,
+    "t4-cycle:T4-tick18560": 2.0,
+    "enzyme-vector:enz-18560": 2.0,
+    "t4-cycle:T4-tick18600": 2.0,
+    "enzyme-vector:enz-18600": 2.0,
+    "t4-cycle:T4-tick18640": 2.0,
+    "enzyme-vector:enz-18640": 2.0,
+    "t4-cycle:T4-tick18680": 2.0,
+    "enzyme-vector:enz-18680": 2.0,
+    "t4-cycle:T4-tick18720": 2.0,
+    "enzyme-vector:enz-18720": 2.0,
+    "t4-cycle:T4-tick18760": 2.0,
+    "enzyme-vector:enz-18760": 2.0,
+    "t4-cycle:T4-tick18800": 2.0,
+    "enzyme-vector:enz-18800": 2.0,
+    "t4-cycle:T4-tick18840": 2.0,
+    "enzyme-vector:enz-18840": 2.0,
+    "t4-cycle:T4-tick18880": 2.0,
+    "enzyme-vector:enz-18880": 2.0,
+    "t4-cycle:T4-tick18920": 2.0,
+    "enzyme-vector:enz-18920": 2.0,
+    "t4-cycle:T4-tick18960": 2.0,
+    "enzyme-vector:enz-18960": 2.0,
+    "t4-cycle:T4-tick19000": 2.0,
+    "enzyme-vector:enz-19000": 2.0,
+    "t4-cycle:T4-tick19040": 2.0,
+    "enzyme-vector:enz-19040": 2.0,
+    "t4-cycle:T4-tick19080": 2.0,
+    "enzyme-vector:enz-19080": 2.0,
+    "t4-cycle:T4-tick19120": 2.0,
+    "enzyme-vector:enz-19120": 2.0,
+    "t4-cycle:T4-tick19160": 2.0,
+    "enzyme-vector:enz-19160": 2.0,
+    "t4-cycle:T4-tick19200": 2.0,
+    "enzyme-vector:enz-19200": 2.0,
+    "t4-cycle:T4-tick19240": 2.0,
+    "enzyme-vector:enz-19240": 2.0,
+    "t4-cycle:T4-tick19280": 2.0,
+    "enzyme-vector:enz-19280": 2.0,
+    "t4-cycle:T4-tick19320": 2.0,
+    "enzyme-vector:enz-19320": 2.0,
+    "t4-cycle:T4-tick19360": 2.0,
+    "enzyme-vector:enz-19360": 2.0,
+    "t4-cycle:T4-tick19400": 2.0,
+    "enzyme-vector:enz-19400": 2.0,
+    "t4-cycle:T4-tick19440": 2.0,
+    "enzyme-vector:enz-19440": 2.0,
+    "t4-cycle:T4-tick19480": 2.0,
+    "enzyme-vector:enz-19480": 2.0,
+    "t4-cycle:T4-tick19520": 2.0,
+    "enzyme-vector:enz-19520": 2.0,
+    "t4-cycle:T4-tick19560": 2.0,
+    "enzyme-vector:enz-19560": 2.0,
+    "t4-cycle:T4-tick19600": 2.0,
+    "enzyme-vector:enz-19600": 2.0,
+    "t4-cycle:T4-tick19640": 2.0,
+    "enzyme-vector:enz-19640": 2.0,
+    "t4-cycle:T4-tick19680": 2.0,
+    "enzyme-vector:enz-19680": 2.0,
+    "t4-cycle:T4-tick19720": 2.0,
+    "enzyme-vector:enz-19720": 2.0,
+    "t4-cycle:T4-tick19760": 2.0,
+    "enzyme-vector:enz-19760": 2.0,
+    "t4-cycle:T4-tick19800": 2.0,
+    "enzyme-vector:enz-19800": 2.0,
+    "t4-cycle:T4-tick19840": 2.0,
+    "enzyme-vector:enz-19840": 2.0,
+    "t4-cycle:T4-tick19880": 2.0,
+    "enzyme-vector:enz-19880": 2.0,
+    "t4-cycle:T4-tick19920": 2.0,
+    "enzyme-vector:enz-19920": 2.0,
+    "t4-cycle:T4-tick19960": 2.0,
+    "enzyme-vector:enz-19960": 2.0,
+    "t4-cycle:T4-tick20000": 2.0,
+    "enzyme-vector:enz-20000": 2.0,
+    "t4-cycle:T4-tick20040": 2.0,
+    "enzyme-vector:enz-20040": 2.0,
+    "t4-cycle:T4-tick20080": 2.0,
+    "enzyme-vector:enz-20080": 2.0,
+    "t4-cycle:T4-tick20120": 2.0,
+    "enzyme-vector:enz-20120": 2.0,
+    "t4-cycle:T4-tick20160": 2.0,
+    "enzyme-vector:enz-20160": 2.0,
+    "t4-cycle:T4-tick20200": 2.0,
+    "enzyme-vector:enz-20200": 2.0,
+    "t4-cycle:T4-tick20240": 2.0,
+    "enzyme-vector:enz-20240": 2.0,
+    "t4-cycle:T4-tick20280": 2.0,
+    "enzyme-vector:enz-20280": 2.0,
+    "t4-cycle:T4-tick20320": 2.0,
+    "enzyme-vector:enz-20320": 2.0,
+    "t4-cycle:T4-tick20360": 2.0,
+    "enzyme-vector:enz-20360": 2.0,
+    "t4-cycle:T4-tick20400": 2.0,
+    "enzyme-vector:enz-20400": 2.0,
+    "t4-cycle:T4-tick20440": 2.0,
+    "enzyme-vector:enz-20440": 2.0,
+    "t4-cycle:T4-tick20480": 2.0,
+    "enzyme-vector:enz-20480": 2.0,
+    "t4-cycle:T4-tick20520": 2.0,
+    "enzyme-vector:enz-20520": 2.0,
+    "t4-cycle:T4-tick20560": 2.0,
+    "enzyme-vector:enz-20560": 2.0,
+    "t4-cycle:T4-tick20600": 2.0,
+    "enzyme-vector:enz-20600": 2.0,
+    "t4-cycle:T4-tick20640": 2.0,
+    "enzyme-vector:enz-20640": 2.0,
+    "t4-cycle:T4-tick20680": 2.0,
+    "enzyme-vector:enz-20680": 2.0,
+    "t4-cycle:T4-tick20720": 2.0,
+    "enzyme-vector:enz-20720": 2.0,
+    "t4-cycle:T4-tick20760": 2.0,
+    "enzyme-vector:enz-20760": 2.0,
+    "t4-cycle:T4-tick20800": 2.0,
+    "enzyme-vector:enz-20800": 2.0,
+    "t4-cycle:T4-tick20840": 2.0,
+    "enzyme-vector:enz-20840": 2.0,
+    "t4-cycle:T4-tick20880": 2.0,
+    "enzyme-vector:enz-20880": 2.0,
+    "t4-cycle:T4-tick20920": 2.0,
+    "enzyme-vector:enz-20920": 2.0,
+    "t4-cycle:T4-tick20960": 2.0,
+    "enzyme-vector:enz-20960": 2.0,
+    "t4-cycle:T4-tick21000": 2.0,
+    "enzyme-vector:enz-21000": 2.0,
+    "t4-cycle:T4-tick21040": 2.0,
+    "enzyme-vector:enz-21040": 2.0,
+    "t4-cycle:T4-tick21080": 2.0,
+    "enzyme-vector:enz-21080": 2.0,
+    "t4-cycle:T4-tick21120": 2.0,
+    "enzyme-vector:enz-21120": 2.0,
+    "t4-cycle:T4-tick21160": 2.0,
+    "enzyme-vector:enz-21160": 2.0,
+    "t4-cycle:T4-tick21200": 2.0,
+    "enzyme-vector:enz-21200": 2.0,
+    "t4-cycle:T4-tick21240": 2.0,
+    "enzyme-vector:enz-21240": 2.0,
+    "t4-cycle:T4-tick21280": 2.0,
+    "enzyme-vector:enz-21280": 2.0,
+    "t4-cycle:T4-tick21320": 2.0,
+    "enzyme-vector:enz-21320": 2.0,
+    "t4-cycle:T4-tick21360": 2.0,
+    "enzyme-vector:enz-21360": 2.0,
+    "t4-cycle:T4-tick21400": 2.0,
+    "enzyme-vector:enz-21400": 2.0,
+    "t4-cycle:T4-tick21440": 2.0,
+    "enzyme-vector:enz-21440": 2.0,
+    "t4-cycle:T4-tick21480": 2.0,
+    "enzyme-vector:enz-21480": 2.0,
+    "t4-cycle:T4-tick21520": 2.0,
+    "enzyme-vector:enz-21520": 2.0,
+    "t4-cycle:T4-tick21560": 2.0,
+    "enzyme-vector:enz-21560": 2.0,
+    "t4-cycle:T4-tick21600": 2.0,
+    "enzyme-vector:enz-21600": 2.0,
+    "t4-cycle:T4-tick21640": 2.0,
+    "enzyme-vector:enz-21640": 2.0,
+    "t4-cycle:T4-tick21680": 2.0,
+    "enzyme-vector:enz-21680": 2.0,
+    "t4-cycle:T4-tick21720": 2.0,
+    "enzyme-vector:enz-21720": 2.0,
+    "t4-cycle:T4-tick21760": 2.0,
+    "enzyme-vector:enz-21760": 2.0,
+    "t4-cycle:T4-tick21800": 2.0,
+    "enzyme-vector:enz-21800": 2.0,
+    "t4-cycle:T4-tick21840": 2.0,
+    "enzyme-vector:enz-21840": 2.0,
+    "t4-cycle:T4-tick21880": 2.0,
+    "enzyme-vector:enz-21880": 2.0,
+    "t4-cycle:T4-tick21920": 2.0,
+    "enzyme-vector:enz-21920": 2.0,
+    "t4-cycle:T4-tick21960": 2.0,
+    "enzyme-vector:enz-21960": 2.0,
+    "t4-cycle:T4-tick22000": 2.0,
+    "enzyme-vector:enz-22000": 2.0,
+    "t4-cycle:T4-tick22040": 2.0,
+    "enzyme-vector:enz-22040": 2.0,
+    "t4-cycle:T4-tick22080": 2.0,
+    "enzyme-vector:enz-22080": 2.0,
+    "t4-cycle:T4-tick22120": 2.0,
+    "enzyme-vector:enz-22120": 2.0,
+    "t4-cycle:T4-tick22160": 2.0,
+    "enzyme-vector:enz-22160": 2.0,
+    "t4-cycle:T4-tick22200": 2.0,
+    "enzyme-vector:enz-22200": 2.0,
+    "t4-cycle:T4-tick22240": 2.0,
+    "enzyme-vector:enz-22240": 2.0,
+    "t4-cycle:T4-tick22280": 2.0,
+    "enzyme-vector:enz-22280": 2.0,
+    "t4-cycle:T4-tick22320": 2.0,
+    "enzyme-vector:enz-22320": 2.0,
+    "t4-cycle:T4-tick22360": 2.0,
+    "enzyme-vector:enz-22360": 2.0,
+    "t4-cycle:T4-tick22400": 2.0,
+    "enzyme-vector:enz-22400": 2.0,
+    "t4-cycle:T4-tick22440": 2.0,
+    "enzyme-vector:enz-22440": 2.0,
+    "t4-cycle:T4-tick22480": 2.0,
+    "enzyme-vector:enz-22480": 2.0,
+    "t4-cycle:T4-tick22520": 2.0,
+    "enzyme-vector:enz-22520": 2.0,
+    "t4-cycle:T4-tick22560": 2.0,
+    "enzyme-vector:enz-22560": 2.0,
+    "t4-cycle:T4-tick22600": 2.0,
+    "enzyme-vector:enz-22600": 2.0,
+    "t4-cycle:T4-tick22640": 2.0,
+    "enzyme-vector:enz-22640": 2.0,
+    "t4-cycle:T4-tick22680": 2.0,
+    "enzyme-vector:enz-22680": 2.0,
+    "t4-cycle:T4-tick22720": 2.0,
+    "enzyme-vector:enz-22720": 2.0,
+    "t4-cycle:T4-tick22760": 2.0,
+    "enzyme-vector:enz-22760": 2.0,
+    "t4-cycle:T4-tick22800": 2.0,
+    "enzyme-vector:enz-22800": 2.0,
+    "t4-cycle:T4-tick22840": 2.0,
+    "enzyme-vector:enz-22840": 2.0,
+    "t4-cycle:T4-tick22880": 2.0,
+    "enzyme-vector:enz-22880": 2.0,
+    "t4-cycle:T4-tick22920": 2.0,
+    "enzyme-vector:enz-22920": 2.0,
+    "t4-cycle:T4-tick22960": 2.0,
+    "enzyme-vector:enz-22960": 2.0,
+    "t4-cycle:T4-tick23000": 2.0,
+    "enzyme-vector:enz-23000": 2.0,
+    "t4-cycle:T4-tick23040": 2.0,
+    "enzyme-vector:enz-23040": 2.0,
+    "t4-cycle:T4-tick23080": 2.0,
+    "enzyme-vector:enz-23080": 2.0,
+    "t4-cycle:T4-tick23120": 2.0,
+    "enzyme-vector:enz-23120": 2.0,
+    "t4-cycle:T4-tick23160": 2.0,
+    "enzyme-vector:enz-23160": 2.0,
+    "t4-cycle:T4-tick23200": 2.0,
+    "enzyme-vector:enz-23200": 2.0,
+    "t4-cycle:T4-tick23240": 2.0,
+    "enzyme-vector:enz-23240": 2.0,
+    "t4-cycle:T4-tick23280": 2.0,
+    "enzyme-vector:enz-23280": 2.0,
+    "t4-cycle:T4-tick23320": 2.0,
+    "enzyme-vector:enz-23320": 2.0,
+    "t4-cycle:T4-tick23360": 2.0,
+    "enzyme-vector:enz-23360": 2.0,
+    "t4-cycle:T4-tick23400": 2.0,
+    "enzyme-vector:enz-23400": 2.0,
+    "t4-cycle:T4-tick23440": 1.0,
+    "enzyme-vector:enz-23440": 1.0,
+    "t4-cycle:T4-tick23480": 1.0,
+    "enzyme-vector:enz-23480": 1.0,
+    "t4-cycle:T4-tick23520": 1.0,
+    "enzyme-vector:enz-23520": 1.0,
+    "t4-cycle:T4-tick23560": 1.0,
+    "enzyme-vector:enz-23560": 1.0,
+    "t4-cycle:T4-tick23600": 1.0,
+    "enzyme-vector:enz-23600": 1.0,
+    "t4-cycle:T4-tick23640": 1.0,
+    "enzyme-vector:enz-23640": 1.0,
+    "t4-cycle:T4-tick23680": 1.0,
+    "enzyme-vector:enz-23680": 1.0,
+    "t4-cycle:T4-tick23720": 1.0,
+    "enzyme-vector:enz-23720": 1.0,
+    "t4-cycle:T4-tick23760": 1.0,
+    "enzyme-vector:enz-23760": 1.0,
+    "t4-cycle:T4-tick23800": 1.0,
+    "enzyme-vector:enz-23800": 1.0,
+    "t4-cycle:T4-tick23840": 1.0,
+    "enzyme-vector:enz-23840": 1.0,
+    "t4-cycle:T4-tick23880": 1.0,
+    "enzyme-vector:enz-23880": 1.0,
+    "t4-cycle:T4-tick23920": 1.0,
+    "enzyme-vector:enz-23920": 1.0,
+    "t4-cycle:T4-tick23960": 1.0,
+    "enzyme-vector:enz-23960": 1.0,
+    "t4-cycle:T4-tick24000": 1.0,
+    "enzyme-vector:enz-24000": 1.0,
+    "t4-cycle:T4-tick24040": 1.0,
+    "enzyme-vector:enz-24040": 1.0,
+    "t4-cycle:T4-tick24080": 1.0,
+    "enzyme-vector:enz-24080": 1.0,
+    "t4-cycle:T4-tick24120": 1.0,
+    "enzyme-vector:enz-24120": 1.0,
+    "t4-cycle:T4-tick24160": 1.0,
+    "enzyme-vector:enz-24160": 1.0,
+    "t4-cycle:T4-tick24200": 1.0,
+    "enzyme-vector:enz-24200": 1.0,
+    "t4-cycle:T4-tick24240": 1.0,
+    "enzyme-vector:enz-24240": 1.0,
+    "t4-cycle:T4-tick24280": 1.0,
+    "enzyme-vector:enz-24280": 1.0,
+    "t4-cycle:T4-tick24320": 1.0,
+    "enzyme-vector:enz-24320": 1.0,
+    "t4-cycle:T4-tick24360": 1.0,
+    "enzyme-vector:enz-24360": 1.0,
+    "t4-cycle:T4-tick24400": 1.0,
+    "enzyme-vector:enz-24400": 1.0,
+    "t4-cycle:T4-tick24440": 1.0,
+    "enzyme-vector:enz-24440": 1.0,
+    "t4-cycle:T4-tick24480": 1.0,
+    "enzyme-vector:enz-24480": 1.0,
+    "t4-cycle:T4-tick24520": 1.0,
+    "enzyme-vector:enz-24520": 1.0,
+    "t4-cycle:T4-tick24560": 1.0,
+    "enzyme-vector:enz-24560": 1.0,
+    "t4-cycle:T4-tick24600": 1.0,
+    "enzyme-vector:enz-24600": 1.0,
+    "t4-cycle:T4-tick24640": 1.0,
+    "enzyme-vector:enz-24640": 1.0,
+    "t4-cycle:T4-tick24680": 1.0,
+    "enzyme-vector:enz-24680": 1.0,
+    "t4-cycle:T4-tick24720": 1.0,
+    "enzyme-vector:enz-24720": 1.0,
+    "t4-cycle:T4-tick24760": 1.0,
+    "enzyme-vector:enz-24760": 1.0,
+    "t4-cycle:T4-tick24800": 1.0,
+    "enzyme-vector:enz-24800": 1.0,
+    "t4-cycle:T4-tick24840": 1.0,
+    "enzyme-vector:enz-24840": 1.0,
+    "t4-cycle:T4-tick24880": 1.0,
+    "enzyme-vector:enz-24880": 1.0,
+    "t4-cycle:T4-tick24920": 1.0,
+    "enzyme-vector:enz-24920": 1.0,
+    "t4-cycle:T4-tick24960": 1.0,
+    "enzyme-vector:enz-24960": 1.0,
+    "t4-cycle:T4-tick25000": 1.0,
+    "enzyme-vector:enz-25000": 1.0,
+    "t4-cycle:T4-tick25040": 1.0,
+    "enzyme-vector:enz-25040": 1.0,
+    "t4-cycle:T4-tick25080": 1.0,
+    "enzyme-vector:enz-25080": 1.0,
+    "t4-cycle:T4-tick25120": 1.0,
+    "enzyme-vector:enz-25120": 1.0,
+    "t4-cycle:T4-tick25160": 1.0,
+    "enzyme-vector:enz-25160": 1.0,
+    "t4-cycle:T4-tick25200": 1.0,
+    "enzyme-vector:enz-25200": 1.0,
+    "t4-cycle:T4-tick25240": 1.0,
+    "enzyme-vector:enz-25240": 1.0,
+    "t4-cycle:T4-tick25280": 1.0,
+    "enzyme-vector:enz-25280": 1.0,
+    "t4-cycle:T4-tick25320": 1.0,
+    "enzyme-vector:enz-25320": 1.0,
+    "t4-cycle:T4-tick25360": 1.0,
+    "enzyme-vector:enz-25360": 1.0,
+    "t4-cycle:T4-tick25400": 1.0,
+    "enzyme-vector:enz-25400": 1.0,
+    "t4-cycle:T4-tick25440": 1.0,
+    "enzyme-vector:enz-25440": 1.0,
+    "t4-cycle:T4-tick25480": 1.0,
+    "enzyme-vector:enz-25480": 1.0,
+    "t4-cycle:T4-tick25520": 1.0,
+    "enzyme-vector:enz-25520": 1.0,
+    "t4-cycle:T4-tick25560": 1.0,
+    "enzyme-vector:enz-25560": 1.0,
+    "t4-cycle:T4-tick25600": 1.0,
+    "enzyme-vector:enz-25600": 1.0,
+    "t4-cycle:T4-tick25640": 1.0,
+    "enzyme-vector:enz-25640": 1.0,
+    "t4-cycle:T4-tick25680": 1.0,
+    "enzyme-vector:enz-25680": 1.0,
+    "t4-cycle:T4-tick25720": 1.0,
+    "enzyme-vector:enz-25720": 1.0,
+    "t4-cycle:T4-tick25760": 1.0,
+    "enzyme-vector:enz-25760": 1.0,
+    "t4-cycle:T4-tick25800": 1.0,
+    "enzyme-vector:enz-25800": 1.0,
+    "t4-cycle:T4-tick25840": 1.0,
+    "enzyme-vector:enz-25840": 1.0,
+    "t4-cycle:T4-tick25880": 1.0,
+    "enzyme-vector:enz-25880": 1.0,
+    "t4-cycle:T4-tick25920": 1.0,
+    "enzyme-vector:enz-25920": 1.0,
+    "t4-cycle:T4-tick25960": 1.0,
+    "enzyme-vector:enz-25960": 1.0,
+    "t4-cycle:T4-tick26000": 1.0,
+    "enzyme-vector:enz-26000": 1.0,
+    "t4-cycle:T4-tick26040": 1.0,
+    "enzyme-vector:enz-26040": 1.0,
+    "t4-cycle:T4-tick26080": 1.0,
+    "enzyme-vector:enz-26080": 1.0,
+    "t4-cycle:T4-tick26120": 1.0,
+    "enzyme-vector:enz-26120": 1.0,
+    "t4-cycle:T4-tick26160": 1.0,
+    "enzyme-vector:enz-26160": 1.0,
+    "t4-cycle:T4-tick26200": 1.0,
+    "enzyme-vector:enz-26200": 1.0,
+    "t4-cycle:T4-tick26240": 1.0,
+    "enzyme-vector:enz-26240": 1.0,
+    "t4-cycle:T4-tick26280": 1.0,
+    "enzyme-vector:enz-26280": 1.0,
+    "t4-cycle:T4-tick26320": 1.0,
+    "enzyme-vector:enz-26320": 1.0,
+    "t4-cycle:T4-tick26360": 1.0,
+    "enzyme-vector:enz-26360": 1.0,
+    "t4-cycle:T4-tick26400": 1.0,
+    "enzyme-vector:enz-26400": 1.0,
+    "t4-cycle:T4-tick26440": 1.0,
+    "enzyme-vector:enz-26440": 1.0,
+    "t4-cycle:T4-tick26480": 1.0,
+    "enzyme-vector:enz-26480": 1.0,
+    "t4-cycle:T4-tick26520": 1.0,
+    "enzyme-vector:enz-26520": 1.0,
+    "t4-cycle:T4-tick26560": 1.0,
+    "enzyme-vector:enz-26560": 1.0,
+    "t4-cycle:T4-tick26600": 1.0,
+    "enzyme-vector:enz-26600": 1.0,
+    "t4-cycle:T4-tick26640": 1.0,
+    "enzyme-vector:enz-26640": 1.0,
+    "t4-cycle:T4-tick26680": 1.0,
+    "enzyme-vector:enz-26680": 1.0,
+    "t4-cycle:T4-tick26720": 1.0,
+    "enzyme-vector:enz-26720": 1.0,
+    "t4-cycle:T4-tick26760": 1.0,
+    "enzyme-vector:enz-26760": 1.0,
+    "t4-cycle:T4-tick26800": 1.0,
+    "enzyme-vector:enz-26800": 1.0,
+    "t4-cycle:T4-tick26840": 1.0,
+    "enzyme-vector:enz-26840": 1.0,
+    "t4-cycle:T4-tick26880": 1.0,
+    "enzyme-vector:enz-26880": 1.0,
+    "t4-cycle:T4-tick26920": 1.0,
+    "enzyme-vector:enz-26920": 1.0,
+    "t4-cycle:T4-tick26960": 1.0,
+    "enzyme-vector:enz-26960": 1.0,
+    "t4-cycle:T4-tick27000": 1.0,
+    "enzyme-vector:enz-27000": 1.0,
+    "t4-cycle:T4-tick27040": 1.0,
+    "enzyme-vector:enz-27040": 1.0,
+    "t4-cycle:T4-tick27080": 1.0,
+    "enzyme-vector:enz-27080": 1.0,
+    "t4-cycle:T4-tick27120": 1.0,
+    "enzyme-vector:enz-27120": 1.0,
+    "t4-cycle:T4-tick27160": 1.0,
+    "enzyme-vector:enz-27160": 1.0,
+    "t4-cycle:T4-tick27200": 1.0,
+    "enzyme-vector:enz-27200": 1.0,
+    "t4-cycle:T4-tick27240": 1.0,
+    "enzyme-vector:enz-27240": 1.0,
+    "t4-cycle:T4-tick27280": 1.0,
+    "enzyme-vector:enz-27280": 1.0,
+    "t4-cycle:T4-tick27320": 1.0,
+    "enzyme-vector:enz-27320": 1.0
+  }
 }

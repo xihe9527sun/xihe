@@ -1,11 +1,5319 @@
 {
   "version": "v2",
-  "activated_at": "2026-07-07T22:35:52.616866+08:00",
-  "edges": {},
-  "nodes": {},
+  "activated_at": "2026-07-07T22:40",
+  "edges": {
+    "reflection:refl-manual-1": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-manual-start": {
+      "w": 1.0,
+      "count": 1
+    },
+    "forage:pending-知识图谱": {
+      "w": 1.0,
+      "count": 1
+    },
+    "reflection:refl-0007": {
+      "w": 1.0,
+      "count": 1
+    },
+    "knowledge:知识-微观经济学": {
+      "w": 15.0,
+      "count": 1
+    },
+    "knowledge:知识-公司理财": {
+      "w": 7.0,
+      "count": 1
+    },
+    "knowledge:知识-国内税法": {
+      "w": 7.0,
+      "count": 1
+    },
+    "knowledge:知识-国内经济政策": {
+      "w": 7.0,
+      "count": 1
+    },
+    "knowledge:知识-国内财务会计": {
+      "w": 8.0,
+      "count": 1
+    },
+    "knowledge:知识-国内金融体系": {
+      "w": 7.0,
+      "count": 1
+    },
+    "knowledge:知识-证券投资": {
+      "w": 7.0,
+      "count": 1
+    },
+    "forage:arXiv趋势速递": {
+      "w": 4.0,
+      "count": 1
+    },
+    "forage:信用分配综述-自己想去": {
+      "w": 5.0,
+      "count": 1
+    },
+    "forage:金鱼到老搭档-自主觅食": {
+      "w": 4.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick120": {
+      "w": 3.0,
+      "count": 3
+    },
+    "enzyme_vector:vec-3/21": {
+      "w": 141.0,
+      "count": 47
+    },
+    "forage:自催化AI自我+UGOA": {
+      "w": 6.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick40": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick80": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick1960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2640": {
+      "w": 3.0,
+      "count": 3
+    },
+    "t4-cycle:T4-tick2680": {
+      "w": 3.0,
+      "count": 3
+    },
+    "t4-cycle:T4-tick2720": {
+      "w": 3.0,
+      "count": 3
+    },
+    "memory_todo:todo": {
+      "w": 54.0,
+      "count": 27
+    },
+    "project_status:proj": {
+      "w": 3704.0,
+      "count": 3704
+    },
+    "t4-cycle:T4-tick2760": {
+      "w": 3.0,
+      "count": 3
+    },
+    "t4-cycle:T4-tick2800": {
+      "w": 3.0,
+      "count": 3
+    },
+    "enzyme_vector:vec-6/21": {
+      "w": 66.0,
+      "count": 11
+    },
+    "t4-cycle:T4-tick2840": {
+      "w": 3.0,
+      "count": 3
+    },
+    "enzyme_vector:vec-5/21": {
+      "w": 10.0,
+      "count": 2
+    },
+    "enzyme_vector:vec-9/21": {
+      "w": 9.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick2880": {
+      "w": 7.0,
+      "count": 7
+    },
+    "enzyme_vector:vec-7/21": {
+      "w": 14.0,
+      "count": 2
+    },
+    "enzyme_vector:vec-10/27": {
+      "w": 20.0,
+      "count": 2
+    },
+    "catalytic_closure:closure-self_reflection-sites_network": {
+      "w": 3.0,
+      "count": 1
+    },
+    "enzyme_vector:vec-12/27": {
+      "w": 36.0,
+      "count": 3
+    },
+    "catalytic_closure:closure-self_reflection": {
+      "w": 2625.0,
+      "count": 875
+    },
+    "t4-cycle:T4-tick2920": {
+      "w": 7.0,
+      "count": 7
+    },
+    "catalytic_closure:closure-self_reflection-llm_health": {
+      "w": 153.0,
+      "count": 51
+    },
+    "decision-20260628171459:decision-20260628171459": {
+      "w": 0.95,
+      "count": 1
+    },
+    "decision-20260628171500:decision-20260628171500": {
+      "w": 0.9,
+      "count": 1
+    },
+    "learning-20260628171512:learning-20260628171512": {
+      "w": 0.7,
+      "count": 1
+    },
+    "decision-20260628172717:decision-20260628172717": {
+      "w": 0.9,
+      "count": 1
+    },
+    "enzyme_vector:vec-12/28": {
+      "w": 1452.0,
+      "count": 121
+    },
+    "t4-cycle:T4-tick2960": {
+      "w": 4.0,
+      "count": 4
+    },
+    "enzyme-vector:enz-2960": {
+      "w": 4.0,
+      "count": 4
+    },
+    "enzyme_vector:vec-13/28": {
+      "w": 9477.0,
+      "count": 729
+    },
+    "t4-cycle:T4-tick3000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick3960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-3960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme_vector:vec-14/28": {
+      "w": 1022.0,
+      "count": 73
+    },
+    "t4-cycle:T4-tick4000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick4960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-4960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick5960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-5960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick6960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-6960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick7960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-7960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick8960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-8960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick9960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-9960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick10960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-10960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick11000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-11000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick11040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick11960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-11960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick12960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-12960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick13960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-13960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick14960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-14960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick15960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-15960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick16960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-16960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick17960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-17960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick18960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-18960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick19960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-19960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick20960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-20960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick21960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-21960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22440": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22480": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22520": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22560": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22600": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22640": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22680": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22720": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22760": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22800": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22840": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22880": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22920": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick22960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-22960": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23000": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23040": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23080": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23120": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23160": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23200": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23240": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23280": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23320": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23360": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "enzyme-vector:enz-23400": {
+      "w": 2.0,
+      "count": 2
+    },
+    "t4-cycle:T4-tick23440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick23960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-23960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick24960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-24960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick25960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-25960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26360": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26400": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26440": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26480": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26520": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26560": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26600": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26640": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26680": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26720": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26760": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26800": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26840": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26880": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26920": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick26960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-26960": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27000": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27040": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27080": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27120": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27160": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27200": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27240": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27280": {
+      "w": 1.0,
+      "count": 1
+    },
+    "t4-cycle:T4-tick27320": {
+      "w": 1.0,
+      "count": 1
+    },
+    "enzyme-vector:enz-27320": {
+      "w": 1.0,
+      "count": 1
+    }
+  },
   "hebbian_stats": {
-    "total_edges": 0,
-    "total_nodes": 0,
-    "avg_weight": 0
+    "total_edges": 1327,
+    "avg_weight": 15.686,
+    "total_events": 7613
   }
 }
