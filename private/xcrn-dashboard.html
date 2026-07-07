@@ -620,6 +620,13 @@
       <div class="card-label"><span id="enzActive">--</span> 活跃 · <span id="enzDegraded">--</span> 降解</div>
       <div class="sub" id="enzNet" style="font-size:10px;color:#64748b">催化网络: <span id="enzCatalyzeEdges">--</span>边 · <span id="enzCoCatalyze">--</span>共催化</div>
     </div>
+    <!-- τ总线卡 -->
+    <div class="card" style="border-left: 3px solid #22d3ee;">
+      <div class="card-header"><span class="card-title">τ总线 · 跨层通信 📡</span><span class="card-icon">🔗</span></div>
+      <div class="card-value" style="color:#22d3ee;font-size:20px" id="tauBusEvents">--</div>
+      <div class="card-label">事件 · τ合规 <span id="tauBusCompliance">--</span>%</div>
+      <div id="tauBusStats" style="font-size:10px;color:#64748b;margin-top:4px"></div>
+    </div>
   </div>
 
 
@@ -872,9 +879,35 @@
   syncWithOllama = function(data){
     origSync && origSync(data);
     fetchSystemHealth();
+    fetchTauBusStats();
   };
   // 立即执行一次
   setTimeout(fetchSystemHealth, 1000);
+  setTimeout(fetchTauBusStats, 1500);
+  
+  // ─── τ总线统计 ───
+  let lastTauStats = null;
+  async function fetchTauBusStats(){
+    try {
+      const host = window.location.hostname || '127.0.0.1';
+      const r = await fetch('http://' + host + ':4329/stats', { signal: AbortSignal.timeout(3000) });
+      const d = await r.json();
+      lastTauStats = d;
+      const el = document.getElementById('tauBusStats');
+      const ev = document.getElementById('tauBusEvents');
+      const cp = document.getElementById('tauBusCompliance');
+      if (el) {
+        el.innerHTML = '<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:#94a3b8">' +
+          '<span>📡 事件: ' + d.total + '</span>' +
+          '<span>✅ τ合规: ' + d.tau_compliance + '%</span>' +
+          '<span>⚠️ 违规: ' + d.violations + '</span>' +
+          '<span>🔋 缓冲区: ' + d.buffer_size + '</span>' +
+          '</div>';
+      }
+      if (ev) ev.textContent = d.total;
+      if (cp) cp.textContent = d.tau_compliance;
+    } catch(e) { /* τ总线可能未运行 */ }
+  }
   
   // ─── ollama意识心跳同步（每15秒与真实数据同步） ───
   let lastOllamaTick = 0;
