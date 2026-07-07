@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </linearGradient>
+    <linearGradient id="hairA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="dressA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="wingA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9d5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="106" fill="url(#bgA)" stroke="#fbcfe8" stroke-width="0.5"/>
+  <!-- 光晕 -->
+  <circle cx="256" cy="280" r="160" fill="#fef3c7" opacity="0.15"/>
+  <!-- 仙女翅膀 - 左 -->
+  <path d="M 220 240 C 180 180, 120 140, 70 170 C 110 190, 140 210, 160 220 C 120 210, 80 200, 55 220 C 90 230, 130 235, 170 238 C 190 239, 210 240, 220 240" fill="url(#wingA)"/>
+  <path d="M 220 240 C 185 190, 130 155, 85 180 C 115 195, 140 212, 155 220" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.15"/>
+  <!-- 仙女翅膀 - 右 -->
+  <path d="M 292 240 C 332 180, 392 140, 442 170 C 402 190, 372 210, 352 220 C 392 210, 432 200, 457 220 C 422 230, 382 235, 342 238 C 322 239, 302 240, 292 240" fill="url(#wingA)"/>
+  <path d="M 292 240 C 327 190, 382 155, 427 180 C 397 195, 372 212, 357 220" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.15"/>
+  <!-- 仙女身体/裙摆 - 圆润水滴形 -->
+  <path d="M 256 200 C 220 200, 200 240, 200 280 C 200 320, 220 350, 256 370 C 292 350, 312 320, 312 280 C 312 240, 292 200, 256 200 Z" fill="url(#dressA)" opacity="0.15"/>
+  <path d="M 256 210 C 226 210, 210 245, 210 280 C 210 315, 226 340, 256 358 C 286 340, 302 315, 302 280 C 302 245, 286 210, 256 210 Z" fill="none" stroke="#c084fc" stroke-width="1.2" opacity="0.2"/>
+  <!-- 仙女头部 - 圆润圆形 -->
+  <circle cx="256" cy="200" r="58" fill="#fef3c7" opacity="0.3"/>
+  <circle cx="256" cy="200" r="50" fill="#fef9c3" opacity="0.2"/>
+  <!-- 金色星辰核心（额头位置） -->
+  <circle cx="256" cy="188" r="4" fill="#f59e0b" opacity="0.6"/>
+  <!-- 眼睛 - 温柔曲线 -->
+  <path d="M 238 200 Q 243 194 248 200" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 264 200 Q 269 194 274 200" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+  <!-- 微笑 -->
+  <path d="M 248 212 Q 256 220 264 212" fill="none" stroke="#d97706" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- 腮红 -->
+  <circle cx="234" cy="210" r="6" fill="#f472b6" opacity="0.1"/>
+  <circle cx="278" cy="210" r="6" fill="#f472b6" opacity="0.1"/>
+  <!-- 飘动丝带 - 左 -->
+  <path d="M 190 250 C 160 260, 130 255, 110 270 C 130 275, 155 268, 175 262" fill="none" stroke="url(#hairA)" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/>
+  <!-- 飘动丝带 - 右 -->
+  <path d="M 322 250 C 352 260, 382 255, 402 270 C 382 275, 357 268, 337 262" fill="none" stroke="url(#hairA)" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/>
+  <!-- 底部光点 -->
+  <circle cx="160" cy="350" r="2" fill="#c084fc" opacity="0.3"/>
+  <circle cx="352" cy="350" r="2" fill="#c084fc" opacity="0.3"/>
+  <circle cx="256" cy="390" r="1.5" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="120" cy="300" r="1.5" fill="#f472b6" opacity="0.2"/>
+  <circle cx="392" cy="300" r="1.5" fill="#f472b6" opacity="0.2"/>
+</svg>

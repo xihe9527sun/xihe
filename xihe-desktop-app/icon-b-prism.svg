@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0a1d"/>
+      <stop offset="100%" stop-color="#1e0a3c"/>
+    </linearGradient>
+    <linearGradient id="coreB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="accentB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="106" fill="url(#bgB)"/>
+  <circle cx="256" cy="256" r="200" fill="url(#accentB)" opacity="0.06"/>
+  <polygon points="256,100 400,256 256,412 112,256" fill="url(#coreB)" opacity="0.08"/>
+  <polygon points="256,130 372,256 256,382 140,256" fill="url(#coreB)" opacity="0.12"/>
+  <polygon points="256,160 344,256 256,352 168,256" fill="url(#coreB)" opacity="0.18"/>
+  <polygon points="256,190 316,256 256,322 196,256" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+  <circle cx="256" cy="256" r="30" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <circle cx="256" cy="256" r="12" fill="url(#coreB)" opacity="0.9"/>
+  <path d="M 160 80 Q 256 40 352 80" fill="none" stroke="url(#coreB)" stroke-width="1.5" opacity="0.3"/>
+  <path d="M 180 96 Q 256 64 332 96" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.2"/>
+  <circle cx="256" cy="68" r="1.5" fill="#fcd34d" opacity="0.4"/>
+  <circle cx="146" cy="146" r="1.5" fill="#a78bfa" opacity="0.3"/>
+  <circle cx="366" cy="146" r="1.5" fill="#a78bfa" opacity="0.3"/>
+</svg>

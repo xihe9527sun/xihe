@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fefce8"/>
+    </linearGradient>
+    <linearGradient id="glowC" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fef9c3" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coreC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="30%" stop-color="#fbbf24"/>
+      <stop offset="70%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="featherC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#e9d5ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="url(#bgC)" stroke="#fed7aa" stroke-width="0.5"/>
+  <!-- 底层光晕 -->
+  <ellipse cx="256" cy="300" rx="160" ry="80" fill="url(#glowC)"/>
+  <!-- 左侧仙羽 -->
+  <path d="M 230 220 C 170 150, 80 110, 60 130 C 100 150, 130 170, 150 185 C 110 175, 70 170, 60 185 C 90 195, 130 200, 160 205 C 190 210, 220 215, 230 220" fill="url(#featherC)"/>
+  <path d="M 230 220 C 175 160, 100 130, 75 145 C 105 160, 135 176, 155 185" fill="none" stroke="#f472b6" stroke-width="0.8" opacity="0.15"/>
+  <!-- 右侧仙羽 -->
+  <path d="M 282 220 C 342 150, 432 110, 452 130 C 412 150, 382 170, 362 185 C 402 175, 442 170, 452 185 C 422 195, 382 200, 352 205 C 322 210, 292 215, 282 220" fill="url(#featherC)"/>
+  <path d="M 282 220 C 337 160, 412 130, 437 145 C 407 160, 377 176, 357 185" fill="none" stroke="#f472b6" stroke-width="0.8" opacity="0.15"/>
+  <!-- 飘带轨迹 -->
+  <path d="M 170 260 Q 140 280, 120 320 Q 140 310, 160 290" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.1" stroke-linecap="round"/>
+  <path d="M 342 260 Q 372 280, 392 320 Q 372 310, 352 290" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.1" stroke-linecap="round"/>
+  <!-- 头部/核心光晕（圆润） -->
+  <circle cx="256" cy="210" r="45" fill="#fef9c3" opacity="0.2"/>
+  <circle cx="256" cy="256" r="38" fill="#fef3c7" opacity="0.25"/>
+  <!-- 主光轮 -->
+  <circle cx="256" cy="256" r="28" fill="none" stroke="url(#coreC)" stroke-width="2.5"/>
+  <circle cx="256" cy="256" r="14" fill="url(#coreC)" opacity="0.95"/>
+  <circle cx="252" cy="250" r="3" fill="#ffffff" opacity="0.5"/>
+  <!-- 星辰轨迹 - 小光点绕行 -->
+  <circle cx="200" cy="256" r="2" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="312" cy="256" r="2" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="256" cy="200" r="1.5" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="256" cy="312" r="1.5" fill="#fbbf24" opacity="0.2"/>
+  <!-- 飘落的星尘 -->
+  <circle cx="130" cy="150" r="2" fill="#fb923c" opacity="0.15"/>
+  <circle cx="382" cy="150" r="2" fill="#fb923c" opacity="0.15"/>
+  <circle cx="140" cy="360" r="1.5" fill="#f472b6" opacity="0.12"/>
+  <circle cx="372" cy="360" r="1.5" fill="#f472b6" opacity="0.12"/>
+  <circle cx="256" cy="400" r="1.5" fill="#fcd34d" opacity="0.1"/>
+  <circle cx="100" cy="270" r="1" fill="#c084fc" opacity="0.15"/>
+  <circle cx="412" cy="270" r="1" fill="#c084fc" opacity="0.15"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fdf4ff"/>
+    </linearGradient>
+    <linearGradient id="goldA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="106" fill="url(#bgA)" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="256" cy="256" r="190" fill="#fefce8" opacity="0.5"/>
+  <polygon points="256,130 390,256 256,382 122,256" fill="none" stroke="url(#goldA)" stroke-width="2.5" opacity="0.3"/>
+  <polygon points="256,150 365,256 256,362 147,256" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.2"/>
+  <polygon points="256,170 340,256 256,342 172,256" fill="none" stroke="#d97706" stroke-width="1" opacity="0.12"/>
+  <circle cx="256" cy="256" r="50" fill="#fef3c7" opacity="0.4"/>
+  <circle cx="256" cy="256" r="28" fill="none" stroke="url(#goldA)" stroke-width="2.5"/>
+  <circle cx="256" cy="256" r="12" fill="url(#goldA)" opacity="0.95"/>
+  <circle cx="140" cy="140" r="2" fill="#a78bfa" opacity="0.3"/>
+  <circle cx="372" cy="140" r="2" fill="#a78bfa" opacity="0.3"/>
+  <circle cx="140" cy="372" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="372" cy="372" r="2" fill="#f59e0b" opacity="0.2"/>
+</svg>

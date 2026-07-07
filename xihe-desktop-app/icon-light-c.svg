@@ -1,0 +1,51 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fefce8"/>
+    </linearGradient>
+    <linearGradient id="sunC" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="60%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="rayC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="url(#bgC)" stroke="#fed7aa" stroke-width="0.8"/>
+  <!-- 晨光放射线 -->
+  <g opacity="0.08">
+    <line x1="256" y1="256" x2="256" y2="60" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="432" y2="120" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="452" y2="256" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="432" y2="392" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="256" y2="452" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="80" y2="392" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="60" y2="256" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="256" y1="256" x2="80" y2="120" stroke="#f59e0b" stroke-width="1"/>
+  </g>
+  <!-- 光晕层 - 圆形 -->
+  <circle cx="256" cy="256" r="100" fill="none" stroke="#fde68a" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="256" cy="256" r="80" fill="#fef9c3" opacity="0.15"/>
+  <!-- 主菱形 - 代表认知架构的光芒 -->
+  <polygon points="256,140 372,256 256,372 140,256" fill="none" stroke="url(#sunC)" stroke-width="2.5" opacity="0.25"/>
+  <polygon points="256,165 342,256 256,347 170,256" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.15"/>
+  <!-- 核心发光 -->
+  <circle cx="256" cy="256" r="42" fill="#fef3c7" opacity="0.4"/>
+  <circle cx="256" cy="256" r="26" fill="none" stroke="url(#sunC)" stroke-width="2.8"/>
+  <circle cx="256" cy="256" r="12" fill="url(#sunC)" opacity="0.95"/>
+  <!-- 高光点 -->
+  <circle cx="250" cy="248" r="3" fill="#ffffff" opacity="0.5"/>
+  <!-- 散落晨星 -->
+  <circle cx="110" cy="110" r="2" fill="#f59e0b" opacity="0.25"/>
+  <circle cx="402" cy="110" r="2" fill="#f59e0b" opacity="0.25"/>
+  <circle cx="110" cy="402" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="402" cy="402" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="256" cy="96" r="1.5" fill="#ea580c" opacity="0.2"/>
+  <circle cx="256" cy="416" r="1.5" fill="#ea580c" opacity="0.15"/>
+</svg>

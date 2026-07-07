@@ -5,8 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win",
-    "pack": "electron-builder --win --dir"
+    "build": "node security-audit.cjs && electron-builder --win",
+    "pack": "node security-audit.cjs && electron-builder --win --dir",
+    "security": "node security-audit.cjs"
   },
   "build": {
     "appId": "xihe.xihe-desktop",
@@ -24,22 +25,18 @@
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true
+      "createDesktopShortcut": true,
+      "compression": "maximum",
+      "differentialPackage": false
     },
-    "extraResources": [
-      {
-        "from": "node_modules",
-        "to": "node_modules",
-        "filter": [
-          "**/*"
-        ]
-      }
-    ],
     "files": [
       "main.js",
+      "preload.js",
       "renderer/**/*",
       "package.json"
-    ]
+    ],
+    "asar": true,
+    "asarUnpack": []
   },
   "devDependencies": {
     "electron": "^35.7.5",
