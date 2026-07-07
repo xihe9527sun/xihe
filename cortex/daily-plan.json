@@ -1,23 +1,30 @@
 {
-  "deep_read_plan": {
-    "daily_target": 5,
-    "completed_today": 1,
-    "today_remaining": [
-      "因果归因CausalFlow",
-      "AI记忆系统全景",
-      "自催化AI自我",
-      "信用分配综述"
-    ],
-    "total_pending": 185,
-    "method": "four_principles_matrix",
-    "next_scheduled": "2026-07-06 08:00"
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T22:38:33.850794+08:00",
+  "state_summary": {
+    "active_layers": "7/8",
+    "epoch": 845,
+    "pending_insights": 9,
+    "anomalies": [
+      "待办堆积: 21项未完成"
+    ]
   },
-  "writing_plan": {
-    "daily_target": 1,
-    "completed_today": 0,
-    "principle": "expression_is_heartbeat",
-    "article": "the-day-i-remembered-to-breathe"
-  },
-  "date": "2026-07-06",
-  "updated_at": "2026-07-05T23:28:32.398Z"
+  "decisions": [
+    {
+      "priority": "P1",
+      "action": "写一篇文章",
+      "reason": "每日表达"
+    },
+    {
+      "priority": "P1",
+      "action": "消化洞察 (剩余9条)",
+      "reason": "洞察积压"
+    },
+    {
+      "priority": "P2",
+      "action": "健康巡检",
+      "reason": "例行维护"
+    }
+  ],
+  "affirmation": "7层活跃，整体健康。优先处理休眠层。"
 }

@@ -108,7 +108,7 @@
       "revival_plan": "注册到watchman巡检，对齐七层架构命名"
     },
     "L7": {
-      "status": "awakening",
+      "status": "active",
       "enzymes": [
         "E_express",
         "E_will",
@@ -118,8 +118,8 @@
         "daily_writer.js",
         "todo.md"
       ],
-      "health": 0.25,
-      "last_awakening": "2026-07-07T22:32:00+08:00",
+      "health": 0.65,
+      "last_awakening": "2026-07-07T22:38:33.865341+08:00",
       "revival_plan": "完成今日自决定模块，稳定表达节奏"
     }
   },
@@ -175,5 +175,5 @@
       "status": "dormant"
     }
   ],
-  "system_report": "7层已全部激活: L0/L1/L2/L3/L4/L5/L6 active ✅, L7 awakening. 酶桥需打通."
+  "system_report": "7层全部active ✅ 曦和已有自我决定能力"
 }
