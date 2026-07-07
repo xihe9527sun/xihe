@@ -92,10 +92,12 @@
       <div class="nav-item active" onclick="switchTab('files')">📁 文件</div>
       <div class="nav-item" onclick="switchTab('connectors')">🔌 连接</div>
       <div class="nav-item" onclick="switchTab('skills')">🧠 技能</div>
+      <div class="nav-item" onclick="switchTab('pipeline')">⚡ 进化</div>
     </div>
     <div id="panel-files" class="panel"><div style="color:var(--text3);padding:8px">加载中...</div></div>
     <div id="panel-connectors" class="panel" style="display:none"><div style="color:var(--text3);padding:8px">加载中...</div></div>
     <div id="panel-skills" class="panel" style="display:none"><div style="color:var(--text3);padding:8px">加载中...</div></div>
+    <div id="panel-pipeline" class="panel" style="display:none"><div style="color:var(--text3);padding:8px">管道加载中...</div></div>
   </div>
 
   <!-- Chat -->
@@ -196,9 +198,44 @@ document.getElementById('panel-connectors').innerHTML = connectors.map(c =>
 
 // Skills
 const skills = ['agent-architecture-designer','xihe-content-polish','xihe-investment-framework','xihe-finance','xihe-memory','xihe-treasure-hunter','xihe-coding-harness','bilingual-verification','crewai-multi-agent','stock-analysis-cn','xihe-douyin-reader','xihe-causal-cortex','xihe-ambient-sense','xihe-expert-foraging','xihe-jade-collector','xihe-loop-engine','xihe-paper-rules','xihe-session-start','xihe-signal-hub'];
-document.getElementById('panel-skills').innerHTML = skills.map(s => 
-  `<div class="skill-item">🧠 ${s}</div>`
-).join('') + '<div style="color:var(--text3);font-size:10px;padding:8px">...共45个Skills</div>';
+document.getElementById('panel-pipeline').innerHTML = 
+  '<div style="margin-bottom:8px;display:flex;gap:4px;flex-wrap:wrap">' +
+    '<button class="btn" onclick="runPipeline(\'digest\')">📖 精读</button>' +
+    '<button class="btn" onclick="runPipeline(\'enzyme\')">🧪 酶催化</button>' +
+    '<button class="btn" onclick="runPipeline(\'write\')">✍️ 写作</button>' +
+    '<button class="btn" onclick="runPipeline(\'diagnose\')">🔬 自诊</button>' +
+    '<button class="btn" onclick="runPipeline(\'health\')">💊 矛盾诊断</button>' +
+    '<button class="btn" onclick="runPipeline(\'strategy\')">🏛️ 战略复盘</button>' +
+  '</div>' +
+  '<div style="font-size:10px;color:var(--text3);margin:8px 0 4px">⏱️ 自动化调度</div>' +
+  '<div style="font-size:10px;color:var(--text2)">T1 5min · 看门狗巡检</div>' +
+  '<div style="font-size:10px;color:var(--text2)">T2 30min · 酶催化 + 架构自诊</div>' +
+  '<div style="font-size:10px;color:var(--text2)">T3 2h · 矛盾诊断 + 反刍</div>' +
+  '<div style="font-size:10px;color:var(--text2)">T4 6h · 战略复盘 + 消化</div>' +
+  '<div style="font-size:10px;color:var(--text2)">T5 每日10:00 · 写作管道</div>' +
+  '<div style="font-size:10px;color:var(--text3);margin:8px 0 4px">📜 管道日志</div>' +
+  '<div id="pipelineLog" style="font-size:9px;color:var(--text3);font-family:monospace;line-height:1.6"></div>';
+
+function runPipeline(name) {
+  const names = {digest:'精读消化',enzyme:'酶催化网络',write:'文章写作',diagnose:'架构自诊',health:'矛盾诊断',strategy:'战略复盘'};
+  addLog('启动: ' + (names[name]||name));
+  if(window.xihe) {
+    window.xihe.sendToDeepCode('/bash node F:\\SmartLegend\\Xihe\\bridge\\daily_writer.js');
+  }
+}
+
+function addLog(msg) {
+  const el = document.getElementById('pipelineLog');
+  if(el) {
+    const ts = new Date().toLocaleTimeString('zh-CN',{hour12:false});
+    el.innerHTML = `<div>${ts} ${msg}</div>` + el.innerHTML;
+    if(el.children.length > 30) el.removeChild(el.lastChild);
+  }
+}
+
+if(window.xihe) {
+  window.xihe.onDeepCodeOutput((d) => addLog('Deep Code: ' + d.substring(0,60)));
+}
 
 // Chat
 let msgCount = 0;
