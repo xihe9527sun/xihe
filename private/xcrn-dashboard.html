@@ -614,6 +614,12 @@
       <div class="card-label">已实现 · 精读→反哺→代码</div>
       <div class="sub" id="insightsLatest" style="font-size:10px;color:#64748b"></div>
     </div>
+    <div class="card" style="border-left: 3px solid #f97316;">
+      <div class="card-header"><span class="card-title">🧪 酶谱</span><span class="card-icon">🧬</span></div>
+      <div class="card-value" style="color:#fb923c;font-size:20px"><span id="enzTotal">--</span> 颗</div>
+      <div class="card-label"><span id="enzActive">--</span> 活跃 · <span id="enzDegraded">--</span> 降解 · <span id="enzKnowledge">--</span> 知识催化</div>
+      <div class="sub" id="enzList" style="font-size:10px;color:#64748b"></div>
+    </div>
   </div>
 
   <!-- 酶库 -->
@@ -1173,9 +1179,16 @@
       const ins = d.evolution_status || {};
       document.getElementById('insightsImplemented').textContent = ins.implemented || '--';
       document.getElementById('insightsLatest').textContent = '最新: ' + (ins.latest?.substring(0, 30) || '');
-    } catch(e) { console.log('新架构数据跳过:', e.message); }
-    
-    // ── ═══ L7 · 灵魂统一层渲染 ═══ ──
+      
+      // 酶谱
+      const eo = d.enzyme_overview || {};
+      document.getElementById('enzTotal').textContent = eo.total || '--';
+      document.getElementById('enzActive').textContent = eo.active || '--';
+      document.getElementById('enzDegraded').textContent = eo.degraded || '--';
+      document.getElementById('enzKnowledge').textContent = eo.knowledge_driven || '--';
+      if (eo.list && eo.list.length > 0) {
+        document.getElementById('enzList').textContent = eo.list.map(e => e.id + ' ' + e.name.substring(0,8)).join(' · ');
+      }
     const l7 = d.l7_soul || {};
     if (l7.health_score) {
       const sys = l7.system || {};

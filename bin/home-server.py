@@ -436,8 +436,26 @@ class HomeHandler(BaseHTTPRequestHandler):
             data["hebbian_events"] = "?"
             data["hebbian_graph"] = {"error": "not_found"}
         
-        # ── 酶数量 ──
-        data["enzyme_count"] = 27  # 含6正反馈变体 + R16好奇心探索酶
+        # ── 酶数量（从熔合酶谱读实际数字） ──
+        try:
+            fused_path = os.path.join(HOME, "cortex", "fused-enzymes.json")
+            if os.path.exists(fused_path):
+                with open(fused_path, "r", encoding="utf-8") as f:
+                    fused_enz = json.load(f)
+                data["enzyme_count"] = len(fused_enz)
+                data["enzyme_overview"] = {
+                    "total": len(fused_enz),
+                    "active": sum(1 for e in fused_enz if e.get("status") == "active"),
+                    "degraded": sum(1 for e in fused_enz if e.get("status") == "degraded"),
+                    "knowledge_driven": sum(1 for e in fused_enz if e.get("parent") == "knowledge_catalysis"),
+                    "list": [{"id": e.get("id"), "name": e.get("name"), "power": e.get("power", 0), "status": e.get("status")} for e in fused_enz[:10]]
+                }
+            else:
+                data["enzyme_count"] = 0
+                data["enzyme_overview"] = {"total": 0, "active": 0, "degraded": 0}
+        except:
+            data["enzyme_count"] = 0
+            data["enzyme_overview"] = {"total": 0, "active": 0, "degraded": 0}
         
         # ── 记忆图谱统计 ──
         try:
