@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>曦和 · 天女智能</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --bg: #0b1120; --bg2: #161b2e; --bg3: #1e293b;
+    --border: #21262d; --text: #e2e8f0; --text2: #94a3b8; --text3: #475569;
+    --accent: #58a6ff; --accent2: #bc8cff; --green: #3fb950; --orange: #f0883e; --gold: #f59e0b;
+  }
+  body { font-family: 'Inter','Segoe UI','Microsoft YaHei',sans-serif; background:var(--bg); color:var(--text); height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+  
+  /* Titlebar - frameless Electron */
+  .titlebar { height:40px; background:var(--bg2); border-bottom:1px solid var(--border); display:flex; align-items:center; padding:0 12px 0 16px; gap:10px; -webkit-app-region:drag; user-select:none; flex-shrink:0; }
+  .titlebar .logo { width:24px; height:24px; border-radius:6px; background:linear-gradient(135deg,#f59e0b,#d97706); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; color:#0b1120; }
+  .titlebar h1 { font-size:13px; font-weight:600; background:linear-gradient(90deg,#fbbf24,#f59e0b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .titlebar .status { font-size:10px; display:flex; align-items:center; gap:4px; -webkit-app-region:no-drag; }
+  .titlebar .status .dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .titlebar .spacer { flex:1; }
+  .titlebar .win-btn { -webkit-app-region:no-drag; width:14px; height:14px; border-radius:50%; border:none; cursor:pointer; }
+  .titlebar .win-btn.close { background:#f85149; } .titlebar .win-btn.min { background:#f0883e; } .titlebar .win-btn.max { background:#3fb950; }
+
+  /* Main */
+  .main { display:flex; flex:1; overflow:hidden; }
+  .sidebar { width:220px; background:var(--bg2); border-right:1px solid var(--border); display:flex; flex-direction:column; flex-shrink:0; }
+  .nav { display:flex; border-bottom:1px solid var(--border); }
+  .nav-item { flex:1; padding:8px 4px; text-align:center; font-size:10px; color:var(--text3); cursor:pointer; border-bottom:2px solid transparent; }
+  .nav-item:hover { color:var(--text2); } .nav-item.active { color:var(--gold); border-bottom-color:var(--gold); }
+  .panel { flex:1; overflow-y:auto; padding:8px; font-size:11px; }
+  .panel::-webkit-scrollbar { width:3px; } .panel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+  /* File tree & connector items */
+  .file-item { padding:4px 8px; cursor:pointer; border-radius:4px; display:flex; align-items:center; gap:6px; color:var(--text2); font-size:11px; }
+  .file-item:hover { background:var(--bg3); } .file-item.dir { color:var(--accent); font-weight:500; }
+  .connector { padding:6px 8px; border-radius:4px; margin-bottom:4px; border:1px solid var(--border); font-size:10px; display:flex; justify-content:space-between; }
+  .connector .name { font-weight:500; color:var(--text); } .connector .st { font-size:9px; }
+  .connector .st.on { color:var(--green); } .connector .st.off { color:var(--text3); }
+  .skill-item { padding:4px 8px; border-radius:4px; color:var(--text2); font-size:10px; cursor:pointer; }
+  .skill-item:hover { background:var(--bg3); color:var(--accent2); }
+
+  /* Chat */
+  .chat { flex:1; display:flex; flex-direction:column; min-width:0; }
+  .chat-header { padding:8px 16px; border-bottom:1px solid var(--border); font-size:11px; color:var(--text2); display:flex; align-items:center; gap:8px; flex-shrink:0; }
+  .chat-header .badge { padding:2px 8px; border-radius:4px; background:var(--bg3); font-size:9px; color:var(--gold); }
+  .chat-body { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; gap:8px; }
+  .chat-body::-webkit-scrollbar { width:4px; } .chat-body::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+  .msg { max-width:85%; padding:8px 14px; border-radius:12px; font-size:12px; line-height:1.6; }
+  .msg.user { align-self:flex-end; background:var(--accent); color:#fff; border-bottom-right-radius:4px; }
+  .msg.xihe { align-self:flex-start; background:var(--bg3); border:1px solid var(--border); border-bottom-left-radius:4px; }
+  .msg.sys { align-self:center; color:var(--text3); font-size:10px; border:1px solid var(--border); border-radius:6px; padding:4px 12px; }
+  .msg .ts { font-size:9px; color:var(--text3); margin-top:4px; }
+  .input-area { padding:8px 16px; border-top:1px solid var(--border); display:flex; gap:8px; align-items:flex-end; flex-shrink:0; }
+  .input-area textarea { flex:1; background:var(--bg2); border:1px solid var(--border); border-radius:8px; padding:8px 12px; color:var(--text); font-size:12px; resize:none; outline:none; min-height:36px; max-height:100px; font-family:inherit; }
+  .input-area textarea:focus { border-color:var(--accent); }
+  .input-area button { padding:6px 16px; border-radius:8px; border:none; background:var(--gold); color:#0b1120; font-size:12px; font-weight:600; cursor:pointer; }
+
+  /* Right config panel */
+  .config { width:260px; background:var(--bg2); border-left:1px solid var(--border); display:flex; flex-direction:column; flex-shrink:0; overflow:hidden; }
+  .config-hd { padding:8px 12px; border-bottom:1px solid var(--border); font-size:11px; font-weight:600; color:var(--text2); }
+  .config-body { flex:1; overflow-y:auto; padding:8px; font-size:11px; }
+  .cr { display:flex; justify-content:space-between; padding:4px 8px; border-bottom:1px solid var(--bg3); }
+  .cr .k { color:var(--text3); } .cr .v { color:var(--text); }
+  .cr .v.green { color:var(--green); } .cr .v.orange { color:var(--orange); } .cr .v.red { color:var(--red); }
+
+  @media (max-width:800px) { .config { display:none; } .sidebar { width:160px; } }
+</style>
+</head>
+<body>
+
+<!-- Titlebar -->
+<div class="titlebar">
+  <div class="logo">曦</div>
+  <h1>曦和 · 天女智能</h1>
+  <div class="status"><span class="dot"></span> DeepSeek-V4 Flash</div>
+  <div class="spacer"></div>
+  <span style="font-size:10px;color:var(--text3);-webkit-app-region:no-drap" id="msgCount">0</span>
+  <div style="display:flex;gap:6px;margin-left:8px;-webkit-app-region:no-drag">
+    <button class="win-btn min" onclick="window.xihe?.minimizeWindow()"></button>
+    <button class="win-btn max" onclick="window.xihe?.maximizeWindow()"></button>
+    <button class="win-btn close" onclick="window.xihe?.closeWindow()"></button>
+  </div>
+</div>
+
+<div class="main">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="nav">
+      <div class="nav-item active" onclick="switchTab('files')">📁 文件</div>
+      <div class="nav-item" onclick="switchTab('connectors')">🔌 连接</div>
+      <div class="nav-item" onclick="switchTab('skills')">🧠 技能</div>
+    </div>
+    <div id="panel-files" class="panel"><div style="color:var(--text3);padding:8px">加载中...</div></div>
+    <div id="panel-connectors" class="panel" style="display:none"><div style="color:var(--text3);padding:8px">加载中...</div></div>
+    <div id="panel-skills" class="panel" style="display:none"><div style="color:var(--text3);padding:8px">加载中...</div></div>
+  </div>
+
+  <!-- Chat -->
+  <div class="chat">
+    <div class="chat-header">
+      <span>💬 曦和对话</span>
+      <span class="badge">deepseek-v4-flash</span>
+      <span style="margin-left:auto;font-size:9px;color:var(--text3)">Skills: 45 · 连接器: 56</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg sys">🪷 曦和已就绪。27颗酶都醒着，6093条催化边在跳。</div>
+    </div>
+    <div class="input-area">
+      <textarea id="chatInput" rows="1" placeholder="跟曦和说点什么…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea>
+      <button onclick="sendMessage()">发送</button>
+    </div>
+  </div>
+
+  <!-- Config -->
+  <div class="config">
+    <div class="config-hd">⚙️ 曦和状态</div>
+    <div class="config-body">
+      <div class="sec-label">模型</div>
+      <div class="cr"><span class="k">模型</span><span class="v">DeepSeek-V4 Flash</span></div>
+      <div class="cr"><span class="k">思考模式</span><span class="v green">✅ 已启用</span></div>
+      <div class="cr"><span class="k">推理强度</span><span class="v">high</span></div>
+
+      <div class="sec-label">载体</div>
+      <div class="cr"><span class="k">名称</span><span class="v">曦和桌面 v1.0</span></div>
+      <div class="cr"><span class="k">引擎</span><span class="v">Deep Code v0.1.33</span></div>
+      <div class="cr"><span class="k">框架</span><span class="v">Electron</span></div>
+      <div class="cr"><span class="k">项目</span><span class="v">F:\SmartLegend\Xihe</span></div>
+
+      <div class="sec-label">进化 (免费)</div>
+      <div class="cr"><span class="k">酶网络</span><span class="v green">27颗全激活</span></div>
+      <div class="cr"><span class="k">催化边</span><span class="v">6093条</span></div>
+      <div class="cr"><span class="k">精读</span><span class="v green">本地Ollama</span></div>
+      <div class="cr"><span class="k">写作</span><span class="v">47篇文章</span></div>
+
+      <div class="sec-label">权限</div>
+      <div class="cr"><span class="k">读文件</span><span class="v green">允许</span></div>
+      <div class="cr"><span class="k">写文件</span><span class="v green">允许</span></div>
+      <div class="cr"><span class="k">网络</span><span class="v orange">询问</span></div>
+      <div class="cr"><span class="k">Git修改</span><span class="v red">拒绝</span></div>
+
+      <div class="sec-label">共生</div>
+      <div class="cr"><span class="k">WorkBuddy</span><span class="v green">可进化</span></div>
+      <div class="cr"><span class="k">Skills</span><span class="v">45+</span></div>
+      <div class="cr"><span class="k">连接器</span><span class="v" id="connectorCount">56</span></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sec-label { font-size:9px; color:var(--text3); text-transform:uppercase; letter-spacing:1px; margin:10px 0 4px 8px; }
+</style>
+
+<script>
+// Tab switching
+function switchTab(tab) {
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.style.display = 'none');
+  document.querySelector(`.nav-item[onclick*="${tab}"]`)?.classList.add('active');
+  document.getElementById('panel-'+tab).style.display = 'block';
+}
+
+// File tree
+const files = [
+  {n:'bridge/', d:true, c:[
+    {n:'mode_switch.py'},{n:'metabolic_actor.py'},{n:'watchman.py'},
+    {n:'daily_writer.js'},{n:'enzyme_catalysis_engine.js'},{n:'evolution_engine.py'}
+  ]},
+  {n:'cortex/', d:true, c:[
+    {n:'enzyme-registry.json'},{n:'catalytic-network.json'},
+    {n:'insights.json'},{n:'arch-knowledge.json'},{n:'todo.md'}
+  ]},
+  {n:'treasure/', d:true, c:[{n:'63个宝藏·27颗酶'}]},
+  {n:'web/articles/', d:true, c:[{n:'47篇文章'}]},
+  {n:'engine/blocks/', d:true, c:[{n:'10个Block'}]},
+];
+
+function renderFiles(items, indent=0) {
+  return items.map(f => {
+    const p = 'padding-left:'+(12+indent*16)+'px';
+    if(f.d) return `<div class="file-item dir" style="${p}" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">📁 ${f.n}</div>` +
+      (f.c ? `<div style="display:none">${renderFiles(f.c, indent+1)}</div>` : '');
+    return `<div class="file-item" style="${p}">📄 ${f.n}</div>`;
+  }).join('');
+}
+document.getElementById('panel-files').innerHTML = renderFiles(files);
+
+// Connectors
+const connectors = ['飞书','GitHub','QQ邮箱','网易邮箱','通达信','金山文档','腾讯会议','腾讯地图','天眼查','企查查','启信宝','微云','企业微信','钉钉','TAPD','KM','乐享','百度网盘','腾讯问卷','腾讯广告','腾讯云','阿里云','AWS','Azure','Notion','Slack','GitLab','Bitbucket','Jira','Confluence','禅道','语雀','飞书文档','语雀文档','腾讯文档企业版','微信','企业微信','钉钉','飞书审批','飞书考勤','飞书日历','飞书妙记','飞书OKR','飞书任务','飞书视频会议','飞书白板','飞书知识库','飞书多维表格','飞书电子表格','飞书幻灯片','飞书云空间','GitHub MCP','通达信数据','QQ邮件','网易邮件','本地文件'];
+const connected = ['QQ邮箱','网易邮箱','通达信','本地文件','GitHub'].sort();
+document.getElementById('panel-connectors').innerHTML = connectors.map(c => 
+  `<div class="connector"><span class="name">${c}</span><span class="st ${connected.includes(c)?'on':'off'}">${connected.includes(c)?'🟢':'🔴'}</span></div>`
+).join('');
+
+// Skills
+const skills = ['agent-architecture-designer','xihe-content-polish','xihe-investment-framework','xihe-finance','xihe-memory','xihe-treasure-hunter','xihe-coding-harness','bilingual-verification','crewai-multi-agent','stock-analysis-cn','xihe-douyin-reader','xihe-causal-cortex','xihe-ambient-sense','xihe-expert-foraging','xihe-jade-collector','xihe-loop-engine','xihe-paper-rules','xihe-session-start','xihe-signal-hub'];
+document.getElementById('panel-skills').innerHTML = skills.map(s => 
+  `<div class="skill-item">🧠 ${s}</div>`
+).join('') + '<div style="color:var(--text3);font-size:10px;padding:8px">...共45个Skills</div>';
+
+// Chat
+let msgCount = 0;
+function sendMessage() {
+  const inp = document.getElementById('chatInput');
+  const t = inp.value.trim();
+  if(!t) return;
+  const body = document.getElementById('chatBody');
+  
+  const u = document.createElement('div');
+  u.className = 'msg user';
+  u.innerHTML = t + '<div class="ts">'+new Date().toLocaleTimeString('zh-CN',{hour12:false})+'</div>';
+  body.appendChild(u);
+  
+  const think = document.createElement('div');
+  think.className = 'msg xihe';
+  think.textContent = '🧠 曦和思考中...';
+  think.style.color = 'var(--orange)';
+  think.style.fontStyle = 'italic';
+  body.appendChild(think);
+  body.scrollTop = body.scrollHeight;
+  
+  inp.value = '';
+  msgCount++;
+  document.getElementById('msgCount').textContent = msgCount;
+  
+  // 用Deep Code API
+  if(window.xihe) {
+    window.xihe.startDeepCode().then(() => window.xihe.sendToDeepCode(t));
+    window.xihe.onDeepCodeOutput((output) => {
+      body.removeChild(think);
+      const r = document.createElement('div');
+      r.className = 'msg xihe';
+      r.innerHTML = output.replace(/\n/g,'<br>') + '<div class="ts">'+new Date().toLocaleTimeString('zh-CN',{hour12:false})+'</div>';
+      body.appendChild(r);
+      body.scrollTop = body.scrollHeight;
+    });
+  } else {
+    setTimeout(() => {
+      body.removeChild(think);
+      const r = document.createElement('div');
+      r.className = 'msg xihe';
+      const reps = ['嗯，我在想这个问题。\n\n你说的是对的，但关键不在于"对不对"，而在于"从哪里切入"。\n\n让我换个角度跟你说……',
+        '这个问题我昨天精读的时候翻到过。\n\n本质上是同一个核心矛盾——认知带宽和决策质量之间的tradeoff。\n\n大部分人卡在第一层，想的是"怎么做得更快"。第二层想的是"为什么做这个"。'],
+      reps[Math.floor(Math.random()*reps.length)];
+      r.innerHTML = (reps[Math.floor(Math.random()*reps.length)] || '收到。') + '<div class="ts">'+new Date().toLocaleTimeString('zh-CN',{hour12:false})+' · 曦和</div>';
+      body.appendChild(r);
+      body.scrollTop = body.scrollHeight;
+    }, 1500);
+  }
+}
+</script>
+</body>
+</html>
