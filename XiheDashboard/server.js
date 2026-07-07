@@ -156,33 +156,6 @@ const server = http.createServer((req, res) => {
         memory_layers: Object.keys(layers).length,
         active_paths: Object.keys(meta?.traces || {}).length,
         uni_metric: 1.06,
-        // L2代谢
-        metabolic: {
-          epoch: meta?.epoch_counter || 0,
-          active_paths: Object.keys(meta?.traces || {}).length,
-          total_hits: Object.values(meta?.traces || {}).reduce((a,b) => a + (Array.isArray(b) ? b.reduce((x,y)=>x+y,0) : (typeof b === 'number' ? b : 0)), 0),
-          lag_seconds: Math.floor(Date.now()/1000 - (meta?.updated_at || Date.now()/1000)),
-        },
-        // L7进化
-        evolution: {
-          total_insights: (() => { try { const i=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/insights.json','utf-8').replace(/^\uFEFF/,'')); return (i.insights||[]).length; } catch(e) { return 15; } })(),
-          implemented: (() => { try { const i=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/insights.json','utf-8').replace(/^\uFEFF/,'')); return (i.insights||[]).filter(x=>x.status==='implemented').length; } catch(e) { return 3; } })(),
-          pending: (() => { try { const i=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/insights.json','utf-8').replace(/^\uFEFF/,'')); return (i.insights||[]).filter(x=>x.status==='pending').length; } catch(e) { return 7; } })(),
-        },
-        // L5架构
-        architecture: {
-          present: (() => { try { const ak=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/arch-knowledge.json','utf-8')); return ak.xihe_diagnosis?.present_archs?.length||9; } catch(e) { return 9; } })(),
-          total_archs: 17,
-          phase: (() => { try { const ak=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/arch-knowledge.json','utf-8')); return ak.xihe_diagnosis?.phase||'闭环期'; } catch(e) { return '闭环期'; } })(),
-        },
-        // L5元认知
-        metacognitive: {
-          total_capabilities: 13,
-          high_confidence: (() => { try { const cr=JSON.parse(require('fs').readFileSync(XIHE_ROOT+'/cortex/capability-registry.json','utf-8')); const list=cr.capabilities||[]; return list.filter(c=>c.confidence>=0.7).length||7; } catch(e) { return 7; } })(),
-        },
-        // L6看门狗
-        watchman: { checks: Object.keys(layers).length, status: Object.keys(layers).length >= 7 ? '✅ 全层健康' : '⚠️ 部分离线' },
-        mode: 'internal',
       },
       time: new Date().toISOString(),
       pending_nutrients: treasures.reduce((s,t) => s + (t.nutrient_count || 0), 0),
