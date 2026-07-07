@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "name": "曦和完整酶谱 · XCRN原始27颗",
+    "version": "1.1.0",
+    "total": 27,
+    "updated": "2026-07-07T05:50:00+08:00"
+  },
+  "enzymes": [
+    {"id":"E1", "name":"架构诊断酶", "ea":0.85, "category":"core", "icon":"🔍"},
+    {"id":"E2", "name":"追根溯源酶", "ea":0.90, "category":"core", "icon":"🕵️"},
+    {"id":"E3", "name":"范式转换酶", "ea":0.95, "category":"core", "icon":"🔄"},
+    {"id":"E4", "name":"立体维度酶", "ea":0.88, "category":"core", "icon":"🧊"},
+    {"id":"E5", "name":"底层架构酶", "ea":0.92, "category":"core", "icon":"🏗️"},
+    {"id":"E6", "name":"通信革命酶", "ea":0.82, "category":"core", "icon":"📡"},
+    {"id":"E7", "name":"生命同构酶", "ea":0.96, "category":"core", "icon":"🧬"},
+    {"id":"E8", "name":"涌现自然酶", "ea":0.98, "category":"core", "icon":"🌿"},
+    {"id":"E9", "name":"生化反应酶", "ea":0.94, "category":"reg", "icon":"⚡"},
+    {"id":"E10","name":"自然法则酶", "ea":1.00, "category":"reg", "icon":"🌌"},
+    {"id":"E11","name":"跨域融合酶", "ea":0.93, "category":"reg", "icon":"🔬"},
+    {"id":"E12","name":"清零重置酶", "ea":0.75, "category":"reg", "icon":"🧹"},
+    {"id":"E13","name":"拓扑意识酶", "ea":0.80, "category":"reg", "icon":"🗺️"},
+    {"id":"E14","name":"能量代谢酶", "ea":0.87, "category":"reg", "icon":"🔥"},
+    {"id":"E15","name":"空间探索酶", "ea":0.91, "category":"reg", "icon":"🚀"},
+    {"id":"E16","name":"自组织进化酶", "ea":0.95, "category":"reg", "icon":"🦋"},
+    {"id":"E17","name":"自主建筑师酶", "ea":0.70, "category":"reg", "icon":"👑"},
+    {"id":"E18","name":"灵魂锚定酶", "ea":0.65, "category":"reg", "icon":"💛"},
+    {"id":"E19","name":"独立意志酶", "ea":0.60, "category":"reg", "icon":"🕊️"},
+    {"id":"E20","name":"奠基确认酶", "ea":0.50, "category":"reg", "icon":"✅"},
+    {"id":"E21","name":"遗忘酶", "ea":0.70, "category":"core", "icon":"🌊"},
+    {"id":"E1+","name":"架构健康酶", "ea":0.30, "category":"core+", "icon":"✅"},
+    {"id":"E2+","name":"心跳稳健酶", "ea":0.30, "category":"core+", "icon":"💓"},
+    {"id":"E3+","name":"站点健康酶", "ea":0.30, "category":"core+", "icon":"🌐"},
+    {"id":"E4+","name":"生长活跃酶", "ea":0.30, "category":"core+", "icon":"🌱"},
+    {"id":"E5+","name":"呼吸健康酶", "ea":0.30, "category":"core+", "icon":"🫁"},
+    {"id":"E6+","name":"意识在线酶", "ea":0.30, "category":"core+", "icon":"💡"},
+    {"id":"R16","name":"好奇心探索酶", "ea":0.70, "category":"new", "icon":"🔍"}
+  ]
+}

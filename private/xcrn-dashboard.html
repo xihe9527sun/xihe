@@ -1181,12 +1181,12 @@
       document.getElementById('insightsImplemented').textContent = ins.implemented || '--';
       document.getElementById('insightsLatest').textContent = '最新: ' + (ins.latest?.substring(0, 30) || '');
       
-      // 酶谱（从原始酶谱读真实数据）
-      const eo = d.enzyme_overview || {};
-      document.getElementById('enzTotal').textContent = eo.total || '--';
-      document.getElementById('enzActive').textContent = eo.active || '--';
-      document.getElementById('enzDegraded').textContent = eo.degraded || '--';
-      document.getElementById('enzRealCount').textContent = eo.total || '--';
+      // 酶谱（从原始27颗XCRN酶谱读）
+      const er = d.enzyme_registry || {};
+      document.getElementById('enzTotal').textContent = er.total || '--';
+      document.getElementById('enzActive').textContent = er.core || '--';
+      document.getElementById('enzDegraded').textContent = er.reg || '--';
+      document.getElementById('enzRealCount').textContent = er.total || '--';
       // 催化网络
       const cn = d.catalytic_network || {};
       document.getElementById('enzCatalyzeEdges').textContent = cn.catalyzations || '--';

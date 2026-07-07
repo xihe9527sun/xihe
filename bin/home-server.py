@@ -438,30 +438,37 @@ class HomeHandler(BaseHTTPRequestHandler):
         
         # ── 酶数量（从原始酶谱读全部酶） ──
         try:
-            enz_path = os.path.join(HOME, "bridge", "new-enzymes.json")
-            if os.path.exists(enz_path):
-                with open(enz_path, "r", encoding="utf-8") as f:
-                    all_enz = json.load(f)
-                data["enzyme_count"] = len(all_enz)
-                active = sum(1 for e in all_enz if e.get("status") == "active")
-                data["enzyme_overview"] = {
-                    "total": len(all_enz),
-                    "active": active,
-                    "degraded": sum(1 for e in all_enz if e.get("status") == "degraded"),
-                    "by_parent": str(dict(__import__('collections').Counter(e.get("parent_enzyme","?") for e in all_enz))),
+            # 原始27颗XCRN酶
+            reg_path = os.path.join(HOME, "cortex", "enzyme-registry.json")
+            if os.path.exists(reg_path):
+                with open(reg_path, "r", encoding="utf-8") as f:
+                    reg = json.load(f)
+                enz_list = reg.get("enzymes", [])
+                data["enzyme_count"] = len(enz_list)
+                data["enzyme_registry"] = {
+                    "total": len(enz_list),
+                    "core": sum(1 for e in enz_list if e.get("category") == "core"),
+                    "reg": sum(1 for e in enz_list if e.get("category") == "reg"),
+                    "core_variants": sum(1 for e in enz_list if e.get("category") == "core+"),
+                    "new": sum(1 for e in enz_list if e.get("category") == "new"),
+                    "list": [{"id": e["id"], "name": e["name"], "ea": e["ea"], "icon": e.get("icon","")} for e in enz_list]
                 }
-                # 催化网络
-                net_path = os.path.join(HOME, "cortex", "catalytic-network.json")
-                if os.path.exists(net_path):
-                    with open(net_path, "r", encoding="utf-8") as f:
-                        net = json.load(f)
-                    data["catalytic_network"] = net.get("stats", {})
             else:
                 data["enzyme_count"] = 0
-                data["enzyme_overview"] = {"total": 0}
+                data["enzyme_registry"] = {"total": 0}
         except:
             data["enzyme_count"] = 0
-            data["enzyme_overview"] = {"total": 0}
+            data["enzyme_registry"] = {"total": 0}
+        
+        # ── 催化网络（独立读取） ──
+        try:
+            net_path = os.path.join(HOME, "cortex", "catalytic-network.json")
+            if os.path.exists(net_path):
+                with open(net_path, "r", encoding="utf-8") as f:
+                    net = json.load(f)
+                data["catalytic_network"] = net.get("stats", {})
+        except:
+            data["catalytic_network"] = {}
         
         # ── 记忆图谱统计 ──
         try:
