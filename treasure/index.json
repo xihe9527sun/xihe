@@ -4,11 +4,26 @@
     "created": "2026-06-27T08:16:00+08:00",
     "description": "盘古说：每带回真正有价值的东西，就放在这里消化吸收，化为成长的养分",
     "count": 225,
-    "updated": "2026-07-07T22:50",
+    "updated": "2026-07-07T22:56",
     "origin_scanned": "2026-07-01",
-    "total": 226
+    "total": 227
   },
   "treasures": [
+    {
+      "id": "loop-engineering-alibaba",
+      "name": "阿里Loop Engineering实战",
+      "dir": "loop-engineering-alibaba",
+      "source": "腾讯新闻 2026-07-07",
+      "status": "digested",
+      "added_at": "2026-07-07T22:56",
+      "digested_at": "2026-07-07T22:56",
+      "tags": [
+        "Loop",
+        "工程化",
+        "自主闭环",
+        "运维"
+      ]
+    },
     {
       "id": "black-hole-jim-keller",
       "name": "Jim Keller Black Hole 黑洞芯片",
