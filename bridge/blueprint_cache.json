@@ -1,0 +1,44 @@
+{
+ "bp_test": {
+  "dag": [
+   {
+    "step": "s1",
+    "depends_on": []
+   },
+   {
+    "step": "s2",
+    "depends_on": [
+     "s1"
+    ]
+   }
+  ],
+  "reuse_outputs": true,
+  "created": "2026-07-20T18:25:44.642522+08:00",
+  "outputs": {
+   "s1": [
+    {
+     "agent": "metabolic_actor",
+     "weight": 5.0,
+     "endpoint": "internal://metabolic"
+    },
+    {
+     "agent": "tau_bus",
+     "weight": 3.0,
+     "endpoint": "internal://tau_bus"
+    }
+   ],
+   "s2": [
+    {
+     "agent": "metabolic_actor",
+     "weight": 5.0,
+     "endpoint": "internal://metabolic"
+    },
+    {
+     "agent": "tau_bus",
+     "weight": 3.0,
+     "endpoint": "internal://tau_bus"
+    }
+   ]
+  }
+ }
+}
