@@ -1,0 +1,17 @@
+﻿{
+  "id": "resonatorlm-causal-resonant-field-mixing-for-eff",
+  "name": "ResonatorLM: Causal Resonant Field Mixing for Efficient Long-Context Language Modeling",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:00:33.578913",
+  "content": "ResonatorLM: Causal Resonant Field Mixing for Efficient Long-Context Language Modeling",
+  "field": "自反层",
+  "summary": "ResonatorLM提出了一种新的语言建模方法，通过因果共振场混合技术提高长上下文的效率。",
+  "key_insights": [
+    "引入了Causal Resonant Field Mixing机制",
+    "用于提升长上下文的语言模型效率",
+    "可能对自反层有潜在应用价值"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其自反层的改进，有助于更深入理解语言建模。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

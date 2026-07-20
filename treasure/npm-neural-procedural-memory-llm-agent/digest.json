@@ -1,0 +1,17 @@
+﻿{
+  "id": "npm-neural-procedural-memory-llm-agent",
+  "name": "NPM: Neural Procedural Memory — LLM Agent隐式激活引导记忆",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T13:04:41.315305",
+  "content": "NPM: Neural Procedural Memory — LLM Agent隐式激活引导记忆",
+  "field": "记忆系统/自反层",
+  "summary": "该研究提出了一种名为NPM的神经程序记忆机制，用于激活和引导语言模型（LLM）中的隐式记忆。",
+  "key_insights": [
+    "引入了NPM概念以激活和管理语言模型的记忆",
+    "探索了如何通过NPM机制实现对LLM内部隐性知识的控制",
+    "潜在应用于自反层或元认知领域，增强系统自我理解和适应能力"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

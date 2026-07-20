@@ -1,0 +1,18 @@
+﻿{
+  "id": "predictive-metacognition-a-neuro-computational-fra",
+  "name": "Predictive Metacognition: A Neuro-Computational Framework for Self-Monitoring in Transformers",
+  "source": "Nature Scientific Reports 2026",
+  "reprocessed_at": "2026-07-20T14:16:43.433352",
+  "content": "Predictive Metacognition: A Neuro-Computational Framework for Self-Monitoring in Transformers",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "Predictive metacognition is explored as a neuro-computational framework for self-monitoring in transformers, aiming to enhance the ability of these models to evaluate their own performance.",
+  "key_insights": [
+    "The concept of predictive metacognition can be applied to improve transformer models' self-awareness and monitoring capabilities.",
+    "This approach could lead to more robust and adaptive machine learning systems that better understand their limitations and strengths.",
+    "Understanding the potential for predictive metacognition in transformers may have implications for various fields such as memory systems, evolutionary engines, and multi-agent interactions."
+  ],
+  "xihe_relevance": "该研究可能为曦和等系统提供新的计算框架，以增强其自我监控能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

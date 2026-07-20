@@ -1,0 +1,20 @@
+﻿{
+  "id": "program-as-weights-a-programming-paradigm-for-fuzz",
+  "name": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+  "source": "arXiv cs.AI 2607.02512",
+  "reprocessed_at": "2026-07-20T14:15:18.370263",
+  "content": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (P",
+  "field": "元认知",
+  "summary": "通过将自然语言规格编译成紧凑且可本地执行的神经艺术品，提出了模糊函数编程（Fuzzy-Function Programming），其实例为Program-as-Weights (PAW)。PAW使大型语言模型API能够处理复杂任务，并且在性能、内存使用和推理速度方面具有优势。",
+  "key_insights": [
+    "PAW通过将自然语言规格编译成紧凑的神经网络，实现了功能的本地执行。",
+    "PAW使得大型语言模型API可以用于解决以前难以用规则实现的任务。",
+    "PAW使基础模型从一个针对每个输入的问题求解者转变为一个工具构建者。",
+    "PAW在推理内存使用和性能方面优于直接提示大型模型。",
+    "PAW的架构对曦和系统有潜在价值，尤其是在记忆系统、自反层和进化引擎领域。"
+  ],
+  "xihe_relevance": "对于曦和系统的元认知和进化引擎可能具有特别的价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

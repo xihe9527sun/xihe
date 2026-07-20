@@ -1,0 +1,40 @@
+{
+  "id": "memory-architecture-language-emergence",
+  "name": "From Signals to Structure: Memory Architecture Drives Language Emergence (arXiv 2607.00233)",
+  "source": "arXiv · Thu, 2 Jul 2026",
+  "discovered": "2026-07-03T07:22:16",
+  "digested": "2026-07-03T07:48:55",
+  "field": "L1超图核 / L7涌现层 · 语言涌现 / CENs补充",
+  "content": "How memory architecture drives language emergence in LLM agents. Supplements CENs framework.",
+  "nutrients": [
+    {
+      "id": "n1",
+      "title": "核心发现：记忆架构 > 信道容量",
+      "source": "arXiv 2607.00233 · Jul 2026",
+      "digest": "在Lewis信号游戏中，持久私人笔记本（外部化记忆）的Agent实现最高协调0.867±0.023。无状态Agent在中等容量后开始退化。记忆架构对语言涌现的影响远超信道容量。",
+      "relevance": "曦和substrate_pool + cortex的架构正确——外部化记忆防止涌现退化"
+    },
+    {
+      "id": "n2",
+      "title": "信息瓶颈理论应用",
+      "source": "arXiv 2607.00233",
+      "digest": "信息瓶颈视角预测最优容量=物体数量，但实验证明瓶颈点(capacity=8)反而是脆弱点，盈余容量普遍更好。结论：不要给认知系统设硬容量上限。",
+      "relevance": "曦和底物池不应设硬上限——继续从互联网吸收，不设[够用了]的阈值"
+    },
+    {
+      "id": "n3",
+      "title": "曦和映射：CENs全局工作空间的补充",
+      "source": "Xihe Meta-Enzyme · 自对照",
+      "digest": "论文5种记忆架构的对比实验直接补充CENs框架。曦和的L0-L7层级本质上是一个持久笔记本架构。关键差距：曦和缺少显式的协调协议（如Lewis信号游戏中的sender-receiver角色）。",
+      "relevance": "建议在桥接层增加shared_convention字段，显式记录曦和内部各子系统间的协调约定"
+    }
+  ],
+  "nutrient_count": 3,
+  "memcell": {
+    "born": "2026-07-03T07:22:16",
+    "last_accessed": "2026-07-03T07:48:55",
+    "access_count": 4,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

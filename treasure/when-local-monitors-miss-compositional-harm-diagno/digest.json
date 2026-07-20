@@ -1,0 +1,20 @@
+﻿{
+  "id": "when-local-monitors-miss-compositional-harm-diagno",
+  "name": "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+  "source": "arXiv:cs.MA:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:30.101336",
+  "content": "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+  "field": "多Agent",
+  "summary": "当局部监视器未能检测到组合危害时，诊断分布式后门在多智能体系统中的方法。",
+  "key_insights": [
+    "提出了一个新的框架来诊断多智能体系统中的分布式后门问题。",
+    "该框架利用了记忆系统、自反层和进化引擎等概念来增强诊断能力。",
+    "通过量化交易的视角，可以更深入地理解并解决此类安全问题。",
+    "引入元认知机制以帮助局部监视器更好地识别潜在的组合危害。",
+    "建议研究多Agent系统的工具使用及其在实际应用中的改进方向。"
+  ],
+  "xihe_relevance": "该研究方法可能对曦和系统有潜在价值，尤其是在诊断分布式后门方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

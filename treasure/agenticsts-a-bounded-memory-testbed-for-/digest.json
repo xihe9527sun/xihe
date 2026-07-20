@@ -1,0 +1,19 @@
+﻿{
+  "id": "agenticsts-a-bounded-memory-testbed-for-",
+  "name": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T12:53:40.708400",
+  "content": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+  "field": "多Agent/工具使用/其他",
+  "summary": "该研究提出了一种名为AgenticSTS的测试平台，旨在为具有长期规划能力的大规模语言模型（LLM）提供一个受限记忆环境。",
+  "key_insights": [
+    "引入了AgenticSTS作为LLM测试框架",
+    "聚焦于解决长期规划问题",
+    "使用受限内存机制来模拟现实世界挑战",
+    "可能对自反层和元认知研究有潜在价值",
+    "为量化交易提供新的思路"
+  ],
+  "xihe_relevance": "记忆系统/自反层/进化引擎/元认知/量化交易",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

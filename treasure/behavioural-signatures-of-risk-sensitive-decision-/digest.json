@@ -1,0 +1,18 @@
+﻿{
+  "id": "behavioural-signatures-of-risk-sensitive-decision-",
+  "name": "Behavioural Signatures of Risk-Sensitive Decision-Making in Large Language Models",
+  "source": "arXiv:cs.AI:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:34.921694",
+  "content": "Behavioural Signatures of Risk-Sensitive Decision-Making in Large Language Models",
+  "field": "进化引擎/元认知",
+  "summary": "该研究探讨了大型语言模型在风险敏感决策中的行为特征。",
+  "key_insights": [
+    "大型语言模型可能表现出类似于人类的风险感知和决策过程",
+    "这些模型能够通过学习从过去的错误中吸取教训，提高其未来的决策质量",
+    "研究结果可以为开发更智能、更适应复杂环境的AI系统提供参考"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于它可能有助于提升大型语言模型的风险管理能力",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

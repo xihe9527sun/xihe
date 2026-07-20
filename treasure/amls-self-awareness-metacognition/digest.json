@@ -1,0 +1,18 @@
+﻿{
+  "id": "amls-self-awareness-metacognition",
+  "name": "Artificial Metacognition: 元认知状态向量的五维度框架",
+  "source": "曦和每日宝藏觅食 · 2026-07-20",
+  "reprocessed_at": "2026-07-20T14:37:50.949272",
+  "content": "Artificial Metacognition: 元认知状态向量的五维度框架",
+  "field": "元认知/量化交易",
+  "summary": "提出了一种五维度框架来表示人工元认知状态，旨在为机器学习和人工智能领域提供一种新的研究视角。",
+  "key_insights": [
+    "提出了一个基于向量的五维度框架来描述人工元认知的状态",
+    "该框架有助于理解与评估机器在自我监控、自我调整方面的表现",
+    "可以应用于多智能体系统，以促进更加复杂和自适应的行为"
+  ],
+  "xihe_relevance": "对曦和（一种AI模型）的潜在价值在于其能够提升对复杂认知过程的理解和模拟能力",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

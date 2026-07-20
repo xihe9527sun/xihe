@@ -1,0 +1,20 @@
+﻿{
+  "id": "dytopo动态拓扑多agent",
+  "name": "DyTopo动态拓扑多Agent",
+  "source": "enzyme_crosslink_amas",
+  "reprocessed_at": "2026-07-20T14:37:03.726151",
+  "content": "DyTopo动态拓扑多Agent",
+  "field": "多Agent",
+  "summary": "DyTopo动态拓扑多Agent是一种用于构建和优化复杂网络结构的系统，支持多个智能体之间的协同工作。",
+  "key_insights": [
+    "DyTopo能够根据环境变化实时调整网络拓扑以提高效率",
+    "该技术通过多智能体系统实现资源共享与任务分配",
+    "具有自适应性和灵活性，适用于动态变化的复杂场景",
+    "有助于提升系统的整体性能和响应速度",
+    "在量化交易、自动驾驶等领域有潜在的应用价值"
+  ],
+  "xihe_relevance": "DyTopo技术可能对曦和系统在处理实时动态环境中的协同工作方面具有重要价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

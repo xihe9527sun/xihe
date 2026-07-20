@@ -1,0 +1,20 @@
+﻿{
+  "id": "hela-mem-acl2026",
+  "name": "HeLa-Mem: Hebbian学习+联想记忆 for LLM Agents",
+  "source": "ACL 2026 arXiv 2604.16839",
+  "reprocessed_at": "2026-07-20T13:55:31.571497",
+  "content": "Long-term memory is a critical challenge for Large Language Model agents, as fixed context windows cannot preserve coherence across extended interactions. Existing memory systems represent conversation history as unstructured embedding vectors, retrieving information through semantic similarity. This paradigm fails to capture the associative structure of human memory, wherein related experiences progressively strengthen interconnections through repeated co-activation. Inspired by cognitive neuro",
+  "field": "记忆系统",
+  "summary": "HeLa-Mem 提出了一种基于生物神经科学的动态图结构记忆架构，旨在解决大型语言模型在长期记忆方面的挑战。该系统通过仿生学习机制和联想记忆来增强信息的关联性和持久性。",
+  "key_insights": [
+    "HeLa-Mem 引入了模仿人类大脑中记忆形成的三个关键机制：关联、巩固和扩散激活。",
+    "采用双层组织结构，包括一个随时间变化的事件记忆图和一个通过 Hebbian 整合填充的概念知识库。",
+    "该系统利用语义相似性和学习到的关联性来模拟人类认知中的 episodic-semantic 区分。",
+    "实验表明，在 LoCoMo 数据集上，HeLa-Mem 在四个问题类别中表现出显著优势，并且使用了较少的上下文标记。",
+    "代码可在 GitHub 上获取：https://github.com/ReinerBRO/HeLa-Mem。"
+  ],
+  "xihe_relevance": "对曦和（Alibaba Cloud 的大模型）潜在价值评估为高，因为它可以增强其长期记忆能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

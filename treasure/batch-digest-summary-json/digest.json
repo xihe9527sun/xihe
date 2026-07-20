@@ -1,0 +1,27 @@
+﻿{
+  "id": "batch-digest-summary-json",
+  "name": "_batch_digest_summary.json",
+  "source": "buffer",
+  "discovered": "2026-07-20T14:53:16.572211",
+  "digested": "2026-07-20T14:53:16.572300",
+  "field": "多Agent",
+  "content": "{\"timestamp\": \"2026-07-08T07:53:51.958468\", \"total\": 3, \"success\": 3, \"fail\": 0, \"items\": [{\"title\": \"Sparse-Reslim: Sparse Residual Routing for Efficient Weather Prediction\", \"status\": \"ok\"}, {\"title\": \"AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments\", \"status\": \"ok\"}, {\"title\": \"Biological Motifs for Agentic Control\", \"status\": \"ok\"}]}",
+  "intake_score": 0.7,
+  "score_detail": {
+    "去粗取精": 0.2,
+    "去伪存真": 0,
+    "由此及彼": 0.2,
+    "由表及里": 0,
+    "_total": 0.11,
+    "_grade": "差"
+  },
+  "summary": "该摘要包含了3篇成功发表的学术论文信息，涵盖了气象预测、大型语言模型在现实环境中的应用以及生物机制控制等主题。",
+  "key_insights": [
+    "3篇论文均获得成功",
+    "涉及气象预测和大型语言模型领域",
+    "探讨了生物机制在控制中的作用"
+  ],
+  "xihe_relevance": "对记忆系统有一定价值，但不直接相关",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

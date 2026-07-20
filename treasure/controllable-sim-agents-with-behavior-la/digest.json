@@ -1,0 +1,18 @@
+﻿{
+  "id": "controllable-sim-agents-with-behavior-la",
+  "name": "Controllable Sim Agents with Behavior Latents",
+  "source": "cs.LG",
+  "reprocessed_at": "2026-07-20T13:58:38.329118",
+  "content": "Controllable Sim Agents with Behavior Latents",
+  "field": "自反层/进化引擎",
+  "summary": "Controllable Sim Agents with Behavior Latents探索了如何通过行为潜变量来控制模拟代理，为未来的智能系统提供了新的可能性。",
+  "key_insights": [
+    "提出了利用行为潜变量来增强和控制模拟代理的能力",
+    "潜在价值在于能够实现更精细的行为调整与预测",
+    "这可能对自反层、进化引擎以及元认知等领域产生重要影响"
+  ],
+  "xihe_relevance": "该研究对于曦和项目在记忆系统中的应用具有一定的参考意义",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

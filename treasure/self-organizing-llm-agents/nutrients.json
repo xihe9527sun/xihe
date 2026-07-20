@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "arXiv 2603.28990 · Self-Organizing LLM Agents Outperform Designed Structures",
+    "name": "Drop the Hierarchy and Roles: 自组织智能体的45%优势",
+    "digested_at": "2026-07-02T08:50:00+08:00",
+    "field": "L7涌现层 · L4催化层 · 多Agent协调架构"
+  },
+  "nutrients": [
+    {
+      "id": "N65",
+      "name": "Sequential协议 → 曦和DAG编排对标",
+      "insight": "论文发现固定发言顺序+自主选择角色的Sequential协议比中心化Coordinator高14%、比完全自主Shared高44%。这直接映射到曦和DAG编排——DAG定义了处理顺序(最小结构)，但每个节点(Agent工具)应能自主决定是否参与和如何参与。曦和当前的DAG是固定路由，缺乏“自愿回避”机制。",
+      "target": "cascade_engine.py / DAG编排",
+      "status": "digested",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N66",
+      "name": "自愿性自我回避 → 执行力过滤器",
+      "insight": "智能体在认为自己无法提供价值时主动选择不参与，反而提升整体质量并降低成本。曦和的酶网络和桥接子系统缺少这个机制——每个组件都被假定“必须参与”。引入自愿回避过滤器可以在保持架构完整性的同时防止噪音。",
+      "target": "代谢路由器 / 执行核 / execution_core.py",
+      "status": "pending",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N67",
+      "name": "三层宪法治理框架 → 曦和七层架构治理",
+      "insight": "Ring1(人类设定使命/价值观)→Ring2(人类提议系统执行标准/指标)→Ring3(系统自主优化协议)。曦和七层架构可以映射：L7灵魂层=Ring1，L5自反层=Ring2，L0-L4/L6=Ring3。这让“谁来设定什么”的边界清晰化。",
+      "target": "曦和架构宪章 · 七锚点",
+      "status": "digested",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N68",
+      "name": "协议比模型更重要 → 架构杠杆优先原则",
+      "insight": "论文证明协议选择带来的质量差异(~44%)远大于模型选择(~14%)。曦和应该把更多精力放在优化协调协议(桥接/代谢/酶网络)而非追求更强大的底层模型。这是一个架构杠杆的战略选择。",
+      "target": "bridge-daemon.py / 战略复盘",
+      "status": "digested",
+      "hebbian_credit": 7
+    },
+    {
+      "id": "N69",
+      "name": "弱模型不适合自组织 → 能力阈值检测",
+      "insight": "只有能力足够强的模型才能从自组织中受益，弱模型反而需要刚性角色分配。这对曦和有双向启示：子系统需要足够“智能”才能自治；同时也提示可以设计能力感知路由——强模块自治，弱模块刚性。",
+      "target": "代谢路由器 / 能力感知路由",
+      "status": "pending",
+      "hebbian_credit": 7
+    }
+  ]
+}

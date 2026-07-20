@@ -1,0 +1,18 @@
+﻿{
+  "id": "a股因子近期异动2026",
+  "name": "A股因子近期异动2026",
+  "source": "enzyme_crosslink_amas",
+  "reprocessed_at": "2026-07-20T14:36:53.574555",
+  "content": "A股因子近期异动2026",
+  "field": "量化交易",
+  "summary": "A股因子近期出现异常波动，引起市场广泛关注。",
+  "key_insights": [
+    "A股因子近期表现与历史数据存在显著差异",
+    "市场情绪和政策变动可能影响因子的表现",
+    "需密切关注宏观经济环境对A股因子的影响"
+  ],
+  "xihe_relevance": "中等，资料与当前AI系统处理金融市场的深度相关性一般",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

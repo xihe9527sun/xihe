@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.07409",
+  "name": "DeLS-Spec: Decoupled Long-Short Contexts for Parallel Speculative Drafting (2607.07409)",
+  "source": "arXiv:cs.CL:2607.07409",
+  "reprocessed_at": "2026-07-20T14:22:44.652499",
+  "content": "Speculative decoding accelerates LLM inference by drafting multiple tokens and verifying them in parallel. Block-parallel drafters such as DFlash further improve drafting efficiency by predicting an entire block in one pass, but their position-wise predictions lack explicit intra-block causal conditioning. Recent methods such as Domino and DSpark attempt to introduce such causality into block-parallel drafting, but they require training the draft model from scratch, which limits their flexibilit",
+  "field": "自反层",
+  "summary": "DeLS-Spec通过将固定的大Flash模型视为长上下文专家，并引入一个轻量级的局部头作为短上下文专家，实现了对大Flash模型的解耦。这种方法在推理时结合了长上下文和短上下文的logits，且局部头不绑定到特定的大Flash检查点，提高了灵活性和成本效益。",
+  "key_insights": [
+    "DeLS-Spec通过将固定的大Flash模型视为长上下文专家，并引入一个轻量级的局部头作为短上下文专家，实现了对大Flash模型的解耦。",
+    "这种方法在推理时结合了长上下文和短上下文的logits，且局部头不绑定到特定的大Flash检查点，提高了灵活性和成本效益。",
+    "DeLS-Spec方法能够提高速度提升并保持平均接受长度，在数学、代码和对话基准测试中表现一致优于大Flash。"
+  ],
+  "xihe_relevance": "DeLS-Spec方法在提高模型推理效率方面具有潜在价值，特别是在需要快速响应的场景中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

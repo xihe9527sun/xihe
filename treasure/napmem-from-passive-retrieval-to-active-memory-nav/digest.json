@@ -1,0 +1,18 @@
+﻿{
+  "id": "napmem-from-passive-retrieval-to-active-memory-nav",
+  "name": "NapMem: From Passive Retrieval to Active Memory Navigation",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:48.922498",
+  "content": "NapMem: From Passive Retrieval to Active Memory Navigation",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "NapMem从被动检索转向主动内存导航。",
+  "key_insights": [
+    "提出了从被动检索到主动记忆导航的新方法",
+    "旨在提高用户在复杂信息环境中的记忆效率和准确性",
+    "结合了自反层、进化引擎和元认知技术以实现这一目标"
+  ],
+  "xihe_relevance": "对曦和的潜在价值较低，但具有一定的参考意义",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

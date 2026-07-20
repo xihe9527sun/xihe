@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08255",
+  "name": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum (2607.08255)",
+  "source": "arXiv:cs.AI:2607.08255",
+  "reprocessed_at": "2026-07-20T14:23:43.084294",
+  "content": "Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness ",
+  "field": "多Agent",
+  "summary": "通过竞争然后合作的方法，四个AI教师为学生Qwen2.5-Coder构建了一个可验证的学习路径。在执行验证下，所有教师都能解决标准问题接近完美（99-100%），但在更难的竞争性问题上则表现不同。",
+  "key_insights": [
+    "通过竞争确定最佳的AI教师，然后让他们合作为学生创建一个可验证的学习路径。",
+    "模仿已验证解决方案对学生的表现没有改进，有时甚至会降低其表现。",
+    "使用协作学习环境进行强化学习，可以显著提高学生的成绩。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一个新的框架来构建可验证的学习路径，这可能有助于提升AI教师的合作效果。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

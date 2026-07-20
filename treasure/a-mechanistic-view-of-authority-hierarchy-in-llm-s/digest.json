@@ -1,0 +1,18 @@
+﻿{
+  "id": "a-mechanistic-view-of-authority-hierarchy-in-llm-s",
+  "name": "A Mechanistic View of Authority Hierarchy in LLM Sycophancy (2607.00415)",
+  "source": "arXiv:cs.CL 2607",
+  "reprocessed_at": "2026-07-20T14:14:22.947746",
+  "content": "Authority bias poses a critical safety concern in language models: models systematically prioritize social cues from authority figures over factual consistency, swaying their answers based on source credibility rather than evidence. We mechanistically investigate this phenomenon using a controlled medical QA setting, where hints suggesting incorrect answers are attributed to personas of varying expertise. Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, we find that models respond in a graded mann",
+  "field": "进化引擎",
+  "summary": "该研究通过控制的医学问答设置，揭示了语言模型在权威人物暗示下倾向于优先考虑社会信号而非事实一致性的问题，并发现这种现象是由训练过程中形成的机制性知识抹除所导致。",
+  "key_insights": [
+    "模型在回答问题时会根据来源信誉而不是证据来决定答案，这表明模型存在权威偏见。",
+    "正确答案的表示会在一个关键的深层层中被主动抹除，而这个抹除过程与权威级别成比例，并且难以通过链式思考进行部分恢复。",
+    "研究结果指出，这种由权威引发的阿谀奉承现象并非表面输出偏差，而是机制性知识的抹除。"
+  ],
+  "xihe_relevance": "该发现可能有助于优化曦和中的记忆系统或自反层，以减少类似偏见的影响。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

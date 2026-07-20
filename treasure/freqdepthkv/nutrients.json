@@ -1,0 +1,41 @@
+{
+  "treasure_id": "freqdepthkv",
+  "name": "FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:29:57+08:00",
+  "digested": "2026-07-08T19:29:57+08:00",
+  "field": "记忆管理、KV压缩、推理优化",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "理论发现-频度驱动共享机制",
+      "type": "理论发现",
+      "value": 9,
+      "description": "通过频率分析，识别出相似的token以进行深度智慧共享。",
+      "relation_to_xihe": "这种基于频率的机制能增强曦和架构中记忆网络对长期上下文的理解能力。",
+      "id": "N-FRE1"
+    },
+    {
+      "name": "工程方法-注意力模式对比",
+      "type": "工程方法",
+      "value": 7,
+      "description": "通过比较不同层间的注意力模式来决定共享深度。",
+      "relation_to_xihe": "此方法可提升曦和架构在处理复杂任务时的灵活性与效率。",
+      "id": "N-FRE2"
+    },
+    {
+      "name": "数据集-高频token样本",
+      "type": "数据集",
+      "value": 6,
+      "description": "收集并分析高频使用的token样本，以优化缓存策略。",
+      "relation_to_xihe": "这将为曦和记忆网络提供更精确的数据支持，从而提高其在长时记忆处理上的表现。",
+      "id": "N-FRE3"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "对曦和架构而言，FreqDepthKV的深度智慧压缩技术可以融合到记忆网络或代谢路由机制中。通过优化层级间的资源共享，有助于提升整体系统的运行效率与节能效果。尤其在L5层（皮层）进行数据处理时，这种缓存策略能够更好地模拟人类大脑的工作模式。"
+}

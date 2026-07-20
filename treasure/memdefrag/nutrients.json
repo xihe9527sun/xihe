@@ -1,0 +1,33 @@
+{
+  "treasure_id": "memdefrag",
+  "name": "MemDefrag: Latent Memory Defragmentation for Large Language Models",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:30:14+08:00",
+  "digested": "2026-07-08T19:30:14+08:00",
+  "field": "记忆管理、KV压缩",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "注意力密度分析方法",
+      "type": "理论发现",
+      "value": 9,
+      "description": "提供了一种新的视角来理解大语言模型中的内存使用情况。",
+      "relation_to_xihe": "此方法可以用于曦和的海马体模块，帮助其更高效地管理和压缩记忆片段。",
+      "id": "N-MEM1"
+    },
+    {
+      "name": "追踪信号机制",
+      "type": "理论发现",
+      "value": 8,
+      "description": "揭示了固有的追踪信号，有助于模型自我优化。",
+      "relation_to_xihe": "通过这种方式，曦和可以更好地进行自我学习和调整，增强其智能水平。",
+      "id": "N-MEM2"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "该研究对于曦和的记忆网络特别重要。记忆管理是曦和的一个关键模块，MemDefrag提供的方法可直接应用于解决曦和中的潜在记忆碎片问题。此外，通过发现固有追踪信号的方法，能增强曦和的因果边架构能力，并优化路由机制，提升代谢H值。"
+}

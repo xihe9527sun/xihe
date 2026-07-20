@@ -1,0 +1,17 @@
+﻿{
+  "id": "dylan-dynamic-agent-selection",
+  "name": "DyLAN: 推理时动态选择Agent (+25% MMLU)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:02:39.940650",
+  "content": "DyLAN: 推理时动态选择Agent (+25% MMLU)",
+  "field": "多Agent",
+  "summary": "DyLAN在推理过程中能够动态选择不同的代理，提高了25%的MMLU性能。",
+  "key_insights": [
+    "DyLAN提高MMLU25%",
+    "动态选择代理",
+    "增强模型推理能力"
+  ],
+  "xihe_relevance": "其他",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

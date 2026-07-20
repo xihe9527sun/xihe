@@ -1,0 +1,35 @@
+{
+  "id": "tool-making-and-self-evolving-llm-agents-in-low-",
+  "name": "Tool-Making and Self-Evolving LLM Agents in Low-Latency Systems",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.013141",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.88,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.88,
+    "backed_at": "2026-07-11T09:10:52.012885"
+  },
+  "digest_notes": "Production LLM agents often waste latency and reliability by regenerating code for the same procedural steps. We replace this inference-time coding loop with an agentic tool-making pipeline that compiles repeated SOP steps into validated, versioned tools before deployment. The tool-maker grounds synthesis in the live environment as it collects execution traces. In production alarm-triage, tool calls reduce p50 latency by 42% and reduce end-to-end error rate by up to 53%."
+}

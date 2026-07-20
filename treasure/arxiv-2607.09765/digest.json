@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09765",
+  "name": "How Much Does Correctness Cost? Budgeted Placement of Strong Correctors in a Weak Multi-Agent Swarm",
+  "source": "arXiv:cs.AI:2607.09765",
+  "reprocessed_at": "2026-07-20T14:28:40.669706",
+  "content": "A cheap swarm of unreliable agents can be steered to a correct consensus by a few strong, expensive \"oracle\" correctors. We ask how much one must spend, and where to place the oracles. We model the swarm as a consensus on a graph in which each oracle pins one node toward the truth at a cost-coupled, concave strength, and measure quality by the coherence H(R)=tr M(R)^{-1}. Our first result is that H stays submodular (each added oracle helps less than the last) even when the oracles differ in stre",
+  "field": "多Agent",
+  "summary": "通过少量强且昂贵的‘占卜’正确器，可以引导一组不可靠的廉价代理达成正确的共识。我们探讨了需要花费多少以及如何放置这些正确器。",
+  "key_insights": [
+    "H保持亚模性（每个新增的正确器帮助程度小于上一个），即使正确器在强度上有差异；",
+    "成本效益贪婪算法能在任何预算下接近最优位置，误差不超过1/e。",
+    "逆向预算可以得到保证达到给定精度的最低花费边界B*(eps)。"
+  ],
+  "xihe_relevance": "对曦和系统的潜在价值在于其在多代理系统中的应用，特别是在处理复杂任务时提高效率和准确性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

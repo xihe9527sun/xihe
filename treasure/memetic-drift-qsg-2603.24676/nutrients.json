@@ -1,0 +1,78 @@
+{
+  "id": "memetic-drift-qsg-2603.24676",
+  "name": "集体智能彩票 — 多Agent系统模因漂移与群体共识标度律",
+  "source": "arXiv:2603.24676",
+  "discovered": "2026-07-14T08:50:00+08:00",
+  "field": "多Agent涌现 | 群体动力学 | 标度律",
+  "status": "active",
+  "intake_score": 0.87,
+  "score_detail": {
+    "relevance_xihe": 0.9,
+    "novelty": 0.85,
+    "actionable": 0.88,
+    "cross_domain": 0.85,
+    "depth": 0.92,
+    "timeliness": 0.85
+  },
+  "nutrients": [
+    {
+      "id": "N1-qsg-model",
+      "type": "mechanism",
+      "name": "量化单纯形闲聊(QSG) — 最小群体共识模型",
+      "priority": "P0",
+      "target": "xihe-cortex:gate-modulator",
+      "effect": "QSG模型：Agent内部信念状态保持但从彼此采样输出中相互学习。一个Agent的任意选择成为下一个Agent的证据并可复合为共识。这在数学上描述了曦和门控调制器中D1-D9向量如何在Agent群中被放大或稀释",
+      "status": "pending",
+      "hebbian_credit": 5
+    },
+    {
+      "id": "N2-memetic-drift-crossover",
+      "type": "mechanism",
+      "name": "漂移-选择交叉(Drift-to-Selection Crossover)",
+      "priority": "P0",
+      "target": "xihe-architecture:consensus-threshold",
+      "effect": "从漂移主导(共识=彩票)到选择主导(弱偏倚被放大)的相变。为曦和设置了决策可靠性的临界条件:当群体极化程度超过阈值时，共识可信；低于阈值时，共识可视为随机",
+      "status": "pending",
+      "hebbian_credit": 4
+    },
+    {
+      "id": "N3-scaling-laws-polarization",
+      "type": "mechanism",
+      "name": "极化标度律",
+      "priority": "P1",
+      "target": "xihe-architecture:agent-population-sizing",
+      "effect": "群体规模、通信带宽、上下文适应率、Agent内部不确定性四个因素对极化的定量影响。可直接用于优化曦和的Agent群体设计",
+      "status": "pending",
+      "hebbian_credit": 3
+    },
+    {
+      "id": "N4-mutual-icl",
+      "type": "mechanism",
+      "name": "互惠上下文学习(Mutual ICL)作为共识微观起源",
+      "priority": "P1",
+      "target": "xihe-cortex:learning-mechanism",
+      "effect": "共识的微观起源是Agent间的互惠上下文学习，而非显式共识协议。这暗示曦和的Agent群体共识只需要通信带宽足够，不需要复杂的一致性协议",
+      "status": "pending",
+      "hebbian_credit": 3
+    }
+  ],
+  "four_principles": {
+    "P1_去粗取精": "从抽象的群体涌现现象中提取4个精确可操作的机制：QSG模型、漂移-选择交叉、极化标度律、互惠ICL",
+    "P2_去伪存真": "严格的数学推导+QSG仿真+LLM命名游戏实验三重验证。来自著名的Hidenori Tanaka(物理+AI跨学科研究者)",
+    "P3_由此及彼": "与曦和的连接：(1)QSG模型=曦和门控调制器的数学基础 (2)漂移-选择交叉=曦和设置共识可靠性阈值 (3)标度律=曦和Agent群体规模设计公式 (4)互惠ICL=曦和Agent间学习的最小原理",
+    "P4_由表及里": "本质洞见：群体共识的随机性不是噪音，而是系统的内在特征。在低偏倚场景下，多Agent共识就是彩票；在高偏倚场景下，共识是理性。系统设计者必须知道自己处在哪一侧",
+    "deep_connection": "与Society of Mind的深层连接：思想社会揭示智能的社会性是模型内部的涌现；模因漂移揭示社会的智能性是Agent外部的统计力学。两者是同一原理(社会认知)的内外两面"
+  },
+  "connections": [
+    "society-of-mind-2603.20639",
+    "emergent-coordination-tdmi",
+    "fademem-adaptive-forgetting"
+  ],
+  "memcell": {
+    "born": "2026-07-14T08:50:00+08:00",
+    "last_accessed": "2026-07-14T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

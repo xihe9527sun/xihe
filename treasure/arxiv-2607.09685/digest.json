@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09685",
+  "name": "Transfer Learning Across Policy Regimes in Adaptive Multi-Agent Systems",
+  "source": "arXiv:cs.MA:2607.09685",
+  "reprocessed_at": "2026-07-20T14:29:47.329156",
+  "content": "Policy models often assume that the relationship between a policy instrument and its outcome remains stable across institutional conditions. In adaptive socio-technical systems this assumption may fail: regulatory change can alter incentives, agents can respond strategically, and the mapping from policy variables to aggregate outcomes can change. This paper studies such regime change as a transfer-learning problem in adaptive multi-agent systems. A policy regime is represented as a learning prob",
+  "field": "多Agent",
+  "summary": "政策模型通常假设政策工具与结果之间的关系在制度条件下的稳定性。然而，在适应性社会-技术系统中，这种假设可能不成立：监管变化可以改变激励，代理可以采取战略行动，以及从政策变量到总体结果的映射可能会发生变化。",
+  "key_insights": [
+    "研究将政策变迁视为适应性多智能体系统的迁移学习问题。",
+    "比较了空白板学习者和受结构知识限制的有效假设类转移学习者的性能。",
+    "当这种限制保留新目标函数并减少有效复杂度时，迁移是有益的；当这种限制排除新目标并产生误配时，迁移是不利的。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

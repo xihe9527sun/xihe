@@ -1,0 +1,35 @@
+{
+  "id": "theater-of-mind-for-llms-a-cognitive-architectur",
+  "name": "Theater of Mind for LLMs: A Cognitive Architecture Based on Global Workspace Theory",
+  "sources": [],
+  "discovered": "2026-07-14T09:10:26.285251",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.88,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-14",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.88,
+    "backed_at": "2026-07-14T09:10:26.284964"
+  },
+  "digest_notes": "Global Workspace Agents (GWA) transitions multi-agent coordination from passive data structure to active event-driven discrete dynamical system. It couples a central broadcast hub with a heterogeneous swarm of functionally constrained agents, maintaining continuous cognitive cycles through an entropy-based intrinsic drive that mathematically quantifies semantic diversity and dynamically regulates generation temperature. A dual-layer memory bifurcation strategy ensures long-term cognitive continu"
+}

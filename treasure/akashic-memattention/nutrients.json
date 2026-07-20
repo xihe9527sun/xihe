@@ -1,0 +1,33 @@
+{
+  "treasure_id": "akashic-memattention",
+  "name": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:29:37+08:00",
+  "digested": "2026-07-08T19:29:37+08:00",
+  "field": "内存管理、推理优化",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "MemAttention机制",
+      "type": "工程方法",
+      "value": 9,
+      "description": "Akashic采用的低开销记忆处理方式，能有效减少曦和架构中的内存负担。",
+      "relation_to_xihe": "通过优化MemAttention实现长对话管理，直接提升曦和的记忆效率与路由能力。",
+      "id": "N-AKA1"
+    },
+    {
+      "name": "上下文分块技术",
+      "type": "工程发现",
+      "value": 7,
+      "description": "Akashic将大语境拆分为小块进行处理的技术方法，可帮助曦和更高效地处理复杂推理场景。",
+      "relation_to_xihe": "此技术有助于曦和中的多任务处理能力，并提升其在长对话中的表现。",
+      "id": "N-AKA2"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "该研究可为曦和架构提供低开销的记忆管理方案，有助于改进因果边架构中的记忆路由和代谢路由H值。特别在长对话处理上，Akashic的方法可能直接优化曦和中基于事件总线的τ总线机制，并提升其效率。"
+}

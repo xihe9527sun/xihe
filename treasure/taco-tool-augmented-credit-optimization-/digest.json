@@ -1,0 +1,17 @@
+﻿{
+  "id": "taco-tool-augmented-credit-optimization-",
+  "name": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:56:09.174587",
+  "content": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+  "field": "多Agent",
+  "summary": "TACO 提出了一种方法来优化代理工具的使用，通过增强信用优化。",
+  "key_insights": [
+    "引入了工具辅助的信用优化机制",
+    "旨在提高代理工具使用的效率和效果",
+    "适用于需要智能决策的情境下"
+  ],
+  "xihe_relevance": "该内容对记忆系统有潜在价值，因为它涉及数据处理和信息整合。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "tf-engram-a-train-free-engram-with-ssd-backed-me",
+  "name": "TF-Engram: A Train-Free Engram with SSD-Backed Memory for Large Language Models (2607.07388)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:02:41.841792",
+  "content": "Large Language Models (LLMs) store factual knowledge and domain-specific patterns implicitly in dense Transformer parameters, making knowledge expansion costly through pretraining, fine-tuning, retrieval augmentation, or longer contexts. Engram-style memory offers a compact hidden-state injection pathway, but existing GPU-resident designs often rely on hash-based compression, causing unrelated phrases to collide in shared slots and weakening phrase-level semantic fidelity. We present TF-Engram, ",
+  "field": "记忆系统/自反层",
+  "summary": "TF-Engram通过构建外部语料库中的特定短语语义内存，利用早期退出引导预测性预取来隐藏自回归解码过程中的外部存储延迟。在Qwen3-0.6B模型上，它提高了下游任务的平均得分从57.6到59.4，优于冻结的基础架构和参数匹配的LoRA基线。",
+  "key_insights": [
+    "TF-Engram通过构建特定短语的语义内存来提高大型语言模型（LLMs）的知识存储效率",
+    "使用早期退出引导预测性预取技术减少外部存储访问延迟，从而提高解码性能",
+    "展示了静态短语记忆可以作为可扩展、无需训练且低开销的系统组件集成到大型语言模型的推理中"
+  ],
+  "xihe_relevance": "TF-Engram可能对曦和在知识管理和自反层方面具有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

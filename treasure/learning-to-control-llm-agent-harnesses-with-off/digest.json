@@ -1,0 +1,19 @@
+﻿{
+  "id": "learning-to-control-llm-agent-harnesses-with-off",
+  "name": "Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:35.010541",
+  "content": "Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning",
+  "field": "多Agent",
+  "summary": "该研究探讨了如何利用离线强化学习来控制语言模型代理。",
+  "key_insights": [
+    "提出了一种新的方法来优化语言模型的控制策略。",
+    "使用离线强化学习减少了对实时交互的需求，提高了效率。",
+    "该技术可以应用于多种场景，提高语言模型在不同任务中的表现。",
+    "为未来的自适应和自主学习提供了基础。",
+    "有助于构建更加智能和灵活的语言模型代理系统。"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,28 @@
+﻿{
+  "id": "batch-118-json",
+  "name": "batch_118.json",
+  "source": "buffer",
+  "discovered": "2026-07-20T14:53:20.147736",
+  "digested": "2026-07-20T14:53:20.147742",
+  "field": "自反层/进化引擎",
+  "content": "{\"entries\": [{\"term\": \"memory,sparse attention,long context\", \"title\": \"MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens\", \"snippet\": \"Long-term memory is a cornerstone of human intelligence. Enabling AI to process lifetime-scale information remains a long-standing pursuit in the field. Due to the constraints of full-attention architectures, the effective context length of large language models is typically limited to 1M tokens. Existing approaches, such ",
+  "intake_score": 0.7,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0.4,
+    "由表及里": 0.2,
+    "_total": 0.14,
+    "_grade": "差"
+  },
+  "summary": "该研究提出了一种名为MSA的注意力机制，旨在解决大规模语言模型在处理大量信息时的有效上下文长度限制问题。",
+  "key_insights": [
+    "引入了Memory Sparse Attention（MSA）机制",
+    "目标是扩展大语言模型的有效上下文长度至100M tokens以上",
+    "缓解了全注意力架构对长序列数据的局限性",
+    "为实现高效且规模更大的端到端记忆模型提供了一种可能的方法"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

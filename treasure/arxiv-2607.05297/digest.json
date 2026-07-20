@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.05297",
+  "name": "MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution",
+  "source": "arXiv:cs.AI:2607.05297",
+  "reprocessed_at": "2026-07-20T14:19:51.267338",
+  "content": "Recent LLM agents tackle increasingly long-horizon, open-ended tasks, and external skills, reusable procedural knowledge supplied to the agent, further extend this capability. However, a fixed, hand-authored skill is rarely optimal, and cannot adapt to the diversity of tasks an agent encounters. Self-improving agents address this by rewriting their own skill files from execution traces, yielding meaningful gains on challenging benchmarks. Yet such self-evolution remains non-recursive: it improve",
+  "field": "自反层/进化引擎",
+  "summary": "MetaSkill-Evolve通过双时间尺度框架实现了递归的自我改进，使得代理技能改进更加灵活和适应性强。",
+  "key_insights": [
+    "MetaSkill-Evolve引入了元技能的概念，使代理技能改进过程更具灵活性。",
+    "该方法在三个代理基准测试中显著优于无技能、静态技能和单层进化基线。",
+    "通过共享单一冻结的骨干模型，MetaSkill-Evolve实现了递归自我改进的能力。"
+  ],
+  "xihe_relevance": "MetaSkill-Evolve可能对曦和系统的自反层和进化引擎模块具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

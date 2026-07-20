@@ -1,0 +1,20 @@
+﻿{
+  "id": "decoupling-thought-from-speech-knowledge-grounde",
+  "name": "Decoupling Thought from Speech: Knowledge-Grounded Counterfactual Reasoning for Resilient Multi-Agent Argumentation",
+  "source": "曦和每日宝藏觅食 · 2026-07-14",
+  "reprocessed_at": "2026-07-20T14:06:12.777680",
+  "content": "Decoupling Thought from Speech: Knowledge-Grounded Counterfactual Reasoning for Resilient Multi-Agent Argumentation",
+  "field": "多Agent",
+  "summary": "本文提出了一种知识支撑下的反事实推理方法，用于增强多智能体的抗压辩论能力。该方法旨在分离思想与言语，以提高多智能体系统在复杂环境中的适应性和稳定性。",
+  "key_insights": [
+    "提出了一个新颖的方法来实现思想和言语的分离",
+    "利用知识支撑下的反事实推理技术增强了多智能体系统的抗压性",
+    "该方法有望应用于多智能体辩论、自反层进化等领域",
+    "能够提高复杂环境中的适应性和稳定性",
+    "为记忆系统、自反层、进化引擎等领域的研究提供了新的视角"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可能改进智能系统的抗压能力和适应性，从而在多智能体辩论中发挥重要作用。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

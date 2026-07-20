@@ -1,0 +1,18 @@
+﻿{
+  "id": "beyond-the-leaderboard-synthesis-of-tool-use-plann",
+  "name": "Beyond the Leaderboard: Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:14.497512",
+  "content": "Beyond the Leaderboard: Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents",
+  "field": "自反层/进化引擎/元认知",
+  "summary": "This paper synthesizes failures in language model agents' tool use, planning, and reasoning beyond the leaderboard.",
+  "key_insights": [
+    "The synthesis highlights common failure modes across different tasks for LLM agents",
+    "Identifies potential areas for improvement in memory systems and self-reflection layers",
+    "Suggests implications for applications such as evolutionary engines and multi-agent systems"
+  ],
+  "xihe_relevance": "This research could be valuable for improving the robustness of language models, particularly in complex tasks.",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

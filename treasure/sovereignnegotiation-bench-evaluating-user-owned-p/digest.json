@@ -1,0 +1,20 @@
+﻿{
+  "id": "sovereignnegotiation-bench-evaluating-user-owned-p",
+  "name": "SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents In Delegated Bargaining Under Privacy, Consent, Evidence, And Institutional Pressure",
+  "source": "arXiv:cs.MA:new",
+  "reprocessed_at": "2026-07-20T14:21:49.834234",
+  "content": "SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents In Delegated Bargaining Under Privacy, Consent, Evidence, And Institutional Pressure",
+  "field": "多Agent",
+  "summary": "SovereignNegotiation-Bench旨在评估在隐私、同意、证据和机构压力下用户拥有的个人代理在委托谈判中的表现。",
+  "key_insights": [
+    "研究关注于用户拥有并控制的个人代理在复杂谈判环境下的行为和性能",
+    "探讨了隐私保护和个人代理之间可能存在的冲突",
+    "涉及多方参与者的同意机制以及证据收集的重要性",
+    "考虑到了机构压力对个人代理决策的影响",
+    "旨在为未来的研究提供有价值的见解"
+  ],
+  "xihe_relevance": "该研究对于曦和系统的潜在价值主要体现在其能够帮助理解不同环境下的用户行为及策略，从而优化系统设计。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

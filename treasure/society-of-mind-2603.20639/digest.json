@@ -1,0 +1,20 @@
+﻿{
+  "id": "society-of-mind-2603.20639",
+  "name": "谷歌思想社会研究 — 推理模型内部多视角辩论的自发涌现",
+  "source": "arXiv:2603.20639",
+  "reprocessed_at": "2026-07-20T13:55:01.343634",
+  "content": "The \"AI singularity\" is often miscast as a monolithic, godlike mind. Evolution suggests a different path: intelligence is fundamentally plural, social, and relational. Recent advances in agentic AI reveal that frontier reasoning models, such as DeepSeek-R1, do not improve simply by \"thinking longer\". Instead, they simulate internal \"societies of thought,\" spontaneous cognitive debates that argue, verify, and reconcile to solve complex tasks. Moreover, we are entering an era of human-AI centaurs:",
+  "field": "多Agent",
+  "summary": "谷歌的研究揭示了未来智能模型内部的社会辩论现象，指出未来的智能将不再是一个单一的硅脑，而是一个由多种智能组成的复杂社会。",
+  "key_insights": [
+    "未来的智能模型会模拟出一种‘思想社会’，其中包含自发的认知辩论过程。",
+    "人类与AI的合作将成为新的中心力量，即人机混合体（human-AI centaurs）。",
+    "为了实现这种智能的扩展和管理，需要从单对单的协调转向制度化的协调机制。",
+    "未来的智能社会将像一个城市一样多样化和扩张。",
+    "未来的智能系统不再孤立存在，而是通过数字协议构建一种相互检查与平衡的社会结构。"
+  ],
+  "xihe_relevance": "该研究对于曦和项目的潜在价值在于提供了一种新的智能扩展和管理的思路。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

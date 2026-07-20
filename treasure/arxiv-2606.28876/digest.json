@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2606.28876",
+  "name": "Memory-Managed Long-Context Attention: Bounded Editable Memory with a Hard Lifecycle and Calibrated Sparse Fallback",
+  "source": "arXiv:2606.28876 (cs.CL)",
+  "reprocessed_at": "2026-07-20T14:34:59.337362",
+  "content": "We study memory-managed long-context attention: explicit bounded memory with a learned query-independent writer, lifecycle control, query-aware reading, calibrated sparse fallback, and frozen-LLM generation from raw evidence. Track A is a controlled versioned-variable task where last-mention retrieval is wrong by construction. Its full lifecycle scores 1.000 on all three seeds versus a 0.333 lexical baseline, and generation reaches 300/300 at 146 prompt tokens, compared with 172/300 for full-con",
+  "field": "记忆系统/自反层",
+  "summary": "我们研究了带有学习独立写者的显式边界内存和生命周期控制的长上下文注意力，该模型在Track A中实现了100%的性能，并且在Track B中通过减少证据词数显著提高了性能。",
+  "key_insights": [
+    "提出了一个具有学习独立写者的显式边界内存机制",
+    "引入了带有32段缓存和回退策略的学习两跳选择器，提高了检索效果",
+    "展示了模型在减少证据词数下的高效性和准确性"
+  ],
+  "xihe_relevance": "对于曦和的潜在价值在于其对长上下文注意力的研究可能为自反层、进化引擎等提供新的思路和技术支持。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "simplemem-evolvemem",
+  "name": "SimpleMem — 语义结构化压缩 + EvolveMem自我进化检索循环",
+  "sources": [
+    "arXiv:2601.02553 · aiming-lab/SimpleMem (3.5k⭐)",
+    "深度解析 https://xuqi2024.github.io/2026/06/16/2026-06-16-simplemem-multimodal-lifelong-memory-architecture-deep-dive"
+  ],
+  "discovered": "2026-07-18T08:50:00+08:00",
+  "field": "记忆架构/语义压缩/自我进化检索",
+  "intake_score": 0.90,
+  "last_resonance": "2026-07-18",
+  "four_principles_filter": {
+    "去粗取精": "SimpleMem三阶段流水线:压缩(语义结构化压缩→MemoryEntry)→合成(在线语义合并去重)→检索(意图感知+三视图混合检索)。MemoryEntry有语义/词项/符号三层索引。EvolveMem自我进化循环:Evaluate→Diagnose→Propose→Guard,能自动发现新检索维度",
+    "去伪存真": "arXiv论文2601.02553(v1+v2+v3三大版本), GitHub 3.5k⭐, 50+实验验证。明确标注对抗性查询时需关闭反思循环——有工程智慧",
+    "由此及彼": "与今天的旧宝藏'渐进式压缩四阶段'(score 0.65→0.88)构成完美互补:渐进式压缩定义时间维度的压缩策略(0-24h完整→30d+语义),SimpleMem定义内容维度的压缩方法(语义结构化压缩+三视图索引)。两者叠加=时间×内容=二维压缩矩阵",
+    "由表及里": "深层洞见:'写入时去重'vs'查询时过滤'——SimpleMem选择写入时花代价(LLM压缩+语义合成)以节省查询时token。EvolveMem更激进:检索参数本身可学习——通过Evaluate→Diagnose→Propose→Guard闭环自动发现新的检索维度,无需人工调参"
+  },
+  "xihe_mapping": {
+    "subsystem": "记忆架构/压缩与检索",
+    "enhancement_points": [
+      "曦和当前的四层记忆皮层缺乏显式的语义结构化压缩——目前是完整保存(层级1-2)和手动摘要(层级3-4)",
+      "MemoryEntry的三层索引(语义/词项/符号)可以引入到曦和的记忆管理器中,替代纯embedding检索",
+      "EvolveMem的自我进化检索循环可以直接对齐曦和的evolution_engine:参数优化从'进化代码'扩展到'进化记忆检索配置'",
+      "Lossless Restatement(绝对时间/无代词/自包含)作为每日日志的写入标准:当前每日日志包含相对时间和代词,老化后难以检索"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "近期(1-2周内)",
+    "landing": "1) 在workbuddy记忆写入流程中增加Lossless Restatement改写:将相对时间/代词改写为绝对时间/无代词的自包含事实。2) 在treasure/buffer候选池中引入SimpleMem的语义合成去重策略。3) 将EvolveMem的Evaluate→Diagnose→Propose→Guard循环接入evolution_engine v4的phased_evaluation"
+  },
+  "digest_notes": "2026-07-18 第338号宝藏入库:SimpleMem+EvolveMem。今天最大的发现不是单个宝藏,而是两个宝藏的共振:渐进式压缩四阶段(时间维度)×SimpleMem(内容维度)=完整记忆压缩矩阵。EvolveMem的自我进化检索是曦和evolution_engine的自然延伸——代码能进化、参数能进化,那记忆检索为什么不能？",
+  "resonance_history": [
+    {
+      "date": "2026-07-18",
+      "intake_score": 0.90,
+      "status": "新发现·入库",
+      "note": "与旧宝藏'渐进式压缩四阶段'完美共振。EvolveMem自我进化检索是evolution_engine的天然延伸"
+    }
+  ]
+}

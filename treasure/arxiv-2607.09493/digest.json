@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.09493",
+  "name": "Shared Selective Persistent Memory for Agentic LLM Systems",
+  "source": "arXiv:cs.AI:2607.09493",
+  "reprocessed_at": "2026-07-20T14:26:28.008549",
+  "content": "Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conversation histories is token-inefficient and counterproductive: irrelevant context degrades generation quality. We introduce shared selective persistent memory, an architecture that identifies and retain",
+  "field": "记忆系统/自反层",
+  "summary": "Agentic LLM 系统在多轮工具使用生成代码时面临初始会话问题，引入了共享选择性持久内存架构来保留可重用上下文，以提高协作效率和代码质量。",
+  "key_insights": [
+    "共享选择性持久内存能够识别并保留四类可重用上下文（任务规格、数据模式、工具配置和输出约束），从而减少会话特定的推理痕迹。",
+    "该架构通过在用户之间共享工作空间来实现协作复用，而无需冗余说明。",
+    "零令牌刷新机制使生成程序与运行时数据解耦，允许从历史记录中重用艺术品而不需要重新调用 LLM。",
+    "在三个企业场景下，共享选择性持久内存提高了任务完成率至96%，并成功实现了12/12的公共数据集试验。",
+    "对比全历史持久化策略，该架构显著提升了代码生成的质量和效率。"
+  ],
+  "xihe_relevance": "对曦和（一种自反层）的潜在价值在于提供了一种新的方式来管理上下文信息，这对于提高自反层中的多Agent协作和决策过程至关重要。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

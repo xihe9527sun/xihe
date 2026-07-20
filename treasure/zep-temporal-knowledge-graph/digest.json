@@ -1,0 +1,29 @@
+{
+  "id": "zep-temporal-knowledge-graph",
+  "name": "Zep时间感知+事实版本链：记忆的supersedes字段追踪变更历史",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "discovered": "2026-07-11T10:02:23.676291",
+  "digested": "2026-07-11T10:02:23.676291",
+  "field": "超图记忆核/HebbianGraph",
+  "content": "Zep时间感知+事实版本链：记忆的supersedes字段追踪变更历史",
+  "intake_score": 0.72,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0,
+    "_total": 0.0,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-11T10:02:23.676291",
+    "last_accessed": "2026-07-11T10:02:23.676291",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

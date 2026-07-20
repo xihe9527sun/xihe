@@ -1,0 +1,17 @@
+﻿{
+  "id": "aspire-agentic-skills-discovery-for-robo",
+  "name": "ASPIRE: Agentic /Skills Discovery for Robotics",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:51.412316",
+  "content": "ASPIRE: Agentic /Skills Discovery for Robotics",
+  "field": "多Agent",
+  "summary": "ASPIRE项目专注于通过Agentic平台进行机器人技能发现。",
+  "key_insights": [
+    "ASPIRE关注机器人技能发现领域",
+    "Agentic平台在其中扮演重要角色",
+    "潜在应用于多种AI系统"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

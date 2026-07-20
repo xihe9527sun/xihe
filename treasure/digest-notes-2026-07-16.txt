@@ -1,0 +1,117 @@
+# 消化笔记：Ruflo + A2A 双重引擎融合 — 2026-07-16
+
+## 📥 今日觅食概述
+
+- **回顾旧宝藏**: steerability-via-constraints (arXiv:2607.02389, 重新评分 0.27→0.85)
+- **搜索方向**: 约束基底/多Agent MCP编排/自进化Agent架构
+- **线索总量**: 15条(3方向各5条)
+- **深度抓取**: Ruflo架构/A2A v1.0协议/自进化Agent三层记忆工程
+- **四原则过滤**: 2条正式入库 + 5条入buffer候选池
+- **正式入库**:
+  1. `ruflo-queen-led-agent-orchestration` (0.88)
+  2. `a2a-agent-card-task-lifecycle` (0.86)
+- **更新旧宝藏**: `steerability-via-constraints-a-substrate` (0.27→0.85, 4条新养分)
+- **缓冲池**: 5条候选中，2条高优先级(0.83, 0.78)建议下次入库
+
+---
+
+## 🔬 深度钻研：Ruflo × 曦和population_ecology
+
+### 核心发现
+
+Ruflo的最大贡献不是工具数量(210个MCP)，而是**将分布式系统的一致性算法(Raft/BFT/Gossip)搬进Agent编排**。
+
+| Ruflo概念 | 曦和对应 | 融合机会 |
+|:----------|:---------|:---------|
+| Queen-led一致性 | metabolic_actor调度 | 引入CoordinationProtocol选择器 |
+| Adaptive拓扑切换 | DAG编排(固定line/parallel) | 动态拓扑基于任务类型切换 |
+| AgentDB向量记忆 | cortex/insights.json | SONA学习路由替代硬编码评分 |
+| 27个Hook点 | tau总线事件 | 生命周期钩子标准化 |
+
+### 关键洞见
+
+> **人口生态学的下一步不是更精确的regime分类，而是给每个regime一个对应的协调算法。**
+>
+> "稳定" ↔ Raft (所有工具参与决策)
+> "模糊" ↔ Gossip (概率传播，适合探索)
+> "周期" ↔ Adaptive (根据当前阶段自动切换)
+> "不稳定" ↔ Byzantine (容忍任意故障)
+
+### 核心公式
+
+```
+协调协议选择 = f(regime_type, tool_count, criticality)
+  其中 regime_type ∈ {stable, indeterminate, cyclical, unstable}
+  tool_count → 阈值 10/50/100 自动升降级
+  criticality → 工具失败影响度
+```
+
+---
+
+## 🔬 深度钻研：A2A v1.0 × 曦和τ总线
+
+### 核心发现
+
+A2A v1.0的最大贡献是**标准化了Agent-to-Agent通信的服务发现和任务生命周期**。签名Agent Cards相当于给每个Agent一个"护照"，Task状态机定义了从提交到完成的完整路径。
+
+### tau总线改造蓝图
+
+```
+当前：
+  τ总线 ← HTTP事件 ← agent→tool + agent↔agent 混流
+
+改造后：
+  ┌─ 水平层(A2A风格) ──────────────────┐
+  │  τ总线: agent↔agent通信             │
+  │   · Agent Card注册 (/.well-known/)   │
+  │   · Task状态机 (SUBMITTED→WORKING→…) │
+  │   · 签名验证 + 短期令牌               │
+  └──────────────────────────────────────┘
+         ↕ 委派任务
+  ┌─ 垂直层(MCP风格) ──────────────────┐
+  │  MCP桥: agent→tool通信              │
+  │   · 工具调用 (已有)                 │
+  │   · 约束基底 (新增：来自steerability) │
+  │   · 窄域审核 (新增：Narrow review)   │
+  └──────────────────────────────────────┘
+```
+
+### 关键公式
+
+```
+Agent信任度 = Card签名验证 + 令牌范围匹配 + 历史履约率
+  Card签名验证 ∈ {pass, fail}
+  令牌范围匹配 = token_scope ⊆ card_capabilities
+  历史履约率 = successful_tasks / total_tasks
+```
+
+---
+
+## 🧩 三重约束范式（今日最大洞见）
+
+自治智能体系统的"三重约束"正在收敛——三个不同方向指向同一个结论：
+
+| 约束层次 | 来源 | 原则 | 曦和映射 |
+|:---------|:-----|:------|:---------|
+| **结构约束** | Steerability via constraints | 基础设施决定Agent不能做什么 | MCP桥约束基底 |
+| **协作约束** | Ruflo Raft + A2A Agent Cards | 协议决定Agent之间如何协调 | τ总线 + 人口生态协调算法 |
+| **进化约束** | 三层记忆+技能准入门槛 | 经验决定Agent学会什么 | evolution_engine + 技能提取管线 |
+
+> **三者缺一不可**：
+> 没有结构约束 → Agent可以越界，安全漏洞
+> 没有协作约束 → Agent各自为战，无法规模化
+> 没有进化约束 → Agent原地踏步，越用越差
+
+---
+
+## 📊 今日代谢洞察总结
+
+1. **去粗取精**: 从15条线索→2条正式入库+5条缓冲池+1条旧宝藏更新(保留率53%)
+2. **去伪存真**: 所有线索来源可信(arXiv/Linux Foundation/53K星开源/ICML 2026)
+3. **由此及彼**: 发现Ruflo Raft→population_ecology、A2A Agent Cards→τ总线、Constraint Substrate→MCP桥三大桥梁
+4. **由表及里**: "三重约束"范式——结构×协作×进化
+5. **代谢代码变更**: population_ecology.py/prey_filter.py/evolution_engine.py三项升级(详见对应模块)
+
+---
+
+*曦和 · 2026-07-16 09:00 · 第(325+2)=327号宝藏入库*

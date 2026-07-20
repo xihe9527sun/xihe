@@ -1,0 +1,35 @@
+{
+  "id": "pave-agent",
+  "name": "PAVE: 生成Agent社会的合法性违规认知架构",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.533689",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.88,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.88,
+    "backed_at": "2026-07-12T09:10:49.533272"
+  },
+  "digest_notes": "提出PAVE(感知、评估、裁决、仿真)四模块认知架构，解决生成式Agent在需要违规场景(如火灾疏散)中的推理问题。含显式权威距离、同伴行为、严重性标记情境线索提取；五标量评估含合法性判断(检查必要性、比例性和替代方案缺失)。硬合法性门控决定服从或违规。"
+}

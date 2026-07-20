@@ -1,0 +1,35 @@
+{
+  "id": "the-missing-knowledge-layer-in-cognitive-archite",
+  "name": "The Missing Knowledge Layer in Cognitive Architectures for AI Agents",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.737558",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.84,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.84,
+    "backed_at": "2026-07-18T09:10:30.736965"
+  },
+  "digest_notes": "提出CoALA和JEPA两大认知架构框架都缺少显式知识层。提出四层分解（知识/记忆/智慧/智能），每层有根本不同的持久语义：无限替代、艾宾浩斯衰减、证据门控修订、短暂推理。知识-记忆区分映射Tulving三区分法，Python和Rust实现验证架构分离可行性。"
+}

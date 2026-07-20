@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12204",
+  "name": "Forgetful Attention: A Trainable Support-Vector Memory with Certified Selection and Exact Unlearning",
+  "source": "arXiv:cs.LG:2607.12204",
+  "reprocessed_at": "2026-07-20T14:31:38.501949",
+  "content": "Attention can be viewed as an online learner over context, yet existing test-time memories cannot certify that dropping a token leaves outputs unchanged or delete its influence outright. We introduce Support Vector Attention (SV-Attention), a max-margin memory whose weights are support coefficients of a one-class SVM with fixed box parameter C. Its active-set partition gives reserve tokens exactly zero weight, certifying output-preserving eviction; a reversible incremental solver deletes a token",
+  "field": "记忆系统",
+  "summary": "Forgetful Attention 提出了一种可训练的支持向量注意力机制，能够在测试时间进行精确的删除操作，并且能够通过最大间隔记忆来保持输出不变。",
+  "key_insights": [
+    "Forgetful Attention 引入了支持向量注意力 (SV-Attention)，这是一种基于最大间隔的记忆机制，其权重是固定箱参数 C 的一个一元分类 SVM 的支撑系数。",
+    "该方法能够精确地删除令牌，并且在重新训练时恢复相同的输出状态。实验结果表明，在 fp64 实验中，减小和重拟可以保持一致的分区，并且决策函数之间的偏差约为 10^-9（learned keys 下为 10^-13）。",
+    "尽管存在一些极端情况下的偏差，但总体上，SV-Attention 的性能表现良好。"
+  ],
+  "xihe_relevance": "Forgetful Attention 可能会对曦和的潜在价值在于其精确删除和输出保持能力，这可能有助于在不损害模型性能的情况下进行数据管理。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "agentic-data-environments-an-execution-substrate",
+  "name": "Agentic Data Environments: An Execution Substrate for Safe Reliable Agentic Automation (2607.07397)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.546659",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.7,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.7,
+    "backed_at": "2026-07-11T10:02:23.715126"
+  },
+  "digest_notes": "Autonomous agents promise substantial gains in speed, scale, and labor efficiency, but their failures can impose abrupt and often irreversible costs. The central challenge for agentic automation is to increase the benefits of automation while bounding the consequences of failure. This perspective reframes data systems from passive stores of state into active substrates for safe, reliable execution. Early work on Agentic Data Environments is outlined as the execution substrate that both amplifies"
+}

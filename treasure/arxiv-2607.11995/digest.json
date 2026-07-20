@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.11995",
+  "name": "Fine-Tuned Multi-Agent Framework for Detecting OCEAN in Life Narratives",
+  "source": "arXiv:cs.MA:2607.11995",
+  "reprocessed_at": "2026-07-20T14:31:20.032532",
+  "content": "Cosmic voids are underdense regions that can provide an effective large-scale environment with a de Sitter-like gravitational behavior. Motivated by recent black-hole solutions embedded in void density profiles, we construct a symmetric thin-shell wormhole by gluing two copies of the positive-lapse region of a black hole inside a cosmic void. The surface stresses are obtained from the Darmois--Israel junction conditions, and the corresponding null, weak, dominant, and strong energy-condition com",
+  "field": "多Agent",
+  "summary": "本文通过在宇宙空洞中嵌入黑洞解，构建了一个对称的薄壳虫洞框架，并研究了其中的热力学性质和稳定性。",
+  "key_insights": [
+    "提出了一个连接宇宙空洞结构与标准薄壳虫洞理论的新框架。",
+    "发现广义宇宙查普林科气体支持的配置通常不稳定，而修改后的宇宙查普林科气体支持的虫洞在适当的线性项下可能稳定。",
+    "该框架为识别位于空洞性时空中的黑洞和宇宙学似视界面之间的稳定或不稳定的虫洞提供了基础。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种新的方法来研究宇宙空洞中的物理现象，以及可能的应用在广义相对论和量子引力领域。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

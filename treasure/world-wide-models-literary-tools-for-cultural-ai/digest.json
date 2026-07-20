@@ -1,0 +1,20 @@
+﻿{
+  "id": "world-wide-models-literary-tools-for-cultural-ai",
+  "name": "World Wide Models: Literary Tools for Cultural AI",
+  "source": "arXiv cs.CL 2607.02369",
+  "reprocessed_at": "2026-07-20T14:17:20.921005",
+  "content": "LLMs stage a new form of cultural encounter that is massive, automated, and monolingual. Literary disciplines have always negotiated cultural struggles with comparative reading of literature, narratological and poetic analysis, critical theory, world literature, and translation. These tools have now become indispensable for building culturally literate AI. The essay develops a layered framework toward more nuanced textual models and pluralistic interpretations of AI, emphasizing the natural inte",
+  "field": "多Agent",
+  "summary": "LLMs带来了大规模、自动化且单语种的文化互动，文学学科通过比较阅读、叙事学和诗学分析等方式处理文化冲突。这些工具现在对于构建具有文化素养的AI至关重要。本文提出了一种多层次框架，以促进更细致的文字模型和多元化的AI解读，并强调了文学与AI发展之间的自然联系，将当前的批判理论讨论与结构化单语种主义相连接，并提出了通过宏观结构、流通性和不可译性来处理全球AI文本的新方法。",
+  "key_insights": [
+    "LLMs改变了文化互动的方式，使其成为大规模、自动化且单一语言的语言模型",
+    "文学学科在比较阅读、叙事学和诗学分析中处理文化冲突，这些工具对于构建具有文化素养的AI至关重要",
+    "本文提出了一种多层次框架来促进更细致的文字模型和多元化的解读",
+    "强调了文学与AI发展之间的自然联系，并将批判理论讨论与结构化单语种主义相连接",
+    "提出了通过宏观结构、流通性和不可译性来处理全球AI文本的新方法"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

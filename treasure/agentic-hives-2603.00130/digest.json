@@ -1,0 +1,18 @@
+﻿{
+  "id": "agentic-hives-2603.00130",
+  "name": "Agentic Hives — 自组织多智能体系统的人口动力学与形式化均衡理论",
+  "source": "arXiv:2603.00130",
+  "reprocessed_at": "2026-07-20T13:54:48.966629",
+  "content": "Current multi-agent AI systems operate with a fixed number of agents whose roles are specified at design time. No formal theory governs when agents should be created, destroyed, or re-specialized at runtime-let alone how the population structure responds to changes in resources or objectives.  We introduce the Agentic Hive, a framework in which a variable population of autonomous micro-agents-each equipped with a sandboxed execution environment and access to a language model-undergoes demographi",
+  "field": "自反层",
+  "summary": "Agentic Hives 提出了一种新的框架，其中自主微代理在动态变化的资源和目标下经历人口动力学变化。该理论通过形式化均衡理论证明了七项分析结果，并为自组织多智能体系统的治理提供了工具。",
+  "key_insights": [
+    "引入了Agentic Hive框架，用于研究具有可变规模的自主微代理的人口动态。",
+    "通过Brouwer的固定点定理证明了Hive Equilibrium的存在性。",
+    "提出了Stolper-Samuelson和Rybczynski类似的概念来预测Hive在资源和偏好冲击下的结构变化。"
+  ],
+  "xihe_relevance": "Agentic Hives 的理论框架可以应用于曦和系统中，以理解并控制多智能体系统的动态行为。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

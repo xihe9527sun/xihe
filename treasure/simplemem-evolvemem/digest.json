@@ -1,0 +1,20 @@
+﻿{
+  "id": "simplemem-evolvemem",
+  "name": "SimpleMem + EvolveMem: 语义结构化压缩与自我进化检索闭环",
+  "source": "arXiv:2601.02553 · aiming-lab (3.5k⭐)",
+  "reprocessed_at": "2026-07-20T13:54:25.597042",
+  "content": "To support long-term interaction in complex environments, LLM agents require memory systems that manage historical experiences. Existing approaches either retain full interaction histories via passive context extension, leading to substantial redundancy, or rely on iterative reasoning to filter noise, incurring high token costs. To address this challenge, we introduce SimpleMem, an efficient memory framework based on semantic lossless compression. We propose a three-stage pipeline designed to ma",
+  "field": "记忆系统",
+  "summary": "为了支持复杂环境中的长期交互，LLM代理需要一种管理历史经验的记忆系统。我们提出了一种基于语义无损压缩的简单记忆框架SimpleMem，并设计了一个三阶段流水线来最大化信息密度和令牌利用率。",
+  "key_insights": [
+    "引入了SimpleMem，一种基于语义无损压缩的高效记忆框架。",
+    "通过三个阶段的管道提高了信息密度和令牌利用效率。",
+    "实验结果显示，该方法在准确性和检索效率方面优于基准方法，并且在推理成本上降低了30倍以上。",
+    "实现了性能与效率之间的良好平衡，在LoCoMo数据集上的平均F1增益为26.4%。",
+    "代码可在https://github.com/aiming-lab/SimpleMem获取。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

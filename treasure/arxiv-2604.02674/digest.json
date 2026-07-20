@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2604.02674",
+  "name": "Do Agent Societies Develop Intellectual Elites? The Hidden Power Laws of Collective Cognition in LLM Multi-Agent Systems",
+  "source": "arXiv:2604.02674 (cs.MA/cs.AI)",
+  "reprocessed_at": "2026-07-20T14:34:34.963771",
+  "content": "Large Language Model (LLM) multi-agent systems are increasingly deployed as interacting agent societies, yet scaling these systems often yields diminishing or unstable returns, the causes of which remain poorly understood. We present the first large-scale empirical study of coordination dynamics in LLM-based multi-agent systems, introducing an atomic event-level formulation that reconstructs reasoning as cascades of coordination. Analyzing over 1.5 Million interactions across tasks, topologies, ",
+  "field": "多Agent",
+  "summary": "通过分析大规模语言模型（LLM）多智能体系统的互动数据，研究揭示了三个相互关联的规律：协调过程遵循重尾级联、集中在智力精英中，并随着系统规模的增长产生越来越频繁的极端事件。这些效应可以通过一个单一的结构性机制——整合瓶颈来解释。",
+  "key_insights": [
+    "LLM多智能体系统的协调过程遵循重尾级联分布",
+    "智力精英通过偏好附着集中到协调过程中",
+    "系统规模增长导致极端事件频率增加",
+    "存在一个整合瓶颈，影响了协调和整合之间的平衡",
+    "引入的Deficit-Triggered Integration（DTI）机制能够改善系统的性能"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于通过理解这些规律，可以优化多智能体系统中的协调结构，从而提升其可扩展性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

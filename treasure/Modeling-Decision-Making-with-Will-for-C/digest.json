@@ -1,0 +1,17 @@
+﻿{
+  "id": "Modeling-Decision-Making-with-Will-for-C",
+  "name": "Modeling Decision-Making with Will for Cooperation in Social Dilemmas",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:54.519923",
+  "content": "Modeling Decision-Making with Will for Cooperation in Social Dilemmas",
+  "field": "多Agent",
+  "summary": "该研究探讨了在社会困境中，通过意愿合作来建模决策的方法。",
+  "key_insights": [
+    "提出一种新的方法来建模合作意愿下的决策过程",
+    "分析社会困境中的合作行为与策略",
+    "探索如何利用模型优化社会互动中的合作效率"
+  ],
+  "xihe_relevance": "该研究对自反层和进化引擎方向有潜在价值，特别是通过理解人类的合作机制来改进系统自我调整的能力。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

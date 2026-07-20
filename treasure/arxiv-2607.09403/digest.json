@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09403",
+  "name": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+  "source": "arXiv:cs.AI:2607.09403",
+  "reprocessed_at": "2026-07-20T14:26:13.899068",
+  "content": "Worldbuilding, the construction of coherent fictional worlds, is a foundational task in game design and literary creation. Large Language Models (LLMs) offer new possibilities for automated content generation, but their application to worldbuilding faces three challenges: context explosion that grows linearly with the building process, the tension between creative diversity and content consistency, and the absence of automated quality assurance. This paper presents AutoWorldBuilder, a multi-agen",
+  "field": "多Agent",
+  "summary": "通过五个集成组件，AutoWorldBuilder解决世界构建中的三个挑战：线性增长的上下文爆炸、创意多样性和内容一致性的平衡问题，以及缺乏自动质量保证。该系统在20个多样化的世界构建任务中展示了95.0%的成功率。",
+  "key_insights": [
+    "AutoWorldBuilder通过多层次压缩机制实现了约90%的令牌减少，提高了提案通过率。",
+    "系统支持零代码扩展，并根据不同的温度配置来驱动代理。",
+    "架构模式包括层作为预算压缩、语义局部性调度和分离生成与审查，适用于知识密集型多代理LLM应用。"
+  ],
+  "xihe_relevance": "AutoWorldBuilder的结构可以应用于曦和系统中，提高其在世界构建任务中的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

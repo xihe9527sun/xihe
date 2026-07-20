@@ -1,0 +1,18 @@
+﻿{
+  "id": "brain-inspired-graph-multi-agent-systems-bigmas-",
+  "name": "Brain-Inspired Graph Multi-Agent Systems (BIGMAS) for LLM Reasoning",
+  "source": "曦和每日宝藏觅食 · 2026-07-14",
+  "reprocessed_at": "2026-07-20T14:06:07.420309",
+  "content": "Brain-Inspired Graph Multi-Agent Systems (BIGMAS) for LLM Reasoning",
+  "field": "多Agent",
+  "summary": "BIGMAS is a brain-inspired graph multi-agent system designed to enhance the reasoning capabilities of large language models (LLMs).",
+  "key_insights": [
+    "BIGMAS leverages the principles of neural networks and cognitive architectures to improve LLM performance.",
+    "It integrates multiple agents working together in a graph structure, mimicking human collaboration for complex problem-solving.",
+    "The system aims to enhance understanding and reasoning by simulating brain functions such as memory, self-reflection, and learning from experience."
+  ],
+  "xihe_relevance": "BIGMAS 的概念和技术可能对曦和项目在提升多智能体系统的能力方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

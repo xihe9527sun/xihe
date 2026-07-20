@@ -1,0 +1,19 @@
+﻿{
+  "id": "probmoe-icml2026",
+  "name": "ProbMoE: Differentiable Probabilistic Routing · ICML 2026",
+  "source": "arXiv 2606.01509 · ICML 2026 · UCLA",
+  "reprocessed_at": "2026-07-20T12:52:33.003869",
+  "content": "Mixture-of-Experts (MoE) models scale by activating only a small subset of experts per token. However, training such models remains challenging because top-$k$ routing is discrete and non-differentiable, requiring gradient estimators for expert selection whose design remains a central open problem. We introduce ProbMoE, a probabilistic routing framework that models expert selection as a distribution over cardinality-constrained expert subsets and formulates routing as probabilistic inference in ",
+  "field": "多Agent, 自反层",
+  "summary": "ProbMoE提出了一种新的概率路由框架，解决了Mixture-of-Experts模型在训练中的挑战，并且在基准测试和模型基础结构上取得了优于现有方法的性能。",
+  "key_insights": [
+    "引入了ProbMoE来解决专家选择的非不同步问题",
+    "提出了Exact-$k$和Dynamic-$k$两种动态路由策略",
+    "实现了更好的专家利用和路由多样性",
+    "在多个基准测试中表现优于现有方法",
+    "具有自适应分配专家的能力"
+  ],
+  "xihe_relevance": "进化引擎，元认知",
+  "depth_rating": 8,
+  "ollama_digested": true
+}

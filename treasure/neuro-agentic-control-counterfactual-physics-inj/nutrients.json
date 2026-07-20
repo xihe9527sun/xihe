@@ -1,0 +1,35 @@
+{
+  "id": "neuro-agentic-control-counterfactual-physics-inj",
+  "name": "Neuro-Agentic Control: Counterfactual Physics Injection for Safe Autonomous Defense",
+  "sources": [],
+  "discovered": "2026-07-17T09:10:26.678543",
+  "field": "因果皮层/CF-RAG",
+  "intake_score": 0.74,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-17",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.74,
+    "backed_at": "2026-07-17T09:10:26.677938"
+  },
+  "digest_notes": "神经Agent控制框架用反事实物理注入保障自主防御安全。LLM规划器+时间序列基础模型+反事实物理注入：在执行前模拟LLM提议干预的物理影响，拒绝幻觉或不安全动作。在SWaT数据集上零幻觉执行，比基线高出33.3%的边界拦截率。"
+}

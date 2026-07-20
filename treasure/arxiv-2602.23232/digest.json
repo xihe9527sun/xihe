@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2602.23232",
+  "name": "ReCoN-Ipsundrum: 可检查循环持久循环Agent与意识指示器测试",
+  "source": "arXiv cs.AI",
+  "reprocessed_at": "2026-07-20T14:24:52.233296",
+  "content": "ReCoN-Ipsundrum: 可检查循环持久循环Agent与意识指示器测试",
+  "field": "多Agent",
+  "summary": "ReCoN-Ipsundrum是一个用于测试可检查循环持久循环Agent和意识指示器的工具。",
+  "key_insights": [
+    "ReCoN-Ipsundrum能够检测和分析复杂的循环行为，包括持久性和自我意识。",
+    "该工具有助于理解智能系统中的循环机制及其潜在风险。",
+    "对于曦和项目来说，它可以提供关于复杂系统自反层运作的见解。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

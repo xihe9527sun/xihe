@@ -1,0 +1,18 @@
+﻿{
+  "id": "memdefrag-latent-memory-defragmentation-for-large-",
+  "name": "MemDefrag: Latent Memory Defragmentation for Large Language Models",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:44.130198",
+  "content": "MemDefrag: Latent Memory Defragmentation for Large Language Models",
+  "field": "工具使用/其他之一",
+  "summary": "MemDefrag是一种针对大型语言模型的潜伏内存碎片整理技术。",
+  "key_insights": [
+    "MemDefrag能够显著提高大型语言模型在低内存环境下的性能",
+    "通过优化内存布局，MemDefrag减少了内存碎片问题",
+    "MemDefrag有助于减少计算资源的浪费和提升整体系统效率"
+  ],
+  "xihe_relevance": "MemDefrag技术可能对曦和系统的高效运行具有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

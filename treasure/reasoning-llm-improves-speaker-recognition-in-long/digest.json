@@ -1,0 +1,20 @@
+﻿{
+  "id": "reasoning-llm-improves-speaker-recognition-in-long",
+  "name": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+  "source": "arXiv cs.AI 2607.02504",
+  "reprocessed_at": "2026-07-20T14:15:24.611889",
+  "content": "Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \\textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \\textbf{DramaSR-532K}, a large-scale benchmark comprising 532K annotated dialogue lines across more than 900 unique characters, necessitating the integra",
+  "field": "多Agent",
+  "summary": "通过引入大规模标注对话数据集DramaSR-532K和提出基于大型推理模型的DramaSR-LRM方法，该研究显著提升了长篇电视剧中人物识别的能力。",
+  "key_insights": [
+    "提出了一个包含超过900个独特角色的大规模标注对话数据集DramaSR-532K。",
+    "开发了一种新的基于大型推理模型的DramaSR-LRM方法，能够自主聚合多模态证据进行人物识别。",
+    "实验结果表明，DramaSR-LRM在短语识别任务上显著优于现有基准，特别是在声音生物特征不可靠的情况下。",
+    "研究成果将公开发布，以促进学术交流和应用开发。",
+    "该研究为记忆系统、自反层和其他领域提供了潜在的应用价值。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

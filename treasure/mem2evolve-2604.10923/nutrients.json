@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "name": "Mem²Evolve: 双记忆共演化的自进化智能体框架 (ACL 2026)",
+    "source": "arXiv:2604.10923 · 北航IRIP Lab · ACL 2026",
+    "digested_at": "2026-07-15T09:00:00+08:00",
+    "field": "L7涌现层 · L1超图核 · L4催化层 · 自演化Agent · 双记忆架构",
+    "score": 0.89,
+    "key_discovery": "能力扩展(Asset Memory)与经验蒸馏(Experience Memory)必须在同一演化循环中共演化，像皮亚杰平衡理论的同化与顺应——这是曦和nutrients→工具创建缺失的闭环"
+  },
+  "nutrients": [
+    {
+      "id": "N83",
+      "name": "双记忆共演化 → 曦和nutrients→工具创建反馈环",
+      "insight": "Mem²Evolve最核心的设计：Asset Memory(能做什么=能力边界)和Experience Memory(怎么做更好=战略知识)在同一演化循环中相互喂养。曦和当前的架构分裂：treasure/nutrients.json存储'营养'(≈Experience Memory)，但消化后的洞察极少触发桥接工具创建。缺少从nutrients到新工具的自动反馈。应该建立：nutrient创建→自动扫描→'此nutrient暗示需要新工具？'→触发工具创建。",
+      "target": "bridge/evolution_engine.py · 新增experience_to_capability hook",
+      "status": "pending",
+      "hebbian_credit": 10
+    },
+    {
+      "id": "N84",
+      "name": "δ相似度阈值 → 曦和能力边界检测与主动工具创建",
+      "insight": "Mem²Evolve用δ阈值作为能力边界检测器：子任务与Asset Memory的相似度<δ时触发经验引导的新工具创建。曦和的DAG编排中，每个子任务要么由现有工具处理要么失败。缺少'检测到能力缺口→主动创建新工具'的机制。结合Agentic Hives的出生机制——创建不是一次性事件，而是人口动态的一部分。",
+      "target": "bridge/prey_gene_fusion.py · 能力缺口检测",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N85",
+      "name": "经验引导的工具创建首次成功率提升36.3% → 曦和猎物消化的战略升级",
+      "insight": "Mem²Evolve证明：从Experience Memory检索相关经验来引导工具创建，首次成功率从53.1%→72.4%(+36.3%)，调试迭代从1.01→0.48。这对曦和的prey_digester是直接启示：当前消化流程创建nutrients时是纯分析，没有利用已有nutrients来引导新nutrients的创建质量。应该引入'消化引导消化'——用已有nutrients作为上下文来创建新nutrients。",
+      "target": "bridge/prey_digester.py · 经验引导消化",
+      "status": "pending",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N86",
+      "name": "LLM-as-a-Judge后向演化 → 曦和执行轨迹→经验蒸馏",
+      "insight": "Mem²Evolve的后向演化：成功→抽象为高层策略指南，失败→编码为反模式+失败-修复对。曦和当前缺少这个'每次执行后都蒸馏'的机制。当前的nutrients只在觅食时创建，但日常每次交互的执行轨迹中都可能隐含可迁移的经验。",
+      "target": "曦和自反层 · 执行后蒸馏触发器",
+      "status": "pending",
+      "hebbian_credit": 7
+    },
+    {
+      "id": "N87",
+      "name": "跨任务经验迁移 → 曦和知识图的横向泛化",
+      "insight": "Mem²Evolve实验发现：用GAIA任务的经验初始化其他任务，持续提升性能到同任务初始化的~25%。证明经验可以跨任务迁移。曦和的treasure库目前缺乏'横向泛化'——一个领域的nutrient很少被用于指导另一个领域的策略。应该建立nutrient之间的'迁移矩阵'，标注哪些nutrients可以跨域迁移。",
+      "target": "bridge/foraging.py · 跨域经验映射",
+      "status": "pending",
+      "hebbian_credit": 7
+    }
+  ],
+  "resonance_with_old_treasure": {
+    "fademem-adaptive-forgetting": "FadeMem的衰减机制+N83的反馈环→nutrients也需要衰减。不是所有nutrient都永远有效。当nutrient被'反馈到工具创建'后，它的'活性'增加；长期未被引用的nutrient应该衰减、合并或遗忘。",
+    "self-organizing-llm-agents": "【N84 vs N69】Weak Model Unsuitability(弱模型不适合自组织)的潜在解法：记忆增强→能力边界扩展。Mem²Evolve的δ阈值+Asset Memory设计提供了'弱模型+强记忆≈强模型'的工程路径。",
+    "emergent-coordination-tdmi": "后向演化的成功/失败蒸馏与TDMI量化涌现的协同通道——TDMI测量涌现的质量，后向演化提取涌现后的经验。可以在TDMI检测到涌现后自动触发经验蒸馏。"
+  },
+  "fusion_score": 8.9
+}

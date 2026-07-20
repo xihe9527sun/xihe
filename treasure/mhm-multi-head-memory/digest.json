@@ -1,0 +1,17 @@
+﻿{
+  "id": "mhm-multi-head-memory",
+  "name": "MHM: 多头循环记忆 (分区保留)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:02:25.095308",
+  "content": "MHM: 多头循环记忆 (分区保留)",
+  "field": "自反层",
+  "summary": "MHM 提出了一种多头循环记忆机制，用于分区保留。",
+  "key_insights": [
+    "提出多头循环记忆机制",
+    "专注于分区保留技术",
+    "潜在应用于自反层"
+  ],
+  "xihe_relevance": "自反层",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

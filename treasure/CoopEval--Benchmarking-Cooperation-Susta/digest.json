@@ -1,0 +1,20 @@
+﻿{
+  "id": "CoopEval--Benchmarking-Cooperation-Susta",
+  "name": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:39.645162",
+  "content": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms",
+  "field": "多Agent",
+  "summary": "CoopEval是一种用于评估维持合作机制的基准测试，旨在帮助研究者和实践者更好地理解和优化这些机制。",
+  "key_insights": [
+    "CoopEval提供了一种系统的方法来评估不同的合作机制的有效性。",
+    "该工具有助于识别哪些合作机制在不同环境和条件下是最有效的。",
+    "通过比较和分析各种合作机制，CoopEval能够为未来的合作研究提供有价值的见解。",
+    "对于需要优化资源分配和提高团队协作效率的组织来说，CoopEval具有潜在的应用价值。",
+    "CoopEval可以作为一种重要的工具来促进多Agent系统的研究和发展。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

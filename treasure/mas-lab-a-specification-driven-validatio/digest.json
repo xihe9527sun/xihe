@@ -1,0 +1,17 @@
+﻿{
+  "id": "mas-lab-a-specification-driven-validatio",
+  "name": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Sy",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:59.719863",
+  "content": "MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Sy",
+  "field": "多Agent",
+  "summary": "MAS-Lab提出了一种基于规格验证框架，用于确保可靠多智能体系统的有效性。",
+  "key_insights": [
+    "提出了一个新的验证框架MAS-Lab",
+    "强调了基于规格的方法在多智能体系统中的应用",
+    "旨在提高多智能体系统的可靠性"
+  ],
+  "xihe_relevance": "该内容对自反层和进化引擎方向有一定价值，但与记忆系统、元认知等其他领域关联较小。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09773",
+  "name": "EvoCUA-1.5: Online Reinforcement Learning for Multi-turn Computer-Use Agents",
+  "source": "arXiv:cs.AI:2607.09773",
+  "reprocessed_at": "2026-07-20T14:27:55.949706",
+  "content": "Computer-use agents must solve long-horizon tasks through repeated interaction with partially observable, multimodal desktop environments. Although imitation learning and offline trajectory refinement provide strong priors, static traces cannot cover the causal feedback loop of real computer use: each action changes the screen state, future action space, and recovery options. EvoCUA-1.5 extends self-evolving computer-use agents from offline experience learning to online reinforcement learning, w",
+  "field": "多Agent",
+  "summary": "EvoCUA-1.5通过在线强化学习扩展了自我进化的计算机使用代理，解决了长周期任务中环境变化和反馈循环的问题，并在OSWorld-Verified上取得了63.2%的成功率。",
+  "key_insights": [
+    "EvoCUA-1.5引入了Step-Level Policy Optimization (STEPO)来平衡多步策略优化后的优势。",
+    "DTAC结合了可学习的任务、困难正例重放和可控的不可行任务暴露，以适应多步骤交互。",
+    "通过异步强化学习基础设施和状态老化控制等技术改进了训练稳定性和下游性能。"
+  ],
+  "xihe_relevance": "EvoCUA-1.5可能为曦和提供一种在线强化学习框架，用于扩展多步骤计算机使用代理的规模。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

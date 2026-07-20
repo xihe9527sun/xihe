@@ -1,0 +1,20 @@
+﻿{
+  "id": "from-atomic-actions-to-standard-operating-proced",
+  "name": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents (2607.07321)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:01:21.393171",
+  "content": "Tool utilization enables Large Language Model (LLM) agents to interact with the real world and resolve complex tasks. However, existing agent frameworks predominantly rely on static toolsets composed of granular atomic actions (e.g., basic file I/O or single-turn search), which forces agents to reinvent low-level logic for every recurring workflow, leading to increased reasoning overhead and failure rates. In this study, we propose that agents can achieve self-evolution by synthesizing these ato",
+  "field": "进化引擎/元认知",
+  "summary": "该研究提出了一种通过合成原子动作来形成可重用的标准操作程序（SOPs），以实现自我演化的策略，从而提高大型语言模型（LLM）代理的任务成功率并减少交互轮次。",
+  "key_insights": [
+    "现有代理框架主要依赖于静态工具集，该工具集由粒度的原子动作组成，这迫使代理在每次重复工作流中重新发明低级逻辑，导致推理负担增加和失败率上升。",
+    "通过将这些原子动作合成为可重用的标准操作程序（SOPs），可以实现自我演化。SOPs作为可调用的一阶工具，封装了多步逻辑。",
+    "EvoSOP框架使代理能够从执行轨迹中提取SOPs，并通过系统的生命周期（包括构建、合并、评估和修剪）迭代优化工具集。",
+    "实验结果显示，与基线相比，EvoSOP显著提高了任务的成功率并减少了交互轮次。",
+    "研究还揭示了迭代工具优化促进了可靠且高效的工具使用模式，为自演化的代理开发提供了一条可扩展的途径。"
+  ],
+  "xihe_relevance": "该研究可能对曦和系统在提高大型语言模型（LLM）代理的任务成功率以及减少交互轮次方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.03025",
+  "name": "Raven-Agent: The Belief-to-Trade Layer in Prediction-Market Agents",
+  "source": "arXiv:cs.AI:2607.03025",
+  "reprocessed_at": "2026-07-20T14:19:26.501147",
+  "content": "The use of Large Language Models (LLMs) across diverse areas of human activity-ranging from everyday tasks to safety-critical applications-aims to enhance decision-making effectiveness with minimal human feedback. Concurrently, it seeks to align decisions with human expectations, preferences, and needs while mitigating risks associated with AI non-determinism. However, humans frequently over- or under-rely on AI recommendations, and current AI systems remain poorly calibrated to human expectatio",
+  "field": "自反层/进化引擎",
+  "summary": "本文提出了一种人机协作决策框架HCRA，旨在增强人类的能力并使AI代理与人类偏好和期望保持一致。通过将人类校准模型与利用语言反馈的强化学习代理人结合，HCRA提高了决策效果并提供了高质量建议。",
+  "key_insights": [
+    "提出了一个基于随机博弈的人机协作决策框架HCRA",
+    "HCRA整合了人类校准模型和利用语言反馈的强化学习代理，以提高AI代理与人类期望的一致性",
+    "评估结果显示，HCRA显著提高了决策效果并提供了高质量建议"
+  ],
+  "xihe_relevance": "该研究提出的HCRA框架可能对曦和系统在自反层、进化引擎等方面有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "stock-picker-plus-v1",
+  "name": "Stock Picker Plus · A股多因子智能选股系统",
+  "source": "striferxu/stock-picker-plus · GitHub",
+  "reprocessed_at": "2026-07-20T12:49:48.034589",
+  "content": "Stock Picker Plus · A股多因子智能选股系统",
+  "field": "量化交易, 多Agent, 工具使用",
+  "summary": "Stock Picker Plus 是一个用于A股的智能选股系统，利用多因子模型进行股票选择。",
+  "key_insights": [
+    "基于多因子模型进行投资决策",
+    "适用于量化交易策略开发",
+    "支持自反层学习和优化",
+    "增强记忆系统的数据处理能力",
+    "可能促进进化引擎中的算法迭代"
+  ],
+  "xihe_relevance": "记忆系统, 自反层, 进化引擎, 元认知, 量化交易",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

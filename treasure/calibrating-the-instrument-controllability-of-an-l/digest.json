@@ -1,0 +1,18 @@
+﻿{
+  "id": "calibrating-the-instrument-controllability-of-an-l",
+  "name": "Calibrating the Instrument: Controllability of an LLM-Driven Synthetic Population",
+  "source": "arXiv cs.MA 2607.00910",
+  "reprocessed_at": "2026-07-20T14:14:50.835524",
+  "content": "Generative Synthetic Populations (GSP) -- the convergence of population synthesis, agent-based modelling, and LLM agents -- are attracting growing interest for urban simulation and institutional communication research. Before any GSP instrument is used on a real population, a more basic question must be answered: does it respond to stimuli of known valence in an ordered, replicable, group-structured way? We call this controllability. We ask not whether a synthetic population tracks humans, but w",
+  "field": "多Agent",
+  "summary": "该研究通过一个虚构城市Montelago中的120个合成个人，评估了基于LLM的生成性合成人口（GSP）在回应不同情绪强度的信息时的表现，并发现其内部结构被正确恢复。",
+  "key_insights": [
+    "研究强调了合成人口是否能够按照预期响应刺激的问题的重要性，这比单纯关注其与真实人类的相似度更为关键。",
+    "通过SIVE实验验证了合成人口模型的可靠性，包括对温度变化的稳定性、特定性、敏感性和有序性的评估。",
+    "发现了设计为‘弱正’的信息被错误识别为功能上的‘负’信息的问题，并且通过改进文本解决了这一问题。"
+  ],
+  "xihe_relevance": "该研究结果可能有助于提升合成人口模型在实际应用中的准确性和可靠性，对于曦和项目来说具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

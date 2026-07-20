@@ -1,0 +1,19 @@
+﻿{
+  "id": "what-llm-forecasters-know-but-don-t-say-probing-",
+  "name": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+  "source": "回炉重炼(Phase4)",
+  "reprocessed_at": "2026-07-20T13:04:06.257007",
+  "content": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "该研究探讨了如何通过探查内部表示来提高语言模型的校准性和忠实性，暗示了一种新的评估和改进方法。",
+  "key_insights": [
+    "提出一种新方法以提升LLM的校准性和忠实性",
+    "关注内部表示有助于理解模型行为",
+    "可能对自反层有潜在应用价值",
+    "研究结果可应用于量化交易领域",
+    "为多Agent系统提供理论基础"
+  ],
+  "xihe_relevance": "记忆系统/进化引擎/元认知",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

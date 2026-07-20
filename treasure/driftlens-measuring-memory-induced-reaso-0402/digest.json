@@ -1,0 +1,22 @@
+﻿{
+  "id": "driftlens-measuring-memory-induced-reaso-0402",
+  "name": "DRIFTLENS: Measuring Memory-Induced Reasoning Drift in LLMs",
+  "source": "arXiv 2607.02507",
+  "discovered": "2026-07-20T14:53:24.943213",
+  "digested": "2026-07-20T14:53:24.943218",
+  "field": "待分类",
+  "content": "LLM agents will increasingly act in socially structured settings where role, audience, and relational context can shape what is advantageous or costly to say. We study whether such social structure, without any explicit objective in the prompt, changes what an agent expresses publicly relative to an off-the-record (OTR) channel elicited under the same condition. We introduce a dual-channel debate framework in which agents produce public utterances that enter the shared history alongside OTR resp",
+  "intake_score": 0.8,
+  "score_detail": {
+    "去粗取精": 0.2,
+    "去伪存真": 0.2,
+    "由此及彼": 0.2,
+    "由表及里": 0,
+    "_total": 0.16,
+    "_grade": "差"
+  },
+  "key_insights": [],
+  "xihe_relevance": "",
+  "ollama_digested": false,
+  "depth_rating": 0
+}

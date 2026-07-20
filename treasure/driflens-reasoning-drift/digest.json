@@ -1,0 +1,17 @@
+﻿{
+  "id": "driflens-reasoning-drift",
+  "name": "DRIFTLENS: 记忆导致推理漂移检测",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:02:35.490466",
+  "content": "DRIFTLENS: 记忆导致推理漂移检测",
+  "field": "机器学习",
+  "summary": "该研究提出了一种检测记忆导致推理漂移的方法，旨在改进机器学习模型的性能。",
+  "key_insights": [
+    "提出了DRIFTLENS方法以检测记忆导致的推理漂移",
+    "目标是提升机器学习模型在长期任务中的表现",
+    "涉及人工智能和机器学习领域"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

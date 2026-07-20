@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.02983",
+  "name": "Reinforcement Learning for Evidence-Seeking Diagnostic Reasoning with Large Language Models",
+  "source": "arXiv:cs.AI:2607.02983",
+  "reprocessed_at": "2026-07-20T14:20:03.482611",
+  "content": "Recent reasoning-centric Large Language Models (LLMs) have made significant strides, yet they predominantly operate on a passive-inference pattern that assumes complete information. In contrast, real-world clinical intelligence is inherently an iterative investigative process requiring strategic evidence acquisition. To bridge this gap, we formalize medical diagnosis as an Iterative Evidence-Seeking Task. We leverage Reinforcement Learning with Verifiable Rewards (RLVR) to elicit intrinsic reaso",
+  "field": "多Agent",
+  "summary": "该研究通过强化学习结合可验证奖励机制，使大型语言模型能够进行主动推理的医疗诊断，并提供生物上合理的临床反馈。",
+  "key_insights": [
+    "提出了一个迭代证据寻求任务来模拟真实的临床决策过程。",
+    "使用了可验证奖励机制以确保诊断精确性和检查的一致性。",
+    "引入了一种新的临床模拟器RAGES，用于生成真实且知识基础的后续证据。",
+    "实验结果表明该框架能够使大型语言模型从被动响应转变为自主助手。",
+    "研究证明了该方法在性能上与更大和更注重推理的基准相当，并优于传统的大型语言模型。"
+  ],
+  "xihe_relevance": "该研究对于曦和系统的潜在价值在于提供了一种新的机制来增强大型语言模型的临床诊断能力，这对于提高医疗决策的质量具有重要意义。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

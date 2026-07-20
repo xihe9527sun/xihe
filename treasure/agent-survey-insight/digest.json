@@ -1,0 +1,17 @@
+﻿{
+  "id": "agent-survey-insight",
+  "name": "AI Agent 2024-2026全景综述 · 121篇论文五维度分析",
+  "source": "ai-insight.org · 2026-05-11",
+  "reprocessed_at": "2026-07-20T12:51:48.919664",
+  "content": "AI Agent 2024-2026全景综述 · 121篇论文五维度分析",
+  "field": "多Agent",
+  "summary": "对2024-2026年AI Agent领域的121篇论文进行了五维度的综述分析。",
+  "key_insights": [
+    "论文覆盖广泛，涵盖多个研究方向",
+    "关注AI Agent在不同场景的应用",
+    "涉及技术原理和实现方法"
+  ],
+  "xihe_relevance": "自反层, 进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

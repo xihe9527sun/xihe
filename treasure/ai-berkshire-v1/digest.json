@@ -1,0 +1,19 @@
+﻿{
+  "id": "ai-berkshire-v1",
+  "name": "AI Berkshire · 多Agent价值投资框架",
+  "source": "xbtlin/ai-berkshire · GitHub 2.4K Stars",
+  "reprocessed_at": "2026-07-20T12:49:43.048971",
+  "content": "AI Berkshire · 多Agent价值投资框架",
+  "field": "多Agent/进化引擎",
+  "summary": "该文章介绍了AI Berkshire的多Agent价值投资框架，旨在通过多个智能体协同工作来优化投资决策。",
+  "key_insights": [
+    "引入多Agent系统提升投资效率",
+    "利用不同智能体的优势互补",
+    "实现动态调整和自我学习机制",
+    "提高投资组合的风险管理能力",
+    "促进跨领域知识的融合与应用"
+  ],
+  "xihe_relevance": "该内容对进化引擎方向有潜在价值，尤其是多Agent系统在复杂环境中的适应性和优化。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

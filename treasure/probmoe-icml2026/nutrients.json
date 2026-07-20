@@ -1,0 +1,38 @@
+{
+  "treasure_id": "probmoe-icml2026",
+  "extracted_at": "2026-07-04T08:50:00+08:00",
+  "nutrients": [
+    {
+      "id": "N85-probmoe-framework",
+      "priority": "P0",
+      "name": "概率推断替代概率采样 — 代谢路由的数学框架升级",
+      "target": "bridge/beta_ts_router.py",
+      "status": "pending",
+      "note": "当前曦和TS路由是采样式启发。ProbMoE提供精确概率推断框架：条件化子集分布 → SIMPLE精确归一化 → 解析边际梯度。曦和不需要完全复制（场景不同），但可以抽取SIMPLE思路优化路径选择的后验更新"
+    },
+    {
+      "id": "N86-simple-estimator",
+      "priority": "P0",
+      "name": "SIMPLE动态规划 → 曦和代谢路由的配分函数计算",
+      "target": "bridge/metabolic_actor.py",
+      "status": "pending",
+      "note": "SIMPLE在O(Nk)内精确计算组合配分函数Z_k。曦和代谢路由当前对N条路径做Top-K采样后独立更新，没有考虑路径之间的竞争关系。引入简化版SIMPLE可以让各路径的权重更新感知到其他路径的强度——路径A获得高信用时自动抑制路径B"
+    },
+    {
+      "id": "N87-dynamic-k",
+      "priority": "P1",
+      "name": "动态激活专家数 — 自适应代谢计算",
+      "target": "bridge/bridge-daemon.py",
+      "status": "pending",
+      "note": "ProbMoE Dynamic-k在[k_min, k_max]范围内自适应调整激活数。曦和也可以让代谢路由的每次激活路径数动态变化——负载高时减少激活路径，有新事件时增加激活路径"
+    },
+    {
+      "id": "N88-before-after-alignment",
+      "priority": "P1",
+      "name": "前后向对齐 — 前向采样反向梯度的一致性保障",
+      "target": "bridge/metabolic_actor.py",
+      "status": "pending",
+      "note": "ProbMoE的前后向对齐（前向用采样，反向用解析边际）是其稳定训练的关键。曦和代谢Actor的TS路由目前前向后向一致（都是采样），但如果未来引入可微路径，就需要这种前后向对齐机制"
+    }
+  ]
+}

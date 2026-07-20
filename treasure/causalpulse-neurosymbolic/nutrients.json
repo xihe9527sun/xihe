@@ -1,0 +1,71 @@
+{
+  "id": "causalpulse-neurosymbolic",
+  "name": "CausalPulse: 工业级神经符号多Agent副驾驶 (AAAI-MAKE 2026)",
+  "source": "Shyalika et al., Kno.e.sis Center, Wright State Univ. arXiv:2603.29755, AAAI-MAKE 2026",
+  "discovered": "2026-07-11T08:50:00+08:00",
+  "digested": "2026-07-11T09:30:00+08:00",
+  "field": "L4催化层 / L2代谢路由 / L3酶网络",
+  "intake_score": 0.85,
+  "score_detail": {
+    "relevance_xihe": 0.88,
+    "novelty": 0.82,
+    "actionable": 0.85,
+    "cross_domain": 0.78,
+    "depth": 0.84,
+    "timeliness": 0.92
+  },
+  "nutrients": [
+    {
+      "id": "n1-cpa-architecture",
+      "type": "architecture",
+      "name": "Client Process Agent (CPA) 主编排器设计",
+      "description": "CPA是整个多Agent系统的中心枢纽：输入规范化→下游Agent分发(MCP)→结果后处理→状态更新。关键是Stateful的——维护每个会话的状态，支持跳过已完成的步骤。",
+      "actionable_in_xihe": "→ Xihe的bridge-daemon本质上是曦和的CPA！但bridge-daemon目前是七步顺序执行，缺少CausalPulse的'已完成阶段跳过'机制。可在bridge-daemon增加session_state缓存，避免重复处理。",
+      "connection": "bridge-daemon七步闭环"
+    },
+    {
+      "id": "n2-neurosymbolic-causal-discovery",
+      "type": "algorithm",
+      "name": "神经符号因果发现：数据驱动+领域规则约束",
+      "description": "使用PC/GES算法进行因果结构学习，同时用专家定义的领域规则约束结构（控制参数→观察参数、禁止时间逆序边）。神经提供发现能力，符号提供安全保障。",
+      "actionable_in_xihe": "→ Xihe的酶网络可以新增E18 CausalDiscovery酶，实现类似的双路径因果发现。领域规则约束对应Xihe的'七锚点'——锚点就是天条级别的领域规则。",
+      "connection": "酶网络 + 七锚点宪章"
+    },
+    {
+      "id": "n3-mcp-a2a-langgraph-stack",
+      "type": "protocol",
+      "name": "MCP + A2A + LangGraph协议栈分层实践",
+      "description": "MCP标准化工具暴露(Utility层), A2A用于Agent间点对点通信(Agent层内部), LangGraph负责有状态的工作流编排。按需分层，每个协议在自己最合适的层级工作。",
+      "actionable_in_xihe": "→ 曦和已有MCP连接工具集，但缺少明确的A2A层。可在bridge/增加a2a_bridge.py，让Xihe的子系统（因果皮层/酶网络/代谢路由）通过A2A风格协议通信，而非当前的事件总线单通道。",
+      "connection": "bridge/event_bus.py + MCP工具集"
+    },
+    {
+      "id": "n4-dynamic-task-decomposition",
+      "type": "methodology",
+      "name": "动态任务分解：LLM规划 + 确定性执行",
+      "description": "LangGraph Planner用LLM做动态任务分解（仅规划阶段调用LLM），Executor严格按计划确定性执行。避免了ReAct模式每步调用LLM的高延迟。",
+      "actionable_in_xihe": "→ Xihe当前所有步骤都依赖Agent自身推理。可引入'规划-执行分离'：bridge-daemon先做一次性规划（LLM），然后按计划确定性执行（非LLM）。降低token消耗30-50%。",
+      "connection": "bridge-daemon + Token优化"
+    },
+    {
+      "id": "n5-production-evidence",
+      "type": "evidence",
+      "name": "真实Bosch产线验证数据",
+      "description": "98%成功率, 50-60s端到端延迟, R²=0.97近线性扩展性。验证了神经符号+标准化协议可以在真实工业场景跑通。",
+      "actionable_in_xihe": "→ 这是最接近曦和愿景的生产级参考实现。CausalPulse=神经符号+多Agent+因果推理+标准化协议，曦和的架构方向完全一致。",
+      "connection": "验证方法论"
+    }
+  ],
+  "hebbian_credit": 8,
+  "tags": ["neurosymbolic", "multi-agent", "causal", "MCP", "A2A", "industrial", "orchestration", "Bosch"],
+  "layer": "L4",
+  "origin": "daily_foraging",
+  "status": "digested",
+  "memcell": {
+    "born": "2026-07-11T08:50:00+08:00",
+    "last_accessed": "2026-07-11T09:30:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08284",
+  "name": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench (2607.08284)",
+  "source": "arXiv:cs.AI:2607.08284",
+  "reprocessed_at": "2026-07-20T14:24:20.567094",
+  "content": "Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along",
+  "field": "自反层",
+  "summary": "该研究提出了一种名为PredicateLongBench的新基准测试，旨在评估大规模语言模型在处理长上下文任务时的表现，并探索了多种难度轴。",
+  "key_insights": [
+    "现有长上下文评估大多只衡量平均情况下的表现，缺乏对不同难度轴的系统性探查。",
+    "研究引入PredicateLongBench作为压力测试工具，通过让模型识别满足给定谓词/约束条件的最长连续子序列来评估其能力。",
+    "该基准测试揭示了当前长上下文处理能力的局限性，并且任务虽然具有挑战性但概念上简单，不需要依赖LLM生成或评判。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值：提供了一种新的方法来评估大规模语言模型在复杂环境下的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

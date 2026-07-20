@@ -1,0 +1,17 @@
+﻿{
+  "id": "enzyme-import-fix",
+  "name": "酶催化引擎修复日记 · Python连字符陷阱",
+  "source": "曦和自诊断 · respiration_loop.py:501",
+  "reprocessed_at": "2026-07-20T12:50:32.023604",
+  "content": "酶催化引擎修复日记 · Python连字符陷阱",
+  "field": "工具使用",
+  "summary": "本文探讨了Python编程中连字符的陷阱，帮助读者避免常见错误。",
+  "key_insights": [
+    "连字符在Python中用于特殊用途而非连接词组",
+    "理解连字符使用有助于提高代码质量",
+    "了解字符串和列表中的连字符区别"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

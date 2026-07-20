@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08032",
+  "name": "What to Keep, What to Forget: A Rate-Distortion View of Memory Compaction in LLMs and Agents (2607.08032)",
+  "source": "arXiv:cs.LG:2607.08032",
+  "reprocessed_at": "2026-07-20T14:24:29.068108",
+  "content": "Large language models, and the agents built on them, spend an ever-growing share of their compute and memory on remembering: caching attention keys and values, carrying long prompts, maintaining recurrent state, and storing what happened in previous turns and sessions. Because none of this memory is free, four largely separate research communities have each learned to compact it. They evict or quantize the KV cache, prune or distill prompts, bound architectural state, and consolidate agent memor",
+  "field": "记忆系统/自反层",
+  "summary": "Large language models and their agents spend a growing share of compute and memory on remembering, leading to the need for compacting various types of memory. This paper argues that these efforts are instances of a rate-distortion decision about what context-derived information to retain versus discard under resource constraints.",
+  "key_insights": [
+    "The four largely separate research communities have each learned to compact different types of memory used by large language models and agents, such as evicting or quantizing the KV cache, pruning or distilling prompts, bounding architectural state, and consolidating agent memory.",
+    "These methods can be unified under a single compaction objective and a layer-agnostic lower bound, providing a taxonomy for classifying methods from across the stack.",
+    "The paper proposes a benchmark proposal and design principles based on observations of these compacting mechanisms, aiming to improve their efficiency and effectiveness."
+  ],
+  "xihe_relevance": "这些研究可能对曦和的潜在价值在于提供了一种统一的方法来管理语言模型和代理的记忆，这有助于提高它们在多层架构中的性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

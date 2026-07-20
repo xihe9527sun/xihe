@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "treasure_id": "steerability-via-constraints-a-substrate",
+    "updated": "2026-07-16T09:00:00+08:00",
+    "revision": 2,
+    "previous_score": 0.27,
+    "new_score": 0.85,
+    "reason": "重新评估：首次评分时仅有metadata，未深入阅读原文。今日深度抓取后发现约束基底范式与曦和MCP桥架构高度相关，90.9%后门检测召回率实证价值极高。"
+  },
+  "nutrients": [
+    {
+      "id": "N1",
+      "name": "约束基底(Substrate)替代提示工程",
+      "insight": "与其花token让Agent自我约束(agentic scaffolding)，不如从基础设施层决定Agent不能做什么。访问控制+网络策略+工具强制编码规范 = 确定性约束，模型行为无关。",
+      "type": "architectural_principle",
+      "status": "pending",
+      "hebbian_credit": 9,
+      "target": "bridge/mcp_bridge/security_layer",
+      "resonance": "曦和MCP桥目前依赖prompt层面的安全指导，缺少Agent无法绕过的确定性约束层。提议：在MCP桥新增 constraint_substrate 模块，提供三合一约束（文件访问白名单/网络出站策略/工具调用合约）"
+    },
+    {
+      "id": "N2",
+      "name": "窄域审核协议(Narrow per-function review)",
+      "insight": "不需要让模型一次审查整个代码库。结构化约束将审核空间缩小为每个函数的独立检查(自洽性/输入输出契约/副作用)，小型模型即可达到90.9%召回率。",
+      "type": "architectural_pattern",
+      "status": "pending",
+      "hebbian_credit": 8,
+      "target": "bridge/metabolic_actor.py",
+      "resonance": "曦和代谢路由目前对所有treasure进行全局扫描。可改为：每个treasure先做narrow per-treasure digest（窄域消化），再聚合。类似于函数级别审核 vs 全库审核。"
+    },
+    {
+      "id": "N3",
+      "name": "工具强制编码规范(Tooling-enforced conventions)",
+      "insight": "Linter/类型检查/运行时契约(beartype)等工具使不符合规范的代码无法构建。Reviewer不需要读超过代码形状即可信任。约束与验证者独立贡献——基板+工具叠加增益。",
+      "type": "design_pattern",
+      "status": "pending",
+      "hebbian_credit": 7,
+      "target": "bridge/population_ecology.py",
+      "resonance": "工具人口生态学可引入 tool_schema_contract 概念——每个工具注册时必须有输入/输出模式契约(类似beartype)，不符合契约的工具调用自动失败。"
+    },
+    {
+      "id": "N4",
+      "name": "投影原则(Projection Principle)的认知折叠",
+      "insight": "Agent不需要完整代码库上下文。按需投影(projection)嵌入函数签名+Docstring+模块级不变式即可。核心思想：不把全部上下文喂给Agent，只喂它完成任务所需的最小投影。",
+      "type": "cognitive_principle",
+      "status": "active",
+      "hebbian_credit": 8,
+      "target": "bridge/foraging.py",
+      "resonance": "觅食系统当前对所有候选猎物做全量领域词扫描。可改为：先做'投影'(只提取标题+摘要+标签)，决定是否深度抓取后再加载全文。显著减少token开销。"
+    }
+  ]
+}

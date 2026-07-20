@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.08403",
+  "name": "Game Theory Driven Multi-Agent Framework Mitigates Language Model Hallucination (2607.08403)",
+  "source": "arXiv:cs.AI:2607.08403",
+  "reprocessed_at": "2026-07-20T14:23:55.738030",
+  "content": "The application of lightweight Large Language Models in rule-based scientific domains remains severely limited by their tendency to mimic linguistic patterns rather than reproduce axiomatic reasoning, causing frequent hallucinations. Here, we show that G-Frame, an adaptive multi-agent framework integrating Bayesian and team game principles, establishes an automated closed-loop for high-quality data synthesis and model training. By forcing the internalization of domain constraints through structu",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于博弈论的多代理框架G-Frame，用于减轻语言模型的幻觉问题，并展示了其在科学领域的应用效果。",
+  "key_insights": [
+    "提出了一个结合贝叶斯和团队游戏原则的自适应多代理框架G-Frame",
+    "通过结构化推理内化领域约束，生成了363,045条思考链和199,589对问题与答案",
+    "训练出的7B模型OmniChem在定制基准上与GPT 4o mini性能相当，并减少了79.46%的幻觉",
+    "展示了其在分子设计和合成规划方面的先进能力",
+    "为解决科学领域中的推理缺陷提供了一种可扩展的方法"
+  ],
+  "xihe_relevance": "该研究可能对曦和中关于自适应多代理框架的理解和应用具有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

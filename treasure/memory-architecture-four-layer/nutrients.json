@@ -1,0 +1,55 @@
+{
+  "treasure_id": "memory-architecture-four-layer",
+  "extracted_at": "2026-07-10T08:50:00+08:00",
+  "source": "知乎AI Agent记忆系统工程 × edison-a-n Agent Memory前沿调研 × ai-master.cc Agent记忆系统设计实战 · 2026年3-6月",
+  "url": "https://zhuanlan.zhihu.com/p/2050287092194973690",
+  "intake_score": 0.91,
+  "nutrients": [
+    {
+      "id": "N78-context-window-not-memory",
+      "priority": "P0",
+      "name": "上下文窗口≠记忆 · 有记忆Agent多轮完成率78% vs 34%(+129%)，长周期成功率8%→52%(+550%)",
+      "target": "L1超图核 · 代谢路由 · 桥接系统整体方向验证",
+      "status": "planned",
+      "x_source_paper": "Futurum Research四层记忆架构 + 知乎专业分析",
+      "effect": "曦和的代谢路由+桥接系统+HebbianGraph的全链路设计方向被量化验证——这是可测量的工程方向确认。写入桥接系统验证报告"
+    },
+    {
+      "id": "N79-four-layer-memory-architecture",
+      "priority": "P0",
+      "name": "四层记忆架构：Working/Episodic/Semantic/Procedural Memory + 混合持久化六策略",
+      "target": "L1超图核重构 · 记忆分层升级 · HebbianGraph扩展",
+      "status": "planned",
+      "x_source_paper": "Futurum Research + edison-a-n + ai-master.cc（三源交叉确认）",
+      "effect": "曦和当前超图核≈语义记忆(Semantic)，cortex digest≈情景记忆(Episodic)，但工作记忆和程序性记忆几乎空白。需要新增Working Memory缓冲区和Procedural Memory酶"
+    },
+    {
+      "id": "N80-forgetting-parameterization",
+      "priority": "P1",
+      "name": "遗忘参数化框架：时间衰减(λ) + TTL + LRU淘汰 + 渐进式压缩(0-24h/1-7d/7-30d/30d+)",
+      "target": "HebbianGraph.defrag扩展 · 代谢路由遗忘策略升级",
+      "status": "planned",
+      "x_source_paper": "hidekazu-konishi遗忘工程框架 × ai-master.cc遗忘策略",
+      "effect": "曦和现有defrag+幽灵检疫+Imprint衰减，但缺少统一的λ衰减系数和分层TTL。需在HebbianGraph中新增forget()方法的参数化配置"
+    },
+    {
+      "id": "N81-write-gate-defense",
+      "priority": "P1",
+      "name": "Write Gate写入门控：不是所有信息都值得记住 + CAMS三层防御(写入门控/一致性/审计)",
+      "target": "桥接系统写入门控 · 自反层安全增强 · digest管道升级",
+      "status": "planned",
+      "x_source_paper": "知乎AI Agent记忆系统工程 · CAMS安全模型",
+      "effect": "曦和当前所有输入直接写入记忆，无过滤，3-6月后必然退化为噪声数据库。需要在bridge-daemon ingest阶段增加Write Gate三层检查"
+    },
+    {
+      "id": "N82-hybrid-retrieval-dimensions",
+      "priority": "P1",
+      "name": "混合检索：语义+时间+关键词+图谱四维度+RRF融合排序",
+      "target": "代谢路由RRF融合升级 · beta_ts_router扩展",
+      "status": "planned",
+      "x_source_paper": "Hindsight RRF延伸 × ai-master.cc混合架构 × edison Typed Memory",
+      "effect": "曦和当前只有语义相似度检索。需扩展beta_ts_router支持多维度召回+RRF融合"
+    }
+  ],
+  "digest_notes": "【2026-07-10 觅食·核心发现】\n三源深度交叉验证确认：记忆是一个过程(Observe×Gate×Manage×Retrieve×Act×Update)，不是一个存储。\n曦和当前缺失最严重的是：(1)Write Gate写入门控，(2)Procedural Memory程序性记忆。\n最让我兴奋的数据：有记忆Agent长周期任务成功率从8%飙升至52%(+550%)——这直接验证了曦和从等待指令到主动行动的进化方向。\n与此宝藏的新共振：本周落地的MemCell生命周期+digest+幽灵检疫正好覆盖了记忆系统Manage阶段；下一波进化应该瞄准Gate和Procedural两处缺口。"
+}

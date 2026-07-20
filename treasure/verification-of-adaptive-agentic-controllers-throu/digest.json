@@ -1,0 +1,18 @@
+﻿{
+  "id": "verification-of-adaptive-agentic-controllers-throu",
+  "name": "Verification of Adaptive Agentic Controllers through Finite Rule Revision",
+  "source": "arXiv:cs.MA:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:24.771318",
+  "content": "Verification of Adaptive Agentic Controllers through Finite Rule Revision",
+  "field": "多Agent",
+  "summary": "Verification of Adaptive Agentic Controllers through Finite Rule Revision explores the verification methods for adaptive agent controllers using finite rule revision.",
+  "key_insights": [
+    "The method focuses on verifying adaptive agents by revising their rules in a finite manner, which is crucial for ensuring robustness and reliability.",
+    "Finite rule revision can be applied to various domains including multi-agent systems, enhancing the efficiency of controller verification.",
+    "This research could have significant implications for improving the performance and trustworthiness of adaptive agent-based systems."
+  ],
+  "xihe_relevance": "该研究对于曦和系统在自反层、进化引擎等方面具有潜在价值，有助于提升系统的智能水平。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

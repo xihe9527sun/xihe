@@ -1,0 +1,41 @@
+{
+  "treasure_id": "when-should-llms-search",
+  "name": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:30:41+08:00",
+  "digested": "2026-07-08T19:30:41+08:00",
+  "field": "搜索优化、路由决策",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "假想监督机制",
+      "type": "理论发现",
+      "value": 9,
+      "description": "通过构建假想监督来指导模型决策。",
+      "relation_to_xihe": "该机制可以用来优化曦和的路由策略，提高搜索效率。",
+      "id": "N-WHE1"
+    },
+    {
+      "name": "宏观F1改进",
+      "type": "工程发现",
+      "value": 7,
+      "description": "显著的性能提升表明搜索决策的重要性。",
+      "relation_to_xihe": "此发现支持在曦和架构中采用类似的性能评估方法，以优化路由策略。",
+      "id": "N-WHE2"
+    },
+    {
+      "name": "事件总线τ优化",
+      "type": "工程方法",
+      "value": 8,
+      "description": "将搜索决策机制融入事件总线。",
+      "relation_to_xihe": "该方法可以增强曦和在处理复杂查询时的决策能力。",
+      "id": "N-WHE3"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "对于曦和而言，这一发现可促进其记忆网络中的事件总线τ（τ总线）优化，以及预测误差驱动的因果边架构发展。此外，在处理复杂查询时，可通过启发式的路由决策机制来提高搜索效率与准确性。"
+}

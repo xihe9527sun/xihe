@@ -1,0 +1,27 @@
+﻿{
+  "id": "MMAO--A-Metabolic-Multi-Agent-Optimizer-",
+  "name": "MMAO: A Metabolic Multi-Agent Optimizer with Endogenous Resource Allocation",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:57:51.544706",
+  "content": "MMAO: A Metabolic Multi-Agent Optimizer with Endogenous Resource Allocation",
+  "field": "多Agent、记忆系统、自反层、进化引擎、元认知",
+  "summary": "MMAO是一种代谢式多代理优化器，其特点在于资源分配具有内在性。",
+  "key_insights": [
+    "提出了一种新的多代理优化框架MMAO",
+    "引入了内生资源分配机制以提高效率",
+    "为自反层和进化引擎提供潜在的应用场景",
+    "有助于元认知的提升与量化交易策略优化",
+    "在多Agent系统中具有应用前景"
+  ],
+  "xihe_relevance": [
+    "记忆系统：作为新的智能体模型，可以被纳入到系统的知识库中进行学习和更新",
+    "自反层：MMAO框架本身就是一个自我优化的系统，可用于研究AI的自反性质",
+    "进化引擎：MMAO中的内生资源分配机制可应用于生物进化算法中",
+    "元认知：通过分析MMAO的工作原理，可以进一步提升系统的自我意识和学习能力",
+    "量化交易：MMAO框架可能被用于开发新的智能交易策略",
+    "多Agent：MMAO为多代理系统提供了优化的新思路",
+    "工具使用：作为一种新型的智能体模型，MMAO可作为一种新工具供研究者使用"
+  ],
+  "depth_rating": 7,
+  "ollama_digested": true
+}

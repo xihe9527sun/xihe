@@ -1,0 +1,18 @@
+﻿{
+  "id": "metabolic-closed-loop-metaheuristics-stability-ana",
+  "name": "Metabolic Closed-Loop Metaheuristics Stability Analysis [2607.01551]",
+  "source": "arXiv cs.MA",
+  "reprocessed_at": "2026-07-20T14:10:21.595819",
+  "content": "arxiv:2607.01551 Metabolic Closed-Loop Metaheuristics Stability Analysis [2607.01551]",
+  "field": "多Agent",
+  "summary": "This paper analyzes the stability of metabolic closed-loop metaheuristics, providing insights into their performance and potential applications in optimization problems.",
+  "key_insights": [
+    "Metabolic closed-loop metaheuristics can be used to improve the stability and efficiency of optimization algorithms.",
+    "The analysis suggests that these methods may have significant potential for real-world applications such as resource allocation and decision-making processes.",
+    "Understanding their stability properties is crucial for developing more robust and reliable optimization solutions."
+  ],
+  "xihe_relevance": "Metabolic closed-loop metaheuristics could potentially enhance the performance of existing systems, particularly in areas requiring adaptive and efficient problem-solving strategies.",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "adoption-and-ecosystem-health-a-longitud",
+  "name": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agen",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:57:43.077372",
+  "content": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agen",
+  "field": "多Agent",
+  "summary": "This study conducts a longitudinal analysis of the adoption and health of open-source multi-agent systems, aiming to provide insights into their long-term viability and ecosystem development.",
+  "key_insights": [
+    "Open-source multi-agent systems show varying levels of adoption across different communities and industries.",
+    "The health of an ecosystem is influenced by factors such as community engagement, code quality, and the diversity of use cases.",
+    "Understanding these dynamics can help in predicting future trends and improving system design for better scalability and sustainability."
+  ],
+  "xihe_relevance": "该研究可能对曦和系统在记忆系统、自反层、进化引擎等方面有潜在价值，有助于提升系统的适应性和可持续性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

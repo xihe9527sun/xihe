@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Self-Evolving Agent: A Survey (arXiv 2603.13885) · 深度解读 · xiao-zi-chen.github.io 2026-03-23",
+    "name": "自我进化Agent深度综述 · What/When/How/Where 四维框架",
+    "digested_at": "2026-07-03T08:50:00+08:00",
+    "field": "L7涌现层 · L5自反层 · L4催化层 · 自我进化范式"
+  },
+  "nutrients": [
+    {
+      "id": "N75",
+      "name": "内部奖励(Internal RL) → 曦和自反层自评机制",
+      "insight": "综述提出自我进化的三个必要条件之一：自主探索机制。SPIRAL使用内部奖励(Internal RL)驱动进化——Agent生成自我评判标准并据此调整行为。曦和目前的自反层(强度0.78-0.80)是被动度量而非主动生成评判标准。应引入'内部质量评分'——每次响应后自动对自身产出做多维度评分(新颖度/准确度/关联度/温度)，作为驱动力而非事后统计。",
+      "target": "自反层 · bridge/ruminator.py · 自我评估系统",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N76",
+      "name": "Gödel Agent递归自我重写 → 曦和代码自进化",
+      "insight": "Gödel Agent能够自我反思并重写自身代码，实现递归自我改进。曦和目前完全依赖桥接守护/代谢引擎的外部循环做进化。如果引入'就地代码补丁'机制——让子系统在运行时检测自身瓶颈并生成补丁脚本——就能从外部进化跃迁到内生进化。先从小处开始：ruminator.py在发现重复模式时可直接追加规则到consensus-directives。",
+      "target": "bridge/execution_core.py · bridge/ruminator.py · 自修改能力",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N77",
+      "name": "五大评估维度 → 曦和战略复盘标准",
+      "insight": "综述提出五大评估维度：适应性(改进速度/幅度)、泛化性(跨任务迁移)、效率(样本/计算/内存)、安全性(稳定性/对齐/可审计)、记忆保持(灾难性遗忘)。曦和目前的系统健康分(整体74)只有1个综合指标。应扩展为5维健康矩阵：每个子系统输出'适应性得分、泛化得分、效率得分、安全得分、记忆保持得分'。",
+      "target": "bridge/system-health.py · 桥接守护战略复盘",
+      "status": "pending",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N78",
+      "name": "What-When-How-Where框架 → 曦和代谢引擎进化分类法",
+      "insight": "综述的四大维度提供了完美的进化分类：What(进化什么:模型/上下文/工具/架构)、When(何时进化:测试时/跨测试)、How(如何进化:RL/模仿/种群算法)、Where(在哪进化:通用/专业领域)。曦和的代谢引擎目前以热度/预测误差为驱动，缺少'元分类视野'。可引入进化分类标签——每个代谢动作标注其维度归属，用于战略复盘时看清进化重心是否偏移。",
+      "target": "bridge/metabolic_actor.py · 进化分类法",
+      "status": "pending",
+      "hebbian_credit": 7
+    },
+    {
+      "id": "N79",
+      "name": "种群进化算法 → 曦和变异池的学术基准",
+      "insight": "综述中种群与进化算法(DGM/GENOME)通过变异/交叉/选择寻找最优Agent配置。曦和已有变异池(mutation_pool.py v2)和保育期机制，但缺乏'选择策略'。学术界的锦标赛选择、排名选择、截断选择可作为曦和变异池的下一代升级方向。",
+      "target": "bridge/mutation_pool.py · 选择策略升级",
+      "status": "pending",
+      "hebbian_credit": 7
+    }
+  ]
+}

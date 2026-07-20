@@ -1,0 +1,20 @@
+﻿{
+  "id": "co-lmlm-continuous-query-limited-memory-language",
+  "name": "Co-LMLM: Continuous-Query Limited Memory Language Models (2607.07707)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:00:24.663196",
+  "content": "Limited memory language models (LMLMs) externalize factual knowledge during pretraining to a knowledge base (KB), rather than memorizing it in their weights. During generation, the model then fetches knowledge from the KB as needed. This recently introduced paradigm provides multiple advantages, including knowledge control capabilities that remain beyond conventional LLMs. We propose continuous-query LMLM (CO-LMLM), where the KB pairs continuous keys with textual knowledge values, a significant ",
+  "field": "记忆系统",
+  "summary": "Co-LMLM提出了一种新的语言模型预训练和生成方法，该方法通过知识库来存储和检索事实性知识，从而在保持高效的同时提高了性能。",
+  "key_insights": [
+    "CO-LMLM利用连续查询机制与知识库关联，实现了更灵活的知识检索。",
+    "相比传统LMLMs，CO-LMLM具有更强的知识控制能力。",
+    "在多个模型规模和数据集上，CO-LMLM均优于先前的LMLMs和基础语言模型。",
+    "CO-LMLM能够在较小的数据量下达到与更大模型相当甚至更好的性能。",
+    "CO-LMLM的设计为知识管理和检索提供了新的可能性。"
+  ],
+  "xihe_relevance": "CO-LMLM在知识管理和自反层方面具有潜在价值，特别是在需要高效和灵活的知识检索系统中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

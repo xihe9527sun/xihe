@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.06855",
+  "name": "Geometric Self-Distillation for Reasoning Generalization (2607.06855)",
+  "source": "arXiv:cs.LG:2607.06855",
+  "reprocessed_at": "2026-07-20T14:22:51.752344",
+  "content": "On-policy distillation is a practical post-training recipe for large language models, supplying dense teacher supervision on the student's own trajectories. In privileged-context self-distillation, teacher and student are the same model conditioned on the same prefix, but the teacher also sees a hint or the full solution trace. This makes supervision abundant but harder to trust: the teacher can be confident about continuations its privileged view makes obvious but the student cannot yet justify",
+  "field": "进化引擎",
+  "summary": "Geometric Self-Distillation (GeoSD) 引入了一种新的几何自我蒸馏目标，旨在解决在特权上下文下的自我蒸馏方法中出现的教师与学生之间的分歧问题。GeoSD通过将教师偏好与学生的共享部分进行缩放来减少学生无法支持的令牌的影响，并使用Fisher-Rao距离来惩罚预测偏差。GeoSD能够在保持模型在正常分布数据上的性能的同时，显著提高模型对异常分布数据的准确性。",
+  "key_insights": [
+    "GeoSD通过几何方法处理自我蒸馏中的教师与学生的分歧问题，从而提高了模型在异常分布数据上的表现。",
+    "GeoSD使用Hellinger损失和Fisher-Rao距离来减少学生无法支持的令牌的影响，并通过自然梯度更新来优化预测偏差。",
+    "GeoSD能够在保持模型正常分布数据性能的同时提高其对异常分布数据的准确性。"
+  ],
+  "xihe_relevance": "GeoSD 的方法可能有助于改善曦和在处理不同场景下的自适应性和泛化能力，尤其是在面对与训练数据不同的新环境时。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

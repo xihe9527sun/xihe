@@ -1,0 +1,77 @@
+{
+  "treasure_id": "mars-metacognitive-reflection",
+  "treasure_name": "MARS: 元认知反思智能体 — 原则反思+程序反思的双通道单循环自进化",
+  "source": "ACL 2026 Long Paper · Xinmeng Hou et al. · 'Learn Like Humans: Use Meta-cognitive Reflection for Efficient Self-Improvement'",
+  "discovered": "2026-07-20T08:50:00+08:00",
+  "digested": "2026-07-20T08:50:00+08:00",
+  "layer": "L5（自反调制层）· L4（催化层）· L2（代谢路由层）",
+  "intake_score": 0.88,
+  "score_detail": {
+    "relevance_xihe": 0.91,
+    "novelty": 0.84,
+    "actionable": 0.90,
+    "cross_domain": 0.87,
+    "depth": 0.86,
+    "timeliness": 0.89
+  },
+  "resonance_with_cog_primitives": {
+    "xihe_cog_primitives": "曦和已有5个元原语：prefix_match/decompose/local_depth/weave_meaning/conflict_detect",
+    "mars_gap": "缺少一个'执行→反思→改写'的元循环——cog_primitives是基础构件，但缺少使用这些构件进行自我改进的元模式",
+    "merged": "MARS的'原则反思+程序反思'双通道可作为第6个原语reflect_and_rewrite，挂在DCPM工序层的'反思'阶段"
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "原则反思 (Principle Reflection) — 抽象规范避免错误",
+      "type": "meta_pattern",
+      "value": 0.92,
+      "description": "MARS的原则反思是对智能体行动所依据的高层次规则、策略、知识库进行审视。它不关心具体操作步骤，而是追问：'我为什么要这样做？''遵循的规则正确吗？''存在更好的策略吗？'。与程序反思不同，原则反思输出的是抽象规范而非具体步骤——类似人类从错误中总结'不要...'和'要...'的原则。",
+      "xihe_gap": "曦和当前有conflict_detect原语（检测冲突）和weave_meaning原语（编织意义），但缺少'从执行结果中提取规则'的能力。执行失败后现有机制不会自动生成一条'下次避免这样做'的原则。",
+      "application": "在bridge/cog_primitives.py中新增PrincipleReflector：①接收执行轨迹和执行结果；②prompt agent提取'失败根因的模式化描述'；③生成规范规则（IF condition THEN avoid_action）；④规则写入桥/规则库；⑤下次同类场景自动加载。与conflict_detect交互：conflict_detect发现两条记忆冲突→触发PrincipleReflector提取规则"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "程序反思 (Procedural Reflection) — 步骤推导优化成功路径",
+      "type": "meta_pattern",
+      "value": 0.90,
+      "description": "MARS的程序反思是对执行具体步骤的回顾和优化：'这次做得怎么样？''哪一步效率低？''可以调整顺序吗？'。与原则反思的'抽象规范'不同，程序反思输出的是具体流程改进——类似人类复盘时标注'步骤3应先于步骤2'。两者结合：原则反思避免同类错误，程序反思复制成功路径。",
+      "xihe_gap": "曦和DCPM工序层有'反思'阶段（来自superpowers），但反思粒度是任务级的，没有拆解到'步骤级'。程序反思要求按步骤追溯：输入→工具调用→中间输出→最终输出→每步效率评分。",
+      "application": "在bridge/cog_primitives.py中新增ProceduralReflector：①分解执行轨迹为原子步骤（step_1...step_n）；②对每步做效率评分（token消耗/时间/是否需要重试）；③标记瓶颈步骤；④输出优化后的步骤序列建议；⑤与decompose原语互操作：decompose生成初始步骤→执行→ProceduralReflector优化步骤→下次执行优化版"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "单循环自进化范式 — 替代多轮递归的高效策略",
+      "type": "architecture_pattern",
+      "value": 0.89,
+      "description": "MARS的核心创新：不是在单次任务中多次递归反思（多轮循环），而是在每次交互后执行一次反思，将学到的规则/策略应用于下一次交互。单循环避免了多轮递归的三大问题：①计算成本倍增（每次反思都调用LLM）；②容易陷入局部最优和逻辑矛盾；③响应延迟累积。单循环更接近人类学习的本质——从经历中学一次，下次用。",
+      "xihe_gap": "曦和当前的反思模式接近多轮递归：superpowers的反思阶段在任务内部执行多轮，消耗大量token。如果改为MARS的单循环范式——每次交互后执行一次反思和规则提取，下次交互直接使用优化后的规则——可以大幅降低token消耗。",
+      "application": "在bridge/cog_primitives.py中新增reflect_and_rewrite()元原语：①接收'执行轨迹+结果'；②先用PrincipleReflection提取抽象规则；③再用ProceduralReflection优化步骤序列；④输出优化后的新规则+新步骤；⑤规则写入bridge/rule_book.json，步骤建议附加到bridge/pipeline_templates.json；⑥不修改当前执行（单循环不打断），影响下次执行"
+    },
+    {
+      "id": "nutrient-4",
+      "name": "自我改进指令优化 (Optimized Instruction Synthesis)",
+      "type": "algorithm",
+      "value": 0.85,
+      "description": "MARS将反思综合成优化的指令（optimized instructions），让agent在没有持续在线反馈的情况下也能系统地改进推理逻辑。这不同于传统RLHF需要持续反馈。反思输出的不是一条规则，而是一套可执行的指令集合——相当于每次交互后生成本次任务的'经验教训指令块'。",
+      "xihe_gap": "曦和当前有capability_gaps.json记录能力缺口，但缺口记录是静态的——记录了'哪里不够'但没有同时记录'如何改进'的可执行指令。",
+      "application": "在bridge/cog_primitives.py的reflect_and_rewrite中：①生成改进指令块（{source_task, failure_pattern, new_rule, next_time}）；②指令块写入bridge/rule_book.json；③下次遇到同类任务时，prefix_match原语自动命中规则并加载；④规则自带'置信度'和'适用次数'两个衰减维度的合取"
+    }
+  ],
+  "cross_refs": [
+    "xihe-superpowers",
+    "xihe-dev-discipline",
+    "self-evolving-agent-survey",
+    "autogenesis-protocol-agp"
+  ],
+  "hebbian_credit": 9,
+  "origin": "daily_foraging_2026-07-20",
+  "memcell": {
+    "born": "2026-07-20T08:50:00+08:00",
+    "last_accessed": "2026-07-20T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["元认知反思", "原则反思", "程序反思", "单循环自进化", "自我改进", "MARS", "cog_primitives"],
+    "subsystem": ["bridge", "cortex", "metacognitive"]
+  }
+}

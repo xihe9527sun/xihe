@@ -1,0 +1,19 @@
+﻿{
+  "id": "Multi-Agent-RL-for-V2X-Resource-Allocati",
+  "name": "Multi-Agent RL for V2X Resource Allocation",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:59.417875",
+  "content": "Multi-Agent RL for V2X Resource Allocation",
+  "field": "多Agent",
+  "summary": "该研究探讨了在V2X通信中通过多智能体强化学习进行资源分配的方法。",
+  "key_insights": [
+    "引入多智能体系统以优化V2X中的资源分配",
+    "使用强化学习算法提高V2X网络的效率和可靠性",
+    "探索未来自动驾驶技术中的应用潜力",
+    "为自适应交通管理和车辆协同提供技术支持",
+    "增强对复杂环境下的动态决策能力"
+  ],
+  "xihe_relevance": "进化引擎/元认知",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

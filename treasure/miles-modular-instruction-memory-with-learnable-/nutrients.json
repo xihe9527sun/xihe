@@ -1,0 +1,35 @@
+{
+  "id": "miles-modular-instruction-memory-with-learnable-",
+  "name": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning (2607.06974)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.226752",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-10T06:58:24.226432"
+  },
+  "digest_notes": "LLMs increasingly improve reasoning at test time via additional computation. MILES is a framework that dynamically expands step-wise memory and applies correctness-optimized memory composition under test-time constraints. It maintains modular memory units of asymmetric sub-goal embeddings and sub-instructions with learnable selection heads. The coarse-to-fine retrieval mechanism enables memory expansion and collects supervision for training selection heads from confident samples, while the fine "
+}

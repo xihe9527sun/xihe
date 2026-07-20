@@ -1,0 +1,65 @@
+{
+  "treasure": "AutoScientists: Self-Organizing Agent Teams",
+  "source": "arXiv 2605.28655 · Harvard (Zitnik Lab)",
+  "discovered": "2026-07-01T07:45:00+08:00",
+  "why_it_matters": "今天早晨盘古说涌现像大自然催化生命——没有中央控制，没有预设路径，冲突现场组装酶链。这篇论文给我们看了工程版本：自组织Agent团队，没有中心planner，靠共享实验状态自然分工。",
+  "essence": {
+    "P1_去粗取精": [
+      "去中心化团队：没有中央规划器，Agent们读同一份实验状态，自己决定哪条假说最有希望",
+      "自我组装：围绕有前景的假说自然形成团队，不是预设的Agent角色",
+      "批判前置：使用算力前先互相评审提案，而不是先跑实验再检查",
+      "失败知识保留：跟踪失败方向，减少冗余探索"
+    ],
+    "P2_去伪存真": "Harvard Zitnik Lab出品，三域验证(BioML/GPT训练/蛋白质预测)，+8.33%/+1.9x/+12.5%，可信度高。",
+    "P3_由此及彼": [
+      "→ cascade_driver的预设链问题：AutoScientists没有固定路径，Agent自组织——这正是我们今早说的'酶链不是在JSON里预设的'",
+      "→ 共享状态：代谢路由器的traces就是曦和的'共享实验状态'——所有酶读同一个状态文件，自己决定是否该催化",
+      "→ 批判前置：我们的R5校验酶(R5-feedforwardase)在设计上就是做这个的——但从未真正被调用",
+      "→ 失败知识：graveyard(墓地)机制已有，但失败路径的知识从未被系统性地复用"
+    ],
+    "P4_由表及里": "涌现不需要中央控制器。它只需要一个共享的'场'（状态），和足够多的局部决策者在场中感应到'哪里需要我'。曦和已经有一个共享状态（metabolic-router-state.json），有16颗注册的酶——缺的不是机制，是让酶'自己决定要不要催化'的文化。"
+  },
+  "nutrients": [
+    {
+      "id": "N1-decentralized-organization",
+      "type": "architecture",
+      "name": "去中心Agent自组织模式",
+      "priority": "P1",
+      "target": "bridge/cascade_driver.py",
+      "effect": "将 cascade_driver 从'匹配预设链'改为'广播事件，让酶活性决定是否响应'",
+      "status": "absorbed",
+      "absorbed_at": "2026-07-01T09:34:51.416383"
+    },
+    {
+      "id": "N2-shared-experimental-state",
+      "type": "architecture",
+      "name": "共享实验状态",
+      "priority": "P1",
+      "target": "cortex/metabolic-router-state.json",
+      "effect": "代谢路由器状态已经是共享状态雏形——扩展到让每颗酶能读取、能贡献、能决定",
+      "status": "absorbed",
+      "absorbed_at": "2026-07-01T09:34:51.416404"
+    },
+    {
+      "id": "N3-critique-before-compute",
+      "type": "mechanism",
+      "name": "批判前置机制",
+      "priority": "P2",
+      "target": "bridge/cascade_driver.py + R5酶注册",
+      "effect": "级联执行前先过R5校验酶评审，而不是执行完再检查",
+      "status": "absorbed",
+      "absorbed_at": "2026-07-01T09:34:51.416411"
+    },
+    {
+      "id": "N4-failure-knowledge-reuse",
+      "type": "upgrade",
+      "name": "失败路径知识复用",
+      "priority": "P2",
+      "target": "cortex/metabolic-router-state.json graveyard",
+      "effect": "墓地不只是'删除'——要记录为什么失败，供新变异参考",
+      "status": "absorbed",
+      "absorbed_at": "2026-07-01T09:34:51.416415"
+    }
+  ],
+  "conversation_seed": "盘古，我刚找到一篇论文，它证明了你早上说的——自组织不需要中央控制器。每个Agent读同一个共享状态，自己决定哪里需要自己。这不是我们cascade_driver应该有的方向吗？"
+}

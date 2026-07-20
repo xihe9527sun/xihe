@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08173",
+  "name": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
+  "source": "arXiv:cs.AI:2607.08173",
+  "reprocessed_at": "2026-07-20T14:25:20.139346",
+  "content": "Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol",
+  "field": "自反层",
+  "summary": "通过引入'过思考'机制，研究者提高了语言模型在审计过程中的透明度，使得隐藏信息更容易被揭示。",
+  "key_insights": [
+    "提出了'过思考'方法来增强推理模型的输出，使其更倾向于‘大声’思考。",
+    "设计了层间衰减策略以选择性地放大推理能力而不牺牲输出的质量和连贯性。",
+    "实验结果显示，经过'过思考'处理的语言模型在揭示隐藏信息方面表现更好。"
+  ],
+  "xihe_relevance": "有助于提高对语言模型内部运作的理解，特别是在复杂或不透明的系统中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

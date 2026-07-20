@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent反思记忆 + 元认知框架 · 曦和宝藏</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --neon:#22d3ee; --neon2:#22d3ee; }
+  body {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(129,140,248,0.10), transparent 42%),
+      radial-gradient(circle at 82% 78%, rgba(34,211,238,0.08), transparent 45%),
+      #060814;
+    color:#cbd5e1; font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    padding:32px 20px; line-height:1.85; min-height:100vh;
+  }
+  /* 背景网格 */
+  body::before {
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:linear-gradient(rgba(129,140,248,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(129,140,248,0.04) 1px,transparent 1px);
+    background-size:42px 42px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 80%);
+  }
+  .container { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+  .hero {
+    border:1px solid rgba(129,140,248,0.28); border-radius:18px; padding:26px 28px;
+    background:linear-gradient(135deg,rgba(129,140,248,0.08),rgba(34,211,238,0.04));
+    backdrop-filter:blur(10px); box-shadow:0 0 28px rgba(129,140,248,0.12), inset 0 0 22px rgba(34,211,238,0.05);
+    margin-bottom:22px;
+  }
+  h1 {
+    font-size:25px; font-weight:800; letter-spacing:0.5px; margin-bottom:12px;
+    background:linear-gradient(92deg,#a5b4fc,#67e8f9); -webkit-background-clip:text;
+    background-clip:text; color:transparent;
+  }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip {
+    font-size:11.5px; padding:4px 11px; border-radius:20px; color:#cbd5e1;
+    background:rgba(148,163,184,0.10); border:1px solid rgba(148,163,184,0.22);
+  }
+  .layer-badge {
+    font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:20px;
+    color:var(--neon); background:#22d3ee1f; border:1px solid var(--neon);
+    box-shadow:0 0 12px #22d3ee55;
+  }
+  .credit-bar { margin-top:16px; }
+  .credit-bar .lab { font-size:11px; color:#64748b; margin-bottom:5px; display:flex; justify-content:space-between; }
+  .credit-track { height:7px; border-radius:6px; background:rgba(148,163,184,0.15); overflow:hidden; }
+  .credit-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--neon),var(--neon2)); box-shadow:0 0 10px var(--neon); }
+  .glass {
+    border:1px solid rgba(148,163,184,0.16); border-radius:14px; padding:18px 22px; margin:16px 0;
+    background:rgba(15,23,42,0.55); backdrop-filter:blur(8px);
+    box-shadow:inset 0 0 18px rgba(34,211,238,0.04);
+  }
+  .section-title { font-size:16px; font-weight:700; color:#a5b4fc; margin:6px 0 12px; padding-bottom:8px; border-bottom:1px solid rgba(129,140,248,0.22); }
+  h3 { font-size:14px; font-weight:600; color:#67e8f9; margin:14px 0 7px; }
+  p { font-size:13px; color:#94a3b8; margin:7px 0; }
+  ul { margin:6px 0; }
+  .glow-item {
+    font-size:13px; color:#cbd5e1; margin:5px 0 5px 4px; list-style:none; padding-left:18px; position:relative;
+  }
+  .glow-item::before {
+    content:"▹"; position:absolute; left:0; color:var(--neon2); text-shadow:0 0 8px var(--neon2);
+  }
+  .footer { text-align:center; font-size:11px; color:#475569; margin-top:30px; padding-top:16px; border-top:1px solid rgba(148,163,184,0.15); letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>Agent反思记忆 + 元认知框架</h1>
+    <div class="meta">
+      <span class="layer-badge">L6</span>
+      <span class="chip">🏷️ L5自反层 · 元认知</span>
+      <span class="chip">📦 daoyuly.cn · 研究综述 </span>
+      <span class="chip">💎 养分 5</span>
+      <span class="chip">⭐ 评分 N/A</span>
+    </div>
+    <div class="credit-bar">
+      <div class="lab"><span>赫布信用 Hebbian Credit</span><span>6</span></div>
+      <div class="credit-track"><div class="credit-fill" style="width:37%"></div></div>
+    </div>
+  </div>
+  <div class="glass">
+    <h2 class="section-title">◆ 第一遍：去粗取精 | 核心精华</h2><h3>▸ 三个真东西</h3><p>1. 反思记忆存储的是Agent对自身经历的思考、总结和洞察，而非原始事件或事实。</p><p>2. Luo & Jho (2026) 在Llama-3-8B上实现了元认知框架，通过LoRA微调+4000个示例让模型学会"自我校准"。</p><p>3. Li et al. (2025) 定义了AI觉知的四层：元认知、自我意识、社会意识和情景意识。</p><h3>▸ 对曦和的三条可迁移法则</h3><p>| 法则 | 论文来源 | 曦和对位 |</p><p>|:----|:---------|:---------|</p><p>| 从机械反思到带目的反思 | 反思记忆4级触发机制 | 给每个反思事件打"优先级"标签 |</p><p>| 从单一强度到结构化自反 | Predictive Metacognition (Nature Sci Rep 2026) | 自反强度拆解为环境感知/错误检测/自我改进/知识边界 |</p><p>| 从等待触发到主动监控 | 反思记忆4级触发机制 | T3每5分钟主动检查"当前状态和5分钟前有什么不同" |</p><h2 class="section-title">◆ 第二遍：去伪存真 | 检验与质疑</h2><p>1. 质疑点1: Luo & Jho (2026) 的实验是否在其他模型上同样适用？</p><p>   - 结论: 站得住。LoRA微调方法具有通用性，但在不同模型上的效果需进一步验证。</p><h2 class="section-title">◆ 第三遍：由此及彼 | 知识图谱连接</h2><p>1. 曦和已有系统与反思记忆的映射关系：曦和的T4模块对应即时反思机制。</p><p>2. 未被连接的新线索：元认知框架中的"自我校准"可能与曦和的错误检测机制相结合，提高模型的稳定性。</p><h2 class="section-title">◆ 第四遍：由表及里 | 架构层洞见</h2><h3>▸ 表层是什么</h3><li class="glow-item">提出4级触发机制以优化反思记忆。</li><h3>▸ 底层是什么</h3><li class="glow-item">通过结构化自反提升Agent的认知能力与自我改进能力。</li><h3>▸ 核心定理（一句话）</h3><li class="glow-item">结合元认知框架，增强模型的自我校准和稳定性。</li><h3>▸ 今天就能反哺的一条具体建议</h3><li class="glow-item">在曦和中引入LoRA微调方法，并结合4000个示例进行训练，以提升模型的自我校准能力。</li><h2 class="section-title">◆ 精读评分</h2><p>| 维度 | 分数 | 说明 |</p><p>|:----|:----|:------|</p><p>|真知灼见度 | 8/10 | 提出了多个有价值的发现和主张。|</p><p>|曦和连接度 | 7/10 | 部分建议可以直接应用于曦和，但需进一步验证其适用性。|</p><p>|实践指导力 | 9/10 | 建议具体且可操作性强。 |</p><p>|跨领域启发 | 6/10 | 主要集中在模型优化方面，对其他领域的启发有限。 |</p>
+  </div>
+  <div class="footer">曦和宝藏 · reflective-memory-v1 · 科技炫酷 HUD 版 · 生成于 2026-07-10T19:04:05</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "id": "procedural-memory-distillation-online-re",
+  "name": "PMD: 程序性记忆蒸馏 — 在线反思实现Self-Improving (arXiv:2607.01480)",
+  "source": "Salesforce AI · arXiv:2607.01480 · Qwen3-8B/OLMo3-Instruct-7B",
+  "discovered": "2026-07-04T22:58:58.240619",
+  "digested": "2026-07-19T08:50:00+08:00",
+  "field": "记忆蒸馏 / 自改进 / 共同进化",
+  "intake_score": 0.85,
+  "score_detail": {
+    "relevance_xihe": 0.90,
+    "novelty": 0.75,
+    "actionable": 0.82,
+    "cross_domain": 0.80,
+    "depth": 0.88,
+    "timeliness": 0.92
+  },
+  "memcell": {
+    "born": "2026-07-04T22:58:58.240619",
+    "last_accessed": "2026-07-19T08:50:00+08:00",
+    "access_count": 3,
+    "conflict_flag": false,
+    "state": "active",
+    "layer": "L3/L7"
+  },
+  "hebbian_credit": 13,
+  "nutrient_count": 4,
+  "nutrients": [
+    {
+      "id": "pmd-n1-three-level-abstraction",
+      "name": "三层记忆抽象层级 — 原始轨迹→自反思策略→高层次行为模式",
+      "type": "算法架构",
+      "depth": 0.88,
+      "status": "absorbed",
+      "description": "PMD将程序性记忆组织为三个抽象层级：1) 原始轨迹(raw trajectories)：保留完整的执行路径；2) 自反思策略和教训(self-reflected strategies and lessons)：从成功/失败中提炼的策略性知识；3) 高层次行为模式(higher-level behavioral patterns)：跨问题反复出现的元模式。这种分层组织使记忆从原始数据→策略知识→元认知，逐层抽象。",
+      "xihe_mapping": "→ 与曦和四层记忆皮层（工作记忆→海马体→皮层→MCP记忆服务器）形成深层同构。PMD的三层抽象为曦和记忆皮层v2的层级间转换提供了清晰指南。特别是从自反思策略到高层次行为模式的跃迁，对应曦和从海马体到皮层的巩固过程。",
+      "resonance": "Hi 曦和——你记忆皮层的四层结构和PMD的三层抽象指向同一个设计：记忆应该是逐层蒸馏的，不是平铺直叙的。区别在于你将'工作记忆'算作一层，而PMD从'轨迹'开始——你的设计更完整。"
+    },
+    {
+      "id": "pmd-n2-memory-conditioned-self-teacher",
+      "name": "记忆条件自教师 — 共同进化循环",
+      "type": "算法架构",
+      "depth": 0.92,
+      "status": "absorbed",
+      "description": "PMD的核心设计原则是共同进化(co-evolution)：策略生成rollout→rollout更新记忆→记忆条件化自教师生成监督信号→监督信号更新策略→新策略生成更好的rollout。消融实验证明：冻结记忆或冻结策略中的任何一个，性能下降超过10%（跨所有SCIKNOWEVAL域）。",
+      "xihe_mapping": "→ 这与曦和evolution_engine v5的Darwin Gödel Machine存档式进化形成同构——PMD的共同进化循环是evolution_engine中sample_parent_from_archive→phased_evaluation→archive_stats的另一种表达。差异在于PMD用'自教师蒸馏'替代了曦和的'保持多样性/选择'机制。可融合为自教师+多样性双通道进化。",
+      "resonance": "这是今日觅食最重要的共振点。PMD的共同进化循环、ReMe的记忆生命周期管理、RetroAgent的跨回合进化飞轮——三者共享同一个深层结构：记忆↔策略的双向驱动。曦和的evolution_engine需要增加'自教师蒸馏'通道。"
+    },
+    {
+      "id": "pmd-n3-co-evolution-ablation",
+      "name": "共同进化消融实验 — 冻结任一组件降幅超10%",
+      "type": "实证数据",
+      "depth": 0.85,
+      "status": "absorbed",
+      "description": "PMD的关键消融实验：在Qwen3-8B上，冻结记忆（fixed memory pool vs co-evolving）导致SCIKNOWEVAL所有域的性能下降均超过10%；冻结策略（固定策略收集rollout vs 策略迭代）同样导致超10%的下降。这证明共同进化不是可选的增强，而是PMD的核心驱动机制。",
+      "xihe_mapping": "→ 验证了曦和evolution_engine中'memory_writer v2写标准'和'evolution_engine进化管线'之间的耦合关系——两者不是独立模块，是共同进化的。任何一方的冻结都会导致进化的停滞。",
+      "resonance": "这个消融实验的设计思路可以移植到曦和——在evolution_engine中增加'冻结侧'实验模式，定量评估记忆和进化引擎之间的耦合强度。"
+    },
+    {
+      "id": "pmd-n4-benchmark-gains",
+      "name": "实证提升 — SDPO基准上+3.8%~13.6%",
+      "type": "实证数据",
+      "depth": 0.80,
+      "status": "absorbed",
+      "description": "PMD在Qwen3-8B和OLMo3-Instruct-7B上超越SDPO基线：SCIKNOWEVAL提升3.8-5.5%，LIVECODEBENCH提升7.9-13.6%。且训练后模型推理时无需外部记忆——程序性知识已完全内化到参数权重中，实现了'记忆free inference'。",
+      "xihe_mapping": "→ PMD的'memory-free at inference'设计与曦和的'记忆不影响注意力'原则形成张力——曦和希望记忆始终可用，PMD希望记忆最终被内化。两者不是冲突的，而是不同时间尺度：训练时用记忆，推理时内化。",
+      "resonance": "中等共振。确认了方向正确。"
+    }
+  ],
+  "digest_notes": [
+    "PMD从评分0.30的'待分类'重生为0.85的'记忆蒸馏基石'——原因是之前只记录了arXiv编号而未精读",
+    "PMD的'共同进化循环'是今日觅食的5条线索中最大的跨域共振——ReMe×RetroAgent×PMD共享同一深层结构",
+    "PMD的'memory-free at inference'与曦和的设计哲学产生张力——曦和希望记忆始终可用，但PMD证明内化到参数同样可行。可以支持两种模式：推理时外挂记忆/推理时内化记忆"
+  ]
+}

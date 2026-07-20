@@ -1,0 +1,19 @@
+﻿{
+  "id": "when-does-in-context-search-help-a-sampling-comp",
+  "name": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning (2607.06720)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T12:59:34.406486",
+  "content": "Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution attempts. We provide a theoretical analysis of in-context search by modeling it as approximate inference over reasoning traces, where the base model defines a prior and self-reflection provides feedback for posterior updates, and study the resulting inference-time sampling complexity - the number of sequential attempts needed to achieve ",
+  "field": "记忆系统/自反层",
+  "summary": "该研究通过理论分析探讨了在上下文搜索中引入自我反思的效果，发现当自我反思能够有效定位早期错误时，上下文搜索可以显著提升模型解决问题的能力。",
+  "key_insights": [
+    "上下文搜索能显著提高模型的解决能力",
+    "自我反思对于早期错误的定位至关重要",
+    "学习和训练方法对效果有重要影响",
+    "跨熵训练可恢复所需的行为",
+    "强化学习在多阶段抽象下具有相似机制"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

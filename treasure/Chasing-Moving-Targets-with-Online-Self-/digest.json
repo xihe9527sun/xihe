@@ -1,0 +1,18 @@
+﻿{
+  "id": "Chasing-Moving-Targets-with-Online-Self-",
+  "name": "Chasing Moving Targets with Online Self-Play RL for Safer Language Models",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:54.136650",
+  "content": "Chasing Moving Targets with Online Self-Play RL for Safer Language Models",
+  "field": "多Agent",
+  "summary": "本文提出了一种新的强化学习方法，在线自我对战RL，用于构建更安全的语言模型。",
+  "key_insights": [
+    "提出了在线自我对战的强化学习方法来提高语言模型的安全性。",
+    "这种方法通过模拟真实世界中的交互来训练模型，使其更好地适应不断变化的目标。",
+    "该技术可能有助于开发更加智能和自适应的语言处理系统。"
+  ],
+  "xihe_relevance": "中等",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

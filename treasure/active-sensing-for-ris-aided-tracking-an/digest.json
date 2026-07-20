@@ -1,0 +1,19 @@
+﻿{
+  "id": "active-sensing-for-ris-aided-tracking-an",
+  "name": "Active Sensing for RIS-Aided Tracking and Power Control: A Hybrid Neuroevolution",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:35.553263",
+  "content": "Active Sensing for RIS-Aided Tracking and Power Control: A Hybrid Neuroevolution",
+  "field": "多Agent",
+  "summary": "该研究提出了一种结合神经演化的主动感知方法，用于毫米波反射器辅助的目标跟踪和功率控制。",
+  "key_insights": [
+    "引入了RIS在目标跟踪中的应用",
+    "采用混合神经演化策略进行优化",
+    "关注于提高系统效率和性能",
+    "涉及信号处理与机器学习技术的融合",
+    "为自适应通信网络提供新思路"
+  ],
+  "xihe_relevance": "对进化引擎方向有一定价值，尤其是针对目标跟踪和功率控制问题的解决方案。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

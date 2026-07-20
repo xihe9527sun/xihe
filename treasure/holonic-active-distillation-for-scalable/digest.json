@@ -1,0 +1,18 @@
+﻿{
+  "id": "holonic-active-distillation-for-scalable",
+  "name": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Sy",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:58:07.589382",
+  "content": "Holonic Active Distillation for Scalable Multi-Agent Learning in Multi-Sensor Sy",
+  "field": "多Agent",
+  "summary": "Holonic Active Distillation是一种用于大规模多智能体学习的多传感器系统的主动提炼方法。",
+  "key_insights": [
+    "Holonic Active Distillation能够支持在多传感器系统中的大规模多智能体学习。",
+    "该方法通过主动提炼技术提高学习效率和效果。",
+    "它为自反层、进化引擎等曦和相关领域提供了潜在的应用价值。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

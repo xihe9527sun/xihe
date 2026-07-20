@@ -1,0 +1,30 @@
+{
+  "id": "can-llms-perform-deep-technical-comprehension-of",
+  "name": "Can LLMs Perform Deep Technical Comprehension of Computer Architecture Papers?",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:36.014351",
+  "digested": "2026-07-15T09:10:36.014351",
+  "field": "酶网络/cascade_engine",
+  "content": "研究Gauntlet开源管道通过五个独立专家角色评审和对抗性综合阶段分析论文。增益来自多智能体结构，管道在96%论文上优于以单一角色运行的相同模型。多智能体结构是关键。",
+  "intake_score": 0.85,
+  "score_detail": {
+    "去粗取精": 0.4,
+    "去伪存真": 0.8,
+    "由此及彼": 0.2,
+    "由表及里": 0.2,
+    "_total": 0.41,
+    "_grade": "中 —— 需人工审核"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "研究Gauntlet开源管道通过五个独立专家角色评审和对抗性综合阶段分析论文。增益来自多智能体结构，管道在96%论文上优于以单一角色运行的相同模型。多智能体结构是关键。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:36.014351",
+    "last_accessed": "2026-07-15T09:10:36.014351",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

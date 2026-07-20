@@ -1,0 +1,35 @@
+{
+  "id": "mhm-multi-head-memory",
+  "name": "MHM: 多头循环记忆 (分区保留)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.555371",
+  "field": "海马体",
+  "intake_score": 0.68,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "多头分区保留策略升级海马体写入",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "海马体",
+    "enhancement_points": [
+      "多头分区保留策略升级海马体写入"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "phase?",
+    "landing": "规划态"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库 + 规划落地(分阶段)",
+    "phase": "phase?",
+    "landing": "规划态",
+    "subsystem": "海马体",
+    "enhancement": "多头分区保留策略升级海马体写入",
+    "intake_score": 0.68,
+    "backed_at": "2026-07-10T06:58:24.555032"
+  },
+  "digest_notes": "多头分区保留策略可升级曦和的海马体写入策略"
+}

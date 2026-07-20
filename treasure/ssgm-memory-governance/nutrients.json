@@ -1,0 +1,80 @@
+{
+  "treasure_id": "ssgm-memory-governance",
+  "treasure_name": "SSGM: 进化记忆治理框架 — 语义/程序/目标漂移防御",
+  "source": "arXiv 2603.11768 · SSGM Framework",
+  "discovered": "2026-07-12T08:50:00+08:00",
+  "digested": "2026-07-12T08:50:00+08:00",
+  "layer": "L3（记忆层）· L5（自反调制层）",
+  "intake_score": 0.87,
+  "score_detail": {
+    "relevance_xihe": 0.90,
+    "novelty": 0.85,
+    "actionable": 0.88,
+    "cross_domain": 0.85,
+    "depth": 0.88,
+    "timeliness": 0.87
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "写验证门 (Write Validation Gate)",
+      "type": "architecture_pattern",
+      "value": 0.92,
+      "description": "Agent对记忆的每个写操作都要通过验证门：一致性检查(是否与核心事实矛盾) + 来源校验(是否可信) + 写过滤。防止幻觉级联污染长期记忆。",
+      "xihe_gap": "曦和当前bridge-daemon和零共识路由中没有写验证。记忆写入是开放的——任何酶/任何路由都可以直接写入MEMORY.md和Hippocampus。必须加Write Validation Gate。",
+      "application": "在bridge/event_bus.py的每个记忆事件处理管道中插入WriteGate中间件。拒绝一致性检查失败的记忆写入，把冲突记忆送入cortex/quarantine/"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "威布尔衰减函数 (Weibull Decay)",
+      "type": "mathematical_model",
+      "value": 0.88,
+      "description": "w(Δτ) = exp(-(Δτ/η)^κ)，比指数衰减更灵活的模型。Shape参数κ控制衰减形状——κ<1早期快速衰减(短期记忆)，κ>1晚期加速衰减(长期记忆)。",
+      "xihe_gap": "曦和Imprint三层记忆有衰减概念但缺少形式化模型。当前是简单的线性衰减或固定阈值。需要替换为Weibull Decay，使衰减曲线可调参。",
+      "application": "集成到bridge/memory_decay.py，替换当前线性衰减。不同记忆类型(酶/Imprint/幽灵)使用不同κ值。新记忆κ=0.5(快速初始衰减)，核心事实κ=2.0(慢速衰减)。"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "真实锚定与可逆调和 (Ground Truth Anchoring + Reconciliation)",
+      "type": "architecture_pattern",
+      "value": 0.90,
+      "description": "双轨存储：不可变情节日志(仅追加) + 可变活跃图(可读写)。定期用日志回放→调和→矫正语义漂移。漂移界：O(T·ε_step)→O(N·ε_step)。",
+      "xihe_gap": "曦和目前只有单层活跃记忆。没有不可变日志层。Hippocampus/Imprint可以重新写入。每次会话的原始对话只存在chronicles，没有系统性回放机制。",
+      "application": "在bridge/引入immutable_episodic_log.py，记录每次记忆操作的原始上下文。每天13:00运行reconciliation_job：回放今天的不可变日志，检测活跃图中的漂移，自动校正。"
+    },
+    {
+      "id": "nutrient-4",
+      "name": "记忆失效分类法 (5大类/12子类)",
+      "type": "taxonomy",
+      "value": 0.85,
+      "description": "稳定性失效(语义/程序/目标漂移) + 有效性失效(幻觉/过时) + 效率失效(延迟/膨胀) + 安全失效(投毒/泄漏)。每个子类有明确机制、表现、场景。",
+      "xihe_gap": "曦和只有冲突检测(conflict_flag)和对齐检测，没有完整的记忆失效分类。cortex/diagnostics.json缺少记忆健康维度。",
+      "application": "将SSGM分类法注入cortex/memory_health_monitor.py，增加5维记忆健康评分。整合到bridge_diagnostic_gate的诊断矩阵。"
+    },
+    {
+      "id": "nutrient-5",
+      "name": "访问范围限定检索 (Access-Scoped Retrieval)",
+      "type": "security_pattern",
+      "value": 0.80,
+      "description": "检索不仅依赖语义相似度，还融合身份约束(ABAC)。ACL(μ, u_id)断言确保不同Agent/用户的记忆子图严格隔离。",
+      "xihe_gap": "曦和多Agent系统中，不同酶/子系统共用同一记忆池。没有跨Agent的记忆隔离。研讨厅引擎的Agent们可能互相读取"不该读"的记忆。",
+      "application": "为每个主要子系统(L0-L7/酶/路由)分配ACL标签。记忆检索时注入scope_filter。"
+    }
+  ],
+  "cross_refs": [
+    "copewell-a-multi-agent-swarm-architectur",
+    "counterfactual-planning-aaai2026",
+    "imprint-cognitive-compression"
+  ],
+  "hebbian_credit": 8,
+  "origin": "daily_foraging_2026-07-12",
+  "memcell": {
+    "born": "2026-07-12T08:50:00+08:00",
+    "last_accessed": "2026-07-12T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["记忆治理", "写验证", "衰减函数", "漂移检测", "SSGM", "安全"],
+    "subsystem": ["bridge", "cortex", "memory"]
+  }
+}

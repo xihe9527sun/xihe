@@ -1,0 +1,20 @@
+﻿{
+  "id": "evopolicygym-evaluating-autonomous-polic",
+  "name": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:18.894081",
+  "content": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+  "field": "进化引擎/多Agent",
+  "summary": "EvoPolicyGym 提供了一种评估自主策略在互动环境中的演化的方法。",
+  "key_insights": [
+    "EvoPolicyGym 可以帮助研究人员和开发者更好地理解并优化自主系统的进化过程。",
+    "通过模拟不同的交互环境，可以测试和验证不同策略的适应性和稳定性。",
+    "该框架有助于探索如何利用进化算法来改进和增强自主决策的能力。",
+    "对于需要在动态环境中做出快速反应的应用场景具有重要价值。",
+    "EvoPolicyGym 可能对记忆系统、自反层以及元认知等领域产生积极影响。"
+  ],
+  "xihe_relevance": "中等",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

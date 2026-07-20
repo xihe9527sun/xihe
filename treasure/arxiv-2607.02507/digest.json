@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.02507",
+  "name": "What LLM Agents Say: Social Structure Emergence in MAS Debates (cs.MA)",
+  "source": "arXiv cs.MA 2026-07",
+  "reprocessed_at": "2026-07-20T14:18:33.873791",
+  "content": "What LLM Agents Say: Social Structure Emergence in MAS Debates (cs.MA)",
+  "field": "自反层",
+  "summary": "This work explores the emergence of social structures in Multi-Agent Systems (MAS) debates through Large Language Model (LLM) agents, providing insights into how AI can simulate and analyze human-like interactions.",
+  "key_insights": [
+    "The study reveals patterns of social structure formation within MAS debates driven by LLM agents.",
+    "It highlights the potential for LLMs to understand and predict complex social dynamics in multi-agent systems.",
+    "This research could contribute to advancements in AI's ability to simulate human-like interactions and decision-making processes."
+  ],
+  "xihe_relevance": "该研究可能对曦和项目在理解多智能体系统中的社会结构形成方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

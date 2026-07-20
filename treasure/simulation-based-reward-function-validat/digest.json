@@ -1,0 +1,19 @@
+﻿{
+  "id": "simulation-based-reward-function-validat",
+  "name": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:04.535830",
+  "content": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
+  "field": "多Agent",
+  "summary": "该研究探讨了基于模拟的奖励函数验证方法在多智能体轨道检查任务中的应用。",
+  "key_insights": [
+    "提出了新的基于模拟的奖励函数验证方法",
+    "适用于多智能体轨道检查场景",
+    "旨在提高任务执行效率和准确性",
+    "结合了机器学习与仿真技术",
+    "为后续研究提供了理论基础"
+  ],
+  "xihe_relevance": "该内容对自反层有一定价值，特别是对于奖励函数的自适应调整机制。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,35 @@
+{
+  "treasure_id": "hela-mem-acl2026",
+  "extracted_at": "2026-06-27T19:10:17.606393",
+  "nutrients": [
+    {
+      "id": "N24-hebbian-graph",
+      "priority": "P0",
+      "name": "赫布动态图: 共激活强化边权 取代静态计数器",
+      "target": "bridge/hebbian-tracker.json",
+      "status": "absorbed",
+      "x_real_implementation": "hebbian_graph边连接+ace-pulse.json结构化记录",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N25-reflective-distillation",
+      "priority": "P1",
+      "name": "反思性蒸馏: 高频记忆簇到语义知识",
+      "target": "bridge/reflection_writer.py",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.742151",
+      "x_real_implementation": "hebbian_graph边连接+ace-pulse.json结构化记录",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N26-dual-path-retrieval",
+      "priority": "P2",
+      "name": "双路径扩散激活检索: 语义相似+关联扩散",
+      "target": "memory/graph/knowledge_graph.py",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.742166",
+      "x_real_implementation": "hebbian_graph边连接+ace-pulse.json结构化记录",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ]
+}

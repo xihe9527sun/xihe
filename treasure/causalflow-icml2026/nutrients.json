@@ -1,0 +1,66 @@
+{
+  "treasure_id": "causalflow-icml2026",
+  "name": "CausalFlow: Causal Attribution and Counterfactual Repair for LLM Agent Failures",
+  "source": "arXiv 2605.25338 · ICML 2026 Workshop",
+  "discovered": "2026-07-05T08:50+08:00",
+  "authors": "Akash Bonagiri, Devang Borkar, Gerard Janno Anderias, Setareh Rafatirad, Houman Homayoun",
+  "intake_score": 0.95,
+  "priority": "P0",
+  "nutrients": [
+    {
+      "id": "N-CF1",
+      "name": "因果责任分数 CRS",
+      "domain": "L4催化层 · 信用分配",
+      "value": "通过步骤级反事实干预计算CRS，定位失败诱导步骤。与曦和现存预测误差驱动的SurpriseCreditSystem同构但更精确——Surprise只发现'有问题'，CRS能定位'哪里出问题'",
+      "hebbian_increment": 2,
+      "confidence": 0.97,
+      "actionable": true
+    },
+    {
+      "id": "N-CF2",
+      "name": "最小反事实修复生成",
+      "domain": "L5自反层 · 自我修复",
+      "value": "将失败轨迹转化为最小编辑的修复，翻转为成功输出，生成验证过的对比对(wrong_step, corrected_step)。可直接训练偏好优化或奖励模型",
+      "hebbian_increment": 2,
+      "confidence": 0.95,
+      "actionable": true
+    },
+    {
+      "id": "N-CF3",
+      "name": "测试时修复 vs 训练时监督",
+      "domain": "L4催化层 · 反刍/执行双模式",
+      "value": "双模式使用：测试时最小行为漂移修复 + 离线偏好优化。曦和可以借鉴为'会话中修复'和'离线反刍'双通道",
+      "hebbian_increment": 1,
+      "confidence": 0.92,
+      "actionable": true
+    },
+    {
+      "id": "N-CF4",
+      "name": "跨领域泛化能力",
+      "domain": "L7涌现层 · 系统鲁棒性",
+      "value": "四个基准：数学推理/代码生成/QA/医疗浏览。因果归因在所有领域优于启发式精炼，证明因果归因是通用机制而非特定领域技巧",
+      "hebbian_increment": 1,
+      "confidence": 0.93,
+      "actionable": false
+    },
+    {
+      "id": "N-CF5",
+      "name": "最小性 + 因果一致性双重保证",
+      "domain": "L5自反层 · 质量探针",
+      "value": "修复同时满足最小编辑距离和高因果共识分。曦和的质量探针可参考此双重校验机制，从单维探针升级为多维因果探针",
+      "hebbian_increment": 1,
+      "confidence": 0.90,
+      "actionable": true
+    }
+  ],
+  "alignment_with_xihe": {
+    "direct_overlap": ["SurpriseCreditSystem预测误差分配", "桥接反刍模块的修正指令生成", "execution_core的3次重试失败"],
+    "gap_to_fill": [
+      "曦和现在知道'出问题了'但不知道'具体哪一步出的'",
+      "曦和的反刍生成修正指令但缺少'最小干预'约束",
+      "验证过的对比对(wrong_step, corrected_step)可作为变异池的定向进化种子"
+    ],
+    "proposed_fusion": "因果修复引擎 → execution_core的失败处理链中增加因果归因→反事实修复步骤"
+  },
+  "related_treasures": ["credit-assignment-survey", "reflective-memory-v1", "self-evolving-agent-survey", "hindsight-memory-architecture"]
+}

@@ -1,0 +1,44 @@
+{
+  "treasure_id": "enzyme-import-fix",
+  "extracted_at": "2026-06-28T09:55:00+08:00",
+  "nutrients": [
+    {
+      "id": "N40-health-check-t4",
+      "type": "upgrade",
+      "name": "T4子模块健康检查 + 失败日志",
+      "priority": "P0",
+      "target": "bin/respiration_loop.py",
+      "effect": "每个T4子调用(try/except)加error日志记录，失败count暴露到xcrn-status.json的'respiration.submodule_health'字段，使模块断连立即可见",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T13:50:00+08:00",
+      "x_real_implementation": "T4_errors+no_hyphen+hebbian_graph_anchor",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N41-filename-convention",
+      "type": "optimization",
+      "name": "Python模块名禁用连字符 → 架构标准",
+      "priority": "P1",
+      "target": "F:/SmartLegend/Xihe/design/",
+      "effect": "在架构设计文档中明确写入：所有Python模块名使用下划线，禁止连字符。避免同类ImportError静默失败",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "T4_errors+no_hyphen+hebbian_graph_anchor",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N42-enzyme-resurrection",
+      "type": "insight",
+      "name": "酶催化复活事件 → 赫布图锚点",
+      "priority": "P2",
+      "target": "bridge/hebbian_graph.py",
+      "effect": "模块从'断连→修复→恢复'的完整周期应记录为赫布图特殊节点，作为系统的'免疫记忆'，未来同类故障可自动识别",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "T4_errors+no_hyphen+hebbian_graph_anchor",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ],
+  "digested_at": "2026-06-28T09:55:00+08:00",
+  "full_digest": "memory/foraging/digest_hebbian_enzyme_20260628.json"
+}

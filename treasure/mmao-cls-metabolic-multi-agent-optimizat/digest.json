@@ -1,0 +1,17 @@
+﻿{
+  "id": "mmao-cls-metabolic-multi-agent-optimizat",
+  "name": "MMAO-Cls: Metabolic Multi-Agent Optimization for Joint Feature Selection and Cla",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:09.095929",
+  "content": "MMAO-Cls: Metabolic Multi-Agent Optimization for Joint Feature Selection and Cla",
+  "field": "多Agent, 记忆系统, 自反层",
+  "summary": "MMAO-Cls提出了一种代谢式多智能体优化方法，用于联合特征选择和分类任务。",
+  "key_insights": [
+    "引入代谢式多智能体优化算法",
+    "解决联合特征选择与分类问题",
+    "适用于复杂数据处理场景"
+  ],
+  "xihe_relevance": "进化引擎, 自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

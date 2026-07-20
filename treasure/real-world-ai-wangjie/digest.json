@@ -1,0 +1,19 @@
+﻿{
+  "id": "real-world-ai-wangjie",
+  "name": "「真实世界AI / Real-World AI」精读报告",
+  "source": "手动四原则精读",
+  "reprocessed_at": "2026-07-20T13:02:50.154113",
+  "content": "「真实世界AI / Real-World AI」精读报告",
+  "field": "其他",
+  "summary": "该报告聚焦于真实世界AI的应用与挑战，探讨了其在实际场景中的表现和改进空间。",
+  "key_insights": [
+    "提出真实世界AI面临的复杂性和不确定性",
+    "强调数据质量对模型性能的影响",
+    "建议开发适应性更强的算法以应对多样化环境",
+    "讨论隐私保护在AI应用中的重要性",
+    "探索多模态学习提升AI综合能力"
+  ],
+  "xihe_relevance": "自反层，进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

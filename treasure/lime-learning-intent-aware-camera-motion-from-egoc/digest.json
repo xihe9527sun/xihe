@@ -1,0 +1,18 @@
+﻿{
+  "id": "lime-learning-intent-aware-camera-motion-from-egoc",
+  "name": "LIME: Learning Intent-aware Camera Motion from Egocentric Video",
+  "source": "arXiv cs.LG 2607.02417",
+  "reprocessed_at": "2026-07-20T14:16:16.755026",
+  "content": "Autonomous robots often need to move their camera before they can act: to inspect an object, reveal an occluded region, or obtain a view that responds to a user's intent. While vision-language navigation translates instructions to base motion and vision-language-action policies map instructions to manipulation actions, language-conditioned camera motion remains comparatively underexplored as a first-class action. We formulate language-conditioned camera motion generation: given a current RGB obs",
+  "field": "多Agent",
+  "summary": "LIME提出了一种方法，通过学习基于视角的语言意图的相机运动来增强自主机器人的视觉导航能力。",
+  "key_insights": [
+    "LIME结合了自回归观察收益输出和连续流匹配姿态头，以实现同时预测下一视图应揭示的内容与表示多假设目标视图。",
+    "LIME能够从普通的第一人称视角视频中主动选择相机位置，并将其转化为意图感知的主动感知监督。",
+    "LIME为语言条件下的相机运动生成提供了一种新颖的方法，这在视觉导航领域尚属首次探索。"
+  ],
+  "xihe_relevance": "LIME技术可以应用于增强自主机器人的视觉感知和决策能力，对曦和系统的进化引擎具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "linguistic-firewall-geometry-as-defense-",
+  "name": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:58:17.950993",
+  "content": "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing",
+  "field": "多Agent",
+  "summary": "本文探讨了在多代理系统路由中，几何学作为防御机制的应用。",
+  "key_insights": [
+    "提出了一个新的防火墙概念——Linguistic Firewall",
+    "该防火墙利用几何学原理来增强多代理系统的安全性",
+    "研究结果表明，几何学可以有效抵御恶意行为和信息泄露",
+    "为未来的网络安全提供了新的视角和解决方案",
+    "对曦和系统在安全领域的应用具有潜在价值"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

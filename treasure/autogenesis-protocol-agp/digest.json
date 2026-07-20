@@ -1,0 +1,20 @@
+﻿{
+  "id": "autogenesis-protocol-agp",
+  "name": "Autogenesis Protocol (AGP): 自进化协议化治理 — RSPL+SEPL双层协议",
+  "source": "arXiv:2604.15034 · 南洋理工/斯坦福/普林斯顿",
+  "reprocessed_at": "2026-07-20T13:54:31.685683",
+  "content": "Recent advances in LLM based agent systems have shown promise in tackling complex, long horizon tasks. However, existing agent protocols (e.g., A2A and MCP) under specify cross entity lifecycle and context management, version tracking, and evolution safe update interfaces, which encourages monolithic compositions and brittle glue code. We introduce Autogenesis Protocol (AGP), a self evolution protocol that decouples what evolves from how evolution occurs. Its Resource Substrate Protocol Layer (R",
+  "field": "多Agent",
+  "summary": "通过引入Autogenesis Protocol (AGP)，该研究解决了现有代理协议在跨实体生命周期管理、版本跟踪和安全更新接口方面的不足，提出了一种新的自进化协议，旨在促进更加灵活的系统设计。",
+  "key_insights": [
+    "提出了一个双层协议（RSPL+SEPL）来解决现有代理协议中的问题",
+    "AGP通过分离“演化的是什么”与“如何进行演化”的概念，实现了更灵活的设计",
+    "AGS能够动态地实例化、检索和优化注册资源，适用于多Agent系统",
+    "在多个挑战性基准测试中展示了优于强基线的效果",
+    "代码已开源"
+  ],
+  "xihe_relevance": "该研究提出的自进化协议可能对曦和项目中的资源管理和自我演化机制有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

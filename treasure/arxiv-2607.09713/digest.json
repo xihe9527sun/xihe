@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09713",
+  "name": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+  "source": "arXiv:cs.AI:2607.09713",
+  "reprocessed_at": "2026-07-20T14:27:10.987561",
+  "content": "A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based mod",
+  "field": "多Agent",
+  "summary": "通过将紧凑的小语言模型重新训练用于控制推理并嵌入验证器引导的修正循环中，本工作探索了小语言模型是否可以实现工业操作的自主化。",
+  "key_insights": [
+    "在30次实验中的500步模拟中，该框架实现了91.5%的平均动作一致性准确率（范围为86.3%-100%）",
+    "即使在符号重映射下，仍保持了95%的有效范围率，表明尽管在令牌级别上存在分歧，模型依然能够实现有效的物理调节。",
+    "这些结果支持小语言模型与验证器架构作为边缘自主控制可重构路径的可行性"
+  ],
+  "xihe_relevance": "该研究可能对曦和系统的自反层、进化引擎或元认知功能产生潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

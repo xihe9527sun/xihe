@@ -1,0 +1,20 @@
+﻿{
+  "id": "will-scaling-improve-social-simulation-with-llms",
+  "name": "Will Scaling Improve Social Simulation with LLMs?",
+  "source": "arXiv cs.CL 2607.02464",
+  "reprocessed_at": "2026-07-20T14:17:14.098296",
+  "content": "Large Language Model (LLM) social simulations are a promising research method, but they are not yet faithful enough to be adopted widely. In this work, we investigate whether the current scaling paradigm in language modeling is likely to close these gaps, or whether simulation fidelity is orthogonal to general capabilities and therefore deserving of more research attention. We use scaling laws to study the relationship between LLMs' compute scale, general capability benchmarks, and the fidelity ",
+  "field": "多Agent",
+  "summary": "Large Language Model（LLM）社会模拟虽然有潜力，但目前仍不够准确以广泛应用。我们研究了当前语言建模的规模扩展是否能弥补这些差距，发现所有三个子领域中都存在显著的计算规模效应。",
+  "key_insights": [
+    "大规模扩展在意见建模、行为仿真和纵向预测等子域均表现出色。",
+    "涉及广泛代表性的行为和观点模拟任务将随着规模扩大而迅速改善。",
+    "然而，对于那些与一般知识和推理基准如MMLU相关性较低的纵向预测和少数群体观点模拟任务，其改进速度较慢。",
+    "在行为仿真中，大规模扩展未能提升模型对人类认知偏差（如风险厌恶）和人类直觉（如从相关任务学习奖励）的校准。",
+    "即使经过微调，在0.5B至8B参数范围内，这些任务的表现变化也不显著。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

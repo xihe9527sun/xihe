@@ -1,0 +1,17 @@
+﻿{
+  "id": "arxiv-agent-daily-20260702-memory-l3",
+  "name": "arXiv Agent日报 · Memory L3推理层假说",
+  "source": "daoyuly.cn",
+  "reprocessed_at": "2026-07-20T12:57:06.403782",
+  "content": "arXiv Agent日报 · Memory L3推理层假说",
+  "field": "多Agent",
+  "summary": "该文章提出了关于arXiv Agent日报中Memory L3推理层的假说。",
+  "key_insights": [
+    "提出Memory L3推理层的假说",
+    "涉及arXiv Agent日报内容",
+    "关注推理层机制"
+  ],
+  "xihe_relevance": "其他",
+  "depth_rating": 5,
+  "ollama_digested": true
+}

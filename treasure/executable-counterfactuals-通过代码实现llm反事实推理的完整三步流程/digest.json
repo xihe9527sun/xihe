@@ -1,0 +1,18 @@
+﻿{
+  "id": "executable-counterfactuals-通过代码实现llm反事实推理的完整三步流程",
+  "name": "Executable Counterfactuals: 通过代码实现LLM反事实推理的完整三步流程",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:28.979200",
+  "content": "Executable Counterfactuals: 通过代码实现LLM反事实推理的完整三步流程",
+  "field": "工具使用",
+  "summary": "通过代码实现LLM（大型语言模型）的反事实推理，提供了一个完整的三步流程。",
+  "key_insights": [
+    "该方法能够帮助用户更直观地理解模型的决策过程",
+    "简化了复杂的人工智能技术，使其更容易被非专业人员理解和使用",
+    "通过代码实现可以促进对LLM内部机制的理解和改进"
+  ],
+  "xihe_relevance": "该方法可能为曦和系统提供新的功能或优化机会",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

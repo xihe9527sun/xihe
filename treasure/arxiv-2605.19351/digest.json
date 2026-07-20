@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2605.19351",
+  "name": "PAVE: A Cognitive Architecture for Legitimate Violation in Generative Agent Societies",
+  "source": "arXiv:2605.19351 (cs.MA)",
+  "reprocessed_at": "2026-07-20T14:35:05.067042",
+  "content": "Generative agents based on large language models reproduce believable human behavior in cooperative settings, but how they should reason in situations where rule-breaking may be required, such as fire evacuation or authority-supervised emergency, remains poorly characterized. We propose PAVE (Perception, Assessment, Verdict, Emulation), a novel four-module cognitive architecture that addresses this gap end to end: (i) Perception extracts a structured context with explicit authority distance, pee",
+  "field": "自反层",
+  "summary": "PAVE提出了一种四模块的认知架构，用于解决生成代理社会中合法违规的推理问题，并在Voville环境中的三个场景下进行了评估。",
+  "key_insights": [
+    "PAVE通过感知、评估、裁决和模仿四个阶段处理规则违反的情境",
+    "PAVE能够实现合法违规、权威顺从、限定范围和恢复功能，同时满足这四项属性",
+    "PAVE生成的决策比基础模型更结构化且易于解释，并获得人类评价者的高度认可"
+  ],
+  "xihe_relevance": "PAVE架构可能对曦和计划中的自反层或元认知系统有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

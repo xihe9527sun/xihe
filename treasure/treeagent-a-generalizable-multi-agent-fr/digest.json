@@ -1,0 +1,18 @@
+﻿{
+  "id": "treeagent-a-generalizable-multi-agent-fr",
+  "name": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in ",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:01.120771",
+  "content": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in ",
+  "field": "多Agent",
+  "summary": "TreeAgent提出了一种通用的多代理框架，用于自动化偏见标注。",
+  "key_insights": [
+    "提出了新的多代理框架TreeAgent",
+    "适用于自动化的偏见标注任务",
+    "具有通用性，可以应用于多种场景",
+    "利用多代理系统来提高效率和准确性"
+  ],
+  "xihe_relevance": "该内容与自反层有一定关联，但主要集中在技术实现上。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

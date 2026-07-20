@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.03953",
+  "name": "The Remarkable Effectiveness of Providing AI Agents with Natural Language Tools",
+  "source": "arXiv:cs.CL:2607.03953",
+  "reprocessed_at": "2026-07-20T14:20:29.108920",
+  "content": "This study independently replicates and extends the Natural Language Tools (NLT) framework of Johnson et al.~(2025), which questions the use of structured tool calling in large language model (LLM) agentic systems. We evaluated NLT across 14 models and 8,560 trials, adding newer frontier, reasoning, and open-weight models to the original set. The results confirm the core findings and add detail. NLT improves tool-calling accuracy by 14.9 percentage points overall (62.3\\% versus 47.4\\% structured",
+  "field": "多Agent",
+  "summary": "该研究独立验证了Johnson et al. (2025)提出的自然语言工具框架，并在14个模型和8,560次试验中评估了其效果，结果显示NLT提高了工具调用准确性和减少了错误。",
+  "key_insights": [
+    "NLT显著提高了大型语言模型代理系统中的工具调用准确性，降低了关键错误率。",
+    "模型能力对NLT的优势有影响：没有原生工具调用的模型、推理模型和较小的模型获得了较大的优势。",
+    "NLT减少了25.2%的令牌使用量，并在递归代理工作流中提高了可靠性和效率。",
+    "NLT有助于减少由结构化工具调用引起的错误，这可能对生产系统特别有价值。",
+    "NLT提供了一种替代结构化工具调用的方法，特别是在可靠性比可读性更重要的情况下。"
+  ],
+  "xihe_relevance": "NLT在提高模型可靠性和效率方面具有潜在价值，尤其是在需要高可靠性的生产环境中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

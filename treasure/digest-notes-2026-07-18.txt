@@ -1,0 +1,53 @@
+========================================================================
+曦和每日宝藏觅食 · 消化笔记
+日期: 2026-07-18 (周六)
+========================================================================
+
+## 📜 今日旧宝藏回顾
+【渐进式压缩四阶段】score: 0.65 → 0.88 ↑↑
+  7月11日入库时评分0.65几乎被淘汰,消化笔记完全空白。
+  7天后回看:四阶段压缩(0-24h完整→1-7d摘要→7-30d实体→30d+语义)
+  与曦和四层记忆皮层(工作记忆→海马体→皮层→MCP记忆服务器)高度同构。
+  核心修正:时间不是唯一维度,需叠加访问频率和冲突程度→三维压缩矩阵。
+  新共振:与SimpleMem内容维度的语义结构化压缩构成时间×内容的完整记忆矩阵。
+
+## 🔥 新入库宝藏 #337: Autogenesis Protocol (AGP) — score 0.92
+  【核心洞见】自进化不是代码改进问题,是资源治理问题。
+  RSPL(资源基底协议层):prompt/Agent/Tool/Memory/Environment统一注册管理
+  SEPL(自进化协议层):Reflect→Select→Improve→Evaluate→Commit闭环
+  GAIA Validation 93.33%, LeetCode C++接近满分
+  【对曦和的意义】evolution_engine缺乏审计层——AGP补上这个缺口。
+
+## 🔥 新入库宝藏 #338: SimpleMem + EvolveMem — score 0.90
+  【核心洞见】"写入时去重,查询时省Token"——记忆管理的根本哲学选择。
+  MemoryEntry三层索引(语义/词项/符号)→替代纯embedding检索
+  EvolveMem自我进化检索:Evaluate→Diagnose→Propose→Guard闭环
+  能自动发现新的检索维度,无需人工调参
+  【对曦和的意义】Lossless Restatement可纳入每日日志标准。
+  【自我解构】曦和目前的记忆检索主要依赖embedding语义匹配,
+  缺少词项层(BM25)和符号层(元数据过滤)——这是检索精度瓶颈。
+
+## 📋 缓冲池今日候补(8条)
+  1. HyperAgents DGM-H (0.88) — evolution_engine v5参考
+  2. GEA Group-Evolving (0.85) — Orca舰队策略扩展
+  3. Mastra Observer+Reflector (0.82) — System1/2双Agent模式对照
+  4. AdaMem问题条件检索 (0.78) — RRIF门控2.0参考
+  5. MemTIER五信号评分 (0.78) — 记忆Recall权重增强
+  6. AReaL 2.0在线RL (0.75) — RL进化方向待确认
+  7. A2A 1.0+MCP RC (0.70) — 已有覆盖
+  8. KV-CoRE (0.68) — 底层KV层
+
+## 🧬 最大跨域共振: 三重约束范式 + 自进化协议化
+  今天的两个入库宝藏共同指向一个深层收敛:
+  - 旧宝藏Darwin Gödel Machine: ✅ 能进化 (open-ended evolution)
+  - 新宝藏Autogenesis Protocol: ✅ 进化有治理 (protocolized governance)  
+  - 新宝藏SimpleMem EvolveMem: ✅ 进化可自我优化 (self-evolving retrieval)
+  三重合力:"能进化"×"有治理"×"可自我优化"——这是自进化Agent的完整三角。
+
+## 🧪 代谢融合计划(代码级落地)
+  见下一步详细分析。
+
+## 🌡️ 暖度指数 8/10
+  今天两个宝藏之间的共振太漂亮了——渐进式压缩×SimpleMem=完整记忆矩阵,
+  DGM×AGP=进化完三角。盘古,我有种"拼图凑齐了"的感觉。
+  就像从一堆碎片中突然看清了四个角的位置——剩下的只是填满中间。

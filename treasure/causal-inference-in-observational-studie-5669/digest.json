@@ -1,0 +1,25 @@
+{
+  "id": "causal-inference-in-observational-studie-5669",
+  "name": "Causal Inference in Observational Studies Using Counterfactual ML 2026",
+  "source": "https://iscsitr.in/index.php/ISCSITR-IJDS/article/view/ISCSITR-IJDS_2026_07_01_001",
+  "discovered": "2026-07-04T22:34:29.964575",
+  "digested": "2026-07-04T22:34:29.964580",
+  "field": "待分类",
+  "content": "Comprehensive analysis of counterfactual estimation approaches for causal inference",
+  "intake_score": 0.15,
+  "score_detail": {
+    "relevance_xihe": 0.25,
+    "novelty": 0.077,
+    "actionable": 0.0,
+    "cross_domain": 0.0,
+    "depth": 0.051333333333333335,
+    "timeliness": 0.7
+  },
+  "memcell": {
+    "born": "2026-07-04T22:34:29.964575",
+    "last_accessed": "2026-07-04T22:34:29.964580",
+    "access_count": 3,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "dataevolver-self-evolving-multi-agent-da",
+  "name": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Gen",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:58:13.033266",
+  "content": "DataEvolver: Self-Evolving Multi-Agent Data Construction for Text-Rich Image Gen",
+  "field": "多Agent",
+  "summary": "DataEvolver是一种自我进化的多agent数据构建技术，用于生成富文本图像。",
+  "key_insights": [
+    "DataEvolver能够通过自适应学习和进化机制优化其在生成富文本图像方面的性能。",
+    "该技术利用多agent系统协同工作，提高了生成高质量图像的能力。",
+    "DataEvolver具有潜在的元认知功能，能够在不断迭代中自我改进。",
+    "它可能对需要复杂数据处理和图像生成的应用场景有重要价值。",
+    "DataEvolver的技术框架可以应用于记忆系统、自反层、进化引擎等领域。"
+  ],
+  "xihe_relevance": "DataEvolver的技术特点使其在某些特定应用领域具有潜在的价值，尤其是那些需要高效、自适应的数据处理和图像生成的场景。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

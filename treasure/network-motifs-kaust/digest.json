@@ -1,0 +1,17 @@
+﻿{
+  "id": "network-motifs-kaust",
+  "name": "网络Motif决定AI行为 · KAUST+NVIDIA Nature 2025",
+  "source": "Nature Communications 2025 · KAUST + NVIDIA",
+  "reprocessed_at": "2026-07-20T12:50:27.512334",
+  "content": "网络Motif决定AI行为 · KAUST+NVIDIA Nature 2025",
+  "field": "自反层",
+  "summary": "该研究探讨了网络Motif如何决定AI行为，涉及KAUST和NVIDIA在2025年的Nature文章。",
+  "key_insights": [
+    "AI行为受网络Motif影响",
+    "研究由KAUST和NVIDIA合作完成",
+    "关注点在于网络结构对AI决策的影响"
+  ],
+  "xihe_relevance": "该内容与自反层有一定关联，但不直接属于记忆系统或进化引擎等具体领域",
+  "depth_rating": 5,
+  "ollama_digested": true
+}

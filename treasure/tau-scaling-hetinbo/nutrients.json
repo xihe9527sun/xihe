@@ -1,0 +1,25 @@
+{
+  "id": "tau-scaling-hetinbo",
+  "name": "何庭波「多层电子系统的时间缩微理论」（τ缩放 / 韬定律）V2版",
+  "source": "ChinaXiv DOI:10.12074/202605.00224 | 作者：何庭波（华为海思）",
+  "discovered": "2026-07-10T06:59:59.568400",
+  "field": "AI架构·曦和融合",
+  "intake_score": 0.9,
+  "four_principles_filter": {
+    "去粗取精": "手动四原则精读·曦和采纳",
+    "去伪存真": "已精读采纳",
+    "由此及彼": "见 README.md",
+    "由表及里": "手动入厅(铁律五双论文)"
+  },
+  "manual_readme": true,
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库(手动四原则精读)",
+    "phase": "—",
+    "landing": "手动精读",
+    "subsystem": "—",
+    "enhancement": "见 README.md",
+    "intake_score": 0.9,
+    "backed_at": "2026-07-10T06:59:59.568400"
+  }
+}

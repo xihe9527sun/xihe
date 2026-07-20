@@ -1,0 +1,17 @@
+﻿{
+  "id": "Minimal-MMAO--A-Resource-Closed-Loop-Fra",
+  "name": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:57:44.945653",
+  "content": "Minimal MMAO: A Resource-Closed-Loop Framework for Adaptive Metaheuristic Search",
+  "field": "自反层/进化引擎",
+  "summary": "该研究提出了一种资源闭环框架Minimal MMAO，旨在为适应性元启发式搜索提供支持。",
+  "key_insights": [
+    "引入了Minimal MMAO框架",
+    "目标是支持适应性元启发式搜索",
+    "构建资源闭环以优化搜索过程"
+  ],
+  "xihe_relevance": "该内容对自反层和进化引擎方向有一定价值，可作为研究基础。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

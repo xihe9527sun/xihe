@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2606.19746",
+  "name": "SAC: Disaggregated KV Cache System for Sparse Attention LLMs with CXL",
+  "source": "arXiv:2606.19746 (cs.DC)",
+  "reprocessed_at": "2026-07-20T14:35:24.315885",
+  "content": "The scaling of LLMs toward long-context inference has shifted the primary serving system bottleneck from computation to memory capacity. Traditional solutions for dense attention models rely on RDMA-based disaggregated memory pools, which perform coarse-grained fetching of the entire prefix KV cache from remote storage to local memory before decoding. However, this approach is fundamentally inefficient for emerging sparse attention models. While only a small fraction of KV entries are active dur",
+  "field": "记忆系统",
+  "summary": "为了应对新兴稀疏注意力模型，我们提出了一种新的SAC（Sparse Attention Cache）系统，利用CXL的低延迟和缓存行粒度加载/存储特性，在推理过程中仅获取所需的前K个键值对，从而显著提高了性能。",
+  "key_insights": [
+    "SAC是首个为稀疏注意力模型优化的高效去耦合键值缓存系统。",
+    "通过使用CXL低延迟和缓存行粒度特性，SAC在推理过程中仅获取所需的前K个键值对，从而减少了传输瓶颈和本地内存浪费。",
+    "与基于RDMA的传统方法相比，SAC实现了2.1倍的吞吐量提升、9.7倍的时间到首次反馈减少以及1.8倍的总时间减少。"
+  ],
+  "xihe_relevance": "SAC系统的高效性能可能对曦和项目具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

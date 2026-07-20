@@ -1,0 +1,17 @@
+﻿{
+  "id": "bringing-agentic-search-to-earth-observa",
+  "name": "Bringing Agentic Search to Earth Observation Data Discovery",
+  "source": "cs.LG",
+  "reprocessed_at": "2026-07-20T12:56:37.220874",
+  "content": "Bringing Agentic Search to Earth Observation Data Discovery",
+  "field": "多Agent",
+  "summary": "该研究探讨了将Agentic Search技术应用于地球观测数据发现中的可能性。",
+  "key_insights": [
+    "Agentic Search技术的应用潜力",
+    "对地球观测数据的搜索需求",
+    "跨领域技术融合的可能性"
+  ],
+  "xihe_relevance": "记忆系统",
+  "depth_rating": 5,
+  "ollama_digested": true
+}

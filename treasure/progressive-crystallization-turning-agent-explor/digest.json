@@ -1,0 +1,20 @@
+﻿{
+  "id": "progressive-crystallization-turning-agent-explor",
+  "name": "Progressive Crystallization: Turning Agent Exploration into Deterministic Lower-Cost Workflows in Production (2607.07052)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:03:30.390159",
+  "content": "AI agents deployed for IT operations are typically permanent cost centers because every execution requires full LLM inference, even for previously solved problems. This paper introduces progressive crystallization, a lifecycle that treats agent exploration as a discovery mechanism rather than a permanent execution model. It defines a three-stage execution taxonomy, from fully agent-orchestrated to hybrid to fully deterministic workflows, together with an evidence-based promotion mechanism that c",
+  "field": "多Agent",
+  "summary": "该研究提出了一种名为‘渐进结晶’的方法，旨在通过将AI代理探索视为一种发现机制而非永久执行模型来提高生产环境中IT操作中AI代理的确定性工作流比例。这种方法显著提高了确定性执行的比例，并在保持事故处理数量不变的情况下大幅降低了每起事故的成本。",
+  "key_insights": [
+    "提出了一种新的生命周期方法，将AI代理探索视为一种发现机制而非永久执行模型。",
+    "定义了三种阶段的工作流分类，从完全由AI代理控制到混合再到完全确定性工作流。",
+    "通过基于证据的推广机制，将反复验证的AI行为转换为更便宜且可重复的确定性工作流。",
+    "自动降级表现不佳的工作流，提高了事故处理的安全性。",
+    "在生产环境中的AIOps系统上进行了评估，并取得了显著效果。"
+  ],
+  "xihe_relevance": "该方法可能对曦和系统的自反层、进化引擎等模块有潜在价值，有助于提高其性能和鲁棒性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

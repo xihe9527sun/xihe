@@ -1,0 +1,17 @@
+﻿{
+  "id": "theater-of-mind-for-llms-gwa-global-workspace-ag",
+  "name": "Theater of Mind for LLMs: GWA — Global Workspace Agents",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T13:04:26.542968",
+  "content": "Theater of Mind for LLMs: GWA — Global Workspace Agents",
+  "field": "自反层/进化引擎",
+  "summary": "该研究提出了一种名为GWA（Global Workspace Agents）的模型，旨在增强大型语言模型在思维剧场中的表现。",
+  "key_insights": [
+    "引入了GWA概念以改进LLM性能",
+    "探讨了全球工作空间代理的概念",
+    "关注于提升大型语言模型的认知功能"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

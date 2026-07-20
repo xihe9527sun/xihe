@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09694",
+  "name": "Low-Rank Attention Residuals",
+  "source": "arXiv:cs.LG:2607.09694",
+  "reprocessed_at": "2026-07-20T14:28:53.336215",
+  "content": "Attention Residuals replace the fixed residual sum with depthwise attention over previous sub-layer outputs in large language models (LLMs), but use each output as both a full-dimensional key and value. This couples routing with representation and makes depth-routing scores scale with the hidden width $d$. We propose Low-Rank Attention Residuals (LR-AttnRes), which keep full-dimensional residual values while using $r$-dimensional keys, with $r \\ll d$, for routing. Projected LR-AttnRes emits lear",
+  "field": "自反层",
+  "summary": "Low-Rank Attention Residuals (LR-AttnRes) 提出了一种新的注意力残差机制，通过使用低秩键值对深度路由进行解耦，从而在保持全维度残差值的同时减少计算复杂度。Sliced LR-AttnRes 则利用每个值的最后 r 维作为路由键，进一步减少了冗余计算。",
+  "key_insights": [
+    "Low-Rank Attention Residuals (LR-AttnRes) 提出了一种新的注意力残差机制，通过使用低秩键值对深度路由进行解耦，从而在保持全维度残差值的同时减少计算复杂度。",
+    "Sliced LR-AttnRes 利用了每个值的最后 r 维作为路由键，进一步减少了冗余计算。",
+    "研究发现深度路由可以在远小于模型宽度的情况下取得有效效果。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

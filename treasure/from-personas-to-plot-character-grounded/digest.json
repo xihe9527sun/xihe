@@ -1,0 +1,20 @@
+﻿{
+  "id": "from-personas-to-plot-character-grounded",
+  "name": "From Personas to Plot: Character-Grounded Multi-Agent Story Generation for Long-",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:57:52.868502",
+  "content": "From Personas to Plot: Character-Grounded Multi-Agent Story Generation for Long-",
+  "field": "多Agent",
+  "summary": "本文探讨了从角色设定到情节生成的方法，旨在为长篇故事创作提供支持。",
+  "key_insights": [
+    "提出了一个基于角色的多代理系统来生成长篇故事",
+    "该方法能够自动生成具有连贯性和深度的情节",
+    "通过角色设定引导故事的发展，增强了故事的真实感和沉浸感",
+    "为未来在记忆系统、自反层等领域的应用提供了理论基础",
+    "有助于提高自动化创作的多样性和复杂性"
+  ],
+  "xihe_relevance": "该研究方法可以应用于曦和的记忆系统中以增强其生成能力",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

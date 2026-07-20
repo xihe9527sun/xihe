@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2603.21563",
+  "name": "Counterfactual Credit Policy Optimization for Multi-Agent Collaboration",
+  "source": "arXiv:2603.21563v2 (cs.AI)",
+  "reprocessed_at": "2026-07-20T14:34:28.743101",
+  "content": "Collaborative multi-agent large language models (LLMs) can solve complex reasoning tasks by decomposing roles, but reinforcement learning for such systems is limited by credit assignment: shared terminal rewards obscure individual contributions and can encourage free-riding. We introduce two optimizer-agnostic credit assignment methods for converting joint outcomes into agent-specific learning signals. Counterfactual Credit for Policy Optimization (CCPO) estimates an agent's marginal contributio",
+  "field": "多Agent",
+  "summary": "通过引入两种信用分配方法，即Counterfactual Credit for Policy Optimization (CCPO) 和 Self-Evaluated Credit for Policy Optimization (SEPO)，研究者解决了协作多智能体大型语言模型在复杂推理任务中面临的奖励分配问题。",
+  "key_insights": [
+    "提出了两种新的信用分配策略来解决多智能体系统中的奖励分配难题，这两种方法分别是Counterfactual Credit for Policy Optimization (CCPO) 和 Self-Evaluated Credit for Policy Optimization (SEPO)",
+    "这些方法不仅适用于传统的强化学习框架（如GRPO, GSPO, REINFORCE++），还能够应用于序列化的思考-解决设置中",
+    "实验结果显示，明确的信用分配在某些多智能体任务上尤其有效，特别是在数学推理基准测试中表现显著"
+  ],
+  "xihe_relevance": "CCPO和SEPO方法可能对曦和系统中的奖励机制设计有潜在价值，有助于提高系统的自适应性和复杂任务处理能力",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

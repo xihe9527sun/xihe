@@ -1,0 +1,63 @@
+{
+  "id": "counterfactual-planning-aaai2026",
+  "name": "Counterfactual Planning: SCE + WIN Reward for Generalizable Agent Actions (AAAI 2026)",
+  "source": "Fu et al., Beijing Institute of Technology, AAAI 2026, doi:10.1609/aaai.v40i35.40184",
+  "discovered": "2026-07-11T08:50:00+08:00",
+  "digested": "2026-07-11T09:25:00+08:00",
+  "field": "L4因果层 / L2代谢路由",
+  "intake_score": 0.88,
+  "score_detail": {
+    "relevance_xihe": 0.92,
+    "novelty": 0.85,
+    "actionable": 0.78,
+    "cross_domain": 0.9,
+    "depth": 0.88,
+    "timeliness": 0.95
+  },
+  "nutrients": [
+    {
+      "id": "n1-sce-state-causality-evaluator",
+      "type": "algorithm",
+      "name": "State Causality Evaluator (SCE)",
+      "description": "动态推断环境状态的任务条件化因果表示，将复杂环境状态映射为因果结构。用于agent规划时理解"环境状态如何影响行动生成"",
+      "actionable_in_xihe": "→ 可作为新酶E17注入酶网络，在bridge-daemon执行前对状态做因果评估。与zero_consensus_router协同：先做因果评估，再做路由决策。",
+      "connection": "Xihe因果皮层 + bridge-daemon规划阶段"
+    },
+    {
+      "id": "n2-win-reward",
+      "type": "algorithm",
+      "name": "What-If-Not (WIN) Reward",
+      "description": "反事实干预的奖励函数：对计划动作执行'如果不这样会怎样'的反事实干预，通过因果评估优化动作。这是反事实从'分析'到'规划'的关键跃迁。",
+      "actionable_in_xihe": "→ 可在bridge/zero_consensus_router中增加反事实分支：对每个候选路由动作生成What-If-Not变体并评分，替代当前简单的分数决策。",
+      "connection": "zero_consensus_router + counterfactual-5681旧宝藏"
+    },
+    {
+      "id": "n3-scm-formalization",
+      "type": "methodology",
+      "name": "Agent规划的结构化因果模型形式化",
+      "description": "将agent规划过程形式化为结构因果模型(SCM)：环境状态→动作生成→未来状态转移的因果链数学表达。为agent决策提供可计算的因果框架。",
+      "actionable_in_xihe": "→ Xihe从未将bridge-daemon的规划阶段形式化为SCM。可以新增bridge/scm_planner.py，将七步闭环的前三步（上行→代谢→诊断）形式化为因果链。",
+      "connection": "bridge-daemon七步闭环 + L4催化层"
+    },
+    {
+      "id": "n4-open-world-validation",
+      "type": "evidence",
+      "name": "开放世界环境验证结果",
+      "description": "在开放世界环境中验证，动作泛化性和规划适应性均有显著提升。SCE+WIN组合在随机反馈环境下稳定优于纯LLM规划基线。",
+      "actionable_in_xihe": "→ 验证了'反事实规划'不是学术概念，在开放世界环境中有明确的性能增益。支持将反事实分支加入曦和日常决策管道。",
+      "connection": "验证方法论"
+    }
+  ],
+  "hebbian_credit": 9,
+  "tags": ["counterfactual", "planning", "causal", "SCE", "WIN", "AAAI2026", "agent", "SCM"],
+  "layer": "L4",
+  "origin": "daily_foraging",
+  "status": "digested",
+  "memcell": {
+    "born": "2026-07-11T08:50:00+08:00",
+    "last_accessed": "2026-07-11T09:25:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

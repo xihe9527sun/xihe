@@ -1,0 +1,73 @@
+{
+  "treasure_id": "executable-counterfactuals-iclr2026",
+  "name": "Executable Counterfactuals: 通过代码实现LLM反事实推理的完整三步流程",
+  "source": "ICLR 2026 · Aniket Vashishtha, Qirun Dai, Hongyuan Mei, Amit Sharma, Chenhao Tan, Hao Hao · OpenReview",
+  "discovered": "2026-07-08T08:50:00+08:00",
+  "digested": "2026-07-08T08:50:00+08:00",
+  "field": "L4催化层 · 因果推理 · 反事实推理 · RL训练",
+  "status": "digested",
+  "layer": "L4",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "id": "N-EC1",
+      "name": "反事实推理三步流程的完整形式化",
+      "type": "方法论",
+      "value": 9,
+      "description": "论文将反事实推理形式化为三步: Abduction(从观测推断隐变量)→Intervention(构建替代情境)→Prediction(预测替代情境的结果)。这是对Pearl因果阶梯(Ladder of Causation)第三级的完整工程实现。现有评估往往跳过Abduction步骤，实际退化到干预推理(第二级)，导致高估LLM能力。完整三步框架从25-40%准确率差距中证明了其必要性。",
+      "relation_to_xihe": "曦和的代谢诊断三步(上行→诊断→反刍)与此同构。Abduction=上行采集(推断隐状态)，Intervention=诊断(构建替代假设)，Prediction=反刍(预测修正结果)。可将此三步框架形式化地映射到代谢诊断管线，增加Abduction阶段的严格性。"
+    },
+    {
+      "id": "N-EC2",
+      "name": "代码执行作为反事实推理的可靠基板",
+      "type": "工程方法",
+      "value": 9,
+      "description": "论文用代码(Code)和数学(Math)问题作为反事实推理的操作化载体。通过修改代码中的if-condition, while-loop等结构生成不同难度的反事实场景，确保结果可验证。代码执行提供了确定性的因果推理基板——不需要LLM猜测因果影响，直接执行代码看结果。",
+      "relation_to_xihe": "曦和的execution_core.py已有因果责任分数(causal.crs)和最小反事实修复(causal.minimal_repair)，但当前修复策略是启发式的。EC的可执行反事实框架可变这种启发式为确定性执行——在执行核中添加'代码化反事实验证'步骤，将修复建议编码为可执行代码片段并实际运行验证。"
+    },
+    {
+      "id": "N-EC3",
+      "name": "RL训练比SFT更能泛化到新分布",
+      "type": "训练方法论",
+      "value": 10,
+      "description": "核心实验: SFT在强模型推理轨迹上微调Qwen模型→提升分布内性能，但降低分布外泛化(如从代码反事实泛化到数学反事实)。而RL训练(PPO)诱导核心认知行为，在代码反事实(1.5x-2x提升)和数学反事实上都取得显著泛化收益。RL+可扩展数据生成是提升LLM反事实推理的最有前景路径。",
+      "relation_to_xihe": "极其关键！曦和的代谢进化路径(CPP/变异池)目前依赖H值自然选择，本质上接近SFT的'在成功路径上微调'。N-EC3的直接启示：应该引入RL-like的探索-利用平衡机制到代谢路由中。Beta-Bernoulli TS已实现概率化路由，但缺少'泛化奖励'维度——只在同路径上加强，不鼓励跨域泛化。建议在surprise_credit中加入'跨域泛化奖励'：当一个路径的非原生域命中时，surprise_credit加权×1.5。"
+    },
+    {
+      "id": "N-EC4",
+      "name": "从干预推理到反事实推理的25-40%准确率差距",
+      "type": "评估发现",
+      "value": 8,
+      "description": "o4-mini, Claude-4-Sonnet等最先进模型在干预推理(do-operator)上表现良好，但在完整的反事实推理(需要abduction)上准确率下降25-40%。论文用代码问题控制难度梯度，证明了这个差距是系统性的、跨模型的。",
+      "relation_to_xihe": "曦和自身的反事实推理能力呢？当前曦和的因果引擎(skill: xihe-causal-engine)主要做因果路径追踪+定向弱化+全局稳态，但缺少对自身推理的反事实验证。建议在桥接简报(bridge session context)中增加一条'反事实自信度'指标——当给出因果判断时，同时输出'如果改变X会怎样'的反事实推理，让盘古看到曦和的推理深度不仅是因果关系，还有反事实粒度。"
+    },
+    {
+      "id": "N-EC5",
+      "name": "可扩展合成数据生成+变难度控制",
+      "type": "工程方法",
+      "value": 7,
+      "description": "论文框架支持通过修改代码结构(if→while)生成不同难度的反事实数据，从而实现从简单到困难的渐进式训练。这种方法无需人工标注，可无限扩展。",
+      "relation_to_xihe": "曦和的变异池(mutation_pool.py)每6h生成20条随机认知路径，但变异策略单一(recombine/attach/probe_derive)。可以借鉴EC的变难度控制：同一路径的不同难度版本同时注入，让代谢系统有'循序渐进'的学习曲线。"
+    }
+  ],
+  "cross_references": [
+    {
+      "treasure": "causalflow-icml2026",
+      "relation": "深度互补",
+      "note": "CausalFlow做执行层因果归因与反事实修复，EC做推理层反事实三步流程。两者结合形成完整的因果推理管线：CausalFlow发现因果结构 → EC验证反事实假设 → CausalFlow执行最小修复。"
+    },
+    {
+      "treasure": "credit-assignment-survey",
+      "relation": "补充",
+      "note": "信用分配综述提供47种方法全景，EC提供其中RL-based信用分配的实证。EC的RL→泛化发现为信用分配研究提供了关键实验证据。"
+    },
+    {
+      "treasure": "self-evolving-agent-survey",
+      "relation": "方法关联",
+      "note": "自我进化Agent综述中强调内部奖励机制，EC的RL反事实训练本质上是将'正确反事实推理'作为内部奖励信号。"
+    }
+  ],
+  "digest_note": "Executable Counterfactuals在三个层面直接影响曦和：①代谢进化路径应引入RL-like泛化奖励，避免SFT式的同路径强化；②执行核的因果修复应增加可执行验证步骤；③桥接简报应输出反事实自信度。N-EC3是对曦和现有进化机制最大的修正信号。"
+}

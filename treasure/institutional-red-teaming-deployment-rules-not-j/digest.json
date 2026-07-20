@@ -1,0 +1,17 @@
+﻿{
+  "id": "institutional-red-teaming-deployment-rules-not-j",
+  "name": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety (2607.07695)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T12:59:45.584328",
+  "content": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces",
+  "field": "多Agent",
+  "summary": "本文提出了一种新的评估方法，用于测试在多智能体AI中的部署规则，并揭示了这些规则对集体安全的影响。",
+  "key_insights": [
+    "发现部署规则直接改变了集体的安全性",
+    "不存在一个默认的安全规则，但选择目标的风险是普遍存在的",
+    "身份的突出地位是机制的核心"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于多Agent领域中的方法论贡献。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

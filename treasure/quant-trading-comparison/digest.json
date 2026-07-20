@@ -1,0 +1,19 @@
+﻿{
+  "id": "quant-trading-comparison",
+  "name": "2026 AI量化交易方案对比 · TradingAgents vs Qlib vs FinRL",
+  "source": "路飞说AI · 2026-04-03",
+  "reprocessed_at": "2026-07-20T12:51:53.814295",
+  "content": "2026 AI量化交易方案对比 · TradingAgents vs Qlib vs FinRL",
+  "field": "工具使用/量化交易/多Agent",
+  "summary": "本文对比了TradingAgents、Qlib和FinRL在2026年AI量化交易方案中的表现。",
+  "key_insights": [
+    "TradingAgents在模型训练上具有优势",
+    "Qlib提供了丰富的API接口和数据处理能力",
+    "FinRL专注于策略回测和优化",
+    "三者各有侧重，适用于不同需求",
+    "未来可能整合以提升整体性能"
+  ],
+  "xihe_relevance": "进化引擎/多Agent",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

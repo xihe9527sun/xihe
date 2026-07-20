@@ -1,0 +1,35 @@
+{
+  "id": "self-aware-recursively-self-improving-agents-for",
+  "name": "Self-Aware Recursively Self-Improving Agents for Personal Singularity",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.719840",
+  "field": "代谢路由/event_bus",
+  "intake_score": 0.87,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "代谢路由/event_bus",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "代谢路由/event_bus",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.87,
+    "backed_at": "2026-07-18T09:10:30.719111"
+  },
+  "digest_notes": "提出SARSI自感知递归自改进Agent架构：维护持久化自模型（身份/目标/能力/限制/不确定性/关系/历史/发展变化），用该模型指导和评估递归改进。形式化功能自感知、范围路由、改进接受机制。包含规划-执行-验证循环、证据门控改进环、外部治理平面。"
+}

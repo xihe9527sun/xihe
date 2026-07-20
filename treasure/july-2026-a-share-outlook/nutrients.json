@@ -1,0 +1,30 @@
+{
+  "treasure_id": "july-2026-a-share-outlook",
+  "extracted_at": "2026-07-04T08:50:00+08:00",
+  "nutrients": [
+    {
+      "id": "N89-performance-window",
+      "priority": "P1",
+      "name": "业绩兑现窗口期 — A股从炒概念到看兑现",
+      "target": "量化策略·因子选择",
+      "status": "pending",
+      "note": "7月中报窗口期是最大分水岭：纯概念小票走弱，有真实业绩的龙头会被机构重新抱团。曦和量化因子应加入业绩验证因子（ROE/现金流/订单确认），过滤掉纯概念标的"
+    },
+    {
+      "id": "N90-tech-main-line",
+      "priority": "P1",
+      "name": "2026下半年科技核心三方向 — 算力/半导体/功率",
+      "target": "量化策略·行业轮动",
+      "status": "pending",
+      "note": "算力硬件（光模块/PCB/服务器）、半导体设备材料、功率半导体涨价。WSTS预测全球半导体1.51万亿美元(+90%)。曦和因子模型应加大对科技细分赛道的权重"
+    },
+    {
+      "id": "N91-rotation-side-lines",
+      "priority": "P2",
+      "name": "四大低位支线 + 三大低调暗线",
+      "target": "量化策略·板块监测",
+      "status": "pending",
+      "note": "猪肉（供需反转）、氟化工（涨价）、创新药（政策）、券商（情绪）为轮动支线；工业互联网、储能、有色金属为中长期暗线"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09798",
+  "name": "JEPA for AI-Native 6G: Predictive Representations and Open Challenges",
+  "source": "arXiv:cs.LG:2607.09798",
+  "reprocessed_at": "2026-07-20T14:28:47.004452",
+  "content": "Sixth-generation (6G) networks are moving toward AI-native operation, where learning modules are embedded across the radio access network (RAN), edge, and core. This transition requires learning from limited labels, heterogeneous wireless and network data, partial observations, non-stationary propagation, and latency-constrained control loops. Joint-embedding predictive architecture (JEPA) is a promising self-supervised paradigm for this setting because it predicts missing or future representati",
+  "field": "进化引擎",
+  "summary": "Sixth-generation (6G) networks are transitioning to an AI-native operation, necessitating the use of predictive architectures like Joint-Embedding Predictive Architecture (JEPA), which can handle limited labels and heterogeneous data.",
+  "key_insights": [
+    "JEPA is a promising self-supervised paradigm for 6G intelligence, capable of predicting missing or future representations in latent space rather than reconstructing raw measurements.",
+    "A wireless-aware target during self-supervised pretraining can improve label efficiency and robustness across different deployment conditions compared to supervised learning.",
+    "Open challenges include multi-timescale prediction, action-conditioned modeling, distributed training, trustworthiness, efficient deployment, benchmarking, and standardization."
+  ],
+  "xihe_relevance": "JEPA的提出和应用可能对曦和系统中自反层、进化引擎等模块有潜在的价值，特别是在处理6G网络中的异构数据和有限标签方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

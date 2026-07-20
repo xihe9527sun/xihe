@@ -1,0 +1,17 @@
+﻿{
+  "id": "experience-graphs-agent-trellis",
+  "name": "Experience Graphs: 自改进Agent的数据基础——Trellis",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T13:04:31.283146",
+  "content": "Experience Graphs: 自改进Agent的数据基础——Trellis",
+  "field": "进化引擎",
+  "summary": "该论文探讨了Trellis在构建自改进代理数据基础中的作用，重点介绍了Experience Graphs的概念。",
+  "key_insights": [
+    "引入Experience Graphs概念",
+    "描述Trellis如何支持自改进代理的数据收集和处理",
+    "强调其对机器学习模型性能提升的重要性"
+  ],
+  "xihe_relevance": "进化引擎, 自反层",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

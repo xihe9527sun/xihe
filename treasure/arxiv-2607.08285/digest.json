@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.08285",
+  "name": "Psychological Competence as a Missing Dimension in AI Evaluation",
+  "source": "arXiv:cs.AI:2607.08285",
+  "reprocessed_at": "2026-07-20T14:25:27.347852",
+  "content": "Current AI evaluation frameworks focus primarily on technical performance, including accuracy, robustness, reasoning ability, and policy compliance. These measures remain essential, but they are not sufficient for systems that interact directly with users through natural language. Human-facing AI systems are increasingly used as advisors, coaches, tutors, and companions. In these roles, their responses can shape how users reason, interpret emotions, form beliefs, calibrate trust, and make decisi",
+  "field": "自反层",
+  "summary": "当前的人工智能评估框架主要关注技术性能，如准确度、鲁棒性、推理能力及政策合规。尽管这些指标至关重要，但对于直接与用户通过自然语言互动的系统来说并不足够。",
+  "key_insights": [
+    "提出心理胜任力作为人工智能评估中的一个缺失维度",
+    "定义了心理胜任力是指人类面向AI系统的适应性，包括帮助用户认知、情感解读和行为决策的能力",
+    "强调在人机交互中考虑用户的背景、情境及目的的重要性",
+    "提出了一个概念框架来描述心理胜任力的核心领域，并讨论如何通过情景探针、结构化的人类评估以及基于模型的评估方法进行评估",
+    "建议将心理胜任力作为关注人类面向AI系统实际效果的相关方的核心考量"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待进一步研究和验证",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

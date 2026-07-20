@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.07678",
+  "name": "How Data Shapes RoPE Frequency Usage: From Positional Scale Matching to Length Generalization",
+  "source": "arXiv:cs.LG:2607.07678",
+  "reprocessed_at": "2026-07-20T14:33:39.039124",
+  "content": "Rotary Position Embeddings (RoPE) provide transformers with a fixed grid of positional frequencies, yet trained models use these frequencies highly non-uniformly. We study what determines this frequency usage and propose a data-centered explanation: RoPE frequencies are selected to match the relative-distance structure of the training data. Viewing each frequency as a positional lens, we formalize a field-resolution tradeoff and show that, for a data-induced dependency profile of width $W$, the ",
+  "field": "多Agent",
+  "summary": "Rotary Position Embeddings (RoPE) 在训练模型中表现出非均匀的频率使用，研究发现这种频率选择是为了匹配训练数据中的相对距离结构。我们提出了一种基于数据的解释：最优频率与数据诱导依赖宽度成反比。",
+  "key_insights": [
+    "RoPE 频率的选择是为了匹配训练数据中的相对距离结构。",
+    "对于数据诱导的依赖宽度为 W 的情况，最优频率约为 1/W。",
+    "频率选择有助于解决长上下文依赖问题，并且与长度泛化相关联。",
+    "自然语言中存在自相似性，这解释了为什么测试时的频率缩放可以支持长期上下文泛化。",
+    "频率使用取决于两种形式的尺度匹配：学习频率与训练时间依赖之间的匹配以及频率缩放与这些依赖在更长上下文中扩展之间的匹配。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

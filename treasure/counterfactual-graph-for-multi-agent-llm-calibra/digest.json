@@ -1,0 +1,18 @@
+﻿{
+  "id": "counterfactual-graph-for-multi-agent-llm-calibra",
+  "name": "Counterfactual Graph for Multi-Agent LLM Calibration",
+  "source": "曦和每日宝藏觅食 · 2026-07-14",
+  "reprocessed_at": "2026-07-20T14:06:17.531307",
+  "content": "Counterfactual Graph for Multi-Agent LLM Calibration",
+  "field": "多Agent",
+  "summary": "本文提出了一种新的方法来校准多智能体语言模型，通过构建一个反事实图以优化其行为。",
+  "key_insights": [
+    "提出了一个新的框架来改进多智能体语言模型的性能",
+    "利用反事实图技术提高了模型在复杂环境中的决策能力",
+    "该方法有助于减少模型的偏差和不一致性"
+  ],
+  "xihe_relevance": "该研究可能对曦和项目在优化多智能体系统方面有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

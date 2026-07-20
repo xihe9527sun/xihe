@@ -1,0 +1,19 @@
+﻿{
+  "id": "miles-modular-instruction-memory-with-learnable-",
+  "name": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning (2607.06974)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:00:02.438879",
+  "content": "Large language models (LLMs) increasingly improve their reasoning at test time via additional computation, yet most existing works treat each problem in isolation. When problems arrive sequentially, accumulating reusable experience across them can further improve performance. Existing memory-based methods either store whole-solution templates that generalize poorly to novel problems or use heuristic step-level selection that is not optimized for final-answer correctness. Learning selection polic",
+  "field": "进化引擎",
+  "summary": "该研究提出了一种名为MILES的方法，用于改进大型语言模型的推理能力，在测试过程中通过动态扩展记忆并优化选择策略来提高性能。",
+  "key_insights": [
+    "引入了模块化指令记忆结构",
+    "学习选择策略以优化最终答案正确性",
+    "在有限监督条件下实现高效准确匹配",
+    "适用于增量式内存扩展和不确定样本处理",
+    "对比现有方法显著提升推理效率"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 8,
+  "ollama_digested": true
+}

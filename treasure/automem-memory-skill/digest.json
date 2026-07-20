@@ -1,0 +1,20 @@
+﻿{
+  "id": "automem-memory-skill",
+  "name": "AutoMem: Automated Learning of Memory as a Cognitive Skill (arXiv 2607.01224)",
+  "source": "arXiv · Thu, 2 Jul 2026",
+  "reprocessed_at": "2026-07-20T13:56:27.564427",
+  "content": "Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by treating memory management as a trainable skill. We promote file-system operations to first-class memory actions alongside task actions, letting the model itself decide how to manage its memory. This memory skill improves along two axes: the structure that supports it (prompts, file schemas, action ",
+  "field": "记忆系统/自反层",
+  "summary": "通过将记忆管理视为可训练技能，AutoMem框架显著提升了大型语言模型在长期任务中的表现。",
+  "key_insights": [
+    "AutoMem成功自动化了记忆结构和模型内存熟练度的两个方面。",
+    "优化记忆管理本身可以提高基础模型在长期任务上的性能，提升幅度可达2到4倍。",
+    "研究结果表明，记忆管理是一种独立可学习的能力，并且是一个能够带来显著收益的目标。",
+    "AutoMem框架对曦和等自反层系统有潜在价值。",
+    "该技术适用于多Agent环境、工具使用以及其他需要长期决策的任务。"
+  ],
+  "xihe_relevance": "有助于提升自反层系统的性能，特别是在记忆管理和长期任务方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

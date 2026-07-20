@@ -1,0 +1,30 @@
+{
+  "id": "auditing-belief-conditioned-llm-agents-in-hidden",
+  "name": "Auditing Belief-Conditioned LLM Agents in Hidden-Information Social Deduction Games",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:35.957435",
+  "digested": "2026-07-15T09:10:35.957435",
+  "field": "自反层/self-critique",
+  "content": "开发可审计框架维护对隐藏角色的外部信念状态，记录信念更新和信念-行动偏差作为结构化证据，支持防御性离线改进循环。发现主动信念条件与更好结果相关但机制未明确。",
+  "intake_score": 0.85,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0.8,
+    "_total": 0.16,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "开发可审计框架维护对隐藏角色的外部信念状态，记录信念更新和信念-行动偏差作为结构化证据，支持防御性离线改进循环。发现主动信念条件与更好结果相关但机制未明确。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:35.957435",
+    "last_accessed": "2026-07-15T09:10:35.957435",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

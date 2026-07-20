@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.02967",
+  "name": "Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness",
+  "source": "arxiv:cs.LG:2607.02967",
+  "reprocessed_at": "2026-07-20T14:19:14.540325",
+  "content": "Large language models remain limited as continual learning systems, motivating renewed interest in Sparse Distributed Memory (SDM) as an explicit online episodic memory. CALM (Nechesov and Ruponen, 2025) identifies its threshold-binary encoder as an open design question. This paper evaluates rank-order N-of-M encoding (Furber et al., 2007) as an alternative. We make three contributions. First, a faithful reimplementation validates the published architecture by confirming exact equivalence betwee",
+  "field": "记忆系统/自反层",
+  "summary": "该研究评估了Rank-Order N-of-M编码在稀疏分布内存中的应用，并揭示了其在鲁棒性方面优于标准SDM模型的性能优势。",
+  "key_insights": [
+    "Rank-Order SDM 在饱和配置下的表现比标准SDM高出13.4个百分点。",
+    "实验表明，Rank-Order SDM 的主要优势来源于其与MAX-Hebbian学习机制的交互作用。",
+    "理想化Rank-Order编码在四比特精度下所需的能量仅为SpikingMamba SI-LIF神经元的一半。",
+    "研究结果有助于指导增强型AI系统的架构设计，并对曦和系统具有潜在价值。",
+    "实验还发现，Sentence Embeddings 在低内存负载下存在天花板效应。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

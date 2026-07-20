@@ -1,0 +1,20 @@
+﻿{
+  "id": "easm-emotion-memory",
+  "name": "EASM: 情绪感知状态记忆 — 情绪索引检索 + 心境依存记忆",
+  "source": "arXiv 2605.14833 · EASM Architecture",
+  "reprocessed_at": "2026-07-20T14:05:37.710999",
+  "content": "Current language model systems remain fundamentally stateless across sessions, limiting their ability to personalize interactions over time. While retrieval-augmented generation and fine-tuning improve knowledge access and domain capability, they do not enable persistent understanding of individual users. We propose an emotion-attended stateful memory architecture that dynamically constructs user-specific conversational context using long-term history, emotional signals, and inferred intent at i",
+  "field": "记忆系统/自反层",
+  "summary": "通过引入情绪感知状态记忆架构，能够显著提升语言模型在个性化交互中的表现，并且即使在情感极端的情境下也能保持稳定。",
+  "key_insights": [
+    "当前的语言模型系统在会话间缺乏持久性，限制了它们随着时间的推移对个人用户的个性化能力。",
+    "情绪感知状态记忆架构能够在推理时动态构建用户特定的对话上下文，结合长期历史、情感信号和意图推测。",
+    "该研究通过A/B测试验证了情绪感知状态记忆的有效性，并且在不同情感类别下保持一致的表现。",
+    "结果表明，情绪记忆可能成为未来超个性化AI系统的基础架构层。",
+    "尽管初步结果显示其潜力，但需要更广泛的验证以确认这一发现的普适性和可靠性。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供一种新的基础设施层来支持情感智能的AI系统。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

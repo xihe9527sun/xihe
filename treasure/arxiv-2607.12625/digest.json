@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.12625",
+  "name": "KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill",
+  "source": "arXiv:cs.CL:2607.12625",
+  "reprocessed_at": "2026-07-20T14:31:47.259882",
+  "content": "OpenClaw has emerged as a leading agent framework for complex task automation, yet it faces insufficient cross-platform GUI interaction support and a well-built self-evolution mechanism. These flaws limit its adaptation to diverse device ecosystems and prevent performance improvements through continuous learning from execution experience. To resolve these issues, we propose the Know Deeply, Act Perfectly paradigm for personal assistants, which holds that accumulated user interaction and task-run",
+  "field": "多Agent",
+  "summary": "KnowAct-GUIClaw提出了一种新的框架，旨在解决OpenClaw在GUI交互和支持方面的不足，并通过积累用户经验来提高执行效率和准确性。",
+  "key_insights": [
+    "KnowAct-GUIClaw引入了Know-Route-Act-Reflect框架以改进个人助理的GUI操作。",
+    "该框架利用用户的交互经验和相关任务知识进行长期任务分解和分配，提高了任务处理的准确性和效率。",
+    "通过持续存储用户数据和反馈，KnowAct-GUIClaw能够提高任务分解和工具调用的准确性。",
+    "在跨平台测试中，KnowAct-GUIClaw表现出色，特别是在MobileWorld基准上取得了最高分数（64.1%）。",
+    "该框架的知识记忆系统和执行技能具有高度可移植性，且与多种基础模型结合时性能提升明显。"
+  ],
+  "xihe_relevance": "KnowAct-GUIClaw可能对曦和在多Agent、工具使用以及量化交易等方面有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

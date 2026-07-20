@@ -1,0 +1,18 @@
+﻿{
+  "id": "steerability-via-constraints-a-substrate",
+  "name": "Steerability via constraints: a substrate for scalable oversight of coding agent",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:23.641608",
+  "content": "Steerability via constraints: a substrate for scalable oversight of coding agent",
+  "field": "多Agent",
+  "summary": "通过约束实现可控性：一种可扩展监控编码代理的基础。",
+  "key_insights": [
+    "提出了一个新的框架来实现对编码代理的可扩展监督。",
+    "该框架利用了约束的概念，以提高监督系统的效率和灵活性。",
+    "这一方法可能为多Agent系统中的监控提供新的视角。"
+  ],
+  "xihe_relevance": "潜在有帮助",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

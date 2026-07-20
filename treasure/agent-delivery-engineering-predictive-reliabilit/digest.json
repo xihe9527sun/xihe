@@ -1,0 +1,18 @@
+﻿{
+  "id": "agent-delivery-engineering-predictive-reliabilit",
+  "name": "Agent Delivery Engineering Predictive Reliability Framework (2607.07689)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:00:46.378979",
+  "content": "Long-horizon LLM multi-agent systems face reliability risks invisible to infrastructure monitoring. We propose the ADE Predictive Reliability Framework (ADE-PRF), enabling proactive health trajectory prediction from passive degradation detection. ADE-PRF aggregates 20 heterogeneous signals across five layers into a Trust Margin (TM) metric (39.2-point dynamic range). Triple-method parallel prediction enables 8-hour forecasts: the Exponential method achieves MAE=1.228, Direction Accuracy=76.8%, w",
+  "field": "多Agent",
+  "summary": "Long-horizon LLM multi-agent systems face reliability risks that are difficult to detect through infrastructure monitoring. The ADE Predictive Reliability Framework (ADE-PRF) addresses this by aggregating heterogeneous signals into a Trust Margin (TM) metric, enabling proactive health trajectory prediction and 8-hour forecasts with high accuracy.",
+  "key_insights": [
+    "ADE-PRF can identify 'false prosperity' where degradation is masked by normal metrics, providing early warnings for production LLM agents.",
+    "ADE-PRF integrates TM with ground-truth states upon ADE plugin integration, leveraging data from 16 out of 20 factors.",
+    "Exponential method consistently outperforms Kalman in the framework."
+  ],
+  "xihe_relevance": "ADE-PRF的预测可靠性框架可以提供早期的生产LLM代理的可靠性量化，并提供前瞻性的警告，这可能对曦和系统的潜在价值很高。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

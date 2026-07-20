@@ -1,0 +1,35 @@
+{
+  "id": "msa-memory-sparse-attention-100m-token",
+  "name": "MSA: Memory Sparse Attention — 100M Token端到端记忆模型",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.446281",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.97,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.97,
+    "backed_at": "2026-07-12T09:10:49.445889"
+  },
+  "digest_notes": "提出记忆稀疏注意力(MSA)框架，通过可扩展稀疏注意力和文档级RoPE实现训练和推理线性复杂度。KV缓存压缩加内存并行使2xA800 GPU可运行100M token推理。记忆交错机制支持跨分散记忆片段的多跳推理。从16K扩展到100M token仅9%性能下降。"
+}

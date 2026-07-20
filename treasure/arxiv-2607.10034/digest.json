@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10034",
+  "name": "MLPs are Hebbians: Constructing Efficient Fact-Storing MLPs for Transformers",
+  "source": "arXiv:cs.LG:2607.10034",
+  "reprocessed_at": "2026-07-20T14:28:58.523148",
+  "content": "Large language models (LLMs) store factual knowledge in their parameters. While recent work has shown that this knowledge resides in MLP layers, existing constructive and mechanistic interpretability models of fact-storage in LLMs fail to explain the surprising empirical phenomenon that they store facts at an information-theoretically optimal rate. In this work, we develop a theoretical account of this phenomenon. We develop the first Transformer-compatible fact-storing MLP closed-form construct",
+  "field": "自反层/进化引擎/元认知",
+  "summary": "该研究开发了一种在Transformer中存储事实信息的方法，这种方法能够以信息论上的最优方式存储知识，并且能够在不增加大量参数的情况下实现这一目标。",
+  "key_insights": [
+    "提出了第一个兼容Transformers的事实存储MLP构造方法",
+    "实现了信息论上最优的信息容量扩展",
+    "展示了在保持相同事实数量时需要的参数量显著减少"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和系统中的记忆系统模块有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

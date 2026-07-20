@@ -1,0 +1,35 @@
+{
+  "id": "can-llms-perform-deep-technical-comprehension-of",
+  "name": "Can LLMs Perform Deep Technical Comprehension of Computer Architecture Papers?",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:36.013709",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-15T09:10:36.013456"
+  },
+  "digest_notes": "研究Gauntlet开源管道通过五个独立专家角色评审和对抗性综合阶段分析论文。增益来自多智能体结构，管道在96%论文上优于以单一角色运行的相同模型。多智能体结构是关键。"
+}

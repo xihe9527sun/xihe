@@ -1,0 +1,24 @@
+﻿{
+  "id": "Quadratic-Programming-for-Nash-Equilibri",
+  "name": "Quadratic Programming for Nash Equilibrium in Multiplayer Imperfect-Information Games",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:45.053349",
+  "content": "Quadratic Programming for Nash Equilibrium in Multiplayer Imperfect-Information Games",
+  "field": "多Agent/量化交易",
+  "summary": "该研究探讨了如何使用二次规划方法来解决多人不完美信息博弈中的纳什均衡问题。",
+  "key_insights": [
+    "引入二次规划算法用于求解纳什均衡",
+    "适用于多玩家不完全信息博弈场景",
+    "可能提升博弈论在实际应用中的计算效率",
+    "为自反层系统提供新的计算模型",
+    "有助于理解复杂动态系统的优化策略"
+  ],
+  "xihe_relevance": [
+    "该研究结果可以作为记忆系统中求解博弈问题的算法基础",
+    "对于自反层的理解和改进具有潜在价值",
+    "可应用于进化引擎中的智能体行为预测与优化",
+    "为元认知提供新的计算框架"
+  ],
+  "depth_rating": 7,
+  "ollama_digested": true
+}

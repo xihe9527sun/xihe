@@ -1,0 +1,35 @@
+{
+  "id": "agent-delivery-engineering-predictive-reliabilit",
+  "name": "Agent Delivery Engineering Predictive Reliability Framework (2607.07689)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.234850",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-11T10:02:23.591308"
+  },
+  "digest_notes": "Long-horizon LLM multi-agent systems face reliability risks invisible to infrastructure monitoring. We propose the ADE Predictive Reliability Framework (ADE-PRF), enabling proactive health trajectory prediction from passive degradation detection. ADE-PRF aggregates 20 heterogeneous signals across five layers into a Trust Margin metric (39.2-point dynamic range). Triple-method parallel prediction enables 8-hour forecasts. Production validation spans 380,227 predictions and 280,579 validations acr"
+}

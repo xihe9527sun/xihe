@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.04240",
+  "name": "Biological Motifs for Agentic Control",
+  "source": "arXiv:cs.AI:2607.04240",
+  "reprocessed_at": "2026-07-20T14:19:39.592716",
+  "content": "The transition of Large Language Models (LLMs) from passive generators to autonomous agents has introduced significant challenges in reliability, security, and state management. Current agentic architectures are often constructed ad-hoc, prone to hallucination cascades, infinite loops, and prompt injection attacks. This paper argues that many of these failure modes can be analyzed using control motifs long studied in systems biology, provided the comparison is made at the level of typed interfac",
+  "field": "多Agent",
+  "summary": "本文提出了一种将生物调控网络中的控制模式应用于自主代理软件系统的策略，以解决大型语言模型从被动生成器转变为自主代理所带来的可靠性、安全性和状态管理问题。",
+  "key_insights": [
+    "提出了使用生物控制模式来分析和改进当前基于生物机制的自动生成式架构",
+    "开发了一种将基因调控网络与自主软件系统之间的类型接口对应关系，以及五种生物控制模式与可组合的设计模式的映射",
+    "引入了Epistemic Topology层以从观察结构中推导出知识操作者，并证明了四个关于多代理扩展性的预测定理"
+  ],
+  "xihe_relevance": "本文的研究成果可能对曦和计划在自主学习框架和收敛代理方面提供有价值的见解。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "ruflo-queen-led-agent-orchestration",
+  "name": "Ruflo — Queen-led一致性+Raft/BFT/Gossip多智能体Swarm编排(53K星)",
+  "source": "GitHub: ruvnet/ruflo · AI Insight",
+  "reprocessed_at": "2026-07-20T14:06:32.712081",
+  "content": "Ruflo — Queen-led一致性+Raft/BFT/Gossip多智能体Swarm编排(53K星)",
+  "field": "多Agent",
+  "summary": "Ruflo是一种Queen-led一致性模型，结合了Raft、BFT和Gossip算法用于多智能体Swarm编排。该模型拥有53K星。",
+  "key_insights": [
+    "Ruflo使用Queen-led一致性机制来管理分布式系统中的多个智能体",
+    "它融合了多种共识协议（如Raft、BFT和Gossip），以实现高效且可靠的多智能体通信",
+    "该模型在GitHub上获得了53K星，表明其在社区中的受欢迎程度"
+  ],
+  "xihe_relevance": "Ruflo可能对曦和项目具有潜在价值，因为它涉及复杂的分布式系统管理技术",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "Spectral-Signatures-of-Large-Language-Mo",
+  "name": "Spectral Signatures of Large Language Models",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:57:30.807230",
+  "content": "Spectral Signatures of Large Language Models",
+  "field": "多Agent, 记忆系统, 自反层, 进化引擎, 量化交易",
+  "summary": "该研究探讨了大型语言模型的光谱特征。",
+  "key_insights": [
+    "分析大型语言模型的光谱特性",
+    "探索模型内部结构和功能的新视角",
+    "为自反层提供数据支持",
+    "可能应用于量化交易领域",
+    "有助于理解模型的语言处理机制"
+  ],
+  "xihe_relevance": "记忆系统, 自反层, 进化引擎, 元认知, 量化交易",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

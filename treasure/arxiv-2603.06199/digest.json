@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2603.06199",
+  "name": "FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling",
+  "source": "arXiv:cs.CL:2603.06199",
+  "reprocessed_at": "2026-07-20T14:26:52.416129",
+  "content": "Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. While various sparse attention mechanisms have been explored, they typically suffer from either significant search latency or insufficient sparsity. In this paper, we propose FlashPrefill, a framework enabling ultra-fast prefilling via instantaneous pattern discovery and thresholding. FlashPre",
+  "field": "多Agent",
+  "summary": "FlashPrefill 提出了一种通过即时模式发现和阈值化来实现超快长上下文预填充的方法，显著提升了效率。",
+  "key_insights": [
+    "FlashPrefill 通过动态阈值机制解决了现有方法在短上下文长度下性能下降的问题。",
+    "它实现了27.78倍的加速效果，在256K序列上取得了前所未有的提升。",
+    "FlashPrefill 在不同上下文长度下的表现均优于现有技术，展示了其广泛适用性。",
+    "该方法对曦和系统的潜在价值在于优化长文本处理效率。",
+    "FlashPrefill 可应用于记忆系统、自反层等场景中。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

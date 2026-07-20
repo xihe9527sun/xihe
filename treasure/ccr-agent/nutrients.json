@@ -1,0 +1,35 @@
+{
+  "id": "ccr-agent",
+  "name": "CCR: 概率多Agent系统中反事实推理的因果责任归因",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.583154",
+  "field": "因果皮层/CF-RAG",
+  "intake_score": 0.82,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.82,
+    "backed_at": "2026-07-12T09:10:49.582736"
+  },
+  "digest_notes": "将多Agent系统建模为并发随机多玩家博弈，引入回溯性反事实责任概念量化Agent对给定策略概况结果的问责程度。利用Shapley值分配责任并证明满足公平性和一致性。构建支持责任感知多Agent系统中验证和战略推理的形式框架。采用纳什均衡计算稳定策略概况。"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "who-broke-the-system-failure-localization-in-llm",
+  "name": "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.090953",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.78,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.78,
+    "backed_at": "2026-07-11T09:10:52.090691"
+  },
+  "digest_notes": "LLM-based multi-agent systems enable complex problem solving through coordinated reasoning and action, but their distributed structure introduces new challenges in diagnosing system-level failures. We present AgentLocate, a framework that attributes failures to both a specific agent and the earliest decisive step. AgentLocate combines an LLM-based judging mechanism with multi-perspective verification by independent evaluators, aggregated using a confidence-aware strategy."
+}

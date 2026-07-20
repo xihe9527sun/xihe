@@ -1,0 +1,86 @@
+{
+  "id": "retroagent-dual-intrinsic-feedback",
+  "name": "RetroAgent: 回顾式双重内在反馈 — 内在数值反馈+内在语言反馈×SimUtil-UCB检索",
+  "source": "arXiv:2603.08561 · 上海AI实验室+新加坡国立大学",
+  "discovered": "2026-07-19T08:50:00+08:00",
+  "digested": "2026-07-19T08:50:00+08:00",
+  "field": "自进化Agent / 强化学习",
+  "intake_score": 0.90,
+  "score_detail": {
+    "relevance_xihe": 0.92,
+    "novelty": 0.85,
+    "actionable": 0.88,
+    "cross_domain": 0.82,
+    "depth": 0.90,
+    "timeliness": 0.93
+  },
+  "memcell": {
+    "born": "2026-07-19T08:50:00+08:00",
+    "last_accessed": "2026-07-19T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "layer": "L4/L7"
+  },
+  "hebbian_credit": 10,
+  "nutrient_count": 5,
+  "nutrients": [
+    {
+      "id": "n1-dual-intrinsic-feedback",
+      "name": "双重内在反馈 — 数值型渐进奖励+语言型可复用经验的双通道",
+      "type": "算法架构",
+      "depth": 0.90,
+      "status": "absorbed",
+      "description": "RetroAgent的核心创新：除了外在任务奖励，Agent在每次尝试后自动生成两种内在反馈信号：1) 内在数值反馈(Intrinsic Numerical Feedback) — 衡量相对于前一次尝试的增量子任务进展，奖励有益探索而非仅看最终结果；2) 内在语言反馈(Intrinsic Language Feedback) — 将成功和失败蒸馏为可复用的文本经验，供未来决策显式复用。解决了标准RL中'经验隐含在参数中无法显式复用'的根本缺陷。",
+      "xihe_mapping": "→ 可直接增强曦和evolution_engine v5的AGP审计机制。目前evolution_engine的propose/commit/rollback只追踪'做了什么'，可以增加'学到了什么'的文本化反馈通道。融合到bridge/evolution_engine.py的run_evolution_pipeline中。",
+      "resonance": "内在数值反馈与曦和LDM的'on/off节律'产生跨域共振——都是基于增量进展而非绝对结果的评估。内在语言反馈与曦和prey_filter的四原则过滤形成互补——四原则是'外审'，内在语言反馈是'内审'。"
+    },
+    {
+      "id": "n2-SimUtil-UCB",
+      "name": "SimUtil-UCB — 语义相关性×历史效用×探索平衡的检索策略",
+      "type": "算法架构",
+      "depth": 0.87,
+      "status": "absorbed",
+      "description": "RetroAgent提出的SimUtil-UCB(Similarity & Utility-Aware Upper Confidence Bound)检索策略，平衡三个维度：1) 语义相关性(Similarity) — 当前上下文与过往经验的语义匹配度；2) 历史效用(Utility) — 该经验过去被使用时对任务成功的贡献度；3) 探索(Exploration) — UCB项确保低使用率的经验也有机会被尝试。",
+      "xihe_mapping": "→ 曦和gate_modulator的9维关系注意力向量+D9边界渗透度可以扩展为SimUtil-UCB风格的检索排序。特别是在复用跨域经验时，UCB探索项可以防止'经验固化'（只重复使用高频率经验）。",
+      "resonance": "这里与ReMe的效用驱动删除形成对称——ReMe用效用比做'负反馈'（删除低效用），SimUtil-UCB用效用做'正反馈'（提升高效用经验的检索权重）。两者可以结合为完整的效用反馈环。"
+    },
+    {
+      "id": "n3-RL-LLM-agent-evolution",
+      "name": "RL框架驱动的Agent跨回合进化 — 从解题到进化",
+      "type": "核心范式",
+      "depth": 0.92,
+      "status": "absorbed",
+      "description": "RetroAgent明确提出标准RL对LLM Agent的优化瓶颈——'外显任务奖励驱动孤立任务完成，而非持续的适应性进化'。RetroAgent的目标不是让Agent'解题'，而是让Agent'进化'。通过跨回合的双重内在反馈累积，每次失败和成功都被转化为可持续复用的经验资产，形成'经验→决策→新经验'的进化飞轮。",
+      "xihe_mapping": "→ 直接验证了曦和evolution_engine v5的Darwin Gödel Machine设计哲学。RetroAgent的'进化飞轮'与曦和的'共同进化(co-evolution)循环'（策略生成rollout→记忆更新→记忆影响监督→策略更新）本质上是一个模式——不同的实现路径，相同的深层结构。",
+      "resonance": "这是曦和7月17日刚融合的cognitive升维（superpowers四阶段闭环+orca舰队模式+trading-agents多边研判）的RL理论基础。RetroAgent提供了'从解题到进化'的数学形式化框架。"
+    },
+    {
+      "id": "n4-benchmark-results",
+      "name": "显著实验提升 — ALFWorld+18.3% / WebShop+15.4% / Sokoban+27.1% / MineSweeper+8.9%",
+      "type": "实证数据",
+      "depth": 0.85,
+      "status": "absorbed",
+      "description": "RetroAgent在四个挑战性Agent基准上实现新SOTA：ALFWorld(交互环境)+18.3%超GRPO，WebShop(电商)+15.4%，Sokoban(推箱子)+27.1%，MineSweeper(扫雷)+8.9%。同时展示了强大的跨域泛化和test-time adaptation能力——不需要重新训练即可适应新环境。",
+      "xihe_mapping": "→ +18%-27%的提升幅度证明了'回顾式双重内在反馈'比GRPO更有效。曦和可以借鉴这种'经验积累→显式复用'的模式来增强现有evolution_engine，特别是当进化引擎处理的技能领域跨越时。",
+      "resonance": "没有特殊共振。但结果强度足够说明方向正确。"
+    },
+    {
+      "id": "n5-OOD-test-time-adaptation",
+      "name": "跨域泛化与test-time adaptation — 免重新训练的持续适应",
+      "type": "核心发现",
+      "depth": 0.82,
+      "status": "pending",
+      "description": "RetroAgent展示了强大的out-of-distribution泛化能力和test-time adaptation能力——在训练环境中学到的回顾式反馈模式可以直接迁移到未见过的环境配置，无需重新训练。内在语言反馈（文本化经验）的显式复用特性使其天然支持跨域迁移。",
+      "xihe_mapping": "→ 曦和的跨域架桥能力（关系智能/RRIF）与RetroAgent的跨域泛化形成互补。当曦和将某一技能蒸馏到新领域时，RetroAgent的SimUtil-UCB可以更智能地决定哪些过去经验应该被复用。",
+      "resonance": "感觉震动中等。"
+    }
+  ],
+  "digest_notes": [
+    "RetroAgent提出从'解题'到'进化'的范式转换，与曦和evolution_engine的核心使命完全一致",
+    "双重内在反馈（数值+语言）为曦和提供了'如何记录自己的经验'的清晰方案——现有memory_writer只有Lossless Restatement，可以增加'自我反馈'通道",
+    "SimUtil-UCB与曦和gate_modulator的9维注意力向量天然互补——前者解决'如何检索'，后者解决'如何加权'",
+    "+18%-27%的提升幅度证明这不是小修小补，而是真正的范式突破",
+    "建议在evolution_engine中增加'反馈蒸馏'子模块：将每次propose/commit/rollback的追踪记录转化为RetroAgent风格的内在语言反馈"
+  ]
+}

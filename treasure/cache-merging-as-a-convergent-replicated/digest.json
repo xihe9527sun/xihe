@@ -1,0 +1,17 @@
+﻿{
+  "id": "cache-merging-as-a-convergent-replicated",
+  "name": "Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:33.311560",
+  "content": "Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning",
+  "field": "多Agent",
+  "summary": "该研究提出了一种利用缓存合并作为多智能体隐式推理的共同复制状态的方法。",
+  "key_insights": [
+    "引入了缓存合并的概念来支持多智能体系统的隐性推理",
+    "通过共享一个共同的状态，减少信息重复和冲突",
+    "为自反层提供了一种新的数据结构管理方式"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其可以作为记忆系统的一部分来优化多智能体系统的协同工作。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

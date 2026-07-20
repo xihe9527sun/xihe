@@ -1,0 +1,35 @@
+{
+  "id": "atma-ghost-memory",
+  "name": "A-TMA: 状态感知记忆审计（幽灵记忆）",
+  "sources": [],
+  "discovered": "2026-07-09T21:02:05.309118",
+  "field": "AI架构·曦和融合",
+  "intake_score": 0.76,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "A-TMA状态感知审计→新旧事实冲突时标记幽灵状态而非直接覆盖",
+    "由表及里": "研讨厅驱动正式入库固化(差距④)"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "A-TMA状态感知审计→新旧事实冲突时标记幽灵状态而非直接覆盖"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "phase2",
+    "landing": "代码级落地(冲突检测器)"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库 + 代码级落地",
+    "phase": "phase2",
+    "landing": "代码级落地(冲突检测器)",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "A-TMA状态感知审计→新旧事实冲突时标记幽灵状态而非直接覆盖",
+    "intake_score": 0.76,
+    "backed_at": "2026-07-10T06:58:24.438533"
+  },
+  "digest_notes": "已并入 agent-native-memory-system 第二融合阶段"
+}

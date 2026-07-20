@@ -1,0 +1,20 @@
+﻿{
+  "id": "bayesian-sparse-low-rank-adaptation-for-llm-uncert",
+  "name": "Bayesian Sparse Low-Rank Adaptation for LLM Uncertainty Estimation",
+  "source": "arXiv cs.CL 2607.02182",
+  "reprocessed_at": "2026-07-20T14:15:37.428269",
+  "content": "Large language models (LLMs) exhibit remarkable reasoning capabilities, but their task-specific fine-tuning is notoriously plagued by overconfidence, severely hindering trustworthy deployment. We propose Data-Adaptive Lower-Rank Adaptation (DALorRA), a simple and effective variational Bayesian sparse framework that shifts the paradigm of uncertainty quantification from the dense parameter space to the lightweight rank level of low-rank adaptation (LoRA). With the insight that LoRA essentially ag",
+  "field": "元认知",
+  "summary": "该研究提出了一种名为Data-Adaptive Lower-Rank Adaptation (DALorRA)的方法，用于改进大型语言模型的不确定性估计，避免了传统方法中的过自信问题。",
+  "key_insights": [
+    "提出了一个简单而有效的变分贝叶斯稀疏框架DALorRA",
+    "将不确定性量化从密集参数空间转移到低秩适配器的轻量级秩水平上",
+    "通过引入随机掩码在秩维度上，实现了模型容量的贝叶斯正则化和类似集成的校准过程",
+    "实验结果表明，该方法能够有效提高大型语言模型的不确定性估计准确性而不会影响其推理性能",
+    "为提高大型语言模型的信任度部署提供了新的解决方案"
+  ],
+  "xihe_relevance": "DALorRA的方法可能对曦和在处理不确定性和增强可靠性方面有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

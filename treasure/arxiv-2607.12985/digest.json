@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12985",
+  "name": "Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs",
+  "source": "arXiv:cs.AI:2607.12985",
+  "reprocessed_at": "2026-07-20T14:32:30.210769",
+  "content": "arxiv:2607.12985 Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs",
+  "field": "自反层/进化引擎",
+  "summary": "该报告提出了一种新的方法来协调激励兼容的大规模语言模型，以应对和更新潜在的不良行为。",
+  "key_insights": [
+    "提出了一个新框架来解决大模型在面对不良行为时的激励问题",
+    "通过反事实报告的方式提高模型的行为一致性",
+    "该方法旨在确保模型长期稳定地执行正确的行为"
+  ],
+  "xihe_relevance": "该研究可能对曦和计划中的自反层和进化引擎模块有重要影响，有助于提升系统的自我修正能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

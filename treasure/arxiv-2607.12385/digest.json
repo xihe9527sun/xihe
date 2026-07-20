@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12385",
+  "name": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+  "source": "arXiv:cs.AI:2607.12385",
+  "reprocessed_at": "2026-07-20T14:32:04.961231",
+  "content": "A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a text-based benchmark for measuring prospective memory capabilities in modern LLM agents. Inspired by the Virtual Week paradigm from cognitive science, PM-Bench evaluates how well LLM agents maintain user intentions, execute delayed intentions, and monitor latent environment changes. Over the course of a sim",
+  "field": "元认知",
+  "summary": "PM-Bench 是一个基于文本的基准测试，用于评估现代大型语言模型在执行意向方面的潜力记忆能力。它借鉴了认知科学中的虚拟周范式来衡量LLM代理维持用户意图、执行延迟任务和监控潜在环境变化的能力。",
+  "key_insights": [
+    "PM-Bench 挑战了所有设置下的现代大型语言模型，表明即使最先进的 GPT-5.4 代理在我们的评估下也只能达到65.1%的 F1 分数。",
+    "没有单一策略能够有效地改善所有模型的意向记忆能力。",
+    "PM-Bench 可作为诊断这些失败和开发支持可靠意向行为的训练或推理干预措施的受控测试平台。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一个评估大型语言模型意向记忆能力的方法，这对于理解它们在复杂任务中的表现至关重要。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

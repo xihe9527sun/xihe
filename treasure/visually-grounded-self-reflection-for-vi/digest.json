@@ -1,0 +1,20 @@
+﻿{
+  "id": "visually-grounded-self-reflection-for-vi",
+  "name": "Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement L",
+  "source": "cs.CL",
+  "reprocessed_at": "2026-07-20T13:58:28.233932",
+  "content": "Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement L",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "通过强化学习实现视觉支持的语言模型自我反思。",
+  "key_insights": [
+    "提出了一个新的方法来增强视觉语言模型的自我反思能力。",
+    "该方法利用了强化学习技术，以提高模型对自身行为的理解和改进。",
+    "这项研究可能为未来的自适应系统提供新的视角和技术基础。",
+    "潜在的应用领域包括但不限于记忆系统、自反层、进化引擎等。",
+    "对于曦和（假设是某种特定的系统或平台）来说，该方法可以作为一种重要的功能增强手段。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

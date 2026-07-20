@@ -1,0 +1,35 @@
+{
+  "id": "recolora-spectrum-aware-recursive-consolidation-",
+  "name": "ReCoLoRA: Spectrum-Aware Recursive Consolidation for Continual LLM Fine-Tuning",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.108610",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.75,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.75,
+    "backed_at": "2026-07-11T09:10:52.108043"
+  },
+  "digest_notes": "Parameter-efficient fine-tuning adapts a large language model to one task cheaply, but across a task sequence LoRA-style methods keep stacking low-rank updates, so each new task tends to overwrite previous ones. We present ReCoLoRA, a spectrum-aware framework for continual fine-tuning: adapters are initialized from randomized SVD of pretrained weight, per-layer effective ranks selected by elbow criterion. On six-task GLUE sequence over four 7-8B backbones, ReCoLoRA attains best final average sco"
+}

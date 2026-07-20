@@ -5,10 +5,35 @@ __pycache__/
 .env
 bridge/logs/
 bridge/events/
+# 宝藏厅: 外部克隆平台已移出至 references/(非曦和宝藏, 含嵌套.git, 不推)
+#   treasure/dify-platform/ -> references/dify-platform/ (纯外部LLM平台源码clone, 无曦和消化产物)
+#   treasure/consciousness-ai-biological/repo -> references/consciousness-ai-biological-repo/ (原文研究代码clone)
+# 其真宝藏消化层(source.md/digest.json/nutrients.json/index.html)保留上传
+# 空壳归档(可恢复, 不推)
+treasure/_archived_empty/
+# 觅食中间产物(原始候选, 未筛选, 不推)
+treasure/buffer/
+# 管道代码(本地运行用, 不推)
+treasure/digester.py
+treasure/_deep_read_pending.py
+# 一次性脚本(已固化进总览, 不推)
+treasure/_audit_clusters.json
+treasure/_classification.json
+treasure/_reclassify.py
+treasure/_gen_overview.py
+# cortex 整体忽略(运行噪音: chat-cache/topics/fusion/enzymes等), 仅放行研讨厅研判档案
 cortex/
-treasure/
+!cortex/seminar_verdicts.json
+!cortex/seminar_pending.json
 private/
 softs/
 skills/
 repos/
 .history/
+
+# 豆包语音 Key（本地，勿提交）
+core/.volc_api_key
+.vorc_api_key
+
+# 腾讯云 TRTC 对话式AI 配置（含密钥，禁止提交）
+core/.tencent_trtc.env

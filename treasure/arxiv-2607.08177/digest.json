@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08177",
+  "name": "ASMR: Agentic Schema Generation for Ship Maintenance Report Writing (2607.08177)",
+  "source": "arXiv:cs.MA:2607.08177",
+  "reprocessed_at": "2026-07-20T14:23:25.853374",
+  "content": "In this paper, we study the automatic schema generation problem: given a collection of historical ship maintenance and operational reports across multiple form categories, automatically discover compact and informative schemas that capture the essential information requirements of each report type. To address this challenge, we propose ASMR, a modular agentic framework consisting of two specialized agents. A Field Generation Agent extracts semantic concepts from historical narratives and generat",
+  "field": "多Agent",
+  "summary": "本文研究了自动生成报告结构的问题，提出了一种名为ASMR的模块化代理框架，用于从历史船维护和运营报告中发现能够捕捉每种报告类型核心信息要求的紧凑且有信息性的结构。",
+  "key_insights": [
+    "提出了一个由两个专门代理组成的模块化代理框架（Field Generation Agent和Structural Optimizer Agent）来解决自动生成报告结构的问题。",
+    "Field Generation Agent通过适应性多粒度聚类从历史叙述中提取语义概念并生成候选结构字段。",
+    "Structural Optimizer Agent使用强化学习确定紧凑、有信息性和无冗余的结构表示。"
+  ],
+  "xihe_relevance": "ASMR框架可能对曦和在数据管理和人工智能代理方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

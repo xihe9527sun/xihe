@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "treasure_id": "a2a-agent-card-task-lifecycle",
+    "name": "A2A v1.0 — 签名Agent Cards + Task生命周期状态机 (Linux Foundation)",
+    "source": "Zylos Research · Google A2A Protocol (Linux Foundation, 150+ orgs)",
+    "score": 0.86,
+    "discovered": "2026-07-16T09:00:00+08:00",
+    "layer": "L7"
+  },
+  "intake": {
+    "chaff_gate": "passed",
+    "four_principles": {
+      "去粗取精": 0.88,
+      "去伪存真": 0.90,
+      "由此及彼": 0.94,
+      "由表及里": 0.86,
+      "average": 0.895,
+      "passed": true
+    }
+  },
+  "nutrients": [
+    {
+      "id": "N1",
+      "name": "Agent Card — 签名服务发现层",
+      "insight": "Agent Card是机器可读的JSON(位于/.well-known/agent-card.json)，声明agent的名称/能力/skills/安全方案。v1.0引入签名Agent Cards——接收方能加密验证卡片颁发者身份，关闭卡片冒充攻击。",
+      "type": "protocol_standard",
+      "status": "pending",
+      "hebbian_credit": 10,
+      "target": "bridge/tau_bus_server.py",
+      "resonance": "曦和τ总线可借鉴Agent Card模式：每个MCP工具/Agent通过 tau://well-known/card 注册自己的能力声明+安全方案。支持签名验证，替换当前硬编码的connector列表。"
+    },
+    {
+      "id": "N2",
+      "name": "Task生命周期状态机",
+      "insight": "A2A的Task状态机：SUBMITTED→WORKING→COMPLETED/FAILED/CANCELED，支持INPUT_REQUIRED和AUTH_REQUIRED中断状态。SendMessage/SendStreamingMessage/GetTask/ListTasks/CancelTask五方法覆盖全生命周期。",
+      "type": "protocol_standard",
+      "status": "pending",
+      "hebbian_credit": 9,
+      "target": "bridge/dag_engine.py",
+      "resonance": "曦和DAG编排当前只有简单的'完成/失败'状态。可引入完整的Task状态机——特别是INPUT_REQUIRED用于人类审核介入，AUTH_REQUIRED用于安全检查。"
+    },
+    {
+      "id": "N3",
+      "name": "MCP(垂直) + A2A(水平)双层协议栈",
+      "insight": "MCP标准化agent→tool(垂直)，A2A标准化agent↔agent(水平)。编排Agent通过A2A委派任务给专业Agent，专业Agent内部用MCP访问数据源。两者互补，构成完整智能体通信基础设施。",
+      "type": "architectural_paradigm",
+      "status": "active",
+      "hebbian_credit": 9,
+      "target": "bridge/tau_bus_server.py",
+      "resonance": "曦和τ总线当前是统一的HTTP事件总线，同时承载'agent→tool'和'agent↔agent'两类流量。可拆分为双层——τ总线保持agent↔agent水平通信(A2A风格)，agent内部的工具调用走MCP(已有)。"
+    },
+    {
+      "id": "N4",
+      "name": "零信任任务路由安全模型",
+      "insight": "A2A v1.0推荐的生产安全栈：(1) mTLS传输层认证 (2) OAuth 2.0客户端凭证令牌 (3) 签名Agent Cards能力验证 (4) 零信任任务路由——令牌权限范围必须与Agent Card声明一致。",
+      "type": "security_pattern",
+      "status": "pending",
+      "hebbian_credit": 8,
+      "target": "bridge/mcp_bridge/security_layer",
+      "resonance": "曦和MCP桥当前无认证层。引入零信任路由——为每个MCP工具签发短期令牌，令牌范围与注册时的能力声明绑定，防止Agent越权调用。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "reflective-memory-v1",
+  "name": "Agent反思记忆 + 元认知框架",
+  "source": "daoyuly.cn · 研究综述 + Nature论文(Sci Rep 2026) + arXiv 2504.20084 + arXiv 2509.19783",
+  "reprocessed_at": "2026-07-20T12:49:53.716781",
+  "content": "Recent breakthroughs in artificial intelligence (AI) have brought about increasingly capable systems that demonstrate remarkable abilities in reasoning, language understanding, and problem-solving. These advancements have prompted a renewed examination of AI awareness not as a philosophical question of consciousness, but as a measurable, functional capacity. AI awareness is a double-edged sword: it improves general capabilities, i.e., reasoning, safety, while also raising concerns around misalig",
+  "field": "自反层/元认知",
+  "summary": "该摘要探讨了人工智能意识的最新进展及其在不同形式下的表现，包括自我反思、社会互动和情境理解等。",
+  "key_insights": [
+    "AI意识改善推理能力但引发安全性和社会风险担忧",
+    "研究涵盖认知科学、心理学及计算理论基础",
+    "分析现有评估方法与研究成果以理解AI意识表现",
+    "强调AI意识与能力之间的紧密联系",
+    "讨论AI意识带来的潜在风险和伦理问题"
+  ],
+  "xihe_relevance": "该内容对自反层（Agent反思记忆）和元认知框架有重要价值。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

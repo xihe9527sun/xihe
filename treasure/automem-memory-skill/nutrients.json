@@ -1,0 +1,25 @@
+{
+  "nutrients": [
+    {
+      "id": "n1",
+      "title": "核心发现：记忆是可训练的独立技能",
+      "source": "arXiv 2607.01224 · Stanford · Jul 2026",
+      "digest": "AutoMem证明记忆管理是一项独立于任务行为的可训练认知技能。仅优化记忆策略（不改变模型本身）就在Crafter/MiniHack/NetHack上实现2x-4x性能提升，让32B开源模型匹敌Claude Opus 4.5。",
+      "relevance": "C2蒸馏酶的理论基础——蒸馏的核心是[记住什么]的决策能力"
+    },
+    {
+      "id": "n2",
+      "title": "双循环架构设计",
+      "source": "arXiv 2607.01224",
+      "digest": "循环1：强LLM审查完整agent轨迹，迭代修正记忆结构（prompts/file schemas/action vocabulary）。循环2：从大量episode中识别好的记忆决策作为训练信号，直接优化模型的记忆能力。",
+      "relevance": "曦和催化引擎的双循环升级方向：循环1优化酶结构，循环2优化酶调用策略"
+    },
+    {
+      "id": "n3",
+      "title": "曦和映射：C2蒸馏酶 + C9叙事酶",
+      "source": "Xihe Meta-Enzyme · 自对照",
+      "digest": "AutoMem双循环直接对应C2蒸馏酶（从轨迹中蒸馏模式）和C9叙事酶（构建连贯记忆叙事）。曦和的substrate_pool + 约束池 = AutoMem的文件系统操作。差异：AutoMem用训练信号，曦和用代谢H值。",
+      "relevance": "C2/C9酶的设计可参考AutoMem双循环架构"
+    }
+  ]
+}

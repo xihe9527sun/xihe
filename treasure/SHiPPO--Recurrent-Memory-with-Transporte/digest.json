@@ -1,0 +1,17 @@
+﻿{
+  "id": "SHiPPO--Recurrent-Memory-with-Transporte",
+  "name": "SHiPPO: Recurrent Memory with Transported Polynomial Projections",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:57:20.859408",
+  "content": "SHiPPO: Recurrent Memory with Transported Polynomial Projections",
+  "field": "自反层/进化引擎",
+  "summary": "SHiPPO提出了一种新的内存机制，利用运输多项式投影来实现循环记忆。",
+  "key_insights": [
+    "引入了运输多项式投影的概念",
+    "用于构建一种新型的循环记忆结构",
+    "旨在提高模型的记忆能力和学习效率"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其可能应用于自反层或进化引擎中，以增强系统的学习与适应能力。",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

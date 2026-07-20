@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2603.23516",
+  "name": "MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens",
+  "source": "arXiv:2603.23516 (cs.CL)",
+  "reprocessed_at": "2026-07-20T14:34:53.476121",
+  "content": "Long-term memory is a cornerstone of human intelligence. Enabling AI to process lifetime-scale information remains a long-standing pursuit in\n  the field. Due to the constraints of full-attention architectures, the effective context length of large language models (LLMs) is typically\n  limited to 1M tokens. Existing approaches, such as hybrid linear attention, fixed-size memory states (e.g., RNNs), and external storage\n  methods like RAG or agent systems, attempt to extend this limit. However, t",
+  "field": "多Agent",
+  "summary": "MSA通过内存稀疏注意力技术，成功扩展了大型语言模型的有效上下文长度至100M tokens，并在保持高效和可训练性的同时实现了稳定性和性能的平衡。",
+  "key_insights": [
+    "MSA解决了现有方法在处理大规模上下文信息时存在的精度下降和延迟增加的问题。",
+    "通过文档级相对位置编码（RoPE）和可扩展稀疏注意力，MSA在训练和推理过程中均保持线性复杂度。",
+    "MSA的KV缓存压缩与内存并行技术使得其能够在2xA800 GPU上实现100M-token的高效推理。",
+    "Memory Interleaving功能支持跨散列内存段的复杂多跳推理，进一步增强了MSA的能力。",
+    "在长期上下文基准测试中，MSA显著超越了前沿的大语言模型、最先进的RAG系统和领先的记忆代理。"
+  ],
+  "xihe_relevance": "MSA可能对曦和项目在处理大规模数据集时提供重要的技术支撑和优化方案。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

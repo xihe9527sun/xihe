@@ -1,0 +1,18 @@
+﻿{
+  "id": "Dissociative-Identity--LLM-Agents-Lack-G",
+  "name": "Dissociative Identity: LLM Agents Lack Grounding for Reputation Mechanisms",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:28.935791",
+  "content": "Dissociative Identity: LLM Agents Lack Grounding for Reputation Mechanisms",
+  "field": "多Agent",
+  "summary": "LLM代理缺乏建立声誉机制的基础。",
+  "key_insights": [
+    "LLM代理在处理声誉机制方面存在缺陷",
+    "需要改进以更好地适应复杂环境和任务",
+    "研究重点应放在自反层和进化引擎上"
+  ],
+  "xihe_relevance": "对曦和的潜在价值较低，但可以作为相关领域的参考",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

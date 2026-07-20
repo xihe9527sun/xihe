@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12893",
+  "name": "MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations",
+  "source": "arXiv:cs.AI:2607.12893",
+  "reprocessed_at": "2026-07-20T14:31:53.999895",
+  "content": "Long-term memory has become a foundational capability for LLM-based agents that accompany users across extended, multi-session interactions. Existing benchmarks, however, evaluate such memory almost exclusively through downstream question answering, scoring only the correctness of a final answer. This black-box formulation conflates the heterogeneous causes of memory failure, such as missing the introduction of a relevant fact, binding an operation to the wrong target, or relying on stale values",
+  "field": "记忆系统/自反层",
+  "summary": "MemOps 提出了一种新的基准方法，通过分析内存操作的生命周期来评估长对话中的记忆表现，旨在揭示当前系统在处理不一致或不安全的记忆状态时的不足之处。",
+  "key_insights": [
+    "现有基准仅关注最终答案的正确性，忽略了导致记忆失败的各种原因，如遗漏相关事实、错误绑定操作目标以及依赖过时值等。",
+    "MemOps 将内存视为一个生命周期中的系列操作，包括记住、遗忘、更新、反思及其组合，并通过生成管道嵌入任务导向对话中。",
+    "MemOps 识别了当前系统在不同场景下的局限性，例如会话级别的检索优于回合级别的检索，长上下文模型在重建有序记忆状态方面仍表现不佳。"
+  ],
+  "xihe_relevance": "MemOps 的方法对曦和（一种可能的自反层或进化引擎）具有潜在价值，因为它提供了一种新的评估长期对话中记忆可靠性的框架。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

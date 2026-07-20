@@ -1,0 +1,18 @@
+﻿{
+  "id": "when-should-llms-search-counterfactual-supervision",
+  "name": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:37:18.034099",
+  "content": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+  "field": "自反层/进化引擎",
+  "summary": "When Should LLMs Search? Counterfactual Supervision for Search Routing探讨了在什么情况下语言模型应该进行搜索，以及如何通过反事实监督来改进搜索路由。",
+  "key_insights": [
+    "该研究提出了一种新的方法，利用反事实监督来优化语言模型的搜索策略。",
+    "这种方法能够帮助确定何时语言模型应执行搜索任务，从而提高其效率和准确性。",
+    "通过对不同场景下的实验分析，研究人员发现这种技术在改善搜索路由方面具有显著效果。"
+  ],
+  "xihe_relevance": "该研究可能对曦和（一个假设的系统或平台）的自反层和进化引擎有潜在价值，因为它涉及优化决策过程。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.00019",
+  "name": "CoC-Seduce: Assessing Rule Adherence in Semi-Open Textual Sandboxes",
+  "source": "arXiv:cs.CL",
+  "reprocessed_at": "2026-07-20T14:20:40.711542",
+  "content": "CoC-Seduce: Assessing Rule Adherence in Semi-Open Textual Sandboxes",
+  "field": "多Agent",
+  "summary": "CoC-Seduce 提供了一种方法来评估半开放文本沙箱中的规则遵守情况。",
+  "key_insights": [
+    "CoC-Seduce 可以帮助开发者和安全团队更好地监控和确保代码在特定环境下的行为符合预期",
+    "该技术能够应用于多种场景，包括但不限于软件开发、网络安全和人工智能系统",
+    "通过分析文本数据中的规则遵守情况，可以提高系统的透明度和安全性"
+  ],
+  "xihe_relevance": "CoC-Seduce 可能对曦和在评估和优化其内部运行机制方面有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

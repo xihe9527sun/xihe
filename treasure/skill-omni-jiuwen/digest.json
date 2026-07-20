@@ -1,0 +1,19 @@
+﻿{
+  "id": "skill-omni-jiuwen",
+  "name": "Skill-Omni 多模态Skill范式",
+  "source": "量子位 2026-07-07",
+  "reprocessed_at": "2026-07-20T12:49:13.627284",
+  "content": "Skill-Omni 多模态Skill范式",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "Skill-Omni 多模态Skill范式提出了一种新的技能表示方法，旨在支持跨模态任务的高效执行。",
+  "key_insights": [
+    "引入了多模态技能的概念",
+    "强调了跨模态任务处理能力",
+    "有助于提升系统灵活性和适应性",
+    "为自反层提供基础框架",
+    "促进技能表示方法的进化"
+  ],
+  "xihe_relevance": "记忆系统, 自反层, 进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

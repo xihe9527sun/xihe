@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08332",
+  "name": "XALPHA: A Memory-Driven AI Quant Researcher for Hypothesis-to-Code Alpha Discovery (2607.08332)",
+  "source": "arXiv:cs.CL:2607.08332",
+  "reprocessed_at": "2026-07-20T14:24:42.573670",
+  "content": "Financial markets are noisy, non-stationary, and high-dimensional, making it difficult to discover predictive and robust trading signals. Alpha discovery has evolved from manual factor design to machine learning, evolutionary search, and recent LLM-based frameworks, improving the efficiency of factor generation, search, and evaluation. However, existing methods still mostly automate isolated steps, rather than functioning as end-to-end quant researchers that can absorb external knowledge, close ",
+  "field": "记忆系统/自反层",
+  "summary": "XAlpha 是一种基于记忆驱动的 AI 量化研究员，它通过持续的假设到代码 Alpha 发现过程，结合外部知识和过往发现反馈来提升 Alpha 的生成、搜索及验证效率。",
+  "key_insights": [
+    "XAlpha 引入了一种多源研究记忆系统，整合了报告支持的金融知识以及来自先前世代和研究周期的发现反馈。",
+    "通过宏脑、微脑和跨脑的设计，XAlpha 实现了从假设到代码验证闭环的过程。",
+    "实验结果显示，XAlpha 在整体 Alpha 发现性能上优于代表性的基线方法。"
+  ],
+  "xihe_relevance": "XAlpha 的研究框架可以为曦和项目提供多源知识整合和自反层学习的参考，有助于提升量化研究员的整体效能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

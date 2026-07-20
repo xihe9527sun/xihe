@@ -1,0 +1,18 @@
+﻿{
+  "id": "multi-agent-comm-protocols",
+  "name": "MCP/A2A分层通信协议栈",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:03:35.339069",
+  "content": "MCP/A2A分层通信协议栈",
+  "field": "多Agent",
+  "summary": "MCP/A2A分层通信协议栈是一种用于多层次通信的协议，旨在提高系统的灵活性和可扩展性。",
+  "key_insights": [
+    "该协议栈能够支持多Agent系统中的信息交换与协同工作",
+    "它通过自反层实现对自身行为的监控和调整，促进智能体的学习和进化",
+    "在量化交易领域具有潜在的应用价值"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

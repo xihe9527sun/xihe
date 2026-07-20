@@ -1,0 +1,18 @@
+﻿{
+  "id": "agentscad-automated-design-for-manufacturing-via-m",
+  "name": "AgentsCAD: Automated Design for Manufacturing via Multi-Agent LLM [2607.02448]",
+  "source": "arXiv cs.MA",
+  "reprocessed_at": "2026-07-20T14:08:02.127038",
+  "content": "arxiv:2607.02448 AgentsCAD: Automated Design for Manufacturing via Multi-Agent LLM [2607.02448]",
+  "field": "多Agent",
+  "summary": "AgentsCAD is a system designed to automate the design process for manufacturing tasks using multi-agent language models. This approach aims to streamline and optimize the workflow between designers, engineers, and manufacturers.",
+  "key_insights": [
+    "AgentsCAD leverages multi-agent technology to improve efficiency in the design-to-manufacturing pipeline",
+    "The use of LLMs (Language Models) allows for more sophisticated communication and collaboration among agents",
+    "This system could potentially reduce human error and increase productivity in manufacturing processes"
+  ],
+  "xihe_relevance": "AgentsCAD's multi-agent approach could be beneficial for improving the efficiency and coordination within a complex system like the manufacturing process, which is of interest to曦和.",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

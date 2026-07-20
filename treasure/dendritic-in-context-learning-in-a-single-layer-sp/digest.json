@@ -1,0 +1,18 @@
+﻿{
+  "id": "dendritic-in-context-learning-in-a-single-layer-sp",
+  "name": "Dendritic In-Context Learning in a Single-Layer Spiking Neural Network",
+  "source": "arXiv cs.LG 2607.02283",
+  "reprocessed_at": "2026-07-20T14:15:48.427293",
+  "content": "In-context learning (ICL) operates via implicit gradient descent embedded in the forward pass of modern AI architectures -- Transformers, Mamba, state-space models, and MLPs. Capturing this capability in biologically plausible Spiking Neural Networks (SNNs) has remained an open challenge: existing SNNs fail the Garg-2022 benchmark at non-trivial task dimensions. We trace this failure to a structural assumption: prior SNN designs route adaptation through inference-time synaptic plasticity, viewin",
+  "field": "记忆系统",
+  "summary": "通过将单层分枝神经网络中的子阈值动态视为计算基底而非被动传导器，我们提出了一种新的学习架构DendriCL，它能够实现无注意力、深度和推理时间塑形的通用隐式梯度下降（ICL）。",
+  "key_insights": [
+    "DendriCL通过单层分枝神经网络实现了无深度的隐式梯度下降学习。",
+    "DendriCL在超维度任务中表现出种子稳定，而传统架构如密集Transformer则不稳定。",
+    "DendriCL能够直接从分枝膜恢复参考的在线LMS轨迹，表明算法嵌入于动态之中而非训练过程中发现。"
+  ],
+  "xihe_relevance": "DendriCL可能在曦和系统中用于实现无深度、无注意力的学习机制，提升系统的灵活性和效率。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

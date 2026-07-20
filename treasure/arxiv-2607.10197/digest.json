@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10197",
+  "name": "GRATE: Temporal Extensions for Inductive KG Foundation Models via Gated Rotary Attention",
+  "source": "arXiv:cs.AI:2607.10197",
+  "reprocessed_at": "2026-07-20T14:28:28.345044",
+  "content": "Knowledge graph foundation models such as Ultra and Trix achieve strong inductive transfer by learning relation-graph representations that generalise to unseen entities and relations. Extending this transferability to temporal knowledge graphs (TKGs) remains challenging: existing temporal models tie their parameters to dataset-specific entities, relations, or timestamps and are not designed to transfer to TKGs with disjoint vocabularies. We propose GRATE (Gated Rotary Attention for Temporal Enco",
+  "field": "进化引擎",
+  "summary": "GRATE通过引入Gated Rotary Attention机制，解决了在时间知识图谱（TKGs）上实现强迁移学习的挑战。它不增加任何可学习参数，并利用相对时间差异来编码时间和查询之间的边缘消息旋转，同时应用条件门以选择与时间相关的信号。",
+  "key_insights": [
+    "GRATE能够通过Gated Rotary Attention机制在不增加额外参数的情况下处理时间信息",
+    "GRATE设计用于跨数据集的时间迁移学习，并且可以整合到现有的知识图谱基础模型中",
+    "构建了两个新的基准测试套件以评估GRATE在不同领域中的性能"
+  ],
+  "xihe_relevance": "GRATE对于曦和系统在处理时间和迁移学习方面具有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

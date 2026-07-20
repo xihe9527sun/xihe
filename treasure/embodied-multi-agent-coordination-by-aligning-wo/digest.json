@@ -1,0 +1,18 @@
+﻿{
+  "id": "embodied-multi-agent-coordination-by-aligning-wo",
+  "name": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T14:05:57.383656",
+  "content": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue",
+  "field": "多Agent",
+  "summary": "通过对话同步世界模型实现 embodied 多智能体协调。",
+  "key_insights": [
+    "论文探讨了如何利用对话技术来同步不同智能体的世界模型，以实现有效的多智能体协同。",
+    "研究可能对曦和计划中的记忆系统、自反层、进化引擎等模块具有潜在价值。",
+    "该方法可以应用于多Agent系统领域，有助于提升智能体之间的协调性和合作能力。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

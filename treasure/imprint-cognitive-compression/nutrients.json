@@ -1,0 +1,35 @@
+{
+  "id": "imprint-cognitive-compression",
+  "name": "Imprint: 认知启发的在线记忆压缩",
+  "sources": [],
+  "discovered": "2026-07-09T21:02:05.237268",
+  "field": "AI架构·曦和融合",
+  "intake_score": 0.82,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "Imprint三信号(重复/新近/显著)注入HebbianGraph.defrag()，替代简单边年龄衰减",
+    "由表及里": "研讨厅驱动正式入库固化(差距④)"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "Imprint三信号(重复/新近/显著)注入HebbianGraph.defrag()，替代简单边年龄衰减"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "phase1",
+    "landing": "代码级落地(defrag权重函数改造)"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库 + 代码级落地",
+    "phase": "phase1",
+    "landing": "代码级落地(defrag权重函数改造)",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "Imprint三信号(重复/新近/显著)注入HebbianGraph.defrag()，替代简单边年龄衰减",
+    "intake_score": 0.82,
+    "backed_at": "2026-07-10T06:58:24.258963"
+  },
+  "digest_notes": "核心已吸收进 agent-native-memory-system phase1"
+}

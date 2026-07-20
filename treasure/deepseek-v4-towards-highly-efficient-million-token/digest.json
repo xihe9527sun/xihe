@@ -1,0 +1,18 @@
+﻿{
+  "id": "deepseek-v4-towards-highly-efficient-million-token",
+  "name": "DeepSeek-V4: Towards Highly Efficient Million-Token Context with Compressed Sparse Attention",
+  "source": "TAAC 2026 DeepSeek-V4",
+  "reprocessed_at": "2026-07-20T14:15:42.225313",
+  "content": "DeepSeek-V4: Towards Highly Efficient Million-Token Context with Compressed Sparse Attention",
+  "field": "其他之一",
+  "summary": "DeepSeek-V4致力于实现高效的一百万token上下文，同时采用压缩稀疏注意力机制。",
+  "key_insights": [
+    "提出了新的压缩稀疏注意力机制来处理大规模上下文",
+    "旨在提高模型在处理大量文本数据时的效率和性能",
+    "通过优化注意力机制减少计算复杂度和内存占用"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

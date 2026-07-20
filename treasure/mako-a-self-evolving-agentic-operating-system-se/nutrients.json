@@ -1,0 +1,35 @@
+{
+  "id": "mako-a-self-evolving-agentic-operating-system-se",
+  "name": "Mako: A Self-Evolving Agentic Operating System (SE-AOS) for Autonomous Web Exploitation",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:35.980062",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-15T09:10:35.979784"
+  },
+  "digest_notes": "介绍自我进化智能体操作系统SE-AOS，将利用能力视为可变版本化内核，运行时通过观察自己失败、综合新能力、针对实时目标验证并热加载回自身来扩展。发现核心：一旦能力存在且可发现，难度就崩溃。"
+}

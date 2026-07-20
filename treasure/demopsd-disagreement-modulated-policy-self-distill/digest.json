@@ -1,0 +1,20 @@
+﻿{
+  "id": "demopsd-disagreement-modulated-policy-self-distill",
+  "name": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+  "source": "arXiv cs.AI 2607.02502",
+  "reprocessed_at": "2026-07-20T14:14:57.468788",
+  "content": "On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can lead to overfitting to in-domain patterns, suppress exploration, and hurt cross-domain generalization, while also introducing a more fundamenta",
+  "field": "多Agent",
+  "summary": "通过引入DemoPSD框架，该研究解决了OPSD方法中教师密集标记监督导致的过拟合、抑制探索和损害跨域泛化等问题，并且减少了特权信息泄露。DemoPSD通过选择性采用教师指导的理念来平衡学习教师与保持学生推理能力。",
+  "key_insights": [
+    "提出了一种新的框架DemoPSD，用于解决OPSD方法中的问题。",
+    "DemoPSD通过反KL barycenter目标来引导学生，该目标是教师和学生分布的加权几何组合。",
+    "实验结果表明，DemoPSD在SciKnowEval数据集上优于GRPO和SDPO，并且保持了较高的训练熵和稳健的泛化能力。",
+    "DemonstratePSD能够有效减少特权信息泄露并保留探索能力。",
+    "该方法对记忆系统、自反层、进化引擎等领域的研究具有潜在价值。"
+  ],
+  "xihe_relevance": "DemoPSD框架在解决OPSD中的问题方面展示了潜力，这可能有助于改善语言模型的性能和泛化能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

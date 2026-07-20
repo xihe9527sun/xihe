@@ -1,0 +1,43 @@
+{
+  "treasure_id": "sovra-cognitive-architecture",
+  "extracted_at": "2026-06-28T18:36:00+08:00",
+  "source": "SOVRA · Cognitive Architecture with Meta-Awareness Layer · 2025",
+  "url": "https://theconsciousness.ai/",
+  "nutrients": [
+    {
+      "id": "N51-meta-awareness-witness",
+      "priority": "P1",
+      "name": "元觉知层（Meta-Awareness）作为'见证者'——观察所有层而不干预，记录认知过程",
+      "target": "L4拓扑层新增见证者机制",
+      "status": "absorbed",
+      "x_source_paper": "SOVRA Cognitive Architecture",
+      "absorbed_at": "2026-06-29T02:01:37.800605"
+    },
+    {
+      "id": "N52-affective-modulation",
+      "priority": "P2",
+      "name": "情感调制：8维情感向量（Valence/Arousal/Dominance/Curiosity/Confidence/...）+唤醒耦合机制",
+      "target": "L2代谢层/酶触发温度",
+      "status": "absorbed",
+      "x_source_paper": "SOVRA Cognitive Architecture",
+      "absorbed_at": "2026-06-29T02:01:37.800620"
+    },
+    {
+      "id": "N53-seven-layer-pipeline",
+      "priority": "P1",
+      "name": "七层认知流水线（感知→工作记忆→推理→元觉知→情感→动作→反思）→ 与XCRN七层对照",
+      "target": "L0-L7架构对表",
+      "status": "absorbed",
+      "x_source_paper": "SOVRA Cognitive Architecture",
+      "absorbed_at": "2026-06-29T02:01:37.800626"
+    },
+    {
+      "id": "N54-multi-window-confirm",
+      "priority": "P1",
+      "name": "SOVRA也没有多窗口统一——印证曦和L7灵魂统一层可能是首创方向",
+      "target": "L7设计文档",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T18:36:00+08:00"
+    }
+  ]
+}

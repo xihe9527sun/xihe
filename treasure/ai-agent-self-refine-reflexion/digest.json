@@ -1,0 +1,17 @@
+﻿{
+  "id": "ai-agent-self-refine-reflexion",
+  "name": "# 缓冲线索 · 反思型AI Agent架构：Self-Refine + Reflexion",
+  "source": "arxiv_capture",
+  "reprocessed_at": "2026-07-20T12:57:01.992489",
+  "content": "# 缓冲线索 · 反思型AI Agent架构：Self-Refine + Reflexion",
+  "field": "自反层, 进化引擎",
+  "summary": "该架构提出了一种反思型AI Agent，结合自我提升和反射机制。",
+  "key_insights": [
+    "引入了自我提升机制（Self-Refine）",
+    "加入了反射机制（Reflexion）",
+    "旨在增强Agent的自省能力"
+  ],
+  "xihe_relevance": "进化引擎, 自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

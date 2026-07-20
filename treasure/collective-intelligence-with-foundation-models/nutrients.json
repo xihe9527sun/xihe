@@ -1,0 +1,35 @@
+{
+  "id": "collective-intelligence-with-foundation-models",
+  "name": "Collective Intelligence with Foundation Models",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.004159",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.88,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.88,
+    "backed_at": "2026-07-11T09:10:52.003923"
+  },
+  "digest_notes": "We present a multi-agent framework where solver models generate independent drafts, each undergoes structured critique and revision by a critic agent, and an aggregator agent synthesizes a final consensus solution. Through ablation studies we isolate the contributions of framework architecture versus model diversity. Model heterogeneity is the critical factor: heterogeneous configuration achieves superior step-wise accuracy (0.64 vs 0.54 for individual models; 2.3x improvement) with reduced vari"
+}

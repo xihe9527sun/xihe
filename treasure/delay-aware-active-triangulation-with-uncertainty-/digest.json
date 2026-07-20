@@ -1,0 +1,20 @@
+﻿{
+  "id": "delay-aware-active-triangulation-with-uncertainty-",
+  "name": "Delay-Aware Active Triangulation with Uncertainty-Driven Multi-Agent RL for Counter-UAS",
+  "source": "arXiv:cs.MA:2607.new",
+  "reprocessed_at": "2026-07-20T14:22:04.204038",
+  "content": "Delay-Aware Active Triangulation with Uncertainty-Driven Multi-Agent RL for Counter-UAS",
+  "field": "多Agent",
+  "summary": "通过延迟感知主动三测定位技术结合基于不确定性的多智能体强化学习，用于对抗无人机系统。",
+  "key_insights": [
+    "提出了延迟感知的主动三角测量方法以提高目标定位精度。",
+    "引入了基于不确定性的多智能体强化学习算法来优化任务执行策略。",
+    "该方法能够有效应对无人机系统的动态和不确定性问题。",
+    "研究结果表明，该技术在对抗无人机系统方面具有显著优势。",
+    "为未来的自适应控制和自主决策提供了新的理论和技术支持。"
+  ],
+  "xihe_relevance": "该技术可能对曦和的实时定位和自主决策能力产生积极影响。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,44 @@
+{
+  "treasure_id": "network-motifs-kaust",
+  "extracted_at": "2026-06-28T09:45:00+08:00",
+  "nutrients": [
+    {
+      "id": "N37-motif-design",
+      "type": "mechanism",
+      "name": "非相干环设计原则 → 酶网络motif优化",
+      "priority": "P1",
+      "target": "bridge/enzyme_catalyst.py",
+      "effect": "21颗酶的关系应形式化为21×21邻接矩阵，确保酶间连接中存在足够多的非相干环(incoherent loop)模式，避免酶网络功能退化",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "闭环检测+四原则+资格痕迹全部代码集成",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N38-incoherent-filter",
+      "type": "insight",
+      "name": "四原则过滤形式化 = incoherent loop",
+      "priority": "P2",
+      "target": "bridge/foraging.py",
+      "effect": "将四原则过滤(去粗取精/去伪存真/由此及彼/由表及里)形式化为非相干环结构——在同一节点上同时执行激活(提取)和抑制(剔除)",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "闭环检测+四原则+资格痕迹全部代码集成",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N39-eligibility-trace",
+      "type": "mechanism",
+      "name": "资格痕迹机制 → 赫布衰减模型",
+      "priority": "P2",
+      "target": "bridge/enzyme_catalyst.py",
+      "effect": "酶催化检查应增加资格痕迹的指数衰减模拟，使最近的事件权重更高、早期事件自动衰减",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "闭环检测+四原则+资格痕迹全部代码集成",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ],
+  "digested_at": "2026-06-28T09:45:00+08:00",
+  "full_digest": "memory/foraging/digest_bio_ai_20260628.json"
+}

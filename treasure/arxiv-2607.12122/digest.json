@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12122",
+  "name": "An Agentic AI Scientific Community for Automated Neural Operator Discovery",
+  "source": "arXiv:cs.LG:2607.12122",
+  "reprocessed_at": "2026-07-20T14:31:06.558407",
+  "content": "We present an agentic approach to autonomous neural operator discovery based on an AI scientific community, which consists of a swarm of virtual laboratories that interact under a citation-based economy of influence. Highly-cited labs found new labs that follow their research direction and replace non-performing labs. Each virtual lab contains three agents: an LLM planner that proposes an architecture, a numerical worker that trains and measures it, and an LLM reviewer that participates in cross",
+  "field": "多Agent",
+  "summary": "本文提出了一种基于AI科学社区的自主神经操作发现方法，该方法通过虚拟实验室之间的相互作用来实现。这些实验室共享一个共同词汇，并且在模拟实验中展示了其在解决多种问题上的能力。",
+  "key_insights": [
+    "提出了一个新的AI科学社区框架用于自主神经操作发现",
+    "虚拟实验室之间通过引用经济相互影响，促进新实验室的形成和旧实验室的淘汰",
+    "所有9,623次LLM调用都被记录并审计，揭示了虚拟实验室规划者倾向于混合使用架构的趋势"
+  ],
+  "xihe_relevance": "该研究对曦和项目的潜在价值在于提供了一个新的AI科学社区框架用于自主神经操作发现，这可能有助于提高模型的多样性和适应性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

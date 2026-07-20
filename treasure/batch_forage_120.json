@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "term": "metacognition, multi-agent, self-awareness",
+      "title": "MetaCogAgent: A Metacognitive Multi-Agent LLM Framework with Self-Aware Task Delegation",
+      "snippet": "提出元认知多Agent框架，每个Agent配备元认知自我评估单元，执行前评估任务与能力的匹配度。自评估机制结合语言化不确定性+历史能力图谱估计置信度，自适应委派协议将低置信任务路由给更合适Agent。MetaCog-Eval基准700任务准确率82.4%，比最优路由高8.7%。",
+      "source": "arXiv:cs.AI:2605.17292",
+      "url": "https://arxiv.org/abs/2605.17292",
+      "intake_score": 0.89
+    },
+    {
+      "term": "self-awareness, recursive self-improvement, autonomous agent",
+      "title": "Self-Aware Recursively Self-Improving Agents for Personal Singularity",
+      "snippet": "提出SARSI自感知递归自改进Agent架构：维护持久化自模型（身份/目标/能力/限制/不确定性/关系/历史/发展变化），用该模型指导和评估递归改进。形式化功能自感知、范围路由、改进接受机制。包含规划-执行-验证循环、证据门控改进环、外部治理平面。",
+      "source": "arXiv:cs.CV:2607.12254",
+      "url": "https://arxiv.org/abs/2607.12254",
+      "intake_score": 0.87
+    },
+    {
+      "term": "counterfactual, neuro-symbolic, cognitive architecture",
+      "title": "Deterministic Event-Graph Substrates as World Models for Counterfactual Reasoning",
+      "snippet": "研究事件图底物作为世界模型：将Agent状态表示为追加式RDF三元组日志，通过结构化干预词汇表分叉日志回答反事实查询。底物在三元组级别可检查，支持精确反事实，跨领域零学习迁移。在CLEVRER验证集上超越符号oracle和参数化ALOE基线。",
+      "source": "arXiv:cs.AI:2605.15967",
+      "url": "https://arxiv.org/abs/2605.15967",
+      "intake_score": 0.79
+    },
+    {
+      "term": "cognitive architecture, knowledge layer, memory",
+      "title": "The Missing Knowledge Layer in Cognitive Architectures for AI Agents",
+      "snippet": "提出CoALA和JEPA两大认知架构框架都缺少显式知识层。提出四层分解（知识/记忆/智慧/智能），每层有根本不同的持久语义：无限替代、艾宾浩斯衰减、证据门控修订、短暂推理。知识-记忆区分映射Tulving三区分法，Python和Rust实现验证架构分离可行性。",
+      "source": "arXiv:cs.AI:2604.11364",
+      "url": "https://arxiv.org/abs/2604.11364",
+      "intake_score": 0.84
+    },
+    {
+      "term": "consciousness, global workspace, GWT, catalyst",
+      "title": "MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation",
+      "snippet": "MANAR上下文化层通过可训练抽象概念记忆和ACR实现全局工作空间理论(GWT)原理。两阶段逻辑：集成阶段记忆概念汇聚形成集体心理意象，广播阶段全局状态导航通知局部token上下文化。线性时间缩放是GWT功能瓶颈的架构副产品。非凸上下文化能力证明超输入token凸包的综合表征。",
+      "source": "arXiv:cs.AI:2603.18676",
+      "url": "https://arxiv.org/abs/2603.18676",
+      "intake_score": 0.92
+    },
+    {
+      "term": "sparse attention, memory, long context",
+      "title": "IndexMem: Learned KV-Cache Eviction with Latent Memory for Long-Context LLM Inference",
+      "snippet": "提出可学习索引器预测KV重要性实现自适应驱逐，同时引入轻量级隐记忆模块压缩被驱逐token为紧凑在线更新状态，提供残余读出补偿注意力贡献损失。RULER上Qwen/Mistral/Llama最高+25分，NIAH检索更稳定，LongBench分数和压缩曲线优于现有驱逐策略。",
+      "source": "arXiv:cs.CL:2605.25475",
+      "url": "https://arxiv.org/abs/2605.25475",
+      "intake_score": 0.80
+    },
+    {
+      "term": "sparse attention, long context, memory",
+      "title": "SAC: Disaggregated KV Cache System for Sparse Attention LLMs with CXL",
+      "snippet": "首个针对稀疏注意力模型优化的解聚KV缓存系统。利用CXL低延迟缓存行粒度的读写语义，推理期间按需仅获取top-k KV条目。DeepSeek-V3.2评估：吞吐量2.1倍、TTFT降低9.7倍、TBT降低1.8倍，优于RDMA方案。",
+      "source": "arXiv:cs.DC:2606.19746",
+      "url": "https://arxiv.org/abs/2606.19746",
+      "intake_score": 0.75
+    },
+    {
+      "term": "consciousness, cognitive architecture, self-reflection",
+      "title": "Dual-Laws Model for a Theory of Artificial Consciousness",
+      "snippet": "提出七问框架（现象/自我/因果/状态/功能/内容/普适性）作为完整意识理论的最低要求。识别两个预测性特征：从外部刺激的认知解耦（选择性忽略输入、内部世界模型仿真运行反事实）和目标自决（系统自身通过内部过程重构行为目标）。两属性在分层因果结构中形式化。",
+      "source": "arXiv:cs.AI:2603.12662",
+      "url": "https://arxiv.org/abs/2603.12662",
+      "intake_score": 0.83
+    },
+    {
+      "term": "global workspace, self-reflection, catalyst",
+      "title": "An Attention Mechanism for Robust Multimodal Integration in a Global Workspace Architecture",
+      "snippet": "受GWT启发的轻量级自上而下模态选择器，叠加在冻结多模态全局工作空间上。在Simple Shapes和MM-IMDb上评估，选择器用更少参数提升鲁棒性，学到的选择策略跨下游任务和损坏模式更好迁移。即使在未见过的模态上也有效。",
+      "source": "arXiv:cs.AI:2602.08597",
+      "url": "https://arxiv.org/abs/2602.08597",
+      "intake_score": 0.86
+    },
+    {
+      "term": "counterfactual, neuro-symbolic, catalyst",
+      "title": "PACE: A Neuro-Symbolic Framework for Plausible and Actionable Counterfactual Explanations",
+      "snippet": "模块化神经符号反事实解释框架：神经预测模型分离+符号推理层执行领域约束。可操作干预显式建模，解释符合领域知识且可解释。Adult Income数据集结合MLP分类器和ASP规则编码可行修改，结果揭示反事实有效性与合理性权衡，符号约束产生更符合领域可行性要求的解释。",
+      "source": "arXiv:cs.AI:2607.01306",
+      "url": "https://arxiv.org/abs/2607.01306",
+      "intake_score": 0.78
+    },
+    {
+      "term": "multi-agent, self-reflection, autonomous agent, catalyst",
+      "title": "AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents",
+      "snippet": "自驱动协作推理框架，动态协调不同推理能力的模型。Agent用自身自反射信号判断推理轨迹是否有意义进展，必要时升级到更强推理层。引入难度感知累积升级策略分配额外推理预算。两层小-大模型设定实验证明持续改进LLM Agent的精度-效率帕累托前沿。",
+      "source": "arXiv:cs.CL:2603.26034",
+      "url": "https://arxiv.org/abs/2603.26034",
+      "intake_score": 0.82
+    },
+    {
+      "term": "autonomous agent, metacognition, emergence, catalyst",
+      "title": "Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems",
+      "snippet": "提出管理自治理论：智能行为通过检测认知漂移、暂停推理、尝试恢复、最终在可靠性降低时放弃控制的形式化能力定义。SMARt四层框架（稳定/元认知/辅助/受控状态），带时标守卫Petri网形式化，证明架构可强制升级、约束无效输出、确保治理可达性。",
+      "source": "arXiv:cs.AI:2605.27628",
+      "url": "https://arxiv.org/abs/2605.27628",
+      "intake_score": 0.76
+    }
+  ]
+}

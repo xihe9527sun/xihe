@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2602.04291",
+  "name": "Disentangling Intrinsic Importance from Emergent Structure in Multi-Expert Orchestration",
+  "source": "arXiv:cs.MA:2602.04291",
+  "reprocessed_at": "2026-07-20T14:27:43.640475",
+  "content": "Multi-expert systems, where multiple Large Language Models (LLMs) collaborate to solve complex tasks, are increasingly adopted for high-performance reasoning and generation. However, the orchestration policies governing expert interaction and sequencing remain largely opaque. We introduce INFORM, an interpretability analysis that treats orchestration as an explicit, analyzable computation, enabling the decoupling of expert interaction structure, execution order, and functional attribution. We us",
+  "field": "多Agent",
+  "summary": "通过引入INFORM分析，研究揭示了多专家系统的复杂任务解决中，专家互动结构、执行顺序与功能归属之间的分离关系，以及它们与内在重要性之间的差异。",
+  "key_insights": [
+    "路由主导并非功能必要性的良好代理",
+    "关系重要性和内在重要性在评估专家选择和交互拓扑方面存在显著差异",
+    "多专家系统中的排序行为表现出非确定性，并且专家集中化发生在稳定路由信心之前",
+    "内生重要的专家被遮蔽后，其对互动结构的影响远大于频繁参与者的遮蔽效果",
+    "INFORM分析不仅揭示了准确性之外的功能和结构性依赖"
+  ],
+  "xihe_relevance": "INFORM分析对于曦和系统的潜在价值在于帮助理解多专家系统中的复杂交互模式及其功能重要性，从而优化系统性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

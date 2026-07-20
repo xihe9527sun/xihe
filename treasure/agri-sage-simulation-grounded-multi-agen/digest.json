@@ -1,0 +1,18 @@
+﻿{
+  "id": "agri-sage-simulation-grounded-multi-agen",
+  "name": "Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Ad",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:57:58.127387",
+  "content": "Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Ad",
+  "field": "多Agent",
+  "summary": "Agri-SAGE 是一种基于模拟的多智能体语言模型，旨在为农业广告提供情境感知支持。",
+  "key_insights": [
+    "Agri-SAGE 结合了模拟和多智能体系统，以提高农业广告的效果。",
+    "该模型能够理解并适应不同的农业场景，从而生成更准确、相关的广告内容。",
+    "通过使用情境感知技术，Agri-SAGE 可以为农民提供个性化的建议和服务。"
+  ],
+  "xihe_relevance": "Agri-SAGE 的情境感知能力可能对曦和系统在农业领域的应用具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

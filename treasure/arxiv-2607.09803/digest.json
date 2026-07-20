@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09803",
+  "name": "Spectral Origins of the Self-Correction Blind Spot in Autoregressive Generation",
+  "source": "arXiv:cs.LG:2607.09803",
+  "reprocessed_at": "2026-07-20T14:29:41.331742",
+  "content": "Large autoregressive language models exhibit a self-correction blind spot: they reliably fix identical errors when attributed to an external source yet fail to fix the same errors in their own outputs. Prior work has documented this phenomenon empirically, through controlled error injection, error-depth decompositions, RL-based verifier-corrector training, and intrinsic self-verification, but offers no formal model of why generating a token suppresses the ability to detect its error, no quantita",
+  "field": "进化引擎",
+  "summary": "Large autoregressive language models exhibit a self-correction blind spot: they reliably fix errors attributed to an external source but fail to correct their own outputs, despite the existence of various empirical and theoretical studies.",
+  "key_insights": [
+    "SPARC理论提供了一种解释自回归生成中自我校正盲区的数学框架。",
+    "该理论证明了当误差传播算子的谱半径至少为1时，自我校正盲区会存在。",
+    "通过验证器-校正器训练，如果耦合矩阵的谱范数小于1，则RL方法收敛于样本数量的平方根与耦合强度的平方比。"
+  ],
+  "xihe_relevance": "有助于理解语言模型内部机制和提升其性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

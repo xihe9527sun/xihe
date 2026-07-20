@@ -1,0 +1,28 @@
+{
+  "id": "stanford-delm-decentralized-mas",
+  "name": "Stanford DeLM: Decentralized Multi-Agent Systems with Shared Context",
+  "source": "arXiv:2606.10662 · 2026-06 · Stanford SAIL · Yuzhen Mao & Azalia Mirhoseini",
+  "discovered": "2026-07-17T08:50:00+08:00",
+  "field": "多Agent协作/去中心化架构",
+  "intake_score": 0.93,
+  "four_principles_filter": {
+    "去粗取精": "✅ 来源：Stanford SAIL学术论文+代码开源(可信度0.85)，正文完整。命中领域'多智能/架构/协作/记忆/共识/智能体'等≥6领域",
+    "去伪存真": "✅ 可验证：SWE-bench Verified 成本砍半($0.12/题 vs $0.24-$0.26)，准确率+10.5pp。LongBench-v2 四模型上最高准确率。消融实验验证：无验证闸门60.1%→55.2%，无层级摘要→57.7%。源码开源",
+    "由此及彼": "🔗 曦和signal_dispatcher(信号分发)和multi-Agent体系直接对齐：(1)共享验证脉络↔曦和的gain_landscape.json作为环间通信协议；(2)三层层级摘要(Gist/Summary/Raw)↔曦和的三体冗余上下文护盾(shield/pulse/snapshot/sandbox)；(3)入庫驗證閘門↔曦和的ADOL层RequireOutput+SchemaDedup验证机制；(4)去中心化↔曦和的τ总线A2A化方向。DeLM是曦和从'中央信号调度'走向'去中心化Agent协作'的完美理论支持和工程蓝本",
+    "由表及里": "🔬 核心理念：协调(Coordination)的载体可以是共享记忆(Shared Memory)，不一定是中央调度者(Central Orchestrator)。三个关键机制支撑：(1)Shared Verified Context作为'共同通讯基底'，代理在已验证进度的基础上叠加而非绕经中央节点；(2)Coarse-to-Fine三层结构的核心贡献不是分层本身，而是'~100 token gist作为代理间的默认通信单位'——压缩到极致的信息密度使协作成本极低；(3)Admission-time verification gate确保去中心化不退化为一盘散沙。最大洞见：将'负面结论(negative findings)'也写入共享脉络——让代理看到彼此踩过的雷，省下重工成本。曦和的treasure/经验本就蕴含这种'集体学习'的潜力"
+  },
+  "xihe_mapping": {
+    "subsystem": "bridge/signal_dispatcher + gain_landscape.json",
+    "enhancement_points": [
+      "signal_dispatcher当前采用按Agent Card events_listens匹配的中央分发模型，可增加DeLM风格的共享验证脉络通道作为补充传播路径",
+      "gain_landscape.json可作为曦和'共享增益场'发挥DeLM中共享脉络的作用——agents之间不通过中央调度读取彼此增益，而是直接读gain_landscape",
+      "三体护盾(shield/pulse/snapshot/sandbox)可扩展到DeLM风格的层级压缩摘要：gist(100t摘要)→summary(引用标注)→raw(原文)",
+      "负面结论共享机制：当前曦和的失败/错误信号缺乏系统性共享，可在gain_trend_signals.json中增加'负面轨迹'记录"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "研讨厅待定",
+    "landing": "在signal_dispatcher中新增共享验证脉络通道(SharedVerifiedContext类)，实现三层层级摘要的读写+验证闸门"
+  },
+  "digest_notes": "DeLM的优雅之处在于它把协调问题重新定义成了信息管理问题。不是让一个中央大脑更聪明，而是让所有代理共享一块可靠、压缩、可追溯的信息空间。三层层级摘要(Gist/Summary/Raw)解决了'共享记忆膨胀'的经典难题——默认只读100t的gist，需要时才向下展开。入庫驗證閘門确保了共享记忆不被污染。成本砍半(从$0.24-0.26到$0.12/题)说明去中心化不是理论空谈而是有实际工程价值的。对曦和最有价值的是：当前signal_dispatcher + τ总线A2A化路线可以结合DeLM的共享验证脉络，形成混合架构——既有Agent Card能力匹配的精确路由，又有共享脉络的广播发现。"
+}

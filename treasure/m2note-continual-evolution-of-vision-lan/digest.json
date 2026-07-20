@@ -1,0 +1,17 @@
+﻿{
+  "id": "m2note-continual-evolution-of-vision-lan",
+  "name": "M2Note: Continual Evolution of Vision Language Models via Mistake Notebook Learn",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:42.691351",
+  "content": "M2Note: Continual Evolution of Vision Language Models via Mistake Notebook Learn",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "该研究提出了一种通过错误笔记学习的方法，以持续进化视觉语言模型。",
+  "key_insights": [
+    "引入了M2Note方法来改进视觉语言模型",
+    "通过错误笔记机制实现模型的自我修正和进化",
+    "旨在提高视觉语言模型在多任务学习中的性能"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

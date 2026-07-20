@@ -1,0 +1,18 @@
+﻿{
+  "id": "tokenscope-token-level-explainability-for-code-ori",
+  "name": "TokenScope: Token-Level Explainability for Code-Oriented Tasks [2607.01235]",
+  "source": "arXiv cs.CL",
+  "reprocessed_at": "2026-07-20T14:11:59.794756",
+  "content": "arxiv:2607.01235 TokenScope: Token-Level Explainability for Code-Oriented Tasks [2607.01235]",
+  "field": "自反层",
+  "summary": "本文提出了一种名为TokenScope的方法，用于代码导向任务中的令牌级别可解释性。",
+  "key_insights": [
+    "提出了TokenScope方法以增强代码导向任务的可解释性",
+    "旨在提高模型在代码理解和执行过程中的透明度和可靠性",
+    "该方法可能对曦和等具有潜在价值的情境产生积极影响"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

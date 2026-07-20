@@ -1,0 +1,19 @@
+﻿{
+  "id": "Rank-Order-N-of-M-Codes-for-Sparse-Distr",
+  "name": "Rank-Order N-of-M Codes for Sparse Distributed Memory",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:57:16.044355",
+  "content": "Rank-Order N-of-M Codes for Sparse Distributed Memory",
+  "field": "记忆系统/自反层",
+  "summary": "该研究提出了一种用于稀疏分布式存储的秩序N-of-M编码方法。",
+  "key_insights": [
+    "引入了Rank-Order N-of-M编码的概念",
+    "适用于稀疏分布式内存系统",
+    "可能提升信息存储和检索效率",
+    "对自反层有潜在应用价值",
+    "可作为进化引擎中的一个研究方向"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "Resilient-by-Design--Active-Inference-fo",
+  "name": "Resilient by Design: Active Inference for Distributed Continuum Intelligence",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:34.866321",
+  "content": "Resilient by Design: Active Inference for Distributed Continuum Intelligence",
+  "field": "自反层",
+  "summary": "该论文讨论了通过主动推理实现分布式连续智能的方法，旨在构建更加弹性的系统设计。",
+  "key_insights": [
+    "提出一种新的智能架构：分布式连续智能",
+    "强调主动推理在构建弹性系统中的重要性",
+    "探讨如何利用这种架构来增强系统的适应性和灵活性",
+    "关注于通过主动推理实现更有效的资源分配和决策过程",
+    "研究方向集中在人工智能的自反层"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其自反层的研究，可以为系统提供更高级别的自我理解和适应能力。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

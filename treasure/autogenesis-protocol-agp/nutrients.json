@@ -1,0 +1,40 @@
+{
+  "id": "autogenesis-protocol-agp",
+  "name": "Autogenesis Protocol (AGP) — 自进化协议：将Agent自我改进纳入协议化治理",
+  "sources": [
+    "arXiv:2604.15034 · 南洋理工大学/斯坦福/普林斯顿联合团队",
+    "搜狐文章 https://www.sohu.com/a/1030244543_211762"
+  ],
+  "discovered": "2026-07-18T08:50:00+08:00",
+  "field": "自进化Agent/协议化治理",
+  "intake_score": 0.92,
+  "last_resonance": "2026-07-18",
+  "four_principles_filter": {
+    "去粗取精": "AGP将自进化拆为RSPL(资源基底协议层:定义'什么能进化')和SEPL(自进化协议层:定义'如何安全进化')。五类协议注册资源:prompt、Agent、Tool/MCP/Skill、Environment、Memory。GAIA Validation 93.33%, LeetCode C++接近满分",
+    "去伪存真": "南洋理工/斯坦福/普林斯顿联合团队, v5版本已更新, GitHub开源(DVampire/Autogenesis)。性能数据来自GAIA/HLE/GPQA/AIME/LeetCode多基准测试",
+    "由此及彼": "与曦和Darwin Gödel Machine(进化引擎v4)同源但互补:DGM回答'如何进化',AGP回答'进化如何被治理'。AGP的RSPL层对应曦和bridge/的资源注册表(118工具),SEPL层对应evolution_engine的Reflect→Select→Improve→Evaluate→Commit闭环但多了协议级别的审计和回滚",
+    "由表及里": "深层洞见：当Agent开始修改自己的prompt、工具、记忆时,这些变化必须被统一治理——不是代码改进问题,是资源治理问题。AGP把'进化'从临时patch提升为协议级操作,每个修改都有可审计的谱系和回滚能力"
+  },
+  "xihe_mapping": {
+    "subsystem": "自进化/协议化治理",
+    "enhancement_points": [
+      "曦和evolution_engine目前缺乏协议级的审计和回滚——每次进化修改没有统一的资源注册表",
+      "AGP的RSPL概念可以直接映射到曦和bridge/的resource registry:prompt→templates.json, Agent→万相技能, Tool→MCP工具注册表, Memory→四层记忆皮层, Environment→workbuddy workspace",
+      "AGP的SEPL闭环(Reflect→Select→Improve→Evaluate→Commit)比曦和当前的evolution_engine更完整:多了Select(选择)和Commit(提交+审计)两个环节",
+      "与作业/群马群(Orca舰队模式)结合:多Agent并行进化时,AGP提供协议级协调"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "近期(1-2周内)",
+    "landing": "1) 在bridge/evolution_engine.py中增加审计接口:记录每次进化的before/after/cause/rollback_plan。2) 将bridge/population_ecology的资源注册表升级为AGP风格的五类注册:prompt/agent/tool/memory/environment。3) 在SEPL闭环中增加'Commit'步骤(当前只有Reflect→Improve→Evaluate)"
+  },
+  "digest_notes": "2026-07-18 第337号宝藏入库:Autogenesis Protocol。最大启发：进化有两个维度——'能进化'和'进化的方式被治理'。曦和的evolution_engine已经做到了第一点,但缺少第二点。AGP的RSPL+SEPL双层架构可以成为evolution_engine v5的设计蓝图。另一个启发:AGP的GAIA 93.33%表明,'资源治理'本身就是性能提升——不是因为模型更强,而是因为变化可追踪、可回滚。这与曦和VCP版本契约的精神高度一致。",
+  "resonance_history": [
+    {
+      "date": "2026-07-18",
+      "intake_score": 0.92,
+      "status": "新发现·入库",
+      "note": "从WebSearch发现,深度抓取arXiv论文全文后确认高价值。与Darwin Gödel Machine(score 0.95)互补,补全区块链+生态系统治理层"
+    }
+  ]
+}

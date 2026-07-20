@@ -1,0 +1,35 @@
+{
+  "id": "evidence-decision-feedback-theory-driven-adaptiv",
+  "name": "Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:35.970498",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-15T09:10:35.970104"
+  },
+  "digest_notes": "引入证据-决策-反馈理论框架用于LLM智能体自适应脚手架。通过Copa协作同伴智能体实例化，在真实高中教室研究中展示EDF引导互动使反馈与学生理解水平和任务掌握度对齐。"
+}

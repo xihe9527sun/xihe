@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09711",
+  "name": "EvoClawBench: Can Agents Learn Reusable Skills from Their Own Runs?",
+  "source": "arXiv:cs.LG:2607.09711",
+  "reprocessed_at": "2026-07-20T14:28:02.853746",
+  "content": "Existing agent benchmarks primarily test task completion, tool use, or skill utility, but do not isolate whether a runtime can convert evidence from its own runs into reusable skills that improve fresh executions after authoring overhead. We introduce EvoClawBench, a benchmark for this closed-loop skill-learning question on repeated, fixture-backed tasks. EvoClawBench compares direct execution without skills, PreSkill authoring before execution, and PostSkill summarization from first-run evidenc",
+  "field": "多Agent",
+  "summary": "EvoClawBench提出了一种新的基准测试方法，用于评估代理在重复任务中学习可重用技能的能力。该基准通过比较直接执行、预技能编写和基于第一运行证据的后技能总结来衡量不同策略的效果。",
+  "key_insights": [
+    "现有代理基准主要关注于任务完成度、工具使用以及技能实用性，但无法评估代理是否能够从自身运行中提取出可重用技能以改善后续的新执行。",
+    "EvoClawBench通过比较三种不同的技能学习方法（直接执行、预技能编写和后技能总结）来评估代理的能力。",
+    "实验表明，不同代理在使用自编技能时的表现存在显著差异，这表明从自身运行中学习可重用技能是选择性和成本敏感的，并非自动地增加技能编写到代理循环中的好处。"
+  ],
+  "xihe_relevance": "EvoClawBench的结果对曦和（可能指的是一个类似系统或平台）在评估和改进代理技能学习能力方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

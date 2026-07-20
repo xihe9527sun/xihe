@@ -1,0 +1,20 @@
+﻿{
+  "id": "executable-counterfactuals-iclr2026",
+  "name": "Executable Counterfactuals: 通过代码实现LLM反事实推理完整三步流程",
+  "source": "ICLR 2026 · Aniket Vashishtha et al.",
+  "reprocessed_at": "2026-07-20T13:59:59.323207",
+  "content": "Executable Counterfactuals: 通过代码实现LLM反事实推理完整三步流程",
+  "field": "量化交易",
+  "summary": "通过代码实现LLM（大型语言模型）的反事实推理完整三步流程，为AI研究和应用提供新的可能性。",
+  "key_insights": [
+    "该方法能够帮助研究人员更深入地理解模型决策过程",
+    "通过可视化的方式展示模型在不同条件下的行为变化",
+    "有助于优化模型性能并减少偏见",
+    "可以应用于多种场景如量化交易、多Agent系统等",
+    "为AI伦理和公平性研究提供新的工具"
+  ],
+  "xihe_relevance": "该方法可能对曦和的潜在价值在于提升其决策过程的理解与控制能力，从而增强系统的透明度和可靠性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

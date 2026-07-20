@@ -1,0 +1,18 @@
+﻿{
+  "id": "depthweave-kv-token-adaptive-cross-layer-residual-",
+  "name": "DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:24.131968",
+  "content": "DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache",
+  "field": "记忆系统",
+  "summary": "DepthWeave-KV提出了一种新的方法来优化长上下文的键值缓存，通过将令牌适应性跨层残差因子化，以提高模型在处理复杂任务时的效率。",
+  "key_insights": [
+    "深度 weave-KV 方法能够有效地减少模型计算量和内存使用",
+    "通过token-adaptive机制实现对不同长度上下文的支持",
+    "该方法有助于提升大型语言模型在长序列数据上的性能"
+  ],
+  "xihe_relevance": "DepthWeave-KV 可能会在需要高效处理大规模、复杂数据的领域中展现出价值，如自然语言处理和机器翻译等。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

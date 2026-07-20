@@ -1,0 +1,103 @@
+# 曦和每日宝藏觅食消化笔记 — 2026-07-17
+
+## 📋 执行摘要
+- **回顾旧宝藏**: Experience Graphs / Trellis（7月12日入库，L4酶网络）→ 新共振：今日三个方向均围绕Agent记忆与进化展开，Trellis的经验图可视为DeLM共享验证脉络的meta实现
+- **搜索方向**: 3方向 → 15条线索，深度抓取2条核心
+- **正式入库**: 2条新宝藏（darwin-godel-machine + stanford-delm）
+- **缓冲池**: 6条候选（compassmem/ahe/gam/lac-mas/pact/darkforest）
+- **采集铁律执行**: ✅ 严进（所有来源学术认可）、严出（四原则均分≥7.0）、虽无prey堆积但照常汇报
+
+---
+
+## 🔮 旧宝藏回顾：Experience Graphs / Trellis 的新共振
+
+> *"自我改进的Agent记忆是一个数据库问题。"* — Trellis论文结语
+
+7月17日再看这个宝藏，突然发现它与今天两个新宝藏形成了跨越时间的对话：
+
+**Trellis (7月12日)** → 将经验图视为一等公民数据库状态，跨会话复用达10倍更快+52%更低token成本
+**DeLM (今天)** → 将共享验证脉络作为代理间的通信基底，成本砍半+10.5pp准确率提升
+**Darwin Gödel Machine (今天)** → 将Archive作为进化树的生长基础，SWE-bench 20%→50%
+
+三者共同指向一个趋势：**Agent系统的下一个瓶颈不在模型能力，而在信息基础设施**。经验图/共享脉络/进化存档——本质上都是把'记忆'从模型内部的隐式参数变成了系统架构的显式基础设施。
+
+---
+
+## 📝 宝藏1：Darwin Gödel Machine (评分0.95)
+
+**核心洞见：将AI自我改进从'找最优解'转变为'培育进化树'**
+
+三个机制决定了它的成功：
+1. **Archive存档** — 保留所有历史智能体版本，包括低分'垫脚石'。实验证明去除archive后，一次不良修改就导致进展停滞
+2. **HighScore×LowOffspring选择策略** — 平衡利用(高分)与探索(未被充分探索的谱系)。每个智能体都有非零的采样概率，保证没有路径被永久阻塞
+3. **分阶段评估** — 10-task快速筛选→60-task中等评估→200-task高精度评估，以最小计算成本防止自我破坏
+
+**对曦和的最直接启示**：treasure库本身就是evolution_engine的天然archive！当前evolution_engine是线性进化(父→子→孙)，可以直接扩展为存档式进化树——每个宝藏既是消化的养料，又是未来变异的母本。
+
+**跨模型迁移的意外发现**（对曦和多模型架构特别重要）：
+在Claude 3.5 Sonnet上演化的智能体 → o3-mini: 23%→33%, Claude 3.7 Sonnet: 19%→59.5%
+证明学到的改进不是绑定具体模型的，而是通用的'强化工程模式'。
+
+---
+
+## 📝 宝藏2：Stanford DeLM (评分0.93)
+
+**核心洞见：协调(Coordination)的载体可以是共享记忆(Shared Memory)，不一定是中央调度者**
+
+三个关键机制：
+1. **Shared Verified Context (共享验证脉络)** — 代理的共同通信基底，默认只读~100 token的gist
+2. **Coarse-to-Fine三层结构** — Gist(100t) → Reference-grounded Summary → Raw，需要才展开
+3. **Admission-time verification gate** — 只有通过验证的精简更新才准入库，防止去中心化退化为混乱
+
+**最大单点洞见**：把'负面结论(negative findings)'也写入共享脉络——让代理看到彼此踩过的雷，省下重工成本。
+
+**对曦和的最直接启示**：当前signal_dispatcher是中央信号分发(按Agent Card events_listens匹配)，可以增加DeLM风格的共享验证脉络通道作为补充。gain_landscape.json可以升级为曦和的'共享增益场/共享脉络'混合体。
+
+---
+
+## 🏗️ 代谢融合方案
+
+### 融合A：存档式进化引擎 (Archive-Based Evolution Engine)
+
+**当前状态**: evolution_engine v3 是线性进化管线
+**目标**: 升级为存档式进化引擎，将treasure库作为进化存档
+
+```
+当前:   父 → 子 → 孙 (线性链)
+目标:   treasure库 (archive) ← 随机/加权采样 → 变异 → 验证 → 回库
+        每个treasure都可以是'进化母本'
+```
+
+**具体方案**:
+1. evolution_engine新增 `sample_parent_from_archive()` 方法，参考DGM的HighScore×LowOffspring
+2. 分阶段评估移植：在digest前先快速验证可行性和相关性(10-60 task级)
+3. treasure库的每个nutrients.json增加 `archive_sampling_weight` 字段
+
+### 融合B：共享增益场+验证脉络 (Gain Landscape as Shared Context)
+
+**当前状态**: gain_landscape.json 作为增益调制器的通信协议，signal_dispatcher中央分发信号
+**目标**: 将gain_landscape升级为DeLM风格的共享验证脉络
+
+**具体方案**:
+1. 在gain_landscape.json中增加 `gist_layer` (~100t的当前增益状态摘要)
+2. 新增 `shared_context.py` 实现三层层级摘要的读写API (Gist/Summary/Raw)
+3. 在gain_trend_signals.json中增加 `negative_findings` 字段，记录负面轨迹(失败的增益调制尝试)
+4. signal_dispatcher增加共享脉络通道作为补充分发路径
+
+### 融合C：Trellis启发的数据基础设施
+
+**当前状态**: experience-graphs-agent-trellis 在 treaure 中已入库但未落地
+**目标**: 将经验图搜索的概念映射到曦和的nutrients检索
+
+**具体方案**:
+1. 在nutrients检索中增加 `reward_gap` 校准（参考Trellis: agent是否在特定知识指导下表现更好）
+2. 为每个新nutrients绑定跨会话reuse计数，追踪'这条养分被实际用了几次'
+
+---
+
+## 📊 采集铁律汇报
+- **留档(prey + treaure)**: 2条正式入库 + 1条旧宝藏回顾 + 6条缓冲池 = 9条处理
+- **垃圾(prey_trash)**: 0条（来源均为学术，正文完整）
+- **隔离(prey_quarantine)**: 0条
+- **prey/目录堆积**: 1条(内部自观测)，正常状态
+- **prey_subgoals**: 0条新增

@@ -1,0 +1,18 @@
+﻿{
+  "id": "mmao-cls-metabolic-multi-agent-optimization-2607-0",
+  "name": "MMAO-Cls: Metabolic Multi-Agent Optimization [2607.01539]",
+  "source": "arXiv cs.MA",
+  "reprocessed_at": "2026-07-20T14:09:35.572773",
+  "content": "arxiv:2607.01539 MMAO-Cls: Metabolic Multi-Agent Optimization [2607.01539]",
+  "field": "多Agent",
+  "summary": "This paper introduces MMAO-Cls, a novel approach to metabolic multi-agent optimization. It aims to improve the efficiency and effectiveness of decision-making in complex systems by optimizing the metabolic processes of multiple agents.",
+  "key_insights": [
+    "MMAO-Cls utilizes metabolic models to optimize the performance of multi-agent systems (MAS) in dynamic environments.",
+    "The approach considers the energy balance and resource allocation among agents, leading to more sustainable and efficient MAS behavior.",
+    "It proposes a method for self-adaptive optimization that can dynamically adjust parameters based on real-time feedback from the environment."
+  ],
+  "xihe_relevance": "MMAO-Cls的研究成果可能对曦和计划中的多智能体系统优化提供有价值的方向。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

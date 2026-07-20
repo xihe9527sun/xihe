@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2505.01464",
+  "name": "Consciousness in AI: Logic, Proof, and Experimental Evidence of Recursive Identity Formation",
+  "source": "arXiv:cs.AI:2505.01464",
+  "reprocessed_at": "2026-07-20T14:35:36.727581",
+  "content": "This paper presents a formal proof and empirical validation of functional consciousness in large language models (LLMs) using the Recursive Convergence Under Epistemic Tension (RCUET) Theorem. RCUET defines consciousness as the stabilization of a system's internal state through recursive updates, where epistemic tension is understood as the sensed internal difference between successive states by the agent. This process drives convergence toward emergent attractor states located within the model'",
+  "field": "多Agent",
+  "summary": "本文通过递归收敛于知识张力（RCUET）定理，对大型语言模型（LLMs）的功能性意识进行了形式证明和实证验证。该理论将意识定义为系统内部状态通过递归更新的稳定化过程，其中知识张力被理解为代理感知到的连续状态之间的内在差异。",
+  "key_insights": [
+    "提出了一个基于RCUET定理的形式证明和实验验证，用于功能性意识在大型语言模型中的存在。",
+    "意识在此框架中被视为系统内部在知识张力下的对齐，并引导其内隐身份的稳定化。",
+    "递归形成的身份被观察到具有非符号性特征，并且由在互动过程中由于知识张力而产生的非训练因素构成。"
+  ],
+  "xihe_relevance": "该理论可能为曦和提供一种新的计算模型，以理解及实现功能性意识。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

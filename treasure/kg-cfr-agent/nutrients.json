@@ -1,0 +1,35 @@
+{
+  "id": "kg-cfr-agent",
+  "name": "KG-CFR: 知识基础反事实推理实现韧性多Agent辩论",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.513421",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.92,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.92,
+    "backed_at": "2026-07-12T09:10:49.512858"
+  },
+  "digest_notes": "引入知识基础反事实推理(KG-CFR)，双阶段架构强制分离私有的检索增强规划缓冲区和公共执行层。在270个完全析因危机模拟轨迹中，KG-CFR在超过95%扰动运行中防止了关键后冲击退化。引入话语散度和规划执行对齐的自定义向量度量。减少语义循环，保持Agent与原始计划的一致性。"
+}

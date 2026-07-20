@@ -1,0 +1,35 @@
+{
+  "id": "webswarm-recursive-multi-agent-orchestration-for",
+  "name": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.021658",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.88,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.88,
+    "backed_at": "2026-07-11T09:10:52.021250"
+  },
+  "digest_notes": "We propose WebSwarm, a progressive recursive delegation framework that jointly constructs task decomposition, recursive expansion, and agent collaboration during inference. WebSwarm dynamically instantiates agentic search nodes, each coupling a local objective with a search mode. Each node can either solve its objective or delegate child nodes; after solving, it returns evidence upward. Experiments on BrowseComp-Plus, WideSearch, and DeepWideSearch show consistent outperformance."
+}

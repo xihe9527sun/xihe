@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.01480",
+  "name": "Procedural Memory Distillation: Online Self-Improving LLMs (2607.01480)",
+  "source": "arXiv cs.AI 2026-07",
+  "reprocessed_at": "2026-07-20T14:18:23.119042",
+  "content": "Reinforcement learning with verifiable rewards (RLVR), along with recent selfdistillation variants such as SDPO, evaluates each rollout against a verifier and updates the policy from that episode-level signal. However, the richer procedural information in the rollout is rarely retained or reused. Across episodes and epochs, the model repeatedly encounters related problems under a changing policy, producing cross-episode signals that episode-local updates cannot capture: which strategies consiste",
+  "field": "自反层/进化引擎",
+  "summary": "通过将跨期信号转化为可重用的程序性记忆并将其融入政策权重中，Procedural Memory Distillation (PMD) 提高了模型在科学知识评估和代码生成任务上的性能。",
+  "key_insights": [
+    "PMD 将程序性信息转换为可重复使用的记忆，并在训练过程中将这些记忆整合到策略的权重中，从而创建一个无需额外内存的推理模型。",
+    "PMD 通过在线提取不同抽象层次的记忆（包括原始轨迹、自我反思的战略和模式以及更高层次的行为模式），组织了丰富的程序性知识。",
+    "PMD 的核心设计原则是协同进化：策略生成更新记忆，并且记忆影响对策略进行更新的监督。"
+  ],
+  "xihe_relevance": "PMD 可能有助于提升曦和在处理复杂任务时的记忆能力和自我反思能力，从而提高其性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

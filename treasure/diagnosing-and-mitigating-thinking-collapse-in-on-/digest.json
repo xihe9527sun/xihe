@@ -1,0 +1,18 @@
+﻿{
+  "id": "diagnosing-and-mitigating-thinking-collapse-in-on-",
+  "name": "Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation",
+  "source": "arXiv:cs.CL:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:39.937843",
+  "content": "Diagnosing and Mitigating Thinking Collapse in On-Policy Self-Distillation",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "本文探讨了在基于策略的自我泛化中出现的思想塌缩问题，并提出了一种诊断和缓解的方法。",
+  "key_insights": [
+    "识别并解决基于策略的自我泛化中的思想塌缩问题是提高模型性能的关键",
+    "通过改进训练过程，可以有效减少思想塌缩现象的发生",
+    "该方法对记忆系统、自反层、进化引擎等领域的研究具有潜在价值"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其在解决复杂问题时的记忆管理和元认知能力提升",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "copewell-a-multi-agent-swarm-architectur",
+  "name": "Copewell: A Multi-Agent Swarm Architecture for Equitable Mental Wellness Support",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:37.809506",
+  "content": "Copewell: A Multi-Agent Swarm Architecture for Equitable Mental Wellness Support",
+  "field": "多Agent",
+  "summary": "Copewell是一种多代理群集架构，旨在提供公平的心理健康支持。",
+  "key_insights": [
+    "Copewell通过多代理系统实现心理健康服务的公平分配",
+    "该架构利用了先进的机器学习和人工智能技术来提高服务质量",
+    "它能够根据用户的具体需求动态调整支持策略"
+  ],
+  "xihe_relevance": "Copewell可能在曦和中用于优化心理咨询服务的分配机制",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.07824",
+  "name": "From Triggers to Emotions: A CPM-Grounded Appraisal Multi-Agent for Dynamic Emotional Evolution (2607.07824)",
+  "source": "arXiv:cs.MA:2607.07824",
+  "reprocessed_at": "2026-07-20T14:23:49.322001",
+  "content": "Large Language Models (LLMs) have substantially advanced persona-based dialogue agents for emotion-sensitive role simulation in healthcare, education, counseling, customer service, and interactive storytelling. However, two related lines of work leave a key gap. Persona-based dialogue systems often encode emotions as static traits or surface-level stylistic cues, and affective dialogue research has largely focused on empathetic response generation toward users rather than modeling the agent pers",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于Component Process Model（CPM）的多智能体框架，用于支持基于角色的情感变化，在情感敏感的角色模拟设置中有效建模动态情感演变。",
+  "key_insights": [
+    "提出了CPM-MultiAgent框架来解决触发驱动下角色情感动态演变的关键问题。",
+    "将角色的情绪视为一个不断被对话触发重塑的潜在状态，而非固定属性。",
+    "通过情绪触发提取、基于CPM的合作评估和情绪状态更新，实现了多轮互动中的更一致的情感模拟。",
+    "实验结果表明该框架在情感敏感的角色模拟设置中能够有效建模动态情感演变。",
+    "该研究为理解及处理角色情感变化提供了新的视角和方法。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种新的机制来理解和管理智能体的情感状态，有助于提升智能体在复杂互动中的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

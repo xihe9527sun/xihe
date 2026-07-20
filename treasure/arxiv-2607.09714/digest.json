@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09714",
+  "name": "Feedback-Coupled Memory Systems in Continuous Time",
+  "source": "arXiv:cs.AI:2607.09714",
+  "reprocessed_at": "2026-07-20T14:28:09.113879",
+  "content": "The Feedback-Coupled Memory Systems (FCMS) architecture formalizes closed-loop coordination through four abstract operators, two of which - the agent update operator $f_i$ and the environmental update operator $Ψ$ - are left axiomatically undefined in the original framework. To address this, $f_i$ is defined by Mechanism-Based Intelligence (MBI), where agents update locally through a decentralized price mechanism and economic principles, and $Ψ$ is defined by the Coupled Memory Graph Process (CM",
+  "field": "记忆系统/自反层",
+  "summary": "FCMS通过定义两个抽象操作——基于机制智能的agent update operator和耦合记忆图过程的environmental update operator，实现了连续时间下的稳定性条件，并且验证了其在数值模拟和大规模平均场验证中的有效性。",
+  "key_insights": [
+    "FCMS架构通过Lyapunov全局耗散性来实现稳定性，该稳定性由可计算阈值4β² < 2ημγ²控制。",
+    "FCMS的稳定性条件扩展了离散FCMS和CMGP的物理分岔阈值，并确认记忆衰减必须超过反馈增益作为普遍组织原则。",
+    "数值模拟与大规模平均场验证证实了稳定性阈值，以及当违反稳定性条件时出现自强化协调级联的现象。"
+  ],
+  "xihe_relevance": "FCMS架构在曦和框架下的应用潜力巨大，特别是在记忆系统、自反层和进化引擎等领域。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

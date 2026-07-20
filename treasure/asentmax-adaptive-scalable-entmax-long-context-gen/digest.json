@@ -1,0 +1,18 @@
+﻿{
+  "id": "asentmax-adaptive-scalable-entmax-long-context-gen",
+  "name": "ASEntmax: Adaptive-Scalable Entmax — Long-Context Generalization with Sparse Attention",
+  "source": "ICLR 2026 / arXiv:2506.16640 / papernotes.org",
+  "reprocessed_at": "2026-07-20T14:35:30.395033",
+  "content": "Transformer-based architectures traditionally employ softmax to compute attention weights, which produces dense distributions over all tokens in a sequence. While effective in many settings, this density has been shown to be detrimental for tasks that demand precise focus on fixed-size patterns: as sequence length increases, non-informative tokens accumulate attention probability mass, leading to dispersion and representational collapse. We show in this paper that dynamically sparse attention me",
+  "field": "多Agent",
+  "summary": "ASEntmax通过动态稀疏注意力机制避免了序列长度增加导致的非信息性令牌累积问题，显著提高了长上下文下的语言建模性能。",
+  "key_insights": [
+    "ASEntmax能够将无关的令牌分配为精确零值，从而防止了密度分布带来的分散和表示坍缩问题。",
+    "ASEntmax引入了一个可学习的温度参数，使得注意力分布可以在稀疏（聚焦于模式）和密集（类似softmax）之间平滑过渡。",
+    "在合成任务和语言建模上的实验表明，ASEntmax显著优于softmax、可扩展softmax和固定温度α-entmax基线。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其能够提高长上下文下的语言建模性能，这可能有助于提升曦和在处理复杂任务时的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

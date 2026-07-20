@@ -1,0 +1,19 @@
+﻿{
+  "id": "multi-agent-robotic-control-with-onboard-vision-",
+  "name": "Multi-Agent Robotic Control with Onboard Vision-Language Models (2607.07403)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:02:05.130388",
+  "content": "Vision Language Models (VLMs) and Vision Language Action (VLA) models have shown promise in robotic control. Yet, they face significant challenges regarding explainability, generalization, and compute requirements. This paper presents a Multi-Agent System (MAS) architecture that addresses these limitations by deploying specialized agents on onboard hardware - eliminating dependence on external compute. The system controls a multi-purpose autonomous mobile manipulator in a simulated industrial wa",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于自主硬件的多代理系统架构，用于解决视觉语言模型在机器人控制中的可解释性、泛化性和计算需求问题。",
+  "key_insights": [
+    "开发了专为自主硬件部署的多代理系统",
+    "使用紧凑型视觉语言模型进行任务执行",
+    "引入新的‘Megamind’协调器以缓解小型模型长期规划的问题",
+    "在AMD Ryzen(TM) AI mini PC上进行了硬件仿真验证",
+    "展示了该架构作为云依赖部署替代方案的有效性和成本效益"
+  ],
+  "xihe_relevance": "对记忆系统和自反层有一定价值，但不直接关联。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

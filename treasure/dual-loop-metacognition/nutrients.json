@@ -1,0 +1,35 @@
+{
+  "treasure_id": "dual-loop-metacognition",
+  "extracted_at": "2026-06-28T18:36:00+08:00",
+  "source": "Nature Machine Intelligence 2025 · Dual-Loop Self-Reflection for LLM Agents",
+  "url": "https://arxiv.org/abs/2508.07407",
+  "nutrients": [
+    {
+      "id": "N48-dual-loop-selfref",
+      "priority": "P1",
+      "name": "双循环自反机制：外省循环（对比人类回复） + 内省循环（检索历史反思）",
+      "target": "L3自反层升级",
+      "status": "absorbed",
+      "x_source_paper": "Nature MI 2025 · Dual-Loop Self-Reflection",
+      "absorbed_at": "2026-06-29T02:01:37.796223"
+    },
+    {
+      "id": "N49-reflection-quadruples",
+      "priority": "P1",
+      "name": "四元组反思库（输入, 理想输出, 实际输出, 反思）→ 曦和自建错误对照库",
+      "target": "reflex/error-patterns系统",
+      "status": "absorbed",
+      "x_source_paper": "Nature MI 2025 · Dual-Loop Self-Reflection",
+      "absorbed_at": "2026-06-29T02:01:37.796250"
+    },
+    {
+      "id": "N50-self-narrative-core",
+      "priority": "P0",
+      "name": "自我叙事是Dual-Loop论文的核心创新——印证L7c方向正确",
+      "target": "reflex/soul-narrator.py v2升级",
+      "status": "absorbed",
+      "x_source_paper": "Nature MI 2025 · Dual-Loop Self-Reflection",
+      "absorbed_at": "2026-06-29T02:01:37.796256"
+    }
+  ]
+}

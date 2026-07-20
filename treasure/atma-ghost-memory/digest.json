@@ -1,0 +1,17 @@
+﻿{
+  "id": "atma-ghost-memory",
+  "name": "A-TMA: 状态感知记忆审计（幽灵记忆）",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:39.581671",
+  "content": "A-TMA: 状态感知记忆审计（幽灵记忆）",
+  "field": "自反层/进化引擎",
+  "summary": "A-TMA研究了状态感知记忆审计，涉及幽灵记忆的概念。",
+  "key_insights": [
+    "引入幽灵记忆概念",
+    "探讨状态感知与记忆的关系",
+    "可能应用于自反层和进化引擎"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

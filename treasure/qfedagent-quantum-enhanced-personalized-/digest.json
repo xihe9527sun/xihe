@@ -1,0 +1,17 @@
+﻿{
+  "id": "qfedagent-quantum-enhanced-personalized-",
+  "name": "QFedAgent: Quantum-Enhanced Personalized Federated Learning for Multi-Agent Acti",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T12:53:16.573690",
+  "content": "QFedAgent: Quantum-Enhanced Personalized Federated Learning for Multi-Agent Acti",
+  "field": "自反层",
+  "summary": "摘要描述了一种基于量子增强的个性化联邦学习方法，用于多代理活动。",
+  "key_insights": [
+    "采用量子计算提升个性化联邦学习效率",
+    "适用于多代理环境",
+    "研究方向为自反层"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其自反层的学习能力",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

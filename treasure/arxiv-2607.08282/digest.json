@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08282",
+  "name": "Multi-Agent Firewall Architecture for Privacy Protection of Sensitive Data (2607.08282)",
+  "source": "arXiv:cs.MA:2607.08282",
+  "reprocessed_at": "2026-07-20T14:24:14.521609",
+  "content": "While Large Language Models (LLMs) have become essential productivity tools, their integration into workflows without adequate safeguards creates significant risks. This paper proposes an open-source, privacy-focused, user-facing firewall designed to secure both web-based and programmatic LLM interactions. The architecture combines a browser extension and a proxy for total traffic interception across both HTTP(S) and WebSocket communications. At its core, a flexible multi-agent pipeline delivers",
+  "field": "多Agent",
+  "summary": "该研究提出了一种开源、隐私导向的防火墙架构，旨在保护大型语言模型在工作流程中的数据隐私。它结合了浏览器扩展和代理以拦截所有类型的通信，并通过混合方法实现数据泄漏防护。",
+  "key_insights": [
+    "提出了一个灵活多agent管道来防御数据泄露，该管道结合了确定性检测器、LLM驱动的语义分析、专用代码泄漏预防以及可扩展组件",
+    "架构设计允许在异构环境中部署，并可根据组织的成本效益平衡计算成本、检测深度和延迟",
+    "通过优化配置实现了高达94.93%的F1分数"
+  ],
+  "xihe_relevance": "该研究可能对曦和系统有潜在价值，因为它涉及多agent架构和数据保护技术，这些技术可以增强系统的隐私保护能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.11787",
+  "name": "Forgetting Our Way to Shared Meaning: Effects of Forgetting on Conceptual Alignment in a Non-Partnership Coordination Game",
+  "source": "arXiv:cs.MA:2607.11787",
+  "reprocessed_at": "2026-07-20T14:28:14.963918",
+  "content": "Shared meaning in language requires people to learn and agree on categories. We ask how characteristics of agents' memories change the emergence and evolution of shared meaning. Without a coordination game, models of conceptual semantics cannot explain how shared meaning emerges and changes in groups of people; however, existing games assume that players share payoffs in a partnership setting. We model conceptual alignment as a non-partnership game and illustrate differences in actual and percei",
+  "field": "记忆系统/自反层",
+  "summary": "研究探讨了在非伙伴关系协调游戏中，代理人的记忆特性如何影响共享意义的形成和演变。通过模拟具有不同适应性和记忆退化水平的代理人的行为，我们揭示了实际与感知的概念收敛之间的差异。",
+  "key_insights": [
+    "适应性玩家比非适应性玩家更快地实现了实际收敛，并且最终的概念区域也更接近。",
+    "非适应性玩家在感知上过早地认为达到了收敛。",
+    "随着时间的推移，对新信息给予较少的关注导致了更加稳定的协议，而不是固定新信息的重要性权重。"
+  ],
+  "xihe_relevance": "该研究结果可能有助于理解记忆系统和自反层在形成和演变共享意义中的作用，从而为曦和提供潜在的价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

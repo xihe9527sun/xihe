@@ -1,0 +1,17 @@
+﻿{
+  "id": "counterfactual-rag-iclr2026",
+  "name": "CF-RAG: 反事实推理增强检索生成·破解相关性陷阱",
+  "source": "ICLR 2026 · Huaiyu Qin et al.",
+  "reprocessed_at": "2026-07-20T12:59:13.476511",
+  "content": "CF-RAG: 反事实推理增强检索生成·破解相关性陷阱",
+  "field": "进化引擎",
+  "summary": "CF-RAG 提出了一个增强检索生成的方法，旨在破解相关性陷阱问题。",
+  "key_insights": [
+    "提出反事实推理技术提升检索效果",
+    "解决信息相关性问题",
+    "适用于多种应用场景"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "mecobench-a-systematic-study-of-multimod",
+  "name": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Envi",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:56.485920",
+  "content": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Envi",
+  "field": "多Agent",
+  "summary": "MECoBench是一项系统性研究，探讨了在物理环境中多模态代理协作的机制。",
+  "key_insights": [
+    "提出了一种新的多模态代理协作框架",
+    "分析了不同模式（视觉、听觉等）之间的交互机制",
+    "评估了多种协作策略的有效性与效率",
+    "为后续研究提供了数据和理论基础",
+    "涉及跨学科知识，包括计算机科学、心理学和工程学"
+  ],
+  "xihe_relevance": "该内容对自反层有一定价值，特别是对于理解代理行为的复杂性和多样性。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

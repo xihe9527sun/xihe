@@ -1,0 +1,12 @@
+{
+  "title": "FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression",
+  "source": "arXiv:cs.AI:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "FreqDepthKV shares KV cache across layers based on token frequency patterns for long-context LLM inference. By identifying tokens with similar attention patterns across layers, it compresses the cache by sharing depth-wise, reducing memory usage by up to 4x with minimal accuracy loss.",
+  "keywords_matched": [
+    "long context"
+  ],
+  "intake_score": 0.75,
+  "captured_at": "2026-07-08T13:23:30.681886",
+  "digested": false
+}

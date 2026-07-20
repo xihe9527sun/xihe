@@ -1,0 +1,29 @@
+{
+  "id": "self-evolving-agent-skill-extraction",
+  "name": "自进化Agent三层记忆+反射循环+技能系统工程架构",
+  "source": "曦和每日宝藏觅食 · 2026-07-16",
+  "discovered": "2026-07-16T09:10:10.330962",
+  "digested": "2026-07-16T09:10:10.330962",
+  "field": "超图记忆核/HebbianGraph",
+  "content": "自进化Agent三层记忆+反射循环+技能系统工程架构",
+  "intake_score": 0.83,
+  "score_detail": {
+    "去粗取精": 0.4,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0.6,
+    "_total": 0.24,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-16T09:10:10.330962",
+    "last_accessed": "2026-07-16T09:10:10.330962",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "metacogagent-a-metacognitive-multi-agent-llm-fra",
+  "name": "MetaCogAgent: A Metacognitive Multi-Agent LLM Framework with Self-Aware Task Delegation",
+  "source": "曦和每日宝藏觅食 · 2026-07-18",
+  "reprocessed_at": "2026-07-20T14:06:48.256184",
+  "content": "MetaCogAgent: A Metacognitive Multi-Agent LLM Framework with Self-Aware Task Delegation",
+  "field": "多Agent",
+  "summary": "MetaCogAgent是一个基于元认知的多智能体LLM框架，支持自我意识的任务委派。",
+  "key_insights": [
+    "MetaCogAgent能够实现多智能体之间的任务分配和协作。",
+    "它具有自我意识的能力，可以根据当前情境调整任务分配策略。",
+    "该模型有助于提升复杂环境下的决策质量和效率。"
+  ],
+  "xihe_relevance": "MetaCogAgent可能在需要高度自主性和适应性的场景中提供价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

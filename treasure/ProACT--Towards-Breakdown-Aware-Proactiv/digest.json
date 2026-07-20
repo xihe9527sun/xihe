@@ -1,0 +1,18 @@
+﻿{
+  "id": "ProACT--Towards-Breakdown-Aware-Proactiv",
+  "name": "ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:04.320801",
+  "content": "ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration",
+  "field": "多Agent",
+  "summary": "ProACT is an agent designed to be aware of potential breakdowns in multi-user collaboration, aiming to proactively address and mitigate these issues.",
+  "key_insights": [
+    "ProACT focuses on proactive problem-solving for collaborative tasks among multiple users",
+    "It aims to reduce the impact of breakdowns by predicting and addressing potential issues before they occur",
+    "The system is designed with a deep understanding of user collaboration dynamics, enabling more effective support in real-world scenarios"
+  ],
+  "xihe_relevance": "ProACT 的设计能够为曦和系统提供有价值的信息，特别是在预测和解决多用户协作中的问题方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "agentscad-automated-design-for-manufactu",
+  "name": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM R",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:19.122163",
+  "content": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM R",
+  "field": "多Agent/工具使用",
+  "summary": "AgentsCAD是一种通过多智能体语言模型实现FDM零部件自动化设计制造的方法。",
+  "key_insights": [
+    "引入多智能体系统进行复杂任务的分解与执行",
+    "利用语言模型提高设计过程中的沟通效率和准确性",
+    "为制造业提供一种新的自动化解决方案",
+    "可能对自反层有潜在价值，用于学习和改进设计流程",
+    "可应用于工具使用领域，提升相关技术的应用效率"
+  ],
+  "xihe_relevance": "多Agent/工具使用",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

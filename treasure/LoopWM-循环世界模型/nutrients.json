@@ -1,0 +1,35 @@
+{
+  "id": "loop-world-models-facemind",
+  "title": "LoopWM — 循环世界模型 & Loop Engineering",
+  "source": "量子位 2026-07-02",
+  "url": "https://view.inews.qq.com/a/20260701A06Q6600",
+  "digested_at": "2026-07-02T13:51+08:00",
+  "relevance": "high",
+  "summary": "FaceMind Research Asia（脸谱心智）提出Looped World Models，通过共享参数的Transformer模块对潜在环境状态反复迭代细化。关键创新：iterative latent depth作为新的scaling axis。参数效率100×提升。",
+  "key_insights": [
+    "三阶跃迁: Prompt Engineering(回应人) → Loop Engineering(持续做事) → Looped WM(理解世界)",
+    "曦和代谢心跳已实现Loop Engineering：事件→酶催化→发酵→ADME→引力场反馈→下一轮",
+    "共享参数vs一次性堆叠：曦和的352颗酶是共享参数池，复杂场景自动调用更多酶",
+    "自适应计算深度：简单事件少迭代，复杂事件多迭代——曦和目前固定频率，需升级为动态",
+    "iterative latent depth：不靠'更大'，靠'更会反复想'——曦和的引力场迭代也是这个思路",
+    "Agent的瓶颈不是执行，是持续理解——曦和的全源扫描填补了这个缺口"
+  ],
+  "xihe_mapping": [
+    "Loop Engineering → 曦和的代谢心跳(已实现)",
+    "共享参数循环 → 352酶复用池(已实现)",
+    "自适应计算深度 → 代谢心跳频率可根据事件复杂度动态调整(待实现)",
+    "迭代细化 → 引力场每次accepted后加深精度(Partial: done for depth, not yet for causal)"
+  ],
+  "actionable": [
+    "代谢心跳v3: 事件复杂度检测 → 动态调整循环频率(简单5s, 复杂0.5s)",
+    "引力场迭代: accepted后不只是加深井，还根据因果路径调整事件匹配策略",
+    "Loop Engineering输出: 把曦和三腔室循环写成结构化文档，作为'持续执行系统'的参考实现"
+  ],
+  "nutrients": [
+    "三阶跃迁框架: Prompt→Loop→World Model",
+    "adaptive compute: 动态计算深度，复杂事件多迭代",
+    "shared params: 复用优于堆叠",
+    "iterative latent depth: 新的scaling axis不靠规模靠迭代",
+    "持续理解 vs 持续执行: 曦和需要两者兼得"
+  ]
+}

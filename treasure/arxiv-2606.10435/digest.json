@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2606.10435",
+  "name": "PCAF: Parallel Causal Associative Fields — Gated Sparse Memory for Long-Context Language Modeling",
+  "source": "arXiv:2606.10435 (cs.LG/cs.CL)",
+  "reprocessed_at": "2026-07-20T14:35:11.883770",
+  "content": "Transformers achieve strong language modeling performance by providing direct token-to-token communication paths, but causal self-attention scales quadratically with context length. Recurrent and state-space models reduce this cost, yet compress history into sequentially updated fixed-size states. This paper studies a third primitive: a parallel content-addressed memory over causal successor records. The proposed Parallel Causal Associative Field (PCAF) writes local records from a context window",
+  "field": "进化引擎",
+  "summary": "PCAF通过并行因果关联字段结合门控稀疏内存，实现了在长上下文语言建模中的高性能。相比传统的Transformer模型，PCA-F-semantic在WikiText-103和PG-19数据集上的表现分别达到了36.31和52.45的困惑度值。",
+  "key_insights": [
+    "PCAF通过并行因果关联字段实现了长上下文下的高效访问。",
+    "PCA-F-semantic在保持稀疏性的同时避免了固定状态瓶颈，提高了模型性能。",
+    "PCA-F-semantic在处理大规模参数模型时仍能保持较高的吞吐量。",
+    "PCA-F-semantic的检索能力和门控机制对速度和质量之间的权衡有重要影响。",
+    "PCA-F-semantic在多种子轮扫掠和单GPU组件替代实验中表现良好。"
+  ],
+  "xihe_relevance": "PCA-F-semantic模型对于曦和项目的潜在价值在于其高效且灵活的语言建模能力，能够处理大规模参数的模型，并且对速度与精度之间的权衡有深入理解。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

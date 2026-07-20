@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08716",
+  "name": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
+  "source": "arXiv:cs.AI:2607.08716",
+  "reprocessed_at": "2026-07-20T14:25:35.525244",
+  "content": "In long-horizon tasks, decision-relevant state is often scattered across an expanding trajectory, while the action agent must surface it and act. As trajectories grow, task requirements, environment facts, prior attempts, diagnoses, and open subgoals can be buried in the context window or pushed beyond it, failing to influence decisions when needed. We call this failure mode \"behavioral state decay\". We study memory as an active intervention mechanism rather than passive retrieval. A separate me",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "在长期任务中，决策相关的状态可能散布在一个不断扩大的轨迹上，而行动代理需要将其提取并采取相应措施。随着轨迹的增长，任务要求、环境事实、先前尝试、诊断和开放子目标可能会被埋藏在上下文窗口内或推至其外，从而影响决策。我们称这种失败模式为‘行为状态衰减’。本文研究了记忆作为主动干预机制而非被动检索机制。一个独立的记忆代理与未修改的行动代理并行运行，从最近的轨迹中更新结构化的记忆银行，并决定是否注入基于记忆的提醒或保持沉默。",
+  "key_insights": [
+    "提出了行为状态衰减这一概念来描述在长期任务中的决策相关状态难以提取的问题",
+    "引入了独立的记忆代理作为主动干预机制以解决上述问题",
+    "通过实验验证，该方法在多个基准测试中提高了性能"
+  ],
+  "xihe_relevance": "该研究对于曦和项目具有潜在价值，特别是在记忆系统、自反层和进化引擎方面",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

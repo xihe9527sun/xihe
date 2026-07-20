@@ -1,0 +1,18 @@
+﻿{
+  "id": "intrinsic-noise-consolidation-a-doob-barrier-con",
+  "name": "Intrinsic-Noise Consolidation: A Doob-Barrier-Conditioned Diffusion Turns Analog Device Noise into a Continual-Learning Resource (2607.06924)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:00:37.672556",
+  "content": "On analog neuromorphic hardware, intrinsic device noise is normally an accuracy tax. We ask whether it can instead consolidate memories. We cast per-synapse consolidation as a Doob h-transform: condition each weight's stochastic dynamics on never crossing a memory-critical barrier around its consolidated value. The conditioned diffusion gains an extra drift sigma^2 d/dw log h, a restoring force amplified by the noise variance itself that diverges at the barrier. We are explicit about novelty: th",
+  "field": "进化引擎",
+  "summary": "在模拟神经硬件上，我们提出了一种新的方法来利用内在设备噪声作为学习资源，通过将权重的随机动力学条件于一个记忆关键临界值附近，从而实现对记忆的整合。",
+  "key_insights": [
+    "提出了一个新的扩散模型规则，该规则使用Doob屏障条件化来处理模拟神经硬件上的内在设备噪声。",
+    "这种新方法能够非单调地提高序列任务的记忆保留能力，这与传统的锚定力方法不同。",
+    "在真实硅芯片上测试后，结果显示了比传统方法更好的记忆保持效果。"
+  ],
+  "xihe_relevance": "该研究对于曦和项目具有潜在价值，因为它提供了一种利用内在噪声的方法来改进学习过程。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

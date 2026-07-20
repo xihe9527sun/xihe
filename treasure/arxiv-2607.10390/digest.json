@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10390",
+  "name": "A Stepwise Questioning Expert-Editor Multi-Agent Framework for Long-Document Summarization",
+  "source": "arXiv:cs.CL:2607.10390",
+  "reprocessed_at": "2026-07-20T14:27:17.233417",
+  "content": "Although large language models (LLMs) have shown promising potential in news summarization tasks, their performance on long-document summarization remains challenging as their length often exceeds the input limits. As the agent investment, which provide possibility to improve the inherent capabilities of LLMs. To enhance the effectiveness of long-document summarization based on LLMs, this paper proposes an expert-editor stepwise questioning multi-agent method, in which the expert and the editor ",
+  "field": "多Agent",
+  "summary": "尽管大型语言模型在新闻摘要任务中展示了令人鼓舞的潜力，但在处理长文档摘要时仍面临挑战。为了提高基于LLMs的长文档摘要效果，本文提出了一种专家-编辑逐步提问多Agent方法。",
+  "key_insights": [
+    "该方法通过引导另一个代理针对内容的不同方面提出问题并提供针对性的修订线索来改进LLM的能力。",
+    "实验结果表明了该方法的有效性，在两个代表性的长文档科学数据集中进行测试，并使用广泛认可的自动指标进行评估。",
+    "该方法为提高基于LLMs的长文档摘要性能提供了新的解决方案。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种改进大型语言模型在处理长文档摘要时表现的新方法。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,17 @@
+﻿{
+  "id": "graph-rag-2026",
+  "name": "2026 Graph-RAG + Agentic RAG + 长期记忆系统",
+  "source": "radarai.top RAG技术最新进展指南",
+  "reprocessed_at": "2026-07-20T12:49:58.307185",
+  "content": "2026 Graph-RAG + Agentic RAG + 长期记忆系统",
+  "field": "多Agent",
+  "summary": "该摘要提到了Graph-RAG和Agentic RAG，以及长期记忆系统的结合应用。",
+  "key_insights": [
+    "结合了Graph-RAG和Agentic RAG技术",
+    "引入了长期记忆系统",
+    "具体应用于2026年"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 5,
+  "ollama_digested": true
+}

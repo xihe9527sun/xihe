@@ -1,0 +1,30 @@
+{
+  "id": "structagent-harness-long-horizon-digital-agents-",
+  "name": "StructAgent: Harness Long-horizon Digital Agents with Unified Causal Structure",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:35.994991",
+  "digested": "2026-07-15T09:10:35.994991",
+  "field": "酶网络/cascade_engine",
+  "content": "提出以状态为中心的框架，引入统一状态维护紧凑可验证的任务进度，以及通过验证器支持的状态转换规范进度。实现显式进度检查点、证据驱动任务完成、针对性故障恢复和工具支持。",
+  "intake_score": 0.85,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0.2,
+    "由表及里": 0.4,
+    "_total": 0.13,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "提出以状态为中心的框架，引入统一状态维护紧凑可验证的任务进度，以及通过验证器支持的状态转换规范进度。实现显式进度检查点、证据驱动任务完成、针对性故障恢复和工具支持。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:35.994991",
+    "last_accessed": "2026-07-15T09:10:35.994991",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

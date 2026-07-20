@@ -1,0 +1,20 @@
+﻿{
+  "id": "Hierarchical-Sparse-Attention-Done-Right",
+  "name": "Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:19.167471",
+  "content": "Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling",
+  "field": "多Agent",
+  "summary": "本文提出了一种新的稀疏注意力机制，旨在实现无限上下文建模。",
+  "key_insights": [
+    "提出了一个新的稀疏注意力模型来改进现有方法",
+    "该模型能够处理更长的序列而无需增加计算复杂度",
+    "通过在层次结构上进行操作，提高了模型对上下文的理解能力",
+    "有望应用于需要大量历史信息的任务如自然语言处理和机器翻译",
+    "可以与现有的自反层、进化引擎等结合使用以提升性能"
+  ],
+  "xihe_relevance": "该研究可能对曦和在处理大规模数据集时提供帮助，尤其是在文本理解和生成任务上。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

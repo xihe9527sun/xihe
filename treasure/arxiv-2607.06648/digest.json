@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.06648",
+  "name": "Latent Reasoning Faithfulness Along Training Trajectories: Counterfactual Edit Analysis",
+  "source": "arXiv:cs.LG:2607.06648",
+  "reprocessed_at": "2026-07-20T14:33:45.943359",
+  "content": "Latent reasoning methods perform multi-step inference entirely in the model's continuous hidden states, promising more compact and efficient reasoning. However, these opaque hidden states raise a question of faithfulness: whether these latent reasoning steps causally drive the final answer. Prior work investigates this question at converged checkpoints and reports several unfaithful behaviors, such as latent reasoning steps that can be replaced without changing the answer, but leaves how these b",
+  "field": "自反层",
+  "summary": "Latent reasoning methods, which perform multi-step inference in the model's hidden states, show varying levels of faithfulness across training checkpoints. Our analysis reveals that latent reasoning can appear unfaithful at convergence under counterfactual edits but follows different trajectories qualitatively. The causal contribution of latent reasoning steps to the final answer diminishes over training for both paradigms, and this decay is evident in examples that flip on the output side. Additionally, the trajectory diverges by answer format, with binary choice answers showing rising contributions while open-ended decoding shows declining contributions.",
+  "key_insights": [
+    "Latent reasoning methods exhibit varying levels of faithfulness across training checkpoints.",
+    "The causal contribution of latent reasoning steps to the final answer diminishes over training.",
+    "The trajectory of latent reasoning faithfulness depends on both the training stage and the format of the answer.",
+    "Counterfactual edits can reveal unfaithful behaviors in latent reasoning methods at convergence.",
+    "The divergence in activation-level trajectories by answer format provides insights into how latent reasoning affects different types of outputs."
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于揭示了在不同训练阶段和答案格式下，隐喻推理方法的信任度变化情况。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

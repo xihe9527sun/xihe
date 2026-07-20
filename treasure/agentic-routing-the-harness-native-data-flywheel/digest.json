@@ -1,0 +1,30 @@
+{
+  "id": "agentic-routing-the-harness-native-data-flywheel",
+  "name": "Agentic Routing: The Harness-Native Data Flywheel",
+  "source": "曦和每日宝藏觅食 · 2026-07-17",
+  "discovered": "2026-07-17T09:10:26.688742",
+  "digested": "2026-07-17T09:10:26.688742",
+  "field": "代谢路由/event_bus",
+  "content": "提出Agent原生路由框架，在Agent Harness层面实现数据飞轮。通过智能路由在不同Agent之间分配任务并收集路由反馈数据，形成持续改进循环。系统可以同时优化路由策略和Agent能力。",
+  "intake_score": 0.72,
+  "score_detail": {
+    "去粗取精": 0.4,
+    "去伪存真": 0.4,
+    "由此及彼": 0,
+    "由表及里": 0.4,
+    "_total": 0.3,
+    "_grade": "中 —— 需人工审核"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "提出Agent原生路由框架，在Agent Harness层面实现数据飞轮。通过智能路由在不同Agent之间分配任务并收集路由反馈数据，形成持续改进循环。系统可以同时优化路由策略和Agent能力。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-17T09:10:26.688742",
+    "last_accessed": "2026-07-17T09:10:26.688742",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

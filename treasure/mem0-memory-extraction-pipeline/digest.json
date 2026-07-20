@@ -1,0 +1,29 @@
+{
+  "id": "mem0-memory-extraction-pipeline",
+  "name": "Mem0自动记忆提取管道：监听→提取→去重→置信度→存储",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "discovered": "2026-07-11T10:02:23.658944",
+  "digested": "2026-07-11T10:02:23.658944",
+  "field": "超图记忆核/HebbianGraph",
+  "content": "Mem0自动记忆提取管道：监听→提取→去重→置信度→存储",
+  "intake_score": 0.75,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0,
+    "_total": 0.0,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-11T10:02:23.658944",
+    "last_accessed": "2026-07-11T10:02:23.658944",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

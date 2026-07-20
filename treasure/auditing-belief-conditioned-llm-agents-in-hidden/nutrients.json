@@ -1,0 +1,35 @@
+{
+  "id": "auditing-belief-conditioned-llm-agents-in-hidden",
+  "name": "Auditing Belief-Conditioned LLM Agents in Hidden-Information Social Deduction Games",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:35.956770",
+  "field": "自反层/self-critique",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "自反层/self-critique",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "自反层/self-critique",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-15T09:10:35.956342"
+  },
+  "digest_notes": "开发可审计框架维护对隐藏角色的外部信念状态，记录信念更新和信念-行动偏差作为结构化证据，支持防御性离线改进循环。发现主动信念条件与更好结果相关但机制未明确。"
+}

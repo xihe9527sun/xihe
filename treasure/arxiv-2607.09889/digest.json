@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09889",
+  "name": "Remembering Distinct Items Not Tokens: A Learnable Dirichlet-Process Cache Between State-Space Models and Attention",
+  "source": "arXiv:cs.LG:2607.09889",
+  "reprocessed_at": "2026-07-20T14:29:29.280897",
+  "content": "Fixed-state sequence models compress an unbounded past into a bounded state, which caps their associative recall at roughly the state dimension; attention escapes the cap by keeping a key-value entry for every token, at quadratic compute and a cache that grows with the sequence. We study the middle ground: a sparse cache that allocates a slot only when an input is novel, so its size tracks the number of distinct items rather than the number of tokens. The allocation rule is the DP-means clusteri",
+  "field": "记忆系统",
+  "summary": "我们研究了一种中间模型，它在固定状态序列模型和注意力机制之间架起桥梁。这种模型通过分配槽位来存储唯一输入，从而避免了固定状态模型的限制，并且其大小与不同项的数量相关而非令牌数量。",
+  "key_insights": [
+    "该模型使用Dirichlet过程混合的小方差极限作为关键值记忆操作器，用于深度递归基础结构。",
+    "通过学习可变阈值门来实现分配规则的学习，这表明了归纳偏置的重要性而非容量。",
+    "在多个基准测试中展示了其性能优势，包括对冗余数据的关联回忆以及状态空间背板上的查询和聚合任务。"
+  ],
+  "xihe_relevance": "该研究可能为曦和（一个假设的系统或框架）提供有价值的信息和改进方向。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

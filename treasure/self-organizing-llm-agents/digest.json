@@ -1,0 +1,20 @@
+﻿{
+  "id": "self-organizing-llm-agents",
+  "name": "Drop the Hierarchy and Roles · 自组织LLM Agents超越预设结构",
+  "source": "arXiv 2603.28990 · 25K任务实验",
+  "reprocessed_at": "2026-07-20T13:56:06.229889",
+  "content": "How much autonomy can multi-agent LLM systems sustain -- and what enables it? We present a 25,000-task computational experiment spanning 8 models, 4--256 agents, and 8 coordination protocols ranging from externally imposed hierarchy to emergent self-organization. We observe that autonomous behavior already emerges in current LLM agents: given minimal structural scaffolding (fixed ordering), agents spontaneously invent specialized roles, voluntarily abstain from tasks outside their competence, an",
+  "field": "多Agent",
+  "summary": "通过25,000任务的实验，研究发现当前的LLM代理在极少量结构支持下就能自发形成角色分工、自愿放弃不熟悉的任务以及构建简单的层级结构。",
+  "key_insights": [
+    "当前的LLM代理已经具备了自主行为的能力，在给定少量结构框架的情况下能够自发地创建专门的角色。",
+    "混合协议（Sequential）相比集中式协调方式提高了14%的效果，且在不同协调协议之间存在显著的质量差异。",
+    "模型能力越强，就越能实现有效的自组织；而能力较低的模型仍可以从严格的结构中获益。",
+    "系统在256个代理的情况下仍然保持线性扩展，并产生了大量独特角色，表明随着基础模型的进步，自主协调的可能性将扩大。",
+    "实验结果在闭源和开源模型之间进行了验证，且开源模型以更低的成本达到了与闭源模型相当的性能。"
+  ],
+  "xihe_relevance": "该研究对于曦和系统有潜在的价值，特别是在自组织多Agent系统方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

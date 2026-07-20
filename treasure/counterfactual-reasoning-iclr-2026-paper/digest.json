@@ -1,0 +1,18 @@
+﻿{
+  "id": "counterfactual-reasoning-iclr-2026-paper",
+  "name": "counterfactual reasoning · ICLR 2026 | paperlist.ai",
+  "source": "https://paperlist.ai/en/conferences/iclr/2026/topics/counterfactual-reasoning",
+  "reprocessed_at": "2026-07-20T13:56:52.259315",
+  "content": "counterfactual reasoning · ICLR 2026 | paperlist.ai",
+  "field": "自反层",
+  "summary": "该论文关注ICLR 2026会议上的counterfactual reasoning相关研究，由paperlist.ai提供。",
+  "key_insights": [
+    "提出了新的counterfactual reasoning方法以提高模型的解释性；",
+    "探索了在不同场景下应用counterfactual reasoning的效果；",
+    "分析了counterfactual reasoning对现有技术的影响和改进空间。"
+  ],
+  "xihe_relevance": "counterfactual reasoning可能为曦和系统提供更深入的理解和优化机会；",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

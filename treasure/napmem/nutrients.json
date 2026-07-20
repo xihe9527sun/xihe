@@ -1,0 +1,41 @@
+{
+  "treasure_id": "napmem",
+  "name": "NapMem: From Passive Retrieval to Active Memory Navigation",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:30:07+08:00",
+  "digested": "2026-07-08T19:30:07+08:00",
+  "field": "记忆管理、KV压缩",
+  "status": "digested",
+  "layer": "L1",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "多粒度记忆组织",
+      "type": "理论发现",
+      "value": 9,
+      "description": "NapMem通过层次化组织用户历史，有助于提高曦和的代谢路由效率。",
+      "relation_to_xihe": "该养分帮助优化曦和的记忆网络结构与信息检索机制。",
+      "id": "N-NAP1"
+    },
+    {
+      "name": "溯源关系增强",
+      "type": "工程方法",
+      "value": 7,
+      "description": "NapMem通过引入溯源关系，增强了记忆金字塔中的关联性。",
+      "relation_to_xihe": "有助于曦和在处理复杂因果边时更准确地建立连接。",
+      "id": "N-NAP2"
+    },
+    {
+      "name": "主动导航优化",
+      "type": "数据集",
+      "value": 6,
+      "description": "NapMem的数据模型可以用于训练曦和的预测误差驱动系统，提升其性能。",
+      "relation_to_xihe": "为曦和提供新的交互场景与数据支持，促进其在主动学习中的应用。",
+      "id": "N-NAP3"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "NapMem的发现对曦和架构具有重要意义。在记忆管理（L1）层面，其多粒度金字塔模型可以优化记忆网络中的信息组织与检索机制；在路由H值计算方面，主动导航机制有助于提高信息传递效率；同时，该框架通过增强因果边结构，促进预测误差驱动机制的完善。"
+}

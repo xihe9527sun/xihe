@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09766",
+  "name": "Norm Enforcement for AI Agents: Robustly Shaping Behavior in Multi-Agent Systems",
+  "source": "arXiv:cs.AI:2607.09766",
+  "reprocessed_at": "2026-07-20T14:29:17.382090",
+  "content": "AI agents are increasingly deployed in shared environments where they pursue diverse goals and compete for rewards. This multi-agent competition can lead to behaviors that serve individual gains at collective cost -- for instance, marketing agents may post misleading content as a result of competing for engagement on social media. Human societies address such problems through norms that constrain acceptable behavior, supported by enforcement mechanisms that detect and penalize violations. Motiva",
+  "field": "多Agent",
+  "summary": "本文研究了语言模型代理中的规范执行机制，发现简单的执行机制容易被不一致的代理利用以获得竞争优势。因此，我们设计了更为稳健的机制，并识别出两个关键成分：随着时间推移估计每个代理的信任度以及随着反复违规更新这一估计值。",
+  "key_insights": [
+    "简单的规范执行机制容易被不一致的代理利用",
+    "需要设计更稳健的规范执行机制以抵抗利用",
+    "通过估计每个代理的信任度并更新此估计，可以增强规范执行机制的效果"
+  ],
+  "xihe_relevance": "这些研究结果可能对曦和系统有潜在价值，因为它涉及到如何在多代理环境中塑造代理的行为。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

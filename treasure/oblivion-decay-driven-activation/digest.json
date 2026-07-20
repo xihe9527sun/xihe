@@ -1,0 +1,20 @@
+﻿{
+  "id": "oblivion-decay-driven-activation",
+  "name": "Oblivion: 自适应性遗忘控制 — 读/写路径解耦的Agent记忆控制框架",
+  "source": "arXiv:2604.00131 · NEC Labs Europe",
+  "reprocessed_at": "2026-07-20T13:54:14.337272",
+  "content": "Human memory adapts through selective forgetting: experiences become less accessible over time but can be reactivated by reinforcement or contextual cues. In contrast, memory-augmented LLM agents rely on \"always-on\" retrieval and \"flat\" memory storage, causing high interference and latency as histories grow. We introduce Oblivion, a memory control framework that casts forgetting as decay-driven reductions in accessibility, not explicit deletion. Oblivion decouples memory control into read and wr",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "Oblivion提出了一种新的记忆控制框架，通过将读取和写入路径解耦来实现自我适应的遗忘机制，从而避免了传统模型在大规模历史积累时产生的高干扰和延迟问题。",
+  "key_insights": [
+    "Oblivion通过衰减驱动的方式减少记忆的可访问性，而非显式的删除，实现了对遗忘过程的控制。",
+    "读取路径根据代理的不确定性及记忆缓冲区的状态决定何时查询记忆，以避免冗余的始终在线访问。",
+    "写入路径决定了哪些记忆应当被加强，并通过强化机制来支持生成响应。",
+    "Oblivion能够动态调整记忆的访问和强化策略，平衡学习与遗忘在不断变化的情境下。",
+    "研究结果表明，Oblivion对于有效的人工智能代理推理至关重要。"
+  ],
+  "xihe_relevance": "Oblivion框架可能对曦和项目中关于记忆系统的研究具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "skillops-llm-agent",
+  "name": "SkillOps: 将LLM Agent技能库作为自维护软件生态系统管理",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T14:05:52.497270",
+  "content": "SkillOps: 将LLM Agent技能库作为自维护软件生态系统管理",
+  "field": "多Agent",
+  "summary": "SkillOps 提出了将LLM Agent技能库作为自维护软件生态系统的管理方法。",
+  "key_insights": [
+    "SkillOps 方法能够有效管理和优化LLM Agent的技能库",
+    "通过自维护生态系统，可以提高LLM Agent的整体性能和效率",
+    "该方法有助于实现更智能、更灵活的AI系统"
+  ],
+  "xihe_relevance": "SkillOps 方法可能对曦和在管理复杂软件生态系统的潜力具有价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

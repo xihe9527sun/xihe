@@ -1,0 +1,20 @@
+﻿{
+  "id": "veritas-multi-agent-co-scientist-for-hypothesis-te",
+  "name": "VERITAS: Multi-Agent Co-Scientist for Hypothesis Testing [2604.12144]",
+  "source": "arXiv cs.MA",
+  "reprocessed_at": "2026-07-20T14:12:45.794136",
+  "content": "arxiv:2604.12144 VERITAS: Multi-Agent Co-Scientist for Hypothesis Testing [2604.12144]",
+  "field": "多Agent",
+  "summary": "VERITAS是一种用于假设检验的多代理合作科学家，旨在通过模拟人类科学过程来改进机器学习模型。",
+  "key_insights": [
+    "VERITAS能够模拟人类科学方法中的多个步骤，包括提出假设、设计实验和解释结果。",
+    "该系统利用多代理架构，每个代理代表不同的科学角色或功能。",
+    "VERITAS旨在提高机器学习模型的自适应性和对新数据的学习能力。",
+    "其应用领域可能包括进化引擎、元认知和量化交易等。",
+    "通过模拟人类科学家的行为，VERITAS可以为记忆系统提供新的视角。"
+  ],
+  "xihe_relevance": "对于曦和项目的潜在价值在于其多代理架构能够增强系统的复杂性和自适应性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

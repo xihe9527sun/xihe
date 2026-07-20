@@ -1,0 +1,35 @@
+{
+  "id": "fractal-kv-cache-archives-lossless-symbolic-stor",
+  "name": "Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference (2607.07144)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.350479",
+  "field": "底层推理栈/KV",
+  "intake_score": 0.82,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "底层推理栈/KV",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "底层推理栈/KV",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.82,
+    "backed_at": "2026-07-10T06:58:24.350168"
+  },
+  "digest_notes": "The KV cache dominates memory cost of long-context autoregressive inference. We revisit contractive iterated-map codes that serialize a symbol sequence into low-dimensional real vectors, showing they form a natural archive format for a quantized KV cache. The method is lossless, linear-time, supports O(1) random access and O(1) amortized append. Per-head residual vector quantization reduces the archived cache by 36-54x relative to fp16 cache at a perplexity cost of 11-15%. Keys are roughly 4x mo"
+}

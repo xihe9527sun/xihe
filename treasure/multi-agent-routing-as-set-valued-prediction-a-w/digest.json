@@ -1,0 +1,30 @@
+{
+  "id": "multi-agent-routing-as-set-valued-prediction-a-w",
+  "name": "Multi-Agent Routing as Set-Valued Prediction: A WildChat Benchmark and Cost-Aware Evaluation",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:36.024458",
+  "digested": "2026-07-15T09:10:36.024458",
+  "field": "代谢路由/event_bus",
+  "content": "从自然语言提示进行工具和智能体路由本质上是集值预测问题。结果表明显式监督路由器性能大优于零样本LLM路由和最近邻方法，加权路由层在顶级监督评分器之上提高效用。",
+  "intake_score": 0.85,
+  "score_detail": {
+    "去粗取精": 0.2,
+    "去伪存真": 0,
+    "由此及彼": 0.4,
+    "由表及里": 0.4,
+    "_total": 0.24,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "从自然语言提示进行工具和智能体路由本质上是集值预测问题。结果表明显式监督路由器性能大优于零样本LLM路由和最近邻方法，加权路由层在顶级监督评分器之上提高效用。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:36.024458",
+    "last_accessed": "2026-07-15T09:10:36.024458",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

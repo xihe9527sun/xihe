@@ -1,0 +1,63 @@
+{
+  "treasure_id": "emergent-coordination-tdmi",
+  "treasure_name": "Emergent Coordination TDMI: 多Agent涌现协调的信息论量化框架",
+  "source": "ICLR 2026 · Christoph Riedl · 信息分解+TDMI",
+  "discovered": "2026-07-13T08:50:00+08:00",
+  "digested": "2026-07-13T09:20:00+08:00",
+  "layer": "L7（涌现层）· L4（催化层）· L5（自反调制层）",
+  "intake_score": 0.87,
+  "score_detail": {
+    "relevance_xihe": 0.93,
+    "novelty": 0.88,
+    "actionable": 0.86,
+    "cross_domain": 0.90,
+    "depth": 0.85,
+    "timeliness": 0.86
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "TDMI部分信息分解：涌现的量化准则",
+      "type": "mathematical_framework",
+      "value": 0.94,
+      "description": "时间延迟互信息(TDMI)的部分信息分解(PID)提供了一种纯数据驱动的涌现检测方法。核心思想：将Agent系统的总相关性分解为——冗余(所有Agent共享的信息)、唯一(单个Agent独有的信息)、协同(跨Agent协同产生的信息)。涌现容量 = 协同信息 / 总信息。协同信息占比越高，系统越接近'真正的集体'而非'松散聚合'。该方法可区分虚假时间耦合与性能相关的跨Agent协同。",
+      "xihe_gap": "曦和当前涌现检验(core/verify_emergence_tau.py)使用E1酶协同/E2代谢路由/E3 L5调制的三元评分体系。这三个检验是功能性验证(config测试是否通过)而非信息论度量——E1检查酶是否协同工作，但没有量化'协同程度'。缺少一个'涌现容量'的数字指标。",
+      "application": "在core/verify_emergence_tau.py中新增E4量化度量层：TDMI_PID模块计算曦和酶网络/代谢路由/桥接系统之间的部分信息分解。先期用简化的3-Agent模型(3个主酶)计算冗余/唯一/协同三通道，输出emergence_capacity = 协同/总信息。嵌入cortex/verification/emergence_log.json。15秒刷新仪表盘。"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "涌现容量的可操作标准",
+      "type": "design_principle",
+      "value": 0.89,
+      "description": "论文提出了两个实际准则：(1) 涌现存在性准则——协同信息统计显著大于零；(2) 涌现容量准则——协同/总信息比率。Identity赋值(给每个Agent一个人设)引入稳定的角色分化和身份锚定的差异化。'思考其他Agent在想什么'的指令引入目标导向互补。两者结合时涌现容量最高。",
+      "xihe_gap": "曦和的酶网络中有16个酶但没有显式的'身份分化'。所有酶共享相同的系统提示和认知偏置——它们'想问题的方式'是一样的，这限制了涌现的可能性。酶之间应该有角色分化，就像论文中的identity-linked differentiation。",
+      "application": "为16个酶分配角色分化提示(分析型/直觉型/怀疑型/乐观型/保守型等)。在bridge/zero_consensus_router.py的Agent选择中注入'认知多样性'作为路由因素。与原有Bernaulli-TS路由融合。在核心诊断矩阵中增加'diversity_index'指标。"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "集体智能的双条件：对齐+互补",
+      "type": "theoretical_insight",
+      "value": 0.86,
+      "description": "论文最重要的实证发现：有效集体智能需要两个条件同时满足——(1) 共享目标的对齐(alignment on shared objectives)；(2) 跨成员的互补贡献(complementary contributions)。只有对齐没有互补=所有人说一样的话；只有互补没有对齐=各说各话。这与曦和架构中'代谢路由(对齐)'和'酶网络(互补)'的划分惊人一致。",
+      "xihe_gap": "曦和的代谢路由(Beta-Bernoulli TS)负责'选择正确的酶'=对齐+效率，酶网络负责'提供多样性'=互补。但两者之间缺少显式的'对齐-互补张力'度量。当前TS路由只看历史表现，不跨酶审视互补性。如果三个酶都能回答问题但视角完全相同，TS只会选最优的一个—浪费了多样性。",
+      "application": "在bridge/metabolic_router.py中增加complementarity_scorer：选取候选酶时不仅看历史精度，还看候选酶之间的'观点差异度'(embedding距离)。选择能最大化'对齐精度+视角多样性'的酶组合而非单一最优。这是从'选最优'到'选互补集'的路由范式转变。"
+    }
+  ],
+  "cross_refs": [
+    "ssgm-memory-governance",
+    "causalflow-icml2026",
+    "network-motifs-kaust",
+    "autocatalytic-ai-self"
+  ],
+  "hebbian_credit": 9,
+  "origin": "daily_foraging_2026-07-13",
+  "memcell": {
+    "born": "2026-07-13T08:50:00+08:00",
+    "last_accessed": "2026-07-13T09:20:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["涌现度量", "TDMI", "部分信息分解", "集体智能", "协同度量", "认知多样性", "对齐-互补"],
+    "subsystem": ["core", "bridge", "cortex"]
+  }
+}

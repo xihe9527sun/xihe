@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.02829",
+  "name": "Sparse-Reslim: Less Tokens, Better Forecasts — Sparse Residual Routing for Efficient Weather Prediction",
+  "source": "arxiv:cs.LG:2607.02829",
+  "reprocessed_at": "2026-07-20T14:19:20.514693",
+  "content": "Existing ViT-based weather forecasting models apply uniform computation across all spatial tokens, even though nearby atmospheric grid points often contain similar values and large regions evolve smoothly over time. This makes much of the intermediate per-token computation redundant. Standard token-efficiency methods, such as pruning or merging, reduce cost by removing or fusing tokens. However, weather forecasting is a spatiotemporal dense prediction problem in which a history of atmospheric st",
+  "field": "量化交易",
+  "summary": "Sparse-Reslim模型通过仅在25%的空间令牌上应用昂贵的中间变换器块，并将这些块视为残差更新，从而减少了天气预测中的冗余计算。这种方法不仅提高了预测准确性，还显著降低了训练成本。",
+  "key_insights": [
+    "Sparse-Reslim能够减少气象预测中不必要的冗余计算。",
+    "通过仅在25%的空间令牌上应用昂贵的中间变换器块，Sparse-Reslim实现了高效和准确的天气预报。",
+    "这种方法不仅提高了预测准确性，还显著降低了训练成本。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可能改进自研模型在气象预测任务中的性能，并降低计算资源的需求。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

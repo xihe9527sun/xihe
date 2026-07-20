@@ -1,0 +1,35 @@
+{
+  "id": "agentic-context-learning-with-self-discovered-sp",
+  "name": "Agentic Context Learning with Self-Discovered Specification",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:35.881006",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.95,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.95,
+    "backed_at": "2026-07-15T09:10:35.880694"
+  },
+  "digest_notes": "研究LLM在长上下文中学习和应用新型任务特定知识能力，发现核心挑战是规范获取而非内容获取。提出PSCI干预方法，通过提取局部规范并通过对抗性检查和修复强制执行，在CL-Bench取得最先进成果。"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "mcp-enabled-agentic-ai-for-autonomous-ipodwdm-ne",
+  "name": "MCP-Enabled Agentic AI for Autonomous IPoDWDM Network Lifecycle Automation",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:59.292071",
+  "content": "MCP-Enabled Agentic AI for Autonomous IPoDWDM Network Lifecycle Automation",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于MCP的代理式AI技术，用于实现IPoDWDM网络生命周期自动化。",
+  "key_insights": [
+    "引入了MCP（Model-Controller-Platform）架构",
+    "使用Agentic AI进行网络生命周期管理",
+    "旨在实现网络自治和自动化",
+    "适用于IPoDWDM网络环境",
+    "结合代理式AI技术提升效率"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

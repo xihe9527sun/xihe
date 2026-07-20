@@ -1,0 +1,19 @@
+﻿{
+  "id": "prediction-sets-for-counterfactual-decis",
+  "name": "Prediction Sets for Counterfactual Decisions: Coverage, Optimality, and Conforma",
+  "source": "cs.LG",
+  "reprocessed_at": "2026-07-20T12:56:46.983410",
+  "content": "Prediction Sets for Counterfactual Decisions: Coverage, Optimality, and Conforma",
+  "field": "自反层",
+  "summary": "该研究探讨了用于反事实决策的预测集的覆盖性、最优性和一致性问题。",
+  "key_insights": [
+    "提出了新的预测集概念以支持反事实决策",
+    "分析了这些预测集的覆盖率和优化性能",
+    "讨论了预测集的一致性问题",
+    "研究了在不同场景下的应用效果",
+    "为后续的研究提供了理论基础"
+  ],
+  "xihe_relevance": "该内容对自反层方向有一定价值，特别是对于理解系统内部运作机制的理解。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

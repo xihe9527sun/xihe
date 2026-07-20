@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "treasure_id": "ruflo-queen-led-agent-orchestration",
+    "name": "Ruflo — Queen-led一致性 + Raft/BFT/Gossip多智能体Swarm编排",
+    "source": "GitHub: ruvnet/ruflo (53K+ stars) · AI Insight深度报告",
+    "score": 0.88,
+    "discovered": "2026-07-16T09:00:00+08:00",
+    "layer": "L7"
+  },
+  "intake": {
+    "original_score": 0.27,
+    "chaff_gate": "passed",
+    "four_principles": {
+      "去粗取精": 0.90,
+      "去伪存真": 0.85,
+      "由此及彼": 0.92,
+      "由表及里": 0.88,
+      "average": 0.8875,
+      "passed": true
+    }
+  },
+  "nutrients": [
+    {
+      "id": "N1",
+      "name": "Queen-led一致性协议用于Agent编排",
+      "insight": "Ruflo将分布式系统的Raft/BFT/Gossip一致性算法引入Agent编排。Queen节点负责一致性决策，Worker Swarm负责执行。当Swarm规模>50+时，Raft的一致性保障暴露LangGraph图调度在race condition上的不足。",
+      "type": "architectural_pattern",
+      "status": "pending",
+      "hebbian_credit": 10,
+      "target": "bridge/population_ecology.py",
+      "resonance": "曦和population_ecology.py现有regime分类，但缺少协调算法。可引入 CoordinationProtocol 选择器——工具池>50时自动启用Raft类一致性协议，防止工具冲突。"
+    },
+    {
+      "id": "N2",
+      "name": "自适应Swarm拓扑(Hierarchical/Mesh/Adaptive动态切换)",
+      "insight": "Ruflo在Task变化时自动重组Swarm拓扑：高复杂度任务→Mesh全连接，流水线任务→Ring环形，快速响应→Star星形。Adaptive模式在运行时根据任务延迟和成功率自动切换。",
+      "type": "architectural_pattern",
+      "status": "pending",
+      "hebbian_credit": 9,
+      "target": "bridge/foraging.py",
+      "resonance": "曦和觅食系统目前在DAG编排中使用固定拓扑。可引入adaptive拓扑路由：根据任务类型自动切换line/parallel/branch模式。"
+    },
+    {
+      "id": "N3",
+      "name": "AgentDB向量记忆 + SONA自学习路由(89%准确率)",
+      "insight": "Ruflo的AgentDB提供跨会话持久化向量记忆，SONA(Self-Optimizing Pattern Learning)通过学习历史路由模式达到89%准确率。关键在于SONA不依赖硬编码规则——从失败中学习。",
+      "type": "mechanism",
+      "status": "pending",
+      "hebbian_credit": 8,
+      "target": "bridge/evolution_engine.py",
+      "resonance": "evolution_engine已有经验→能力反馈钩子，但缺少学习型路由。可借鉴SONA的模式：在每次digest后记录routing决策+成功率，逐步优化下一轮的消化路由策略。"
+    },
+    {
+      "id": "N4",
+      "name": "210个MCP工具 + 100+ Agent协同的生态规模",
+      "insight": "Ruflo的MCP工具数(210)和Agent上限(100+)是CrewAI/AutoGen的5-10倍。关键在于parallel tool calling + worker-to-worker通信的低延迟和自适应背压。",
+      "type": "benchmark",
+      "status": "satisfied",
+      "hebbian_credit": 6,
+      "target": "bridge/mcp_bridge",
+      "resonance": "曦和MCP桥当前约41个工具，但通信模式为集中式。Ruflo的worker-to-worker自适应背压可作为曦和τ总线下一阶段的参考架构。"
+    }
+  ]
+}

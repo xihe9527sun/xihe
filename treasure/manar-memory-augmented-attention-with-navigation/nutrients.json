@@ -1,0 +1,35 @@
+{
+  "id": "manar-memory-augmented-attention-with-navigation",
+  "name": "MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.677434",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.92,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.92,
+    "backed_at": "2026-07-18T09:10:30.677140"
+  },
+  "digest_notes": "MANAR上下文化层通过可训练抽象概念记忆和ACR实现全局工作空间理论(GWT)原理。两阶段逻辑：集成阶段记忆概念汇聚形成集体心理意象，广播阶段全局状态导航通知局部token上下文化。线性时间缩放是GWT功能瓶颈的架构副产品。非凸上下文化能力证明超输入token凸包的综合表征。"
+}

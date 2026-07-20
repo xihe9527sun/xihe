@@ -1,0 +1,25 @@
+{
+  "id": "reliable-counterfactuals-for-machine-lea",
+  "name": "Reliable Counterfactuals for Machine Learning Models ESANN 2026",
+  "source": "https://www.esann.org/sites/default/files/proceedings/2026/ES2026-2.pdf",
+  "discovered": "2026-07-04T22:34:29.998038",
+  "digested": "2026-07-04T22:34:29.998043",
+  "field": "待分类",
+  "content": "Interdisciplinary research on counterfactuals inspired by cognitive models of inference",
+  "intake_score": 0.12,
+  "score_detail": {
+    "relevance_xihe": 0.125,
+    "novelty": 0.0755,
+    "actionable": 0.0,
+    "cross_domain": 0.0,
+    "depth": 0.050333333333333334,
+    "timeliness": 0.7
+  },
+  "memcell": {
+    "born": "2026-07-04T22:34:29.998038",
+    "last_accessed": "2026-07-04T22:34:29.998043",
+    "access_count": 3,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

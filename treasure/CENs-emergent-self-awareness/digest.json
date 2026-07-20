@@ -1,0 +1,17 @@
+﻿{
+  "id": "CENs-emergent-self-awareness",
+  "name": "Emergent Self-Awareness in Distributed AI Systems · ACM 2026",
+  "source": "ACM Digital Library · doi:10.1145/3789982.3790046",
+  "reprocessed_at": "2026-07-20T12:51:06.666094",
+  "content": "arxiv:9982.37900 Emergent Self-Awareness in Distributed AI Systems · ACM 2026",
+  "field": "多Agent",
+  "summary": "该论文探讨了分布式AI系统中涌现的自我意识现象。",
+  "key_insights": [
+    "分布式AI系统的自我意识涌现机制研究",
+    "自适应性增强与智能水平提升",
+    "跨节点信息共享与协同决策"
+  ],
+  "xihe_relevance": "其他",
+  "depth_rating": 5,
+  "ollama_digested": true
+}

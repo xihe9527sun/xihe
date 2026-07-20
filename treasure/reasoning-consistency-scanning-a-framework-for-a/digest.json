@@ -1,0 +1,18 @@
+﻿{
+  "id": "reasoning-consistency-scanning-a-framework-for-a",
+  "name": "Reasoning Consistency Scanning: A Framework for Auditing Chain-of-Thought Validity in AI Safety Evaluations (2607.07229)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:02:20.075160",
+  "content": "Prior work has shown that chain-of-thought (CoT) reasoning is often unfaithful: a model's stated reasoning does not reliably reflect the process that produced its output. Detecting unfaithfulness, though, requires controlled experimental interventions, which cannot be applied to evaluation transcripts after the fact. We turn instead to a more tractable question that has received less attention: whether the stated reasoning is logically consistent with the answer it accompanies. Unlike faithfulne",
+  "field": "自反层",
+  "summary": "该研究提出了一种新的方法来评估人工智能安全评价中的推理一致性，这种方法不需要实验干预即可进行。通过分析60个手动改编的AI安全评价转录本，发现推理不一致现象普遍存在且具有系统性差异。",
+  "key_insights": [
+    "提出了推理一致性扫描的方法，用于检测AI安全评价转录本中的这一性质。",
+    "推理一致性与信度不同，可以通过转录本直接评估而不需额外干预。",
+    "研究结果表明，在多种模型和任务类型下，推理不一致现象普遍存在且具有系统性差异。"
+  ],
+  "xihe_relevance": "该方法可能有助于提高AI系统的透明性和可靠性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

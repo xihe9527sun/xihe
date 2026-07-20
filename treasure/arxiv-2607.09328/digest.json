@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09328",
+  "name": "WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning",
+  "source": "arXiv:cs.CL:2607.09328",
+  "reprocessed_at": "2026-07-20T14:26:33.998297",
+  "content": "Answering complex questions over long documents frequently requires integrating evidence that the source itself disperses naturally across distant passages. In an incident report, the operating condition, design flaw, and missed safety check that jointly explain a disaster may appear dozens of sections apart; in a novel, a character's true motive may surface only through scenes far removed from the moment it becomes relevant. This source-internal evidence integration is central to real-world lon",
+  "field": "进化引擎",
+  "summary": "WILDTRACE 提出了一种新的基准，用于评估模型在处理自然分散证据方面的能力，这些证据源自文档本身的因果、时间及叙事逻辑。",
+  "key_insights": [
+    "现有基准大多忽略了源内证据整合的问题，而这一过程对于理解和分析长文档至关重要。",
+    "WILDTRACE 通过引入七种源内证据几何体来定义不同类型的分析阅读需求，并覆盖了多阶段验证。",
+    "该基准使用 Pearl 的因果层次结构和先前的多跳推理类型学来定义这些几何体。"
+  ],
+  "xihe_relevance": "对于曦和（可能指一种认知模型或AI系统）来说，WILDTRACE 可能有助于解决在处理自然分散证据时存在的挑战。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

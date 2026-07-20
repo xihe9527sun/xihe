@@ -1,0 +1,18 @@
+﻿{
+  "id": "mem2evolve-2604.10923",
+  "name": "Mem2Evolve — 双记忆共演化的自进化智能体框架 (ACL 2026)",
+  "source": "arXiv:2604.10923 · ACL 2026",
+  "reprocessed_at": "2026-07-20T13:54:55.294470",
+  "content": "While large language model--powered agents can self-evolve by accumulating experience or by dynamically creating new assets (i.e., tools or expert agents), existing frameworks typically treat these two evolutionary processes in isolation. This separation overlooks their intrinsic interdependence: the former is inherently bounded by a manually predefined static toolset, while the latter generates new assets from scratch without experiential guidance, leading to limited capability growth and unsta",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "Mem2Evolve提出了一种新的双记忆共演化的框架，旨在解决现有智能体自我进化的局限性。该框架通过整合经验记忆和资产记忆两个核心组件来实现能力扩展与经验提炼的协同进化。",
+  "key_insights": [
+    "Mem2Evolve能够结合积累的经验动态生成新资产，从而扩大了智能体的能力空间。",
+    "它同时促进了新的经验获取，实现了自我进化的稳定性和有效性。",
+    "实验结果显示，在6个任务类别和8个基准测试中，Mem2Evolve相比标准大型语言模型、仅通过经验进化或仅通过资产创建的智能体分别提高了18.53%、11.80%和6.46%。"
+  ],
+  "xihe_relevance": "Mem2Evolve可能对曦和在记忆系统、自反层以及进化引擎等方面提供潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

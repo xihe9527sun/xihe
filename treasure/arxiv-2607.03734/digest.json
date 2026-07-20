@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.03734",
+  "name": "GRASP: Graph-Reasoning Aided Survey Planning for High-Fidelity Related Work Generation",
+  "source": "arXiv:cs.CL:2607.03734",
+  "reprocessed_at": "2026-07-20T14:20:35.687106",
+  "content": "Validating automotive software systems produces large multivariate test recordings that are still examined through effort-intensive manual review and rule-based evaluation, which detects faults beyond predefined rules poorly. Machine and deep learning have advanced fault diagnosis, yet most supervised models require large labelled datasets, generalise poorly to unseen conditions, and offer little insight into their decisions. We propose a generalisable and explainable two-phase framework for fau",
+  "field": "自反层",
+  "summary": "GRASP 提出了一种两阶段框架用于实时验证中的故障检测和分类，通过无监督学习方法减少对标注数据的依赖，并利用零样本和少量样本来提高性能。",
+  "key_insights": [
+    "GRASP 使用降噪自编码器仅基于健康信号来识别异常行为，从而减少了需要故障标签的需求。",
+    "模型在多种动力系统和驾驶条件下表现出色，平均F1分数为0.97，并且能够提供详细的解释性报告。",
+    "零样本提示效果不佳，而少量样本提示则在稳定条件下实现了完美的区分度，表明提示策略比参数数量更能影响分类质量。"
+  ],
+  "xihe_relevance": "GRASP 的方法可能有助于提高自动驾驶系统验证的效率和准确性，对曦和系统的潜在应用包括故障检测和解释性报告。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

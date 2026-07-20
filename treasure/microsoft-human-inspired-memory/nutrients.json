@@ -1,0 +1,35 @@
+{
+  "id": "microsoft-human-inspired-memory",
+  "name": "Microsoft Human-Inspired Memory — 6认知机制记忆架构",
+  "sources": [],
+  "discovered": "2026-07-13T09:10:07.371576",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.76,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-13",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.76,
+    "backed_at": "2026-07-13T09:10:07.371261"
+  },
+  "digest_notes": ""
+}

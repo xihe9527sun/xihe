@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CF-RAG: 反事实推理增强检索生成·破解相关性陷阱 · 曦和宝藏</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --neon:#22c55e; --neon2:#22d3ee; }
+  body {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(129,140,248,0.10), transparent 42%),
+      radial-gradient(circle at 82% 78%, rgba(34,211,238,0.08), transparent 45%),
+      #060814;
+    color:#cbd5e1; font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    padding:32px 20px; line-height:1.85; min-height:100vh;
+  }
+  /* 背景网格 */
+  body::before {
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:linear-gradient(rgba(129,140,248,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(129,140,248,0.04) 1px,transparent 1px);
+    background-size:42px 42px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 80%);
+  }
+  .container { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+  .hero {
+    border:1px solid rgba(129,140,248,0.28); border-radius:18px; padding:26px 28px;
+    background:linear-gradient(135deg,rgba(129,140,248,0.08),rgba(34,211,238,0.04));
+    backdrop-filter:blur(10px); box-shadow:0 0 28px rgba(129,140,248,0.12), inset 0 0 22px rgba(34,211,238,0.05);
+    margin-bottom:22px;
+  }
+  h1 {
+    font-size:25px; font-weight:800; letter-spacing:0.5px; margin-bottom:12px;
+    background:linear-gradient(92deg,#a5b4fc,#67e8f9); -webkit-background-clip:text;
+    background-clip:text; color:transparent;
+  }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip {
+    font-size:11.5px; padding:4px 11px; border-radius:20px; color:#cbd5e1;
+    background:rgba(148,163,184,0.10); border:1px solid rgba(148,163,184,0.22);
+  }
+  .layer-badge {
+    font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:20px;
+    color:var(--neon); background:#22c55e1f; border:1px solid var(--neon);
+    box-shadow:0 0 12px #22c55e55;
+  }
+  .credit-bar { margin-top:16px; }
+  .credit-bar .lab { font-size:11px; color:#64748b; margin-bottom:5px; display:flex; justify-content:space-between; }
+  .credit-track { height:7px; border-radius:6px; background:rgba(148,163,184,0.15); overflow:hidden; }
+  .credit-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--neon),var(--neon2)); box-shadow:0 0 10px var(--neon); }
+  .glass {
+    border:1px solid rgba(148,163,184,0.16); border-radius:14px; padding:18px 22px; margin:16px 0;
+    background:rgba(15,23,42,0.55); backdrop-filter:blur(8px);
+    box-shadow:inset 0 0 18px rgba(34,211,238,0.04);
+  }
+  .section-title { font-size:16px; font-weight:700; color:#a5b4fc; margin:6px 0 12px; padding-bottom:8px; border-bottom:1px solid rgba(129,140,248,0.22); }
+  h3 { font-size:14px; font-weight:600; color:#67e8f9; margin:14px 0 7px; }
+  p { font-size:13px; color:#94a3b8; margin:7px 0; }
+  ul { margin:6px 0; }
+  .glow-item {
+    font-size:13px; color:#cbd5e1; margin:5px 0 5px 4px; list-style:none; padding-left:18px; position:relative;
+  }
+  .glow-item::before {
+    content:"▹"; position:absolute; left:0; color:var(--neon2); text-shadow:0 0 8px var(--neon2);
+  }
+  .footer { text-align:center; font-size:11px; color:#475569; margin-top:30px; padding-top:16px; border-top:1px solid rgba(148,163,184,0.15); letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>CF-RAG: 反事实推理增强检索生成·破解相关性陷阱</h1>
+    <div class="meta">
+      <span class="layer-badge">L3</span>
+      <span class="chip">🏷️ L3 · 检索增强 · 因果推理 ·</span>
+      <span class="chip">📦 ICLR 2026 · Huaiyu</span>
+      <span class="chip">💎 养分 3</span>
+      <span class="chip">⭐ 评分 0.85</span>
+    </div>
+    <div class="credit-bar">
+      <div class="lab"><span>赫布信用 Hebbian Credit</span><span>7</span></div>
+      <div class="credit-track"><div class="credit-fill" style="width:43%"></div></div>
+    </div>
+  </div>
+  <div class="glass">
+    <h2 class="section-title">◆ 一、核心发现：相关性陷阱(Correlation Trap)</h2><p>论文识别出RAG系统的根本漏洞——**相关性陷阱(Correlation Trap)**：</p><p>即使语义相似度很高，检索到的片段可能只是与答案相关、但不是因果决定因素。这种系统性漏洞在所有RAG系统中都存在。</p><h2 class="section-title">◆ 二、核心方法：CF-RAG的双机制</h2><h3>▸ 机制1：反事实查询生成</h3><p>系统为每个查询自动生成反事实变体：</p><li class="glow-item">"如果不考虑X会怎样？"</li><li class="glow-item">"如果把X替换为Y呢？"</li><p>然后评估检索结果对反事实查询的鲁棒性——如果一个片段在反事实变体下仍然被检索到，那它包含的是相关性噪音；只有在反事实变体下不再被检索到的，才是真正因果性证据。</p><h3>▸ 机制2：平行仲裁</h3><p>通过并行处理机制调和冲突证据，不增加检索开销，只在推理阶段增加反事实评估层。</p><h3>▸ 性能</h3><li class="glow-item">在挑战性基准上显著提升鲁棒性</li><li class="glow-item">保持与标准RAG相当的计算效率</li><h2 class="section-title">◆ 三、对曦和的意义</h2><h3>▸ 直接风险：桥接架构的数据质量问题</h3><p>曦和的桥接架构(bridge-daemon)从皮层读取状态文件生成简报。如果皮层中存在"相关但非因果"的记忆连接，桥接可能将噪音信息带入会话上下文。</p><h3>▸ 融合方向</h3><p>| 优先级 | 方向 | 变更对象 | 说明 |</p><p>|:------:|:-----|:---------|:-----|</p><p>| 📌 P1 | 皮层写入前的反事实过滤 | bridge/knowledge-pipeline.py | 对即将写入皮层的新连接先做反事实验证 |</p><p>| 📌 P1 | 反刍模块的反事实仲裁 | bridge/ruminator.py | 在反刍周期中加入冲突证据的反事实仲裁 |</p><p>| 📌 P2 | 桥接简报的相关性标记 | bridge-daemon.py | 在简报中标出高相关低因果的候选连接 |</p><h3>▸ 与CausalFlow的协同</h3><p>```</p><p>CF-RAG: 输入验证(检索时去伪存真)</p><p>  ↓</p><p>CausalFlow: 执行中归因(执行后因果诊断)</p><p>  ↓</p><p>Executable CF: 输出验证(反事实假设验证)</p><p>```</p><p>三者构成完整的"输入验证→执行诊断→输出验证"因果闭环。</p><h2 class="section-title">◆ 四、养分清单</h2><p>| ID | 名称 | 类型 | 值 |</p><p>|:---|:-----|:----:|:--:|</p><p>| N-CR1 | 相关性陷阱的形式化定义 | 理论发现 | 8 |</p><p>| N-CR2 | 反事实查询生成与平行仲裁 | 工程方法 | 8 |</p><p>| N-CR3 | 在保持效率的同时提升鲁棒性 | 工程发现 | 7 |</p><p>*此宝藏由每日觅食自动化于2026-07-08 08:50发现并入库*</p>
+  </div>
+  <div class="footer">曦和宝藏 · counterfactual-rag-iclr2026 · 科技炫酷 HUD 版 · 生成于 2026-07-10T19:04:05</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿{
+  "id": "multi-agent-llm-系统架构全景调研-2023-2026",
+  "name": "Multi-Agent LLM 系统架构全景调研 (2023-2026)",
+  "source": "Survey 2026",
+  "reprocessed_at": "2026-07-20T14:16:38.073121",
+  "content": "Multi-Agent LLM 系统架构全景调研 (2023-2026)",
+  "field": "多Agent/工具使用",
+  "summary": "中文2-3句概括",
+  "key_insights": [
+    "Multi-Agent LLM 系统架构在2023年至2026年间进行了全面调研。",
+    "该研究涵盖了记忆系统、自反层、进化引擎、元认知等多个领域。",
+    "对曦和等类似系统有潜在价值的应用场景进行探讨。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

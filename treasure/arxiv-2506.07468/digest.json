@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2506.07468",
+  "name": "Self-RedTeam: Online Self-Play Multi-Agent RL for Safer Language Models",
+  "source": "arXiv:cs.MA:2506.07468",
+  "reprocessed_at": "2026-07-20T14:20:21.854754",
+  "content": "Conventional large language model (LLM) safety alignment relies on a reactive, disjoint loop: attackers exploit a static model, then defenders patch exposed vulnerabilities. This sequential setup leads to attackers overfitting obsolete exploits while defenders perpetually lag behind emerging threats. To address this, we introduce Self-RedTeam, the first fully online self-play multi-agent reinforcement learning (MARL) algorithm that continuously co-evolves attacker and defender for robust safety ",
+  "field": "多Agent",
+  "summary": "通过引入Self-RedTeam算法，首次实现了全在线的自我对战多智能体强化学习（MARL），该方法能持续进化对抗者和防御者以实现更安全的语言模型对齐。",
+  "key_insights": [
+    "Self-RedTeam是首个完全在线的自对战多智能体强化学习算法。",
+    "通过连续进化对抗者和防御者，避免了传统方法中的过时漏洞利用问题。",
+    "该方法在多个基准测试中提高了语言模型的安全性，并且能够适应多种语言模型家族。"
+  ],
+  "xihe_relevance": "Self-RedTeam可能对曦和系统的自反层和进化引擎模块有潜在价值，有助于提升其自我学习和改进的能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

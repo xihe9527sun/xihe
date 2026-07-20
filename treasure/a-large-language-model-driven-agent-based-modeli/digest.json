@@ -1,0 +1,20 @@
+﻿{
+  "id": "a-large-language-model-driven-agent-based-modeli",
+  "name": "A Large Language Model-Driven Agent-Based Modeling Framework with Multi-Round Communication for Simulating Vaccine Opinion Dynamics (2607.07387)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:04:38.696491",
+  "content": "Recently, Large Language Models (LLMs) have been utilized in various applications of computational social science and provide the possibility to integrate such models into agent-based modeling to explore the cognitive processes. However, how specific cognitive modules drive individual decisions and macro-level opinion dynamics remains unclear. Therefore, this study introduces a framework that integrates an LLM (Qwen3-8B) into agent-based modeling to investigate this problem, using vaccination op",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "该研究引入了一个结合了大型语言模型（Qwen3-8B）的框架，用于模拟具有异质特征和社交网络的代理之间的意见动态，并通过启用不同的认知模块来评估不同场景。研究结果表明，不同的认知模块对我们的涌现意见产生了相反的影响，并且该框架能够重现现有研究中观察到的社会影响非线性行为模式。",
+  "key_insights": [
+    "该研究引入了一个结合了大型语言模型（Qwen3-8B）的框架用于模拟代理之间的意见动态。",
+    "通过启用不同的认知模块，可以评估不同场景下的意见动态。",
+    "不同的认知模块对涌现意见产生了相反的影响。",
+    "该框架能够重现现有研究中观察到的社会影响非线性行为模式。",
+    "该研究为未来使用大型语言模型进行多代理建模提供了可能性。"
+  ],
+  "xihe_relevance": "该研究可能在曦和的自反层和进化引擎方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

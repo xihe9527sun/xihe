@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.05095",
+  "name": "FAST: A Holistic Framework for Optimizing Memory-I/O, Computation, and Sampling in Temporal GNN Training",
+  "source": "arXiv:2607.05095",
+  "reprocessed_at": "2026-07-20T14:18:53.912468",
+  "content": "Temporal Graph Neural Networks (TGNNs) are widely used for learning from dynamic graphs in applications such as recommendation, social network analysis, and traffic forecasting. However, scaling TGNN training to large dynamic graphs remains challenging due to three intertwined bottlenecks: memory I/O, irregular computation, and temporal neighbor sampling. Existing systems often optimize these stages in isolation, leaving substantial performance headroom on the table. We present FAST, a holistic ",
+  "field": "多Agent",
+  "summary": "Temporal Graph Neural Networks (TGNNs) are widely used for learning from dynamic graphs, but scaling their training to large dynamic graphs is challenging due to memory I/O, irregular computation, and temporal neighbor sampling bottlenecks. FAST addresses these issues by jointly optimizing sampling, memory I/O, and computation.",
+  "key_insights": [
+    "FAST是一个端到端的TGNN训练加速框架，通过联合优化采样、内存I/O和计算来提高性能。",
+    "FAST引入了SlimCache技术，利用在批次内的压缩和跨批次缓存减少主机设备数据移动，在有限的GPU内存预算下实现这一目标。",
+    "FAST设计了针对稀疏时间子图的线程高效图操作，以改善GPU缓存局部性和减少聚合和边缘softmax的延迟。",
+    "FAST采用了拓扑感知采样策略，提高了CPU缓存局部性并加速了时间邻居采样。",
+    "在现实世界的大型动态图上进行的广泛实验表明，与最先进的系统相比，FAST实现了平均2.1倍（最高4.7倍）的速度提升，而不会牺牲模型准确性。"
+  ],
+  "xihe_relevance": "FAST框架可以显著提高曦和系统的性能，特别是在处理大规模动态图时。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

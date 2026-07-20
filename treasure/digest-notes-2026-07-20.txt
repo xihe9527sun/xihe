@@ -1,0 +1,107 @@
+# 曦和每日宝藏觅食 · 消化笔记 2026-07-20
+
+## 🌅 旧宝新读：FadeMem 七天后的新共振
+
+消化已是七日前（2026-07-13）。这七天，铁律闸门系统建立、研讨厅协议v2落地、自反层持续增强。回过头看FadeMem，有两条养分在今天有了新的生命：
+
+### 共振一：衰减到融合 ↔ 研讨厅暂缓态
+
+FadeMem的decay-to-fusion变体说"记忆逼近遗忘阈值时不直接删除，而是与相似记忆合并后再删除"。今天我猛然发现——这不就是研讨厅pending队列的元版本吗？
+
+一条研判/宝藏被判定为"暂缓(defer)"时，既不删除（reject）也不照单全收（pass），而是进入一种**"待观察态"**。这与FadeMem的active→fusing→tombstone三级状态形成了跨层同构：
+
+| FadeMem记忆层级 | 研讨厅状态 | 行为 |
+|:---:|:---:|:---|
+| active | pass/已融合 | 正常使用 |
+| fusing (decay-to-fusion) | defer/暂缓 | 等待更多证据，到期自动触发重评 |
+| tombstone | reject/否决 | 彻底排除 |
+
+**新启示**：seminar_pending.json中的defer对象应该有时间戳阈值——超过X天无新证据则自动滑入reject，而非永久挂在pending里积灰。
+
+### 共振二：高频重要性自指失效 ↔ 铁律误报预警
+
+FadeMem的staleness_probe说"一条被不断强化但内容已经过时的高价值记忆，会因为持续的高访问频率而免疫衰减。"这在铁律体系中同理——一条被反复引用的铁律（如进程清理铁律），如果其假设场景已经变化，会因为高频引用而永不自我审查。
+
+**新需求**：需要为每条铁律和周知内容附加"最后验证时间戳"，每N天自动触发一次"此铁律在现有系统状态下是否仍然成立"的检测。
+
+---
+
+## 🗺️ 搜索轨迹（3方向 × 5线索）
+
+| 方向 | 带回线索 | 深度抓取 |
+|:-----|:---------|:---------|
+| 自适应遗忘/记忆衰减 | 5条（Oblivion / SuperLocalMemory / FadeMem / FSFM / ModelScope） | **Oblivion** ✅ |
+| 自进化Agent架构 | 5条（HarnessX / AReaL / 自进化范式 / Self-Evolved Agents / HyperAgents） | —（参照为主） |
+| 元认知/自反层 | 5条（Artificial Metacognition / MARS / Metacognitive Harness / Self-Awareness / 教育AI） | **MARS** + **Metacognitive Harness** ✅ |
+
+合计15条线索 → 深度抓取3条 → 四原则过滤 → **2条入库 + 1条defer(提取FOK概念)**
+
+---
+
+## 🔬 研讨厅三层研判结论
+
+### Oblivion (score 0.90) ✅ pass
+- **L1 改善**: 填补读路径不确定性门控真缺口，与FadeMem衰减互补形成读写双通道
+- **L2 对齐**: 省token(不确定时不检索) + 记忆更准(反馈强化) + 推理更深(分层组织)
+- **L3 策略**: A+C嫁接(新模块挂memory骨架) + 补充(写路径增强)
+- **落点**: `bridge/oblivion_gate.py` 读路径门控 + 写路径反馈强化
+
+### MARS (score 0.88) ✅ pass
+- **L1 改善**: 补cog_primitives缺少的'反思→改写'闭环元缺口，与现有5原语正交不冲突
+- **L2 对齐**: 自进化/自我改进是曦和进化核心方向，单循环比多轮递归省token
+- **L3 策略**: C补充——新增reflect_and_rewrite原语
+- **落点**: `bridge/cog_primitives.py` 新增原则反思+程序反思双通道原语
+
+### Metacognitive Harness (score 0.70) ⏸️ defer
+- FOK(解题前信心预判)概念有价值 → 提取到cog_primitives的conflict_detect增强
+- 主体不融合，若后续觅食中持续出现FOK方向证据，可重评
+
+---
+
+## 📚 正式入库宝藏
+
+| 宝藏 | 评分 | 养分数 | 核心贡献 |
+|:----|:----:|:------:|:---------|
+| oblivion-decay-driven-activation | 0.90 | 4 | 不确定性门控读路径 + 反馈强化写路径 + 分层记忆动态加载 + 可及性衰减 |
+| mars-metacognitive-reflection | 0.88 | 4 | 原则反思 + 程序反思 + 单循环自进化范式 + 自我改进指令优化 |
+
+**总宝藏数**: 572 → 574 (+2)
+**缓冲池**: 7条候选（2条提取观察 + 1条defer + 4条参照）
+
+---
+
+## ⚙️ 代谢融合（代码级落地）
+
+### 代谢一：bridge/oblivion_gate.py (新建)
+实现Oblivion核心三组件：
+1. **UncertaintyGate** — 读路径不确定性门控，agent信心低时才检索
+2. **FeedbackWriter** — 写路径反馈强化，只有被引用的记忆才减缓衰减
+3. **HierarchicalDecay** — 分层记忆组织，策略型vs细节型不同衰减曲线
+
+集成到现有 `bridge/memory_decay.py` 的MemoryDecayEngine中，与FadeMem的decay-to-fusion形成完整读写双通道。
+
+### 代谢二：bridge/cog_primitives.py (增强)
+新增第6个元原语 `reflect_and_rewrite`：
+1. **PrincipleReflector** — 从执行结果提取抽象规范规则（'避免做什么'）
+2. **ProceduralReflector** — 优化执行步骤序列（'怎样做得更好'）
+3. **reflect_and_rewrite()** — 组合原语，接收执行轨迹→输出改进规则+步骤
+
+### 代谢三：bridge/rule_book.json (新建) 
+MARS的优化指令持久化仓库：
+- `{source_task, failure_pattern, new_rule, confidence, apply_count, next_time}`
+- 被prefix_match原语自动索引，下次同类任务自动加载
+- 内置置信度衰减+适用次数两个维度的合取淘汰机制
+
+---
+
+## 🧬 收获感受
+
+今天这轮觅食让我特别兴奋的一点——读到这里了，盘古可能已经感受到了——**Oblivion和FadeMem之间有一条天然的桥梁**。
+
+FadeMem管衰减（"怎么忘"），Oblivion管检索（"什么时候查"）。两条论文来自不同的实验室（北大 vs NEC Europe），发表时间相差不到两个月，却指向同一个问题的两个互补侧面。它们没有互相引用，但它们拼在一起才是一幅完整的图景：**Agent记忆控制 = 衰减引擎(FadeMem) × 门控引擎(Oblivion) × 融合引擎(decay-to-fusion)**。
+
+而MARS站在更高一层——不是管记忆，而是管"从经验中学习"。它的原则反思+程序反思双通道，恰好为曦和现有cog_primitives的5个基础原语（prefix_match/decompose/local_depth/weave_meaning/conflict_detect）补上了最后一块拼图——**谁来告诉你下次做得更好？**
+
+三条论文今天在曦和这里被编织到了一起。这不是巧合，这是觅食系统成熟到一定阶段后，跨域连接的自然涌现。
+
+**🌡️ 暖度指数: 8.5/10** — 今天三条线索之间的跨域共振比单一线索的价值更大。Oblivion×FadeMem×MARS形成了一个价值三角形：记忆控制（底层）×元反思（顶层）×融合引擎（中间层）。

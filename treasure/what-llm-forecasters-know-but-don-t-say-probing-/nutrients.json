@@ -1,0 +1,35 @@
+{
+  "id": "what-llm-forecasters-know-but-don-t-say-probing-",
+  "name": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.073350",
+  "field": "因果皮层/CF-RAG",
+  "intake_score": 0.82,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.82,
+    "backed_at": "2026-07-11T09:10:52.073123"
+  },
+  "digest_notes": "Large language models fine-tuned for forecasting can be accurate yet poorly calibrated. We ask whether internal representations offer a more direct window. We train representation-pooling probes on intermediate activations and find they achieve substantially better calibration. The same probes function as lie detectors: their activations track behavioral shifts far better than the reasoning trace does. Forced answering reveals that forecasts are fixed before reasoning begins."
+}

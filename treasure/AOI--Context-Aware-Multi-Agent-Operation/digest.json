@@ -1,0 +1,19 @@
+﻿{
+  "id": "AOI--Context-Aware-Multi-Agent-Operation",
+  "name": "AOI: Context-Aware Multi-Agent Operations via Dynamic Scheduling and Hierarchical Memory",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:59:04.304936",
+  "content": "AOI: Context-Aware Multi-Agent Operations via Dynamic Scheduling and Hierarchical Memory",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于动态调度和层次化内存的情境感知多agent操作方法。",
+  "key_insights": [
+    "引入了情境感知机制以适应不同环境",
+    "采用动态调度策略优化资源分配效率",
+    "利用层次化内存结构提高信息处理能力",
+    "适用于复杂多agent系统中的任务执行",
+    "可能对自反层和进化引擎有潜在应用价值"
+  ],
+  "xihe_relevance": "该内容对记忆系统、自反层及进化引擎方向具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

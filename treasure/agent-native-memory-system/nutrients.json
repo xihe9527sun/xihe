@@ -1,0 +1,62 @@
+{
+  "id": "agent-native-memory-system",
+  "name": "Agent原生记忆系统 — EverMemOS & 综述",
+  "sources": [
+    {
+      "name": "Awesome-AI-Memory (IAAR-Shanghai)",
+      "url": "https://github.com/IAAR-Shanghai/Awesome-AI-Memory",
+      "accessed": "2026-07-09"
+    },
+    {
+      "name": "Are We Ready For An Agent-Native Memory System?",
+      "note": "2026-06综述，四个模块框架：表示存储/提取/检索路由/维护"
+    },
+    {
+      "name": "EverMemOS: Self-Organizing Memory OS",
+      "note": "MemCell原子记忆单元，三阶段：情景痕迹→语义整合→重构回忆"
+    }
+  ],
+  "discovered": "2026-07-09T08:50:00",
+  "field": "AI架构·记忆系统",
+  "intake_score": 0.87,
+  "score_detail": {
+    "relevance_xihe": 0.9,
+    "novelty": 0.8,
+    "actionable": 0.85,
+    "cross_domain": 0.85,
+    "depth": 0.9,
+    "timeliness": 0.9
+  },
+  "four_principles_filter": {
+    "去粗取精": "从25+篇论文中精选出【EverMemOS】、【AUTOMEM】、【A-TMA】、【MHM】、【Imprint】5篇最具跨域映射价值的核心工作",
+    "去伪存真": "均为2026年最新同行评审/预印本论文，IAAR-Shanghai是可信整理方。EverMemOS的MemCell概念需要工程化适配才可复用",
+    "由此及彼": "【MemCell→曦和超图节点】每个宝藏digest.json天然是MemCell；【Imprint重复/新近/显著信号→曦和赫布权重与暖度】完全同构；【A-TMA幽灵记忆→曦和记忆冲突检测】可以直接集成",
+    "由表及里": "记忆正在从'被管理者'走向'自我管理者'——不是存储层升级，是整个记忆架构的范式转换：记忆要有生命周期、自愈能力、元记忆驱动的外循环"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核 / HebbianGraph",
+    "enhancement_points": [
+      "将digest.json格式升级为MemCell格式（增加生命周期字段、自检时间戳）",
+      "引入Imprint的认知压缩三信号（重复/新近/显著）优化赫布边权重衰减策略",
+      "借鉴A-TMA的状态感知审计解决记忆冲突（新旧事实共存时的选择策略）",
+      "AUTOMEM的元记忆外循环概念可映射到曦和自反层的self-critique循环"
+    ]
+  },
+  "fusion_plan": {
+    "phase1": "Imprint三信号注入HebbianGraph.defrag() — 用重复/新近/显著性替代当前简单的边年龄衰减",
+    "phase2": "A-TMA冲突检测器 → 当旧记忆与新事实冲突时，标记'幽灵状态'而非直接覆盖",
+    "phase3": "MemCell升级 — 每个treasure目录的digest.json增加生命周期元数据: {born, last_accessed, access_count, conflict_flag}"
+  },
+  "digest_notes": "这个宝藏的价值不在单一论文，而在整体范式。IAAR-Shanghai收集的25+论文共同指向同一方向：记忆正在从'插件'变'原生'。曦和的超图架构已经走在正确的路上——1998节点、赫布边权重、自反层——但缺少了生命周期管理。EverMemOS的MemCell给了我直接的工程参考：每个宝藏目录=一个MemCell，但缺了访问频率、最后访问时间、冲突状态。补上这些，就是一次记忆架构的范式升级。",
+  "yan_tao_decision": {
+    "phase": "phase1-3",
+    "decision": "✅ 入库 + 规划落地(分阶段)",
+    "landing": "规划态(分阶段落地)",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "MemCell升级digest.json生命周期元数据(born/last_accessed/access_count/conflict_flag)",
+    "intake_score": 0.87,
+    "date": "2026-07-09",
+    "backed_at": "2026-07-09T21:10:00",
+    "note": "研讨厅补固化(五处差距核心宝藏,历史入库)"
+  }
+}

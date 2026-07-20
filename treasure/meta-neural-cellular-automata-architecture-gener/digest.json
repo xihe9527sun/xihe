@@ -1,0 +1,18 @@
+﻿{
+  "id": "meta-neural-cellular-automata-architecture-gener",
+  "name": "Meta Neural Cellular Automata: Architecture Generalization with MetaNCA",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T14:05:05.186328",
+  "content": "Meta Neural Cellular Automata: Architecture Generalization with MetaNCA",
+  "field": "元认知/量化交易",
+  "summary": "Meta Neural Cellular Automata 提出了一种新的神经细胞自动机架构，旨在通过 MetaNCA 实现更广泛的模型泛化。",
+  "key_insights": [
+    "提出了一个新的神经细胞自动机架构 MetaNCA",
+    "目标是实现模型的广泛泛化能力",
+    "潜在应用于记忆系统、自反层、进化引擎等领域"
+  ],
+  "xihe_relevance": "MetaNCA 的概念和方法可能对曦和项目在某些方面的应用具有价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

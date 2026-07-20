@@ -1,0 +1,35 @@
+{
+  "id": "multi-agent-routing-as-set-valued-prediction-a-w",
+  "name": "Multi-Agent Routing as Set-Valued Prediction: A WildChat Benchmark and Cost-Aware Evaluation",
+  "sources": [],
+  "discovered": "2026-07-15T09:10:36.023605",
+  "field": "代谢路由/event_bus",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "代谢路由/event_bus",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-15",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "代谢路由/event_bus",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-15T09:10:36.023246"
+  },
+  "digest_notes": "从自然语言提示进行工具和智能体路由本质上是集值预测问题。结果表明显式监督路由器性能大优于零样本LLM路由和最近邻方法，加权路由层在顶级监督评分器之上提高效用。"
+}

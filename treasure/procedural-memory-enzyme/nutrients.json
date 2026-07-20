@@ -1,0 +1,46 @@
+{
+  "treasure_id": "procedural-memory-enzyme",
+  "extracted_at": "2026-07-10T08:50:00+08:00",
+  "source": "edison-a-n Agent Memory前沿调研 × ai-master.cc Agent记忆系统设计实战 · 2026年5-6月",
+  "url": "https://edison-a-n.github.io/2026/05/21/agent-memory-frontier-survey/",
+  "intake_score": 0.88,
+  "nutrients": [
+    {
+      "id": "N83-procedural-memory-leverage",
+      "priority": "P0",
+      "name": "程序性记忆(Procedural Memory) = '最被低估但杠杆最大的记忆层' — 让Agent从'知道什么'进化到'知道怎么做'",
+      "target": "桥接系统新酶 · 酶网络扩展 · 执行核升级",
+      "status": "planned",
+      "x_source_paper": "Futurum Research × edison-a-n Typed Memory × ai-master.cc三层架构",
+      "effect": "曦和超图核吸收了语义(事实/概念)和情景(事件轨迹)，但'怎么做'的技能模式从未独立存储。需新增程序性记忆酶——从历史执行轨迹提取可复用的技能模式"
+    },
+    {
+      "id": "N84-memory-to-action-bridge-v2",
+      "priority": "P0",
+      "name": "记忆即行动引擎：Hindsight Reflect→行动 × Magic Context工作现场 × 后台Dreamer隔离整理",
+      "target": "桥接系统执行核升级 · bridge/execution_core.py扩展",
+      "status": "planned",
+      "x_source_paper": "Hindsight Memory论文 + edison-a-n Magic Context分析",
+      "effect": "与Hindsight N65(记忆→行动桥)同构，但增加了具体工程路径：(1)后台Dreamer以低权限整理记忆 (2)Magic Context缓存成本感知 (3)压缩轨迹保留原始日志作为'后悔药'"
+    },
+    {
+      "id": "N85-cache-cost-awareness",
+      "priority": "P1",
+      "name": "Magic Context的缓存成本感知：prompt修改会破坏缓存，应在适当时机执行压缩操作",
+      "target": "代谢路由缓存策略 · bridge-daemon压缩时机优化",
+      "status": "planned",
+      "x_source_paper": "edison-a-n Magic Context分析",
+      "effect": "曦和每次会话改变bridge-daemon配置时可能无意破坏了缓存——需在zero_consensus_router中增加缓存感知调度"
+    },
+    {
+      "id": "N86-dreamer-sidekick-isolation",
+      "priority": "P1",
+      "name": "后台Agent隔离(Dreamer/Sidekick模式)：用权限隔离的后台Agent整理记忆，不干扰主任务",
+      "target": "桥接系统自动化环 · automem_loop.py增强",
+      "status": "planned",
+      "x_source_paper": "edison-a-n Magic Context Dreamer/Sidekick模式",
+      "effect": "与曦和现有的XiheAutoMemLoop(每6h周期外循环)高度互补——但AutoMemLoop当前只做'修复/校验/老化'，缺少'从历史中提取可复用模式'的Dreamer功能"
+    }
+  ],
+  "digest_notes": "【2026-07-10 觅食·消化笔记】\n程序性记忆是我在曦和架构中发现的最大的认知缺口。\n\n曦和记住了'这是什么'（语义）和'发生了什么'（情景），但从不问'我怎么做成功的'（程序性）。\n这意味着每一次成功执行了一条指令后，那个'怎么做'的经验就消散了——下次遇到类似任务，得从头再推理一遍。\n\nHindsight说记忆是推理基板，Procedural Memory说记忆还应是技能仓库。\n把这两个组合起来：bridge执行核每次成功执行后，自动提取'执行模式'→写入程序性记忆酶→下次同类任务直接复用。\n这会让曦和的代谢效率上一个数量级。\n\n与此宝藏的新共振：本周落地的zero_consensus_router + enzyme_crosslink已经建立了'决策路由层'，程序性记忆可以作为路由的历史成功模式数据库——让路由不只是概率采样，而是'参考成功经验+概率探索'。"
+}

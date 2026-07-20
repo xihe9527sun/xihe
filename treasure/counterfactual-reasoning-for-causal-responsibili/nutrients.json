@@ -1,0 +1,35 @@
+{
+  "id": "counterfactual-reasoning-for-causal-responsibili",
+  "name": "Counterfactual Reasoning for Causal Responsibility Attribution in Probabilistic Multi-Agent Systems",
+  "sources": [],
+  "discovered": "2026-07-14T09:10:26.363068",
+  "field": "因果皮层/CF-RAG",
+  "intake_score": 0.72,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-14",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.72,
+    "backed_at": "2026-07-14T09:10:26.362761"
+  },
+  "digest_notes": "This work models multi-agent systems as concurrent stochastic multi-player games and introduces retrospective counterfactual responsibility quantifying agent accountability for outcomes. It uses Shapley value to allocate responsibility among agents, satisfying fairness and consistency properties. The framework supports verification and strategic reasoning in responsibility-aware multi-agent systems, computing stable strategy profiles where agents trade off responsibility against expected reward "
+}

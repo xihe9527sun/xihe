@@ -1,0 +1,17 @@
+﻿{
+  "id": "ssgm-memory-governance",
+  "name": "SSGM: 进化记忆治理框架 — 语义/程序/目标漂移防御 + 写验证门",
+  "source": "arXiv 2603.11768 · SSGM Framework",
+  "reprocessed_at": "2026-07-20T13:04:11.820748",
+  "content": "Long-term memory has emerged as a foundational component of autonomous Large Language Model (LLM) agents, enabling continuous adaptation, lifelong multimodal learning, and sophisticated reasoning. However, as memory systems transition from static retrieval databases to dynamic, agentic mechanisms, critical concerns regarding memory governance, semantic drift, and privacy vulnerabilities have surfaced. While recent surveys have focused extensively on memory retrieval efficiency, they largely over",
+  "field": "记忆系统",
+  "summary": "该研究提出SSGM框架，旨在解决自主大型语言模型中长期记忆治理、语义漂移和隐私漏洞等问题。",
+  "key_insights": [
+    "提出SSGM框架以应对动态环境中的记忆治理挑战",
+    "通过一致性验证和访问控制防止知识泄露和语义漂移",
+    "建立安全持久的代理内存系统部署架构"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其探讨了记忆系统中可能存在的风险及相应的防护机制。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "reasoning-effort-not-tool-access-buys-fi",
+  "name": "Reasoning effort, not tool access, buys first-try reliability in agentic code ge",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:13.683995",
+  "content": "Reasoning effort, not tool access, buys first-try reliability in agentic code ge",
+  "field": "自反层/进化引擎",
+  "summary": "Reasoning effort, not tool access, buys first-try reliability in agentic code ge.",
+  "key_insights": [
+    "The effectiveness of reasoning is more important than having access to tools for achieving first-try reliability in agentic code generation.",
+    "This insight suggests that the cognitive process and problem-solving ability are crucial factors rather than merely tool availability.",
+    "Understanding this can help improve the efficiency and reliability of AI systems designed for generative tasks."
+  ],
+  "xihe_relevance": "该摘要内容与曦和系统的核心功能，如记忆系统、自反层、进化引擎等有潜在关联，特别是对提升AI系统的认知能力和问题解决能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

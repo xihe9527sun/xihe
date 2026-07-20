@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.05202",
+  "name": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+  "source": "arXiv:cs.AI:2607.05202",
+  "reprocessed_at": "2026-07-20T14:19:45.553712",
+  "content": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification. Yet current evaluations do not isolate this form of transfer. Agent benchmarks test single-episode task solving; memory benchmarks target information retention rather than procedural reuse. We introduce EvoAgentBench, a benchmark for agent self-evolution via Ability-guided transfer across four agentic domai",
+  "field": "进化引擎",
+  "summary": "EvoAgentBench通过能力转移来评估代理自我进化的性能，覆盖了web研究、算法推理、软件工程和知识工作等四个领域。它提取执行中的代理能力，并将其标准化为操作单元，构建特定领域的能力图谱以连接共享程序性的任务。",
+  "key_insights": [
+    "EvoAgentBench通过能力转移来评估代理自我进化的能力，填补了现有评价方法的空白。",
+    "该基准测试能够可靠地在不同模型家族之间传递能力内容，但目前没有自动方法能够在所有设置中保持正向收益。",
+    "它改变了自我进化的评估方式，从整体准确性的比较转向对经验编码、传输和吸收的精细化诊断。"
+  ],
+  "xihe_relevance": "EvoAgentBench可能为曦和系统提供有价值的能力转移机制，有助于提升系统的自适应性和学习能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

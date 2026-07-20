@@ -1,0 +1,18 @@
+﻿{
+  "id": "haloguard-1-0-an-open-weights-constitutional-class",
+  "name": "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety",
+  "source": "arXiv cs.CL 2607.02079",
+  "reprocessed_at": "2026-07-20T14:16:10.857536",
+  "content": "We present HaloGuard 1.0, an open-weights implementation of the constitutional-classifier paradigm for input safety. It achieves state-of-the-art performance on English and multilingual prompt-safety benchmarks at roughly one-tenth the model size of current leading open guard models. The safety constitution is the organising structure of the corpus: a natural-language constitution of 46 policies and 2,940 subcategories drives synthetic data generation, with exhaustive one-to-one paired counterfa",
+  "field": "自反层",
+  "summary": "HaloGuard 1.0 是一种基于宪法分类法的开放权重实现，旨在提高输入安全性能。它在英语和多种语言提示安全性基准测试中达到了最先进的表现，并且模型大小仅为当前领先开源守卫模型的一十分之一。",
+  "key_insights": [
+    "HaloGuard 1.0 在七种提示安全性基准测试中的平均F1得分为90.9，超过了27B参数的基线（大了约30倍），同时保持了4.3%的假阳性率和9.5%的假阴性率。",
+    "HaloGuard 1.0-4B变体达到了92.1%的平均F1得分和3.5%的假阳性率，其额外容量用于提高精确度而非召回率。",
+    "通过结构化的仲裁分析，大多数看似遗漏的危害案例实际上是基准标签错误而不是模型真正的遗漏。"
+  ],
+  "xihe_relevance": "HaloGuard 1.0 可能对曦和在多语言安全方面的应用具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,77 @@
+{
+  "treasure_id": "oblivion-decay-driven-activation",
+  "treasure_name": "Oblivion: 自适应性遗忘控制 — 读/写路径解耦的Agent记忆控制框架",
+  "source": "arXiv:2604.00131 · NEC Laboratories Europe · Ashish Rana, Chia-Chien Hung et al. · Apr 2026",
+  "discovered": "2026-07-20T08:50:00+08:00",
+  "digested": "2026-07-20T08:50:00+08:00",
+  "layer": "L3（记忆层）· L4（催化层）· L5（自反调制层）",
+  "intake_score": 0.90,
+  "score_detail": {
+    "relevance_xihe": 0.94,
+    "novelty": 0.88,
+    "actionable": 0.92,
+    "cross_domain": 0.85,
+    "depth": 0.90,
+    "timeliness": 0.91
+  },
+  "resonance_with_fademem": {
+    "fademem_gap": "FadeMem控制'如何衰减'（衰减速率/融合策略），Oblivion控制'何时检索'（时机门控），两者正交互补",
+    "merged_vision": "Oblivion读路径(不确定门控)→FadeMem衰减写路径(自适应衰减) + Oblivion写路径(反馈强化)→形成闭环读写双通道",
+    "xihe_current_gap": "memory_decay.py已有Weibull衰减，但读路径是always-on的，没有检索时机门控机制"
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "读路径：不确定性门控检索 (Uncertainty-Gated Retrieval)",
+      "type": "architecture_pattern",
+      "value": 0.95,
+      "description": "Oblivion的读路径核心创新：agent不是always-on检索记忆，而是在每次对话轮次中先评估'当前需要查记忆吗？'。评估依据两个信号：①agent不确定性（当agent对当前回复信心低时→查记忆）；②记忆缓冲区充分性（当前上下文窗口是否已有足够信息→不查）。这种不确定性驱动的门控避免了冗余检索，大幅降低延迟和token消耗。",
+      "xihe_gap": "曦和当前memory系统是always-on检索——每轮对话都全量检索相关记忆，然后通过ReRank降噪。没有不确定性门控。当上下文窗口已经足够时仍在检索，浪费token。",
+      "application": "新建bridge/oblivion_gate.py实现UncertaintyGate：①agent不确定性评估（prompt agent输出[0,1]信心分）；②mem_buffer_sufficiency检测（上下文窗口是否已覆盖当前话题）；③当不确定性<0.3且缓冲区充分→跳过检索（节省50-80%检索token）；④不确定性>0.7→触发深度检索"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "写路径：反馈驱动的记忆强化 (Feedback-Driven Write Path)",
+      "type": "architecture_pattern",
+      "value": 0.90,
+      "description": "Oblivion写路径不是'遇到什么记什么'，而是基于反馈强化：只有对最终回复形成有贡献的记忆才被强化（reinforce），无关记忆自然衰减。agent回复后，回溯推理路径中哪些记忆条目实际被使用→这些记忆的激活权重增加。未被使用的记忆保持当前衰减曲线。",
+      "xihe_gap": "曦和当前只有全局衰减（Weibull）和访问频率衰减（FadeMem融合），没有'贡献度加权'——一条被检索但未被使用的记忆和一条被使用的记忆衰减速率相同。",
+      "application": "在bridge/oblivion_gate.py中新增FeedbackWriter：①推理路径回溯（记录被引用的记忆条目id）；②contribution_score = 引用次数/总推理步数；③被引用记忆contribution>0.3→衰减系数×0.5（减缓衰减）；④未被引用记忆→保持正常衰减或加速衰减"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "分层记忆组织：长期策略+动态细节加载",
+      "type": "architecture_pattern",
+      "value": 0.88,
+      "description": "Oblivion的层次化设计：长期记忆层保持高层次的策略性知识（agent的工作方式、偏好、规则），动态加载层只加载当前任务所需的细节信息。读路径的不确定性门控和写路径的反馈强化共同维持这种分层——高频使用的策略记忆被持续强化进入长期层，一次性细节自然衰减。这与人类的'概念层+情节层'记忆组织一致。",
+      "xihe_gap": "曦和的四层记忆皮层（工作记忆/海马体/皮层/MCP）已有分层但缺少'动态加载'机制——长期记忆层没有与短期细节层形成'加载/卸载'的动态关系。",
+      "application": "在bridge/memory_decay.py中新增hierarchical_decay()：①标记记忆为'策略'或'细节'类型；②策略型记忆使用保守衰减（κ=0.3, λ=0.1），细节型使用激进衰减（κ=3.0, λ=0.8）；③当策略记忆在被主动加载细节→短期增强；④策略型记忆的衰退阈值(tombstone)为细节型的1/5"
+    },
+    {
+      "id": "nutrient-4",
+      "name": "遗忘作为可及性衰减而非删除",
+      "type": "insight",
+      "value": 0.86,
+      "description": "Oblivion的核心哲学：遗忘不是删除记忆，而是降低记忆的可及性(accessibility)。记忆仍存在于存储中，但检索器需要更高的匹配度或更明确的线索才能取回。这与FadeMem的'衰减到融合'（decay-to-fusion）异曲同工。人类记忆同样如此——'想不起来'不等于'不记得'，恰当的线索可以激活。",
+      "xihe_gap": "曦和当前有tombstone删除态和active活跃态，中间没有'低可及性态'(dormant)。当一条记忆的retention_score低于阈值时直接进入tombstone，失去了被恰当线索激活的可能性。",
+      "application": "在memory_decay.py中增加dormant状态：①retention 0.3-0.1为'dormant'（低可及性）；②dormant记忆不参与常规检索，但允许'线索驱动激活'（当新输入与dormant记忆的embedding相似度>0.9时唤醒）；③dormant超过30天后才进入tombstone。三级状态：active→dormant→tombstone"
+    }
+  ],
+  "cross_refs": [
+    "fademem-adaptive-forgetting",
+    "memory-architecture-four-layer",
+    "autogenesis-protocol-agp",
+    "ssgm-memory-governance"
+  ],
+  "hebbian_credit": 10,
+  "origin": "daily_foraging_2026-07-20",
+  "memcell": {
+    "born": "2026-07-20T08:50:00+08:00",
+    "last_accessed": "2026-07-20T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["遗忘控制", "读/写路径解耦", "不确定性门控", "反馈强化", "分层记忆", "Oblivion", "可及性衰减"],
+    "subsystem": ["bridge", "cortex", "memory"]
+  }
+}

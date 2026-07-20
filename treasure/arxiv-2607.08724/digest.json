@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08724",
+  "name": "Latent Memory Palace: Reasoning for Control as Autoregressive Variational Inference",
+  "source": "arXiv:cs.LG:2607.08724",
+  "reprocessed_at": "2026-07-20T14:25:41.911902",
+  "content": "Human decision-making is highly flexible -- some actions are taken immediately; others require longer deliberation. Language models have exhibited a similar capacity for adaptive \"reasoning.\" However, transferring this capability to continuous control policies has been challenging, as directly reasoning in language space may lack the granularity for spatial understanding and precise motions. In this work, we show that reasoning for control policies can emerge by organizing information in an auto",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "通过将信息组织在一个类似于记忆宫殿的自回归隐空间中进行推理，该研究提出了一种名为Latent Memory Palace (LMP)的方法，用于增强控制策略。这种方法利用了变分推理和自回归隐分布来优化其下界，并展示了在模拟和现实世界环境中实现的强大性能。",
+  "key_insights": [
+    "提出了一个新的方法——Latent Memory Palace (LMP)，通过将信息组织在一个类似于记忆宫殿的自回归隐空间中进行推理，以增强控制策略。",
+    "该方法利用了变分推理和自回归隐分布来优化其下界，并展示了在模拟和现实世界环境中实现的强大性能。",
+    "研究还表明，同样的框架可以生成一个可变长度的动作标记器LMP-$\texttt{tok}$，显著提高了下游自回归策略的表现。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

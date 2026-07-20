@@ -1,0 +1,35 @@
+{
+  "id": "can-we-trust-llm-s-logic-quantifying-uncertainty",
+  "name": "Can We Trust LLM's Logic? Quantifying Uncertainty, Coherence, and Robustness via a Graph-Based Framework",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.030358",
+  "field": "桥接系统/bridge-daemon",
+  "intake_score": 0.85,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "桥接系统/bridge-daemon",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "桥接系统/bridge-daemon",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.85,
+    "backed_at": "2026-07-11T09:10:52.030046"
+  },
+  "digest_notes": "LLMs can be prone to flawed and unfaithful reasoning that decoding strategies like Self-Consistency fail to detect. We introduce GRAPHEVAL, a graph-based reasoning framework that re-frames uncertainty quantification as a holistic reasoning fidelity problem. We propose Graph Reasoning Coherence Score (GRCS), that quantifies semantic-structural consensus and captures pathological mode collapse. GRCS is the only metric consistently negatively correlated with reasoning faithfulness across models."
+}

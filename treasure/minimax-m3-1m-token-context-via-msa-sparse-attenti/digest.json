@@ -1,0 +1,20 @@
+﻿{
+  "id": "minimax-m3-1m-token-context-via-msa-sparse-attenti",
+  "name": "MiniMax M3: 1M Token Context via MSA Sparse Attention Architecture",
+  "source": "MiniMax 2026-06",
+  "reprocessed_at": "2026-07-20T14:16:33.309777",
+  "content": "MiniMax M3: 1M Token Context via MSA Sparse Attention Architecture",
+  "field": "多Agent",
+  "summary": "MiniMax M3通过MSA稀疏注意力架构提供1M token上下文，旨在提升模型的性能和效率。",
+  "key_insights": [
+    "MiniMax M3利用MSA稀疏注意力机制显著增加了token上下文规模至1M",
+    "该模型优化了计算资源使用，提高了训练和推理的速度与效率",
+    "潜在应用于需要大量上下文信息的任务，如自然语言处理和多Agent系统",
+    "对于追求高性能和高效能的AI系统设计者具有重要价值",
+    "可能对曦和等自研AI平台产生积极影响"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

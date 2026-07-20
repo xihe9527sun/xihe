@@ -1,0 +1,12 @@
+{
+  "title": "NapMem: From Passive Retrieval to Active Memory Navigation",
+  "source": "arXiv:cs.AI:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "NapMem is a framework for learning to use long-term user memory as a structured action space rather than passively retrieved context. It organizes user history into a linked multi-granularity memory pyramid where raw conversations, typed memory records, topic tracks, and user profiles are connected through provenance relations.",
+  "keywords_matched": [
+    "memory"
+  ],
+  "intake_score": 0.75,
+  "captured_at": "2026-07-08T13:23:30.592065",
+  "digested": false
+}

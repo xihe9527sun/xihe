@@ -1,0 +1,18 @@
+﻿{
+  "id": "skill-mas-arxiv2606-18837",
+  "name": "Skill-MAS: Evolving Meta-Skill for Automatic Multi-Agent Systems",
+  "source": "arXiv 2606.18837 · Ant Group + HKUST(GZ) · Jun 2026",
+  "reprocessed_at": "2026-07-20T13:56:47.472493",
+  "content": "Large Language Model (LLM)-based automatic Multi-Agent Systems (MAS) generation has become a crucial frontier for tackling complex tasks. However, existing methods face a dilemma between model capability and experience retention. Inference-time MAS leverages frozen frontier LLMs but repeats identical searches without learning from past experience. Conversely, Training-time MAS internalizes experience via gradient updates but is constrained by the low capability ceiling of smaller models, and is ",
+  "field": "多Agent",
+  "summary": "Skill-MAS 提出了一种新的方法，通过将经验保留与参数更新解耦来解决现有方法在模型能力与经验积累之间的矛盾。",
+  "key_insights": [
+    "Skill-MAS 通过概念化高阶协调能力为可进化的元技能，实现了对经验的高效保留和利用。",
+    "Skill-MAS 结构优化循环中的多轨迹 rollout 和选择性反射机制提高了策略水平的原则提炼效果。",
+    "实验表明，Skill-MAS 在多个复杂基准测试中取得了显著性能提升，并且保持了良好的成本效益比。"
+  ],
+  "xihe_relevance": "Skill-MAS 的元技能进化可能对曦和系统的记忆系统、自反层以及进化引擎等领域具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

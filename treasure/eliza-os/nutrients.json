@@ -1,0 +1,43 @@
+{
+  "treasure_id": "eliza-os",
+  "extracted_at": "2026-06-28T13:10:00+08:00",
+  "nutrients": [
+    {
+      "id": "N43-character-config",
+      "type": "mechanism",
+      "name": "Character配置即人格 → 曦和灵魂可配置化",
+      "priority": "P1",
+      "target": "~/.workbuddy/SOUL.md",
+      "effect": "参考ElizaOS的Character设计，曦和的SOUL.md+暖度+身份应拆分为结构化配置模板，支持运行时热更新",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "SOUL.md+procedural_memory.py+memory_compressor.py三层记忆",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N44-layered-memory",
+      "type": "mechanism",
+      "name": "分层记忆(DOCUMENT→FRAGMENT→VECTOR) → 记忆图谱升级",
+      "priority": "P2",
+      "target": "memory/graph/knowledge_graph.py",
+      "effect": "曦和的记忆图谱借鉴Eliza的DOCUMENT→FRAGMENT分割+向量embedding，实现精确RAG检索而非全量扫描",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "SOUL.md+procedural_memory.py+memory_compressor.py三层记忆",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N45-conversation-compactor",
+      "type": "mechanism",
+      "name": "对话压缩(自动摘要替代长历史) → 赫布事件折叠",
+      "priority": "P2",
+      "target": "bridge/hebbian_graph.py",
+      "effect": "赫布事件的批量折叠机制：同类事件自动摘要替代原始记录，节省存储+保持连贯性",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "SOUL.md+procedural_memory.py+memory_compressor.py三层记忆",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ],
+  "digested_at": "2026-06-28T13:10:00+08:00"
+}

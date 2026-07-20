@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.09691",
+  "name": "What Context Does a Coding Agent Actually Need to Act?",
+  "source": "arXiv:cs.LG:2607.09691",
+  "reprocessed_at": "2026-07-20T14:29:53.370628",
+  "content": "A modern coding agent can hold an entire repository in its context window. Most of its reading is wasted -- and the interesting question is not how much context an agent can use, but what it actually \\emph{needs}. We study that question at the moment it matters most: when the agent must \\emph{edit} code. Separating \\emph{finding} the work site from \\emph{acting} on it, we hold localization fixed with an oracle, vary only how the code is represented, and score context against real issue resolutio",
+  "field": "自反层",
+  "summary": "现代编码代理可以存储整个仓库在上下文窗口中，但实际需要的上下文却很少。我们的研究发现，编辑代码时所需的实际上下文非常有限。",
+  "key_insights": [
+    "编码代理在编辑代码时所需的上下文远少于其理论上能够使用的上下文。",
+    "自然语言总结无法回答源码本身解决的行为问题。",
+    "周围的上下文对实际解决问题的影响几乎可以忽略不计。",
+    "压缩的上下文仅需要原始数据量的三分之一就能达到同样的效果。",
+    "代理在决策中的噪声水平可能会影响其表现。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于验证编码代理所需的最小上下文规模，以及如何优化这些上下文以提高代码编辑效率。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

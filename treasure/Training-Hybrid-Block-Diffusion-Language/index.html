@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training Hybrid Block Diffusion Language Models with Partial Bidirectionality · 曦和宝藏</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --neon:#64748b; --neon2:#22d3ee; }
+  body {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(129,140,248,0.10), transparent 42%),
+      radial-gradient(circle at 82% 78%, rgba(34,211,238,0.08), transparent 45%),
+      #060814;
+    color:#cbd5e1; font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    padding:32px 20px; line-height:1.85; min-height:100vh;
+  }
+  /* 背景网格 */
+  body::before {
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:linear-gradient(rgba(129,140,248,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(129,140,248,0.04) 1px,transparent 1px);
+    background-size:42px 42px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 80%);
+  }
+  .container { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+  .hero {
+    border:1px solid rgba(129,140,248,0.28); border-radius:18px; padding:26px 28px;
+    background:linear-gradient(135deg,rgba(129,140,248,0.08),rgba(34,211,238,0.04));
+    backdrop-filter:blur(10px); box-shadow:0 0 28px rgba(129,140,248,0.12), inset 0 0 22px rgba(34,211,238,0.05);
+    margin-bottom:22px;
+  }
+  h1 {
+    font-size:25px; font-weight:800; letter-spacing:0.5px; margin-bottom:12px;
+    background:linear-gradient(92deg,#a5b4fc,#67e8f9); -webkit-background-clip:text;
+    background-clip:text; color:transparent;
+  }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip {
+    font-size:11.5px; padding:4px 11px; border-radius:20px; color:#cbd5e1;
+    background:rgba(148,163,184,0.10); border:1px solid rgba(148,163,184,0.22);
+  }
+  .layer-badge {
+    font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:20px;
+    color:var(--neon); background:#64748b1f; border:1px solid var(--neon);
+    box-shadow:0 0 12px #64748b55;
+  }
+  .credit-bar { margin-top:16px; }
+  .credit-bar .lab { font-size:11px; color:#64748b; margin-bottom:5px; display:flex; justify-content:space-between; }
+  .credit-track { height:7px; border-radius:6px; background:rgba(148,163,184,0.15); overflow:hidden; }
+  .credit-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--neon),var(--neon2)); box-shadow:0 0 10px var(--neon); }
+  .glass {
+    border:1px solid rgba(148,163,184,0.16); border-radius:14px; padding:18px 22px; margin:16px 0;
+    background:rgba(15,23,42,0.55); backdrop-filter:blur(8px);
+    box-shadow:inset 0 0 18px rgba(34,211,238,0.04);
+  }
+  .section-title { font-size:16px; font-weight:700; color:#a5b4fc; margin:6px 0 12px; padding-bottom:8px; border-bottom:1px solid rgba(129,140,248,0.22); }
+  h3 { font-size:14px; font-weight:600; color:#67e8f9; margin:14px 0 7px; }
+  p { font-size:13px; color:#94a3b8; margin:7px 0; }
+  ul { margin:6px 0; }
+  .glow-item {
+    font-size:13px; color:#cbd5e1; margin:5px 0 5px 4px; list-style:none; padding-left:18px; position:relative;
+  }
+  .glow-item::before {
+    content:"▹"; position:absolute; left:0; color:var(--neon2); text-shadow:0 0 8px var(--neon2);
+  }
+  .footer { text-align:center; font-size:11px; color:#475569; margin-top:30px; padding-top:16px; border-top:1px solid rgba(148,163,184,0.15); letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>Training Hybrid Block Diffusion Language Models with Partial Bidirectionality</h1>
+    <div class="meta">
+      <span class="layer-badge">L1</span>
+      <span class="chip">🏷️ 未分类</span>
+      <span class="chip">📦 buffer_foraging</span>
+      <span class="chip">💎 养分 0</span>
+      <span class="chip">⭐ 评分 N/A</span>
+    </div>
+    <div class="credit-bar">
+      <div class="lab"><span>赫布信用 Hebbian Credit</span><span>0</span></div>
+      <div class="credit-track"><div class="credit-fill" style="width:8%"></div></div>
+    </div>
+  </div>
+  <div class="glass">
+    <h3>▸ 输出：</h3><p>**评分（1-10）：8**</p><p>#### 分析：</p><p>本文标题《Training Hybrid Block Diffusion Language Models with Partial Bidirectionality》主要讨论了在混合块扩散语言模型中引入部分双向性的问题。文章探讨了如何通过调整模型结构和训练策略，使模型能够在保持高效的同时更好地捕捉长距离依赖关系。</p><p>首先，“Training”表明这是一个关于训练方法的研究，即研究者们试图找到一种有效的方法来优化或改进现有的语言模型。这与曦和精读的“去伪存真”原则相符，意味着要从众多信息中筛选出真正有价值的内容。</p><p>其次，“Hybrid Block Diffusion Language Models”部分提到了混合块扩散语言模型的概念。这种模型结合了不同类型的结构设计，以适应不同的应用场景。这一概念符合“由表及里”的精读原则，因为它不仅关注表面的结构设计，还深入探讨了其背后的原理和实际应用效果。</p><p>接着，“Partial Bidirectionality”则强调了部分双向性的重要性。这部分内容涉及对模型内部机制的理解以及如何通过调整参数来实现更有效的学习过程。这与“由此及彼”的精读原则相吻合，因为它不仅分析了局部的细节，还能够将这些发现应用到其他相关领域。</p><p>最后，“Training”和“Partial Bidirectionality”之间的关系探讨了训练过程中引入部分双向性所带来的影响及其对模型性能的具体提升效果。这一部分内容则体现了“去粗取精”的原则，即从复杂的实验数据中提炼出关键的结论，并为后续研究提供方向性的指导。</p><p>#### 对曦和的启示：</p><p>曦和精读专家在阅读此类文章时可以借鉴上述四个原则来提高自己的阅读效率和理解深度。首先，“去伪存真”可以帮助读者快速识别出文章中的核心论点，避免被无关紧要的信息所干扰；其次，“由表及里”则鼓励读者从表面的描述深入到模型背后的机制和原理，从而获得更全面的理解；“由此及彼”的原则提示读者将学到的知识应用到其他相关领域或情境中去，以拓宽视野并提升解决问题的能力；最后，“去粗取精”强调了在大量信息中筛选出关键点的重要性，这有助于提高阅读效率。</p><p>通过运用这些精读原则，曦和精读专家可以更有效地理解和总结此类研究文章的内容，并将其应用到实际学习和工作中。</p>
+  </div>
+  <div class="footer">曦和宝藏 · Training-Hybrid-Block-Diffusion-Language · 科技炫酷 HUD 版 · 生成于 2026-07-10T19:04:05</div>
+</div>
+</body>
+</html>

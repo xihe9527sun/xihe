@@ -1,0 +1,17 @@
+﻿{
+  "id": "rl-post-training-builds-compositional-reasoning-",
+  "name": "RL Post-Training Builds Compositional Reasoning Strategies",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:23.004787",
+  "content": "RL Post-Training Builds Compositional Reasoning Strategies",
+  "field": "自反层",
+  "summary": "该研究通过在强化学习训练后的后处理方法构建了组合推理策略。",
+  "key_insights": [
+    "提出一种新的RL后处理技术",
+    "用于构建组合推理能力",
+    "可能对自反层有潜在应用价值"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

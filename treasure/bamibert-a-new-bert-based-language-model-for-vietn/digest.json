@@ -1,0 +1,20 @@
+﻿{
+  "id": "bamibert-a-new-bert-based-language-model-for-vietn",
+  "name": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+  "source": "arXiv cs.CL 2607.02259",
+  "reprocessed_at": "2026-07-20T14:15:31.337810",
+  "content": "In this paper, we introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT -- the current de facto Vietnamese text encoder. Trained from scratch on a 129GB corpus of general-domain Vietnamese text for 20 epochs, BamiBERT supports an extended context length of up to 2048 tokens and operates directly on raw input, eliminating the need for external word segmentation. Across 8 Vietnamese benchmarks, it achieves the best score on 11 of 1",
+  "field": "工具使用",
+  "summary": "In this paper, we introduce BamiBERT, a new pre-trained language model for Vietnamese that addresses key limitations of PhoBERT and achieves state-of-the-art performance across multiple benchmarks.",
+  "key_insights": [
+    "BamiBERT is the first BERT-based language model specifically designed for Vietnamese text encoding.",
+    "It supports an extended context length of up to 2048 tokens, significantly increasing its ability to handle long sequences in natural language processing tasks.",
+    "By operating directly on raw input without requiring external word segmentation, BamiBERT simplifies the preprocessing pipeline and improves efficiency.",
+    "BamiBERT outperforms existing Vietnamese encoders across multiple benchmarks, demonstrating strong generalization capabilities across different domains.",
+    "Its release at Hugging Face indicates its potential for integration into various natural language processing applications."
+  ],
+  "xihe_relevance": "BamiBERT 的高性能和通用性可能对曦和在自然语言处理任务中的性能提升有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

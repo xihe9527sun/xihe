@@ -1,0 +1,18 @@
+﻿{
+  "id": "ideatrail-full-process-agent-trajectories-for-scie",
+  "name": "IdeaTrail: Full-Process Agent Trajectories for Scientific Ideation",
+  "source": "arXiv:cs.AI:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:44.726039",
+  "content": "IdeaTrail: Full-Process Agent Trajectories for Scientific Ideation",
+  "field": "多Agent",
+  "summary": "IdeaTrail 提供了从概念生成到实施的完整代理轨迹，适用于科学构思。",
+  "key_insights": [
+    "提供了完整的科学构思过程中的代理行为记录",
+    "有助于理解不同阶段的思维模式和决策过程",
+    "可以作为其他研究或工具的基础进行对比分析"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供类似的数据支持科学发现的过程研究",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

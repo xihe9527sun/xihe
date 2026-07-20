@@ -1,0 +1,25 @@
+{
+  "id": "ai-agent-agent",
+  "name": "AI Agent评测实践：构建可量化Agent质量标准",
+  "source": "pengjiyuan 2026-03",
+  "discovered": "2026-07-04T14:29:22.608076",
+  "digested": "2026-07-04T14:29:22.608186",
+  "field": "待分类",
+  "content": "Systematic review of 2026 AI Agent evaluation: from task-level benchmarks to production",
+  "intake_score": 0.31,
+  "score_detail": {
+    "relevance_xihe": 0.125,
+    "novelty": 0.6,
+    "actionable": 0.2,
+    "cross_domain": 0.0,
+    "depth": 0.5,
+    "timeliness": 0.7
+  },
+  "memcell": {
+    "born": "2026-07-04T14:29:22.608076",
+    "last_accessed": "2026-07-04T14:29:22.608186",
+    "access_count": 3,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

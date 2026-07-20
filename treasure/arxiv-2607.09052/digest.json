@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09052",
+  "name": "COBS: Cumulant Order Block Sparse Attention",
+  "source": "arXiv:cs.LG:2607.09052",
+  "reprocessed_at": "2026-07-20T14:26:00.645522",
+  "content": "Block sparse attention is a hardware friendly way to alleviate the key-value (KV) cache read bottleneck in large language models (LLMs). However, it is not prevalent among leading open-weight LLMs, which rely instead on dense attention or fine-grained selection, thereby motivating our analysis. We study DeepSeek's Native Sparse Attention (NSA) as a representative method, whose three-branch design lets us isolate block selection, the most challenging and consequential stage. We formalize selectio",
+  "field": "多Agent",
+  "summary": "COBS通过引入累积阶次块稀疏注意力方法，提高了Native Sparse Attention（NSA）在大规模语言模型中的性能，使其接近密集注意力的效果，并且降低了数据读取量。",
+  "key_insights": [
+    "COBS显著提升了NSA的性能，使得其在长文本检索基准上的平均分数从0.2999提高到0.8195，接近于密集注意力的0.9040。",
+    "COBS减少了与NSA相比的数据读取量，仅为NSA的1.21倍和密集注意力的15.15倍。",
+    "COBS不仅提高了性能，还在保持短文本上下文行为的同时，降低了密集注意力在位置级负对数似然（NLL）上的表现。"
+  ],
+  "xihe_relevance": "COBS方法可能对曦和系统中提高模型的效率和减少数据读取需求有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

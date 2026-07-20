@@ -1,0 +1,17 @@
+﻿{
+  "id": "uniclawbench-a-universal-benchmark-for-proactive",
+  "name": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:27.770306",
+  "content": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+  "field": "多Agent",
+  "summary": "UniClawBench是一个用于现实世界任务的通用基准，旨在评估主动代理。",
+  "key_insights": [
+    "提出一个通用基准来评估主动代理在现实世界的性能",
+    "适用于多种真实世界任务的评估框架",
+    "为研究和开发提供标准化测试环境"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其自反层，特别是对于构建更智能、适应性强的系统。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

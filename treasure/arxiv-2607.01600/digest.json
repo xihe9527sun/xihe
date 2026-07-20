@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.01600",
+  "name": "BOUNDARY_SYNC: Multi-Agent Representational Coupling (2607.01600)",
+  "source": "arXiv cs.LG 2026-07",
+  "reprocessed_at": "2026-07-20T14:17:27.514703",
+  "content": "As large language models (LLMs) are deployed as communicating agents, does inter-agent communication cause outputs to converge? We introduce BOUNDARY_SYNC, a protocol measuring representational coupling via the Coupling Amplification Factor (CAF = JSD_cond / JSD_baseline), where CAF < 1 indicates homogenization and CAF > 1 indicates diversification. In controlled GPT-4o experiments (N=30, ~9,900 API calls), we measure coupling in text and image communication. Key findings: (1) text communication",
+  "field": "多Agent",
+  "summary": "在大规模语言模型作为通信代理被部署的情况下，相互之间的交流是否会导致输出趋同？我们引入了BOUNDARY_SYNC协议，通过Coupling Amplification Factor (CAF = JSD_cond / JSD_baseline) 来测量表示耦合。CAF < 1 表示趋同，CAF > 1 表示多样化。",
+  "key_insights": [
+    "文本通信导致显著的趋同（CAF=0.803 [0.740, 0.873]），且在无交流对照和提示扰动控制下得到证实。",
+    "图像通信也遵循内部模态基准线，在这种情况下，CAF=0.834 [0.811, 0.858]，与比例效应相当。",
+    "群体规模影响耦合方向：K=5时产生趋同，而K=3时得到CAF > 1.0（点估计值为1.14和1.06）的结果，暗示向多样化方向的转变。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

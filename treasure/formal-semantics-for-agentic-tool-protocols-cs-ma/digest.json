@@ -1,0 +1,18 @@
+﻿{
+  "id": "formal-semantics-for-agentic-tool-protocols-cs-ma",
+  "name": "Formal Semantics for Agentic Tool Protocols (cs.MA)",
+  "source": "arXiv cs.MA 2026-07",
+  "reprocessed_at": "2026-07-20T14:18:00.278464",
+  "content": "Formal Semantics for Agentic Tool Protocols (cs.MA)",
+  "field": "多Agent",
+  "summary": "Formal Semantics for Agentic Tool Protocols 提供了一种形式化的协议语义方法，适用于代理工具。",
+  "key_insights": [
+    "提出了一个用于代理工具协议的形式化语义模型。",
+    "该模型有助于理解和验证复杂的多Agent系统中的通信机制。",
+    "对于需要高度精确和可预测性的应用（如量化交易），此模型具有潜在价值。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种新的方法来分析和设计代理工具协议，这可能有助于提高系统的整体性能和可靠性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "language-models-as-measurement-apparatus-for-cultu",
+  "name": "Language Models as Measurement Apparatus for Culture",
+  "source": "arXiv cs.CL 2607.02459",
+  "reprocessed_at": "2026-07-20T14:16:23.409542",
+  "content": "Language models are increasingly used to quantify cultural phenomena, but what makes such measurement distinctively cultural? This paper argues that NLP work on culture is a material-discursive practice: the apparatus -- model, data, annotation, evaluation -- participates in constituting the cultural reality it measures, rather than passively recording it. Drawing on Karen Barad's concept of the agential cut -- the contingent boundary between phenomenon and instrument -- I show that the apparatu",
+  "field": "自反层",
+  "summary": "语言模型被用于量化文化现象，但这种测量方式的独特性何在？本文认为自然语言处理（NLP）中的文化研究是一种物质-话语实践：模型、数据、注释和评估共同参与构成其测量的文化现实，而非被动记录。通过Karen Barad的‘代理切’概念——现象与仪器之间的偶然界限——我展示了这些设计选择如何划定边界，并且由于语言模型已经内化了大部分要测量的文化材料，这种界限从一开始就交织在一起。",
+  "key_insights": [
+    "文化测量的独特性在于其物质-话语实践的本质",
+    "语言模型通过其设计选择参与构成所测量的文化现实",
+    "语言模型内部化了部分被测量的文化内容",
+    "代理切的概念有助于理解这些边界如何形成和交织",
+    "研究程序应是理论驱动、严谨的实证研究并具有文化相关性"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供一种新的方法论框架来理解和分析语言模型在文化测量中的作用，这可能有助于提高文化研究的准确性和深度。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

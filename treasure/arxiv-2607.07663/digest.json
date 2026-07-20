@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.07663",
+  "name": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+  "source": "arXiv:cs.AI:2607.07663",
+  "reprocessed_at": "2026-07-20T14:23:12.674641",
+  "content": "AI systems increasingly participate in their own improvement: revising their outputs, adapting their own harnesses during deployment, training on data they generate, and, increasingly, conducting AI research itself. This literature is described under a vocabulary (\"self-refine,\" \"self-reward,\" \"self-play,\" \"self-evolve\") that conflates fundamentally different ambitions. We survey 1,250 arXiv papers (2024-2026) along two axes: what the system improves -- its behavior in deployment, its policy thr",
+  "field": "自反层/进化引擎",
+  "summary": "AI系统的改进活动从自我调整、适应部署环境到自主进行研究，这一领域涵盖了多种不同的目标和方法。",
+  "key_insights": [
+    "当前的研究文献中存在对不同改进目标的混淆用语（如自反思、自奖励等），需要明确区分这些概念。",
+    "研究论文主要集中在行为调整、训练策略优化等方面，而自主研究仍然受限于技术限制。",
+    "AI自我评估成为一种常见的方法，但其有效性仍有待验证。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供一个清晰且有效的分类框架来区分不同类型的AI改进活动。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

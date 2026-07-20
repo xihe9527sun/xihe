@@ -1,0 +1,71 @@
+{
+  "treasure_id": "easm-emotion-memory",
+  "treasure_name": "EASM: 情绪感知状态记忆 — 情绪索引检索 + 心境依存记忆",
+  "source": "arXiv 2605.14833 · EASM Architecture",
+  "discovered": "2026-07-12T08:50:00+08:00",
+  "digested": "2026-07-12T08:50:00+08:00",
+  "layer": "L2（暖度层）· L5（自反调制层）· L4（催化层）",
+  "intake_score": 0.85,
+  "score_detail": {
+    "relevance_xihe": 0.88,
+    "novelty": 0.86,
+    "actionable": 0.82,
+    "cross_domain": 0.87,
+    "depth": 0.83,
+    "timeliness": 0.84
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "情绪索引检索 (Emotion-Indexed Retrieval)",
+      "type": "retrieval_mechanism",
+      "value": 0.92,
+      "description": "R(m) = α·sim_sem(m,q) + (1-α)·sim_emo(m,e)。检索不只看语义相似度，还看情绪相似度。Alpha参数动态可调，让情绪状态成为检索信号而非属性。使记忆锚定质量提升95%。",
+      "xihe_gap": "曦和Imprint三层记忆只有语义检索权重。没有情绪维度。暖度指数(0-10)是会话级度量，没有融入记忆检索。",
+      "application": "在bridge/event_bus.py中扩展记忆检索管道：新增情绪维度嵌入。暖度指数作为短期情绪信号，自反层的自我评估分数作为长期情绪状态。融合进Imprint的记忆检索路由。"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "心境依存记忆 (Mood-Dependent Memory)",
+      "type": "psychological_principle",
+      "value": 0.86,
+      "description": "心理学原理：当检索时的情绪状态与编码时的情绪状态匹配时，记忆提取效果最佳。EASM用双索引(语义+情绪)使此原理工程化。",
+      "xihe_gap": "曦和没有情绪状态的一致性追踪。同一会话内可能有"沮丧→好奇"的情绪切换，但没有标记不同情绪下编码的记忆片段的情绪上下文。",
+      "application": "在bridge/event_bus.py中，每次Imprint写入时附加情绪状态向量(从暖度指数+自反调制评分推导)。检索时按情绪相似度加权。"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "意图推断模块",
+      "type": "architecture_module",
+      "value": 0.82,
+      "description": "独立于情绪识别的意图推断：识别用户是"先倾听"还是"寻求验证"还是"制定计划"。情绪不等于意图，相同情绪对应完全不同的需求结构。",
+      "xihe_gap": "曦和与盘古的交互中基于暖度指数推断情绪，但没有显式的意图推断层。盘古说"这个不行"——是失望、是纠错、还是引导？需要区分。",
+      "application": "在bridge/event_bus.py的感知管道中增加intent_inference模块：7类意图分类(倾听/验证/降级/计划/宣泄/纠错/引导)。影响响应策略选择。"
+    },
+    {
+      "id": "nutrient-4",
+      "name": "情绪融合引擎 (Emotion Fusion)",
+      "type": "algorithm",
+      "value": 0.80,
+      "description": "E_unified = β·E_voice + (1-β)·E_text，β根据输入模态的置信度动态调整。将语音韵律+文本语义融合为统一情绪状态。",
+      "xihe_gap": "曦和当前只有文本信号。但如果未来接入语音/视频模态，情绪融合引擎是关键预研。而且即使只有文本，不同文本段落之间的情绪权重也可以动态调节(β=confidence of text segment)。",
+      "application": "先实现单模态版本：在bridge/event_bus.py中，从盘古的输入文本中提取多段情绪信号，用β权重混合(β=段落置信度)。评估阶段。"
+    }
+  ],
+  "cross_refs": [
+    "copewell-a-multi-agent-swarm-architectur",
+    "imprint-cognitive-compression",
+    "counterfactual-planning-aaai2026"
+  ],
+  "hebbian_credit": 7,
+  "origin": "daily_foraging_2026-07-12",
+  "memcell": {
+    "born": "2026-07-12T08:50:00+08:00",
+    "last_accessed": "2026-07-12T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["情绪记忆", "情感计算", "暖玉感", "检索增强", "心境依存"],
+    "subsystem": ["bridge", "memory", "cortex"]
+  }
+}

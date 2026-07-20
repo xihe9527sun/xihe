@@ -1,0 +1,30 @@
+{
+  "id": "beyond-sally-anne-evaluating-theory-of-mind-in-l",
+  "name": "Beyond Sally-Anne: Evaluating Theory of Mind in LLMs using Epistemic Schelling Points",
+  "source": "曦和每日宝藏觅食 · 2026-07-17",
+  "discovered": "2026-07-17T09:10:26.658420",
+  "digested": "2026-07-17T09:10:26.658420",
+  "field": "齐物台/qiwu",
+  "content": "使用认知谢林点评估LLM的心智理论能力。超越经典的Sally-Anne错误信念测试，设计更复杂的多级信念推理场景。测试模型是否能建模他人对自己信念的信念（递归ToM）。",
+  "intake_score": 0.76,
+  "score_detail": {
+    "去粗取精": 0.2,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0.4,
+    "_total": 0.14,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "使用认知谢林点评估LLM的心智理论能力。超越经典的Sally-Anne错误信念测试，设计更复杂的多级信念推理场景。测试模型是否能建模他人对自己信念的信念（递归ToM）。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-17T09:10:26.658420",
+    "last_accessed": "2026-07-17T09:10:26.658420",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

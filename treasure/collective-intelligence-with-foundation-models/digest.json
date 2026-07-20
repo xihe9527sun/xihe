@@ -1,0 +1,17 @@
+﻿{
+  "id": "collective-intelligence-with-foundation-models",
+  "name": "Collective Intelligence with Foundation Models",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:02:59.417984",
+  "content": "Collective Intelligence with Foundation Models",
+  "field": "多Agent",
+  "summary": "该文章探讨了如何利用基础模型实现集体智能。",
+  "key_insights": [
+    "集体智能的实现依赖于基础模型",
+    "基础模型在集体智能中的作用有待探索",
+    "需要进一步研究如何优化基础模型以提升集体智能效果"
+  ],
+  "xihe_relevance": "自反层,进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

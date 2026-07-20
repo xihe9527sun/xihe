@@ -1,0 +1,20 @@
+﻿{
+  "id": "veritas-multi-agent-co-scientist-for-medical-imagi",
+  "name": "VERITAS: Multi-Agent Co-Scientist for Medical Imaging (cs.MA)",
+  "source": "arXiv cs.MA 2026-07",
+  "reprocessed_at": "2026-07-20T14:18:28.614719",
+  "content": "VERITAS: Multi-Agent Co-Scientist for Medical Imaging (cs.MA)",
+  "field": "多Agent",
+  "summary": "VERITAS是一种用于医学成像的多代理协同科学家，旨在通过多智能体技术提高医疗影像分析的效率和准确性。",
+  "key_insights": [
+    "VERITAS利用多智能体系统来模拟人类专家在复杂任务中的协作方式",
+    "该系统能够处理大量数据并从中提取有价值的信息以辅助诊断",
+    "VERITAS的设计考虑了自反层、进化引擎和元认知机制，以提升其自主学习和适应能力",
+    "对于曦和项目来说，VERITAS可以作为一种先进的多智能体框架来增强其功能",
+    "VERITAS的成功应用可能推动相关技术在医疗影像分析领域的进一步发展"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供一种高效的多智能体解决方案以加速医学成像分析过程",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

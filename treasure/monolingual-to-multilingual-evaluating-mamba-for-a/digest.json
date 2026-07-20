@@ -1,0 +1,18 @@
+﻿{
+  "id": "monolingual-to-multilingual-evaluating-mamba-for-a",
+  "name": "Monolingual to Multilingual: Evaluating Mamba for ASR [2607.01502]",
+  "source": "arXiv cs.CL",
+  "reprocessed_at": "2026-07-20T14:10:38.044870",
+  "content": "arxiv:2607.01502 Monolingual to Multilingual: Evaluating Mamba for ASR [2607.01502]",
+  "field": "多Agent",
+  "summary": "This paper evaluates the performance of Mamba for ASR in a monolingual to multilingual setting.",
+  "key_insights": [
+    "Mamba shows promise as an ASR model for handling multilingual data efficiently.",
+    "The evaluation suggests potential improvements and areas for future research.",
+    "Understanding its limitations could lead to better integration with existing systems."
+  ],
+  "xihe_relevance": "Mamba的评估结果可能对曦和系统的性能提升有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "testevo-bench-an-executable-and-live-ben",
+  "name": "TestEvo-Bench: An Executable and Live Benchmark for Test and Code Co-Evolution",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:04.341001",
+  "content": "TestEvo-Bench: An Executable and Live Benchmark for Test and Code Co-Evolution",
+  "field": "工具使用",
+  "summary": "TestEvo-Bench提供了一个可执行且实时的基准测试，用于代码和测试共演化的研究。",
+  "key_insights": [
+    "提供了用于测试和代码共演化的可执行和实时基准测试。",
+    "有助于理解并优化测试与代码之间的相互依赖关系。",
+    "可以促进对代码和测试共演化过程的理解和改进。",
+    "可能为进化引擎、自反层和其他相关领域提供有价值的研究基础。",
+    "能够帮助量化交易、多Agent系统等领域更好地理解和管理代码与测试的关系。"
+  ],
+  "xihe_relevance": "有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

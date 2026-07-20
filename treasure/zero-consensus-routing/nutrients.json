@@ -1,0 +1,61 @@
+{
+  "id": "zero-consensus-routing",
+  "name": "零共识路由 — REDEREF贝叶斯委派 × FREE-MAD分数决策",
+  "sources": [
+    {
+      "name": "REDEREF: Training-free Online Bayesian Delegation",
+      "note": "无需训练的在线贝叶斯委派与概率化动态路由，零开销动态决策"
+    },
+    {
+      "name": "FREE-MAD: Free of Consensus Multi-Agent Debate",
+      "note": "颠覆性提出无需共识的辩论，用分数决策替代共识轮次，大幅节省token"
+    },
+    {
+      "name": "多Agent通信报告 (AI Insight)",
+      "url": "https://www.ai-insight.org/reports/multi-agent-comm-2026",
+      "accessed": "2026-07-09"
+    }
+  ],
+  "discovered": "2026-07-09T08:50:00",
+  "field": "AI架构·多Agent路由",
+  "intake_score": 0.92,
+  "score_detail": {
+    "relevance_xihe": 0.95,
+    "novelty": 0.85,
+    "actionable": 0.9,
+    "cross_domain": 0.9,
+    "depth": 0.95,
+    "timeliness": 0.95
+  },
+  "four_principles_filter": {
+    "去粗取精": "从5种通信协议+7大架构范式中筛选出【REDEREF贝叶斯委派】【FREE-MAD零共识辩论】【MCP/A2A分层协议】三条最直接相关的线索",
+    "去伪存真": "FREE-MAD的'零共识'思想已被AI Insight报告验证（多Agent通信中P2P模式正在崛起），REDEREF在MMLU上有+25%提升的实证。两者都是2026年最新工作，工程可行性高",
+    "由此及彼": "【REDEREF贝叶斯委派↔曦和Beta-Bernoulli TS概率路由】发现重大同构！曦和的代谢路由已经实现Beta-Bernoulli Thompson Sampling，但REDEREF提供了更形式化的'概率化委派'框架，可直接升级现有路由；【FREE-MAD分数决策↔曦和惊奇信用系统】内核一致——曦和已用惊奇度替代热度，FREE-MAD用分数替代共识，共同指向'零共识'原则",
+    "由表及里": "多Agent通信和路由正在经历'从指令式到概率式'的范式转换。曦和走在正确的路上——TS路由和惊奇信用系统已经是概率式思维的体现。但缺少了两个关键：①路由的动态拓扑适配（目前是固定酶网络，应支持per-query异构拓扑）②零共识辩论的分数决策机制可以优化桥接系统的输出合成"
+  },
+  "xihe_mapping": {
+    "subsystem": "代谢路由 bridge/event_bus.py",
+    "enhancement_points": [
+      "将当前Beta-Bernoulli TS路由升级为REDEREF风格的概率化动态路由（增加任务类型感知）",
+      "引入FREE-MAD的分数决策机制到桥接系统的输出阶段",
+      "借鉴MCP/A2A分层思想：事件总线=传输层，代谢路由=路由层，酶网络=应用层"
+    ]
+  },
+  "fusion_plan": {
+    "phase1": "REDEREF风格路由升级 — 在bridge/event_bus.py中增加任务类型维度到TS概率计算中（当前只有历史成功率，应该加入'任务复杂度'和'预期耗时'维度）",
+    "phase2": "FREE-MAD分数决策 → bridge-daemon输出阶段：多个酶的催化结果不再做共识投票，而是用分数加权合成",
+    "phase3": "per-query异构拓扑 — 在enzyme_crosslink.py基础上，允许每次调用动态选择子图（当前51边全部激活，应支持按查询类型激活子集）"
+  },
+  "digest_notes": "这是今天最大的发现。REDEREF的'无需训练的在线贝叶斯委派'和曦和的代谢路由几乎是同一件事的两种表述——但REDEREF的数学框架更完整。FREE-MAD的'零共识'原则更是直接戳中了桥接系统的一个痛点：每次输出都要走共识，token浪费很大。如果用分数决策替代共识投票，桥接系统的延迟和token消耗都能显著降低。这不仅仅是知识增长，这是曦和现有架构的'形式化补全'——我们用工程经验实现了TS路由，现在有形式化论文给它做理论支撑了。",
+  "yan_tao_decision": {
+    "phase": "phase1-3",
+    "decision": "✅ 入库 + 规划落地(分阶段)",
+    "landing": "规划态(待分阶段落地)",
+    "subsystem": "代谢路由/event_bus",
+    "enhancement": "REDEREF概率化委派升级TS路由 + FREE-MAD分数决策替代共识投票",
+    "intake_score": 0.92,
+    "date": "2026-07-09",
+    "backed_at": "2026-07-09T21:10:00",
+    "note": "研讨厅补固化(五处差距核心宝藏,历史入库)"
+  }
+}

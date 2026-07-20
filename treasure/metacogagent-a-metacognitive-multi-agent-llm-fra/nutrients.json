@@ -1,0 +1,35 @@
+{
+  "id": "metacogagent-a-metacognitive-multi-agent-llm-fra",
+  "name": "MetaCogAgent: A Metacognitive Multi-Agent LLM Framework with Self-Aware Task Delegation",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.706846",
+  "field": "代谢路由/event_bus",
+  "intake_score": 0.89,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "代谢路由/event_bus",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "代谢路由/event_bus",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.89,
+    "backed_at": "2026-07-18T09:10:30.706482"
+  },
+  "digest_notes": "提出元认知多Agent框架，每个Agent配备元认知自我评估单元，执行前评估任务与能力的匹配度。自评估机制结合语言化不确定性+历史能力图谱估计置信度，自适应委派协议将低置信任务路由给更合适Agent。MetaCog-Eval基准700任务准确率82.4%，比最优路由高8.7%。"
+}

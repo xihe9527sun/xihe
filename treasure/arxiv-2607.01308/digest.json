@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.01308",
+  "name": "Cache Merging: Multi-Agent Latent Reasoning (cs.MA)",
+  "source": "arXiv cs.MA 2026-07",
+  "reprocessed_at": "2026-07-20T14:17:38.871334",
+  "content": "Cache Merging: Multi-Agent Latent Reasoning (cs.MA)",
+  "field": "多Agent",
+  "summary": "Cache Merging: Multi-Agent Latent Reasoning (cs.MA) 提供了一种新的方法来处理多智能体系统中的缓存合并问题，通过多智能体的潜在推理机制实现更高效的资源管理。",
+  "key_insights": [
+    "该研究提出了一种新的多智能体系统模型，能够有效地解决缓存合并的问题。",
+    "通过引入多智能体的潜在推理机制，可以提高系统的灵活性和效率。",
+    "这种方法对量化交易、记忆系统以及自反层等领域具有潜在的应用价值。"
+  ],
+  "xihe_relevance": "该研究可能对曦和项目在多Agent系统中的应用有重要影响。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

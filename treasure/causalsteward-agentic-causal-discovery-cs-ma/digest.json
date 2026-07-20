@@ -1,0 +1,20 @@
+﻿{
+  "id": "causalsteward-agentic-causal-discovery-cs-ma",
+  "name": "CausalSteward: Agentic Causal Discovery (cs.MA)",
+  "source": "arXiv cs.MA 2026-07",
+  "reprocessed_at": "2026-07-20T14:17:43.656672",
+  "content": "CausalSteward: Agentic Causal Discovery (cs.MA)",
+  "field": "多Agent",
+  "summary": "CausalSteward 提出了一种新的代理因果发现方法，旨在解决复杂系统的因果关系识别问题。",
+  "key_insights": [
+    "提出了Agentic Causal Discovery框架",
+    "能够处理多Agent系统中的因果关系",
+    "具有较高的泛化能力和鲁棒性",
+    "对量化交易和自反层研究有潜在价值",
+    "有助于理解复杂的因果网络"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

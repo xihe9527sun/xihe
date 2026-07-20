@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "zylos.ai · AI Agent Memory Architectures (2026-04-05) · arXiv 2603.07670",
+    "name": "记忆三分类对标验证：情景/语义/程序 vs 曦和记忆层",
+    "digested_at": "2026-07-02T08:50:00+08:00",
+    "field": "L1超图核 · L5自反层 · 记忆系统对标"
+  },
+  "nutrients": [
+    {
+      "id": "N70",
+      "name": "情景记忆的曦和映射：事件记录系统",
+      "insight": "情景记忆=时间有序的事件日志。曦和的daily logs(.workbuddy/memory/YYYY-MM-DD.md)和chronicles已经是天然的情景记忆实现。但与标准相比缺失双时态标注(事实发生时间vs系统记录时间)——当曦和回溯3天前的执行时，无法区分'什么时候做的'vs'什么时候记录的'。",
+      "target": "日常日志模板 / chronicles 格式",
+      "status": "pending",
+      "hebbian_credit": 7
+    },
+    {
+      "id": "N71",
+      "name": "语义记忆的曦和映射：超图核+皮层",
+      "insight": "语义记忆=声明性知识与关系。曦和的超图核(cortex/)+MEMORY.md+工作记忆天然是语义记忆。综述强调'当前认为为真的信息——非时间性'。曦和MEMORY.md恰好匹配。但差距在于缺少显式的LLM自主冲突检测管道——当新事实与旧结论矛盾时，当前靠人工(盘古)解决。",
+      "target": "cortex/ · MEMORY.md · 冲突检测管道",
+      "status": "digested",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N72",
+      "name": "程序记忆的曦和映射：Skill系统+声明式规则",
+      "insight": "综述强调'最适合作为系统提示注入，而非向量库检索'。曦和的Skill系统(CLAUDE.md/SOUL.md/IDENTITY.md/skills/)天然是程序记忆。特别是xihe-causal-cortex技能和workbuddy内置技能——它们编码了'如何做事'。但差距在于缺少Agent可写性——Skill目前是盘古创建的，曦和不能自主产出新Skill。",
+      "target": "skill-creator / SKILL.md / skill-manage",
+      "status": "digested",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N73",
+      "name": "混合向量+图 vs 曦和纯图架构",
+      "insight": "综述推荐混合架构(向量+图)作为存储标准。曦和是纯图架构(超图核)→擅长关系推理但不擅长模糊语义检索。如果曦和引入轻量向量索引作为检索层，可以既有关系精确性又有语义覆盖。但需要评估这个复杂度是否值得——当前规模(<20MB)下纯图够用。",
+      "target": "超图核 · 向量化思考",
+      "status": "pending",
+      "hebbian_credit": 6
+    },
+    {
+      "id": "N74",
+      "name": "记忆污染防御 vs 曦和免疫系统",
+      "insight": "综述将记忆污染列为最高级威胁，建议分层防御(异常监控+复合信任评分+行为漂移检测)。曦和的免疫系统(先天+适应性+风格KL散度)恰好是同一问题的不同工程实现。免疫系统是曦和在'防御'侧的成熟方案。综述从'污染'视角提供了免疫系统未覆盖的场景——攻击者通过对话注入恶意记忆而非通过皮层入侵。这是免疫系统的扩展边界。",
+      "target": "免疫系统 · 探触梭+风格KL散度",
+      "status": "digested",
+      "hebbian_credit": 8
+    }
+  ]
+}

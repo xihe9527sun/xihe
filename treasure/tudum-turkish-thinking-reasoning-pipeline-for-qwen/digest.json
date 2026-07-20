@@ -1,0 +1,18 @@
+﻿{
+  "id": "tudum-turkish-thinking-reasoning-pipeline-for-qwen",
+  "name": "TUDUM: Turkish-Thinking Reasoning Pipeline for Qwen3.5 [2607.01927]",
+  "source": "arXiv cs.CL",
+  "reprocessed_at": "2026-07-20T14:11:17.180264",
+  "content": "arxiv:2607.01927 TUDUM: Turkish-Thinking Reasoning Pipeline for Qwen3.5 [2607.01927]",
+  "field": "自反层/进化引擎",
+  "summary": "This paper introduces TUDUM, a reasoning pipeline specifically designed for the Qwen3.5 model with Turkish language capabilities.",
+  "key_insights": [
+    "TUDUM is tailored to handle Turkish-language reasoning tasks efficiently.",
+    "It aims to improve the self-reflection and adaptability of the Qwen3.5 model.",
+    "The system could potentially be applied in various fields such as finance, multi-agent systems, and more."
+  ],
+  "xihe_relevance": "TUDUM's potential for enhancing the Qwen3.5 model could have significant value for the self-reflection layer of a曦和 system.",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

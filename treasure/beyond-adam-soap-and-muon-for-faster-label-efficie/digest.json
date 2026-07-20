@@ -1,0 +1,18 @@
+﻿{
+  "id": "beyond-adam-soap-and-muon-for-faster-label-efficie",
+  "name": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of ML Interatomic Potentials",
+  "source": "arXiv cs.AI 2607.02499",
+  "reprocessed_at": "2026-07-20T14:14:37.606758",
+  "content": "Machine learning interatomic potentials (MLIPs) have become a hallmark of AI for scientific simulation. While efforts on new architectures and datasets have led to increasingly accurate and general models, the choice of optimizer for training has largely remained unexplored, defaulting to Adam and its variants in the community. Here, we implement and systematically compare a class of recently proposed matrix-structured optimizers, including Muon, SOAP, and the hybrid SOAP-Muon, for training Nequ",
+  "field": "多Agent",
+  "summary": "机器学习原子势能（MLIPs）已成为人工智能在科学模拟中的标志。尽管新架构和数据集的努力提高了模型的准确性和通用性，但优化器的选择仍然没有得到充分探索，社区中默认使用Adam及其变体。我们对比了包括SOAP、Muon和混合SOAP-Muon在内的最近提出的矩阵结构优化器，用于训练NequIP和Allegro MLIP模型。结果表明，这些优化器在收敛速度和最终精度上都显著优于Adam。",
+  "key_insights": [
+    "SOAP和SOAP-Muon作为稳健且表现稳定的优化方法脱颖而出",
+    "Muon相对于Adam仅提供部分增益",
+    "在部分力监督下，优化器选择的改进尤为明显"
+  ],
+  "xihe_relevance": "对曦和（可能是指自反层）的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

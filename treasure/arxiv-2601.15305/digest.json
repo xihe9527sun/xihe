@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2601.15305",
+  "name": "Gated Sparse Attention: Combining Computational Efficiency with Training Stability for Long-Context Language Models",
+  "source": "arXiv:cs.AI:2601.15305",
+  "reprocessed_at": "2026-07-20T14:26:58.591901",
+  "content": "The computational burden of attention in long-context language models has motivated two largely independent lines of work: sparse attention mechanisms that reduce complexity by attending to selected tokens, and gated attention variants that improve training sta-bility while mitigating the attention sink phenomenon. We observe that these approaches address complementary weaknesses and propose Gated Sparse Attention (GSA), an architecture that realizes the benefits of both. GSA incorporates a gate",
+  "field": "自反层",
+  "summary": "Gated Sparse Attention结合了计算效率与训练稳定性，通过引入带有sigmoid激活的门控索引器和适应性稀疏控制器来实现。",
+  "key_insights": [
+    "Gated Sparse Attention（GSA）同时解决了稀疏注意力机制降低复杂度和门控注意力提高训练稳定性的互补问题。",
+    "GSA架构包括一个带有sigmoid激活的门控索引器，用于产生有界且可解释的选择分数。",
+    "适应性稀疏控制器根据局部不确定性调整被关注的令牌数量。",
+    "在1.7B参数模型上进行实验时，GSA在保持高效的同时提高了质量，并减少了注意力到第一个令牌的比例。",
+    "训练稳定性显著提高，损失波动减少98%。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

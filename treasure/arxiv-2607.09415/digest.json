@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09415",
+  "name": "Self-Guided Test-Time Training for Long-Context LLMs",
+  "source": "arXiv:cs.CL:2607.09415",
+  "reprocessed_at": "2026-07-20T14:26:20.566436",
+  "content": "Long-context processing has become increasingly important for large language models (LLMs), but simply extending the context window does not guarantee effective utilization of long inputs. As input length grows, accuracy often degrades, indicating that models still struggle to identify and use the evidence most relevant to a question. A promising way to improve long-context utilization is test-time training (TTT), which treats the test context as a training example for instance-specific paramete",
+  "field": "自反层",
+  "summary": "针对长输入的有效利用，提出了一种新的测试时间训练方法Self-Guided TTT (S-TTT)，通过在适应前识别出模型应学习的证据段落来改进标准语言建模目标的应用范围。这种方法显著提高了Qwen3-4B-Thinking-2507和Llama-3.1-8B-Instruct在LongBench-v2和LongBench-Pro两个挑战性长上下文推理基准上的准确率。",
+  "key_insights": [
+    "测试时间训练（TTT）可以有效提高大语言模型对长输入的处理能力，但直接应用于整个长上下文是昂贵且不切实际的。",
+    "随机抽取的段落进行适应会产生噪声，并可能降低基础模型的表现。",
+    "通过在自适应前识别出特定问题相关的证据段落来改进训练质量，可以显著提高性能。"
+  ],
+  "xihe_relevance": "对曦和（Alibaba Cloud）潜在价值：该方法有望提升大语言模型处理长上下文的能力，从而增强其在各种应用中的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

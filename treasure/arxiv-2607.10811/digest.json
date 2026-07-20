@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10811",
+  "name": "Distributed Agent System: Fault-Tolerant Collaboration Among Embodied Agents",
+  "source": "arXiv:cs.MA:2607.10811",
+  "reprocessed_at": "2026-07-20T14:27:49.897967",
+  "content": "AI engineering is shifting from passive text generation by large language models (LLMs) to agent-driven task execution, creating new reliability challenges for long-horizon tasks under resource constraints and environmental uncertainty. Conventional error-elimination optimization strategies fail to address cumulative error propagation. This paper proposes Distributed Agent System (DAS), a device-edge-cloud framework for fault-tolerant collaboration among heterogeneous agents. We redefine agent r",
+  "field": "多Agent",
+  "summary": "本文提出了一种分布式代理系统（DAS），用于在资源受限和环境不确定性下，异构代理之间实现容错协作。该框架重新定义了代理的可靠性为系统级别的故障容忍性而非单次任务零错误精度，并提出了两层容错架构：单个代理执行可靠性的容错对齐以及跨代理通信可靠的半形式语言协议。",
+  "key_insights": [
+    "DAS 提出了一个新的容错协作框架，适用于资源受限和环境不确定性的工业场景。",
+    "重新定义了代理的可靠性为系统级别的故障容忍性而非单次任务零错误精度。",
+    "引入了两层容错架构：单个代理执行可靠性和跨代理通信可靠性。"
+  ],
+  "xihe_relevance": "该框架可能有助于提高异构代理在工业场景中的协作效率和稳定性，从而对曦和的自反层、进化引擎等模块有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

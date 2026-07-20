@@ -1,0 +1,18 @@
+﻿{
+  "id": "grounding-spatial-relations-instruction-leakage-",
+  "name": "Grounding Spatial Relations: Instruction Leakage and a Goal-Free Dynamics Fix",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T14:05:10.284943",
+  "content": "Grounding Spatial Relations: Instruction Leakage and a Goal-Free Dynamics Fix",
+  "field": "进化引擎",
+  "summary": "本文探讨了Grounding Spatial Relations中的指令泄漏问题，并提出了一种无需目标导向的动态修复方法。",
+  "key_insights": [
+    "文章提出了一个新的方法来解决Grounding Spatial Relations中的指令泄漏问题。",
+    "该方法通过引入一种新的机制，使得模型在处理空间关系时不会受到先前指令的影响。",
+    "此外，这种方法还能够自动修正由于初始条件变化导致的动态偏差。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可以改进现有模型在处理复杂任务时的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

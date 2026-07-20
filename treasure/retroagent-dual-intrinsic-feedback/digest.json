@@ -1,0 +1,20 @@
+﻿{
+  "id": "retroagent-dual-intrinsic-feedback",
+  "name": "RetroAgent: 回顾式双重内在反馈 — 内在数值+内在语言×SimUtil-UCB",
+  "source": "arXiv:2603.08561 · 上海AI实验室+新加坡国立大学",
+  "reprocessed_at": "2026-07-20T14:37:35.850894",
+  "content": "Standard reinforcement learning (RL) for large language model (LLM) agents primarily optimizes extrinsic task rewards, often favoring isolated task completion over continual adaptation. This paradigm can cause premature convergence to suboptimal policies and leaves useful experience only implicitly encoded in model parameters, limiting its retrieval and reuse for future decisions. We introduce RetroAgent, an online RL framework that trains agents to master interactive environments not merely by ",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "RetroAgent通过引入回顾式双重内在反馈机制，即基于增量子任务进展的数值奖励和用于经验重用的文本教训，实现了对大型语言模型代理的有效训练，显著提升了其在多个挑战性代理基准测试中的性能。",
+  "key_insights": [
+    "RetroAgent利用人类回顾式自我提升的概念来改进强化学习框架。",
+    "它引入了双重内在反馈机制：数值奖励和语言反馈，以促进持续适应而非孤立任务完成。",
+    "SimUtil-UCB策略用于有效检索这些反馈信息，并在多个代理基准测试中实现了显著性能提升。",
+    "RetroAgent展示了强大的测试时间适应性和泛化能力。",
+    "其方法对记忆系统、自反层和进化引擎等领域的研究具有潜在价值。"
+  ],
+  "xihe_relevance": "RetroAgent的方法可能有助于提高语言模型在复杂环境中的表现，特别是在需要长期学习和适应的场景中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10248",
+  "name": "One mechanism for many mental spaces: a shared router over a value slot in language models",
+  "source": "arXiv:cs.CL:2607.10248",
+  "reprocessed_at": "2026-07-20T14:29:23.173857",
+  "content": "Language builds discourse contexts other than the actual: a painting, a belief, a memory, a hypothetical. Each is a mental space in which the same entity can take a different value, as when a flower is red in reality but purple in a portrait. Formal semantics keeps these contexts apart because their logics differ (modal, temporal, doxastic, depictive); Fauconnier's mental-space theory treats them as one space-building operation. We ask which of these a transformer language model implements, and ",
+  "field": "多Agent",
+  "summary": "通过一个共享路由器和值槽，Transformer语言模型实现了Fauconnier的统一机制。该模型在一个格式中使用了可重用的价值槽来存储属性内容，并使用因果上可操作的路由选择读取哪个空间。",
+  "key_insights": [
+    "Transformer语言模型采用了Fauconnier的统一机制，实现了一个共享路由器和值槽。",
+    "一个子空间通过分布式对齐搜索训练控制一种类型的空间（如反事实、信念、虚构或时间），能够影响其他类型的子空间。",
+    "该机制驱动了推理并组合新的路由。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "reflection-agent-architecture",
+  "name": "反思型AI Agent架构 · Self-Refine + Reflexion + Reflection",
+  "source": "foreverwebs.com · 2026-04-24",
+  "reprocessed_at": "2026-07-20T13:56:21.667007",
+  "content": "反思型AI Agent架构 · Self-Refine + Reflexion + Reflection",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "反思型AI Agent架构结合了自我改进(Self-Refine)、反射(Reflection)和内省(Reflexion)机制，旨在提升智能代理的自适应性和学习能力。",
+  "key_insights": [
+    "反思型AI Agent架构能够实现自我优化和进化。",
+    "通过反射机制，AI可以更好地理解自己的行为及其影响。",
+    "内省功能使AI能够在执行任务的同时进行自我评估和调整。",
+    "该架构对记忆系统、自反层和进化引擎有显著的潜在价值。",
+    "反思型AI Agent适用于多Agent环境中的决策制定和协作。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

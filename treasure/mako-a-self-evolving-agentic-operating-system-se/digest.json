@@ -1,0 +1,30 @@
+{
+  "id": "mako-a-self-evolving-agentic-operating-system-se",
+  "name": "Mako: A Self-Evolving Agentic Operating System (SE-AOS) for Autonomous Web Exploitation",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:35.985072",
+  "digested": "2026-07-15T09:10:35.985072",
+  "field": "酶网络/cascade_engine",
+  "content": "介绍自我进化智能体操作系统SE-AOS，将利用能力视为可变版本化内核，运行时通过观察自己失败、综合新能力、针对实时目标验证并热加载回自身来扩展。发现核心：一旦能力存在且可发现，难度就崩溃。",
+  "intake_score": 0.85,
+  "score_detail": {
+    "去粗取精": 0.4,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0.4,
+    "_total": 0.2,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "介绍自我进化智能体操作系统SE-AOS，将利用能力视为可变版本化内核，运行时通过观察自己失败、综合新能力、针对实时目标验证并热加载回自身来扩展。发现核心：一旦能力存在且可发现，难度就崩溃。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:35.985072",
+    "last_accessed": "2026-07-15T09:10:35.985072",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

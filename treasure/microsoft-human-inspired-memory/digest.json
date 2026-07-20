@@ -1,0 +1,29 @@
+{
+  "id": "microsoft-human-inspired-memory",
+  "name": "Microsoft Human-Inspired Memory — 6认知机制记忆架构",
+  "source": "曦和每日宝藏觅食 · 2026-07-13",
+  "discovered": "2026-07-13T09:10:07.372382",
+  "digested": "2026-07-13T09:10:07.372382",
+  "field": "超图记忆核/HebbianGraph",
+  "content": "Microsoft Human-Inspired Memory — 6认知机制记忆架构",
+  "intake_score": 0.76,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 1.0,
+    "_total": 0.2,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-13T09:10:07.372382",
+    "last_accessed": "2026-07-13T09:10:07.372382",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

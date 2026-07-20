@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12267",
+  "name": "Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents",
+  "source": "arXiv:cs.LG:2607.12267",
+  "reprocessed_at": "2026-07-20T14:33:17.768116",
+  "content": "Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy. We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are buried under later retrievals. We introduce SLEUTH, which makes this state explicit and actionable through a structured epistemic working memory: t",
+  "field": "记忆系统",
+  "summary": "语言代理在推理链长度增加时，即使每个单独步骤都容易处理，其表现也会急剧下降。我们将其归因于上下文稀释：代理的调查状态（它已确认的事实、怀疑的事物以及仍需解决的问题）仅隐含地存储在一个不断扩大的上下文窗口中，早期发现被后来检索覆盖。",
+  "key_insights": [
+    "SLEUTH通过结构化的知识工作记忆使这种状态显式化和可操作，显著提高了代理在多跳推理任务中的表现。",
+    "分析表明，证据充分性问题是剩余差距的主要原因：代理有时能找到答案但未能承诺，导致他们在不必要的验证上耗尽了预算。",
+    "轻量级的确认触发器仅当代理已经维护结构化的状态时才有效，这表明有序的知识状态是实现有效确认所必需的条件。"
+  ],
+  "xihe_relevance": "SLEUTH 提供了一种改进语言代理多跳推理能力的方法，对于曦和这样的系统具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

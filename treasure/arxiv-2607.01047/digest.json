@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.01047",
+  "name": "Conversable Complexity: Agentic LLM Collectives as Interpretable Substrates for Artificial Life",
+  "source": "arXiv:cs.CL:2607.01047",
+  "reprocessed_at": "2026-07-20T14:33:26.714862",
+  "content": "Complexity and interpretability rarely coincide: systems rich enough for complex behaviours to emerge are usually too opaque to question, while transparent ones are too simple for anything complex to emerge. A single large language model (LLM) is a static artefact, hardly exhibiting any of the emergent properties we associate with life. This changes through interaction: populations of LLMs display emergent dynamics absent from isolated models. Furthermore, LLMs can be endowed with persistent mem",
+  "field": "自反层",
+  "summary": "该研究探讨了大型语言模型（LLM）群体作为解释性基础，用于人工生命（ALife）研究的可能性。",
+  "key_insights": [
+    "复杂行为的涌现系统通常过于模糊难以质疑，而透明简单的系统则无法支持复杂的涌现现象。",
+    "通过交互，多个LLM可以展示出孤立模型中不存在的涌现动态。",
+    "赋予LLM持久记忆、工具和共享技能的能力使它们能够自主行动（即成为代理）。",
+    "这些群体的行为可以通过分析自然语言交流的痕迹来直接检验。",
+    "该研究扩展了对语言模型解释性的理解，并将其应用于多代理系统。"
+  ],
+  "xihe_relevance": "对于曦和项目，这种技术可以提供一种新的、更深层次的理解生命现象的方法。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

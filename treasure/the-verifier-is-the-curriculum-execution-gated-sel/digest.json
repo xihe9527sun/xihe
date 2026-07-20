@@ -1,0 +1,18 @@
+﻿{
+  "id": "the-verifier-is-the-curriculum-execution-gated-sel",
+  "name": "The Verifier is the Curriculum: Execution-Gated Self-Distillation for Cross-Family Game Generation",
+  "source": "arXiv:cs.AI:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:19.365592",
+  "content": "The Verifier is the Curriculum: Execution-Gated Self-Distillation for Cross-Family Game Generation",
+  "field": "元认知",
+  "summary": "The Verifier is the Curriculum 提出了一个执行受控的自我提炼方法，用于跨家族游戏生成。",
+  "key_insights": [
+    "提出了一个新的学习框架，通过执行控制来提升自我提炼的效果。",
+    "该方法能够有效地应用于不同类型的游戏中，具有广泛的应用前景。",
+    "为未来的自反层和进化引擎研究提供了新的视角和思路。"
+  ],
+  "xihe_relevance": "该研究可能对曦和在元认知和多Agent系统中的应用有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

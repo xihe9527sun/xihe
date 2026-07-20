@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2606.30389",
+  "name": "PRR: Predict, Reuse, and Repair — Accelerating Dynamic Sparse Attention for Long-Context LLM Decoding",
+  "source": "arXiv:cs.LG:2606.30389",
+  "reprocessed_at": "2026-07-20T14:27:04.408217",
+  "content": "Dynamic sparse attention (DSA) accelerates long-context LLM decoding by attending to only the top-K KV blocks relevant to each query, but it introduces a serialized selection-to-attention dependency that emerges as a new latency bottleneck. We present PRR, a speculate-reuse-repair runtime that exploits temporal locality in DSA selections to predict likely blocks, speculate the attention over them while selection is in flight, and incrementally repair missed blocks once the true selected set is k",
+  "field": "进化引擎",
+  "summary": "通过预测、重用和修复，PRR加速了动态稀疏注意力在长上下文LLM解码中的应用，减少了每token的解码延迟高达40%，同时保持下游任务的准确性。",
+  "key_insights": [
+    "PRR利用DSA选择的时间局部性来预测可能的相关块",
+    "在选择过程中推测注意力，并在确定真实选择集后逐步修复遗漏的块",
+    "使用轻量级的EMA预测器和FlashAttention修复内核，以在线softmax统计学方式合并遗漏的块"
+  ],
+  "xihe_relevance": "PRR技术可能对曦和系统中的动态调度和优化任务有所帮助。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

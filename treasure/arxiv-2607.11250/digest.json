@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.11250",
+  "name": "Multi-Agent LLMs Fail to Explore Each Other",
+  "source": "arXiv:cs.MA:2607.11250",
+  "reprocessed_at": "2026-07-20T14:29:11.604120",
+  "content": "Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns that lead to suboptimal coordination and increased regret. We formalize this challenge as the Multi-Agent Exploration problem, modeling it as a partially observable stochastic game (POSG) problem in w",
+  "field": "多Agent",
+  "summary": "探索对于多agent系统的可靠自主性至关重要，但大型语言模型（LLM）代理在相互作用时是否能有效进行探索仍不清楚。我们的研究表明，现代LLM代理在这方面表现不佳，往往表现出短视和极化的交互模式，导致协调不足和增加的后悔感。",
+  "key_insights": [
+    "多agent系统中的探索对于可靠自主性至关重要，但大型语言模型（LLM）在相互作用时未能有效执行探索。",
+    "现代LLM代理通常表现出短视和极化的交互模式，这导致了不良的协调效果和增加的后悔感。",
+    "我们正式提出了Multi-Agent Exploration问题，并将其建模为一个部分可观测随机博弈（POSG），其中agent必须探测同伴以推断其能力并识别有效的互动策略。",
+    "为了应对这一挑战，我们引入了一种轻量级框架Multi- Agent Contextual Exploration (MACE)，它通过结构化的同伴选择来明确促进探索。在上下文和参数多样性设置下，MACE显著提高了探索行为和下游任务表现。",
+    "我们的研究结果表明了当前LLM代理的固有局限性，并强调了对可靠多agent自主性的引导式探索的重要性。"
+  ],
+  "xihe_relevance": "MACE框架可以为曦和系统提供一种结构化的同伴选择机制，以促进有效的探索行为，从而提高系统的整体性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,25 @@
+﻿{
+  "id": "a-tutorial-on-autonomous-fault-tolerant-",
+  "name": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Age",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:16.169887",
+  "content": "A Tutorial on Autonomous Fault-Tolerant Control Using Knowledge-Grounded LLM Age",
+  "field": "多Agent, 自反层, 进化引擎",
+  "summary": "该教程介绍了如何利用基于知识的语言模型进行自主故障容错控制。",
+  "key_insights": [
+    "介绍了一种新的控制方法",
+    "结合了语言模型和自主控制技术",
+    "强调了知识在故障容错中的重要性",
+    "适用于自反层和进化引擎领域",
+    "可能对元认知和量化交易有潜在价值"
+  ],
+  "xihe_relevance": [
+    "记忆系统：提供新的控制方法的知识基础",
+    "自反层：介绍了一种新的控制技术",
+    "进化引擎：自主故障容错控制的潜力",
+    "元认知：理解语言模型在控制中的应用",
+    "量化交易：可能的应用场景"
+  ],
+  "depth_rating": 7,
+  "ollama_digested": true
+}

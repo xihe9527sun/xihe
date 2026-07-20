@@ -1,0 +1,18 @@
+﻿{
+  "id": "training-therapeutic-judges-and-multi-ag",
+  "name": "Training Therapeutic Judges and Multi-Agent Systems for Human-Aligned Mental Hea",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:40.337954",
+  "content": "Training Therapeutic Judges and Multi-Agent Systems for Human-Aligned Mental Hea",
+  "field": "多Agent",
+  "summary": "该研究旨在训练具有人类导向性的心理法官和多智能体系统。",
+  "key_insights": [
+    "研究关注心理健康领域的发展",
+    "涉及司法系统的伦理考量",
+    "探索多智能体系统在心理健康中的应用",
+    "强调人机协作的重要性"
+  ],
+  "xihe_relevance": "该内容对自反层和进化引擎方向有一定相关性，特别是多智能体系统的研究可能有助于提升自反层的自我学习能力。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "autoscientists-self-organizing",
+  "name": "AutoScientists: Self-Organizing Agent Teams · Harvard 2026",
+  "source": "arXiv 2605.28655 · Harvard Zitnik Lab",
+  "reprocessed_at": "2026-07-20T13:55:59.513914",
+  "content": "Scientific research proceeds through iterative cycles of hypothesis generation, experiment design, execution, and revision. AI agents can automate parts of this process, but existing approaches typically follow a single research trajectory or coordinate through a central planner with fixed objectives. As a result, they struggle to sustain parallel exploration, adapt as experimental evidence changes, or preserve knowledge of failed directions over long-running experiments. We introduce AutoScient",
+  "field": "多Agent",
+  "summary": "AutoScientists是一个自主组织的研究团队，由AI代理组成，用于长期的计算科学研究实验。它能够自我组织成围绕有前景假设的小组，通过共享成功和失败的经验来减少重复探索，并在匹配的实验预算下，在多个任务中表现出色。",
+  "key_insights": [
+    "AutoScientists能够有效地进行并行探索，适应实验证据的变化，并保存失败方向的知识。",
+    "在多种科学领域（如生物医学机器学习、蛋白质结构预测和语言模型优化）上取得了显著改进。",
+    "展示了其在药物发现任务上的潜力，通过新的方法提高了与当前最佳模型的Spearman相关性。"
+  ],
+  "xihe_relevance": "AutoScientists的研究成果表明它可能对曦和系统有潜在价值，特别是在自组织团队和多代理架构方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

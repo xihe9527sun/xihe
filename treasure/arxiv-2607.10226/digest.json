@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10226",
+  "name": "When Are Sparse Feature Interventions Actually Localized? Matched Evaluation for SAE-Based Safety Control",
+  "source": "arXiv:cs.AI:2607.10226",
+  "reprocessed_at": "2026-07-20T14:29:59.270351",
+  "content": "We evaluate when sparse autoencoder (SAE) features act as localized control handles for safety-relevant behavior. This question is difficult because apparent success can arise from weak interventions, mismatched baselines, model robustness, or degenerate outputs that automated safety judges mark as unsafe without representing meaningful harmful compliance. We introduce a matched coherence-gated evaluation protocol for runtime safety interventions: methods are compared at matched target-effect po",
+  "field": "自反层",
+  "summary": "我们评估了稀疏自动编码器特征在安全相关行为中的作用，并发现它们通常仅在特定条件下有效。",
+  "key_insights": [
+    "SAE特征的干预效果依赖于特定条件，不适用于所有情况。",
+    "SAE top800和top1600的效果与匹配的密集拒绝方向基线竞争，而SAE top3200则导致了协调崩溃。",
+    "人类审计证实了协调门控移除了仅标记为危险的行为，并且特征诊断表明有用范围由稳定拒斥对齐特征驱动。"
+  ],
+  "xihe_relevance": "这些发现可能有助于在曦和中进行安全控制机制的评估，从而提高系统的鲁棒性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

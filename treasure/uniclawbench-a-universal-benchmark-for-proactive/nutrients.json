@@ -1,0 +1,35 @@
+{
+  "id": "uniclawbench-a-universal-benchmark-for-proactive",
+  "name": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+  "sources": [],
+  "discovered": "2026-07-11T09:10:52.056066",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.83,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.83,
+    "backed_at": "2026-07-11T09:10:52.055836"
+  },
+  "digest_notes": "We introduce UniClawBench, the first capability-driven benchmark designed to evaluate proactive agents in dynamic, real-world settings. Built around five foundational model capabilities: Skill Usage, Exploration, Long-Context Reasoning, Multimodal Understanding, and Cross-Platform Coordination. 400 bilingual real-world tasks evaluated in live Docker containers with fine-grained step-by-step completion checkpoints. A closed-loop evaluation strategy comprising executor, hidden supervisor, and user"
+}

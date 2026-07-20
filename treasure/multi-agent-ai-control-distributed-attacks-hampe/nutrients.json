@@ -1,0 +1,35 @@
+{
+  "id": "multi-agent-ai-control-distributed-attacks-hampe",
+  "name": "Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors (2607.07368)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.242817",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.84,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-11",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.84,
+    "backed_at": "2026-07-11T10:02:23.602273"
+  },
+  "digest_notes": "AI control is a family of techniques to prevent an AI with malicious goals from subverting its operator's intent. We initiate the empirical study of multi-agent AI control, formalising distributed attacks in which several agents jointly aim for a malicious goal. We develop FakeLab: a synthetic AI-lab codebase. Our central finding is the fragmentation effect: as more agents coordinate to attack, per-agent monitoring becomes less likely to catch any of the attackers. A weak trusted monitor misses "
+}

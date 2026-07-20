@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2605.11404",
+  "name": "Attributing Emergence in Million-Agent Systems",
+  "source": "arXiv:cs.AI:2605.11404",
+  "reprocessed_at": "2026-07-20T14:26:39.880561",
+  "content": "Large language models (LLMs) can simulate human-like reasoning and decision-making in individual agents. LLM-powered multi-agent systems (MAS) combine such agents to simulate population-scale social phenomena such as polarization, information cascades, and market panics. Such studies require attributing macro emergence to individual agents, but existing axiomatic methods scale combinatorially in $N$ and have been confined to $N \\lesssim 10^3$, while the phenomena they explain occur at $N \\geq 10",
+  "field": "多Agent",
+  "summary": "通过将Aumann-Shapley路径积分归因方法应用于大规模的大型语言模型驱动多智能体系统，我们解决了现有方法在规模上的限制，并展示了该方法在理解和解释复杂社会现象方面的潜力。",
+  "key_insights": [
+    "提出的归因方法满足所有四个标准，且运行速度比采样Shapley快三到五倍。",
+    "该方法能够处理超过百万级的智能体数量，扩展了现有基于样本的归因方法的规模。",
+    "在大规模数据上与小样本研究得出的结果存在显著差异。"
+  ],
+  "xihe_relevance": "该技术可能有助于曦和系统更好地理解和预测大规模社会现象。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

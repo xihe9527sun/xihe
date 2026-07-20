@@ -1,0 +1,18 @@
+﻿{
+  "id": "a-role-based-multi-agent-model-for-clima",
+  "name": "A Role-Based Multi-Agent Model for Climate Adaptation Deliberation Across Living",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:58:22.841587",
+  "content": "A Role-Based Multi-Agent Model for Climate Adaptation Deliberation Across Living",
+  "field": "多Agent",
+  "summary": "A Role-Based Multi-Agent Model for Climate Adaptation Deliberation Across Living 提出了一种基于角色的多智能体模型，用于跨生活领域的气候变化适应讨论。",
+  "key_insights": [
+    "该模型能够模拟不同角色在气候适应决策中的交互作用",
+    "通过多智能体系统可以更全面地考虑各种因素和利益相关者",
+    "有助于提高对复杂气候变化适应问题的理解与解决"
+  ],
+  "xihe_relevance": "该研究可能为曦和提供一种新的方法来处理跨领域的气候适应性问题",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

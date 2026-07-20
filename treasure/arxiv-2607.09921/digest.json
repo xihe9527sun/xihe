@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09921",
+  "name": "Global Merger-Arbitrage Forecasting with Language Models",
+  "source": "arXiv:cs.CL:2607.09921",
+  "reprocessed_at": "2026-07-20T14:28:34.695135",
+  "content": "We present a language-model forecasting system for merger arbitrage, a specialized high-stakes financial setting in which the task is to predict the outcome of announced M\\&A deals. Unlike prior work on judgmental forecasting with LLMs, which has focused on broad mixed-topic benchmarks and short context such as news snippets, we study a setting that requires long-context reasoning over hundreds of pages of technical documents. Our system combines expert-guided context engineering with finetuning",
+  "field": "量化交易",
+  "summary": "我们提出了一种基于语言模型的合并仲裁预测系统，在一个需要长期上下文推理的技术文档数百页的特殊高风险金融环境中，该系统能够预测宣布的并购交易的结果。我们的系统结合了专家引导的上下文工程和从历史交易中导出的 hindsight 引导的推理轨迹的微调。",
+  "key_insights": [
+    "在42个国家超过400个大型交易的数据集上，基于语言模型的系统实现了最佳性能，将平衡误差率降至0.151。",
+    "该系统的性能比市场预期概率低24%，比XGBoost低19%。",
+    "研究表明，使用回顾性监督和专家设计的上下文在特定且需要长期上下文的金融工作流程中，基于语言模型的预测可以成功实现。"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和系统提高金融市场预测能力具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

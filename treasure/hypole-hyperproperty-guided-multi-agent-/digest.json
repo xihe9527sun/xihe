@@ -1,0 +1,19 @@
+﻿{
+  "id": "hypole-hyperproperty-guided-multi-agent-",
+  "name": "HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial Ob",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:45.169150",
+  "content": "HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial Ob",
+  "field": "多Agent, 自反层",
+  "summary": "HyPOLE是一种基于部分可见性的多智能体强化学习方法，利用超性质来指导学习过程。",
+  "key_insights": [
+    "采用超性质引导多智能体强化学习",
+    "适用于部分可见性环境",
+    "集成于自反层框架中",
+    "可能增强系统自我修正能力",
+    "对量化交易有一定应用价值"
+  ],
+  "xihe_relevance": "进化引擎, 自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

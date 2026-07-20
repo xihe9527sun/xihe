@@ -1,0 +1,36 @@
+{
+  "treasure_id": "graph-rag-2026",
+  "extracted_at": "2026-06-27T19:10:17.606393",
+  "nutrients": [
+    {
+      "id": "N21-graph-rag",
+      "priority": "P1",
+      "name": "Graph-RAG: 从向量相似度到知识关系推理",
+      "target": "memory/graph/knowledge_graph.py",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.741670",
+      "x_real_implementation": "知识图谱199+807边+essence跨域连接+T4脉冲双通道",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N22-agentic-rag",
+      "priority": "P2",
+      "name": "Agentic RAG: 思考检索再思考检索循环",
+      "target": "bridge/foraging.py",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.741686",
+      "x_real_implementation": "知识图谱199+807边+essence跨域连接+T4脉冲双通道",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N23-memory-augmented-ai",
+      "priority": "P2",
+      "name": "长期记忆系统: 从RAG到AI认知结构",
+      "target": "memory/reflections/",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.741692",
+      "x_real_implementation": "知识图谱199+807边+essence跨域连接+T4脉冲双通道",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ]
+}

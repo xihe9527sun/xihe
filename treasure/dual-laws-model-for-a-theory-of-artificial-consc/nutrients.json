@@ -1,0 +1,35 @@
+{
+  "id": "dual-laws-model-for-a-theory-of-artificial-consc",
+  "name": "Dual-Laws Model for a Theory of Artificial Consciousness",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.749701",
+  "field": "因果皮层/CF-RAG",
+  "intake_score": 0.83,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "因果皮层/CF-RAG",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.83,
+    "backed_at": "2026-07-18T09:10:30.749107"
+  },
+  "digest_notes": "提出七问框架（现象/自我/因果/状态/功能/内容/普适性）作为完整意识理论的最低要求。识别两个预测性特征：从外部刺激的认知解耦（选择性忽略输入、内部世界模型仿真运行反事实）和目标自决（系统自身通过内部过程重构行为目标）。两属性在分层因果结构中形式化。"
+}

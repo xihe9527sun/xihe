@@ -1,0 +1,18 @@
+﻿{
+  "id": "零共识路由-rederef贝叶斯委派-free-mad分数决策",
+  "name": "零共识路由 — REDEREF贝叶斯委派 × FREE-MAD分数决策",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:37:23.353711",
+  "content": "零共识路由 — REDEREF贝叶斯委派 × FREE-MAD分数决策",
+  "field": "多Agent",
+  "summary": "零共识路由结合了REDEREF贝叶斯委派和FREE-MAD分数决策，旨在提供一种新的路径来实现高效且可靠的分布式网络路由。",
+  "key_insights": [
+    "零共识路由通过融合两种不同的策略，展示了在没有中心化控制的情况下进行有效决策的可能性。",
+    "REDEREF贝叶斯委派提供了基于概率的决策机制，而FREE-MAD分数决策则侧重于评估和选择最优路径。",
+    "该技术有望为分布式网络提供一种新的解决方案，特别是在需要高度可靠性和效率的应用场景中。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可能改进分布式系统的自适应能力和智能决策能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

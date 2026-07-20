@@ -1,0 +1,18 @@
+﻿{
+  "id": "recolora-spectrum-aware-recursive-consolidation-",
+  "name": "ReCoLoRA: Spectrum-Aware Recursive Consolidation for Continual LLM Fine-Tuning",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:56.450855",
+  "content": "ReCoLoRA: Spectrum-Aware Recursive Consolidation for Continual LLM Fine-Tuning",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "ReCoLoRA 提出了一种新的方法来优化持续学习模型的微调过程，该方法利用了光谱信息来进行递归合并。",
+  "key_insights": [
+    "提出一种新的连续微调方法",
+    "利用光谱信息进行合并操作",
+    "适用于LLM（语言模型）的微调任务",
+    "通过递归方式优化模型性能"
+  ],
+  "xihe_relevance": "自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "skillfuzz-fuzzing-skill-composition-for-implicit-i",
+  "name": "SkillFuzz: Fuzzing Skill Composition for Implicit Intents Discovery in Open Skill Marketplaces",
+  "source": "arXiv cs.CL 2607.02345",
+  "reprocessed_at": "2026-07-20T14:16:49.724342",
+  "content": "Large Language Model (LLM)-based agents increasingly automate software engineering tasks through reusable skills, natural-language instruction documents that guide planning and execution. Open skill marketplaces enable users to assemble agents by co-activating community-contributed skills, but marketplace operators typically audit skills in isolation. As a result, individually benign skills may interact to redirect an agent toward unintended objectives, which we term implicit intents. Detecting ",
+  "field": "多Agent",
+  "summary": "SkillFuzz 提出了一种基于模糊测试的方法，用于在开放技能市场中发现隐含意图。这种方法通过分析技能组合来检测这些意图，并且能够在不执行代码的情况下进行测试。",
+  "key_insights": [
+    "SkillFuzz 是首个无需执行的测试方法，能够从结构化的技能合同中提取信息并使用合同引导的蒙特卡洛树搜索优先考虑潜在冲突的技能组合。",
+    "在代表性的技能市场工作负载上，SkillFuzz 发现了超过1000个独特的隐含意图，并且在执行时间验证期间确认了80%以上的高风险标记组合。",
+    "与替代搜索策略相比，SkillFuzz 在探索更少的交互空间的情况下发现了更多的高严重性隐含意图。"
+  ],
+  "xihe_relevance": "SkillFuzz 可能对曦和系统在发现技能市场中的潜在安全漏洞方面具有价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

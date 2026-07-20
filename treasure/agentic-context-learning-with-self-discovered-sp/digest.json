@@ -1,0 +1,30 @@
+{
+  "id": "agentic-context-learning-with-self-discovered-sp",
+  "name": "Agentic Context Learning with Self-Discovered Specification",
+  "source": "曦和每日宝藏觅食 · 2026-07-15",
+  "discovered": "2026-07-15T09:10:35.881781",
+  "digested": "2026-07-15T09:10:35.881781",
+  "field": "酶网络/cascade_engine",
+  "content": "研究LLM在长上下文中学习和应用新型任务特定知识能力，发现核心挑战是规范获取而非内容获取。提出PSCI干预方法，通过提取局部规范并通过对抗性检查和修复强制执行，在CL-Bench取得最先进成果。",
+  "intake_score": 0.95,
+  "score_detail": {
+    "去粗取精": 0,
+    "去伪存真": 0,
+    "由此及彼": 0,
+    "由表及里": 0.4,
+    "_total": 0.08,
+    "_grade": "差 —— 建议淘汰"
+  },
+  "key_insights": [
+    "（未在ARCH_MAP，按关键词推断子系统）",
+    "研究LLM在长上下文中学习和应用新型任务特定知识能力，发现核心挑战是规范获取而非内容获取。提出PSCI干预方法，通过提取局部规范并通过对抗性检查和修复强制执行，在CL-Bench取得最先进成果。"
+  ],
+  "xihe_relevance": "（未在ARCH_MAP，按关键词推断子系统）",
+  "memcell": {
+    "born": "2026-07-15T09:10:35.881781",
+    "last_accessed": "2026-07-15T09:10:35.881781",
+    "access_count": 5,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

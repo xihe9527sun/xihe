@@ -1,0 +1,35 @@
+{
+  "id": "embodied-multi-agent-coordination-by-aligning-wo",
+  "name": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.563449",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.84,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.84,
+    "backed_at": "2026-07-12T09:10:49.563044"
+  },
+  "digest_notes": "研究LLM基础具身Agent是否真正实现通过对话沟通的能力。扩展PARTNR协作家务机器人基准测试，加入自然语言对话通道使部分可观测的两个Agent在任务执行中通信。提出世界模型对齐测量框架：观测收敛、信息新颖性和信念敏感消息。对话减少40-83百分点的行动冲突但降低任务成功率。"
+}

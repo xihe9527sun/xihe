@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.04156",
+  "name": "Language Models Guide Symbolic Equation Discovery by Controlling Search",
+  "source": "arXiv:cs.AI:2607.04156",
+  "reprocessed_at": "2026-07-20T14:21:11.972559",
+  "content": "Scientific equation discovery must combine broad domain priors with strict numerical testing. Symbolic regression supplies numerical grounding but faces a combinatorial search space, whereas many language-model systems ask the model to propose or select formulas directly. We test a different division of labour. We compare role specifications in which the language model acts as equation author, candidate decider or search controller, alongside end-to-end language-model and purely numerical baseli",
+  "field": "进化引擎",
+  "summary": "通过将语言模型的角色划分为变量指定者、候选选择者和搜索控制器，我们发现这种新的分工方式在平衡准确性、复杂性、稳定性和成本方面表现最佳。",
+  "key_insights": [
+    "语言模型可以有效地控制搜索过程以发现科学方程",
+    "该方法在74个AI-Feynman方程和七个复杂的公式恢复任务中实现了最优的结果",
+    "语言模型更适合引导假设探索而非决定哪些方程得以保留"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和系统有潜在价值，特别是在科学方程发现方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

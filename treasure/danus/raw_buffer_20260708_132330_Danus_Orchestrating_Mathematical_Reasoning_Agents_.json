@@ -1,0 +1,13 @@
+{
+  "title": "Danus: Orchestrating Mathematical Reasoning Agents with Fact-Graph Memory",
+  "source": "arXiv:cs.AI,cs.MA:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "Danus orchestrates multiple reasoning agents by maintaining a shared fact-graph memory. The fact-graph stores atomic facts and their logical dependencies, allowing agents to reason incrementally and avoid contradictions. Improves accuracy over single-agent and memory-less multi-agent baselines.",
+  "keywords_matched": [
+    "multi-agent",
+    "memory"
+  ],
+  "intake_score": 0.95,
+  "captured_at": "2026-07-08T13:23:30.648573",
+  "digested": false
+}

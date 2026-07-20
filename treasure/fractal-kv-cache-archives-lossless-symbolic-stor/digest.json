@@ -1,0 +1,18 @@
+﻿{
+  "id": "fractal-kv-cache-archives-lossless-symbolic-stor",
+  "name": "Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference (2607.07144)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:01:48.107901",
+  "content": "The key-value (KV) cache dominates the memory cost of long-context autoregressive inference, and a growing body of work compresses it through quantization, eviction, or offloading. We study a complementary question: once a position's KV state has been quantized to codebook indices, how should the resulting symbol stream be stored, and can the storage layer do more than store? A family of contractive iterated-map codes that serialize a symbol sequence into a sequence of low-dimensional real vecto",
+  "field": "记忆系统",
+  "summary": "该研究探讨了如何在压缩后的键值对缓存中存储符号流，提出了一种新的档案格式，并展示了其在减少长上下文语言模型推理内存占用方面的有效性。",
+  "key_insights": [
+    "提出了一个新的档案格式来存储量化后的键值对缓存中的符号流。",
+    "该方法提供了所需的访问模式，具有线性时间和O(1)的随机访问和累积追加能力。",
+    "展示了量化键和值之间的显著差异，并利用这种差异优化了编码方案。"
+  ],
+  "xihe_relevance": "该研究可能对曦和在减少长上下文语言模型推理内存占用方面的潜力具有重要价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

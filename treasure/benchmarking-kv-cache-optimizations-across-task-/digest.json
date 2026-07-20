@@ -1,0 +1,17 @@
+﻿{
+  "id": "benchmarking-kv-cache-optimizations-across-task-",
+  "name": "Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:02.056139",
+  "content": "Benchmarking KV-Cache Optimizations across Task Quality and System Performance for Long-Context Serving",
+  "field": "工具使用",
+  "summary": "该研究对KV缓存优化在任务质量与系统性能方面进行了基准测试，以支持长上下文服务。",
+  "key_insights": [
+    "评估了不同优化策略对任务质量和系统性能的影响",
+    "考察了长上下文处理中的缓存效率",
+    "为提高长上下文服务的性能提供参考"
+  ],
+  "xihe_relevance": "无直接关联，但可归类于工具使用领域",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

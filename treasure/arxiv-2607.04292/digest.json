@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.04292",
+  "name": "Agentic SABRE: An Uncertainty-Aware Neuro-Symbolic Multi-Agent Framework for Adaptive Ransomware Detection",
+  "source": "arXiv:2607.04292",
+  "reprocessed_at": "2026-07-20T14:18:40.228584",
+  "content": "Ransomware has evolved into a complex, adaptive, and fast-moving adversary category in which static signatures and monolithic classifiers fail to generalise under concept drift, evasion, and behavioural polymorphism. In this paper, we present Agentic SABRE (Semantic-Behavioural Arbitration for Ransomware Evaluation), an uncertainty-aware, neuro-symbolic, multi-agent framework for adaptive ransomware detection. SABRE fuses semantic, representation-based evidence with behavioural, time-window fore",
+  "field": "多Agent",
+  "summary": "Agentic SABRE提出了一种新的神经符号多智能体框架，用于适应性勒索软件检测，能够处理概念漂移、对抗性和行为变异等复杂情况。",
+  "key_insights": [
+    "Agentic SABRE融合了语义和表示基础的证据与行为学时间窗口取证数据，并使用蒙特卡洛 Dropout 推理来量化每个代理的先验不确定性。",
+    "引入了一个决策层协调器，用于风险和不确定性的感知性筛选，包括两个可解释的阈值：风险评分和不确定性预算。",
+    "Agentic SABRE在饱和语义数据集上保持完美的区分性能，并且在弱行为信号下提高了鲁棒性。"
+  ],
+  "xihe_relevance": "Agentic SABRE 可能对曦和系统的自反层和进化引擎有潜在价值，特别是在处理复杂环境中的不确定性方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

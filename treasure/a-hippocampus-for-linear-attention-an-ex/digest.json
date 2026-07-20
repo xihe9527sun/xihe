@@ -1,0 +1,17 @@
+﻿{
+  "id": "a-hippocampus-for-linear-attention-an-ex",
+  "name": "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T12:53:45.444395",
+  "content": "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State",
+  "field": "记忆系统/自反层",
+  "summary": "该研究提出了一种名为‘线性注意力海马体’的记忆机制，旨在精确保存循环状态。",
+  "key_insights": [
+    "引入了线性注意力海马体的概念",
+    "用于精确保存循环状态的信息",
+    "可能应用于记忆系统或自反层"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

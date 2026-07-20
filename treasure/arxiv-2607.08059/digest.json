@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.08059",
+  "name": "When Thinking Hurts: Epistemic Signals in the Reasoning Chains of Visual Language Models (2607.08059)",
+  "source": "arXiv:cs.LG:2607.08059",
+  "reprocessed_at": "2026-07-20T14:24:36.147279",
+  "content": "Uncertainty quantification for visual language models (VLMs) conventionally targets the answer token distribution. We provide the first three-family empirical characterisation of answer entropy behaviour in thinking-mode VLMs. Running four models on identical POPE adversarial samples, we find three qualitatively distinct patterns: Qwen3-VL-8B-Thinking shows complete collapse (ans H AUROC = 0.492); GLM-4.1V-9B-Thinking shows no collapse (0.716); and InternVL3-8B shows selective thinking (chains o",
+  "field": "自反层",
+  "summary": "本文研究了视觉语言模型在思考模式下的不确定性量化，发现三种不同的行为模式，并且链式生成的熵值优于答案熵值。",
+  "key_insights": [
+    "Qwen3-VL-8B-Thinking表现出完全崩溃（答案H AUROC = 0.492），而GLM-4.1V-9B-Thinking和InternVL3-8B在链式生成时表现出选择性思考。",
+    "链式生成的熵值优于答案熵值，表明链式信号是可靠的预测器。",
+    "对于Qwen和GLM模型，链式生成的熵值优于答案熵值，但对于InternVL3模型只有微小且统计上不可靠的优势。",
+    "在VQAv2数据集上，链式生成的熵值优于答案熵值，并且在自由形式问题上的差距最大。",
+    "对于更难的推理任务（HallusionBench），Qwen模型显示了中等程度的信号强度。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待进一步评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

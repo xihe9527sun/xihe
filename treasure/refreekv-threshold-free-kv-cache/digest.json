@@ -1,0 +1,20 @@
+﻿{
+  "id": "refreekv-threshold-free-kv-cache",
+  "name": "ReFreeKV: 无阈值KV缓存压缩",
+  "source": "arXiv 2502.16886",
+  "reprocessed_at": "2026-07-20T13:56:59.246077",
+  "content": "To reduce memory consumption during LLM inference, a handful of methods have been proposed for KV cache pruning. While these techniques can accomplish lossless memory reduction on many datasets, they often hinge on an under-emphasized condition: an input/domain-specific threshold for KV cache budget needs to be pre-determined to achieve the optimal performance. However, such input-sensitive design may be considerably limited in real-world scenarios, as open-domain inputs span diverse domains, le",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "为了减少LLM推理期间的内存消耗，提出了几种KV缓存修剪的方法。然而，这些技术往往依赖于一个未被充分强调的条件：需要预先确定输入/领域特定的阈值来达到最佳性能。在现实世界中，由于开放域输入跨越多种领域、长度和难度级别，没有明确的选择阈值边界，因此这种输入敏感的设计可能受到限制，并且会带来显著的性能下降。",
+  "key_insights": [
+    "提出了一个新目标，以去除KV压缩中的阈值约束，倡导‘无阈值’的方法来适应性调整预算分配并保持全缓存性能。",
+    "ReFreeKV是首个实现这一目标的新方法。",
+    "在13个不同长度、任务类型和模型大小的数据集上进行了广泛实验，证明了其有效性和效率。",
+    "代码已公开发布于https://github.com/Patrick-Ni/ReFreeKV。",
+    "该技术对记忆系统、自反层、进化引擎、元认知、量化交易、多Agent等领域具有潜在价值。"
+  ],
+  "xihe_relevance": "对于曦和（可能指Alibaba Cloud的内部项目或研究框架）在记忆系统、自反层、进化引擎、元认知等方面的研究和应用具有潜在的价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

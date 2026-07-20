@@ -1,0 +1,17 @@
+﻿{
+  "id": "multi-agent-dynamic-topology",
+  "name": "多Agent动态拓扑 · REDEREF概率化路由 · DyLAN Peer Rating",
+  "source": "Multi-Agent系统架构全景调研 · edison-a-n.github.io 2026-04-19",
+  "reprocessed_at": "2026-07-20T12:52:21.404104",
+  "content": "多Agent动态拓扑 · REDEREF概率化路由 · DyLAN Peer Rating",
+  "field": "多Agent",
+  "summary": "该摘要涵盖了多Agent动态拓扑、REDEREF概率化路由和DyLAN Peer Rating三个概念，涉及人工智能中的网络与路径优化。",
+  "key_insights": [
+    "多Agent动态拓扑的应用",
+    "REDEREF概率化路由的实现",
+    "DyLAN Peer Rating的功能"
+  ],
+  "xihe_relevance": "进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "sparse-delta-memory-scaling-the-state-of-linear-",
+  "name": "Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity (2607.07386)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:00:13.408253",
+  "content": "Linear attention models allow a fixed state size and a fixed amount of compute per token. However, due to their limited state size, linear attention models fall behind in long-context recall compared to softmax-attention-based transformer architectures. Increasing the state size of linear attention improves recall performance but at the cost of higher FLOPs. In this work, we introduce Sparse Delta Memory (SDM), an architecture that scales the hidden state of gated linear RNNs to orders of magnit",
+  "field": "记忆系统/自反层",
+  "summary": "Sparse Delta Memory (SDM) is introduced to scale the hidden state of gated linear RNNs by orders of magnitude, improving performance on in-context learning and long-context retrieval tasks without significantly increasing FLOPs.",
+  "key_insights": [
+    "Sparse Delta Memory (SDM) extends the Gated DeltaNet architecture using sparse addressing schemes to achieve higher memory capacity.",
+    "Under an isoFLOP constraint, SDM shows significant improvements in performance compared to previous methods on in-context learning and long-context retrieval tasks.",
+    "By learning the initial state of SDM memory, the model can use it as a parametric memory, further improving its performance across various common-knowledge and reasoning tasks."
+  ],
+  "xihe_relevance": "SDM 可能会为曦和在处理大规模数据和长序列信息方面提供潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

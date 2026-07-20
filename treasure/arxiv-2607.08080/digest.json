@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08080",
+  "name": "MASTE: A Multi-Agent Pipeline for Zero-Shot Aspect Sentiment Triplet Extraction (2607.08080)",
+  "source": "arXiv:cs.CL:2607.08080",
+  "reprocessed_at": "2026-07-20T14:24:08.295193",
+  "content": "Aspect Sentiment Triplet Extraction (ASTE) requires jointly identifying (aspect, opinion, sentiment) triples from a given review sentence. While large language models (LLMs) achieve strong zero-shot performance on many NLP benchmarks, their effectiveness on ASTE remains limited, as single-pass generation forces the model to determine span boundaries, opinion grouping, and sentiment polarity in a single decoding step. Common remedies, such as few-shot in-context learning and chain-of-thought prom",
+  "field": "多Agent",
+  "summary": "MASTE提出了一种新的多代理管道，用于零样本Aspect Sentiment Triplet Extraction任务。该方法将ASTE分解为四个阶段，并通过专门的代理进行处理，这些代理在前一输出上明确地加以条件化。",
+  "key_insights": [
+    "MASTE能够实现完全无监督训练下的零样本ASTE，且适用于不同架构和数据集。",
+    "与基线相比，MASTE在相同基础架构下显著优于零样本和链式思考的LLM基线。",
+    "该方法能够在不使用任何标注三元组的情况下缩小到全监督方法之间的差距。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其多代理管道设计可能为自反层或进化引擎等曦和系统提供新的计算模型基础。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

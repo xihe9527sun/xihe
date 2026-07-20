@@ -1,0 +1,35 @@
+{
+  "id": "intelligence-as-managed-autonomy-failure-escalat",
+  "name": "Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.773577",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.76,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.76,
+    "backed_at": "2026-07-18T09:10:30.773332"
+  },
+  "digest_notes": "提出管理自治理论：智能行为通过检测认知漂移、暂停推理、尝试恢复、最终在可靠性降低时放弃控制的形式化能力定义。SMARt四层框架（稳定/元认知/辅助/受控状态），带时标守卫Petri网形式化，证明架构可强制升级、约束无效输出、确保治理可达性。"
+}

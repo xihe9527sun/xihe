@@ -1,0 +1,35 @@
+{
+  "id": "theater-of-mind-for-llms-gwa-global-workspace-ag",
+  "name": "Theater of Mind for LLMs: GWA — Global Workspace Agents",
+  "sources": [],
+  "discovered": "2026-07-12T09:10:49.493004",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.95,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-12",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.95,
+    "backed_at": "2026-07-12T09:10:49.492615"
+  },
+  "digest_notes": "基于全局工作空间理论(GWT)的认知架构，将多Agent协调从被动数据结构转变为主动事件驱动离散动力系统。引入熵基内在驱动力机制量化语义多样性，动态调节生成温度以自主打破推理死锁。双层记忆分叉策略确保长期认知连续性。"
+}

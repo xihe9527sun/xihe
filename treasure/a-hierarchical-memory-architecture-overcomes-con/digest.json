@@ -1,0 +1,18 @@
+﻿{
+  "id": "a-hierarchical-memory-architecture-overcomes-con",
+  "name": "A Hierarchical Memory Architecture Overcomes Context Limits in Long-Horizon Multi-Agent Computational Modeling (2607.07666)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:00:06.122521",
+  "content": "Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a three-layer hierarchical memory architecture that keeps injected context bounded and constant in project duration (mid-term project state: median 301 tokens, max 4,050, across 104 runs) by capping ea",
+  "field": "自反层",
+  "summary": "本文提出了一种名为Ensemble QSP的多代理框架，其采用了三层层次化内存架构来解决大型语言模型在需要长时间跨度研究和持续性操作中的状态限制问题。",
+  "key_insights": [
+    "Ensemble QSP通过控制每个状态类别并移除已完成的工作，确保了项目期间注入的上下文保持在一定范围内。",
+    "系统由五个专门领域的工人代理组成，并由领域专家主管进行监督，这有助于维持模型的质量和减少上下文退化。",
+    "研究证明了该框架在自主选择药物动力学-药效动力学模型方面的能力，无需人类干预，并且能够处理不同复杂度的生理基于药物动力学（PBPK）模型。"
+  ],
+  "xihe_relevance": "Ensemble QSP架构可以应用于曦和项目中，以提高多代理系统在科学领域的应用价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

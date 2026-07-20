@@ -1,0 +1,18 @@
+﻿{
+  "id": "prompt-robustness-is-task-dependent-objective-vs-b",
+  "name": "Prompt Robustness Is Task-Dependent: Objective vs Belief-Style Questions in LLM Evaluation",
+  "source": "arXiv:cs.CL:2607.new",
+  "reprocessed_at": "2026-07-20T14:22:23.077031",
+  "content": "Prompt Robustness Is Task-Dependent: Objective vs Belief-Style Questions in LLM Evaluation",
+  "field": "自反层/进化引擎",
+  "summary": "研究指出，语言模型在处理客观问题与信念风格问题时的鲁棒性存在显著差异。",
+  "key_insights": [
+    "语言模型对任务的理解依赖于问题的形式（客观或信念风格）。",
+    "客观问题和信念风格问题需要不同的评估方法来确保模型的准确性和可靠性。",
+    "这种理解对于开发更智能、更具适应性的语言模型至关重要。"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和系统的自反层和进化引擎模块有潜在价值，有助于提升其在不同任务中的表现。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

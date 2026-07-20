@@ -1,0 +1,33 @@
+{
+  "treasure_id": "beyond-leaderboard",
+  "name": "Beyond the Leaderboard: Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:30:22+08:00",
+  "digested": "2026-07-08T19:30:22+08:00",
+  "field": "记忆管理、KV压缩、推理优化",
+  "status": "digested",
+  "layer": "L3",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "LLM代理限制综合分类",
+      "type": "理论发现",
+      "value": 9,
+      "description": "提供全面的代理功能局限性分析，指导曦和架构在多场景下的改进。",
+      "relation_to_xihe": "通过理解这些限制，有助于优化曦和的记忆网络结构及因果推理机制。",
+      "id": "N-BEY1"
+    },
+    {
+      "name": "多基准研究汇总",
+      "type": "数据集",
+      "value": 7,
+      "description": "覆盖多个领域的代理表现评估，提供实际数据支持。",
+      "relation_to_xihe": "帮助验证曦和在不同任务中的性能，并通过优化代谢路由提高其适应性。",
+      "id": "N-BEY2"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "对曦和架构而言，该研究可帮助理解认知层面的记忆网络和因果边的不足；同时提供代谢路由优化的方向。在L3层级（记忆管理）具有重要价值。"
+}

@@ -1,0 +1,17 @@
+﻿{
+  "id": "deployment-time-memorization-in-foundation-model",
+  "name": "Deployment-Time Memorization in Foundation-Model Agents",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:32.396126",
+  "content": "Deployment-Time Memorization in Foundation-Model Agents",
+  "field": "自反层/进化引擎",
+  "summary": "该研究探讨了在基础模型代理部署时间中的记忆机制。",
+  "key_insights": [
+    "引入了新的记忆机制来优化基础模型代理的性能",
+    "分析了部署时间记忆对代理行为的影响",
+    "提出了改进部署时间记忆的方法以提高代理效率"
+  ],
+  "xihe_relevance": "该研究内容与曦和AI系统的潜在价值在于其自反层和进化引擎的发展方向。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

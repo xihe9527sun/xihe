@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09279",
+  "name": "Transient Reserves, Sink Dampers, and the Failure of Eigenvalue Reasoning in the Attention Propagator",
+  "source": "arXiv:cond-mat:2607.09279",
+  "reprocessed_at": "2026-07-20T14:34:04.702269",
+  "content": "The attention matrix of a causal transformer is row-stochastic, iterated over depth, and non-normal by construction. For non-normal operators, eigenvalues control only asymptotic behavior; finite-depth behavior is controlled by resolvent quantities such as pseudospectra and Kreiss constants. We test, under pre-registered criteria, whether this resolvent view predicts anything about trained transformers that eigenvalues miss. Two structural facts organize the analysis: the mask pins the Kreiss co",
+  "field": "记忆系统/自反层",
+  "summary": "通过对因果变压器中的注意力矩阵进行分析，研究发现非正常操作的特征导致了不同深度行为的表现差异，并且这些现象无法通过传统的谱值推理来解释。",
+  "key_insights": [
+    "学习到的非正规性表现出正负性质，其中一部分路由信息携带了前一词的功能，并在诱导头参与时翻倍；另一部分被抑制至与打乱相同的零点之下，使得注意力衰减器起作用。",
+    "深度行为的表现可以通过解算子特征来预测，而这些特征能够精确地解释训练后的变压器如何处理不同深度的行为。",
+    "通过检查点的统计表明这种组织结构形成于电路构建后的整合阶段，并且在Llama-3-8B模型中进行了验证。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可以提供关于注意力衰减器如何工作的详细信息，这对于理解Transformer模型的行为至关重要。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

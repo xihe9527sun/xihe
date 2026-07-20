@@ -1,0 +1,18 @@
+﻿{
+  "id": "janus-user-involved-agentic-permission-management-",
+  "name": "Janus: User-Involved Agentic Permission Management [2607.01510]",
+  "source": "arXiv cs.AI",
+  "reprocessed_at": "2026-07-20T14:08:48.875596",
+  "content": "arxiv:2607.01510 Janus: User-Involved Agentic Permission Management [2607.01510]",
+  "field": "多Agent",
+  "summary": "Janus 提出了一种用户参与式代理权限管理系统，旨在提高系统的透明度和用户的控制权。",
+  "key_insights": [
+    "Janus 系统允许用户直接参与到权限管理过程中，增强了系统的透明度",
+    "通过用户参与，系统可以更好地理解用户的意图和需求，从而提供更合适的权限管理方案",
+    "该系统有助于提升用户体验，使用户在使用过程中感到更加安全和受控"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其能够提高系统的自适应性和安全性",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

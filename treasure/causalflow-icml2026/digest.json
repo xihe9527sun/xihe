@@ -1,0 +1,20 @@
+﻿{
+  "id": "causalflow-icml2026",
+  "name": "CausalFlow: 因果归因与反事实修复 · ICML 2026",
+  "source": "arXiv 2605.25338 · ICML 2026 Workshop · Bonagiri et al.",
+  "reprocessed_at": "2026-07-20T13:55:18.728355",
+  "content": "Large language model (LLM) agents frequently fail on multi-step tasks involving reasoning, tool use, and environment interaction. While such failures are typically logged or retried heuristically, they contain structured signals about where execution broke down. We introduce CausalFlow, an interventional framework that converts failed agent traces into minimal counterfactual repairs and reusable supervision. CausalFlow models execution traces as sequential chains of dependent steps and computes ",
+  "field": "多Agent",
+  "summary": "CausalFlow 提出了一种新的框架，能够将失败的执行转换为最小化且因果一致的修复方案，并用于测试时和训练时的监督。该方法在多个基准上展示了其有效性。",
+  "key_insights": [
+    "CausalFlow 通过计算步骤级别的因果责任分数来识别导致任务失败的关键步骤。",
+    "它能够生成最小化的修改以纠正这些关键步骤，从而恢复执行的成功。",
+    "CausalFlow 的应用范围广泛，包括数学推理、代码生成、问答和医疗浏览等多领域任务。",
+    "该方法在复杂检索设置中优于基于启发式的改进，并且能够在不同类型的代理任务中提供更局部的修复。",
+    "因果归因对于可靠地改善各种代理任务至关重要，CausalFlow 提供了一种有效的机制来利用执行失败进行可靠性提升和学习准备监督。"
+  ],
+  "xihe_relevance": "CausalFlow 可能对曦和在多领域任务中的性能改进具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

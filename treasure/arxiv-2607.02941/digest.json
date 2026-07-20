@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.02941",
+  "name": "A Sliding-Window-Based RL for Dynamic Assembly Flow Shop Scheduling",
+  "source": "arXiv:cs.AI:2607.02941",
+  "reprocessed_at": "2026-07-20T14:20:59.083781",
+  "content": "Multi-product kitting delivery imposes significant challenges for real-time scheduling in hybrid manufacturing systems that integrate processing and assembly, as dynamic order arrivals simultaneously alter supply dependencies and the set of feasible job-machine assignments. This paper proposes a sliding-window-based reinforcement learning (SWRL) framework for end-to-end online scheduling in the flexible assembly flow shop scheduling problem with complex kitting constraints. The problem is formul",
+  "field": "多Agent",
+  "summary": "本文提出了一种基于滑动窗口的强化学习框架SWRL，用于解决集成加工和装配的混合制造系统中的动态装配流车间调度问题。该方法通过异质图基马尔可夫决策过程来捕捉复杂配对约束下的双层配对结构和尾产品瓶颈动态。",
+  "key_insights": [
+    "提出了一种新的强化学习框架SWRL，用于解决复杂的动态装配流车间调度问题。",
+    "引入了滑动窗口过滤机制以优先处理关键的配对操作，并跟踪决策状态间的瓶颈变化。",
+    "通过适应性策略和约束等待机制，在不同资源配置、订单负载和到达集中度下保持稳健性能。"
+  ],
+  "xihe_relevance": "SWRL框架在实际应用中的表现优于传统调度规则和现有的深度强化学习方法，对曦和系统具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

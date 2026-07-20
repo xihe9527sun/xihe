@@ -1,0 +1,19 @@
+﻿{
+  "id": "causalsteward-an-agentic-divide-conquer-",
+  "name": "CausalSteward: An Agentic Divide-Conquer-Combine Copilot for Causal Discovery",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:54:14.017411",
+  "content": "CausalSteward: An Agentic Divide-Conquer-Combine Copilot for Causal Discovery",
+  "field": "多Agent",
+  "summary": "CausalSteward是一种新的辅助工具，旨在帮助进行因果发现。",
+  "key_insights": [
+    "引入了divide-conquer-strategy来简化复杂问题",
+    "结合了divide和conquer策略以提高效率",
+    "通过combine策略实现更深层次的见解",
+    "专为因果发现设计的代理式助手",
+    "旨在减少人类在因果分析中的工作量"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值在于其自反层的应用，特别是对于需要复杂问题分解与综合处理的领域。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

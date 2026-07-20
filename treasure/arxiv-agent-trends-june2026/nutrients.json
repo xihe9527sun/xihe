@@ -1,0 +1,36 @@
+{
+  "treasure_id": "arxiv-agent-trends-june2026",
+  "extracted_at": "2026-06-27T20:02:20.717515",
+  "nutrients": [
+    {
+      "id": "N27-autosci",
+      "priority": "P2",
+      "name": "AutoSci记忆驱动全生命周期Agent",
+      "target": "T4-T5循环",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.740307",
+      "x_real_implementation": "ACET4脉冲+酶催化三角色+procedural_memory.py",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N28-scale",
+      "priority": "P2",
+      "name": "SCALE三角色自我认知探索",
+      "target": "觅食系统",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.740320",
+      "x_real_implementation": "ACET4脉冲+酶催化三角色+procedural_memory.py",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N29-colleague-skill",
+      "priority": "P2",
+      "name": "COLLEAGUE.SKILL技能蒸馏",
+      "target": "酶催化",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.740325",
+      "x_real_implementation": "ACET4脉冲+酶催化三角色+procedural_memory.py",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ]
+}

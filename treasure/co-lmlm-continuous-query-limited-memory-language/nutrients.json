@@ -1,0 +1,35 @@
+{
+  "id": "co-lmlm-continuous-query-limited-memory-language",
+  "name": "Co-LMLM: Continuous-Query Limited Memory Language Models (2607.07707)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.210144",
+  "field": "超图记忆核/HebbianGraph",
+  "intake_score": 0.86,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "超图记忆核/HebbianGraph",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.86,
+    "backed_at": "2026-07-10T06:58:24.209809"
+  },
+  "digest_notes": "Limited memory language models (LMLMs) externalize factual knowledge during pretraining to a knowledge base rather than memorizing in weights. We propose CO-LMLM where the KB pairs continuous keys with textual knowledge values, a significant departure from prior reliance on relational KB and queries. CO-LMLM generates flexible vector queries at minimal cost while integrating human-readable retrieved knowledge into generation. Paired with an annotation pipeline tagging free-form factual spans, CO"
+}

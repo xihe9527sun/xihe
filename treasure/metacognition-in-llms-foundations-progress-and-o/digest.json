@@ -1,0 +1,17 @@
+﻿{
+  "id": "metacognition-in-llms-foundations-progress-and-o",
+  "name": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+  "source": "曦和每日宝藏觅食 · 2026-07-17",
+  "reprocessed_at": "2026-07-20T13:05:14.572413",
+  "content": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+  "field": "元认知",
+  "summary": "该文章探讨了在语言模型中实现元认知的基础、进展和机会。",
+  "key_insights": [
+    "探索在语言模型中实施元认知的可能性",
+    "分析现有基础研究和技术进展",
+    "识别未来发展的潜在机遇"
+  ],
+  "xihe_relevance": "自反层，元认知",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

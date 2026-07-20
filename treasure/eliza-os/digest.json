@@ -1,0 +1,17 @@
+﻿{
+  "id": "eliza-os",
+  "name": "ElizaOS · 持久人格AI Agent框架",
+  "source": "elizaos/eliza · GitHub 10K+⭐ · 深度架构解析",
+  "reprocessed_at": "2026-07-20T12:50:36.414051",
+  "content": "ElizaOS · 持久人格AI Agent框架",
+  "field": "自反层",
+  "summary": "ElizaOS是一种持久人格AI Agent框架。",
+  "key_insights": [
+    "ElizaOS是一种AI Agent框架",
+    "强调持久人格特性",
+    "潜在应用于自反层"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "pace-a-proxy-for-agentic-capability-eval",
+  "name": "PACE: A Proxy for Agentic Capability Evaluation",
+  "source": "cs.CL",
+  "reprocessed_at": "2026-07-20T13:58:33.378967",
+  "content": "PACE: A Proxy for Agentic Capability Evaluation",
+  "field": "多Agent",
+  "summary": "PACE 提供了一种代理方法来评估代理能力，这在代理学习和多智能体系统中具有潜在的应用价值。",
+  "key_insights": [
+    "PACE 是一种用于评估代理能力的代理机制",
+    "它适用于代理学习和多智能体系统的领域",
+    "有助于理解与优化代理行为的有效性"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种新的方法来评估智能体的能力，这可能加速在自反层、进化引擎和其他相关领域的研究进展。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

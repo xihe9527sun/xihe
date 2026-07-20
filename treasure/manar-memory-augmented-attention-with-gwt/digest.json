@@ -1,0 +1,18 @@
+﻿{
+  "id": "manar-memory-augmented-attention-with-gwt",
+  "name": "MANAR: Memory-augmented Attention with GWT — 全局工作空间注意力",
+  "source": "曦和每日宝藏觅食 · 2026-07-12",
+  "reprocessed_at": "2026-07-20T14:05:47.668163",
+  "content": "MANAR: Memory-augmented Attention with GWT — 全局工作空间注意力",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "MANAR是一种结合了全局工作空间注意力机制的记忆增强型注意力模型，旨在提升机器学习任务的性能。",
+  "key_insights": [
+    "MANAR通过引入全局工作空间注意力机制，增强了记忆系统的容量和效率。",
+    "该模型能够更好地处理长序列数据，并在多步骤决策中提供更准确的结果。",
+    "对于需要复杂计算资源的任务，如量化交易或多Agent系统中的协调，MANAR具有潜在的应用价值。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

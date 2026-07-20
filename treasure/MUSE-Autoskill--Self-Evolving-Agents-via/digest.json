@@ -1,0 +1,19 @@
+﻿{
+  "id": "MUSE-Autoskill--Self-Evolving-Agents-via",
+  "name": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:01.032003",
+  "content": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management",
+  "field": "自反层/进化引擎",
+  "summary": "该研究提出了一种自我进化的代理体系，通过技能创建、记忆管理和优化来实现。",
+  "key_insights": [
+    "引入了自进化代理的概念",
+    "强调技能创建的重要性",
+    "包含记忆管理机制以支持学习和适应",
+    "旨在提升代理的自主性和灵活性",
+    "可能对元认知和自我反思有帮助"
+  ],
+  "xihe_relevance": "潜在价值在于其可以增强系统的自反层能力，促进更高级别的智能。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

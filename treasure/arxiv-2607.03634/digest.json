@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.03634",
+  "name": "The Role of Rigor in Artificial Intelligence",
+  "source": "arXiv:cs.AI:2607.03634",
+  "reprocessed_at": "2026-07-20T14:21:37.832662",
+  "content": "Artificial intelligence (AI) has achieved extraordinary capabilities despite lacking many of the conceptual and scientific foundations associated with mature disciplines. Unlike traditional sciences, where reliable technology typically emerges from theoretical understanding, modern AI has progressed largely through performance-driven iteration and \"alchemical\" experimentation. This tension motivates a systematic analysis of AI through the lens of rigor. We introduce a three-part framework consis",
+  "field": "自反层",
+  "summary": "人工智能尽管缺乏成熟学科所关联的概念和科学基础，已经取得了非凡的能力。与传统科学不同的是，可靠的技术通常源于理论理解，而现代AI主要通过性能驱动的迭代和‘炼金术’实验进步。这种张力促使我们从严格性的角度分析AI。",
+  "key_insights": [
+    "现代AI的发展更多依赖于性能驱动的迭代而非理论理解",
+    "需要建立科学的理解来克服深度学习中的实证方法局限性",
+    "基准测试在推动AI发展的同时也带来了挑战",
+    "现代AI系统使得理论开发面临障碍，强调了操作严格性的优先级",
+    "严格性如何在不同范式间交互影响着AI的进展和不确定性"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于通过分析AI中的严格性问题来提升其科学性和可靠性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

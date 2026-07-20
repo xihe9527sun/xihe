@@ -1,0 +1,35 @@
+{
+  "id": "modular-memory-continual",
+  "name": "Modular Memory is Key to Continual Learning Agents (2026-03)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.538368",
+  "field": "认知架构",
+  "intake_score": 0.7,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "模块化记忆=曦和双系统+LDM已是实践",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "认知架构",
+    "enhancement_points": [
+      "模块化记忆=曦和双系统+LDM已是实践"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "-",
+    "landing": "已实践(无需立库)"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 已实践(无需立库)",
+    "phase": "-",
+    "landing": "已实践(无需立库)",
+    "subsystem": "认知架构",
+    "enhancement": "模块化记忆=曦和双系统+LDM已是实践",
+    "intake_score": 0.7,
+    "backed_at": "2026-07-10T06:58:24.538012"
+  },
+  "digest_notes": "模块化记忆架构理论基石——曦和的双系统+LDM正是模块化记忆的实践"
+}

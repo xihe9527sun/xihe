@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2605.15967",
+  "name": "Deterministic Event-Graph Substrates as World Models for Counterfactual Reasoning",
+  "source": "arXiv:cs.AI:2605.15967",
+  "reprocessed_at": "2026-07-20T14:26:46.332918",
+  "content": "We study event-graph substrates: a class of world models that represent agent state as an append-only log of typed RDF triples and answer counterfactual queries by forking the log under a structured intervention vocabulary. Substrates are inspectable at the triple level, support exact counterfactuals, and transfer across domains without learned components. We formalize the class, prove a duality between explanatory and counterfactual queries that reduces both to the same causal-ancestor traversa",
+  "field": "自反层",
+  "summary": "本文研究了事件图基础结构，这是一种表示代理状态为类型化RDF三元组的只读日志的世界模型，并通过在结构化的干预词汇下分叉日志来回答反事实查询。这些基础结构可以在单个三元组级别上进行检查，支持精确的反事实问题，并且能够在不依赖于学习组件的情况下跨领域转移。",
+  "key_insights": [
+    "研究了事件图基础结构作为世界模型的一种新方法，用于代理状态表示和反事实推理。",
+    "这些基础结构可以在单个三元组级别上进行检查，支持精确的反事实问题，并且能够在不依赖于学习组件的情况下跨领域转移。",
+    "证明了解释性和反事实查询之间的对偶性，将两者都减少为相同的因果祖先遍历。"
+  ],
+  "xihe_relevance": "该研究结果可能有助于提高曦和在多领域的性能和适应性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

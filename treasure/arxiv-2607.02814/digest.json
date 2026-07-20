@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.02814",
+  "name": "SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents In Delegated Bargaining",
+  "source": "arXiv:cs.MA:2607.02814",
+  "reprocessed_at": "2026-07-20T14:21:31.630716",
+  "content": "Personal agents will increasingly negotiate on behalf of users: splitting costs with other personal agents, appealing platform decisions, escalating support disputes, requesting refunds, changing subscriptions, and negotiating deadlines or reimbursements. Existing negotiation benchmarks emphasize agreement, surplus, or strategic competence, but a user-owned agent can reach an agreement while harming the user through privacy leakage, consent violation, unsupported advocacy, over-concession, faile",
+  "field": "多Agent",
+  "summary": "SovereignNegotiation-Bench引入了一个多层次、多轮的基准测试，用于评估用户拥有的个人代理在委托谈判中的表现。该基准考虑了隐私泄露、支持争议升级和审计性等复杂因素。",
+  "key_insights": [
+    "现有谈判基准主要关注协议达成、剩余价值或战略能力，但忽略了用户拥有代理可能通过损害用户体验来达成协议的风险。",
+    "SovereignNegotiation-Bench能够评估协议的成功与用户的实际利益、隐私保护和审计性等多方面因素。",
+    "该研究发现，仅仅达成协议并不能保证谈判代理的可靠性。"
+  ],
+  "xihe_relevance": "该基准测试对于提高自反层的理解和优化具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

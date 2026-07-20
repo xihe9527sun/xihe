@@ -1,0 +1,18 @@
+﻿{
+  "id": "PraMem--Practice-derived-Experiential-Me",
+  "name": "PraMem: Practice-derived Experiential Memory for Long-horizon Behavior Prediction",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T13:59:24.272427",
+  "content": "PraMem: Practice-derived Experiential Memory for Long-horizon Behavior Prediction",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "PraMem是一种基于实践的经验性记忆方法，用于预测长期行为。",
+  "key_insights": [
+    "PraMem能够通过积累和学习过往经验来提高对未来事件的预测准确性。",
+    "该技术可以应用于需要长期决策支持的各种场景，如量化交易、多Agent系统等。",
+    "PraMem有助于提升系统的自反层能力，使其在面对复杂环境时做出更合理的决策。"
+  ],
+  "xihe_relevance": "PraMem可能对曦和的智能决策模块有重要价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

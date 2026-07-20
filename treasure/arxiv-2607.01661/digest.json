@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.01661",
+  "name": "Diverse Evidence, Better Forecasts: Multi-Agent Deliberation (2607.01661)",
+  "source": "arXiv cs.AI 2026-07",
+  "reprocessed_at": "2026-07-20T14:17:50.038167",
+  "content": "Multi-agent systems are increasingly used for forecasting future events, as deliberation among multiple LLMs is believed to improve reasoning and calibration. Yet existing approaches overlook a critical design choice: what information each agent receives. When all agents are given identical evidence, deliberation collapses into herding rather than genuine belief revision, leaving multi-agent systems little better than a single agent. We identify this as a fundamental gap and propose designed inf",
+  "field": "多Agent",
+  "summary": "通过引入信息不对称，该研究提出了一种新的多代理框架InfoDelphi，在375个二分类预测问题上显著提升了性能。",
+  "key_insights": [
+    "多代理系统在进行未来事件的预测时，如果所有代理都获得相同的信息，则讨论会退化为群体决策，无法实现真正的信念修订。",
+    "通过将信息划分为共享公共部分和独立私有部分，每个代理持有独特的知识，并且只能通过讨论来分享这些知识。",
+    "理论分析表明，这种分解方法可以减少代理间的误差相关性。",
+    "实验结果表明，InfoDelphi框架在Brier得分上比最强的单代理和多代理基线高出12-18%，在准确率上高出4-8个百分点。",
+    "研究强调了输入多样性作为有效多代理推理的关键因素。"
+  ],
+  "xihe_relevance": "该研究可能对曦和系统的进化引擎模块有潜在价值，特别是在信息处理和决策制定方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

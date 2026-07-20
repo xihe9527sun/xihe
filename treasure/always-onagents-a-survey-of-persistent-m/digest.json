@@ -1,0 +1,17 @@
+﻿{
+  "id": "always-onagents-a-survey-of-persistent-m",
+  "name": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgent",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:56:04.489778",
+  "content": "Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgent",
+  "field": "多Agent",
+  "summary": "本文对LLM代理中的持久内存、状态和治理进行了调查。",
+  "key_insights": [
+    "探讨了LLM代理中持久内存的管理方法",
+    "分析了LLM代理的状态管理和治理机制",
+    "提出了改进现有技术的方法"
+  ],
+  "xihe_relevance": "该内容对曦和AI系统的潜在价值主要在于其可以提供关于记忆系统、自反层以及进化引擎方面的研究基础。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

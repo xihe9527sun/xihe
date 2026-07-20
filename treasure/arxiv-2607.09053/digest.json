@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09053",
+  "name": "An Emergent Mirage: Is Emergent Misalignment and Realignment Indeed a Robust Phenomenon?",
+  "source": "arXiv:cs.CL:2607.09053",
+  "reprocessed_at": "2026-07-20T14:25:54.176369",
+  "content": "Recent work has reported Emergent Misalignment (EM), where language models fine-tuned on narrow, domain-specific misaligned datasets abruptly acquire broadly misaligned behavior, alongside evidence that this behavior can be reversed through limited realignment. We systematically study repeated alignment and misalignment cycles using controlled fine-tuning loops while tracking behavioral performance, and LoRA representations throughout training. Although we reproduce EM, we find that both misalig",
+  "field": "自反层",
+  "summary": "通过控制细调循环并跟踪训练过程中行为表现和LoRA表示，我们验证了Emergent Misalignment（EM）现象的存在，并发现其敏感依赖于数据集的表面特征。此外，先前报告的机制性签名并未与行为上的不一致相关联。",
+  "key_insights": [
+    "EM 现象在控制了响应长度差异后仍存在显著变化",
+    "EM 的敏感度高，尤其是对数据集的表面特征依赖",
+    "先前报道的机制性签名未能与行为上的不一致性相关联"
+  ],
+  "xihe_relevance": "有助于理解语言模型的行为模式及其可解释性",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,11 @@
+{
+  "nutrients": [
+    {
+      "id": "n1",
+      "title": "核心洞察",
+      "source": "arXiv · Thu, 2 Jul 2026 · ICML 2026 Workshop",
+      "digest": "Analysis of diverging AI evaluation metrics. Provides knowledge foundation for C1评估酶.",
+      "relevance": "C1评估酶 / L5自反层 · AI度量"
+    }
+  ]
+}

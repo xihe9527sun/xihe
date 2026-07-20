@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.01306",
+  "name": "PACE: Neuro-Symbolic Counterfactual Explanations (2607.01306)",
+  "source": "arXiv cs.AI 2026-07",
+  "reprocessed_at": "2026-07-20T14:18:16.967392",
+  "content": "Counterfactual explanations explain machine learning predictions by identifying minimal input changes that would alter a model's decision. Although many existing methods successfully generate prediction-changing alternatives, they often produce unrealistic or infeasible recommendations due to a lack of explicit mechanisms for incorporating domain knowledge and intervention constraints. Neuro-symbolic AI offers a promising direction by combining data-driven predictive models with symbolic reasoni",
+  "field": "自反层",
+  "summary": "PACE提出了一种神经符号框架，用于生成考虑可行性的解释性反事实，该框架结合了数据驱动的预测模型和能够表示人类可理解规则和可行行动的符号推理。",
+  "key_insights": [
+    "PACE通过分离预测与推理组件来解决现有方法中缺乏明确机制的问题，这些组件分别处理分类任务和生成反事实时的约束条件。",
+    "PACE框架利用神经网络进行分类，并使用符号推理层来确保生成的反事实满足特定领域的可行性要求。",
+    "PACE展示了在解释性AI中的潜在价值，特别是在需要现实决策支持的应用领域。"
+  ],
+  "xihe_relevance": "PACE方法可能为曦和系统提供关于如何结合数据驱动模型与人类理解规则以增强解释性的见解。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

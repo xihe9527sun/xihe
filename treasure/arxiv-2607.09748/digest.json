@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09748",
+  "name": "Replicating Belief, Not Bits: Epistemic State Replication for Agentic Systems",
+  "source": "arXiv:cs.AI:2607.09748",
+  "reprocessed_at": "2026-07-20T14:29:35.379734",
+  "content": "In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the rise of agentic distributed systems -- where autonomous, stochastic, and model-driven agents orchestrate infrastructure -- presents scenarios where deterministic, bitwise replication is insufficient. Replicas operating with generative models may exhibit divergent reasoning paths, summaries, and token boundaries",
+  "field": "多Agent",
+  "summary": "在分布式系统中，传统的状态机复制模型假设正确副本执行确定性转换以产生相同的二进制状态。然而，在自主、随机和基于模型的代理协调基础设施的代理式分布式系统场景下，这种确定性和二进制复制是不足的。",
+  "key_insights": [
+    "提出了Epistemic State Replication（ESR）的概念，这是一种信念复制层来处理代理式分布式系统中的问题。",
+    "ESR将复制界限从数据可见性转移到知识可见性上，允许代理使用生成模型时仍能保持语义等价和正确操作决策。",
+    "引入了Semantic Linearizability和Bounded Eventual Coherence两个概念以确保执行的安全性和可靠性。"
+  ],
+  "xihe_relevance": "ESR可能对曦和项目在处理分布式系统中的不确定性和代理行为方面有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

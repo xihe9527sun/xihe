@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.07993",
+  "name": "Hallucination Self-Play: Bootstrapping Reinforced Detector via Evolved Generator",
+  "source": "arXiv:cs.CL:2607.07993",
+  "reprocessed_at": "2026-07-20T14:23:05.529061",
+  "content": "Identifying faithfulness hallucinations in LLM-generated outputs remains challenging due to the scarcity of high-quality annotated data. Recent work relies on advanced LLMs to synthesize training data, including rationales, labels, and hallucinated claims. However, these methods treat the generator as a static component, limiting iterative improvement of the detector. To address this limitation, we introduce Hallucination Self-Play (HSP), a novel framework that enables the detector to bootstrap ",
+  "field": "自反层/进化引擎",
+  "summary": "通过引入Hallucination Self-Play (HSP)框架，该研究提出了一种方法来改进生成模型的检测器，使其能够利用进化后的生成器进行迭代学习，从而提高对虚假信息的识别能力。",
+  "key_insights": [
+    "提出了Hallucination Self-Play (HSP)框架以解决现有方法中基于静态生成器的问题。",
+    "通过将检测器和生成器视为两个角色，并使用强化学习从AI反馈来训练生成器，提高了模型对虚假信息的识别能力。",
+    "实验结果表明，该方法能够在没有外部监督的情况下使小型LLM达到或超过高级LLM的表现。",
+    "HSP框架具有潜在的应用价值，特别是在自反层和进化引擎领域。",
+    "研究为改进生成模型的质量提供了新的思路，并可能应用于多个领域如记忆系统、多Agent系统等。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其可以提高生成模型的检测能力，从而在生成内容中更好地识别虚假信息，有助于提升生成内容的真实性和可靠性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

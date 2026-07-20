@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12236",
+  "name": "Speculate with Memory: Lossless Acceleration for LLM Agents",
+  "source": "arXiv:cs.LG:2607.12236",
+  "reprocessed_at": "2026-07-20T14:33:11.139069",
+  "content": "Speculative execution accelerates LLM agents by using a smaller, cheaper model to predict and pre-launch the next step while the environment is idle. However, existing speculators are stateless and discard all information between tasks, preventing prediction quality from improving with experience. We equip the speculator with three online memory systems that learn from past agent trajectories: a contrastive transition table tracking action-sequence statistics, an episodic memory retrieving conte",
+  "field": "记忆系统",
+  "summary": "通过在环境空闲时使用较小且成本较低的模型预测和预启动下一个步骤，Speculative execution加速了LLM代理。我们为speculator配备了三个在线记忆系统：对比过渡表追踪动作序列统计、周期性记忆检索上下文相关片段以及混淆跟踪器抑制重复错误。",
+  "key_insights": [
+    "该方法在六个基准上评估，分别针对三种类型的推测：行动预测、观察预测和链式预测。",
+    "增强记忆的推测提高了19-39%的相对准确性，并且在具有重复动作空间的任务中可提高2.5倍。",
+    "所有推测都是无损的，因为它运行在零额外时钟成本的空闲时间，并且代理轨迹与非推测执行相同。"
+  ],
+  "xihe_relevance": "该技术可能对曦和有潜在价值，特别是在需要高效预测和减少错误方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

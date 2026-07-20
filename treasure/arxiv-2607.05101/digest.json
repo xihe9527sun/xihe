@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.05101",
+  "name": "Counterfactual Methods for Detecting Unfairness in Anti-Money Laundering Algorithms",
+  "source": "arXiv:2607.05101",
+  "reprocessed_at": "2026-07-20T14:18:46.965498",
+  "content": "The application of machine learning-based predictive algorithms to Anti-Money Laundering (AML) has grown rapidly, driven by the vast volume of financial transaction data available to banks. These algorithms are typically trained not only on transactional data but also on sensitive client information, which may raise fairness concerns. Despite this, AML detection systems remain largely underexplored from a fairness perspective, even though deeper analytical methods based on counterfactuals are no",
+  "field": "量化交易",
+  "summary": "本文探讨了基于机器学习的预测算法在反洗钱（AML）中的应用，并指出这些算法可能会无意中引入不公平性。尽管如此，公平分析仍较少被研究。我们通过合成IBM AMLSim交易数据集并增加账户国家和平均行为特征来改进模型性能，然后使用反事实路径特异性效应分析评估这些特征的潜在不公平性。",
+  "key_insights": [
+    "机器学习算法在AML中的应用带来了敏感信息的训练问题，可能导致不公平性",
+    "通过合成数据集和额外特征提高了多种机器学习模型的表现，包括决策树和图神经网络",
+    "反事实路径特异性效应分析揭示了那些从扩展特征中获益最多的模型更可能违反公平性",
+    "该研究强调了在AML应用中预测准确性和公平性的权衡问题",
+    "呼吁在关键领域如AML进行系统化的公平性分析"
+  ],
+  "xihe_relevance": "有助于提高反洗钱系统的透明度和公正性，对曦和的潜在价值在于能够提供更深入的理解和改进方法。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

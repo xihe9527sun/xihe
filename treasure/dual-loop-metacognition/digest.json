@@ -1,0 +1,20 @@
+﻿{
+  "id": "dual-loop-metacognition",
+  "name": "Dual-Loop Self-Reflection · Nature MI 2025",
+  "source": "arXiv:2508.07407 · Nature Machine Intelligence",
+  "reprocessed_at": "2026-07-20T13:55:53.366714",
+  "content": "Recent advances in large language models have sparked growing interest in AI agents capable of solving complex, real-world tasks. However, most existing agent systems rely on manually crafted configurations that remain static after deployment, limiting their ability to adapt to dynamic and evolving environments. To this end, recent research has explored agent evolution techniques that aim to automatically enhance agent systems based on interaction data and environmental feedback. This emerging d",
+  "field": "进化引擎/元认知",
+  "summary": "本文综述了现有的自我演化代理系统的多种技术，旨在为研究者和实践者提供对自我演化人工智能代理的系统理解，并为其开发更加适应、自主和终身学习的代理系统奠定基础。",
+  "key_insights": [
+    "现有方法主要集中在自我演化代理系统的不同组件上，包括系统输入、代理系统、环境和优化器。",
+    "研究强调了自我演化代理系统在静态能力与持续适应性之间的重要桥梁作用。",
+    "探讨了特定领域（如生物医学、编程和金融）的进化策略，并关注这些策略如何结合领域约束进行优化。",
+    "讨论了自我演化代理系统的评估、安全性和伦理考量的重要性，以确保其有效性和可靠性。",
+    "提出了一种统一的概念框架来抽象自我演化代理系统的设计反馈循环。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供一种理解自我演化AI代理的方法，这有助于提升曦和在适应性、自主性和终身学习方面的性能。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

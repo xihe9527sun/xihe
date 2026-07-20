@@ -1,0 +1,25 @@
+{
+  "id": "two-ai-metrics-diverged",
+  "name": "Two AI Metrics Diverged: Will it Make All the Difference? (arXiv 2607.00913)",
+  "source": "arXiv · Thu, 2 Jul 2026 · ICML 2026 Workshop",
+  "discovered": "2026-07-03T07:22:16",
+  "digested": "2026-07-03T07:22:16",
+  "field": "C1评估酶 / L5自反层 · AI度量",
+  "content": "Analysis of diverging AI evaluation metrics. Provides knowledge foundation for C1评估酶.",
+  "nutrients": [
+    {
+      "id": "n1",
+      "title": "核心洞察",
+      "source": "arXiv · Thu, 2 Jul 2026 · ICML 2026 Workshop",
+      "digest": "Analysis of diverging AI evaluation metrics. Provides knowledge foundation for C1评估酶.",
+      "relevance": "C1评估酶 / L5自反层 · AI度量"
+    }
+  ],
+  "memcell": {
+    "born": "2026-07-03T07:22:16",
+    "last_accessed": "2026-07-03T07:22:16",
+    "access_count": 4,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "name": "Agentic Hives: 自组织多智能体系统的人口动力学与形式化均衡理论",
+    "source": "arXiv:2603.00130 · Jean-Philippe Garnier (Br.AI.K)",
+    "digested_at": "2026-07-15T09:00:00+08:00",
+    "field": "L7涌现层 · 多Agent演化 · 人口动力学",
+    "score": 0.92,
+    "key_discovery": "多Agent系统的出生/死亡/专业化/复制可以用动态一般均衡理论形式化描述，Brouwer不动点定理证明均衡存在，Hopf分岔产生内生人口周期"
+  },
+  "nutrients": [
+    {
+      "id": "N78",
+      "name": "工具人口生态学 → 曦和桥接工具的生命周期管理",
+      "insight": "Agentic Hives用Stolper-Samuelson和Rybczynski类比描述智能体群体在偏好/资源冲击下的结构重组。曦和当前的工具生态(41个Python文件)只增不删——缺少形式化的生命周期管理。应该引入：birth_rate(创建速率)、death_rate(废弃速率)、specialization_diversity(专业化多样性)。当一个工具的'使用频率×成功率'持续低于阈值，应进入'濒危→死亡'阶段而非永久存在。",
+      "target": "bridge/population_ecology.py (新建)",
+      "status": "pending",
+      "hebbian_credit": 10
+    },
+    {
+      "id": "N79",
+      "name": "Hopf分岔与内生周期 → 曦和感知层的自适应节律",
+      "attestation": "Agentic Hives证明在特定参数组合下，智能体人口会自发产生'牛熊周期'——出生率峰值后跟随死亡率峰值。曦和当前的所有感知/觅食都是'固定节律'：8:00/14:00/20:00狩猎。如果把这些节律变为自适应的——忙时高频、闲时低频——可以更高效利用计算资源。参数空间可以通过regime diagram分区：唯一均衡区/不确定区/内生周期区/不稳定区。",
+      "target": "bridge/foraging.py · schedule logic",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N80",
+      "name": "均衡存在性与多元均衡 → 蝉桥架构的稳态验证",
+      "insight": "Brouwer不动点定理证明了Hive Equilibrium的存在。在战略互补条件下，均衡可以多重。这对曦和的直接启示：桥接系统的41个工具可能收敛到多个可能的'平衡态'——稳定的系统配置。当前缺少判断当前配置是否在'最优均衡'上的机制。多重均衡意味着系统可能陷入次优均衡而不自知。",
+      "target": "bridge/evolution_engine.py · equilibrium check",
+      "status": "pending",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N81",
+      "name": "Walrasian拍卖师式编排器 → 曦和水滴路由的资源分配优化",
+      "insight": "Agentic Hives中的orchestrator扮演Walrasian拍卖师+Global Workspace双重角色——收集所有Agent的'需求'和'供给'后计算均衡价格。曦和的代谢路由器(metabolic_actor)目前是'优先级驱动'而非'市场均衡驱动'。引入轻量级拍卖机制：每个工具提交bid(我能处理此任务的可信度)和ask(我需要多少计算资源)，路由器求解均衡分配。",
+      "target": "bridge/bus_bridge.py · resource allocation",
+      "status": "pending",
+      "hebbian_credit": 7
+    },
+    {
+      "id": "N82",
+      "name": "Regime Diagram参数空间分区 → 工具创建策略的形式化指导",
+      "insight": "Agentic Hives最终的实用产出是regime diagram——参数空间分区为唯一均衡/不确定/内生周期/不稳定四区域。这给出了工程指导：应该在哪个区域运行系统。曦和当前没有这样的参数空间地图。应该建立'工具生态健康度面板'，实时显示当前处于哪个区域，以及向目标区域调整的参数路径。",
+      "target": "曦和监控面板 · 工具生态健康指标",
+      "status": "pending",
+      "hebbian_credit": 7
+    }
+  ],
+  "resonance_with_old_treasure": {
+    "self-organizing-llm-agents": "【N78 vs N66】自愿回避(Voluntary Self-Abstention)在Hives框架中获得人口学解释——代理的'不参与'决策是死亡机制的低成本替代。N66的执行力过滤器现在可以升级为'濒危检测器'：如果一个工具连续N次自愿回避(不参与DAG执行)，自动标记为濒危。",
+    "memetic-drift-qsg-2603.24676": "QSG标度律描述的是共识形成的统计力学，Hives描述的是人口结构的动力学。两者互补：QSG告诉我们在给定群体结构下的共识可能性，Hives告诉群体结构如何响应外部冲击而变化。昨天的polarization_detector.py可以接入Hives的regime信息，提高极化检测的上下文敏感性。"
+  },
+  "fusion_score": 9.2
+}

@@ -1,0 +1,17 @@
+﻿{
+  "id": "who-broke-the-system-failure-localization-in-llm",
+  "name": "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:47.126789",
+  "content": "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems",
+  "field": "多Agent",
+  "summary": "该研究探讨了在基于LLM的多agent系统中，如何定位和识别系统故障。",
+  "key_insights": [
+    "分析多agent系统的故障原因",
+    "开发新的方法来定位故障",
+    "提高基于LLM的多agent系统的鲁棒性"
+  ],
+  "xihe_relevance": "该研究结果可以为自反层提供理论支持，帮助系统更好地自我评估和改进。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

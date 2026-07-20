@@ -1,0 +1,17 @@
+﻿{
+  "id": "strategic-bargaining-in-multi-buyer-markets-rein",
+  "name": "Strategic Bargaining in Multi-Buyer Markets: Reinforcement Learning from Verifiable Rewards for LLM Negotiations",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:02:10.364725",
+  "content": "Strategic Bargaining in Multi-Buyer Markets: Reinforcement Learning from Verifiable Rewards for LLM Negotiations",
+  "field": "多Agent",
+  "summary": "该研究探讨了在多买家市场中进行战略谈判的强化学习方法，特别关注通过可验证奖励来提升语言模型谈判的效果。",
+  "key_insights": [
+    "引入强化学习框架改进语言模型在多买家市场中的谈判表现",
+    "利用可验证奖励机制提高谈判效率和准确性",
+    "研究结果可能应用于自反层或进化引擎等系统中以优化决策过程"
+  ],
+  "xihe_relevance": "该内容对记忆系统、自反层及进化引擎方向具有潜在价值，特别是通过强化学习方法提升模型在复杂环境中的适应性和优化能力。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

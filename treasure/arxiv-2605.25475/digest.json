@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2605.25475",
+  "name": "IndexMem: Learned KV-Cache Eviction with Latent Memory for Long-Context LLM Inference",
+  "source": "arXiv:cs.CL:2605.25475",
+  "reprocessed_at": "2026-07-20T14:35:48.832305",
+  "content": "Large Language Models (LLMs) are increasingly expected to operate over long contexts, yet standard softmax attention incurs a KV cache that grows linearly with sequence length, quickly becoming the bottleneck for long context inference. A practical remedy is to evict less important KV entries; however, existing eviction policies are largely heuristic and struggle to capture the rich, input-dependent distribution of token importance. In this work, we introduce a learnable indexer that predicts KV",
+  "field": "进化引擎",
+  "summary": "该研究提出了一种新的索引器，能够预测KV条目的重要性，并结合轻量级的潜在记忆模块来解决长上下文推理中的问题。",
+  "key_insights": [
+    "引入了可学习的索引器以准确预测和保留关键令牌的重要性",
+    "通过压缩被移除的信息并提供残差读取来补偿KV缓存删除的影响",
+    "在有限的KV预算下实现了准确的长上下文推理，并且在多个模型上取得了显著改进"
+  ],
+  "xihe_relevance": "该方法可能有助于提高曦和在处理复杂任务时的表现，特别是在需要长期记忆和自适应学习的应用中。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

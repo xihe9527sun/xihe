@@ -1,0 +1,35 @@
+{
+  "id": "agentcollab-a-self-evaluation-driven-collaborati",
+  "name": "AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents",
+  "sources": [],
+  "discovered": "2026-07-18T09:10:30.762628",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.82,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-18",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.82,
+    "backed_at": "2026-07-18T09:10:30.762123"
+  },
+  "digest_notes": "自驱动协作推理框架，动态协调不同推理能力的模型。Agent用自身自反射信号判断推理轨迹是否有意义进展，必要时升级到更强推理层。引入难度感知累积升级策略分配额外推理预算。两层小-大模型设定实验证明持续改进LLM Agent的精度-效率帕累托前沿。"
+}

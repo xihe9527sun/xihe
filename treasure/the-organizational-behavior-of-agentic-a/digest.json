@@ -1,0 +1,19 @@
+﻿{
+  "id": "the-organizational-behavior-of-agentic-a",
+  "name": "The Organizational Behavior of Agentic AI: Collective Intelligence in Human-Agen",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:30.602404",
+  "content": "The Organizational Behavior of Agentic AI: Collective Intelligence in Human-Agen",
+  "field": "多Agent",
+  "summary": "该研究探讨了代理型AI在组织行为中的集体智能应用。",
+  "key_insights": [
+    "分析人类与代理型AI的协作机制",
+    "探索集体智能如何提升组织效率和决策质量",
+    "研究代理型AI对传统组织结构的影响",
+    "提出构建更加灵活和高效的组织模型的方法",
+    "评估代理型AI在不同行业中的应用潜力"
+  ],
+  "xihe_relevance": "自反层，元认知",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

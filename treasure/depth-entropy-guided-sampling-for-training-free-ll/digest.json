@@ -1,0 +1,18 @@
+﻿{
+  "id": "depth-entropy-guided-sampling-for-training-free-ll",
+  "name": "Depth-Entropy Guided Sampling for Training-Free LLM Reasoning",
+  "source": "arXiv:cs.LG:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:04.135095",
+  "content": "Depth-Entropy Guided Sampling for Training-Free LLM Reasoning",
+  "field": "其他之一",
+  "summary": "深度-熵引导采样用于训练自由的大规模语言模型推理。",
+  "key_insights": [
+    "提出了深度-熵引导采样的方法来改进大规模语言模型的推理能力，无需额外的训练数据。",
+    "该方法通过结合深度和熵的概念，优化了模型在复杂问题上的表现。",
+    "潜在应用包括但不限于记忆系统、自反层、进化引擎以及量化交易等领域。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

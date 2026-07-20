@@ -1,0 +1,25 @@
+{
+  "id": "counterbench-proceedings-of-aaai-confere",
+  "name": "CounterBench | Proceedings of AAAI Conference 2026",
+  "source": "https://dl.acm.org/doi/abs/10.1609/aaai.v40i36.40287",
+  "discovered": "2026-07-04T22:28:19.976881",
+  "digested": "2026-07-04T22:28:19.976886",
+  "field": "待分类",
+  "content": "New benchmark dataset with 1.2K counterfactual reasoning questions at varying difficulty",
+  "intake_score": 0.27,
+  "score_detail": {
+    "relevance_xihe": 0.125,
+    "novelty": 0.6,
+    "actionable": 0.0,
+    "cross_domain": 0.0,
+    "depth": 0.5,
+    "timeliness": 0.7
+  },
+  "memcell": {
+    "born": "2026-07-04T22:28:19.976881",
+    "last_accessed": "2026-07-04T22:28:19.976886",
+    "access_count": 3,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

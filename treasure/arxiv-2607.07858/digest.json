@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.07858",
+  "name": "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting (2607.07858)",
+  "source": "arXiv:cs.AI:2607.07858",
+  "reprocessed_at": "2026-07-20T14:23:18.888251",
+  "content": "Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated decision workflows. Actuaries now face a design space that ranges from traditional rule-based automation to large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent ``agentic'' systems that plan, retrieve, call tools, and reflect. This paper examines how these emerging architecture",
+  "field": "多Agent",
+  "summary": "该研究探讨了AI和检索增强模型在直通承保中的应用，特别是在需要处理非结构化文档、异构数据源以及受监管决策流程的领域。通过开发一个代理AI框架来支持小商业主保险（BOP）的直通承保过程，研究对比分析了不同方法的效果。",
+  "key_insights": [
+    "研究发现代理AI系统在多步骤和缺失信息场景下表现最佳，能够避免不支持的直接通过决策。",
+    "该模型结合了目标检索、第三方数据检查以及明确的多步规则评估。",
+    "研究结果表明，代理AI框架能有效支持直通承保过程中的透明度、可审计性和人类干预治理需求。"
+  ],
+  "xihe_relevance": "该研究方法可能对曦和系统在提升保险承保流程的效率和准确性方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

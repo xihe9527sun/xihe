@@ -1,0 +1,18 @@
+﻿{
+  "id": "automem-automated-learning-of-memory-as-",
+  "name": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T13:57:47.784234",
+  "content": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "AutoMem是一种自动化学习记忆作为认知技能的方法。",
+  "key_insights": [
+    "AutoMem能够自动学习和优化记忆过程，提高记忆力效率。",
+    "它可能对提升人类的认知能力具有重要价值。",
+    "AutoMem的研究可以应用于自反层、进化引擎以及元认知等领域。"
+  ],
+  "xihe_relevance": "潜在的高价值应用",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

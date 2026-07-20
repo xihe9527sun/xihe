@@ -1,0 +1,35 @@
+{
+  "id": "amas-dynamic-topology",
+  "name": "AMAS: per-query异构拓扑适配框架",
+  "sources": [],
+  "discovered": "2026-07-09T21:02:05.308280",
+  "field": "AI架构·曦和融合",
+  "intake_score": 0.78,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "AMAS per-query异构拓扑→enzyme_crosslink.select_topology()按查询类型激活子图",
+    "由表及里": "研讨厅驱动正式入库固化(差距④)"
+  },
+  "xihe_mapping": {
+    "subsystem": "代谢路由/酶网络",
+    "enhancement_points": [
+      "AMAS per-query异构拓扑→enzyme_crosslink.select_topology()按查询类型激活子图"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "phase3(拓扑层联结)",
+    "landing": "拓扑层联结(新增select_topology, 框架不变)"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "phase3(拓扑层联结)",
+    "landing": "拓扑层联结(新增select_topology, 框架不变)",
+    "subsystem": "代谢路由/酶网络",
+    "enhancement": "AMAS per-query异构拓扑→enzyme_crosslink.select_topology()按查询类型激活子图",
+    "intake_score": 0.78,
+    "backed_at": "2026-07-10T06:58:24.394261"
+  },
+  "digest_notes": "核心已吸收进 zero-consensus-routing phase3"
+}

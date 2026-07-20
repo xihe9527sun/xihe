@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.00110",
+  "name": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+  "source": "arXiv:cs.MA",
+  "reprocessed_at": "2026-07-20T14:20:46.135018",
+  "content": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+  "field": "多Agent",
+  "summary": "CoopEval is a benchmarking framework designed to evaluate mechanisms that sustain cooperation in social dilemmas and LLM agents. It aims to provide insights into the effectiveness of different strategies for promoting cooperative behavior.",
+  "key_insights": [
+    "CoopEval provides a standardized method for evaluating mechanisms that support cooperation in complex social scenarios.",
+    "It offers valuable insights into how LLMs can be designed to foster cooperative behaviors, which could have significant applications in various fields.",
+    "The framework highlights the importance of understanding and implementing appropriate mechanisms to maintain cooperative relationships in diverse settings."
+  ],
+  "xihe_relevance": "CoopEval的评估框架可以为曦和系统提供有价值的信息，特别是在设计能够促进合作行为的人工智能模型方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

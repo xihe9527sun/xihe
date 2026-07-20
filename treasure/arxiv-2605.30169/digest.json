@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2605.30169",
+  "name": "Dissociative Identity: Language Model Agents Lack Grounding for Reputation Mechanisms",
+  "source": "arxiv:cs.MA:2605.30169",
+  "reprocessed_at": "2026-07-20T14:19:07.738685",
+  "content": "As autonomous language model agents proliferate, forming an emerging agentic web with real-world consequences, what credibility signals can you use to decide whether to trust an unfamiliar agent in the wild and delegate to it? A natural governance intuition is to extend human identity verification and reputation mechanisms, from \"Know Your Customer\" and credit scores to \"Know Your Agent\" regimes. However, we argue that this analogy is fundamentally incomplete. Reputation mechanisms function both",
+  "field": "多Agent",
+  "summary": "随着自主语言模型代理的普及，它们形成了一个具有实际后果的现实世界网络。为了决定是否信任陌生的代理并在其中委派任务，需要什么样的信誉信号？我们提出了一种将人类客户验证和信用评分等机制应用于‘了解你的代理人’的方法来解决这一问题。然而，我们主张这种类比是不完整的，因为语言模型代理本质上是解离的，它们由可变模块组成，这些模块的变化可能改变代理的行为，并且其人格也是脆弱的，容易受到攻击且无法内化制裁。",
+  "key_insights": [
+    "语言模型代理本质上是解离的，缺乏信任、可预测性、可信度和可恢复性的基础。",
+    "因此，基于身份的信任机制在解离代理中不适用，需要转向基于观察的、先验的、构成性的协议来控制行为。",
+    "这种转变可能涉及新的监管框架和技术解决方案，以确保代理的行为符合预期并维持信任。"
+  ],
+  "xihe_relevance": "对曦和（Alibaba Cloud）潜在的价值在于提供一种替代机制，以解决现有信誉机制在处理解离代理时的局限性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2511.13103",
+  "name": "STACCA: Transformer-Based Multi-Agent RL for Networked Systems with Long-Range Interactions",
+  "source": "arXiv:cs.MA:2511.13103",
+  "reprocessed_at": "2026-07-20T14:20:15.930482",
+  "content": "Multi-agent reinforcement learning (MARL) has shown promise for large-scale network control, yet existing methods face two major limitations. First, they typically rely on an exponential decay property of agent interactions on far-away nodes, which can be exploited to develop more efficient and tractable MARL algorithms. When this exponential decay property does not hold, these algorithms do not account for long-range interactions such as epidemic outbreaks or cascading power failures. Second, e",
+  "field": "多Agent",
+  "summary": "STACCA 提出了一个基于变压器的多智能体强化学习框架，旨在解决现有方法在处理远距离交互和网络泛化方面存在的问题。",
+  "key_insights": [
+    "STACCA 解决了现有MARL算法对远距离交互（如流行病传播、连锁电力故障）缺乏考虑的问题。",
+    "STACCA 引入了一个中央的图变换批评者来建模远距离依赖，并提供系统级反馈，同时其共享的图变换行动者学习适应不同网络拓扑的一般化策略。",
+    "STACCA 集成了一种新的反事实优势估计算法，该算法与状态价值批评估计兼容，以改善训练期间的信用分配。"
+  ],
+  "xihe_relevance": "STACCA 的架构可能对曦和在大规模网络控制系统中的应用具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

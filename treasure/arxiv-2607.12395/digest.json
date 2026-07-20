@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.12395",
+  "name": "Ring-Zero: Scaling Zero RL to a Trillion Parameters for Emergent Reasoning",
+  "source": "arXiv:cs.CL:2607.12395",
+  "reprocessed_at": "2026-07-20T14:32:36.038942",
+  "content": "Reinforcement learning with verifiable rewards without human-annotated data, often referred to as zero RL, has emerged as a powerful paradigm for eliciting chain-of-thought reasoning. However, due to computational constraints, existing studies are largely restricted to small models, leaving the training dynamics and emergent capabilities at a large scale unexplored. To meaningfully explore this frontier, we aim to elicit high-quality reasoning behaviors from the model. However, we find that naiv",
+  "field": "元认知",
+  "summary": "通过引入稳定的训练管道和优化算法，Ring-Zero模型在1万亿参数规模下实现了显著的样本效率提升，并展示了高级的认知行为。",
+  "key_insights": [
+    "Ring-Zero成功地从大规模模型中提取出高质量的推理行为。",
+    "模型在训练过程中经历了初步发现阶段和强化阶段。",
+    "模型自发发展了多种高级认知功能，包括拟人化、结构化格式、自我验证、并行推理以及情境焦虑。",
+    "模型在多个数学基准测试中的表现与现有方法相当。",
+    "提出了一种多维度的评估框架来评价链式思考的质量，该框架展示了模型在生成结构化和简洁的推理轨迹方面的优势。"
+  ],
+  "xihe_relevance": "对曦和潜在价值在于提供关于大规模模型训练行为的深入见解。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -323,7 +323,8 @@
   "action": "pass",
   "score": 0.88,
   "note": "内容质量高、方向强对齐。落地方式：补充洞察进 cog_primitives 自反层注释 + 自反强度分层触发借鉴四级机制。待盘古拍板后落运行代码",
-  "fused": true
+  "fused": true,
+  "name": "reflective-memory"
  },
  {
   "timestamp": "2026-07-20T16:58:39+08:00",
@@ -335,7 +336,8 @@
   "action": "pass",
   "score": 0.89,
   "note": "arXiv 2607最新、收益量化明确(2-4x)、可落地。落地方式：在 memory_writer v2 增加'自决编码窗口'逻辑。待盘古拍板后落运行代码",
-  "fused": true
+  "fused": true,
+  "name": "automem-memory-skill"
  },
  {
   "timestamp": "2026-07-20T16:58:39+08:00",
@@ -347,7 +349,8 @@
   "action": "pass",
   "score": 0.87,
   "note": "ICML 2026高信源、机制清晰可落地。落地方式：新模块 causal_attribution.py，由 evolution_engine 在 negative_finding 时调用。待盘古拍板后落运行代码",
-  "fused": true
+  "fused": true,
+  "name": "causalflow-icml2026"
  },
  {
   "timestamp": "2026-07-20T16:58:39+08:00",
@@ -359,7 +362,8 @@
   "action": "pass",
   "score": 0.86,
   "note": "高信源、与现有skill体系强相关。落地方式：skill自审增加'元技能提炼'步骤。待盘古拍板后落运行代码",
-  "fused": true
+  "fused": true,
+  "name": "skill-mas-arxiv2606-18837"
  },
  {
   "timestamp": "2026-07-20T18:25:44+08:00",

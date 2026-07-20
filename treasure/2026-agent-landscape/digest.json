@@ -1,0 +1,17 @@
+﻿{
+  "id": "2026-agent-landscape",
+  "name": "2026开源AI Agent全景 · 三梯队速览",
+  "source": "the-agent-report.com Top 20",
+  "reprocessed_at": "2026-07-20T12:50:45.691501",
+  "content": "2026开源AI Agent全景 · 三梯队速览",
+  "field": "多Agent",
+  "summary": "该报告概述了2026年开源AI Agent的全景，并速览了三梯队的发展情况。",
+  "key_insights": [
+    "报告涵盖2026年的开源AI Agent发展",
+    "速览三梯队的开源AI Agent现状",
+    "提供对AI Agent未来趋势的理解"
+  ],
+  "xihe_relevance": "记忆系统，自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

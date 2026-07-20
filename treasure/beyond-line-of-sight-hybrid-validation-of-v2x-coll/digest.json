@@ -1,0 +1,20 @@
+﻿{
+  "id": "beyond-line-of-sight-hybrid-validation-of-v2x-coll",
+  "name": "Beyond Line of Sight: Hybrid Validation of V2X Collective Perception",
+  "source": "arXiv cs.MA 2607.00874",
+  "reprocessed_at": "2026-07-20T14:14:44.524317",
+  "content": "This paper introduces a probabilistic framework and hybrid validation methodology for V2X-enabled Collective Perception (CP) in complex traffic scenarios. The proposed Bayesian fusion algorithm extends the perceptual horizon of connected and autonomous vehicles by integrating heterogeneous sensor observations from multiple agents into a shared probabilistic occupancy grid. Each cell of this grid encapsulates both occupancy likelihood and uncertainty, enabling explainable and trustworthy situatio",
+  "field": "多Agent",
+  "summary": "本文提出了一种概率框架和混合验证方法，用于在复杂交通场景下实现V2X支持的集体感知（CP），扩展了连接和自动驾驶车辆的感知范围。",
+  "key_insights": [
+    "引入了基于贝叶斯融合算法的概率框架来整合多个代理的异构传感器观测数据，并将其集成到一个共享的概率占位网格中。",
+    "该方法通过解释并信任超出自身视野的情境意识，扩展了连接和自动驾驶车辆的感知范围。",
+    "开发了一种结合CARLA虚拟环境与闭环实验的混合测试框架，以弥合模拟与实际世界评估之间的差距。",
+    "在环岛场景下，验证结果表明，在正常定位条件下，CP系统的覆盖范围提高了260%，同时六代理CP下的占位细胞召回率从0.82提高到了0.94。",
+    "该方法为集体感知系统提供了可重现和解释的基础，支持合作自动驾驶车辆的安全部署。"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和项目在记忆系统、自反层或进化引擎等领域的应用具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

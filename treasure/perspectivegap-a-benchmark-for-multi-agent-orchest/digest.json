@@ -1,0 +1,18 @@
+﻿{
+  "id": "perspectivegap-a-benchmark-for-multi-agent-orchest",
+  "name": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+  "source": "arXiv:cs.MA:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:54.115278",
+  "content": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+  "field": "多Agent",
+  "summary": "PerspectiveGap是一个用于多代理编排提示的基准。",
+  "key_insights": [
+    "提出了一个新的基准来评估和改进多代理系统的编排提示",
+    "旨在解决当前多代理系统中视角差距的问题",
+    "可能对自反层、进化引擎和元认知等领域有潜在的应用价值"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待进一步研究",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

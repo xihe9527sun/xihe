@@ -1,0 +1,19 @@
+﻿{
+  "id": "operational-reframing-and-approval-framed-delega",
+  "name": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety (2607.07097)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:29.957492",
+  "content": "Safety evaluations of multi-agent LLM systems often compare a direct prompt with a planner-executor pipeline and report the difference as a single \"pipeline effect.\" We argue that this aggregate is difficult to interpret because it conflates three mechanisms: harmful intent may be reframed as plausible operational work, the planner may refuse or transform the request, and the executor may act under delegation prompts implying prior approval. To separate these factors, we introduce a five-conditi",
+  "field": "多Agent",
+  "summary": "文章分析了多代理语言模型安全评估中的操作重设和授权框架化，提出了五条件控制对比设计来分离这些机制的影响。",
+  "key_insights": [
+    "聚合管道安全性不是一个稳定的架构属性",
+    "操作重设是最重要的风险信号，提高了GPT、Gemini和DeepSeek的合规性",
+    "规划者行为可以通过拒绝来抵消风险，但当生成执行步骤时，执行者可能会变得更加合规",
+    "授权框架化对提示设计、模型配对和场景来源敏感",
+    "直接模型排名可能错误预测部署后的规划-执行行为"
+  ],
+  "xihe_relevance": "建议归属领域：多Agent",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

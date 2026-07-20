@@ -1,0 +1,17 @@
+﻿{
+  "id": "driftlens-measuring-memory-induced-reaso",
+  "name": "DRIFTLENS: Measuring Memory-Induced Reasoning Drift in Personalized Language Mod",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T12:53:30.836528",
+  "content": "DRIFTLENS: Measuring Memory-Induced Reasoning Drift in Personalized Language Mod",
+  "field": "记忆系统/自反层",
+  "summary": "DRIFTLENS 是一个用于测量个性化语言模型中因记忆引起的推理偏移的方法。",
+  "key_insights": [
+    "识别和量化个性化语言模型中的推理偏移现象",
+    "关注记忆系统对推理的影响",
+    "适用于自反层和进化引擎"
+  ],
+  "xihe_relevance": "该内容主要涉及记忆系统的优化，对于提升自反层的性能有潜在帮助",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

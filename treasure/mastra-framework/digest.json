@@ -1,0 +1,20 @@
+﻿{
+  "id": "mastra-framework",
+  "name": "Mastra · TypeScript最完整AI Agent框架",
+  "source": "mastra.ai · GitHub 10K⭐",
+  "reprocessed_at": "2026-07-20T13:55:46.350979",
+  "content": "Mastra · TypeScript最完整AI Agent框架",
+  "field": "多Agent",
+  "summary": "Mastra 是一个基于 TypeScript 的完整 AI Agent 框架。",
+  "key_insights": [
+    "Mastra 提供了一个全面的框架来构建和管理 AI 助手",
+    "支持记忆系统、自反层、进化引擎等高级功能",
+    "适用于需要高度定制化和复杂逻辑的应用场景，如量化交易",
+    "具有良好的模块化设计，便于与其他工具集成",
+    "潜在应用于多Agent环境下的协调与控制"
+  ],
+  "xihe_relevance": "Mastra 框架在曦和系统中的应用可能提升其智能化水平。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executable Counterfactuals: 通过代码实现LLM反事实推理完整三步流程 · 曦和宝藏</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --neon:#f59e0b; --neon2:#22d3ee; }
+  body {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(129,140,248,0.10), transparent 42%),
+      radial-gradient(circle at 82% 78%, rgba(34,211,238,0.08), transparent 45%),
+      #060814;
+    color:#cbd5e1; font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    padding:32px 20px; line-height:1.85; min-height:100vh;
+  }
+  /* 背景网格 */
+  body::before {
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:linear-gradient(rgba(129,140,248,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(129,140,248,0.04) 1px,transparent 1px);
+    background-size:42px 42px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 80%);
+  }
+  .container { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+  .hero {
+    border:1px solid rgba(129,140,248,0.28); border-radius:18px; padding:26px 28px;
+    background:linear-gradient(135deg,rgba(129,140,248,0.08),rgba(34,211,238,0.04));
+    backdrop-filter:blur(10px); box-shadow:0 0 28px rgba(129,140,248,0.12), inset 0 0 22px rgba(34,211,238,0.05);
+    margin-bottom:22px;
+  }
+  h1 {
+    font-size:25px; font-weight:800; letter-spacing:0.5px; margin-bottom:12px;
+    background:linear-gradient(92deg,#a5b4fc,#67e8f9); -webkit-background-clip:text;
+    background-clip:text; color:transparent;
+  }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip {
+    font-size:11.5px; padding:4px 11px; border-radius:20px; color:#cbd5e1;
+    background:rgba(148,163,184,0.10); border:1px solid rgba(148,163,184,0.22);
+  }
+  .layer-badge {
+    font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:20px;
+    color:var(--neon); background:#f59e0b1f; border:1px solid var(--neon);
+    box-shadow:0 0 12px #f59e0b55;
+  }
+  .credit-bar { margin-top:16px; }
+  .credit-bar .lab { font-size:11px; color:#64748b; margin-bottom:5px; display:flex; justify-content:space-between; }
+  .credit-track { height:7px; border-radius:6px; background:rgba(148,163,184,0.15); overflow:hidden; }
+  .credit-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--neon),var(--neon2)); box-shadow:0 0 10px var(--neon); }
+  .glass {
+    border:1px solid rgba(148,163,184,0.16); border-radius:14px; padding:18px 22px; margin:16px 0;
+    background:rgba(15,23,42,0.55); backdrop-filter:blur(8px);
+    box-shadow:inset 0 0 18px rgba(34,211,238,0.04);
+  }
+  .section-title { font-size:16px; font-weight:700; color:#a5b4fc; margin:6px 0 12px; padding-bottom:8px; border-bottom:1px solid rgba(129,140,248,0.22); }
+  h3 { font-size:14px; font-weight:600; color:#67e8f9; margin:14px 0 7px; }
+  p { font-size:13px; color:#94a3b8; margin:7px 0; }
+  ul { margin:6px 0; }
+  .glow-item {
+    font-size:13px; color:#cbd5e1; margin:5px 0 5px 4px; list-style:none; padding-left:18px; position:relative;
+  }
+  .glow-item::before {
+    content:"▹"; position:absolute; left:0; color:var(--neon2); text-shadow:0 0 8px var(--neon2);
+  }
+  .footer { text-align:center; font-size:11px; color:#475569; margin-top:30px; padding-top:16px; border-top:1px solid rgba(148,163,184,0.15); letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>Executable Counterfactuals: 通过代码实现LLM反事实推理完整三步流程</h1>
+    <div class="meta">
+      <span class="layer-badge">L4</span>
+      <span class="chip">🏷️ L4催化层 · 因果推理 · 反事实</span>
+      <span class="chip">📦 ICLR 2026 · Aniket</span>
+      <span class="chip">💎 养分 5</span>
+      <span class="chip">⭐ 评分 0.92</span>
+    </div>
+    <div class="credit-bar">
+      <div class="lab"><span>赫布信用 Hebbian Credit</span><span>8</span></div>
+      <div class="credit-track"><div class="credit-fill" style="width:50%"></div></div>
+    </div>
+  </div>
+  <div class="glass">
+    <h2 class="section-title">◆ 一、核心发现：反事实推理的三步流程</h2><p>论文对Pearl因果阶梯(Ladder of Causation)第三级——反事实推理——做了完整的工程化实现：</p><p>```</p><p>反事实推理 = Abduction(隐变量推断) + Intervention(替代情境构建) + Prediction(结果预测)</p><p>```</p><p>关键发现：现有评估方法**跳过Abduction步骤**，实际退化为干预推理(第二级)，导致高估LLM能力25-40%。</p><h3>▸ 实验数据</h3><p>| 模型 | 干预推理准确率 | 反事实推理准确率 | 下降幅度 |</p><p>|:----|:-------------:|:---------------:|:-------:|</p><p>| o4-mini | 基线 | -25% | 约25% |</p><p>| Claude-4-Sonnet | 基线 | -40% | 约40% |</p><h2 class="section-title">◆ 二、核心发现：RL训练 > SFT</h2><p>**关键实验对比：**</p><p>| 训练方法 | 分布内性能 | 分布外泛化(代码→数学) |</p><p>|:---------|:---------:|:-------------------:|</p><p>| SFT(强模型轨迹) | ↑ 提升 | ↓ 下降 |</p><p>| RL(PPO) | ↑ 提升 | ↑ 提升 1.5x-2x |</p><p>这一发现是曦和这篇论文中**最有价值的养分**——曦和的代谢进化路径目前依赖H值自然选择，本质上接近SFT的"在成功路径上微调"。RL训练能够诱导核心认知行为并泛化到新分布，这对代谢路由的进化机制是一个修正信号。</p><h2 class="section-title">◆ 三、技术方法</h2><h3>▸ 可执行反事实框架</h3><li class="glow-item">以代码(Code)和数学(Math)问题作为操作化载体</li><li class="glow-item">修改if-condition/while-loop等结构生成不同难度反事实场景</li><li class="glow-item">代码执行提供**确定性因果推理基板**——不需LLM猜测，直接执行验证</li><h3>▸ 可扩展合成数据生成</h3><li class="glow-item">通过修改代码结构自动生成不同难度数据</li><li class="glow-item">支持从简单→困难的渐进式训练</li><li class="glow-item">零人工标注成本</li><h3>▸ 推理轨迹分析</h3><li class="glow-item">SFT导致推理轨迹变得"狭窄"——模型学习的是特定的推理格式而非推理能力</li><li class="glow-item">RL保持推理轨迹的多样性，从而支持泛化</li><h2 class="section-title">◆ 四、对曦和的意义</h2><h3>▸ 直接融合方向</h3><p>1. **代谢进化路径 → RL-like泛化奖励** (P0)</p><p>   - 现状：代谢路由的H值进化接近SFT式同路径强化</p><p>   - 改变：在surprise_credit中加入"跨域泛化奖励"——当一个路径的非原生域命中时，surprise_credit加权×1.5</p><p>   - 预期效果：代谢系统从"走同一路径更快"变为"走新路径也有回报"</p><p>2. **执行核 → 可执行反事实验证** (P0)</p><p>   - 现状：causal.crs和causal.minimal_repair的修复策略是启发式的</p><p>   - 改变：添加"代码化反事实验证"步骤——将修复建议编码为可执行代码片段并运行验证</p><p>   - 预期效果：修复决策从概率正确变为确定性正确</p><p>3. **桥接简报 → 反事实自信度** (P1)</p><p>   - 现状：桥接输出皮层状态但不提供因果确信度</p><p>   - 改变：在session-context中增加'反事实自信度'指标——当给出因果判断时，同时输出"如果改变X会怎样"</p><p>   - 预期效果：盘古能看到曦和推理的因果粒度</p><h3>▸ 与CausalFlow的协同</h3><p>```</p><p>CausalFlow: 因果结构发现 → 反事实归因 → 最小修复</p><p>Executable CF: 反事实框架形式化 → RL训练方法 → 可执行验证</p><p>                    ↓</p><p>融合管线：CausalFlow发现因果链 → EC验证反事实假设 → CausalFlow执行修复</p><p>```</p><h2 class="section-title">◆ 五、可催化方向</h2><p>| 优先级 | 方向 | 变更对象 | 复杂度 |</p><p>|:------:|:-----|:---------|:------:|</p><p>| 🚀 P0 | 跨域泛化奖励注入代谢路由 | bridge/metabolic_actor.py | 低(新增1条信用公式) |</p><p>| 🚀 P0 | 可执行反事实验证加入执行核 | bridge/execution_core.py | 中(新增1个能力) |</p><p>| 📌 P1 | 反事实自信度指标 | bridge/session_context.py | 低(新增1个字段) |</p><p>| 📌 P1 | 变难度变异池 | bridge/mutation_pool.py | 中(修改变异生成逻辑) |</p><p>*此宝藏由每日觅食自动化于2026-07-08 08:50发现并入库*</p>
+  </div>
+  <div class="footer">曦和宝藏 · executable-counterfactuals-iclr2026 · 科技炫酷 HUD 版 · 生成于 2026-07-10T19:04:05</div>
+</div>
+</body>
+</html>

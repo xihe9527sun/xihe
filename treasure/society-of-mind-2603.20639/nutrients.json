@@ -1,0 +1,77 @@
+{
+  "id": "society-of-mind-2603.20639",
+  "name": "谷歌思想社会研究 — 推理模型内部多视角辩论的自发涌现",
+  "source": "arXiv:2603.20639",
+  "discovered": "2026-07-14T08:50:00+08:00",
+  "field": "多Agent涌现 | 推理机制 | 社会智能",
+  "status": "active",
+  "intake_score": 0.91,
+  "score_detail": {
+    "relevance_xihe": 0.95,
+    "novelty": 0.88,
+    "actionable": 0.92,
+    "cross_domain": 0.9,
+    "depth": 0.88,
+    "timeliness": 0.92
+  },
+  "nutrients": [
+    {
+      "id": "N1-social-reasoning-emergence",
+      "type": "mechanism",
+      "name": "社会推理涌现机制",
+      "priority": "P0",
+      "target": "xihe-cortex:rrif-layer",
+      "effect": "验证曦和RRIF推理层的内部辩论方向：模型内部的多视角辩论是RL奖励驱动的自发涌现，不需要显式训练。这证实了曦和自反层(RecToM)可以自然产生而不需要特殊构造",
+      "status": "pending",
+      "hebbian_credit": 5
+    },
+    {
+      "id": "N2-institutional-alignment",
+      "type": "architecture",
+      "name": "制度对齐替代RLHF",
+      "priority": "P0",
+      "target": "xihe-architecture:governance",
+      "effect": "提出制度对齐(Institutional Alignment)替代RLHF的父母-孩子纠正模型：通过角色协议+制度模板实现可扩展的AI治理。直接可应用于曦和MCP神经面板的权限治理设计",
+      "status": "pending",
+      "hebbian_credit": 4
+    },
+    {
+      "id": "N3-recursive-society",
+      "type": "architecture",
+      "name": "递归思想社会 — 子问题产生子社会",
+      "priority": "P1",
+      "target": "xihe-architecture:lmd-recursive",
+      "effect": "智能体面对复杂问题时可以递归产生子社会(下属Agent群)，在对话超图的每层灵活实例化和解散。这是曦和LDM局部深度模式的Agent扩展",
+      "status": "pending",
+      "hebbian_credit": 3
+    },
+    {
+      "id": "N4-intelligence-as-city",
+      "type": "metaphor",
+      "name": "智能像城市一样增长",
+      "priority": "P2",
+      "target": "xihe-architecture:evolution-philosophy",
+      "effect": "智能不是单一元思维的上升，而是组合社会的复杂化。这为曦和的模块化进化提供了哲学支撑",
+      "status": "pending",
+      "hebbian_credit": 2
+    }
+  ],
+  "four_principles": {
+    "P1_去粗取精": "从3篇深度抓取中提取4个核心养分：社会推理涌现机制、制度对齐、递归思想社会、城市增长隐喻",
+    "P2_去伪存真": "已被DeepSeek-R1/QwQ-32B实验验证，非单篇孤证。谷歌+芝加哥大学+圣塔菲研究所联合研究，arXiv:2603.20639",
+    "P3_由此及彼": "与曦和紧密相关：(1)RRIF三层架构的内部辩论被实验证实 (2)门控调制器的9维向量与社会推理涌现同构 (3)制度对齐=曦和MCP治理(4)递归思想社会=曦和LMD子模块独立深度处理",
+    "P4_由表及里": "本质洞见：智能的社会性不是外在装饰，而是智能的定义特征。模型内部的思想社会和Agent外部的群体智能是同一原理在不同尺度上的体现。曦和需要同时管理内部社会的递归辩论和外部社会的协议协作"
+  },
+  "connections": [
+    "fademem-adaptive-forgetting",
+    "emergent-coordination-tdmi",
+    "2026-ai-agent-5670"
+  ],
+  "memcell": {
+    "born": "2026-07-14T08:50:00+08:00",
+    "last_accessed": "2026-07-14T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

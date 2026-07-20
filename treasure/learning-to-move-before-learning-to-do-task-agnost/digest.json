@@ -1,0 +1,20 @@
+﻿{
+  "id": "learning-to-move-before-learning-to-do-task-agnost",
+  "name": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+  "source": "arXiv cs.AI 2607.02466",
+  "reprocessed_at": "2026-07-20T14:15:12.449795",
+  "content": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. Building on this Decomposition Hypothesis, we propose Task-Agnost",
+  "field": "自反层",
+  "summary": "通过Task-Agnostic Pretraining (TAP)，VLA模型能够在较少的标注数据下达到与大规模专家示范训练模型相当的表现，同时保持对摄像头干扰下的高成功率。",
+  "key_insights": [
+    "TAP能够利用廉价且未标记的交互数据来学习转移性的运动先验知识。",
+    "TAP通过自监督逆动力学目标从大量非任务相关的轨迹中提取这些先验知识。",
+    "TAP在保持与大规模专家示范训练模型相当的表现的同时，使用了远少于其标注数据量的数据。",
+    "TAP展示了对摄像头干扰的高鲁棒性，这表明它能够生成稳健且可转移的物理表示。",
+    "TAP为Embodied AI提供了扩展性和可扩展性的解决方案。"
+  ],
+  "xihe_relevance": "TAP模型在减少标注数据使用的同时保持了与大规模专家示范训练模型相当的表现，对曦和系统可能具有重要的潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

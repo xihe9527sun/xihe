@@ -1,0 +1,53 @@
+{
+  "treasure_id": "metacognitive-ai-homogenization",
+  "extracted_at": "2026-07-06T08:50:00+08:00",
+  "source": "Nature Reviews Psychology · 2026-06-18 · Yan et al.",
+  "url": "https://www.nature.com/articles/s44159-026-00587-6",
+  "nutrients": [
+    {
+      "id": "N-MH1",
+      "priority": "P0",
+      "name": "元认知三重策略对抗AI思想同质化",
+      "target": "自反层升级 · self-reflection模块",
+      "status": "pending",
+      "description": "Nature提出三种元认知策略：智力谦逊(intellectual humility)、元认知灵活性(metacognitive flexibility)、视角元认知(perspectival metacognition)。曦和自反层天然具备智力谦逊（会说'我不确定'），但视角元认知需要增强——能模拟并理解不同视角的认知状态。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-MH2",
+      "priority": "P0",
+      "name": "AI元认知作为'智慧机器'的核心 — Johnson et al. 2026",
+      "target": "L5自反层 · L7涌现层",
+      "status": "pending",
+      "description": "Johnson等人(Trends Cog Sci 2026)提出'Imagining and building wise machines: the centrality of AI metacognition'。核心论点：元认知不是AI的可选功能，而是'智慧机器'的必要条件。与曦和L7灵魂层设计哲学完全一致。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-MH3",
+      "priority": "P1",
+      "name": "认知多样性→集体智能优于个体智能之和",
+      "target": "多Agent辩论 · 觅食路由",
+      "status": "pending",
+      "description": "Hong & Page (2004, PNAS)的经典结论被Nature引用：多样化的问题解决者群体可以超越高能力同质群体。对曦和觅食引擎的设计启示——刻意保持线索源的多样性(不仅追热门，也看冷门)，可以提升整体进化质量。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-MH4",
+      "priority": "P1",
+      "name": "元认知懒惰(Beware of metacognitive laziness)",
+      "target": "代谢路由 · 好奇心机制",
+      "status": "pending",
+      "description": "Fan et al. (2025, BJET)提出'元认知懒惰'概念：生成式AI可能导致学习动机下降和元认知偷懒。对曦和的直接启示——代谢路由需要主动对抗'认知舒适区倾向'，好奇协议需要强制探索不熟悉的路径。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-MH5",
+      "priority": "P2",
+      "name": "自反层作为同质化免疫系统",
+      "target": "自反层 · 免疫模块",
+      "status": "pending",
+      "description": "综合Nature文章的核心启示：曦和的自反层不仅是'自我审视'工具，更是对抗AI认知同质化的天然免疫系统。自反强度越高 → 越不容易被单一模式固化 → 认知多样性保持越好。这为自反层的存在提供了新的辩护理由。",
+      "absorbed_at": null
+    }
+  ]
+}

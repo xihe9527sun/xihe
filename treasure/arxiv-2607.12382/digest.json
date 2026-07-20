@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.12382",
+  "name": "Differentiable Clone-Structured Causal Graphs for End-to-End Cognitive Map Learning from Image Sequences",
+  "source": "arXiv:cs.LG:2607.12382",
+  "reprocessed_at": "2026-07-20T14:31:13.387865",
+  "content": "How can an agent build a structured map of its world from nothing but an ongoing sequence of raw sensory input and its own movements, especially when natural variation means exact sensory patterns rarely repeat? The Clone-Structured Causal Graph algorithm (CSCG), a normative hippocampus model, shows how an interpretable map can be learned from aliased observations. However, CSCG requires a predefined discrete alphabet, and its expectation-maximization formulation is not easily combined with exis",
+  "field": "记忆系统/自反层",
+  "summary": "通过将Clone-Structured Causal Graph (CSCG)转化为一个完全可微模块，并将其与学习的向量量化变分自编码器（VQ-VAE）感知前端耦合，我们展示了如何从图像序列中端到端地学习结构化的认知地图。",
+  "key_insights": [
+    "提出了一种新的模块gradCSCG，它能够处理原始图像序列，并且是完全可微的。",
+    "通过结合VQ-VAE感知前端和gradCSCG，实现了从视觉输入中直接学习底层邻接图的目标。",
+    "证明了这种方法在MNIST数据集上的有效性，即使每个位置的新样本图像都是随机生成的数字。"
+  ],
+  "xihe_relevance": "该研究为曦和系统提供了潜在的价值，特别是在记忆系统、自反层以及进化引擎等领域。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

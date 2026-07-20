@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.03948",
+  "name": "Online Linear Programming for Multi-Objective Routing in LLM Serving",
+  "source": "arXiv:cs.AI:2607.03948",
+  "reprocessed_at": "2026-07-20T14:21:18.348910",
+  "content": "We study the online routing problem in large language model serving, where requests arrive sequentially and must be dispatched to parallel decode workers under tight batch-size and KV-cache constraints. Unlike widely used routing heuristics that are not tied to explicit service-level objectives (SLOs) and offer limited control over latency-throughput trade-offs, we introduce a multi-objective optimization framework that formulates routing as an online linear programming with interpretable decisi",
+  "field": "多Agent",
+  "summary": "我们研究了大规模语言模型服务中的在线路由问题，并引入了一种基于在线线性规划的多目标优化框架，该框架将路由问题表述为一个具有可解释决策奖励的在线线性规划。",
+  "key_insights": [
+    "提出了一种新的多目标优化方法来解决在线路由问题。",
+    "开发了高效的投标定价控制策略以满足毫秒级决策需求。",
+    "在多个服务水平协议（SLO）条件下，我们的路由器显著优于标准基线。",
+    "结果表明基于科学的方法优于基于启发式的方法。",
+    "该技术可以应用于多种场景，包括端到端延迟、首字符时间等。"
+  ],
+  "xihe_relevance": "该研究方法可能对曦和系统在处理大规模语言模型服务中的在线路由问题方面具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

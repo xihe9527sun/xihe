@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.08497",
+  "name": "Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing",
+  "source": "arXiv:cs.CV:2607.08497",
+  "reprocessed_at": "2026-07-20T14:25:14.171942",
+  "content": "Recent unified multimodal models show a single architecture can jointly perform vision/language understanding and image generation/editing. However, they repeatedly feed all historical visual and textual inputs into a shared context window, limiting long-horizon multimodal dialogue due to visual token explosion and unreliable cross-turn referencing. We propose a Cognitive-structured Multimodal Agent that externalizes visual information into an Episodic Visual Memory and selectively reactivates r",
+  "field": "进化引擎",
+  "summary": "该研究提出了一种新的认知结构多模态代理，能够有效解决传统统一多模态模型在长对话中的视觉信息爆炸和跨轮次引用可靠性问题。",
+  "key_insights": [
+    "引入了Episodic Visual Memory来存储和检索视觉信息，解决了视觉令牌爆炸的问题。",
+    "通过Perceptual Abstraction Engine进行结构化视觉抽象，Cognitive Retrieval Engine进行跨轮次记忆检索，Multimodal Executive Controller进行自主任务推理和行动规划。",
+    "开发了一种统一场景引擎，用于生成带有细粒度检索注释的多轮对话数据集，以优化抽象和检索策略。",
+    "构建了一个基于难度层次的视觉对话语料库来评估事件性视觉回忆能力。",
+    "提出的8B代理在20轮会话中实现了91.4%的检索准确率，并且比32B基线提高了+8.2%，同时将每轮推理时间减少了约一半。"
+  ],
+  "xihe_relevance": "该研究对于曦和项目的潜在价值在于提供了一种新的多模态代理架构，能够有效解决当前统一多模态模型在长对话中的问题，并且可以通过生成带有细粒度检索注释的多轮对话数据集来优化抽象和检索策略。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

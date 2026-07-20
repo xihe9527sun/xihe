@@ -1,0 +1,18 @@
+﻿{
+  "id": "freqdepthkv-frequency-guided-depth-sharing-for-rob",
+  "name": "FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:36:33.929593",
+  "content": "FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression",
+  "field": "多Agent",
+  "summary": "FreqDepthKV是一种用于鲁棒键值缓存压缩的方法，通过频率引导深度共享来提高效率。",
+  "key_insights": [
+    "FreqDepthKV利用频率信息指导深度共享策略，以优化缓存压缩效果。",
+    "该方法旨在增强缓存的鲁棒性，减少数据丢失和损坏的风险。",
+    "通过对缓存内容进行更有效的管理，FreqDepthKV能够显著提升系统性能。"
+  ],
+  "xihe_relevance": "FreqDepthKV可能对曦和在提高键值缓存压缩效率方面有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache",
+  "source": "arXiv:cs.AI:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "DepthWeave-KV is a token-adaptive method for compressing key-value caches in long-context LLMs. Unlike prior work using uniform compression, this method factorizes residuals across layers adaptively per token, preserving important information while reducing memory footprint by 3-5x.",
+  "keywords_matched": [
+    "long context"
+  ],
+  "intake_score": 0.75,
+  "captured_at": "2026-07-08T13:23:30.692420",
+  "digested": false
+}

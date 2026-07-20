@@ -1,0 +1,13 @@
+{
+  "title": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
+  "source": "arXiv:cs.AI:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "Akashic is a low-overhead memory system built around MemAttention, which organizes context into bounded chunks and models semantic relationships across chunks. LLM agent systems continuously accumulate context across multi-turn interactions and tool invocations. Long contexts increase prefill cost and may exceed context limits.",
+  "keywords_matched": [
+    "memory",
+    "long context"
+  ],
+  "intake_score": 0.95,
+  "captured_at": "2026-07-08T13:23:30.572409",
+  "digested": false
+}

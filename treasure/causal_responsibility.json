@@ -1,0 +1,15 @@
+{
+  "responsibilities": [
+    {
+      "treasure_id": "test",
+      "finding_type": "failed_attempt",
+      "responsible_step": "步骤·超时中断",
+      "causal_score": 0.72,
+      "counterfactual": "拆分长任务 + 增量检查点",
+      "source_finding": "2026-07-20T17:25:57.457763+08:00",
+      "attributed_at": "2026-07-20T17:25:57.457788+08:00"
+    }
+  ],
+  "updated": "2026-07-20T17:25:57.457788+08:00",
+  "count": 1
+}

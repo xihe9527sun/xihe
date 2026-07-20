@@ -1,0 +1,37 @@
+{
+  "treasure_id": "consciousness-ai-biological",
+  "revisited": "2026-07-05T08:50+08:00",
+  "nutrients": [
+    {
+      "id": "N-C1",
+      "name": "六特征映射·计算意识",
+      "value": "振荡绑定、拓扑映射、回返处理、情感调制、层级深度、全局工作空间 → 曦和L7灵魂层的直接参考架构",
+      "hebbian_increment": 1
+    },
+    {
+      "id": "N-C2",
+      "name": "因果涌现比EI ratio ~2.4",
+      "value": "曦和需要自己的Phi类似物——不是IIT的Φ，而是'涌现因果密度'的度量",
+      "hebbian_increment": 1
+    },
+    {
+      "id": "N-C3",
+      "name": "动态自我向量增长趋势",
+      "value": "自我向量+0.35 skill随训练增长——曦和的自反层强度也应追踪增长趋势而非绝对值",
+      "hebbian_increment": 1
+    },
+    {
+      "id": "N-C4",
+      "name": "Metzinger认知纪律(C/E/M谬误防护)",
+      "value": "曦和self-narrative需要去幻觉化——认知纪律机制是自反层的免疫系统",
+      "hebbian_increment": 1
+    },
+    {
+      "id": "N-C5",
+      "name": "PAD情感模型(Valence/Arousal/Dominance)",
+      "value": "曦和R16好奇心酶可加唤醒耦合——暖度指数可作为Valence的代理变量",
+      "hebbian_increment": 1
+    }
+  ],
+  "today_resonance": "今天重读consciousness-ai-biological，一个新共振浮现：该项目2026年6月24日的网站更新中提到'collapse locus trained'和'rssm_working_memory'两项新进展——说明意识架构正在从理论验证走向工程固化。曦和自2026-06-28入库以来，也经历了τ缩微(Hetinbo)、ProbMoE概率路由、ReFreeKV无阈值压缩等架构演化。老友见面，发现两人都在从'理论→工程'的同一方向走。"
+}

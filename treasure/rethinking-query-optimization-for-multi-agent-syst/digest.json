@@ -1,0 +1,20 @@
+﻿{
+  "id": "rethinking-query-optimization-for-multi-agent-syst",
+  "name": "Rethinking Query Optimization for Multi-Agent Systems",
+  "source": "arXiv:cs.MA:2607.new",
+  "reprocessed_at": "2026-07-20T14:22:28.001048",
+  "content": "Rethinking Query Optimization for Multi-Agent Systems",
+  "field": "多Agent",
+  "summary": "本文重新思考了在多智能体系统中的查询优化问题。",
+  "key_insights": [
+    "提出了新的方法来改进多智能体系统的查询效率。",
+    "强调了对现有算法的深入理解对于提高性能的重要性。",
+    "讨论了如何通过自反层机制提升多智能体系统的决策能力。",
+    "指出量化交易领域可以借鉴多智能体系统中的优化策略。",
+    "探索了进化引擎在优化过程中的作用及其与元认知的关系。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.01709",
+  "name": "COMFYCLAW: Self-Evolving Skill Harnesses (2607.01709)",
+  "source": "arXiv cs.AI 2026-07",
+  "reprocessed_at": "2026-07-20T14:17:33.629279",
+  "content": "Agents are increasingly used to construct workflows and assist humans in completing recurring tasks more efficiently. As these workflows become repeated and domain-specific, agent memory and reusable skills become increasingly important: agents should be able to recall workflow patterns, execution constraints, and user preferences from previous runs. We study this problem in workflow-based image generation and introduce COMFYCLAW, an agentic skill evolution harness for controlling ComfyUI workfl",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "COMFYCLAW通过引入一种基于类型图编辑的工作流构建方法，结合区域级视觉语言模型验证器，实现了在图像生成任务中的最佳性能，并显著优于仅依赖验证器的基线。",
+  "key_insights": [
+    "COMFYCLAW通过技能进化机制提高了代理的可靠性和性能。",
+    "COMFYCLAW利用视觉语言模型验证器将视觉失败转化为可操作的修复建议，从而提高工作流构建的质量。",
+    "COMFYCLAW在多个基准测试中展示了其在图像生成任务中的优越性，并且人类标注者更偏好使用COMFYCLAW。"
+  ],
+  "xihe_relevance": "COMFYCLAW的工作机制可能对曦和系统的记忆系统、自反层或进化引擎有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

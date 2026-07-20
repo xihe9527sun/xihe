@@ -1,0 +1,35 @@
+{
+  "id": "metacognition-in-llms-foundations-progress-and-o",
+  "name": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+  "sources": [],
+  "discovered": "2026-07-17T09:10:26.581725",
+  "field": "自反层/self-critique",
+  "intake_score": 0.83,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "自反层/self-critique",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-17",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "自反层/self-critique",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.83,
+    "backed_at": "2026-07-17T09:10:26.581336"
+  },
+  "digest_notes": "首个全面综述LLM元认知研究。系统梳理三大主线：元认知测量与评估（心理物理学meta-d'、神经反馈、置信度校准）、赋予与改进方法、应用仿生。揭示当前模型缺乏真正的元认知能力——过度自信，难以准确评估自身知识边界，无法灵活调整策略。"
+}

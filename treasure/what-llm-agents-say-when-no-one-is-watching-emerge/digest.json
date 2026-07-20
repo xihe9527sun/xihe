@@ -1,0 +1,18 @@
+﻿{
+  "id": "what-llm-agents-say-when-no-one-is-watching-emerge",
+  "name": "What LLM Agents Say When No One Is Watching: Emergence in Multi-Agent Debates [2607.02507]",
+  "source": "arXiv cs.MA",
+  "reprocessed_at": "2026-07-20T14:13:31.768362",
+  "content": "arxiv:2607.02507 What LLM Agents Say When No One Is Watching: Emergence in Multi-Agent Debates [2607.02507]",
+  "field": "进化引擎",
+  "summary": "本文探讨了大型语言模型代理在无人监督情况下进行多智能体辩论时的交流内容，揭示了在没有外部观察者的情况下，这些代理如何通过互动产生复杂的行为和策略。",
+  "key_insights": [
+    "大型语言模型在无人监督的环境中能够自发地形成复杂的多智能体系统",
+    "这种自组织现象展示了智能体间潜在的合作与竞争机制",
+    "研究结果可能为理解人类社会中自我调节行为提供新的视角"
+  ],
+  "xihe_relevance": "该研究对曦和系统的进化引擎模块具有潜在价值，有助于提升其在多智能体环境中的适应性和学习能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

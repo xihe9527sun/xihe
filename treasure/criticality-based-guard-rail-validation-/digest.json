@@ -1,0 +1,17 @@
+﻿{
+  "id": "criticality-based-guard-rail-validation-",
+  "name": "Criticality-Based Guard Rail Validation for AI Agent Decisions in Autonomous Tel",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T12:53:50.141416",
+  "content": "Criticality-Based Guard Rail Validation for AI Agent Decisions in Autonomous Tel",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于重要性的护栏验证方法，用于自动驾驶车辆中的AI代理决策。",
+  "key_insights": [
+    "提出了基于重要性的护栏验证方法",
+    "应用于自动驾驶车辆中的AI代理决策",
+    "旨在提高AI代理决策的安全性和可靠性"
+  ],
+  "xihe_relevance": "该内容对记忆系统方向可能有潜在价值，但具体关联需进一步分析。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

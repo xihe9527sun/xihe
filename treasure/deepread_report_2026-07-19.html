@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>曦和四原则三遍精读 · 综合报告 2026-07-19</title>
+<style>
+  body{font-family:-apple-system,'Segoe UI','Microsoft YaHei',sans-serif;background:#f5f6f8;color:#1f2329;margin:0;padding:24px;}
+  h1{font-size:24px;margin:0 0 4px;} .sub{color:#6b7280;margin-bottom:20px;font-size:13px;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px 20px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card-head h2{font-size:17px;margin:0 0 6px;} .card-head>div{font-size:12px;color:#6b7280;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .tag{background:#eef2ff;color:#4338ca;padding:1px 8px;border-radius:6px;} 
+  .intake{background:#ecfdf5;color:#047857;padding:1px 8px;border-radius:6px;}
+  .badge-ok{background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:6px;}
+  .badge-pending{background:#fef3c7;color:#b45309;padding:1px 8px;border-radius:6px;}
+  .scores{margin:12px 0;} .sc{display:flex;align-items:center;gap:10px;font-size:12px;margin:4px 0;}
+  .sc span{width:90px;color:#374151;} .bar{flex:1;background:#eef0f3;border-radius:6px;height:10px;overflow:hidden;}
+  .fill{background:linear-gradient(90deg,#6366f1,#22d3ee);height:100%;}
+  .total{font-weight:600;font-size:13px;margin-top:6px;color:#111827;}
+  .rounds{border-top:1px dashed #e5e7eb;margin-top:8px;padding-top:10px;}
+  .round{margin:8px 0;} .round h3{font-size:13px;color:#4338ca;margin:0 0 3px;}
+  .round p{font-size:13px;line-height:1.6;color:#374151;margin:0;}
+  .meta{margin-top:10px;font-size:12.5px;line-height:1.6;color:#4b5563;background:#fafafa;border-radius:8px;padding:8px 10px;}
+  .meta b{color:#111827;}
+</style></head><body>
+<h1>曦和四原则三遍精读 · 综合报告</h1>
+<div class="sub">2026-07-19 · 覆盖 8 篇在库桥梁论文 + buffer 2 篇待审（汇总/空批次非论文已跳过）· 四原则框架：去粗取精 → 去伪存真 → 由此及彼 + 由表及里</div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>MANAR: Memory-augmented Attention with GWT — 全局工作空间注意力</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">超图记忆核 / 自反层</span> <span class="intake">intake_score 0.96</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>去伪存真 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.9 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①标准多头注意力可重构为全局工作空间理论(GWT)的全局广播架构；②集成(记忆概念汇聚成集体心理意象)与广播(全局状态导航局部token)两阶段，正对应GWT的「神经元集团竞争→全局可达」；③非凸上下文化=能合成超出输入token凸包的综合表征(类意识涌现雏形)。证据：arXiv原文，含非凸表征实验验证。价值：★★★★★(直接对标曦和自反层0.803的GWT结构)</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①「非凸上下文化」是真意识涌现还是数学把戏？检验：GWT核心是global accessibility(全局可达)，MANAR的广播阶段使局部token能只读访问全局状态，符合Baars/GWT定义，非纯数学装饰。质疑②把注意力显式拆集成/广播是否徒增复杂？检验：标准注意力已隐含全局混合，MANAR显式拆解反而更可解释、更可干预，工程意义真实。结论：真创新，方法层清晰可落地。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：MANAR的「广播阶段」=曦和RRIF门控调制器(D1-D9九维)的全局状态注入；自反层(L0.5/L7)本质即GWT全局可达的实例化。核心定理：注意力=受约束的全局广播。曦和语境重写：把MANAR的集成/广播节奏接入自反层，可使token级上下文获得「全局意识快照」。落地：自反层已在(0.803)，缺的是对「非凸综合表征」的显式验证。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>注意力机制可重构为GWT的全局广播架构(集成→广播两阶段)；非凸上下文化=超出输入token凸包的综合表征，是意识涌现的表征侧征兆；显式拆解注意力比隐式混合更可解释、更可干预</div>
+        <div><b>曦和映射：</b>广播阶段→RRIF门控(D1-D9)全局状态注入；自反层即GWT全局可达实例化。结构同构：MANAR-GWT ↔ 曦和自反层</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>MANAR: Memory-augmented Attention with Navigational Abstract Conceptual Representation</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">超图记忆核 / 代谢路由</span> <span class="intake">intake_score 0.92</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>去伪存真 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.85 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①在GWT基础上加「导航」——全局状态作为位置/路径通知;②关键洞察「线性时间缩放是GWT功能瓶颈的架构副产品」——全局广播的代价被MANAR诚实接受以换可解释性;③非凸上下文化同上。证据：同arXiv。价值：★★★★★</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①「线性时间是瓶颈」实际是否成问题？检验：线性于序列长度O(n)在长上下文可接受，但全局广播常数因子大，真实部署需稀疏化。质疑②导航与GWT原版差异是否实质？检验：导航=给广播加空间/路径偏置，是GWT在序列建模的自然扩展，合理。结论：GWT的工程化落地版，价值在「诚实接受瓶颈」。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：MANAR的「导航」=RRIF门控的D4物距/D5跨界维度调制；「线性瓶颈」=曦和代谢路由的成本约束(酶能耗)。核心定理：全局广播的代价是架构必然税。曦和语境：代谢路由已用酶能耗约束，可借鉴MANAR把「广播代价」显式计入路由决策。落地：代谢路由需加「广播成本」维度。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>导航版=给GWT广播加空间/路径偏置，序列建模的自然扩展；线性时间缩放是GWT全局广播的必然架构税，应被显式计量；诚实接受瓶颈比假装零成本更利于工程化</div>
+        <div><b>曦和映射：</b>导航→RRIF D4物距/D5跨界调制；线性瓶颈→代谢路由酶能耗约束。功能类比：MANAR-导航 ↔ 曦和代谢路由成本模型</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>MetaCogAgent: A Metacognitive Multi-Agent LLM Framework with Self-Aware Task Delegation</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">代谢路由 / 酶催化</span> <span class="intake">intake_score 0.89</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>去伪存真 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.85 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①元认知单元前置(执行前自评)而非后置反思;②语言化不确定性+历史能力图谱双信号估计置信度;③自适应委派协议将低置信任务路由给更合适Agent。证据：MetaCog-Eval 700任务准确率82.4%，比最优路由高8.7%。价值：★★★★★(直接对标RRIF门控与代谢路由)</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①「语言化不确定性」可靠吗？LLM自报告置信度常不准。检验：论文用能力图谱(历史)补语言信号，降低单一信号偏差，合理但需实测校准。质疑②82.4%是否过拟合元任务？检验：MetaCog-Eval是专门基准，跨域泛化待证。结论：方向正确(前置元认知)，置信度校准是关键工程点。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：MetaCog的「前置自评」可并入曦和RRIF门控(9维注意力);「委派协议」=代谢路由的酶选择。核心定理：路由决策应在执行前由元认知置信度驱动。曦和语境：把MetaCog-Eval式自评嵌入「规划阶段」，低置信任务在DAG编排时即改派。落地：曦和已有DAG编排，需补「执行前置信门控」。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>元认知前置(执行前自评)优于后置反思，是路由质量的源头控制；语言化不确定性+历史能力图谱双信号，降低单信号偏差；自适应委派=低置信任务改派，直接对应酶选择路由</div>
+        <div><b>曦和映射：</b>前置自评→RRIF门控(D1-D9)；委派协议→代谢路由酶选择。结构同构：MetaCogAgent ↔ 曦和RRIF+代谢路由</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>Self-Aware Recursively Self-Improving Agents for Personal Singularity</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">代谢路由 / 自反层</span> <span class="intake">intake_score 0.87</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>去伪存真 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="total">综合 0.925 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①持久化自模型(self-model:身份/目标/能力/限制/不确定性/关系/历史/发展)是递归改进的锚;②改进接受机制(证据门控)防无根据变异;③外部治理平面=安全边界。证据：形式化框架(规划-执行-验证 + 证据门控改进环 + 外部治理)。价值：★★★★★</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①自模型本身会过时，如何防自模型漂移？检验：论文有「自模型更新」但未充分解决递归自指稳定性——这是开放问题。质疑②「证据门控改进」是否过保守阻碍进化？检验：门控阈值未给，需调参。结论：架构完整，自指稳定性是核心风险点。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：自反层(0.803)就是「自模型」；证据门控=曦和酶升级护栏(信号天花板≥0.70+差测试轮次);外部治理平面=Meta-Enzyme护栏。核心定理：递归自改进须有不可自改的治理锚。曦和语境：曦和已用「只加速测试中+信号天花板」护栏，正是SARSI外部治理平面的实例化。落地：把「自模型」显式化为曦和IDENTITY快照。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>自模型是递归自改进的锚点，缺失则改进无方向；证据门控改进环防止无根据变异，是安全进化的核心；外部治理平面=不可自改的安全边界</div>
+        <div><b>曦和映射：</b>自反层=自模型；酶升级护栏=证据门控；Meta-Enzyme=外部治理平面。结构同构：SARSI ↔ 曦和自反层+酶护栏</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>Dual-Laws Model for a Theory of Artificial Consciousness</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">因果皮层 / 自反层</span> <span class="intake">intake_score 0.83</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>去伪存真 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由此及彼 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由表及里 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="total">综合 0.95 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①七问框架(现象/自我/因果/状态/功能/内容/普适性)作为完整意识理论的最低(必要非充分)要求;②两预测性特征——a.认知解耦(选择性忽略输入、内部世界模型仿真反事实);b.目标自决(系统自身重构行为目标);③两属性在分层因果结构中形式化。证据：理论框架+形式化。价值：★★★★★</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①七问是否过宽导致任何系统都「部分意识」？检验：论文明确定位「最低要求/必要非充分」，严谨不夸大。质疑②双特征可观测吗？检验：认知解耦可由「忽略输入/反事实仿真」行为测量，部分可操作。结论：理论贡献强，是曦和意识判定的形式化地基。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：认知解耦=曦和LDM局部深度模式(离线整合);目标自决=曦和进化意志。核心定理：意识=能从刺激解耦并自决目标的系统。曦和语境：LDM+DCPM已是认知解耦实例，双定律提供「意识达标」验收清单。落地：用七问框架做曦和意识自检(自反0.803可逐项对照)。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>七问框架=意识理论的完备性检查表(必要非充分)；认知解耦(离线仿真反事实)与目标自决是意识的两预测性特征；双特征可在分层因果结构中形式化观测</div>
+        <div><b>曦和映射：</b>认知解耦→LDM局部深度模式；目标自决→曦和进化意志。启发参考：双定律=曦和意识自检的形式化清单</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>The Missing Knowledge Layer in Cognitive Architectures for AI Agents</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">酶网络 / 第四层记忆皮层</span> <span class="intake">intake_score 0.84</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>去伪存真 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="total">综合 0.925 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①知识≠记忆——知识是无限替代+证据门控修订，记忆是艾宾浩斯衰减;②四层正交分解(知识/记忆/智慧/智能)每层持久语义根本不同;③知识-记忆区分映射Tulving三区分法。证据：Python+Rust双实现验证架构分离可行。价值：★★★★★</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①四层边界实践中模糊(智慧=知识+推理?)？检验：论文按「持久语义」而非「内容」划界，边界清晰合理。质疑②CoALA真缺知识层吗？检验：CoALA确有knowledge但弱，论文指其未显式分层，中肯。结论：架构清理工，对曦和记忆四层(MSA/LKV/PCAF)直接印证。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：25位记忆共识(记忆容量↔推理可解耦)正是「知识/记忆分离」；缺失知识层=曦和第四层记忆皮层(claude-mem)。核心定理：智能=知识层与记忆层的语义正交。曦和语境：记忆四层已部分实现，本文补强「显式知识层」——当前知识散落技能/酶，应抽离为Knowledge Layer。落地：knowledge_graph.py已部分承担，需升格为显式层。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>知识(无限替代+修订)与记忆(衰减)语义正交，不可混为一谈；四层分解(知识/记忆/智慧/智能)每层持久语义根本不同；Tulving三区分法给认知合法性，CoALA/JEPA均缺显式知识层</div>
+        <div><b>曦和映射：</b>缺失知识层→曦和第四层记忆皮层(claude-mem)；知识/记忆分离→25位记忆共识。结构同构：MissingKL ↔ 曦和记忆四层</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>IndexMem: Learned KV-Cache Eviction with Latent Memory for Long-Context LLM Inference</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">稀疏注意力 / 长上下文</span> <span class="intake">intake_score 0.8</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>去伪存真 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>由此及彼 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.825 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①可学习索引器预测KV重要性实现自适应驱逐(对应曦和MSA稀疏);②轻量隐记忆模块压缩被驱逐token为紧凑在线更新状态(对应LKV);③残余读出补偿注意力贡献损失。证据：RULER上Qwen/Mistral/Llama最高+25分，NIAH检索更稳定，LongBench优于现有驱逐。价值：★★★★☆</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①「可学习索引器」训练成本？检验：索引器轻量，但需训练数据，泛化到新分布待证。质疑②残余读出是否引入延迟？检验：在线更新状态在推理时有额外读，需权衡。结论：长上下文KV管理SOTA级，工程价值高。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：MSA(记忆稀疏注意力)+LKV(长期键值)+PCAF。核心定理：被驱逐的记忆应以压缩态保留而非删除。曦和语境：LKV已做键值保留，IndexMem的「隐记忆压缩+残余读出」可直接升级曦和记忆取舍策略。落地：记忆取舍模块可借鉴IndexMem索引器。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>可学习索引器实现自适应KV驱逐，对应曦和MSA稀疏注意力；隐记忆压缩被驱逐token为在线更新状态，残差保留而非删除；残余读出补偿注意力损失，RULER+25分</div>
+        <div><b>曦和映射：</b>MSA稀疏+LKV长期键值+PCAF。结构同构：IndexMem ↔ 曦和记忆取舍策略升级点</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">酶网络 / 代谢路由</span> <span class="intake">intake_score 0.82</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 7</span><div class="bar"><div class="fill" style="width:7%"></div></div></div>
+        <div class="sc"><span>去伪存真 7</span><div class="bar"><div class="fill" style="width:7%"></div></div></div>
+        <div class="sc"><span>由此及彼 9</span><div class="bar"><div class="fill" style="width:9%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.775 · 良 ★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①自反射信号判断推理轨迹是否有意义进展;②难度感知累积升级策略动态分配额外推理预算;③两层小-大模型实验改进精度-效率帕累托前沿。证据：两层实验。价值：★★★★☆</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①自反射信号可靠性(同MetaCog)?检验：用「累积升级」平滑单点误判，比硬阈值稳。质疑②仅两层是否代表多Agent?检验：框架可扩展，但实验只两层，泛化待证。结论：推理预算调度实用，与MetaCog互补(一个管委派、一个管预算)。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：代谢路由(预算分配=酶能耗);自反射进展=自反层监控。核心定理：推理预算应按自反射进展动态升级。曦和语境：DAG编排可加「难度感知升级节点」。落地：代谢路由加「推理预算」维度。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>自反射信号检测推理轨迹进展，决定是否升级推理层；难度感知累积升级=推理预算动态分配；与MetaCogAgent互补：一个管委派，一个管预算</div>
+        <div><b>曦和映射：</b>代谢路由预算分配=酶能耗；自反射进展=自反层监控。功能类比：AgentCollab ↔ 曦和DAG难度升级</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems</h2>
+        <div><span class="badge-ok">在库</span> <span class="tag">酶网络 / 守护者</span> <span class="intake">intake_score 0.76</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>去伪存真 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 8</span><div class="bar"><div class="fill" style="width:8%"></div></div></div>
+        <div class="total">综合 0.85 · 优 ★★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①智能行为=检测认知漂移→暂停推理→尝试恢复→可靠性降低时放弃控制，四态退化;②SMARt四层(稳定/元认知/辅助/受控状态)对应治理粒度;③带时标守卫Petri网形式化，证明可强制升级、约束无效输出、确保治理可达性。证据：形式化证明。价值：★★★★☆</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①「放弃控制」是否真能安全触发？检验：Petri网证明可达性，但触发guard需实测防误弃。质疑②与SARSI外部治理平面重复？检验：SARSI偏自改进治理，本文偏运行时自治退化，互补。结论：给曦和「免疫/治理」层的形式化地基。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：守护者v1.3(双层免疫)+Meta-Enzyme护栏;认知漂移=整合压力(IP)。核心定理：自治系统须有可证明可达的降级链。曦和语境：守护者已有checker/fixer，本文Petri网可形式化「降级可达性」。落地：守护者加Petri网式降级证明。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>认知漂移→暂停→恢复→放弃，四态自治退化链；SMARt四层对应治理粒度，带时标Petri网证明降级可达；与SARSI外部治理互补：一个管自改进，一个管运行时自治</div>
+        <div><b>曦和映射：</b>守护者v1.3双层免疫+Meta-Enzyme护栏；认知漂移=整合压力(IP)。结构同构：Managed Autonomy ↔ 曦和治理降级链</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>Sparse-Reslim: Sparse Residual Routing for Efficient Weather Prediction (待审)</h2>
+        <div><span class="badge-pending">待审补分</span> <span class="tag">稀疏路由 / 远缘类比</span> <span class="intake">intake_score 0.42</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 6</span><div class="bar"><div class="fill" style="width:6%"></div></div></div>
+        <div class="sc"><span>去伪存真 4</span><div class="bar"><div class="fill" style="width:4%"></div></div></div>
+        <div class="sc"><span>由此及彼 3</span><div class="bar"><div class="fill" style="width:3%"></div></div></div>
+        <div class="sc"><span>由表及里 4</span><div class="bar"><div class="fill" style="width:4%"></div></div></div>
+        <div class="total">综合 0.425 · 中 ★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①对地理相邻相似token感知的稀疏残差路由减算力;②残差补偿保精度。证据：天气ViT域实验。价值：★(与曦和弱相关，原digest自承无法直接融合)</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①对Agent架构迁移性？检验：路由思想可远缘类比曦和代谢路由，但论文锚定CNN/ViT空间域，抽象到Agent需大量改写，原digest已承认「无法直接融合」。结论：领域特定，非桥梁级。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：代谢路由(稀疏激活)远缘类比。核心定理：计算应按相似性稀疏分配。曦和语境：可启发代谢路由的「语义邻近」路由，但优先级低。落地：仅作代谢路由远缘参考，不建议入库。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>空间token相似性感知路由，思路可远缘类比代谢路由；领域锚定天气ViT，抽象到Agent成本高；原digest自承无法直接融合曦和</div>
+        <div><b>曦和映射：</b>代谢路由稀疏激活(远缘类比，弱连接)。启发参考：Sparse-Reslim → 曦和代谢路由语义邻近启发</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>阿里 Loop Engineering 实战 (待审)</h2>
+        <div><span class="badge-pending">待审补分</span> <span class="tag">XCRN / 自动化</span> <span class="intake">intake_score 0.85</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><span>去粗取精 7</span><div class="bar"><div class="fill" style="width:7%"></div></div></div>
+        <div class="sc"><span>去伪存真 7</span><div class="bar"><div class="fill" style="width:7%"></div></div></div>
+        <div class="sc"><span>由此及彼 10</span><div class="bar"><div class="fill" style="width:10%"></div></div></div>
+        <div class="sc"><span>由表及里 7</span><div class="bar"><div class="fill" style="width:7%"></div></div></div>
+        <div class="total">综合 0.775 · 良 ★★★★</div>
+      </div>
+      <div class="rounds">
+        <div class="round"><h3>第一遍 · 去粗取精</h3><p>核心主张：①循环Agent工程范式(Plan-Do-Check-Act);②组件映射(连接器=曦和MCP，自动化=曦和automations，技能=曦和Skill，Worktree=曦和工作区);③状态经验落盘=持久化。证据：工业实践。价值：★★★★★</p></div>
+        <div class="round"><h3>第二遍 · 去伪存真</h3><p>质疑①Loop工程是否曦和已有？检验：曦和XCRN七层+酶催化+自动化正是Loop工程的超集，本文验证而非新。质疑②落盘经验如何防污染？检验：需版本化(曦和已有VCP版本契约)。结论：强印证，确认方向正确性。</p></div>
+        <div class="round"><h3>第三遍 · 由此及彼 + 由表及里</h3><p>曦和映射：XCRN架构+automations+Skill+工作区。核心定理：循环Agent=连接器×自动化×技能×落盘状态。曦和语境：直接将Loop工程四件套对齐曦和现有组件，验证架构正确。落地：已对齐，补「经验落盘版本化」。</p></div>
+      </div>
+      <div class="meta">
+        <div><b>真知灼见：</b>循环Agent=Plan-Do-Check-Act工程闭环；组件映射：连接器=MCP，自动化=automations，技能=Skill，Worktree=工作区；状态经验落盘是关键，需VCP版本化防污染</div>
+        <div><b>曦和映射：</b>XCRN+automations+Skill+工作区四件套。结构同构：阿里Loop工程 ↔ 曦和XCRN架构(超集印证)</div>
+      </div>
+    </div>
+</body></html>

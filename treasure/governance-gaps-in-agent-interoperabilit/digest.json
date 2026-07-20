@@ -1,0 +1,17 @@
+﻿{
+  "id": "governance-gaps-in-agent-interoperabilit",
+  "name": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cann",
+  "source": "cs.MA",
+  "reprocessed_at": "2026-07-20T12:55:25.823591",
+  "content": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cann",
+  "field": "多Agent",
+  "summary": "该摘要讨论了在代理互操作性协议中的治理缺口，涉及MCP、A2A和ACP。",
+  "key_insights": [
+    "分析代理互操作性协议中的治理缺口",
+    "探讨MCP、A2A和ACP的局限性",
+    "提出改进这些协议以提高互操作性的建议"
+  ],
+  "xihe_relevance": "对记忆系统有一定价值，但与自反层、进化引擎、元认知、量化交易等方向关联不大。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

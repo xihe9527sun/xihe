@@ -1,0 +1,18 @@
+﻿{
+  "id": "from-ml-predictions-to-informed-diagnostic-assista",
+  "name": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
+  "source": "arXiv:cs.AI:2026-07-14",
+  "reprocessed_at": "2026-07-20T14:30:14.441427",
+  "content": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
+  "field": "自反层",
+  "summary": "本文探讨了如何利用Toulmin模型来增强机器学习预测在诊断辅助中的作用，旨在提供更加有根据和有效的建议。",
+  "key_insights": [
+    "文章提出了将机器学习预测与Toulmin论证模型结合的方法，以提高诊断辅助的可信度和有效性。",
+    "该方法通过识别并明确支持性证据、理由和结论，使得诊断过程中的决策更为透明和合理。",
+    "利用Toulmin模型可以增强用户对诊断建议的信任感，并促进医生在临床实践中采用这种辅助工具。"
+  ],
+  "xihe_relevance": "文章内容与曦和系统的潜在应用领域相关，特别是在医疗诊断辅助方面具有重要价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

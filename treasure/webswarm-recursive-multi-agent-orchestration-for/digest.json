@@ -1,0 +1,19 @@
+﻿{
+  "id": "webswarm-recursive-multi-agent-orchestration-for",
+  "name": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:09.074560",
+  "content": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+  "field": "多Agent, 系统架构",
+  "summary": "WebSwarm 提出了一个递归多代理调度框架，用于深度和广泛的网络搜索。",
+  "key_insights": [
+    "提出一种新的多代理系统架构",
+    "支持深度和宽泛的网页搜索任务",
+    "引入了递归机制以优化资源分配",
+    "适用于大规模复杂网络环境下的搜索引擎",
+    "为自反层提供技术支持"
+  ],
+  "xihe_relevance": "进化引擎, 自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

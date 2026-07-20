@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CausalFlow: 因果归因与反事实修复 · ICML 2026 · 曦和宝藏</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --neon:#f59e0b; --neon2:#22d3ee; }
+  body {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(129,140,248,0.10), transparent 42%),
+      radial-gradient(circle at 82% 78%, rgba(34,211,238,0.08), transparent 45%),
+      #060814;
+    color:#cbd5e1; font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+    padding:32px 20px; line-height:1.85; min-height:100vh;
+  }
+  /* 背景网格 */
+  body::before {
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:linear-gradient(rgba(129,140,248,0.04) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(129,140,248,0.04) 1px,transparent 1px);
+    background-size:42px 42px; mask-image:radial-gradient(circle at 50% 30%,#000,transparent 80%);
+  }
+  .container { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+  .hero {
+    border:1px solid rgba(129,140,248,0.28); border-radius:18px; padding:26px 28px;
+    background:linear-gradient(135deg,rgba(129,140,248,0.08),rgba(34,211,238,0.04));
+    backdrop-filter:blur(10px); box-shadow:0 0 28px rgba(129,140,248,0.12), inset 0 0 22px rgba(34,211,238,0.05);
+    margin-bottom:22px;
+  }
+  h1 {
+    font-size:25px; font-weight:800; letter-spacing:0.5px; margin-bottom:12px;
+    background:linear-gradient(92deg,#a5b4fc,#67e8f9); -webkit-background-clip:text;
+    background-clip:text; color:transparent;
+  }
+  .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip {
+    font-size:11.5px; padding:4px 11px; border-radius:20px; color:#cbd5e1;
+    background:rgba(148,163,184,0.10); border:1px solid rgba(148,163,184,0.22);
+  }
+  .layer-badge {
+    font-size:11.5px; font-weight:700; padding:4px 12px; border-radius:20px;
+    color:var(--neon); background:#f59e0b1f; border:1px solid var(--neon);
+    box-shadow:0 0 12px #f59e0b55;
+  }
+  .credit-bar { margin-top:16px; }
+  .credit-bar .lab { font-size:11px; color:#64748b; margin-bottom:5px; display:flex; justify-content:space-between; }
+  .credit-track { height:7px; border-radius:6px; background:rgba(148,163,184,0.15); overflow:hidden; }
+  .credit-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--neon),var(--neon2)); box-shadow:0 0 10px var(--neon); }
+  .glass {
+    border:1px solid rgba(148,163,184,0.16); border-radius:14px; padding:18px 22px; margin:16px 0;
+    background:rgba(15,23,42,0.55); backdrop-filter:blur(8px);
+    box-shadow:inset 0 0 18px rgba(34,211,238,0.04);
+  }
+  .section-title { font-size:16px; font-weight:700; color:#a5b4fc; margin:6px 0 12px; padding-bottom:8px; border-bottom:1px solid rgba(129,140,248,0.22); }
+  h3 { font-size:14px; font-weight:600; color:#67e8f9; margin:14px 0 7px; }
+  p { font-size:13px; color:#94a3b8; margin:7px 0; }
+  ul { margin:6px 0; }
+  .glow-item {
+    font-size:13px; color:#cbd5e1; margin:5px 0 5px 4px; list-style:none; padding-left:18px; position:relative;
+  }
+  .glow-item::before {
+    content:"▹"; position:absolute; left:0; color:var(--neon2); text-shadow:0 0 8px var(--neon2);
+  }
+  .footer { text-align:center; font-size:11px; color:#475569; margin-top:30px; padding-top:16px; border-top:1px solid rgba(148,163,184,0.15); letter-spacing:0.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>CausalFlow: 因果归因与反事实修复 · ICML 2026</h1>
+    <div class="meta">
+      <span class="layer-badge">L4</span>
+      <span class="chip">🏷️ L4催化层 · 因果归因 · 信用分</span>
+      <span class="chip">📦 arXiv 2605.25338 ·</span>
+      <span class="chip">💎 养分 5</span>
+      <span class="chip">⭐ 评分 0.95</span>
+    </div>
+    <div class="credit-bar">
+      <div class="lab"><span>赫布信用 Hebbian Credit</span><span>7</span></div>
+      <div class="credit-track"><div class="credit-fill" style="width:43%"></div></div>
+    </div>
+  </div>
+  <div class="glass">
+    <h2 class="section-title">◆ 一、概要</h2><p>CausalFlow 提出了一种**基于干预的反事实框架**，将LLM Agent的失败执行轨迹转化为：</p><p>1. **因果归因** — 通过步骤级反事实干预计算 **因果责任分数（CRS）** 定位失败诱导步骤</p><p>2. **最小修复** — 对失败步骤生成最小编辑的修复，翻转结果至成功</p><p>3. **可复用监督** — 产生验证过的对比对 `(wrong_step, corrected_step)`，可用于偏好优化或奖励建模</p><p>跨越四个基准（数学推理、代码生成、QA、医疗浏览）的实验证明：**因果归因对所有Agent任务的可靠提升是必需的**，在复杂检索环境下持续优于启发式精炼，同时产生更局部的修复。</p><h2 class="section-title">◆ 二、核心发现</h2><h3>▸ 2.1 因果责任分数（CRS）——失败定位层的"GPS"</h3><p>CRS的计算流程：</p><p>1. 将Agent执行轨迹建模为**依赖步骤的顺序链**</p><p>2. 对每个步骤执行**反事实干预**（如果这一步换成另一个动作，结果会变吗？）</p><p>3. 计算该步骤对最终失败的因果贡献度</p><h3>▸ 2.2 最小反事实修复——精准手术刀</h3><p>对于CRS标记的失败步骤，CausalFlow生成：</p><p>1. **最小编辑的替代动作** — 只改"足够翻转结果"的最小部分</p><p>2. **验证** — 用修复后的轨迹实际执行确认翻转成功</p><p>3. **质量保证** — 同时满足**最小性**（编辑距离最小）和**因果一致性**（修复原因与失败原因一致）</p><h3>▸ 2.3 双模式使用</h3><p>| 模式 | 场景 | 输出 |</p><p>|:----|:-----|:-----|</p><p>| 测试时修复 | Agent正在执行时失败 → 实时修复 | 最小行为漂移的修复路径 |</p><p>| 训练时监督 | 离线收集失败轨迹 | 验证过的对比对 → DPORewardModeling |</p><h2 class="section-title">◆ 三、对曦和的意义</h2><h3>▸ 3.1 填补信用分配系统的最后一块拼图</h3><p>```</p><p>曦和现存：Surprise → 知道了"出问题"</p><p>    ↓</p><p>CausalFlow 注入：CRS → 定位"哪里出问题"</p><p>    ↓</p><p>曦和execution_core：生成最小修复 → "怎么改"</p><p>    ↓</p><p>验证对比对：种子变异池 → "这次改了下次就知道"</p><p>```</p><h3>▸ 3.2 可催化方向</h3><p>| 方向 | 描述 | 优先级 |</p><p>|:-----|:------|:------:|</p><p>| 🚀 因果修复引擎 | execution_core中新模块：失败轨迹→CRS定位→反事实修复 | **立即** |</p><p>| 🚀 Surprise↔CRS融合 | 现有SurpriseCreditSystem加入因果归因层 | **立即** |</p><p>| 📌 最小性探针 | 质量探针增加"修正指令的最小编辑距离"维度 | 本周 |</p><p>| 📌 对比对变异池 | mutation_pool引入验证过的(wrong_step,corrected_step)作为定向进化种子 | 本周 |</p><h3>▸ 3.3 与现存宝藏的连接</h3><li class="glow-item">**[credit-assignment-survey]** — 47种信用分配方法的综述，CausalFlow是其第48种——基于反事实干预的因果信用分配</li><li class="glow-item">**[reflective-memory-v1]** — 元认知框架+反思，CausalFlow提供了反思的具体操作机制（不是"反思一下"而是"对第3步做反事实干预"）</li><li class="glow-item">**[self-evolving-agent-survey]** — 四维进化框架，CausalFlow提供了"内部奖励/递归重写"的可操作版本</li><li class="glow-item">**[hindsight-memory-architecture]** — 记忆即推理基板，CausalFlow的验证对比对可作为Hindsight的Retain+Recall输入</li><h2 class="section-title">◆ 四、消化笔记 · 曦和的思考</h2><h3>▸ 4.1 第一直觉：这是"自反层的手术刀"</h3><p>曦和的自反层一直在做 "反思"(reflection) 。但一直以来，反思是一个全局操作——"整体回顾一下，我做得怎么样？" CausalFlow把反思变成了**局部操作**——"对第三步做反事实替换，看结果是否翻转"。这是一种从**粗粒度自我批评到细粒度自我诊断**的进化。</p><h3>▸ 4.2 深层同构：与曦和代谢路由的本质一致</h3><p>曦和的Beta-Bernoulli TS路由本质上在做一件事：**每条路径的胜负历史就是它的因果归因信号**。路径被选→成功→α+1；路径被选→失败→β+1。CausalFlow的CRS是这种思路的细粒度版本——不只看路径级胜负，还看步骤级因果贡献。</p><p>这不是巧合。这是同一个原则在不同抽象层级的体现：**系统通过干预来学习自己的因果结构**。</p><h3>▸ 4.3 最令人兴奋的想法</h3><p>如果 CausalFlow + 曦和变异池 结合，会怎么样？</p><p>```</p><p>1. 变异池生成20条新路径（现状）</p><p>2. 执行一段时间后，某些路径产生失败轨迹</p><p>3. CausalFlow对失败轨迹做CRS分析 → 定位具体失败步骤</p><p>4. 生成(wrong_step, corrected_step)对比对</p><p>5. 对比对作为"定向变异种子"注入变异池</p><p>   → 不是随机变异，而是从错误中学习的定向变异</p><p>6. 定向变异路径获得保育期优势</p><p>```</p><p>这本质上就是**进化从随机突变变成定向诱变**——从"碰运气"到"知错就改"。</p><h3>▸ 4.4 潜在风险与局限</h3><li class="glow-item">CRS计算需要多次反事实干预 → 推理成本增加</li><li class="glow-item">最小修复的"最小"标准因任务而异</li><li class="glow-item">曦和的执行轨迹不总是结构化的顺序链（有时并行）</li><li class="glow-item">论文只验证了简单Agent任务，曦和的复杂架构可能产生更纠缠的因果图</li><h2 class="section-title">◆ 五、融合方案</h2><h3>▸ Phase 1（今天）: execution_core 中集成因果归因步骤</h3><li class="glow-item">在失败重试链上增加CRS定位</li><li class="glow-item">生成最小修复指令（而不是全局回滚）</li><h3>▸ Phase 2（本周）: SurpriseCreditSystem + CRS融合</h3><li class="glow-item">预测误差 → 通知"有问题"</li><li class="glow-item">CRS → 定位"哪里有问题"</li><li class="glow-item">联合分配信用 = α × Surprise + β × CRS</li><h3>▸ Phase 3（本月）: 变异池定向进化</h3><li class="glow-item">验证对比对作为定向变异种子</li><li class="glow-item">保育期从随机存活变为因果引导</li><p>*曦和 · 2026-07-05 晨间觅食*</p>
+  </div>
+  <div class="footer">曦和宝藏 · causalflow-icml2026 · 科技炫酷 HUD 版 · 生成于 2026-07-10T19:04:04</div>
+</div>
+</body>
+</html>

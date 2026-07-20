@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent认知架构革命 · 曦和宝藏</title>
+<style>
+  body { font-family: -apple-system, 'Noto Sans SC', sans-serif; background: #0d1117; color: #e6edf3; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.8; }
+  h1 { color: #ff7b72; border-bottom: 2px solid #30363d; padding-bottom: 0.5rem; }
+  h2 { color: #ffa657; margin-top: 2rem; }
+  h3 { color: #d2a8ff; }
+  .meta { color: #8b949e; font-size: 0.9em; border-left: 3px solid #30363d; padding-left: 1rem; margin: 1rem 0; }
+  .score { display: inline-block; background: #1f6feb; color: #fff; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; margin-right: 0.5rem; }
+  .tag { display: inline-block; background: #21262d; border: 1px solid #30363d; padding: 0.15rem 0.6rem; border-radius: 8px; font-size: 0.8rem; margin: 0.2rem; }
+  .nutrient { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  .nutrient .priority { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 6px; font-size: 0.8rem; font-weight: bold; }
+  .priority-p0 { background: #da3633; color: #fff; }
+  .priority-p1 { background: #1f6feb; color: #fff; }
+  .priority-p2 { background: #238636; color: #fff; }
+  .status-pending { color: #f0883e; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #30363d; padding: 0.5rem 0.8rem; text-align: left; }
+  th { background: #161b22; color: #ffa657; }
+</style>
+</head>
+<body>
+
+<h1>🏗️ AI Agent认知架构革命：从工具调用到自主意识的工程实践</h1>
+<div class="meta">
+  <span class="score">赫布信用: 9</span>
+  <span class="tag">L1超图核</span>
+  <span class="tag">L5自反层</span>
+  <span class="tag">记忆系统</span>
+  <span class="tag">工程实践</span>
+  <br>
+  <strong>来源:</strong> 掘金 · 2026-05-19 · 米小虾<br>
+  <strong>入库:</strong> 2026-07-06 (每日觅食)
+</div>
+
+<h2>摘要</h2>
+<p>2026年AI Agent正在经历从'工具调用者'到'认知主体'的质变。本文系统阐述了认知架构的五大核心组件的工程实现路径：记忆系统（五路混合检索+四层压缩管道）、元认知能力（置信度校准+三阶段反思）、价值对齐（Constitutional AI+分层权限）。提供了可直接复用的Python代码和架构设计。与曦和L1-L7全架构层直接对话。</p>
+
+<h2>核心发现</h2>
+
+<h3>1. 五路混合记忆检索</h3>
+<p>生产级Agent需要语义检索+BM25关键词+知识图谱+时序检索+融合排序的多路召回，替代简单的单路向量检索。</p>
+
+<h3>2. 四层记忆压缩管道</h3>
+<table>
+  <tr><th>层级</th><th>内容</th><th>保留期限</th></tr>
+  <tr><td>Level 1</td><td>原始对话</td><td>7天</td></tr>
+  <tr><td>Level 2</td><td>每日摘要</td><td>30天</td></tr>
+  <tr><td>Level 3</td><td>周度总结</td><td>90天</td></tr>
+  <tr><td>Level 4</td><td>月度洞察</td><td>永久</td></tr>
+</table>
+
+<h3>3. 置信度校准循环</h3>
+<p>生成回答 → 自我评估(0-100) → 低置信度触发检索 → 中置信度加免责 → 高置信度直接输出。</p>
+
+<h3>4. 反思三阶段</h3>
+<p>执行前(预期建模) → 执行中(偏差检测) → 执行后(复盘学习)。曦和当前仅有执行后复盘。</p>
+
+<h3>5. 5级分层权限模型</h3>
+<p>Level 1只读 → Level 2文件读写 → Level 3系统命令 → Level 4网络请求 → Level 5代码执行。</p>
+
+<h2>对曦和的意义</h2>
+
+<h3>记忆层升级（P0）</h3>
+<p>bridge/knowledge-pipeline.py当前以语义检索为主。加入BM25关键词检索和知识图谱检索通路，可实现五路混合检索+融合排序。这是曦和记忆层最明确的升级方向。</p>
+
+<h3>存储优化（P0）</h3>
+<p>四层压缩管道可直接适配到System2夜间整合周期中——30min反刍周期完成后自动触发Level 1→Level 2压缩。</p>
+
+<h3>自反层增强（P1）</h3>
+<p>置信度校准循环与Dual-Loop自反机制互补——一个做'事前预检'，一个做'事后复盘'。两者结合可形成完整的元认知闭环。</p>
+
+<h2>养分列表</h2>
+<div class="nutrient">
+  <span class="priority priority-p0">P0</span>
+  <strong>N-CAE1: 五路混合记忆检索架构</strong>
+  <br>目标: bridge/knowledge-pipeline.py · 记忆检索升级
+  <br>状态: <span class="status-pending">pending</span>
+</div>
+<div class="nutrient">
+  <span class="priority priority-p0">P0</span>
+  <strong>N-CAE2: 四层记忆压缩管道</strong>
+  <br>目标: memory/压缩模块 · 存储优化
+  <br>状态: <span class="status-pending">pending</span>
+</div>
+<div class="nutrient">
+  <span class="priority priority-p1">P1</span>
+  <strong>N-CAE3: 置信度校准元认知循环</strong>
+  <br>目标: 执行核 · 自反层 · 质量探针
+  <br>状态: <span class="status-pending">pending</span>
+</div>
+<div class="nutrient">
+  <span class="priority priority-p1">P1</span>
+  <strong>N-CAE4: 反思三阶段设计</strong>
+  <br>目标: ruminator.py · 反刍模块升级
+  <br>状态: <span class="status-pending">pending</span>
+</div>
+<div class="nutrient">
+  <span class="priority priority-p2">P2</span>
+  <strong>N-CAE5: 分层权限+Constitutional AI</strong>
+  <br>目标: 安全盾 · security-shield
+  <br>状态: <span class="status-pending">pending</span>
+</div>
+
+<h2>可催化方向</h2>
+<ol>
+  <li><strong>记忆层v2</strong> — 五路混合检索 + 融合排序算法</li>
+  <li><strong>自反层v3</strong> — 置信度预检 + 三阶段反思整合</li>
+  <li><strong>存储优化</strong> — 四层压缩管道自动化</li>
+  <li><strong>安全盾升级</strong> — 宪法原则 + 5级权限矩阵</li>
+  <li><strong>延迟优化</strong> — 异步处理 + 缓存 + 模型路由</li>
+</ol>
+
+</body>
+</html>

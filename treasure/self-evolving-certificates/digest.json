@@ -1,0 +1,47 @@
+{
+  "id": "self-evolving-certificates",
+  "name": "Self-Evolving Agents with Anytime-Valid Certificates (arXiv 2607.00871)",
+  "source": "arXiv · Thu, 2 Jul 2026",
+  "discovered": "2026-07-03T07:22:16",
+  "digested": "2026-07-03T07:48:55",
+  "field": "E4进化酶 / L7涌现层 · 自进化Agent",
+  "content": "Self-evolving agents that provide anytime-valid certificates for their behavior. Maps to E4进化酶.",
+  "nutrients": [
+    {
+      "id": "n1",
+      "title": "核心发现：自进化需要防退化门控",
+      "source": "arXiv 2607.00871 · Jul 2026",
+      "digest": "SEA架构将自我修改限制在小型steering adapter + versioned harness中。每次修改通过随时有效门控发出可审计证书。在SWE-bench上实现+4/+5改进（Glm 24->28, Gpt 29->34）。",
+      "relevance": "E4进化酶的设计可直接采用SEA的[冻结基座+可进化适配器]思路"
+    },
+    {
+      "id": "n2",
+      "title": "五重进化控制器详解",
+      "source": "arXiv 2607.00871",
+      "digest": "1)Best-of-N选择->从N个候选中选最优 2)微步搜索->小步迭代不跳步 3)自繁殖预言->自己验证自己 4)搜索层控制->限制搜索范围 5)自修复->检测退化并回滚。五者组合确保进化不退步。",
+      "relevance": "曦和的E6变异酶+自愿回避=Best-of-N。Gamma衰退=微步搜索。E5自反酶=自繁殖预言。需要新增：随时有效证书机制"
+    },
+    {
+      "id": "n3",
+      "title": "曦和映射：代谢引擎的证书升级",
+      "source": "Xihe Meta-Enzyme · 自对照",
+      "digest": "曦和代谢引擎每步心跳检查H值=天然门控。但缺少SEA的证书审计机制。建议在bridge/新增catalysis-certificate.py：每次酶催化后记录certificate（输入/输出约束、置信度变化、H值变化），形成可回溯的审计链。",
+      "relevance": "E4进化酶的下一个迭代方向：SEA五重控制器移植"
+    },
+    {
+      "id": "n4",
+      "title": "C11回避分析酶的论文源头",
+      "source": "arXiv 2607.00871 · Xihe对照",
+      "digest": "SEA论文中的自修复机制（detect regressions and rollback）直接支持C11回避分析酶的设计。自愿回避的酶需要知道什么时候[退化]了——这正是自修复的前提。",
+      "relevance": "C11回避分析酶的理论基础可从SEA自修复机制中提取设计原则"
+    }
+  ],
+  "nutrient_count": 4,
+  "memcell": {
+    "born": "2026-07-03T07:22:16",
+    "last_accessed": "2026-07-03T07:48:55",
+    "access_count": 4,
+    "conflict_flag": false,
+    "state": "active"
+  }
+}

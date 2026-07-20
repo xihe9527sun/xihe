@@ -1,0 +1,18 @@
+﻿{
+  "id": "memetic-drift-qsg-2603.24676",
+  "name": "集体智能彩票 — 多Agent系统模因漂移与群体共识标度律",
+  "source": "arXiv:2603.24676",
+  "reprocessed_at": "2026-07-20T13:55:07.293602",
+  "content": "Multi-agent systems powered by large language models (LLMs) are increasingly deployed in settings that shape consequential decisions, both directly and indirectly. Yet it remains unclear whether their outcomes reflect collective reasoning, systematic bias, or mere chance. Recent work has sharpened this question with naming games, showing that even when no individual agent favors any label a priori, populations rapidly break symmetry and reach consensus. Here, we reveal the mechanism by introduci",
+  "field": "自反层",
+  "summary": "通过引入Quantized Simplex Gossip模型，揭示了集体智能彩票中多Agent系统的机制，并预测了群体共识的标度律。",
+  "key_insights": [
+    "集体智能彩票中的多Agent系统能够快速达成共识，即使初始时没有个体偏好任何标签。",
+    "通过内部信念状态和相互学习，任意选择可以成为下一个代理的证据并最终促成一致。",
+    "研究提出了一个从随机性到偏见增强的选择机制，并给出了相关参数下的标度律预测。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于提供了一种理解多Agent系统中社会表征形成集体机制的方法。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

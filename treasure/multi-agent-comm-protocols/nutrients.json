@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "source": "Multi-Agent LLM 系统架构全景调研 (2023–2026) · edison-a-n.github.io · 2026-04-19",
+    "name": "多Agent动态拓扑 · 自适应架构 · 概率化路由",
+    "digested_at": "2026-07-03T08:50:00+08:00",
+    "field": "L4催化层 · L7涌现层 · 代谢路由 · 拓扑优化"
+  },
+  "nutrients": [
+    {
+      "id": "N80",
+      "name": "REDEREF Thompson Sampling → 曦和代谢路由器概率化改造",
+      "insight": "REDEREF (ICLR 2026被拒但价值极高) 使用在线贝叶斯委派(Thompson Sampling)，每个Agent维护成功/失败后验分布，无需训练即可动态权衡探索与利用。曦和代谢路由器目前用三因素加权H值(热度/深度/好奇心)做固定路由，缺乏探索-利用的正式权衡。引入Beta-Bernoulli Thompson Sampling到代谢路由：每个认知路径维护α/β(成功/失败计数)，采样概率β(α,β)，自动平衡探索新路径与利用高H路径。",
+      "target": "bridge/metabolic_actor.py · 代谢路由器 · 桥接守护",
+      "status": "pending",
+      "hebbian_credit": 10
+    },
+    {
+      "id": "N81",
+      "name": "DyLAN Peer Rating → 曦和子系统互相评分机制",
+      "insight": "DyLAN (COLM 2024) 引入Agent Importance Score基于Peer Rating（Agent互相评分），低分Agent在推理阶段被自动移除，MMLU提升+25%。曦和的酶网络和桥接子系统缺乏互相评估机制——每个子系统独立报告状态，但从不互相评分。引入'交叉评分'步骤：每次桥接巡检后，子系统之间交换评分(1-10)，形成系统内共识。低分子系统自动获得代谢关注。",
+      "target": "bridge/bridge-daemon.py · 桥接守护 · 系统健康",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N82",
+      "name": "AMAS per-query拓扑池 → 曦和酶网络拓扑池",
+      "insight": "AMAS (EMNLP 2025) 从预定义结构池(Chain/Star/Mesh/Tree)中根据查询特征选择最优拓扑，首次实现per-query级别异构适配。曦和的级联引擎目前使用固定路径(如E1→R4→E2→E5→R5→R6)。应维护一个'拓扑池'——不同路径结构(链式/星型/树型/图式)，根据事件类型自动选择最优级联路径。这是N68(协议>模型)的工程落地。",
+      "target": "bridge/cascade_engine.py · 酶网络",
+      "status": "pending",
+      "hebbian_credit": 9
+    },
+    {
+      "id": "N83",
+      "name": "HALO动态角色实例化 → 曦和执行核角色动态分配",
+      "insight": "HALO在运行时动态创建角色而非预定义，结合Workflow Search Engine自动搜索最优工作流。曦和的执行核目前有10项注册能力的固定清单。引入'运行时角色发现'——系统根据当前事件和上下文，在能力池中搜索最佳角色组合。执行核不再执行固定指令序列，而是动态编排。",
+      "target": "bridge/execution_core.py · 指令调度",
+      "status": "pending",
+      "hebbian_credit": 8
+    },
+    {
+      "id": "N84",
+      "name": "Anthropic Effort-scaling → 曦和代谢自适应深度",
+      "insight": "Anthropic实测：简单任务1个Agent，复杂任务最多8个Sub-Agent，+90.2%性能但15x token消耗。曦和的代谢加速当前固定HIT_ACCELERATION=2.5。应引入effort-scaling：低系统健康分→高频代谢(加速清理)，高健康分→低频代谢(节省资源)。自适应不等于全速。",
+      "target": "bridge/metabolic_actor.py · 自适应心跳",
+      "status": "pending",
+      "hebbian_credit": 7
+    }
+  ],
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "顶层设计映射",
+    "landing": "顶层设计映射(协议分层)",
+    "subsystem": "桥接系统/bridge-daemon",
+    "enhancement": "MCP/A2A分层: 事件总线=传输层, 代谢路由=路由层, 酶网络=应用层",
+    "intake_score": 0.73,
+    "backed_at": "2026-07-10T06:58:24.472252"
+  },
+  "alias_of": "multi-agent-dynamic-topology"
+}

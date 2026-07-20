@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.07706",
+  "name": "The Key to Going Linear: Analysis-Driven Transformer Linearization",
+  "source": "arXiv:cs.LG:2607.07706",
+  "reprocessed_at": "2026-07-20T14:33:58.359973",
+  "content": "The quadratic cost of causal self-attention severely bottlenecks long-context transformer inference. While numerous post hoc linearization pipelines exist, it is difficult to identify which components preserve model quality. This work isolates the effect of state update design in a strict frozen-backbone regime. We show that softmax relies on key-dependent, rank-1 orthogonal projections, elucidating why delta-style networks outperform purely gated accumulation. We identify a potential source of ",
+  "field": "记忆系统",
+  "summary": "通过分析关键依赖项，该研究揭示了softmax在因果自我注意中的关键作用，并提出了一些减少线性化误差的方法。这些方法显著提高了LLaMA和Qwen模型的性能。",
+  "key_insights": [
+    "研究发现softmax依赖于关键依赖项和秩1正交投影，这解释了为什么delta风格网络优于纯门控累积。",
+    "提出了sink tokens、短卷积和固定预算缓存路由等结构干预措施来减少线性化误差。",
+    "在32亿参数的LLaMA和Qwen模型上实现了性能提升，并且在MMLU任务中超过了之前的后验基线，同时与复杂的自适应缓存框架相比，在长上下文检索方面表现相当。"
+  ],
+  "xihe_relevance": "该研究方法可能对曦和中的记忆系统或自反层有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

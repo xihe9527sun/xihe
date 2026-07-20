@@ -1,0 +1,53 @@
+{
+  "treasure_id": "cognitive-architecture-engineering",
+  "extracted_at": "2026-07-06T08:50:00+08:00",
+  "source": "掘金 · 2026-05-19 · AI Agent认知架构革命：从工具调用到自主意识",
+  "url": "https://juejin.cn/post/7641418770503237678",
+  "nutrients": [
+    {
+      "id": "N-CAE1",
+      "priority": "P0",
+      "name": "五路混合记忆检索架构（语义+BM25+图谱+时序+融合排序）",
+      "target": "bridge/knowledge-pipeline.py · 记忆检索升级",
+      "status": "pending",
+      "description": "生产级Agent需要多路召回替代简单的向量检索。曦和目前的记忆检索以语义检索为主，缺少BM25关键词+知识图谱+时序衰减的多路融合。文章提供的HybridMemoryRetriever代码可直接适配为曦和记忆层v2的接口设计。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-CAE2",
+      "priority": "P0",
+      "name": "四层记忆压缩管道（7天原始/30天摘要/90天周度/永久洞察）",
+      "target": "memory/压缩模块 · 存储优化",
+      "status": "pending",
+      "description": "曦和目前的记忆系统缺少自动压缩机制。四层分层摘要（Level 1→4）可以在存储爆炸前主动压缩。每层由专门摘要Agent生成，保留关键信息丢弃冗余。这与曦和的System2夜间整合周期天然契合。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-CAE3",
+      "priority": "P1",
+      "name": "置信度校准元认知循环（生成→自评→触发）",
+      "target": "执行核 · 自反层 · 质量探针",
+      "status": "pending",
+      "description": "文章提供完整的MetacognitiveAgent实现：生成回答→自我评估置信度→低置信度触发检索增强/中置信度加免责/高置信度直接输出。这与曦和的Dual-Loop自反机制形成互补——Dual-Loop做'事后复盘'，这个做'事前校准'。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-CAE4",
+      "priority": "P1",
+      "name": "反思机制三阶段设计（执行前/中/后）",
+      "target": "ruminator.py · 反刍模块升级",
+      "status": "pending",
+      "description": "文章将反思分为执行前(计划与预期)→执行中(偏差检测)→执行后(复盘与学习)三阶段。曦和的反刍模块当前偏重于执行后复盘(30min/6h/24h三级反刍)，缺少执行前的预期建模和执行中的实时偏差检测。",
+      "absorbed_at": null
+    },
+    {
+      "id": "N-CAE5",
+      "priority": "P2",
+      "name": "分层权限模型 + Constitutional AI价值对齐",
+      "target": "安全盾 · security-shield",
+      "status": "pending",
+      "description": "作者提出5层权限模型（只读/文件读写/系统命令/网络请求/代码执行）+ Constitutional AI宪法原则。曦和的安全盾目前有基础的安全检查，但缺少系统化的宪法规约和分层权限矩阵。可参考该设计重构security-shield。",
+      "absorbed_at": null
+    }
+  ]
+}

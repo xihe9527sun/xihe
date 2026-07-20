@@ -1,0 +1,20 @@
+﻿{
+  "id": "arxiv-2607.03162",
+  "name": "APeB: Benchmarking Personalization Ability of Large Language Model Agents",
+  "source": "arXiv:cs.AI:2607.03162",
+  "reprocessed_at": "2026-07-20T14:21:44.519612",
+  "content": "LLM-powered agents struggle with personalization when users issue raw, underspecified queries. In this setting, agents must infer latent intent, extract preferences from noisy interaction histories, and select among competing alternatives. Existing benchmarks rarely test this capability, as they often rely on user-refined queries or simplified histories. We introduce personalized product search (PPS), a testbed for agentic personalization under raw queries and diverse histories. We construct Age",
+  "field": "多Agent",
+  "summary": "该研究提出了一种新的基准测试方法PPS，用于评估大型语言模型在面对未经细化的用户查询时的个性化能力，并通过APeB框架进行验证。",
+  "key_insights": [
+    "现有的基准测试方法往往依赖于经过用户精细调整的问题或简化的历史记录，无法充分测试大型语言模型的个性化能力。",
+    "研究引入了个人化产品搜索（PPS）作为新的测试环境，以评估大型语言模型在面对未经细化的查询和多样化历史时的能力。",
+    "实验结果显示，现有的大型语言模型在处理明确的问题方面表现良好，但在需要意图和偏好发现的早期阶段则存在问题。",
+    "通过简单的基于历史的查询精炼管道（VQRA）可以显著提高模型的表现，并强调了个性化代理中利用历史记录模块的重要性。",
+    "研究指出，现有基准测试方法中的一个主要问题是它们未能充分考虑用户的原始查询及其交互历史。"
+  ],
+  "xihe_relevance": "该研究结果可能对曦和计划在用户查询理解和偏好提取方面的性能改进具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

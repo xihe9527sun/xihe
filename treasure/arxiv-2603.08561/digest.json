@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2603.08561",
+  "name": "RETROAGENT: Retrospective Dual Intrinsic Feedback for Self-Reflection in Autonomous Agents",
+  "source": "arXiv:2603.08561v3 (cs.AI)",
+  "reprocessed_at": "2026-07-20T14:35:18.019987",
+  "content": "Standard reinforcement learning (RL) for large language model (LLM) agents primarily optimizes extrinsic task rewards, often favoring isolated task completion over continual adaptation. This paradigm can cause premature convergence to suboptimal policies and leaves useful experience only implicitly encoded in model parameters, limiting its retrieval and reuse for future decisions. We introduce RetroAgent, an online RL framework that trains agents to master interactive environments not merely by ",
+  "field": "记忆系统/自反层/进化引擎",
+  "summary": "RETROAGENT通过引入双重内在反馈机制，使自主代理能够在交互环境中持续适应和学习，从而克服传统强化学习方法导致的早期收敛问题。",
+  "key_insights": [
+    "RETROAGENT利用人类回顾式自我提升的思想，结合历史信息生成双重内在反馈，以促进长期学习和任务完成。",
+    "RETROAGENT引入了Intrinsic Numerical Feedback和Intrinsic Language Feedback两种新型奖励机制，增强了模型的自适应能力。",
+    "RETROAGENT提出了一种名为SimUtil-UCB的检索策略，用于有效利用这些经验教训，并在多个基准测试中取得了显著优势。"
+  ],
+  "xihe_relevance": "RETROAGENT可能为曦和系统中的记忆系统、自反层以及进化引擎等模块提供有益的启示。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

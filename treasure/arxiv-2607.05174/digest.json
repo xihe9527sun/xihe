@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.05174",
+  "name": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
+  "source": "arXiv:cs.AI:2607.05174",
+  "reprocessed_at": "2026-07-20T14:19:33.208976",
+  "content": "Language agents, i.e., LLM agents, progress rapidly and are increasingly deployed in production environments. This trend underscores the urgent need for rigorous and realistic evaluations. However, most existing benchmarks evaluate agents in simplified, idealized settings. They typically rely on pre-packaged tool interfaces, overlook critical steps, and assume inputs are clean and fully specified. Consequently, they understate the difficulty of real deployments, where uncertainty and noise are u",
+  "field": "多Agent",
+  "summary": "Language agents, especially large language model (LLM) agents, are advancing rapidly and being deployed in real-world production environments. However, current benchmarks often overlook the complexity of these settings by simplifying tasks and assuming inputs are clean and fully specified, leading to underestimation of their performance.",
+  "key_insights": [
+    "AgentGym2 introduces a new evaluation framework that simulates real-world end-to-end working demands for LLM agents, addressing the gap between idealized benchmarks and practical deployment scenarios.",
+    "The framework evaluates not only reasoning and planning but also the ability to discover tools through exploration, compose tools for unseen tasks, and maintain robustness in noisy environments.",
+    "Experiments with 15 proprietary and open-source models show that even state-of-the-art systems struggle on AgentGym2, indicating a significant gap between current agent capabilities and real-world application requirements."
+  ],
+  "xihe_relevance": "AgentGym2的评估框架可能对曦和（一个假设的系统或模块）在处理复杂环境中的工具使用任务有潜在价值，特别是在自反层、进化引擎和多Agent领域。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

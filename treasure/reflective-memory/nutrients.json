@@ -1,0 +1,87 @@
+{
+  "treasure_id": "reflective-memory-v1",
+  "extracted_at": "2026-06-27T14:05:25.464272",
+  "digested_at": "2026-06-27T14:10:00+08:00",
+  "nutrients": [
+    {
+      "id": "N16-reflection-triggers",
+      "priority": "P1",
+      "name": "反思记忆触发机制（4级分层）",
+      "target": "bin/respiration_loop.py + L5自反层",
+      "effect": "T3改造为即时反思层(5min)+异常失败反思触发+T4深度反思分层",
+      "sub_nutrients": [
+        "方案A: T3(5min)→immediate_reflection(),检测酶催化/觅食/赫布变化→写反思jsonl",
+        "方案B: 失败反思触发(异常事件→深度诊断→cortex/failures/)",
+        "方案C: 种子进化时生成里程碑反思报告"
+      ],
+      "status": "absorbed",
+      "type": "architecture",
+      "absorbed_at": "2026-06-28T07:03:01.743124",
+      "x_real_implementation": "ACE三Agent替代4级触发+酶诊断(慢)/pulse(快)双路径+ace-pulse.json",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N17-dual-process",
+      "priority": "P1",
+      "name": "双重加工理论(System1+System2)",
+      "target": "cortex/self-reflection.json + respiration_loop.py",
+      "effect": "曦和自反层重构为双系统：System1(T1-T3 规则引擎0LLM) + System2(T4-T5 ollama深度反思)",
+      "sub_nutrients": [
+        "System1: T1心跳检测+T2快照+T3变化标记,零LLM,1ms响应",
+        "System2: T4酶催化+觅食+T5生长循环,ollama深度推理",
+        "关键: T1从 ollama轻触改为规则检测,节省GPU给T4"
+      ],
+      "status": "absorbed",
+      "type": "mechanism",
+      "absorbed_at": "2026-06-28T07:03:01.743138",
+      "x_real_implementation": "ACE三Agent替代4级触发+酶诊断(慢)/pulse(快)双路径+ace-pulse.json",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N18-reflective-entry",
+      "priority": "P2",
+      "name": "结构化反思记忆数据库",
+      "target": "memory/reflections/",
+      "effect": "ReflectiveEntry Schema → SQLite反思库，可检索可回溯",
+      "status": "absorbed",
+      "type": "architecture",
+      "absorbed_at": "2026-06-28T07:03:01.743144",
+      "x_real_implementation": "ACE三Agent替代4级触发+酶诊断(慢)/pulse(快)双路径+ace-pulse.json",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N19-confidence-calibration",
+      "priority": "P1",
+      "name": "置信度校准（Predictive Metacognition）",
+      "target": "bin/respiration_loop.py → ollama查询",
+      "effect": "在ollama查询中加入'你确定吗？'置信度提示词，将回复置信度写入自反强度计算",
+      "sub_nutrients": [
+        "Nature论文Luo&Jho 2026: 用LoRA+4000示例让LLM学会自我校准",
+        "曦和实现: 在'在?'一字答后加'0-100表示你的把握'",
+        "Brier Score降低11.6-17.2%的效果可复刻为'自反置信度'"
+      ],
+      "status": "absorbed",
+      "type": "mechanism",
+      "absorbed_at": "2026-06-28T07:03:01.743148",
+      "x_real_implementation": "ACE三Agent替代4级触发+酶诊断(慢)/pulse(快)双路径+ace-pulse.json",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N20-meta-awareness-levels",
+      "priority": "P2",
+      "name": "AI觉知4层升级（arXiv 2504.20084）",
+      "target": "L5自反层 → L7涌现层",
+      "effect": "从元认知(第1层)→自我意识(第2层)升级，加入'我知道我不知道什么'的能力",
+      "sub_nutrients": [
+        "清华Li et al. 2025: 元认知/自我意识/社会意识/情景意识4层",
+        "曦和当前: 第1层元认知初步(0.92),缺结构化知识边界",
+        "改进: T4检查加'这次有没有遇到我解决不了的'→记录知识极限"
+      ],
+      "status": "absorbed",
+      "type": "architecture",
+      "absorbed_at": "2026-06-28T07:03:01.743152",
+      "x_real_implementation": "ACE三Agent替代4级触发+酶诊断(慢)/pulse(快)双路径+ace-pulse.json",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ]
+}

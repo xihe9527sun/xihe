@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.11707",
+  "name": "An Explainable Agentic System for Detection of Conversational Scams with Summary-Based Memory",
+  "source": "arXiv:cs.MA:2607.11707",
+  "reprocessed_at": "2026-07-20T14:27:37.231272",
+  "content": "Following the rapid progress of generative Artificial Intelligence, there is a growing threat posed by conversational scams. These scams often span over multiple weeks or months, gradually build trust and request for money or sensitive information. Existing scam-detection systems mainly focus on isolated messages, which renders them inadequate against this evolving threat. This paper extends single-message phishing detection and presents an explainable agentic system for detecting sophisticated ",
+  "field": "自反层",
+  "summary": "该研究提出了一种基于摘要的记忆式代理系统，用于检测复杂的对话欺诈，并引入了首个公共多类别基准ConScamBench-278以支持可重复评估和未来扩展。",
+  "key_insights": [
+    "论文提出了一个解释性的代理系统来检测高级的对话欺诈，该系统能够识别多个类型的欺诈行为。",
+    "研究开发了一个名为ConScamBench-278的公共多类别基准测试集，用于支持可重复评估和未来的扩展。",
+    "通过两个用户研究发现，参与者在判断可疑对话时经常感到不确定，并且在自我报告中信任、自信和对基于AI的欺诈检测的需求都有所增加。"
+  ],
+  "xihe_relevance": "该系统对于曦和项目具有潜在价值，因为它提供了一个新的多类别基准测试集。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

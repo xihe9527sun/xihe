@@ -1,0 +1,72 @@
+{
+  "treasure_id": "fademem-adaptive-forgetting",
+  "treasure_name": "FadeMem: 自适应遗忘框架 — 双层级指数衰减 + LLM引导冲突融合",
+  "source": "arXiv 2601.18642 · Lei Wei et al. · Feb 2026",
+  "discovered": "2026-07-13T08:50:00+08:00",
+  "digested": "2026-07-13T09:15:00+08:00",
+  "layer": "L3（记忆层）· L5（自反调制层）· L4（催化层）",
+  "intake_score": 0.88,
+  "score_detail": {
+    "relevance_xihe": 0.92,
+    "novelty": 0.82,
+    "actionable": 0.90,
+    "cross_domain": 0.85,
+    "depth": 0.87,
+    "timeliness": 0.90
+  },
+  "nutrients": [
+    {
+      "id": "nutrient-1",
+      "name": "双层级自适应指数衰减",
+      "type": "architecture_pattern",
+      "value": 0.92,
+      "description": "FadeMem的双层记忆层级中，保留由自适应指数衰减函数控制，调制信号包括：语义相关性(semantic relevance)、访问频率(access frequency)、时间模式(temporal patterns)。衰减率不是固定的——高相关性/高频访问的记忆衰减更慢。与SSGM Weibull衰减互补：Weibull控制形状(κ)，FadeMem控制速率(λ)，两者可融合为λ(κ, t)混合函数。",
+      "xihe_gap": "曦和当前memory_decay.py只实现了SSGM的Weibull衰减(单一κ参数)。缺少调制信号——衰减率不会根据语义相关性或访问频率自适应调整。现在所有记忆类型衰减曲线是相同的，需要引入调制信号层。",
+      "application": "扩展bridge/memory_decay.py为MemoryDecayEngine：合并Weibull形状(κ) + 指数速率(λ) + 三个调制信号(semantic_relevance, access_freq, recency)。新增modulate_decay()函数让不同类型记忆获得自适应衰减曲线。DecayScheduler调度器接管所有衰减计算。"
+    },
+    {
+      "id": "nutrient-2",
+      "name": "LLM引导的冲突解决与智能融合 (LLM-Guided Conflict Resolution + Fusion)",
+      "type": "algorithm",
+      "value": 0.89,
+      "description": "当两条记忆相似或冲突时，FadeMem不简单丢弃，而是用LLM引导的冲突决议判断：两条是否指向同一事实的不同版本？是合并、覆盖、还是保留双方但降低置信度？融合后，原始细节被摘要化但保留关键信息，类似人类记忆的'模糊化精确'。45%存储减少不牺牲检索质量——记忆数量减少但质量提升。",
+      "xihe_gap": "曦和当前WriteGate v2只能拒绝冲突记忆(送入cortex/quarantine/)，没有融合路径。冲突不一定全是错误——可能是同一事实的不同视角。当前系统没有'融合再降噪'管道。EASM的情境与SSGM的一致性之间冲突时，系统只能二选一。",
+      "application": "在bridge/event_bus.py中新建fuse_conflict()管道：检测到冲突时先调用LLM裁决(是否可融合)，可融合则创建联合记忆(原始+新视角+置信度)，不可融合再进quarantine。融合路径替代'非此即彼'的二值决策。"
+    },
+    {
+      "id": "nutrient-3",
+      "name": "衰减到融合 (Decay-to-Fusion) 变体",
+      "type": "architecture_pattern",
+      "value": 0.87,
+      "description": "Adaptive Memory Decay模式目录中定义的decay-to-fusion变体：记忆逼近遗忘阈值时不直接删除，而是与相似记忆合并后再删除。保留大意(保留核心信息)的同时减少体积。这与人类记忆中的'概括化'一致——你不记得早餐的具体食物但记得'吃了健康的'。",
+      "xihe_gap": "曦和当前只有删除(drop)和保留(retain)两种状态。没有'记忆降级'管道。Imprint的三层信号(强化/弱化/遗忘)是直接的，没有中间状态。",
+      "application": "在memory_decay.py中增加retention_score和threshold_handler。当retention_score低于threshold_demote(0.3)：搜索相似记忆尝试融合。低于threshold_drop(0.1)：保留核心摘要后删除。三级状态：active→fusing→tombstone。"
+    },
+    {
+      "id": "nutrient-4",
+      "name": "高频重要性自指失效检测",
+      "type": "insight",
+      "value": 0.82,
+      "description": "Adaptive Memory Decay模式识别了一个关键'故障模式'：衰减无法修复高频相关记忆的陈旧——一条被不断强化但内容已经过时的高价值记忆，会因为持续的高访问频率而'免疫'衰减。Mem0 2026报告将staeness in high-relevance memories列为开放问题。",
+      "xihe_gap": "曦和目前没有'陈旧但高频'检测。如果盘古早期说过'我喜欢Python'但现在已迁移到TypeScript，'盘古喜欢Python'这条记忆会因高频引用而永不衰减。",
+      "application": "在memory_decay.py中增加staleness_probe()：对高频访问(access_count>N)但超过保质期的记忆进行'真实性快照对比'标记。需要bridge/attachment_drift_checker.py定期检查。与SSGM的漂移检测配合。"
+    }
+  ],
+  "cross_refs": [
+    "ssgm-memory-governance",
+    "easm-emotion-memory",
+    "memory-architecture-four-layer",
+    "human-inspired-memory-microsoft"
+  ],
+  "hebbian_credit": 10,
+  "origin": "daily_foraging_2026-07-13",
+  "memcell": {
+    "born": "2026-07-13T08:50:00+08:00",
+    "last_accessed": "2026-07-20T08:50:00+08:00",
+    "access_count": 2,
+    "conflict_flag": false,
+    "state": "active",
+    "tags": ["自适应遗忘", "指数衰减", "冲突融合", "衰减-融合", "记忆生命周期", "FadeMem"],
+    "subsystem": ["bridge", "cortex", "memory"]
+  }
+}

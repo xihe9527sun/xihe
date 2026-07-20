@@ -1,0 +1,18 @@
+﻿{
+  "id": "when-should-service-agents-reconsider-difficulty-r",
+  "name": "When Should Service Agents Reconsider? Difficulty-Routed Control [2607.01426]",
+  "source": "arXiv cs.AI",
+  "reprocessed_at": "2026-07-20T14:14:06.662000",
+  "content": "Autonomous customer-service agents are shifting from conversational interfaces toward operational execution roles: they retrieve firm records, apply service policies, and execute backend writes such as refunds, cancellations, exchanges, order modifications, and reservation changes. This shift creates a service-control problem: firms must keep routine service fast and low-friction while preventing operational errors on requests where customer instructions, policy constraints, firm records, and ba",
+  "field": "自反层/进化引擎",
+  "summary": "本文提出了一种难度导向的服务控制架构，旨在平衡快速低摩擦的常规服务与防止操作错误。该架构通过轻量级路由器将常规会话保持在低成本路径上，并将涉及客户指令、政策约束、企业记录和后端写入的操作耦合会话路由至升级工作流。",
+  "key_insights": [
+    "提出了一种难度导向的服务控制架构，以平衡快速低摩擦的常规服务与防止操作错误",
+    "轻量级路由器用于保持常规会话在低成本路径上，并将操作耦合会话路由至升级工作流",
+    "使用冲突感知通信和写触发重审来集中讨论并确保在关键后端写入之前进行保护"
+  ],
+  "xihe_relevance": "该架构可能有助于提高服务控制的效率和准确性，从而提升用户体验。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

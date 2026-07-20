@@ -1,0 +1,20 @@
+﻿{
+  "id": "transformer-geometry-observatory-tgo-ii-representa",
+  "name": "Transformer Geometry Observatory TGO-II: Representational Similarity Observatory",
+  "source": "arXiv cs.LG 2607.02386",
+  "reprocessed_at": "2026-07-20T14:17:01.463345",
+  "content": "While Vision Transformers have achieved remarkable success across computer vision and language applications, the geometric evolution of their internal representations throughout training remains insufficiently understood. Existing analyses primarily focus on attention mechanisms and downstream performance, leaving the evolution of representation geometry largely unexplored. In this work, we present Transformer Geometry Observatory-II (TGO-II), a representation geometry analysis framework designe",
+  "field": "多Agent",
+  "summary": "Transformer内部表示在监督训练中的几何演变尚未充分理解。本文提出了一种新的分析框架TGO-II，用于研究Transformer表示的演变过程，并通过多种方法进行分析。",
+  "key_insights": [
+    "TGO-II揭示了Transformer表示在训练过程中表现出专化和扩展的趋势。",
+    "研究表明，随着训练的进行，表示的内在维度逐渐增加，表明表示空间向更大的局部可访问自由度扩张。",
+    "Token之间的强相互作用结构在整个训练过程中保持不变，这挑战了单一依赖于token独立性的假设。",
+    "TGO-II发现Transformer在学习中通过逐步丰富变换来增加表示复杂性的同时，也保留了强大的token交互结构。",
+    "这些观察结果支持了一种新的假设：Transformer内部表示的复杂性和层专化是同时出现的。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值有待评估",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,17 @@
+﻿{
+  "id": "jet-long-efficient-long-context-extension-with-d",
+  "name": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:03:18.455186",
+  "content": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+  "field": "记忆系统/自反层",
+  "summary": "Jet-Long 提出了一种新的方法来扩展长上下文，利用动态双焦RoPE技术提高效率。",
+  "key_insights": [
+    "提出一种新的长上下文扩展方法",
+    "使用动态双焦RoPE技术",
+    "旨在提高计算效率"
+  ],
+  "xihe_relevance": "自反层, 记忆系统",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

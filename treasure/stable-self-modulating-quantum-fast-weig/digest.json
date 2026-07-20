@@ -1,0 +1,18 @@
+﻿{
+  "id": "stable-self-modulating-quantum-fast-weig",
+  "name": "Stable Self-Modulating Quantum Fast-Weight Programmers with Bounded Memory Gates",
+  "source": "cs.AI",
+  "reprocessed_at": "2026-07-20T13:57:33.083146",
+  "content": "Stable Self-Modulating Quantum Fast-Weight Programmers with Bounded Memory Gates",
+  "field": "量化交易",
+  "summary": "本文介绍了一种新的量子程序设计方法，该方法能够在有限的内存门限制下实现稳定且自我调节的快速权重编程。",
+  "key_insights": [
+    "该方法能够有效管理量子计算中的资源限制",
+    "通过自适应调整权重提高程序效率",
+    "在实际应用中具有潜在的高能效优势"
+  ],
+  "xihe_relevance": "该技术可能对曦和系统的优化有重要价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

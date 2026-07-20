@@ -1,0 +1,18 @@
+﻿{
+  "id": "rabitqcache-rotated-binary-quantization-for-kvca",
+  "name": "RaBitQCache: Rotated Binary Quantization for KVCache in Long Context LLM Inference",
+  "source": "曦和每日宝藏觅食 · 2026-07-14",
+  "reprocessed_at": "2026-07-20T14:06:27.476779",
+  "content": "RaBitQCache: Rotated Binary Quantization for KVCache in Long Context LLM Inference",
+  "field": "记忆系统",
+  "summary": "RaBitQCache是一种用于长上下文大型语言模型推理的旋转二进制量化技术，旨在优化KV缓存。",
+  "key_insights": [
+    "RaBitQCache通过旋转二进制量化技术提高了KV缓存的效率。",
+    "该方法特别适用于需要处理大量上下文信息的大规模语言模型。",
+    "它可能为自反层、进化引擎和元认知等领域提供新的可能性。"
+  ],
+  "xihe_relevance": "RaBitQCache的技术可以应用于记忆系统领域，尤其是在优化大型语言模型推理方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

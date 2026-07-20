@@ -1,0 +1,18 @@
+﻿{
+  "id": "agent原生记忆系统-evermemos-综述",
+  "name": "Agent原生记忆系统 — EverMemOS & 综述",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:35:53.720913",
+  "content": "Agent原生记忆系统 — EverMemOS & 综述",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "中文2-3句概括",
+  "key_insights": [
+    "提出了EverMemOS作为Agent原生记忆系统的概念，旨在提升智能代理的自主学习和决策能力。",
+    "该系统结合了自反层、进化引擎、元认知等技术，以实现更高级别的自动化和智能化。",
+    "对曦和项目具有潜在价值，可能有助于提高其在复杂环境中的适应性和性能。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

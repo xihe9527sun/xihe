@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2506.00430",
+  "name": "MIRROR: Converging Cognitive Principles as Computational Mechanisms for AI Reasoning",
+  "source": "arXiv:2506.00430v3 (cs.AI)",
+  "reprocessed_at": "2026-07-20T14:34:47.216365",
+  "content": "Multiple cognitive theories -- Global Workspace Theory, reconstructive episodic memory, inner speech, and complementary learning systems -- converge on a shared set of architectural principles: parallel specialized processing, integrative synthesis into a bounded unified representation, and reconstructive rather than accumulative maintenance. We test whether these converging principles provide computational advantages when implemented in AI systems. MIRROR operationalizes each principle as a con",
+  "field": "记忆系统",
+  "summary": "通过将人类认知原则应用于AI系统，MIRROR展示了在多轮对话中维护约束的能力显著提升，证明了这些原则对增强人工智能性能的潜在价值。",
+  "key_insights": [
+    "MIRROR成功地将人类认知原理转化为有效的计算机制，提高了多个语言模型的表现。",
+    "重建性合成对于所有测试的语言模型都有助益，表明这种处理方式是互补性的。",
+    "实验结果支持了理论预测，在高注意力负荷下，集成信息的可用性对表现的影响最大。"
+  ],
+  "xihe_relevance": "MIRROR的研究成果可能为曦和项目提供有价值的方向和见解。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

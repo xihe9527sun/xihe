@@ -1,0 +1,17 @@
+﻿{
+  "id": "agent-memory-persistence-2026",
+  "name": "Agent记忆持久化·ACE模式·从金鱼到老搭档",
+  "source": "pengjiyuan.github.io · 自主觅食",
+  "reprocessed_at": "2026-07-20T12:50:22.775963",
+  "content": "Agent记忆持久化·ACE模式·从金鱼到老搭档",
+  "field": "多Agent",
+  "summary": "该文章讨论了Agent的记忆持久化和ACE模式，从金鱼到老搭档的概念。",
+  "key_insights": [
+    "记忆持久化的研究进展",
+    "ACE模式在Agent中的应用",
+    "从简单任务到复杂合作"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

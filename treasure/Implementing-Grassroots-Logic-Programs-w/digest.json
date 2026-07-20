@@ -1,0 +1,17 @@
+﻿{
+  "id": "Implementing-Grassroots-Logic-Programs-w",
+  "name": "Implementing Grassroots Logic Programs with Multiagent Transition Systems",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:24.731005",
+  "content": "Implementing Grassroots Logic Programs with Multiagent Transition Systems",
+  "field": "多Agent",
+  "summary": "该研究探讨了如何通过多智能体过渡系统实现基层逻辑程序的实施。",
+  "key_insights": [
+    "引入多智能体过渡系统来实现逻辑编程",
+    "探索基层逻辑程序的新方法",
+    "结合多智能体理论以提升系统灵活性"
+  ],
+  "xihe_relevance": "该研究对多Agent领域有一定的价值，但与记忆系统、自反层、进化引擎、元认知和量化交易等方向关联性较小。",
+  "depth_rating": 6,
+  "ollama_digested": true
+}

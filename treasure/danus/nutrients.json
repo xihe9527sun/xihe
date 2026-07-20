@@ -1,0 +1,41 @@
+{
+  "treasure_id": "danus",
+  "name": "Danus: Orchestrating Mathematical Reasoning Agents with Fact-Graph Memory",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:30:31+08:00",
+  "digested": "2026-07-08T19:30:31+08:00",
+  "field": "记忆管理、推理优化",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "共享记忆机制",
+      "type": "理论发现",
+      "value": 9,
+      "description": "Danus通过共享记忆提高了多智能体的协作效率和推理准确性。",
+      "relation_to_xihe": "此养分与曦和的记忆网络/海马体高度相关，可增强其记忆管理和数据共享能力。",
+      "id": "N-DAN1"
+    },
+    {
+      "name": "增量推理方法",
+      "type": "工程方法",
+      "value": 7,
+      "description": "Danus采用增量推理方式避免了重复计算和矛盾，提高了效率。",
+      "relation_to_xihe": "该养分可以应用于曦和的皮层模块中，优化其增量学习和推理过程。",
+      "id": "N-DAN2"
+    },
+    {
+      "name": "准确性提升技术",
+      "type": "评测",
+      "value": 8,
+      "description": "Danus通过对比实验展示了其在提高准确性和协作效率方面的优势。",
+      "relation_to_xihe": "此养分可为曦和的性能评估提供参考，帮助优化其多智能体系统的协同工作效果。",
+      "id": "N-DAN3"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "Danus中共享记忆的概念与曦和架构中的记忆网络/海马体有直接相关性。可为曦和的代谢路由H值提供灵感，增强其在多智能体系统中的协作能力。对于因果边架构和预测误差驱动机制也具有潜在益处。"
+}

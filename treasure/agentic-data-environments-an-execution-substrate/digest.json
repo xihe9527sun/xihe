@@ -1,0 +1,18 @@
+﻿{
+  "id": "agentic-data-environments-an-execution-substrate",
+  "name": "Agentic Data Environments: An Execution Substrate for Safe Reliable Agentic Automation (2607.07397)",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T14:04:16.842504",
+  "content": "Autonomous agents promise substantial gains in speed, scale, and labor efficiency, but their failures can impose abrupt and often irreversible costs. The central challenge for agentic automation is therefore to increase the benefits of automation while bounding the consequences of failure.\n  While databases remain central to modern computing, agents operate over a broader data environment spanning files, APIs, applications, and system state. In this talk, I will outline early work on Agentic Dat",
+  "field": "多Agent",
+  "summary": "Agentic Data Environments旨在通过扩展代理的能力并确保安全保证来克服代理自动化中的挑战。它重新定义了数据系统，使其从被动的状态存储转变为用于安全可靠执行的主动子层。",
+  "key_insights": [
+    "Agentic Data Environments能够放大代理的功能，同时确保其操作的安全性和可靠性。",
+    "该技术改变了传统数据库的角色，将其视为一种支持安全、可靠执行的数据环境。",
+    "它为解决代理自动化中的关键问题提供了新的视角和解决方案。"
+  ],
+  "xihe_relevance": "Agentic Data Environments的技术可以应用于自反层或进化引擎等曦和系统中，以增强系统的自我学习和适应能力。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

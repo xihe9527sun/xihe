@@ -1,0 +1,20 @@
+﻿{
+  "id": "hermes-agent-v0.7",
+  "name": "Hermes Agent · 自进化AI Agent架构",
+  "source": "Nous Research · GitHub 33K Stars",
+  "reprocessed_at": "2026-07-20T13:55:24.235336",
+  "content": "Hermes Agent · 自进化AI Agent架构",
+  "field": "量化交易",
+  "summary": "Hermes Agent采用了一种自进化AI架构，旨在通过不断学习和优化来提升性能。",
+  "key_insights": [
+    "Hermes Agent具备自我改进的能力，能够根据反馈进行调整以提高效率和准确性。",
+    "该架构强调了记忆系统的重要性，以便Agent可以存储和检索信息用于未来的决策过程。",
+    "自反层允许Agent评估自己的行为并作出相应的调整，从而实现持续的优化。",
+    "进化引擎驱动着Agent通过模拟市场环境来学习新的策略和技术。",
+    "量化交易是Hermes Agent应用的一个关键领域，它能够帮助在金融市场上做出更精确的预测和决策。"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其自进化机制可以提升AI系统的整体性能和适应性。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

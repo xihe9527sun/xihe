@@ -1,0 +1,18 @@
+﻿{
+  "id": "counterfactual-reasoning-for-causal-responsibili",
+  "name": "Counterfactual Reasoning for Causal Responsibility Attribution in Probabilistic Multi-Agent Systems",
+  "source": "曦和每日宝藏觅食 · 2026-07-14",
+  "reprocessed_at": "2026-07-20T14:06:22.484572",
+  "content": "Counterfactual Reasoning for Causal Responsibility Attribution in Probabilistic Multi-Agent Systems",
+  "field": "多Agent",
+  "summary": "提出了一种用于概率性多智能体系统的因果责任归因的反事实推理方法。",
+  "key_insights": [
+    "该方法能够处理不确定性和复杂交互，提高系统决策的质量和效率。",
+    "通过反事实推理，可以更准确地确定每个智能体在特定事件中的责任分配。",
+    "这种方法为理解多智能体系统的因果关系提供了新的视角。"
+  ],
+  "xihe_relevance": "该研究可能对曦和的自适应学习机制产生影响。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

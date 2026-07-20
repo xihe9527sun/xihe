@@ -1,0 +1,35 @@
+{
+  "id": "driflens-reasoning-drift",
+  "name": "DRIFTLENS: 记忆导致推理漂移检测",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.573133",
+  "field": "自反层/self-critique",
+  "intake_score": 0.65,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "记忆导致推理漂移检测→自反层安全审计",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "自反层/self-critique",
+    "enhancement_points": [
+      "记忆导致推理漂移检测→自反层安全审计"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "-",
+    "landing": "降优先级"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "-",
+    "landing": "降优先级",
+    "subsystem": "自反层/self-critique",
+    "enhancement": "记忆导致推理漂移检测→自反层安全审计",
+    "intake_score": 0.65,
+    "backed_at": "2026-07-10T06:58:24.572796"
+  },
+  "digest_notes": "记忆如何'静默改变'推理路径——对曦和自反层的安全审计有启发"
+}

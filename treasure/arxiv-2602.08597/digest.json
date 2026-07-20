@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2602.08597",
+  "name": "An Attention Mechanism for Robust Multimodal Integration in a Global Workspace Architecture",
+  "source": "arXiv:2602.08597 (cs.AI) ICANN 2026",
+  "reprocessed_at": "2026-07-20T14:34:17.619819",
+  "content": "Robust multimodal systems must remain effective when some modalities are noisy, degraded, or unreliable. Existing multimodal fusion methods often learn modality selection jointly with representation learning, making it difficult to determine whether robustness comes from the selector itself or from full end-to-end co-adaptation. Motivated by Global Workspace Theory (GWT), we study this question using a lightweight top-down modality selector operating on top of a frozen multimodal global workspac",
+  "field": "自反层",
+  "summary": "该研究提出了一种轻量级的上行模态选择器，用于增强稳健的跨模式集成能力，并在结构化的模态污染数据集上进行了评估。",
+  "key_insights": [
+    "提出了一个基于全球工作记忆架构的轻量级上行模态选择器来提高跨模式系统的鲁棒性。",
+    "该方法在减少训练参数的同时提高了鲁棒性，且学习到的选择策略在下游任务、污染环境和新模态上都能很好地迁移。",
+    "研究结果表明，这种机制不仅适用于现有的注意力基线模型，还能提升全局工作记忆的整体性能。"
+  ],
+  "xihe_relevance": "该方法可能对曦和的多模式处理能力有所助益。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

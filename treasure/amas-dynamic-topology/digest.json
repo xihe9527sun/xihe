@@ -1,0 +1,17 @@
+﻿{
+  "id": "amas-dynamic-topology",
+  "name": "AMAS: per-query异构拓扑适配框架",
+  "source": "曦和每日宝藏觅食 · 2026-07-10",
+  "reprocessed_at": "2026-07-20T13:01:19.546898",
+  "content": "AMAS: per-query异构拓扑适配框架",
+  "field": "自反层/进化引擎",
+  "summary": "AMAS提出了一种针对查询级别的异构拓扑适配框架。",
+  "key_insights": [
+    "引入了per-query的概念，专注于每个查询的处理方式",
+    "设计了一个适应不同拓扑结构的方法",
+    "旨在提高系统在面对多样化网络拓扑时的灵活性和效率"
+  ],
+  "xihe_relevance": "自反层/进化引擎",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

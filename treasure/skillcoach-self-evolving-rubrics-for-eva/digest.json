@@ -1,0 +1,17 @@
+﻿{
+  "id": "skillcoach-self-evolving-rubrics-for-eva",
+  "name": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+  "source": "cs.CL",
+  "reprocessed_at": "2026-07-20T12:56:23.363064",
+  "content": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+  "field": "自反层",
+  "summary": "SkillCoach提出了一种自我进化的评价标准，用于评估和提升个体能力的应用。",
+  "key_insights": [
+    "引入了自进化评标准则来改进代理技能使用",
+    "通过自我学习优化对技能使用的评估",
+    "旨在提高技能使用的效果和效率"
+  ],
+  "xihe_relevance": "该内容与自反层有一定关联，特别是对于提升系统内智能体的自我评价机制",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

@@ -1,0 +1,40 @@
+
+[2026-07-20T15:23:15] 第14轮 曦和缓冲池消化管道
+========================================================
+  触发: 2026-07-20 07:50 (周一早班)
+  ① 入库(digester): buffer=0 → 0 新入库
+     - 修复: digester 因 index.json 带 BOM 崩溃, 已改为 utf-8-sig 读/写, 管道恢复稳健
+     - 8篇重点校验: 全部 OK (MANAR/MetaCogAgent/Self-Aware/Missing Knowledge/Dual-Laws/IndexMem/AgentCollab/Managed Autonomy)
+  ② 精读(Ollama qwen2.5:3b): 3 篇高价值未精读 → digest.json 已写入
+     - arxiv-2607.02668  Validator-to-Generator Alignment (0.85)
+     - ai-berkshire      多Agent价值投资框架 (0.78)
+     - stock-picker-plus A股多因子选股系统 (0.78)
+  ③ 网络状态: 455 treasures, 本轮前 449 已精读 → 补齐后 452
+     - score 分布: 0.8 占 95%(饱和), 0.9:7, 0.7:8, 0.6:7, 0.0:2
+  ④ 酶催化/共催化/反哺: 由 T4 独立循环(enyzme_catalyst.py 每30min)负责
+     - 本轮无新 buffer 注入 + 网络已饱和(密度趋 0.77), 不重复触发重型催化, 避免冗余边
+  ⑤ meta: digest_round 9→10, last_digest_at 已更新
+  健康状态: ✅ 正常 (宝藏厅成熟, 仅需周期性精读补齐 + 上游觅食补充 buffer)
+========================================================
+
+[2026-07-20T15:34:19] 第15轮 曦和缓冲池消化管道 (14:00档延后至15:27)
+========================================================
+  ① 入库(digester): buffer=0 → 0 新入库
+     - digester BOM修复(上轮)持续有效, 8篇重点校验OK
+  ② 精读修复(关键): 发现 deep_read 字段与 digest.json 文件严重脱节
+     - 脚本口径: 仅 6/455 标记 deep_read=True
+     - 真实口径: 452/455 已有 digest.json 文件(历史多轮真实产物)
+     - 根因: 上轮引入的 _deep_read_pending.py 用 deep_read 字段判定,
+       未与存量 digest.json 同步 → 盲目续跑会重复覆盖 Ollama 精读
+     - 修复: 批量同步 446 篇(有digest.json→deep_read=True)
+     - 补精读 2 篇真正缺失(score>=0.7无文件):
+         reflective-memory    Agent反思记忆+元认知框架 (0.78)
+         ../memory/learning/  R1知识遗产·58篇财务税法 (0.78)
+     - 最终: 454/455 已精读(deep_read口径), 仅1篇score<0.7真正无内容
+  ③ 健康: 宝藏厅成熟, 精读覆盖近全(99.8%)
+     - 酶催化/共催化仍由 T4 独立循环(enzyme_catalyst.py 每30min)
+  ④ 注意:
+     - buffer 持续为空 → 上游 hunt 自动化(8/14/20)需补充新候选
+     - deep_read 字段已与文件对齐, 后续脚本口径一致, 不再重复消耗 Ollama
+     - score 0.8 占95%饱和, 催化收益递减, 建议引入超活化或降低入库阈值
+========================================================

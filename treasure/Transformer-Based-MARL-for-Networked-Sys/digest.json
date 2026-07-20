@@ -1,0 +1,17 @@
+﻿{
+  "id": "Transformer-Based-MARL-for-Networked-Sys",
+  "name": "Transformer-Based MARL for Networked Systems with Long-Range Interactions",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:29.425215",
+  "content": "Transformer-Based MARL for Networked Systems with Long-Range Interactions",
+  "field": "多Agent",
+  "summary": "该研究提出了一种基于Transformer的多智能体强化学习方法，用于处理具有长距离交互的网络系统。",
+  "key_insights": [
+    "引入了Transformer架构以增强MARL在长距离交互中的表现",
+    "适用于网络化系统的复杂决策问题",
+    "可能对进化引擎和自反层有潜在的应用价值"
+  ],
+  "xihe_relevance": "记忆系统/自反层",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

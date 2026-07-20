@@ -1,0 +1,18 @@
+﻿{
+  "id": "answer-type-aware-llm-pipelines-for-bioasq-14b-wit",
+  "name": "Answer-Type-Aware LLM Pipelines for BioASQ 14b with Self-Reflection and Multi-Agent",
+  "source": "arXiv:cs.CL:2607.new",
+  "reprocessed_at": "2026-07-20T14:21:54.731518",
+  "content": "Answer-Type-Aware LLM Pipelines for BioASQ 14b with Self-Reflection and Multi-Agent",
+  "field": "自反层/进化引擎",
+  "summary": "提出了一种基于LLM的新管道，用于BioASQ任务14b，并引入了自我反思和多代理机制。",
+  "key_insights": [
+    "提出了一个针对BioASQ任务14b的自适应LLM管道",
+    "该管道包含自我反思功能以提高答案准确性",
+    "采用多代理架构来增强系统的灵活性和效率"
+  ],
+  "xihe_relevance": "该研究可能对曦和系统在处理复杂生物信息查询方面有所助益",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

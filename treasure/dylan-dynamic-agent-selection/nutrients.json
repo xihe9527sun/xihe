@@ -1,0 +1,35 @@
+{
+  "id": "dylan-dynamic-agent-selection",
+  "name": "DyLAN: 推理时动态选择Agent (+25% MMLU)",
+  "sources": [],
+  "discovered": "2026-07-10T06:58:24.581755",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.6,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "动态Agent选择→酶选型运行时优化",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "动态Agent选择→酶选型运行时优化"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "-",
+    "landing": "偏学术,降优先级"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-10",
+    "decision": "✅ 入库",
+    "phase": "-",
+    "landing": "偏学术,降优先级",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "动态Agent选择→酶选型运行时优化",
+    "intake_score": 0.6,
+    "backed_at": "2026-07-10T06:58:24.581508"
+  },
+  "digest_notes": "动态Agent选择提升显著，曦和可以借鉴到酶选型的运行时优化"
+}

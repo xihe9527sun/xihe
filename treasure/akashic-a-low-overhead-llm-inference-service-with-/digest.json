@@ -1,0 +1,18 @@
+﻿{
+  "id": "akashic-a-low-overhead-llm-inference-service-with-",
+  "name": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
+  "source": "treasure_intake_feed_v2",
+  "reprocessed_at": "2026-07-20T14:35:58.734146",
+  "content": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
+  "field": "量化交易",
+  "summary": "Akashic 提供了一种低开销的语言模型推理服务，结合了 MemAttention 技术。",
+  "key_insights": [
+    "Akashic 可能会降低语言模型在实际应用中的计算成本。",
+    "MemAttention 的集成可能提高 Akashic 在处理长序列数据时的效率。",
+    "该服务对需要高效、低开销推理能力的应用具有潜在价值。"
+  ],
+  "xihe_relevance": "Akashic 可能会成为曦和系统中一个重要的组件，特别是在优化计算资源方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "id": "Beyond-the-Black-Box--Interpretability-o",
+  "name": "Beyond the Black Box: Interpretability of Agentic AI Tool Use",
+  "source": "buffer_foraging",
+  "reprocessed_at": "2026-07-20T12:58:05.660304",
+  "content": "Beyond the Black Box: Interpretability of Agentic AI Tool Use",
+  "field": "多Agent",
+  "summary": "该研究探讨了如何提高人工智能代理工具使用的可解释性，以增强其透明度和信任。",
+  "key_insights": [
+    "提高AI工具的可解释性",
+    "促进对AI决策的理解",
+    "增强用户对AI的信任感",
+    "确保公平和透明的人工智能使用",
+    "推动AI伦理的发展"
+  ],
+  "xihe_relevance": "其他",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

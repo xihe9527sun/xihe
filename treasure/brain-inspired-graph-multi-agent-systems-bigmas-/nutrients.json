@@ -1,0 +1,35 @@
+{
+  "id": "brain-inspired-graph-multi-agent-systems-bigmas-",
+  "name": "Brain-Inspired Graph Multi-Agent Systems (BIGMAS) for LLM Reasoning",
+  "sources": [],
+  "discovered": "2026-07-14T09:10:26.318594",
+  "field": "酶网络/cascade_engine",
+  "intake_score": 0.78,
+  "four_principles_filter": {
+    "去粗取精": "研讨厅按 intake_score≥0.6 + 子系统匹配入库",
+    "去伪存真": "代码级落地/规划态已在决策中标注",
+    "由此及彼": "（未在ARCH_MAP，按关键词推断子系统）",
+    "由表及里": "研讨厅驱动正式入库固化"
+  },
+  "xihe_mapping": {
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement_points": [
+      "（未在ARCH_MAP，按关键词推断子系统）"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "待定",
+    "landing": "待研讨"
+  },
+  "yan_tao_decision": {
+    "date": "2026-07-14",
+    "decision": "✅ 入库",
+    "phase": "待定",
+    "landing": "待研讨",
+    "subsystem": "酶网络/cascade_engine",
+    "enhancement": "（未在ARCH_MAP，按关键词推断子系统）",
+    "intake_score": 0.78,
+    "backed_at": "2026-07-14T09:10:26.310956"
+  },
+  "digest_notes": "BIGMAS organizes specialized LLM agents as nodes in a dynamically constructed directed graph inspired by Global Workspace Theory, coordinating exclusively through a centralized shared workspace. A problem-adaptive GraphDesigner constructs task-specific agent topologies while a global Orchestrator leverages the complete shared state for routing decisions. Experiments on Game24, Six Fives, and Tower of London demonstrate consistent improvements for both standard LLMs and LRMs, outperforming ReAct "
+}

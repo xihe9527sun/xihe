@@ -1,0 +1,18 @@
+﻿{
+  "id": "information-limits-and-attractor-dynamics-in-econo",
+  "name": "Information Limits and Attractor Dynamics in Economies of Frontier LLM Agents",
+  "source": "arXiv:cs.MA:2607.new",
+  "reprocessed_at": "2026-07-20T14:22:09.017037",
+  "content": "Information Limits and Attractor Dynamics in Economies of Frontier LLM Agents",
+  "field": "自反层/进化引擎",
+  "summary": "本文探讨了前沿LLM经济中的信息限制及其吸引子动力学。",
+  "key_insights": [
+    "信息限制对前沿LLM经济的运作模式产生了重要影响",
+    "吸引子动态揭示了系统内部结构和行为之间的关系",
+    "研究结果可能为自反层、进化引擎等模块提供新的见解"
+  ],
+  "xihe_relevance": "该主题与曦和在记忆系统方面的研究有潜在关联",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

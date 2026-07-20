@@ -1,0 +1,19 @@
+﻿{
+  "id": "tau-scaling-v2-hetinbo",
+  "name": "τ缩微 V2: 何庭波·LogicFolding·超越摩尔的新范式",
+  "source": "ChinaXiv DOI:10.12074/202605.00224",
+  "reprocessed_at": "2026-07-20T12:52:43.364055",
+  "content": "Aligning large language models (LLMs) with human preferences is commonly done via reinforcement learning from human feedback (RLHF) with Proximal Policy Optimization (PPO) or, more simply, via Direct Preference Optimization (DPO). While DPO is stable and RL-free, it treats preferences as flat winner vs. loser signals and is sensitive to noisy or brittle preferences arising from fragile chains of thought. We propose TUR-DPO, a topology- and uncertainty-aware variant of DPO that rewards how answer",
+  "field": "多Agent",
+  "summary": "该研究提出了一种改进的DPO方法TUR-DPO，旨在提高语言模型与人类偏好匹配的效果，并在多个基准测试中取得了显著提升。",
+  "key_insights": [
+    "引入了对答案推理过程的认可",
+    "结合语义忠实性、实用性和拓扑质量生成不确定性信号",
+    "保持训练简单且不依赖在线推断",
+    "在多种场景下表现出色，包括多模态和长上下文处理",
+    "与PPO相比，在逻辑推理任务上具有竞争力"
+  ],
+  "xihe_relevance": "进化引擎/元认知",
+  "depth_rating": 8,
+  "ollama_digested": true
+}

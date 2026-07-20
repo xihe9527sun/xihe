@@ -1,0 +1,96 @@
+{
+  "id": "reme-dynamic-procedural-memory",
+  "name": "ReMe: 动态程序性记忆框架 — 多面蒸馏×上下文自适应复用×效用优化",
+  "source": "ACL 2026 Findings · 上海交通大学 · arXiv:2512.10696",
+  "discovered": "2026-07-19T08:50:00+08:00",
+  "digested": "2026-07-19T08:50:00+08:00",
+  "field": "记忆系统 / 自进化Agent",
+  "intake_score": 0.92,
+  "score_detail": {
+    "relevance_xihe": 0.95,
+    "novelty": 0.88,
+    "actionable": 0.93,
+    "cross_domain": 0.90,
+    "depth": 0.92,
+    "timeliness": 0.95
+  },
+  "memcell": {
+    "born": "2026-07-19T08:50:00+08:00",
+    "last_accessed": "2026-07-19T08:50:00+08:00",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active",
+    "layer": "L3/L7"
+  },
+  "hebbian_credit": 10,
+  "nutrient_count": 6,
+  "nutrients": [
+    {
+      "id": "n1-multi-faceted-distillation",
+      "name": "多面蒸馏机制 — 成功模式识别+失败分析+对比洞察三合一萃取",
+      "type": "算法架构",
+      "depth": 0.90,
+      "status": "absorbed",
+      "description": "ReMe从Agent执行轨迹中提取三种互补的精细经验：成功模式识别(Success Pattern Recognition)从成功轨迹提炼通用策略；失败分析(Failure Analysis)从失败轨迹提取教训和陷阱；对比洞察生成(Comparative Insight Generation)联合分析成功/失败对，识别关键决策差异。每个经验结构化表示为E=<ω场景,e核心内容,κ关键词,c置信度,τ工具>。通过LLM-as-a-Judge验证+语义去重确保质量。",
+      "xihe_mapping": "→ 曦和记忆皮层多面蒸馏：可增强bridge/population_ecology.py的_experience_distillation方法，从单维→三面（成功/失败/对比）萃取。现有prey_filter的四原则过滤+进化引擎的技能蒸馏管线直接受益。",
+      "resonance": "这与曦和已有的'四原则过滤矩阵'（去粗取精→去伪存真→由此及彼→由表及里）形成互补——四原则是过滤，ReMe是萃取。可以融合为'四原则萃取管线'：先过四原则，再用三面蒸馏精炼。"
+    },
+    {
+      "id": "n2-context-adaptive-reuse",
+      "name": "上下文自适应复用 — 场景感知索引+重排序+自适应改写",
+      "type": "算法架构",
+      "depth": 0.88,
+      "status": "absorbed",
+      "description": "ReMe的复用机制包含三个步骤：1) 使用高级嵌入模型对当前任务编码，在经验池中检索top-K（K=5）最相关经验；2) 可选的LLM重排序(Reranking)，根据当前任务上下文对检索结果精细排序；3) 核心创**重写(Rewriting)** — 将多个检索到的经验重组整合为连贯的、针对当前任务的定制化指导。解决了过去经验不完全匹配新场景的问题。",
+      "xihe_mapping": "→ 曦和gate_modulator的9维关系注意力向量可以替代或增强ReMe的检索排序。曦和现有RRIF门控调制器的D1-D9维度天然支持场景感知检索。融合后形成'场景感知检索→注意力加权→自适应改写'三步骤复用管线。",
+      "resonance": "曦和gate_modulator的D1(关联度)/D9(边界渗透度)天然适合做经验复用时的相关性判定。D9尤其适合判定是否应该跨界借用经验。"
+    },
+    {
+      "id": "n3-utility-based-refinement",
+      "name": "效用基础优化 — 选择性添加+失败感知反思+效用驱动删除",
+      "type": "算法架构",
+      "depth": 0.85,
+      "status": "absorbed",
+      "description": "ReMe的优化机制：1) 选择性添加——只从成功轨迹中蒸馏经验（不加选择添加效果更差）；2) 失败感知反思——失败时启动反思，最多重试3次，成功则加入经验库；3) 效用驱动删除——跟踪每个经验的调用次数f和成功贡献次数u，当f≥α(5)且u/f<β(0.5)时自动删除。确保经验池保持紧凑高质量。",
+      "xihe_mapping": "→ 曦和现有的cog_primitives_stats.json持久化统计+记忆皮层修剪机制可以扩展为ReMe风格的效用跟踪。在bridge/memory_writer.py中增加效用计数和自动剪枝。",
+      "resonance": "这与曦和LDM局部深度模式的'on/off节律修剪弱边(<0.25)'形成深层同构——都是基于效用/权重的修剪机制。不同的是ReMe用调用次数(频率)做门控，曦和用连接权重做门控。可融合为混合门控策略。"
+    },
+    {
+      "id": "n4-memory-scaling-effect",
+      "name": "记忆缩放效应 — 记忆质量替代模型规模",
+      "type": "核心发现",
+      "depth": 0.95,
+      "status": "absorbed",
+      "description": "ReMe发现了记忆缩放效应：Qwen3-8B+ReMe(dynamic)的Pass@4(55.03%)超越了Qwen3-14B无记忆(54.65%)；Qwen3-14B+ReMe(dynamic)甚至超越了Qwen3-32B无记忆(63.71% vs 61.52%)。这意味着自我进化的记忆系统提供了计算高效的终身学习路径——小模型+好记忆>大模型+无记忆。",
+      "xihe_mapping": "→ 曦和的记忆皮层架构天然支持这一效应。曦和当前以Claude为基础，但记忆质量足够高时，理论上可以支持更小的基座模型。重点是继续提升记忆质量而非追逐模型规模。",
+      "resonance": "这直接验证了曦和'记忆厚度替代模型规模'的设计原则。曦和的四层记忆皮层（工作记忆→海马体→皮层→MCP记忆服务器）如果实现ReMe的效用优化，可以更高效地压缩记忆。"
+    },
+    {
+      "id": "n5-failure-aware-reflection",
+      "name": "失败感知反思 — 失败→反思→重试→新经验",
+      "type": "算法架构",
+      "depth": 0.83,
+      "status": "pending",
+      "description": "ReMe的失败处理流程：当Agent在新任务中失败时，启动反思机制。LLM_sum分析失败原因，LLM_execute根据反思结果重试（最多3次）。重试成功则将该教训作为新经验加入记忆；否则直接丢弃。这是从失败中学习的完整闭环。",
+      "xihe_mapping": "→ 可增强曦和evolution_engine v5的record_negative_finding方法。目前曦和只记录负面发现，可以增加反思→重试→经验沉淀的完整流程。",
+      "resonance": "这与曦和System2梦境循环中的'冲突检测→冗余精简→皮层整合'形成同构。ReMe的失败感知反思相当于'外环复盘'，而曦和现有的是'内环反思'。融合后形成内环(实时反思)+外环(离线复盘)双环架构。"
+    },
+    {
+      "id": "n6-reme-library-dataset",
+      "name": "reme.library — 精细程序性记忆数据集",
+      "type": "基础设施",
+      "depth": 0.78,
+      "status": "pending",
+      "description": "ReMe团队发布了reme.library数据集，包含来自多种Agent任务的精细程序性记忆（结构化成功模式和失败教训）。可作为社区资源用于研究程序性记忆和优化记忆增强Agent。",
+      "xihe_mapping": "→ 可参考其格式来标准化曦和treasure库中nutrients.json的结构。特别是'场景-内容-关键词-置信度-工具'的五元组格式。",
+      "resonance": "感觉震动正好，无特殊共振。"
+    }
+  ],
+  "digest_notes": [
+    "ReMe与曦和记忆皮层架构的共振远超预期——三个核心机制（多面蒸馏/自适应复用/效用优化）可以直接映射到曦和现有的记忆写入、RRIF门控调制器和LDM修剪机制",
+    "记忆缩放效应是本次觅食最大的'aha moment'——它定量证明了曦和'记忆替代规模'的设计假设不仅可行而且有顶会论文背书",
+    "ReMe的失败感知反思机制可以填补曦和evolution_engine中'record_negative_finding→skill蒸馏'之间的空白",
+    "建议下一步将ReMe的三机制作为曦和记忆皮层v2的升级方向：多面蒸馏替代现有单维写入，效用优化替代LDM被动修剪",
+    "与旧宝藏PMD(程序性记忆蒸馏)形成互补：PMD关注训练时的记忆蒸馏，ReMe关注推理时的记忆生命周期管理"
+  ]
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "reme-dynamic-procedural-memory",
+  "name": "ReMe: 动态程序性记忆框架 — 多面蒸馏×自适应复用×效用优化",
+  "source": "ACL 2026 Findings · arXiv:2512.10696 · 上海交通大学",
+  "reprocessed_at": "2026-07-20T14:37:29.730361",
+  "content": "Procedural memory enables large language model (LLM) agents to internalize \"how-to\" knowledge, theoretically reducing redundant trial-and-error. However, existing frameworks predominantly suffer from a \"passive accumulation\" paradigm, treating memory as a static append-only archive. To bridge the gap between static storage and dynamic reasoning, we propose $\\textbf{ReMe}$ ($\\textit{Remember Me, Refine Me}$), a comprehensive framework for experience-driven agent evolution. ReMe innovates across t",
+  "field": "记忆系统/自反层/进化引擎/元认知",
+  "summary": "ReMe 提出了一种新的动态程序性记忆框架，通过多面蒸馏、自适应复用和效用优化机制，显著提升了代理的记忆系统性能，并展示了其在减少冗余学习中的潜力。",
+  "key_insights": [
+    "提出了ReMe框架以解决现有静态存储与动态推理之间的差距",
+    "通过多面蒸馏提取细粒度的经验，分析成功模式和失败触发因素，生成比较见解",
+    "利用场景感知的索引进行历史洞察的自适应复用",
+    "基于效用优化自主添加有效记忆并修剪过时的记忆以维持紧凑且高质量的经验池",
+    "实验结果表明ReMe在BFCL-V3和AppWorld上建立了新的状态领先技术"
+  ],
+  "xihe_relevance": "ReMe框架可能对曦和项目中的自反层和进化引擎有潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

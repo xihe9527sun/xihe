@@ -1,0 +1,17 @@
+﻿{
+  "id": "neuro-agentic-control-counterfactual-physics-inj",
+  "name": "Neuro-Agentic Control: Counterfactual Physics Injection for Safe Autonomous Defense",
+  "source": "曦和每日宝藏觅食 · 2026-07-17",
+  "reprocessed_at": "2026-07-20T13:05:19.297867",
+  "content": "Neuro-Agentic Control: Counterfactual Physics Injection for Safe Autonomous Defense",
+  "field": "自反层/进化引擎",
+  "summary": "该研究提出了一种神经控制方法，用于通过注入反事实物理来实现安全的自主防御。",
+  "key_insights": [
+    "引入了神经控制的新概念",
+    "利用反事实物理学进行安全防护",
+    "旨在实现自主系统的安全性"
+  ],
+  "xihe_relevance": "该研究内容与自反层和进化引擎方向相关，可以为系统提供新的控制策略。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

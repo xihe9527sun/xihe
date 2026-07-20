@@ -1,0 +1,28 @@
+{
+  "id": "darwin-godel-machine-iclr2026",
+  "name": "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents",
+  "source": "ICLR 2026 · Jenny Zhang, Shengran Hu, Cong Lu, Robert Tjarko Lange, Jeff Clune (Meta AI / UBC)",
+  "discovered": "2026-07-17T08:50:00+08:00",
+  "field": "自进化/开放进化",
+  "intake_score": 0.95,
+  "four_principles_filter": {
+    "去粗取精": "✅ 来源：ICLR 2026顶会论文（可信度0.85），Meta AI/UBC团队，正文完整，命中领域词表'进化/自进化/智能体/编码/自我修改'等≥5领域",
+    "去伪存真": "✅ 可验证：SWE-bench 20%→50% (30个百分点提升)，Polyglot 14.2%→30.7%。开源代码可复现。分阶段评估(10/60/200 tasks)确保不自我破坏。沙箱+人类监督安全措施",
+    "由此及彼": "🔗 曦和进化引擎(evolution_engine)直接对齐：archive机制↔曦和treasure库/技能归档；self-modify循环↔进化管线的_action_loop；HighScore×LowOffspring选择策略↔曦和的赫布信用加权选择。与7月16日已入库的ruflo(协作约束)和steerability(结构约束)互补，构成进化约束的闭环",
+    "由表及里": "🔬 核心理念：将无法证明的Gödel Machine形式化保证替换为'empirical validation on benchmarks'，用达尔文进化(变异+选择+归档)替代全局最优搜索。核心洞见：(1) archive存档让'垫脚石'节点在低分时期也能保留，避免局部最优陷阱；(2)分阶段评估(10→60→200)用渐进式计算成本防止自我破坏；(3)跨模型迁移性证实学到的改进可跨基座模型复用。对曦和的最大启示：treasure库本身就可以作为evolution_engine的进化存档来运作——每个宝藏既是被消化的养料，又是未来变异的母本"
+  },
+  "xihe_mapping": {
+    "subsystem": "bridge/evolution_engine",
+    "enhancement_points": [
+      "evolution_engine v3的技能提取管线可增加'archive多样性采样'，参考DGM的HighScore×LowOffspring选择策略",
+      "当前evolution_engine只有线性进化(父→子→孙)，可扩展到存档式进化树——保留所有中间版本作为变异母本",
+      "分阶段评估机制(快速筛选→中等评估→高精度评估)可移植到treasure的nutrients评分流程，节省计算资源",
+      "跨模型迁移验证：曦和当前的Ollama多模型切换可与DGM的'进化后迁移'融合"
+    ]
+  },
+  "fusion_plan": {
+    "phase": "研讨厅待定",
+    "landing": "将evolution_engine升级为存档式进化引擎(archive-based evolution engine)，新增archive多样性采样父代策略"
+  },
+  "digest_notes": "DGM的核心创新是将AI自我改进从'找最优解'转变为'培育进化树'。archive存档机制确保低分节点(垫脚石)不丢失，分阶段评估以最小成本快速淘汰自我破坏变异。HighScore×LowOffspring 选择策略是精妙的社会性平衡——高分智能体有更多繁殖机会，但同一智能体后代越多它的再次采样概率越低，确保探索多样性的持续注入。跨模型迁移实验显示：在Claude 3.5 Sonnet上演化出的智能体在o3-mini上从23%→33%，在Claude 3.7 Sonnet上从19%→59.5%——说明学到的改进不绑定具体模型，而是可以作为通用的'强化工程模式(enhanced engineering patterns)'跨模型复用。这与曦和的多模型共融体系一脉相承。"
+}

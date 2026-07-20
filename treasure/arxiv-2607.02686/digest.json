@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.02686",
+  "name": "ASK in the Dark: Uncertainty-Gated LLM Assistance under Partial Observability",
+  "source": "arXiv:cs.AI:2607.02686",
+  "reprocessed_at": "2026-07-20T14:20:52.814984",
+  "content": "Reinforcement learning agents operating under partial observability must act on incomplete information, making them natural candidates for guidance from small language models (SLMs) that carry broad reasoning priors. Yet integrating SLM guidance into this setting has proven difficult: across all test environments, vanilla uncertainty-gated approaches achieve an overwrite rate at or near zero, meaning the SLM almost never contributes an independent action. We trace this failure to the bare egocen",
+  "field": "自反层/进化引擎",
+  "summary": "通过提供带轨迹意识的上下文和结构化的推理链，ASK+能够使小语言模型在不确定环境中更有效地贡献独立行动，从而提高其在多种环境中的成功率。",
+  "key_insights": [
+    "ASK+解决了部分可观测性下SLM指导难以实现的问题，通过提供详细的上下文信息，使其成为更有用的顾问。",
+    "ASK+将不确定性引导从被动的冗余检查转变为更有效的咨询工具，偶尔纠正策略。",
+    "预测熵信号在部分可观测性多智能体系统（POMDPs）中仍然有效，证明了基于不确定性的辅助方法可以在非完全可观测环境中应用。"
+  ],
+  "xihe_relevance": "ASK+的改进可能对曦和系统的自反层和进化引擎有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

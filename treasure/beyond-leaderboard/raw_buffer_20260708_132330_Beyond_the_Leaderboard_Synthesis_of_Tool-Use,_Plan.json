@@ -1,0 +1,12 @@
+{
+  "title": "Beyond the Leaderboard: Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents",
+  "source": "arXiv:cs.AI:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "This paper synthesizes 27 benchmark, taxonomy, and audit papers (2023-2026), spanning 19 distinct benchmarks, into a cross-cutting taxonomy of agent limitations. Covers tool use, planning, long-horizon reasoning, multi-agent coordination, safety, and measurement validity.",
+  "keywords_matched": [
+    "multi-agent"
+  ],
+  "intake_score": 0.75,
+  "captured_at": "2026-07-08T13:23:30.581696",
+  "digested": false
+}

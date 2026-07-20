@@ -1,0 +1,18 @@
+﻿{
+  "id": "mars-metacognitive-reflection",
+  "name": "MARS: 元认知反思智能体 — 原则反思+程序反思的双通道单循环自进化",
+  "source": "ACL 2026 Long · 'Learn Like Humans: Use Meta-cognitive Reflection'",
+  "reprocessed_at": "2026-07-20T13:54:19.676984",
+  "content": "MARS: 元认知反思智能体 — 原则反思+程序反思的双通道单循环自进化",
+  "field": "自反层/进化引擎",
+  "summary": "MARS 是一种元认知反思智能体，它通过双通道单循环的方式实现自我进化。",
+  "key_insights": [
+    "MARS 智能体采用原则反思和程序反思的双通道机制进行自我改进。",
+    "其自进化过程是单循环的，意味着每次迭代都会基于前一次的结果来优化自身。",
+    "这种智能体的设计旨在促进元认知能力的发展，从而提高其决策质量和适应性。"
+  ],
+  "xihe_relevance": "MARS 智能体可能在需要自我改进和适应复杂环境的应用场景中表现出色。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

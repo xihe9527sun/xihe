@@ -1,0 +1,17 @@
+﻿{
+  "id": "deepsearch-world-self-distillation-for-deep-sear",
+  "name": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+  "source": "曦和每日宝藏觅食 · 2026-07-11",
+  "reprocessed_at": "2026-07-20T13:02:54.829296",
+  "content": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+  "field": "多Agent",
+  "summary": "该研究提出了一种在可验证环境中用于深度搜索代理的自我蒸馏方法。",
+  "key_insights": [
+    "提出了自我蒸馏技术以优化深度搜索代理性能",
+    "适用于可验证环境下的深度学习模型训练",
+    "旨在提高代理在复杂任务中的决策质量"
+  ],
+  "xihe_relevance": "该内容对记忆系统和进化引擎方向有一定价值，但具体应用需进一步探讨。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

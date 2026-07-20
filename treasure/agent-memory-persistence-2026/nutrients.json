@@ -1,0 +1,26 @@
+{
+  "treasure_id": "agent-memory-persistence-2026",
+  "extracted_at": "2026-06-27T20:09:25.368325",
+  "nutrients": [
+    {
+      "id": "N32-ace",
+      "priority": "P1",
+      "name": "ACE三Agent循环→升级T4反思",
+      "target": "bin/respiration_loop.py",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.738707",
+      "x_real_implementation": "ace-pulse.json三Agent循环+procedural_memory.py程序记忆",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N33-procedural-memory",
+      "priority": "P2",
+      "name": "程序记忆→让曦和记住怎么做",
+      "target": "skills/",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T07:03:01.738726",
+      "x_real_implementation": "ace-pulse.json三Agent循环+procedural_memory.py程序记忆",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ]
+}

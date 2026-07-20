@@ -1,0 +1,19 @@
+﻿{
+  "id": "agent-memory-taxonomy",
+  "name": "记忆三分类对标验证 · 情景/语义/程序 vs 曦和记忆层",
+  "source": "zylos.ai · arXiv 2603.07670",
+  "reprocessed_at": "2026-07-20T12:51:34.612970",
+  "content": "Large language model (LLM) agents increasingly operate in settings where a single context window is far too small to capture what has happened, what was learned, and what should not be repeated. Memory -- the ability to persist, organize, and selectively recall information across interactions -- is what turns a stateless text generator into a genuinely adaptive agent. This survey offers a structured account of how memory is designed, implemented, and evaluated in modern LLM-based agents, coverin",
+  "field": "元认知",
+  "summary": "该调研概述了现代大型语言模型中记忆设计、实现和评估的结构，涉及多种机制家族，并探讨了在不同应用中的挑战。",
+  "key_insights": [
+    "提出了一个三维分类框架来描述现代LLM的记忆特性",
+    "详细分析了五种主要的记忆机制家族",
+    "指出了当前系统在多会话代理测试中的局限性",
+    "讨论了工程实践中的关键问题，如过滤写路径、处理矛盾和隐私治理",
+    "识别了持续记忆整理、因果检索、可信反思、学习遗忘和多模态身体记忆等挑战"
+  ],
+  "xihe_relevance": "对曦和AI系统的潜在价值在于其自反层（元认知）的构建，以及在复杂决策环境中的应用。",
+  "depth_rating": 7,
+  "ollama_digested": true
+}

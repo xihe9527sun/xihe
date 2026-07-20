@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.00276",
+  "name": "Physics Literacy in Parallel Physical Worlds: Counterfactual Reasoning Diagnostics for Frontier LLMs",
+  "source": "arXiv:cs.LG:2607.00276",
+  "reprocessed_at": "2026-07-20T14:33:52.067156",
+  "content": "Current large-language-model (LLM) physics benchmarks are usually scored by answer accuracy, which cannot distinguish genuine reasoning from recall of familiar problem patterns and reveals little about where a model's reasoning breaks down. We introduce an auditable four-stage diagnostic that evaluates whether an LLM can reason inside an unfamiliar physics framework through induction, formulation, prediction, and review. The diagnostic combines locked pre-registrations, fresh sessions between st",
+  "field": "自反层",
+  "summary": "本文提出了一种新的物理推理诊断方法，用于评估大型语言模型在处理陌生物理框架时的推理能力，并应用于三个平行的物理学世界。",
+  "key_insights": [
+    "当前LLM的物理基准测试主要依赖于答案准确性，无法区分真正的推理和对熟悉问题模式的记忆。",
+    "提出了一种透明的四阶段诊断方法来评估LLM在不熟悉的物理框架中进行归纳、形式化、预测和审查的能力。",
+    "通过三个平行的物理学世界（单方程反事实世界、历史框架和多领域反事实世界）测试了三种大型语言模型，发现它们在这三个方面表现不佳。"
+  ],
+  "xihe_relevance": "该研究方法可能对曦和系统的元认知功能有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

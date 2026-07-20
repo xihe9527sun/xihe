@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.08093",
+  "name": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+  "source": "arXiv:cs.AI:2607.08093",
+  "reprocessed_at": "2026-07-20T14:25:04.918951",
+  "content": "Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templati",
+  "field": "多Agent",
+  "summary": "CausalDS引入了一个新的基准来评估数据科学代理中的因果推理能力，每个实例包括一个生成的结构化因果模型和相应的现实世界背景故事。",
+  "key_insights": [
+    "CausalDS填补了现有因果评价数据集的空白，这些数据集通常仅基于有限的模板化变化进行合成生成。",
+    "CausalDS不仅包含象征性因果推理评估，还涵盖了数据科学、不确定性量化、不回答以及工具使用/编码等多方面能力。",
+    "通过结合现实世界数据和合成故事，CausalDS能够减少‘因果鹦鹉’的风险，并保留了实际结构。"
+  ],
+  "xihe_relevance": "CausalDS的引入可能对曦和在处理复杂因果关系和数据科学问题上的性能提升具有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

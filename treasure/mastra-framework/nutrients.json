@@ -1,0 +1,31 @@
+{
+  "treasure_id": "mastra-framework",
+  "extracted_at": "2026-06-28T13:12:00+08:00",
+  "nutrients": [
+    {
+      "id": "N46-builtin-evals",
+      "type": "mechanism",
+      "name": "内建评估系统 → T4自反层量化评估",
+      "priority": "P1",
+      "target": "bin/respiration_loop.py",
+      "effect": "T4周期中增加对自身模块执行效果的量化评估指标（类似Mastra Evals），如酶命中率、觅食转化率",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "T4子模块健康+t4-evals.json+sync.py跨空间协议",
+      "x_implemented_at": "2026-06-28T15:50"
+    },
+    {
+      "id": "N47-mcp-standardization",
+      "type": "upgrade",
+      "name": "MCP协议标准化 → 工具调用层统一接口",
+      "priority": "P2",
+      "target": "bridge/",
+      "effect": "曦和的工具调用应标准化为MCP协议，便于未来接入更多外部工具和Agent互操作",
+      "status": "absorbed",
+      "absorbed_at": "2026-06-28T14:00:00+08:00",
+      "x_real_implementation": "T4子模块健康+t4-evals.json+sync.py跨空间协议",
+      "x_implemented_at": "2026-06-28T15:50"
+    }
+  ],
+  "digested_at": "2026-06-28T13:12:00+08:00"
+}

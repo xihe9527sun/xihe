@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.10645",
+  "name": "MafiaScope: Non-Invasive Time-Resolved Belief Probing for LLM Agents in Social Deduction Games",
+  "source": "arXiv:cs.CL:2607.10645",
+  "reprocessed_at": "2026-07-20T14:29:04.357246",
+  "content": "An LLM agent's public behaviour reveals little about its social reasoning: an agent that votes correctly may be guessing, and an agent that lies well leaves no trace of what it actually believes. We present MafiaScope, an open testbed that turns the social deduction game Mafia into a measurement instrument for machine Theory of Mind. After every public utterance, every agent privately answers a configurable set of structured probe questions; the answers never re-enter the game and are scored aut",
+  "field": "多Agent",
+  "summary": "MafiaScope是一个开放测试平台，用于测量机器的理论思维能力，它通过非侵入性的时间分辨信念探查将社交推理游戏《教父》转化为测量工具。",
+  "key_insights": [
+    "MafiaScope能够揭示LLM代理在社交推理游戏中隐藏的信念和逻辑推理过程。",
+    "使用结构化的探测问题来评估代理的真实信仰，答案不会重新进入游戏并自动与引擎知道的标准进行比较。",
+    "提供交互式可视化器以展示信念轨迹，并支持反事实重放功能。"
+  ],
+  "xihe_relevance": "MafiaScope可以为曦和项目提供有价值的数据和工具，特别是在理解机器的理论思维能力方面。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

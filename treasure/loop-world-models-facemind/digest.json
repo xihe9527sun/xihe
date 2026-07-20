@@ -1,0 +1,18 @@
+﻿{
+  "id": "loop-world-models-facemind",
+  "name": "LoopWM — 循环世界模型 & Loop Engineering",
+  "source": "量子位 2026-07-01",
+  "reprocessed_at": "2026-07-20T13:56:16.307202",
+  "content": "LoopWM — 循环世界模型 & Loop Engineering",
+  "field": "多Agent",
+  "summary": "LoopWM 是一种循环世界模型与工程方法，旨在模拟和理解复杂系统的行为。",
+  "key_insights": [
+    "LoopWM 可以帮助理解和预测复杂的动态系统行为",
+    "它为自反层、进化引擎和元认知提供了新的视角",
+    "在量化交易中具有潜在的应用价值"
+  ],
+  "xihe_relevance": "对曦和的潜在价值",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

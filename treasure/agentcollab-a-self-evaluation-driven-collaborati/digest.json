@@ -1,0 +1,18 @@
+﻿{
+  "id": "agentcollab-a-self-evaluation-driven-collaborati",
+  "name": "AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents",
+  "source": "曦和每日宝藏觅食 · 2026-07-18",
+  "reprocessed_at": "2026-07-20T14:07:08.674727",
+  "content": "AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents",
+  "field": "多Agent",
+  "summary": "本文提出了一种基于自我评估的合作框架，旨在提高LLM代理的效率。",
+  "key_insights": [
+    "提出了一个以自我评估为中心的合作模式来优化LLM代理",
+    "该模型强调通过自我评估驱动合作过程，从而提升效率和效果",
+    "为多Agent系统提供了一个新的视角和方法"
+  ],
+  "xihe_relevance": "对曦和的潜在价值在于其自反层和进化引擎的发展方向上",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

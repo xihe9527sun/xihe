@@ -1,0 +1,18 @@
+﻿{
+  "id": "arxiv-2607.09059",
+  "name": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
+  "source": "arXiv:cs.AI:2607.09059",
+  "reprocessed_at": "2026-07-20T14:25:48.324851",
+  "content": "We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driv",
+  "field": "自反层",
+  "summary": "ARCANA提出了一种协作多智能体框架，用于在严格的测试时间和硬件限制下解决ARC AGI-2任务。该框架通过迭代感知、假设生成、符号执行和反思性精炼来分解每个任务。各智能体之间通过共享的可微黑板进行通信，并由学习到的元控制器调度。",
+  "key_insights": [
+    "ARCANA结合了结构化程序搜索与自适应多轮修正，提高了在复杂抽象转换任务上的推理效率和解决方案质量。",
+    "该框架通过感知基础代理、低级程序策略代理、符号执行代理和反思性代理来分解任务，这些代理之间通过共享的可微黑板进行通信。",
+    "学习到的元控制器负责调度各智能体，以优化整体性能。"
+  ],
+  "xihe_relevance": "ARCANA框架可能对曦和在复杂抽象转换任务中的表现有潜在价值。",
+  "depth_rating": 7,
+  "ollama_digested": true,
+  "reprocess_version": "v2"
+}

@@ -1,0 +1,41 @@
+{
+  "treasure_id": "depthweave-kv",
+  "name": "DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache",
+  "source": "arXiv / 每日觅食线索 · https://arxiv.org/abs/2607.new",
+  "discovered": "2026-07-08T19:32:37+08:00",
+  "digested": "2026-07-08T19:32:37+08:00",
+  "field": "记忆管理、KV压缩、推理优化",
+  "status": "digested",
+  "layer": "L5",
+  "hebbian_credit": 8,
+  "origin": "daily_foraging",
+  "intake_score": 0.92,
+  "nutrients": [
+    {
+      "name": "自适应残差分解",
+      "type": "工程方法",
+      "value": 9,
+      "description": "DepthWeave-KV展示了如何在保持关键信息的同时减少内存使用，这与曦和的预测误差驱动机制高度相关。",
+      "relation_to_xihe": "该技术有助于提高曦和模型的记忆管理效率，并增强其处理长上下文的能力。",
+      "id": "N-DEP1"
+    },
+    {
+      "name": "自适应压缩效果",
+      "type": "评测",
+      "value": 8,
+      "description": "研究证明了DepthWeave-KV在节省内存方面的显著成效，这对曦和架构优化有重要参考价值。",
+      "relation_to_xihe": "通过引入类似的自适应机制，曦和的KV缓存管理可以更加高效。",
+      "id": "N-DEP2"
+    },
+    {
+      "name": "长上下文处理优化",
+      "type": "理论发现",
+      "value": 7,
+      "description": "该方法强调了在不同层中对残差进行分层压缩的重要性，这对曦和在多层面结构中的数据流动与效率提升具有启发意义。",
+      "relation_to_xihe": "这一发现有助于改善曦和架构的长上下文处理能力，并优化其整体性能。",
+      "id": "N-DEP3"
+    }
+  ],
+  "cross_references": [],
+  "digest_note": "DepthWeave-KV的自适应压缩技术可应用于曦和的记忆网络或海马体模块，优化长上下文处理时的内存效率。在皮层层面，可以作为预测误差驱动机制的一部分来增强模型的预测能力。此外，该方法有助于减少代谢路由H值中的数据流动，提高整体能源利用率。"
+}

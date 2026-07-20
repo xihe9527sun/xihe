@@ -1,0 +1,12 @@
+{
+  "title": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+  "source": "arXiv:cs.CL:2607.new",
+  "url": "https://arxiv.org/abs/2607.new",
+  "snippet": "This paper formulates whether LLMs need search as an instance-level search-routing problem. It constructs counterfactual supervision by comparing no-search and forced-search outcomes for the same question, building an oracle over NO SEARCH, SEARCH, and UNSOLVED. The trained routing policy achieves significant macro F1 improvements.",
+  "keywords_matched": [
+    "counterfactual"
+  ],
+  "intake_score": 0.75,
+  "captured_at": "2026-07-08T13:23:30.705635",
+  "digested": false
+}
