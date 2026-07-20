@@ -18,9 +18,9 @@ treasure/digester.py
 treasure/_deep_read_pending.py
 # 一次性脚本(已固化进总览, 不推)
 treasure/_audit_clusters.json
-treasure/_classification.json
 treasure/_reclassify.py
 treasure/_gen_overview.py
+# 注: treasure/_classification.json 为权威分类数据(驱动精选总览), 放行同步
 # cortex 整体忽略(运行噪音: chat-cache/topics/fusion/enzymes等), 仅放行研讨厅研判档案
 cortex/
 !cortex/seminar_verdicts.json
