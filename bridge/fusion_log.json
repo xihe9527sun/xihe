@@ -1,0 +1,24 @@
+[
+  {
+    "at": "2026-07-21T12:53:27",
+    "stage": "sediment",
+    "change": {
+      "target": "bridge/dcpm_pipeline.py",
+      "seminar_score": 0.84,
+      "pangu_exempt": true,
+      "note": "腾讯八阶段细化补丁5"
+    },
+    "xihe_map_modules": 29
+  },
+  {
+    "at": "2026-07-21T13:03:26",
+    "stage": "sediment",
+    "change": {
+      "target": "bridge/y.py",
+      "seminar_score": 0.9,
+      "pangu_exempt": true,
+      "note": "跨窗口调用验证"
+    },
+    "xihe_map_modules": 29
+  }
+]

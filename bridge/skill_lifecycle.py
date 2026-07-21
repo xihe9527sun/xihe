@@ -89,6 +89,58 @@ def skill_freq_domain_credit(task_outcomes):
     }
 
 
+def check_landing_evidence(skill_id, within_days: int = 30) -> dict:
+    """
+    [腾讯落盘判定融合 · 研讨厅研判 0.84(不整套吸收)→轻量补丁 · 2026-07-21]
+    判断一个技能是否真正『落盘』(被验证/被应用), 而非仅生成即弃。
+    腾讯红线: 生成的 Skill 必须有『落盘证据』——实际跑过、被用过, 才计入有效资产。
+
+    落盘证据三要件:
+      E1 = unit tests 存在且可运行 (run_skill_unit_tests.runnable)
+      E2 = per-skill 经验库有 ≥1 条 success 记录 (update_per_skill_memory)
+      E3 = 近期(within_days 内)有使用痕迹 (updated 时间新鲜)
+
+    返回: {"landed": bool, "evidence": {E1,E2,E3}, "gap": str}
+    """
+    # E1: 可运行测试
+    skill_dir = BRIDGE_DIR.parent / "treasure" / "skills" / skill_id
+    ut = run_skill_unit_tests(skill_dir)
+    e1 = bool(ut.get("runnable"))
+
+    # E2: 经验库有成功记录
+    data = _load()
+    sk = data["skills"].get(skill_id, {})
+    exps = sk.get("experiences", [])
+    e2 = any(e.get("outcome") == "success" for e in exps)
+
+    # E3: 近期使用痕迹
+    e3 = False
+    gap = "无缺口"
+    if sk.get("updated"):
+        try:
+            updated = datetime.datetime.strptime(sk["updated"], "%Y-%m-%dT%H:%M:%S")
+            age_days = (datetime.datetime.now() - updated).days
+            e3 = age_days <= within_days
+            if not e3:
+                gap = f"最近使用距今 {age_days} 天, 超过 {within_days} 天窗口"
+        except Exception:
+            gap = "updated 时间格式异常"
+    else:
+        gap = "无使用痕迹(updated 为空)"
+
+    landed = e1 and e2 and e3
+    if not landed:
+        missing = [n for n, ok in (("E1单测", e1), ("E2成功记录", e2), ("E3近期使用", e3)) if not ok]
+        gap = "缺: " + "/".join(missing) if missing else gap
+
+    return {
+        "landed": landed,
+        "evidence": {"E1_unit_tests": e1, "E2_success_exp": e2, "E3_recent_use": e3},
+        "gap": gap,
+        "skill_id": skill_id,
+    }
+
+
 if __name__ == "__main__":
     print("skill_lifecycle 自检:")
     print(" unit_tests:", run_skill_unit_tests("treasure/skills/demo"))

@@ -186,6 +186,53 @@ class GateModulator:
             critiques.append("计划未拆解为步骤, 执行前建议先分解(避免不可逆试错成本)")
         risk_score = round(min(1.0, len(critiques) / max(1, len(errs))), 3)
         return {"critiques": critiques, "risk_score": risk_score, "goal": goal}
+
+    def cost_ladder(self, context: dict) -> dict:
+        """
+        [腾讯五步定位法融合 · 研讨厅研判 0.84(不整套吸收)→轻量补丁 · 2026-07-21]
+        分步消耗检索: 根据上下文决定检索深度(1-5级), 每级对应不同 token 消耗。
+        对应腾讯『五步定位法』的 300 倍 token 压缩思想——先廉价广撒网, 失败再加深,
+        绝不一开始就全量读源码。增强 D4 物距 / D6 新颖度 维度的检索经济性。
+
+        级别定义(估算 token 消耗, 仅供调度参考):
+          L1 = 仅看目录名/模块名           ~50
+          L2 = 看模块描述/README 首段       ~300
+          L3 = 脚本级 grep 关键词           ~800
+          L4 = 读源码关键函数               ~2500
+          L5 = 增量验证(实际运行自测)        ~6000
+
+        决策逻辑:
+          近(物距小) + 已知(新颖度低) + 不急 → 浅(L1-L2)
+          远(物距大) + 新颖(新颖度高) + 急   → 深(L4-L5)
+        返回: {"level": int, "est_cost_tokens": int, "rationale": str}
+        """
+        distance = context.get("distance", 0.5)      # D4 物距 0-1 (大=远)
+        novelty = context.get("novelty", 0.5)        # D6 新颖度 0-1
+        urgency = context.get("urgency", 0.3)        # D8 紧迫度 0-1
+
+        # 深度评分: 远+新颖推深, 急迫也推深
+        depth_score = (distance * 0.45 + novelty * 0.40 + urgency * 0.15)
+        if depth_score < 0.30:
+            level = 1
+        elif depth_score < 0.45:
+            level = 2
+        elif depth_score < 0.60:
+            level = 3
+        elif depth_score < 0.78:
+            level = 4
+        else:
+            level = 5
+
+        cost_table = {1: 50, 2: 300, 3: 800, 4: 2500, 5: 6000}
+        rationale = (
+            f"物距={distance:.2f} 新颖={novelty:.2f} 紧迫={urgency:.2f} "
+            f"→ 深度分={depth_score:.2f} → 取 L{level}"
+        )
+        return {
+            "level": level,
+            "est_cost_tokens": cost_table[level],
+            "rationale": rationale,
+        }
 # ── 边界测试 ──
 
 def run_boundary_test():

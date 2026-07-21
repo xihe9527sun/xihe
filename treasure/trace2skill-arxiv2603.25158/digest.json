@@ -1,20 +1,16 @@
 {
-  "id": "trace2skill-arxiv2603.25158",
-  "name": "Trace2Skill: 轨迹局部经验→可移植Agent Skill的并行合并蒸馏",
-  "source": "arXiv:2603.25158 v5 (4 Jun 2026)",
-  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
-  "content": "三阶段：①frozen agent滚出labeled轨迹 ②parallel error/success analysts提出trajectory-level patch ③hierarchical merge所有patch成一个portable skill directory | 跨模型迁移 +57.65pp on WikiTableQuestions (Qwen3.5-35B→Qwen3.5-122B); 跨家族(Gemma-4-31B→Qwen3.5-122B); OOD迁移(Spreadsheet→table QA); Anthropic官方xlsx/PDF/DOCX/PPTX技能深度增强 | patch value is often combinatorial → holistic consolidation > greedy local selection; 一个consolidated skill > ReasoningBank-style episodic retrieval",
-  "field": "记忆系统",
-  "summary": "记忆系统·程序性记忆(外化) — 完美对齐盘古点名种子 'PMD程序性记忆蒸馏' 的外化维度",
-  "key_insights": [
-    "三阶段：①frozen agent滚出labeled轨迹 ②parallel error/success analysts提出trajectory-level patch ③hierarchical merge所有patch成一个portable skill directory",
-    "跨模型迁移 +57.65pp on WikiTableQuestions (Qwen3.5-35B→Qwen3.5-122B); 跨家族(Gemma-4-31B→Qwen3.5-122B); OOD迁移(Spreadsheet→table QA); Anthropic官方xlsx/PDF/DOCX/PPTX技能深度增强",
-    "patch value is often combinatorial → holistic consolidation > greedy local selection; 一个consolidated skill > ReasoningBank-style episodic retrieval"
-  ],
-  "xihe_relevance": "曦和Skill自审+evolution_engine的'Skill生命周期'目前缺'可跨模型/跨域迁移'机制。memory_writer.extract_procedural_pattern已落PMD,可加 trace2skill_consolidate 把多个patch hierarchical merge成一个标准Skill.md | 融合落点: A. 嫁接 → memory_writer.trace2skill_consolidate (与PMD的extract_procedural_pattern拼成完整程序性记忆)",
-  "depth_rating": 9,
-  "ollama_digested": true,
-  "reprocess_version": "v_fused_2026-07-21",
+  "title": "Trace2Skill",
+  "arxiv": "2603.25158",
+  "seminar_score": 0.91,
+  "status": "A.已融合精品",
   "fused": true,
-  "seminar_score": 0.91
+  "xihe_relevance": "程序性记忆内外环：与 PMD.extract_procedural_pattern 配对，把执行轨迹自动提炼为可复用技能 patch（组合增益>贪心）。",
+  "fusion_landing": "bridge/memory_writer.py::trace2skill_consolidate",
+  "key_insights": [
+    "执行轨迹→技能 patch 的自动蒸馏流水线",
+    "多 patch 层级合并 + 按 hits 频次排序",
+    "程序性记忆内(执行)外(提炼)闭环打通"
+  ],
+  "merged_at": "2026-07-21",
+  "source": "https://arxiv.org/abs/2603.25158"
 }

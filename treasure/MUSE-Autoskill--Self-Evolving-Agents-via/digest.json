@@ -16,5 +16,12 @@
   "ollama_digested": true,
   "reprocess_version": "v_fused_2026-07-21",
   "fused": true,
-  "seminar_score": 0.89
+  "seminar_score": 0.89,
+  "memcell": {
+    "born": "2026-07-21T08:48:58.004385",
+    "last_accessed": "2026-07-21T08:48:58.004385",
+    "access_count": 1,
+    "conflict_flag": false,
+    "state": "active"
+  }
 }
