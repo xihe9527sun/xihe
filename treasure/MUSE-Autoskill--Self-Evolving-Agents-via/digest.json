@@ -1,19 +1,20 @@
-﻿{
+{
   "id": "MUSE-Autoskill--Self-Evolving-Agents-via",
-  "name": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management",
-  "source": "buffer_foraging",
-  "reprocessed_at": "2026-07-20T12:58:01.032003",
-  "content": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management",
-  "field": "自反层/进化引擎",
-  "summary": "该研究提出了一种自我进化的代理体系，通过技能创建、记忆管理和优化来实现。",
+  "name": "MUSE-Autoskill: 技能全生命周期(创建/记忆/管理/评估/精炼)的自进化Agent",
+  "source": "arXiv:2605.27366 v2 (3 Jul 2026, 30p/9fig/15tab)",
+  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
+  "content": "五阶段统一生命周期: creation(按需合成SKILL.md+scripts/+tests/) → memory(per-skill跨任务经验累积) → management(skill catalog检索) → evaluation(unit tests+runtime feedback) → refinement(经验反馈迭代) | SkillsBench 85.24% vs 人类技能81.17% (自创技能超越人类！); 跨agent transfer到Hermes达51.90% (vs Codex/Claude-created); SkillsBench+SkillLearnBench上超越Hermes/Codex/Claude Code | skill-level memory (per-skill跨任务经验) + unit tests bundled with skill 是MUSE独到之处。skill应是'long-lived, experience-aware, testable assets'",
+  "field": "技能体系",
+  "summary": "技能体系·自进化技能全生命周期 — 完美对齐'技能自改进+生命周期'真缺口",
   "key_insights": [
-    "引入了自进化代理的概念",
-    "强调技能创建的重要性",
-    "包含记忆管理机制以支持学习和适应",
-    "旨在提升代理的自主性和灵活性",
-    "可能对元认知和自我反思有帮助"
+    "五阶段统一生命周期: creation(按需合成SKILL.md+scripts/+tests/) → memory(per-skill跨任务经验累积) → management(skill catalog检索) → evaluation(unit tests+runtime feedback) → refinement(经验反馈迭代)",
+    "SkillsBench 85.24% vs 人类技能81.17% (自创技能超越人类！); 跨agent transfer到Hermes达51.90% (vs Codex/Claude-created); SkillsBench+SkillLearnBench上超越Hermes/Codex/Claude Code",
+    "skill-level memory (per-skill跨任务经验) + unit tests bundled with skill 是MUSE独到之处。skill应是'long-lived, experience-aware, testable assets'"
   ],
-  "xihe_relevance": "潜在价值在于其可以增强系统的自反层能力，促进更高级别的智能。",
-  "depth_rating": 7,
-  "ollama_digested": true
+  "xihe_relevance": "曦和evolution_engine.skill_registry目前缺：①unit test bundling ②per-skill memory(累积式经验) ③skill-level runtime evaluation。已落地agent_skills自审(7-17融合)是从Skill自审端点出发，MUSE是从技能资产本身出发——两个视角互补 | 融合落点: C. 补充 → evolution_engine.skill_unit_test_runner + skill_per_skill_memory (精化'技能=长期资产'的设计)",
+  "depth_rating": 9,
+  "ollama_digested": true,
+  "reprocess_version": "v_fused_2026-07-21",
+  "fused": true,
+  "seminar_score": 0.89
 }

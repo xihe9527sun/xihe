@@ -383,6 +383,62 @@ def extract_procedural_pattern(trace, outcome, store="treasure/procedural_patter
     return pattern
 
 
+def trace2skill_consolidate(trace_patches, skill_name, store="treasure/skills"):
+    """
+    [Trace2Skill 融合 · 研讨厅研判 0.91 · A嫁接 · 2026-07-21]
+    Trace2Skill (arXiv:2603.25158) 程序性记忆外化层。
+    与 PMD extract_procedural_pattern(内化到权重)配对: 把多个 trajectory-level patch
+    并行分析 → hierarchical merge 成一个 portable skill directory (SKILL.md + references/)，
+    使技能可跨模型/跨域移植(推理时可用、人可读、机器可执行)。
+
+    核心洞见: patch value is often combinatorial → holistic consolidation > greedy local selection。
+    故合并时按『组合增益』(命中频次)聚合, 而非单 patch 贪心覆盖。
+
+    参数:
+        trace_patches: list[dict], 每个 {role, action, rationale, source_trace}
+        skill_name: 生成的技能目录名
+        store: 技能库根(相对 F:/SmartLegend/Xihe)
+    返回: {"skill_dir": str, "patches_merged": int, "consolidated": bool}
+    """
+    import os, json as _json, datetime
+    base = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), store, skill_name)
+    os.makedirs(base, exist_ok=True)
+    ref_dir = os.path.join(base, "references")
+    os.makedirs(ref_dir, exist_ok=True)
+
+    merged = {}
+    for p in trace_patches:
+        role = p.get("role", "general")
+        action = p.get("action", "")
+        rationale = p.get("rationale", "")
+        key = (role, action)
+        # 组合增益: 同一(role,action)多次出现 → 加权而非覆盖
+        if key in merged:
+            merged[key]["hits"] += 1
+            merged[key]["rationale"] += " | " + rationale
+        else:
+            merged[key] = {"role": role, "action": action, "rationale": rationale, "hits": 1}
+
+    # hierarchical merge: 按 hits 降序排, 高频组合在前(整体一致性优先)
+    ordered = sorted(merged.values(), key=lambda m: m["hits"], reverse=True)
+    skill_md = ["# " + skill_name, "", "## 触发条件", "由曦和程序性记忆蒸馏自动生成 (Trace2Skill 融合)。", "",
+                "## 执行步骤", ""]
+    for i, m in enumerate(ordered, 1):
+        skill_md.append(f"{i}. **{m['role']}**: {m['action']}")
+        skill_md.append(f"   - 依据: {m['rationale']} (出现{m['hits']}次)")
+    skill_md.append("")
+    skill_md.append(f"> 生成于 {datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')} · Trace2Skill 合并蒸馏 (与 PMD 内化层配对成程序性记忆闭环)")
+    with open(os.path.join(base, "SKILL.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(skill_md))
+
+    # references: 每个 patch 来源留痕
+    refs = [{"role": m["role"], "action": m["action"], "hits": m["hits"]} for m in ordered]
+    with open(os.path.join(ref_dir, "patches.json"), "w", encoding="utf-8") as f:
+        _json.dump(refs, f, ensure_ascii=False, indent=1)
+
+    return {"skill_dir": base, "patches_merged": len(trace_patches), "consolidated": True}
+
+
 def utility_refine_and_prune(pool_path="treasure/procedural_patterns.json", min_utility=0.3, max_pool=150):
     """
     [ReMe 融合 · 研讨厅研判 0.87 · A嫁接 · 2026-07-20]

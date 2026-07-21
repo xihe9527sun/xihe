@@ -1,0 +1,20 @@
+{
+  "id": "skill1-arxiv2605.06130",
+  "name": "Skill1: 技能选择+利用+蒸馏三能力共进化的统一RL",
+  "source": "arXiv:2605.06130 v3 (12 May 2026)",
+  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
+  "content": "single policy同时训练三能力, 共用task-outcome signal. low-frequency trend credits selection, high-frequency variation credits distillation(频域分解归功) | ALFWorld+WebShop超越prior skill-based和RL baselines. 训练动力学证实三能力共进化. ablations show removing any credit signal degrades evolution | single task-outcome signal可通过频域分解(slow/fast)同时归功selection和distillation,无需多个独立reward source。'co-evolution toward shared objective' 是关键",
+  "field": "技能体系",
+  "summary": "技能体系·三能力共进化 — 补'技能选择/利用/蒸馏'三能力解耦训练的真缺口",
+  "key_insights": [
+    "single policy同时训练三能力, 共用task-outcome signal. low-frequency trend credits selection, high-frequency variation credits distillation(频域分解归功)",
+    "ALFWorld+WebShop超越prior skill-based和RL baselines. 训练动力学证实三能力共进化. ablations show removing any credit signal degrades evolution",
+    "single task-outcome signal可通过频域分解(slow/fast)同时归功selection和distillation,无需多个独立reward source。'co-evolution toward shared objective' 是关键"
+  ],
+  "xihe_relevance": "曦和Skill自审+evolution_engine的三能力目前解耦(选/用/精分属不同组件)。Skill1证明可用单信号+频域分解同时训练——这与曦和'局部分解'的LHD哲学同构 | 融合落点: C. 补充 → skill_registry频域归功机制 (low-freq→selection, high-freq→distillation, task-outcome共用)",
+  "depth_rating": 9,
+  "ollama_digested": true,
+  "reprocess_version": "v_fused_2026-07-21",
+  "fused": true,
+  "seminar_score": 0.86
+}

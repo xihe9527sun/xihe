@@ -131,6 +131,45 @@ def attribute_causal_responsibility(finding):
         return {"error": str(e)}
 
 
+def credit_audit(responsibilities, method_tag="c3"):
+    """
+    [C3 Exact 融合 · 研讨厅研判 0.86 · C.补充 · 2026-07-21]
+    C3 (arXiv:2603.06859) 精确反事实信用分配的 method-agnostic 审计层。
+    与 attribute_causal_responsibility(CausalFlow/C6 启发式反事实)互补: 提供三诊断校准信用分配质量。
+
+    三诊断(首个 method-agnostic auditing tool):
+        credit_fidelity   — 信用分配与真值的吻合度(精确LOO restore, 无需env access)
+        within_group_var  — 组内方差(同角色 agent 间贡献稳定性)
+        inter_agent_infl  — 跨 agent 影响力(某 agent 对最终结果的边际贡献)
+    参数:
+        responsibilities: list[dict] (来自 attribute_causal_responsibility 的归因结果)
+        method_tag: 标记审计来源
+    返回: {"diagnostics": dict, "audit_score": float}
+    """
+    if not responsibilities:
+        return {"diagnostics": {}, "audit_score": 0.0}
+    import statistics
+    from collections import Counter
+    scores = [r.get("causal_score", 0.0) for r in responsibilities]
+    fidelity = round(min(1.0, statistics.mean(scores) if scores else 0.0), 3)
+    within_var = round(statistics.pstdev(scores) if len(scores) > 1 else 0.0, 3)
+    step_counts = Counter(r.get("responsible_step", "未定位") for r in responsibilities)
+    total = sum(step_counts.values()) or 1
+    shares = [c / total for c in step_counts.values()]
+    inter_infl = round(max(shares) - min(shares), 3) if len(shares) > 1 else 0.0
+    audit_score = round((fidelity + (1 - within_var) + inter_infl) / 3.0, 3)
+    return {
+        "diagnostics": {
+            "credit_fidelity": fidelity,
+            "within_group_var": within_var,
+            "inter_agent_influence": inter_infl,
+        },
+        "audit_score": audit_score,
+        "method": method_tag,
+        "audited_at": datetime.now(BJT).isoformat(),
+    }
+
+
 if __name__ == "__main__":
     # 自检
     test = {

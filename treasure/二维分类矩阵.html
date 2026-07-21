@@ -1,0 +1,97 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>曦和宝藏厅·二维分类矩阵</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0d12;color:#e8e8ee;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:32px;line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:24px;color:#e8b339;letter-spacing:1px;font-weight:600}
+.sub{color:#8a8a99;font-size:13px;margin:6px 0 24px}
+.sub b{color:#e8b339}
+.matrix{width:100%;border-collapse:separate;border-spacing:4px;margin-bottom:32px}
+.matrix th{background:#16161e;color:#c8c8d4;font-size:13px;padding:12px 8px;font-weight:500;border-radius:8px}
+.matrix td.c{border-radius:8px;text-align:center;padding:16px 8px;transition:.2s;position:relative}
+.matrix td.c:hover{transform:scale(1.06);box-shadow:0 0 0 2px #e8b339}
+.matrix td .n{display:block;font-size:22px;font-weight:700;color:#fff}
+.matrix td .p{display:block;font-size:11px;color:rgba(255,255,255,.7)}
+.rowh{background:#16161e!important;color:#e8e8ee!important;text-align:left!important;padding-left:14px!important;font-weight:600}
+.rowh .tag{display:inline-block;margin-left:8px;font-size:11px;color:#0d0d12;background:#e8b339;border-radius:4px;padding:1px 7px;font-weight:700}
+.matrix tr.tot td{background:#1f1f2b!important}
+.matrix tr.tot td .n{color:#e8b339}
+.sec-t{font-size:17px;color:#e8b339;margin:8px 0 16px;border-left:3px solid #e8b339;padding-left:10px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#16161e;border:1px solid #26262f;border-radius:10px;padding:14px 16px}
+.ch{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}
+.nm{font-size:14px;color:#fff;font-weight:600}
+.sc{font-size:15px;color:#e8b339;font-weight:700;white-space:nowrap}
+.st{font-size:12px;color:#7fd1a0;margin-bottom:6px}
+.nt{font-size:12px;color:#9a9aa8;line-height:1.5}
+.legend{font-size:12px;color:#8a8a99;margin-top:20px;display:flex;gap:18px;flex-wrap:wrap}
+.dot{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:middle;margin-right:5px}
+</style></head><body><div class="wrap">
+<h1>曦和宝藏厅 · 二维分类矩阵</h1>
+<div class="sub">价值状态 <b>A/B/C</b> × 进化方向 · 由 <b>_classification.json</b> 驱动 · 筛选后真实宝藏 <b>508</b> 篇目录</div>
+<table class="matrix"><tr><th>价值状态 ＼ 方向</th><th>记忆系统</th><th>自反元认知</th><th>进化引擎</th><th>因果</th><th>技能体系</th><th>多Agent编排</th><th>其他</th><th>合计</th></tr>
+<tr><th class="rowh">A.已融合精品<span class="tag">A</span></th><td class="c" style="background:rgb(34,33,38)"><span class="n">6</span><span class="p">1.2%</span></td><td class="c" style="background:rgb(29,28,38)"><span class="n">1</span><span class="p">0.2%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(29,28,38)"><span class="n">1</span><span class="p">0.2%</span></td><td class="c" style="background:rgb(30,29,38)"><span class="n">2</span><span class="p">0.4%</span></td><td class="c" style="background:rgb(30,29,38)"><span class="n">2</span><span class="p">0.4%</span></td><td class="c" style="background:rgb(29,28,38)"><span class="n">1</span><span class="p">0.2%</span></td><td class="c" style="background:rgb(36,34,38)"><span class="n">13</span><span class="p">2.6%</span></td></tr>
+<tr><th class="rowh">B.待研判候选<span class="tag">B</span></th><td class="c" style="background:rgb(216,167,55)"><span class="n">165</span><span class="p">32.5%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(45,40,39)"><span class="n">15</span><span class="p">3.0%</span></td><td class="c" style="background:rgb(31,30,38)"><span class="n">3</span><span class="p">0.6%</span></td><td class="c" style="background:rgb(55,48,40)"><span class="n">24</span><span class="p">4.7%</span></td><td class="c" style="background:rgb(126,100,47)"><span class="n">86</span><span class="p">16.9%</span></td><td class="c" style="background:rgb(36,34,38)"><span class="n">293</span><span class="p">57.7%</span></td></tr>
+<tr><th class="rowh">C.已精读储备<span class="tag">C</span></th><td class="c" style="background:rgb(43,39,39)"><span class="n">14</span><span class="p">2.8%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(33,32,38)"><span class="n">5</span><span class="p">1.0%</span></td><td class="c" style="background:rgb(28,28,38)"><span class="n">0</span><span class="p">0.0%</span></td><td class="c" style="background:rgb(32,31,38)"><span class="n">4</span><span class="p">0.8%</span></td><td class="c" style="background:rgb(232,179,57)"><span class="n">179</span><span class="p">35.2%</span></td><td class="c" style="background:rgb(36,34,38)"><span class="n">202</span><span class="p">39.8%</span></td></tr>
+</table>
+<div class="legend">
+  <span><span class="dot" style="background:rgb(232,179,57)"></span>色深 = 该格篇数占比（相对全局最大值 179）</span>
+  <span><span class="dot" style="background:#e8b339"></span>A=已融合精品 · B=待研判候选 · C=已精读储备</span>
+</div>
+<div class="sec-t">A.已融合精品 · 13 篇（研讨厅研判 ≥0.85 且已焊入运行代码）</div>
+<div class="cards"><div class="card">
+      <div class="ch"><span class="nm">Trace2Skill: 轨迹局部经验→可移植Agent Skill的并行合并蒸馏 (arXiv:2603.25158, Alibaba+清华)</span><span class="sc">0.91</span></div>
+      <div class="st">A. 嫁接 → bridge/memory_writer.py::trace2skill_consolidate</div>
+      <div class="nt">patch value is often combinatorial → holistic consolidation > greedy local；跨模型迁移+57.65pp(WikiTableQuestions)。与PMD.extract_procedural_pattern配对成程序性记忆内外闭环</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">automem-memory-skill: AutoMem 将记忆管理提升为可训练认知技能 (arXiv 2607.01224)</span><span class="sc">0.89</span></div>
+      <div class="st">B. 补充(现有memory_writer借鉴'模型自决编码时机'思路，非替换)</div>
+      <div class="nt">arXiv 2607最新、收益量化明确(2-4x)、可落地。落地方式：在 memory_writer v2 增加'自决编码窗口'逻辑。待盘古拍板后落运行代码</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">MUSE-Autoskill: 技能全生命周期自进化Agent (arXiv:2605.27366, 字节+RIT)</span><span class="sc">0.89</span></div>
+      <div class="st">C. 补充 → bridge/skill_lifecycle.py (新建,承接evolution_engine.skill_registry缺口): skill_unit_test_runner + per_skill_memory</div>
+      <div class="nt">SkillsBench 85.24% vs 人类81.17%；skill-level memory + bundled tests是独到之处。与agent-skills自审(7-17)双视角互补</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">reflective-memory: Agent反思记忆+元认知框架 (研究综述·Nature Sci Rep 2026 + 清华AI Awareness)</span><span class="sc">0.88</span></div>
+      <div class="st">C. 补充——将'四级触发+预测性元认知校准'作为补充洞察写入自反层协议，不替换现有结构</div>
+      <div class="nt">内容质量高、方向强对齐。落地方式：补充洞察进 cog_primitives 自反层注释 + 自反强度分层触发借鉴四级机制。待盘古拍板后落运行代码</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">ACP·Agent Context Protocols (arXiv:2505.14569)</span><span class="sc">0.88</span></div>
+      <div class="st">A. 嫁接 → signal_dispatcher.dispatch_blueprint</div>
+      <div class="nt">机制完整(AssistantBench 28.3% SOTA), 精准补上游缺口</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">causalflow-icml2026: CausalFlow 因果归因与反事实修复 (ICML 2026 Workshop)</span><span class="sc">0.87</span></div>
+      <div class="st">A. 嫁接——作为进化引擎'失败因果归因'模块(causal_attribution.py)挂evolution引擎</div>
+      <div class="nt">ICML 2026高信源、机制清晰可落地。落地方式：新模块 causal_attribution.py，由 evolution_engine 在 negative_finding 时调用。待盘古拍板后落运行代码</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">ReMe·Remember Me Refine Me (arXiv:2512.10696)</span><span class="sc">0.87</span></div>
+      <div class="st">A. 嫁接 → memory_writer.utility_refine_and_prune</div>
+      <div class="nt">与PMD拼成完整程序性记忆(ACL26, 超14B)</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">LEMON: 反事实RL训练可执行多Agent编排规范 (arXiv:2605.14483, ASU+UIUC)</span><span class="sc">0.87</span></div>
+      <div class="st">A. 嫁接 → bridge/signal_dispatcher.py::orchestration_credit</div>
+      <div class="nt">orchestration-level GRPO + localized counterfactual signal(编辑span→reward contrast只作用于edited spans)。与ACP.dispatch_blueprint拼完整编排栈：ACP管上下文流动, LEMON管决策优化</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">skill-mas-arxiv2606-18837: Skill-MAS 进化元技能用于自动多Agent系统 (蚂蚁+港科广 Jun 2026)</span><span class="sc">0.86</span></div>
+      <div class="st">C. 补充——元技能进化思路补充到skill自审机制(agent-skills自审技能)</div>
+      <div class="nt">高信源、与现有skill体系强相关。落地方式：skill自审增加'元技能提炼'步骤。待盘古拍板后落运行代码</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">PMD·Procedural Memory Distillation (arXiv:2607.01480)</span><span class="sc">0.86</span></div>
+      <div class="st">A. 嫁接 → memory_writer.extract_procedural_pattern</div>
+      <div class="nt">训练时机制改推理型等效; 刚过0.85门槛</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">Skill1: 技能选择+利用+蒸馏三能力共进化统一RL (arXiv:2605.06130, 中科院+人大)</span><span class="sc">0.86</span></div>
+      <div class="st">C. 补充 → bridge/skill_lifecycle.py::skill_freq_domain_credit</div>
+      <div class="nt">single task-outcome + 频域分解(slow→selection, fast→distillation)同时归功三能力。与LHD局部深度哲学同构</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">C3 (Exact Is Easier): 固定历史精确LOO反事实信用分配 (arXiv:2603.06859, 中科院+港大+阿里)</span><span class="sc">0.86</span></div>
+      <div class="st">C. 补充 → bridge/causal_attribution.py::credit_audit</div>
+      <div class="nt">Exact solution proves simpler than approximate。三诊断(credit fidelity/within-group variance/inter-agent influence)是首个method-agnostic auditing tool。与LEMON同源互补</div>
+    </div><div class="card">
+      <div class="ch"><span class="nm">PreFlect: 从事后反思到执行前前瞻性反思 (arXiv:2602.07187, PSU)</span><span class="sc">0.85</span></div>
+      <div class="st">C. 补充 → bridge/rrif_gate_modulator.py::plan_time_reflection</div>
+      <div class="nt">把反思从act→fail→reflect前移到plan→critique→revise→execute。D2兴趣匹配维度plan-time增强，与既有门控正交不撞车（恰好0.85门槛，确认≥0.85不退化）</div>
+    </div></div>
+</div></body></html>

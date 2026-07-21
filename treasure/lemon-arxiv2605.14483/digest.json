@@ -1,0 +1,20 @@
+{
+  "id": "lemon-arxiv2605.14483",
+  "name": "LEMON: 反事实强化学习训练可执行多Agent编排规范",
+  "source": "arXiv:2605.14483 v1 (14 May 2026), NeurIPS 2026 submitted",
+  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
+  "content": "orchestration-level GRPO目标 + localized counterfactual signal：编辑role/capacity/dependency字段 → reward contrast只应用在edited spans(局部化梯度) → 训练orchestrator生成role+capacity+dependency一体的可执行spec | 6 benchmarks (MMLU/GSM8K/AQuA/MultiArith/SVAMP/HumanEval) SOTA among multi-agent orchestration methods | end-to-end execution outcomes提供的sparse credit '不足以指出哪些role/capacity/dependency决定responsible'。反事实局部信号是稀疏执行反馈下的必需补丁",
+  "field": "多Agent编排",
+  "summary": "多Agent编排·反事实信用分配 — 补多Agent编排的'局部化credit'真缺口(ACP已7-20入库上下文传递层,但缺编排决策的局部信用)",
+  "key_insights": [
+    "orchestration-level GRPO目标 + localized counterfactual signal：编辑role/capacity/dependency字段 → reward contrast只应用在edited spans(局部化梯度) → 训练orchestrator生成role+capacity+dependency一体的可执行spec",
+    "6 benchmarks (MMLU/GSM8K/AQuA/MultiArith/SVAMP/HumanEval) SOTA among multi-agent orchestration methods",
+    "end-to-end execution outcomes提供的sparse credit '不足以指出哪些role/capacity/dependency决定responsible'。反事实局部信号是稀疏执行反馈下的必需补丁"
+  ],
+  "xihe_relevance": "曦和signal_dispatcher当前按能力静态路由。LEMON补：①编排决策的局部化credit(可学) ②role/capacity/dependency三个field作为决策变量。可与已落地的ACP(任务上下文传递)拼成完整编排栈：ACP管上下文流动, LEMON管编排决策优化 | 融合落点: A. 嫁接 → signal_dispatcher.orchestration_credit (编排层局部化信用,与ACP的dispatch_blueprint拼成完整编排栈)",
+  "depth_rating": 9,
+  "ollama_digested": true,
+  "reprocess_version": "v_fused_2026-07-21",
+  "fused": true,
+  "seminar_score": 0.87
+}

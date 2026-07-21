@@ -1,0 +1,20 @@
+{
+  "id": "preflect-arxiv2602.07187",
+  "name": "PreFlect: 从事后反思到执行前前瞻性反思",
+  "source": "arXiv:2602.07187 v1 (6 Feb 2026)",
+  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
+  "content": "把反思从'act→fail→reflect→recover'前移到'plan→critique→revise→execute'。Planning Errors从历史agent轨迹蒸馏recurring success/failure patterns, 配合dynamic re-planning | different benchmarks上'outperforms strong reflection-based baselines and several more complex agent architectures' | 现有反思范式fundamentally retrospective → irreversible consequences处理不了 → trajectory-level noise → repeated trial-and-error成本。PreFlect decouples error detection from irreversible outcomes",
+  "field": "自反层",
+  "summary": "自反层·前瞻性反思 — 补'自反层L5'的事前评估能力(目前是事后反思)",
+  "key_insights": [
+    "把反思从'act→fail→reflect→recover'前移到'plan→critique→revise→execute'。Planning Errors从历史agent轨迹蒸馏recurring success/failure patterns, 配合dynamic re-planning",
+    "different benchmarks上'outperforms strong reflection-based baselines and several more complex agent architectures'",
+    "现有反思范式fundamentally retrospective → irreversible consequences处理不了 → trajectory-level noise → repeated trial-and-error成本。PreFlect decouples error detection from irreversible outcomes"
+  ],
+  "xihe_relevance": "曦和自反层L5目前主要是事后(RuminationScheduler事后处理)。PreFlect补'plan-phase reflection'——但落地需谨慎: 门控调制器已承担'关系注意力向量', PreFlect的'规划错误蒸馏'可作门控调制器的plan-time增强维度 | 融合落点: C. 补充 → gate_modulator.plan_time_reflection (D2兴趣匹配维度的plan-time增强, 与既有门控正交不撞车)",
+  "depth_rating": 8,
+  "ollama_digested": true,
+  "reprocess_version": "v_fused_2026-07-21",
+  "fused": true,
+  "seminar_score": 0.85
+}

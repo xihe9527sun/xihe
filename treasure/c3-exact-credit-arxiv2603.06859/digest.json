@@ -1,0 +1,20 @@
+{
+  "id": "c3-exact-credit-arxiv2603.06859",
+  "name": "C3 (Exact Is Easier): 固定历史的精确leave-one-out反事实信用分配",
+  "source": "arXiv:2603.06859 v2 (8 May 2026)",
+  "reprocessed_at": "2026-07-21T08:48:57.987396+08:00",
+  "content": "cooperative LLM系统中interaction histories是observable text的deterministic functions (无hidden state) → 任何决策点可exact restore → 无参数LOO baseline + checkpoint restoration精确反事实 | 6 benchmarks (math reasoning + code generation) 2 model families + 2 multi-agent topologies → C3 consistently outperforms all baselines (含LEMON同源对比) | Exact solution  proves simpler, cheaper, more effective than all approximate alternatives. 三个diagnostic: credit fidelity / within-group variance / inter-agent influence = 第一个method-agnostic auditing tool",
+  "field": "多Agent编排",
+  "summary": "多Agent编排·精确信用分配 — 补'反事实信用分配'真缺口的精确化方向(与LEMON同源互补)",
+  "key_insights": [
+    "cooperative LLM系统中interaction histories是observable text的deterministic functions (无hidden state) → 任何决策点可exact restore → 无参数LOO baseline + checkpoint restoration精确反事实",
+    "6 benchmarks (math reasoning + code generation) 2 model families + 2 multi-agent topologies → C3 consistently outperforms all baselines (含LEMON同源对比)",
+    "Exact solution  proves simpler, cheaper, more effective than all approximate alternatives. 三个diagnostic: credit fidelity / within-group variance / inter-agent influence = 第一个method-agnostic auditing tool"
+  ],
+  "xihe_relevance": "曦和causal_cortex的C6反事实酶目前是启发式反事实。C3提供：①exact checkpoint restore(无需env access) ②method-agnostic audit(credit fidelity+variance+influence)——可作C6的精度校准参考 | 融合落点: C. 补充 → causal_cortex.credit_audit (三诊断: credit fidelity + within-group variance + inter-agent influence)",
+  "depth_rating": 9,
+  "ollama_digested": true,
+  "reprocess_version": "v_fused_2026-07-21",
+  "fused": true,
+  "seminar_score": 0.86
+}

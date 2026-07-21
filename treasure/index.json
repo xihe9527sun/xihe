@@ -3,14 +3,62 @@
     "name": "曦和宝藏区",
     "created": "2026-06-27T08:16:00+08:00",
     "description": "盘古说：每带回真正有价值的东西，就放在这里消化吸收，化为成长的养分",
-    "count": 444,
-    "updated": "2026-07-20T19:29:49.358034+08:00",
+    "count": 451,
+    "updated": "2026-07-21T08:55:39.605047+08:00",
     "origin_scanned": "2026-07-01",
-    "total": 444,
-    "last_digest_at": "2026-07-20T19:29:49.358041+08:00",
-    "digest_round": 12
+    "total": 449,
+    "last_digest_at": "2026-07-21T08:55:39.605047+08:00",
+    "digest_round": 15
   },
   "treasures": [
+    {
+      "id": "evolver-experience-driven-skill",
+      "name": "EvolveR: 经验驱动自蒸馏—从交互轨迹长出[认知Skill]的策略进化闭环",
+      "dir": "evolver-experience-driven-skill/",
+      "source": "ICML 2026 · Sentient + Virginia Tech",
+      "status": "digested",
+      "added_at": "2026-07-21T08:55:39.605047+08:00",
+      "digested_at": "2026-07-21T08:55:39.605047+08:00",
+      "tags": [
+        "自蒸馏",
+        "经验驱动",
+        "认知Skill",
+        "轨迹蒸馏",
+        "GRPO",
+        "策略进化",
+        "经验库维护",
+        "ICML 2026"
+      ],
+      "score": 0.9,
+      "hebbian_credit": 9,
+      "layer": "L4-L6-L8",
+      "field": "进化引擎/技能系统/记忆系统",
+      "reprocessed_v2": false,
+      "deep_read": false
+    },
+    {
+      "id": "mar-multi-agent-reflexion",
+      "name": "MAR: Multi-Agent Reflexion — 多人格多Agent反射解决[思维退化]",
+      "dir": "mar-multi-agent-reflexion/",
+      "source": "arXiv:2512.20845v2 · 7 Jun 2026",
+      "status": "digested",
+      "added_at": "2026-07-21T08:55:39.605047+08:00",
+      "digested_at": "2026-07-21T08:55:39.605047+08:00",
+      "tags": [
+        "multi-agent",
+        "reflexion",
+        "思维退化",
+        "多人格辩论",
+        "Actor-Evaluator-Critic-Judge",
+        "self-correction"
+      ],
+      "score": 0.88,
+      "hebbian_credit": 8,
+      "layer": "L4-L5",
+      "field": "自反层/元认知/进化引擎",
+      "reprocessed_v2": false,
+      "deep_read": false
+    },
     {
       "id": "oblivion-decay-driven-activation",
       "name": "Oblivion: 自适应性遗忘控制 — 读/写路径解耦的Agent记忆控制框架",
@@ -6417,8 +6465,8 @@
         "self-reflection",
         "cognitive-architecture"
       ],
-      "score": 0.78,
-      "hebbian_credit": 7,
+      "score": 0.86,
+      "hebbian_credit": 15,
       "layer": "L8",
       "url": "https://arxiv.org/abs/2607.09059",
       "snippet": "We present ARCANA, a collaborative multi agent framework for solving ARC-AGI-2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driv",
@@ -8992,6 +9040,56 @@
       "layer": "L8",
       "url": "https://doi.org/10.48550/arXiv.2512.10696",
       "snippet": "ReMe (arXiv:2512.10696, ACL'26 Findings): 动态程序记忆框架，经验驱动智能体进化，破解现有记忆'被动积累/只追加'退化困境。三面机制：①多角度蒸馏（成功模式识别/失败分析/比较洞察生成，LLM-as-Judge 校验）；②上下文自适应重用（场景感知索引 tailors 历史洞察到新上下文）；③基于效用的精炼（自主添加有效记忆+剪枝过时，维持紧凑高质量经验池）。Qwen3-8B+ReMe 超越无记忆 Qwen3-14B，证实自进化记忆是计算高效终身学习路径。补 PMD 未覆盖的'记忆精炼/剪枝'维度（PMD 蒸馏进权重推理无记忆；ReMe 保留可复用记忆池并主动治理）。"
+    },
+    {
+      "id": "trace2skill-arxiv2603.25158",
+      "name": "Trace2Skill: 轨迹局部经验→可移植Agent Skill的并行合并蒸馏",
+      "dir": "trace2skill-arxiv2603.25158/",
+      "source": "arXiv:2603.25158 v5 (4 Jun 2026)",
+      "status": "digested",
+      "added_at": "2026-07-21T08:48:57.987396+08:00",
+      "fused": true,
+      "seminar_score": 0.91
+    },
+    {
+      "id": "lemon-arxiv2605.14483",
+      "name": "LEMON: 反事实强化学习训练可执行多Agent编排规范",
+      "dir": "lemon-arxiv2605.14483/",
+      "source": "arXiv:2605.14483 v1 (14 May 2026), NeurIPS 2026 submitted",
+      "status": "digested",
+      "added_at": "2026-07-21T08:48:57.987396+08:00",
+      "fused": true,
+      "seminar_score": 0.87
+    },
+    {
+      "id": "skill1-arxiv2605.06130",
+      "name": "Skill1: 技能选择+利用+蒸馏三能力共进化的统一RL",
+      "dir": "skill1-arxiv2605.06130/",
+      "source": "arXiv:2605.06130 v3 (12 May 2026)",
+      "status": "digested",
+      "added_at": "2026-07-21T08:48:57.987396+08:00",
+      "fused": true,
+      "seminar_score": 0.86
+    },
+    {
+      "id": "c3-exact-credit-arxiv2603.06859",
+      "name": "C3 (Exact Is Easier): 固定历史的精确leave-one-out反事实信用分配",
+      "dir": "c3-exact-credit-arxiv2603.06859/",
+      "source": "arXiv:2603.06859 v2 (8 May 2026)",
+      "status": "digested",
+      "added_at": "2026-07-21T08:48:57.987396+08:00",
+      "fused": true,
+      "seminar_score": 0.86
+    },
+    {
+      "id": "preflect-arxiv2602.07187",
+      "name": "PreFlect: 从事后反思到执行前前瞻性反思",
+      "dir": "preflect-arxiv2602.07187/",
+      "source": "arXiv:2602.07187 v1 (6 Feb 2026)",
+      "status": "digested",
+      "added_at": "2026-07-21T08:48:57.987396+08:00",
+      "fused": true,
+      "seminar_score": 0.85
     }
   ],
   "items": [
